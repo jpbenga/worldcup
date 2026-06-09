@@ -1,0 +1,20 @@
+[
+  {
+    "match_id": "france_senegal_001",
+    "home_score": 1,
+    "away_score": 0,
+    "status": "finished"
+  },
+  {
+    "match_id": "brazil_japan_001",
+    "home_score": 2,
+    "away_score": 1,
+    "status": "finished"
+  },
+  {
+    "match_id": "canada_morocco_001",
+    "home_score": 0,
+    "away_score": 1,
+    "status": "finished"
+  }
+]

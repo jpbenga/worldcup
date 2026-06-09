@@ -1,0 +1,32 @@
+# Python virtual environments
+venv/
+.venv/
+*/venv/
+*/.venv/
+drc-prototype/venv/
+drc-prototype/.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local / IDE / IDX
+.idx/
+.DS_Store
+
+# Archives / logs / db
+*.zip
+*.tar
+*.tar.gz
+*.log
+*.sqlite
+*.db
+
+# Frontend
+node_modules/
+dist/
+build/
+
+# Env / secrets
+.env
+.env.*

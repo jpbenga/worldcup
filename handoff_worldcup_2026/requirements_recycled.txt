@@ -1,0 +1,8 @@
+# Runtime modules use only the Python standard library.
+# Test dependency:
+pytest>=8,<10
+
+# Optional dependencies for re-running the legacy optimizer (not required by this bundle):
+# numpy
+# scipy
+# optuna

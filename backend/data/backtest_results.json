@@ -1,0 +1,261 @@
+{
+  "summary": {
+    "tested": 12,
+    "won": 6,
+    "hit_rate": 0.5,
+    "by_market": {
+      "home_win": {
+        "tested": 3,
+        "won": 2,
+        "hit_rate": 0.6666666666666666
+      },
+      "home_or_draw": {
+        "tested": 3,
+        "won": 2,
+        "hit_rate": 0.6666666666666666
+      },
+      "over_1_5": {
+        "tested": 3,
+        "won": 1,
+        "hit_rate": 0.3333333333333333
+      },
+      "btts_yes": {
+        "tested": 3,
+        "won": 1,
+        "hit_rate": 0.3333333333333333
+      }
+    },
+    "details": [
+      {
+        "match_id": "france_senegal_001",
+        "market": "home_win",
+        "won": true
+      },
+      {
+        "match_id": "france_senegal_001",
+        "market": "home_or_draw",
+        "won": true
+      },
+      {
+        "match_id": "france_senegal_001",
+        "market": "over_1_5",
+        "won": false
+      },
+      {
+        "match_id": "france_senegal_001",
+        "market": "btts_yes",
+        "won": false
+      },
+      {
+        "match_id": "brazil_japan_001",
+        "market": "home_win",
+        "won": true
+      },
+      {
+        "match_id": "brazil_japan_001",
+        "market": "home_or_draw",
+        "won": true
+      },
+      {
+        "match_id": "brazil_japan_001",
+        "market": "over_1_5",
+        "won": true
+      },
+      {
+        "match_id": "brazil_japan_001",
+        "market": "btts_yes",
+        "won": true
+      },
+      {
+        "match_id": "canada_morocco_001",
+        "market": "home_win",
+        "won": false
+      },
+      {
+        "match_id": "canada_morocco_001",
+        "market": "home_or_draw",
+        "won": false
+      },
+      {
+        "match_id": "canada_morocco_001",
+        "market": "over_1_5",
+        "won": false
+      },
+      {
+        "match_id": "canada_morocco_001",
+        "market": "btts_yes",
+        "won": false
+      }
+    ]
+  },
+  "results": [
+    {
+      "match_id": "france_senegal_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "home_win",
+      "predicted_probability": 0.6595166966768848,
+      "actual_result": true,
+      "validated": true,
+      "real_result": {
+        "home_score": 1,
+        "away_score": 0
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "france_senegal_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "home_or_draw",
+      "predicted_probability": 0.8765034912144948,
+      "actual_result": true,
+      "validated": true,
+      "real_result": {
+        "home_score": 1,
+        "away_score": 0
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "france_senegal_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "over_1_5",
+      "predicted_probability": 0.7494836778220455,
+      "actual_result": false,
+      "validated": false,
+      "real_result": {
+        "home_score": 1,
+        "away_score": 0
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "france_senegal_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "btts_yes",
+      "predicted_probability": 0.4433648836569366,
+      "actual_result": false,
+      "validated": false,
+      "real_result": {
+        "home_score": 1,
+        "away_score": 0
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "brazil_japan_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "home_win",
+      "predicted_probability": 0.6909019604262213,
+      "actual_result": true,
+      "validated": true,
+      "real_result": {
+        "home_score": 2,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "brazil_japan_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "home_or_draw",
+      "predicted_probability": 0.8847274494389312,
+      "actual_result": true,
+      "validated": true,
+      "real_result": {
+        "home_score": 2,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "brazil_japan_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "over_1_5",
+      "predicted_probability": 0.8031690585989099,
+      "actual_result": true,
+      "validated": true,
+      "real_result": {
+        "home_score": 2,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "brazil_japan_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "btts_yes",
+      "predicted_probability": 0.4888859772929634,
+      "actual_result": true,
+      "validated": true,
+      "real_result": {
+        "home_score": 2,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "canada_morocco_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "home_win",
+      "predicted_probability": 0.18629751602187705,
+      "actual_result": false,
+      "validated": false,
+      "real_result": {
+        "home_score": 0,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "canada_morocco_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "home_or_draw",
+      "predicted_probability": 0.42778464493866053,
+      "actual_result": false,
+      "validated": false,
+      "real_result": {
+        "home_score": 0,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "canada_morocco_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "over_1_5",
+      "predicted_probability": 0.7624647269679631,
+      "actual_result": false,
+      "validated": false,
+      "real_result": {
+        "home_score": 0,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    },
+    {
+      "match_id": "canada_morocco_001",
+      "prediction_version": "sample-v1",
+      "generated_at": "2026-06-09T22:34:36Z",
+      "market_name": "btts_yes",
+      "predicted_probability": 0.5115200550196489,
+      "actual_result": false,
+      "validated": false,
+      "real_result": {
+        "home_score": 0,
+        "away_score": 1
+      },
+      "evaluated_at": "2026-06-09T22:34:36Z"
+    }
+  ]
+}
