@@ -25,131 +25,6 @@ and the inventory outputs themselves are excluded.
 
 | File | Line | Term | Category | Short excerpt |
 |---|---:|---|---|---|
-| `docs/CURRENT_ENGINE_AUDIT.md` | 23 | `Elo` | documentation | -> optional bounded Elo adjustment |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 24 | `Dixon-Coles` | documentation | -> Poisson/Dixon-Coles score matrix |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 24 | `Dixon` | documentation | -> Poisson/Dixon-Coles score matrix |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 24 | `Poisson` | documentation | -> Poisson/Dixon-Coles score matrix |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 26 | `Elo` | documentation | -> baseline/Elo/comparison snapshots |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 31 | `Elo` | documentation | 'generate_predictions.generate_models("both")' for baseline and Elo outputs. |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 40 | `xG` | documentation | \| Baseline xG \| 'generate_predictions.baseline_expected_goals' \| Blends recent goals-for and goals-against inputs, then calls 'compute_lambdas'. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 41 | `xG` | documentation | \| Lambda helper \| 'expected_goals.compute_lambdas' \| Modulates xG with a logistic Elo-strength formula and optional home advantage. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 41 | `Elo` | documentation | \| Lambda helper \| 'expected_goals.compute_lambdas' \| Modulates xG with a logistic Elo-strength formula and optional home advantage. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 43 | `Elo` | documentation | \| Elo lookup \| 'elo_features.get_match_elo_features' \| Reads validated API-Football-to-Elo mappings. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 44 | `xG` | documentation | \| Elo variant \| 'elo_adjusted_model.adjust_expected_goals' \| Applies a bounded, moderate Elo factor to baseline xG. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 44 | `Elo` | documentation | \| Elo variant \| 'elo_adjusted_model.adjust_expected_goals' \| Applies a bounded, moderate Elo factor to baseline xG. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 45 | `Dixon-Coles` | data | \| Score matrix \| 'score_matrix.generate_score_matrix' \| Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 45 | `Dixon` | data | \| Score matrix \| 'score_matrix.generate_score_matrix' \| Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 45 | `Poisson` | data | \| Score matrix \| 'score_matrix.generate_score_matrix' \| Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 52 | `xG` | documentation | ## How baseline xG is generated |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 72 | `Elo` | documentation | It then calls 'compute_lambdas' with neutral input Elo, no home-field advantage |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 76 | `xG` | documentation | The xG are neutral because the active 2026 fixture feed does not itself provide |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 78 | `calibration` | documentation | features would falsely imply calibration, so V0.5 deliberately chose explicit |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 81 | `Dixon-Coles` | documentation | ## Poisson and Dixon-Coles matrix |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 81 | `Dixon` | documentation | ## Poisson and Dixon-Coles matrix |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 81 | `Poisson` | documentation | ## Poisson and Dixon-Coles matrix |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 87 | `Poisson` | documentation | Poisson(home_goals \| home_lambda) * Poisson(away_goals \| away_lambda) |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 111 | `Elo` | documentation | ## Elo injection and unchanged modal scores |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 113 | `Elo` | documentation | The baseline records mapped Elo values as metadata but does not use them. |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 114 | `Elo` | documentation | The separate Elo variant reads validated ratings and computes: |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 125 | `Elo` | documentation | enough to move another exact score above '1-1'; therefore baseline and Elo both |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 135 | `Elo` | documentation | - Elo predictions with 'engine_status = "experimental"' and |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 142 | `backtest` | backtest | calibration, no tournament simulation, no valid backtest for future fixtures, |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 142 | `calibration` | backtest | calibration, no tournament simulation, no valid backtest for future fixtures, |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 143 | `calibration` | documentation | no probabilistic calibration metrics, a finite matrix tail and a simple |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 150 | `xG` | documentation | - 'drc-prototype/optimizer.py': explicit xG/Elo formulas, |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 150 | `Elo` | documentation | - 'drc-prototype/optimizer.py': explicit xG/Elo formulas, |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `Dixon-Coles` | documentation | Poisson/Dixon-Coles and chronological optimization with log loss; |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `Dixon` | documentation | Poisson/Dixon-Coles and chronological optimization with log loss; |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `Poisson` | documentation | Poisson/Dixon-Coles and chronological optimization with log loss; |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `log loss` | metric | Poisson/Dixon-Coles and chronological optimization with log loss; |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 152 | `xG` | backtest | - 'drc-prototype/xg-backtest.js': rolling baseline and chronological backtest; |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 152 | `backtest` | backtest | - 'drc-prototype/xg-backtest.js': rolling baseline and chronological backtest; |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 153 | `backtest` | backtest | - 'drc-prototype/backtest.js': detailed validation history; |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 165 | `Poisson` | documentation | \| Statistical modeling \| No declared runtime library; current Poisson implementation uses standard-library 'math'. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 166 | `optuna` | dependency | \| Optimization \| 'scipy' and 'optuna' are explicitly listed as optional legacy optimizer candidates. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 166 | `scipy` | dependency | \| Optimization \| 'scipy' and 'optuna' are explicitly listed as optional legacy optimizer candidates. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `scikit` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `xgboost` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `lightgbm` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `catboost` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 168 | `penaltyblog` | dependency | \| Football modeling \| No tracked dependency on 'penaltyblog'; football formulas are local. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 173 | `numpy` | dependency | 'numpy' is also explicitly listed as an optional legacy optimizer candidate. |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 174 | `scikit` | dependency | No clear historical dependency on 'pandas', 'statsmodels', 'scikit-learn', |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 174 | `statsmodels` | dependency | No clear historical dependency on 'pandas', 'statsmodels', 'scikit-learn', |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 174 | `pandas` | dependency | No clear historical dependency on 'pandas', 'statsmodels', 'scikit-learn', |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `penaltyblog` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `xgboost` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `lightgbm` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `catboost` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 191 | `calibration` | backtest | \| 'data_sources.json' \| Honest source, calibration and backtesting status. \| |
-| `docs/CURRENT_ENGINE_AUDIT.md` | 198 | `calibration` | documentation | explicit engine/calibration metadata. Any incompatible change requires a |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 14 | `Elo` | documentation | \| Inputs \| Neutral '1.35 / 1.35', current mapped Elo \| Chronological results, attack/defence strength, neutral/home context, pre-match Elo \| Level 2 plus dynamic Elo, recent form, importance and consistent advanced stats |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Dixon-Coles` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Dixon` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Poisson` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Elo` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 16 | `calibration` | documentation | \| Parameters \| Hard-coded blend, 'rho=-0.05', Elo weight '0.20', clamp '±0.35' \| Fitted decay, attack/defence, neutral advantage, rho and Elo contribution \| Tuned feature sets, model families, ensembles and calibration l |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 16 | `Elo` | documentation | \| Parameters \| Hard-coded blend, 'rho=-0.05', Elo weight '0.20', clamp '±0.35' \| Fitted decay, attack/defence, neutral advantage, rho and Elo contribution \| Tuned feature sets, model families, ensembles and calibration l |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 18 | `optuna` | dependency | \| Training \| None \| Chronological fitting, likely SciPy or Optuna \| Automated tuning and model-family comparison \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 18 | `scipy` | dependency | \| Training \| None \| Chronological fitting, likely SciPy or Optuna \| Automated tuning and model-family comparison \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `calibration` | documentation | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `log loss` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `Brier` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `RPS` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `negative log likelihood` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 21 | `calibration` | documentation | \| Output JSON \| Existing stable snapshots \| Same contracts with new explicit model version/calibration metadata \| Same or deliberately versioned contracts \| |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 26 | `xG` | documentation | The current engine uses equal baseline xG for all 72 fixtures, a simple |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Dixon-Coles` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Dixon` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Poisson` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Elo` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 28 | `calibration` | documentation | no fitting or historical calibration. Baseline and Elo both return '1-1' as |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 28 | `Elo` | documentation | no fitting or historical calibration. Baseline and Elo both return '1-1' as |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 43 | `Elo` | documentation | - pre-match Elo or a chronologically reconstructed Elo; |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `Dixon-Coles` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `Dixon` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `Poisson` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `fit` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 50 | `Elo` | documentation | correlation. Elo can act as a prior, regularizer or explicit feature, but its |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 53 | `expected goals` | documentation | The model should generate differentiated expected goals per match. It should |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 59 | `fit` | documentation | - Fit only on completed matches available before each evaluation date. |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 60 | `scipy` | dependency | - Use SciPy for a transparent likelihood optimizer first. |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 61 | `optuna` | dependency | - Consider Optuna only for bounded hyperparameter tuning after the objective |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 61 | `objective` | documentation | - Consider Optuna only for bounded hyperparameter tuning after the objective |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 70 | `log loss` | metric | - negative log likelihood / log loss for probabilistic fit; |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 70 | `negative log likelihood` | metric | - negative log likelihood / log loss for probabilistic fit; |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 70 | `fit` | documentation | - negative log likelihood / log loss for probabilistic fit; |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 71 | `Brier` | metric | - Brier score for outcome probabilities; |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 72 | `ranked probability score` | metric | - ranked probability score for ordered goal/outcome distributions; |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 73 | `calibration` | documentation | - calibration curves and reliability by probability bucket; |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 82 | `Elo` | documentation | preselected algorithm. Candidate inputs include dynamic Elo, recent form, |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 83 | `xG` | documentation | competition importance, rest/travel context and consistent shot/xG features. |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 87 | `optuna` | dependency | Optuna may tune hyperparameters only inside chronological validation. Any |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 88 | `calibration` | documentation | probabilities should receive explicit calibration testing and, where justified, |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 89 | `calibration` | documentation | post-model calibration. A model registry should record data version, features, |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 90 | `calibration` | documentation | parameters, metrics, calibration status and promotion decision. |
-| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 118 | `Elo` | documentation | and pre-match Elo feasibility. Produce a small audited historical sample and a |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 7 | `train` | data | V0.6 does not fetch history, train a model or alter current predictions. |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 14 | `Elo` | data | \| Elo Ratings \| 244 normalized ratings and validated mapping for all 48 World Cup teams. \| Current ratings are snapshots, not guaranteed pre-match historical ratings. \| |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 29 | `Elo` | data | - pre-match Elo or the closest valid rating strictly before kickoff; |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 33 | `xG` | data | shots on target, possession and provider xG. Sparse advanced statistics must |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 61 | `Elo` | data | 8. Join only pre-match Elo values or reconstruct Elo chronologically from results. |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 68 | `train` | data | - Split train, validation and test sets by date, never randomly across time. |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 71 | `train` | data | - Tune parameters only on train/validation periods. |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 73 | `train` | data | - Never train on future World Cup 2026 fixtures. |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 74 | `Elo` | data | - Never use final standings, post-match statistics or current Elo as if they |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 80 | `train` | data | train through T1 -> validate on T1..T2 |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 81 | `train` | data | train through T2 -> validate on T2..T3 |
-| `docs/HISTORICAL_DATA_STRATEGY.md` | 88 | `calibration` | data | Before model calibration, the historical dataset must pass: |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 11 | `Elo` | documentation | modal score for '72/72' baseline fixtures and for all Elo variants because the |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 12 | `xG` | documentation | baseline xG are neutral '1.35 / 1.35'. |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Dixon-Coles` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Dixon` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Poisson` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Elo` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 23 | `force` | documentation | - Do not force artificial prediction diversity. |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 32 | `xG` | documentation | - Uniform modal scores remain visible until validated inputs replace neutral xG. |
-| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 34 | `calibration` | documentation | - A replacement model must prove out-of-sample performance and calibration. |
 | `README.md` | 127 | `Elo` | documentation | Build and validate the explicit API-Football to Elo identity layer: |
 | `README.md` | 136 | `Elo` | documentation | Elo ratings to the prediction engine or alter probabilities. |
 | `README.md` | 138 | `Elo` | documentation | ## Experimental Elo model |
@@ -247,6 +122,64 @@ and the inventory outputs themselves are excluded.
 | `docs/BACKEND_MIGRATION_NOTES.md` | 65 | `Elo` | documentation | - Les paramètres xG/Elo, 'rho', la confiance et 'max_goals=5' ne sont pas |
 | `docs/BACKEND_MIGRATION_NOTES.md` | 68 | `backtest` | backtest | - Le backtest d'exemple mesure la réalisation d'un marché, pas la calibration |
 | `docs/BACKEND_MIGRATION_NOTES.md` | 68 | `calibration` | backtest | - Le backtest d'exemple mesure la réalisation d'un marché, pas la calibration |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 23 | `Elo` | documentation | -> optional bounded Elo adjustment |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 24 | `Dixon-Coles` | documentation | -> Poisson/Dixon-Coles score matrix |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 24 | `Dixon` | documentation | -> Poisson/Dixon-Coles score matrix |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 24 | `Poisson` | documentation | -> Poisson/Dixon-Coles score matrix |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 26 | `Elo` | documentation | -> baseline/Elo/comparison snapshots |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 31 | `Elo` | documentation | 'generate_predictions.generate_models("both")' for baseline and Elo outputs. |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 40 | `xG` | documentation | \| Baseline xG \| 'generate_predictions.baseline_expected_goals' \| Blends recent goals-for and goals-against inputs, then calls 'compute_lambdas'. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 41 | `xG` | documentation | \| Lambda helper \| 'expected_goals.compute_lambdas' \| Modulates xG with a logistic Elo-strength formula and optional home advantage. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 41 | `Elo` | documentation | \| Lambda helper \| 'expected_goals.compute_lambdas' \| Modulates xG with a logistic Elo-strength formula and optional home advantage. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 43 | `Elo` | documentation | \| Elo lookup \| 'elo_features.get_match_elo_features' \| Reads validated API-Football-to-Elo mappings. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 44 | `xG` | documentation | \| Elo variant \| 'elo_adjusted_model.adjust_expected_goals' \| Applies a bounded, moderate Elo factor to baseline xG. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 44 | `Elo` | documentation | \| Elo variant \| 'elo_adjusted_model.adjust_expected_goals' \| Applies a bounded, moderate Elo factor to baseline xG. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 45 | `Dixon-Coles` | data | \| Score matrix \| 'score_matrix.generate_score_matrix' \| Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 45 | `Dixon` | data | \| Score matrix \| 'score_matrix.generate_score_matrix' \| Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 45 | `Poisson` | data | \| Score matrix \| 'score_matrix.generate_score_matrix' \| Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 52 | `xG` | documentation | ## How baseline xG is generated |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 72 | `Elo` | documentation | It then calls 'compute_lambdas' with neutral input Elo, no home-field advantage |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 76 | `xG` | documentation | The xG are neutral because the active 2026 fixture feed does not itself provide |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 78 | `calibration` | documentation | features would falsely imply calibration, so V0.5 deliberately chose explicit |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 81 | `Dixon-Coles` | documentation | ## Poisson and Dixon-Coles matrix |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 81 | `Dixon` | documentation | ## Poisson and Dixon-Coles matrix |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 81 | `Poisson` | documentation | ## Poisson and Dixon-Coles matrix |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 87 | `Poisson` | documentation | Poisson(home_goals \| home_lambda) * Poisson(away_goals \| away_lambda) |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 111 | `Elo` | documentation | ## Elo injection and unchanged modal scores |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 113 | `Elo` | documentation | The baseline records mapped Elo values as metadata but does not use them. |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 114 | `Elo` | documentation | The separate Elo variant reads validated ratings and computes: |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 125 | `Elo` | documentation | enough to move another exact score above '1-1'; therefore baseline and Elo both |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 135 | `Elo` | documentation | - Elo predictions with 'engine_status = "experimental"' and |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 142 | `backtest` | backtest | calibration, no tournament simulation, no valid backtest for future fixtures, |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 142 | `calibration` | backtest | calibration, no tournament simulation, no valid backtest for future fixtures, |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 143 | `calibration` | documentation | no probabilistic calibration metrics, a finite matrix tail and a simple |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 150 | `xG` | documentation | - 'drc-prototype/optimizer.py': explicit xG/Elo formulas, |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 150 | `Elo` | documentation | - 'drc-prototype/optimizer.py': explicit xG/Elo formulas, |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `Dixon-Coles` | documentation | Poisson/Dixon-Coles and chronological optimization with log loss; |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `Dixon` | documentation | Poisson/Dixon-Coles and chronological optimization with log loss; |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `Poisson` | documentation | Poisson/Dixon-Coles and chronological optimization with log loss; |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 151 | `log loss` | metric | Poisson/Dixon-Coles and chronological optimization with log loss; |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 152 | `xG` | backtest | - 'drc-prototype/xg-backtest.js': rolling baseline and chronological backtest; |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 152 | `backtest` | backtest | - 'drc-prototype/xg-backtest.js': rolling baseline and chronological backtest; |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 153 | `backtest` | backtest | - 'drc-prototype/backtest.js': detailed validation history; |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 165 | `Poisson` | documentation | \| Statistical modeling \| No declared runtime library; current Poisson implementation uses standard-library 'math'. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 166 | `optuna` | dependency | \| Optimization \| 'scipy' and 'optuna' are explicitly listed as optional legacy optimizer candidates. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 166 | `scipy` | dependency | \| Optimization \| 'scipy' and 'optuna' are explicitly listed as optional legacy optimizer candidates. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `scikit` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `xgboost` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `lightgbm` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 167 | `catboost` | dependency | \| Machine learning \| No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 168 | `penaltyblog` | dependency | \| Football modeling \| No tracked dependency on 'penaltyblog'; football formulas are local. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 173 | `numpy` | dependency | 'numpy' is also explicitly listed as an optional legacy optimizer candidate. |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 174 | `scikit` | dependency | No clear historical dependency on 'pandas', 'statsmodels', 'scikit-learn', |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 174 | `statsmodels` | dependency | No clear historical dependency on 'pandas', 'statsmodels', 'scikit-learn', |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 174 | `pandas` | dependency | No clear historical dependency on 'pandas', 'statsmodels', 'scikit-learn', |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `penaltyblog` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `xgboost` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `lightgbm` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 175 | `catboost` | dependency | 'penaltyblog', 'xgboost', 'lightgbm' or 'catboost' was found. |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 191 | `calibration` | backtest | \| 'data_sources.json' \| Honest source, calibration and backtesting status. \| |
+| `docs/CURRENT_ENGINE_AUDIT.md` | 198 | `calibration` | documentation | explicit engine/calibration metadata. Any incompatible change requires a |
 | `docs/DATA_CONTRACTS.md` | 160 | `backtest` | backtest | ## Backtest result |
 | `docs/DATA_CONTRACTS.md` | 184 | `historique` | documentation | filtrer les échecs hors de l'historique. |
 | `docs/DATA_FOUNDATION.md` | 18 | `backtest` | backtest | \| 'backend/data/evaluated/' \| Résultats de backtest et mesures \| |
@@ -270,6 +203,64 @@ and the inventory outputs themselves are excluded.
 | `docs/ELO_MODEL_EXPERIMENT.md` | 19 | `expected goals` | documentation | Le baseline calcule d'abord ses expected goals selon sa logique existante. |
 | `docs/ELO_MODEL_EXPERIMENT.md` | 35 | `Elo` | documentation | - 'predictions_elo.json' : modèle Elo expérimental ; |
 | `docs/ELO_MODEL_EXPERIMENT.md` | 36 | `Elo` | documentation | - 'model_comparison.json' : deltas baseline vers Elo par match ; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 14 | `Elo` | documentation | \| Inputs \| Neutral '1.35 / 1.35', current mapped Elo \| Chronological results, attack/defence strength, neutral/home context, pre-match Elo \| Level 2 plus dynamic Elo, recent form, importance and consistent advanced stats |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Dixon-Coles` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Dixon` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Poisson` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 15 | `Elo` | documentation | \| Model \| Simple Poisson/Dixon-Coles; separate bounded Elo variant \| Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature \| Hybrid statistical/ML model with calibrated probability outputs  |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 16 | `calibration` | documentation | \| Parameters \| Hard-coded blend, 'rho=-0.05', Elo weight '0.20', clamp '±0.35' \| Fitted decay, attack/defence, neutral advantage, rho and Elo contribution \| Tuned feature sets, model families, ensembles and calibration l |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 16 | `Elo` | documentation | \| Parameters \| Hard-coded blend, 'rho=-0.05', Elo weight '0.20', clamp '±0.35' \| Fitted decay, attack/defence, neutral advantage, rho and Elo contribution \| Tuned feature sets, model families, ensembles and calibration l |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 18 | `optuna` | dependency | \| Training \| None \| Chronological fitting, likely SciPy or Optuna \| Automated tuning and model-family comparison \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 18 | `scipy` | dependency | \| Training \| None \| Chronological fitting, likely SciPy or Optuna \| Automated tuning and model-family comparison \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `calibration` | documentation | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `log loss` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `Brier` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `RPS` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 20 | `negative log likelihood` | metric | \| Metrics \| Diversity audit and market deltas \| Negative log likelihood/log loss, Brier score, RPS and calibration \| Level 2 plus segmented performance, drift and calibration monitoring \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 21 | `calibration` | documentation | \| Output JSON \| Existing stable snapshots \| Same contracts with new explicit model version/calibration metadata \| Same or deliberately versioned contracts \| |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 26 | `xG` | documentation | The current engine uses equal baseline xG for all 72 fixtures, a simple |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Dixon-Coles` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Dixon` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Poisson` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 27 | `Elo` | documentation | Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 28 | `calibration` | documentation | no fitting or historical calibration. Baseline and Elo both return '1-1' as |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 28 | `Elo` | documentation | no fitting or historical calibration. Baseline and Elo both return '1-1' as |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 43 | `Elo` | documentation | - pre-match Elo or a chronologically reconstructed Elo; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `Dixon-Coles` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `Dixon` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `Poisson` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 48 | `fit` | documentation | Fit a Poisson/Dixon-Coles model with team attack and defence strengths, |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 50 | `Elo` | documentation | correlation. Elo can act as a prior, regularizer or explicit feature, but its |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 53 | `expected goals` | documentation | The model should generate differentiated expected goals per match. It should |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 59 | `fit` | documentation | - Fit only on completed matches available before each evaluation date. |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 60 | `scipy` | dependency | - Use SciPy for a transparent likelihood optimizer first. |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 61 | `optuna` | dependency | - Consider Optuna only for bounded hyperparameter tuning after the objective |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 61 | `objective` | documentation | - Consider Optuna only for bounded hyperparameter tuning after the objective |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 70 | `log loss` | metric | - negative log likelihood / log loss for probabilistic fit; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 70 | `negative log likelihood` | metric | - negative log likelihood / log loss for probabilistic fit; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 70 | `fit` | documentation | - negative log likelihood / log loss for probabilistic fit; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 71 | `Brier` | metric | - Brier score for outcome probabilities; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 72 | `ranked probability score` | metric | - ranked probability score for ordered goal/outcome distributions; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 73 | `calibration` | documentation | - calibration curves and reliability by probability bucket; |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 82 | `Elo` | documentation | preselected algorithm. Candidate inputs include dynamic Elo, recent form, |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 83 | `xG` | documentation | competition importance, rest/travel context and consistent shot/xG features. |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 87 | `optuna` | dependency | Optuna may tune hyperparameters only inside chronological validation. Any |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 88 | `calibration` | documentation | probabilities should receive explicit calibration testing and, where justified, |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 89 | `calibration` | documentation | post-model calibration. A model registry should record data version, features, |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 90 | `calibration` | documentation | parameters, metrics, calibration status and promotion decision. |
+| `docs/FUTURE_ENGINE_BLUEPRINT.md` | 118 | `Elo` | documentation | and pre-match Elo feasibility. Produce a small audited historical sample and a |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 7 | `train` | data | V0.6 does not fetch history, train a model or alter current predictions. |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 14 | `Elo` | data | \| Elo Ratings \| 244 normalized ratings and validated mapping for all 48 World Cup teams. \| Current ratings are snapshots, not guaranteed pre-match historical ratings. \| |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 29 | `Elo` | data | - pre-match Elo or the closest valid rating strictly before kickoff; |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 33 | `xG` | data | shots on target, possession and provider xG. Sparse advanced statistics must |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 61 | `Elo` | data | 8. Join only pre-match Elo values or reconstruct Elo chronologically from results. |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 68 | `train` | data | - Split train, validation and test sets by date, never randomly across time. |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 71 | `train` | data | - Tune parameters only on train/validation periods. |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 73 | `train` | data | - Never train on future World Cup 2026 fixtures. |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 74 | `Elo` | data | - Never use final standings, post-match statistics or current Elo as if they |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 80 | `train` | data | train through T1 -> validate on T1..T2 |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 81 | `train` | data | train through T2 -> validate on T2..T3 |
+| `docs/HISTORICAL_DATA_STRATEGY.md` | 88 | `calibration` | data | Before model calibration, the historical dataset must pass: |
 | `docs/IGNORED_REQUIREMENTS.md` | 105 | `historique` | documentation | le détail d'un match, la matrice, les marchés et l'historique. |
 | `docs/MANUAL_VALIDATION_CHECKLISTS.md` | 157 | `historique` | documentation | * [ ] l'historique affiche les validations ET les échecs. |
 | `docs/MANUAL_VALIDATION_CHECKLISTS.md` | 202 | `Elo` | documentation | - [ ] Elo Ratings est testé. |
@@ -412,6 +403,15 @@ and the inventory outputs themselves are excluded.
 | `docs/VALIDATION_LOG.md` | 270 | `Elo` | documentation | - [ ] Baseline/Elo predictions and comparison checked |
 | `docs/VALIDATION_LOG.md` | 281 | `Elo` | documentation | baseline predictions, '72' Elo predictions and '72' model comparisons. |
 | `docs/VALIDATION_LOG.md` | 300 | `Elo` | documentation | - [x] 72 baseline and 72 Elo modal scores honestly reported as '1-1' |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 11 | `Elo` | documentation | modal score for '72/72' baseline fixtures and for all Elo variants because the |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 12 | `xG` | documentation | baseline xG are neutral '1.35 / 1.35'. |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Dixon-Coles` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Dixon` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Poisson` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 16 | `Elo` | documentation | Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 23 | `force` | documentation | - Do not force artificial prediction diversity. |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 32 | `xG` | documentation | - Uniform modal scores remain visible until validated inputs replace neutral xG. |
+| `docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md` | 34 | `calibration` | documentation | - A replacement model must prove out-of-sample performance and calibration. |
 | `handoff_worldcup_2026/ARCHITECTURE_NOTES.md` | 25 | `xG` | backtest | 'optimizer.py' est retenu comme référence des formules car ses fonctions sont explicites et son objectif de log loss est méthodologiquement plus solide. 'xg-backtest.js' est retenu pour la fenêtre glissante et l'ordre ch |
 | `handoff_worldcup_2026/ARCHITECTURE_NOTES.md` | 25 | `backtest` | backtest | 'optimizer.py' est retenu comme référence des formules car ses fonctions sont explicites et son objectif de log loss est méthodologiquement plus solide. 'xg-backtest.js' est retenu pour la fenêtre glissante et l'ordre ch |
 | `handoff_worldcup_2026/ARCHITECTURE_NOTES.md` | 25 | `log loss` | backtest | 'optimizer.py' est retenu comme référence des formules car ses fonctions sont explicites et son objectif de log loss est méthodologiquement plus solide. 'xg-backtest.js' est retenu pour la fenêtre glissante et l'ordre ch |

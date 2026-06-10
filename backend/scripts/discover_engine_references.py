@@ -75,7 +75,7 @@ def tracked_files() -> list[Path]:
             continue
         if raw_path in TOP_LEVEL_FILES or raw_path.startswith(ROOTS):
             paths.append(PROJECT_ROOT / raw_path)
-    return paths
+    return sorted(paths)
 
 
 def category_for(path: str, term: str, excerpt: str) -> str:
