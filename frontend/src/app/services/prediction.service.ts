@@ -4,6 +4,7 @@ import { map, Observable } from 'rxjs';
 import {
   MatchMarkets,
   MatchPrediction,
+  DataSourceType,
   ScoreMatrix,
   ScoreProbability,
 } from '../models/worldcup.models';
@@ -39,9 +40,13 @@ interface BackendMarkets {
 }
 
 interface BackendPrediction {
+  prediction_id: string;
   match_id: string;
   generated_at: string;
+  model_version: string;
   prediction_version: string;
+  data_source_type: DataSourceType;
+  is_real_data: boolean;
   score_matrix: BackendScoreMatrix;
   markets: BackendMarkets;
   confidence: MatchPrediction['confidence'];
@@ -60,9 +65,13 @@ export class PredictionService {
 
   private toPrediction(prediction: BackendPrediction): MatchPrediction {
     return {
+      predictionId: prediction.prediction_id,
       matchId: prediction.match_id,
       generatedAt: prediction.generated_at,
+      modelVersion: prediction.model_version,
       version: prediction.prediction_version,
+      dataSourceType: prediction.data_source_type,
+      isRealData: prediction.is_real_data,
       scoreMatrix: this.toScoreMatrix(prediction.score_matrix),
       markets: this.toMarkets(prediction.markets),
       confidence: prediction.confidence,

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { BacktestResult } from '../models/worldcup.models';
+import { BacktestResult, DataSourceType } from '../models/worldcup.models';
 
 interface BackendBacktestResult {
   match_id: string;
@@ -10,6 +10,8 @@ interface BackendBacktestResult {
   actual_result: boolean;
   validated: boolean;
   evaluated_at: string;
+  source_type: DataSourceType;
+  is_real_data: boolean;
 }
 
 interface BackendBacktestResponse {
@@ -30,6 +32,8 @@ export class BacktestingService {
           actualResult: result.actual_result,
           validated: result.validated,
           evaluatedAt: result.evaluated_at,
+          sourceType: result.source_type,
+          isRealData: result.is_real_data,
         })),
       ),
     );

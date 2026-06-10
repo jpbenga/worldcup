@@ -11,6 +11,9 @@
       {{ prediction.confidence }}
     </span>
   </div>
+  <div class="mt-4">
+    <app-data-source-badge [sourceType]="prediction.dataSourceType" [isRealData]="prediction.isRealData" />
+  </div>
 
   <div class="my-5 rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-4">
     <p class="text-xs uppercase tracking-wider text-cyan-300">Score le plus probable</p>

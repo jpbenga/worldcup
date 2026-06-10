@@ -13,8 +13,8 @@ uniquement les snapshots JSON générés par le backend.
 ## Flux de données
 
 ```text
-backend/data/*.json
-      -> copie
+backend/data/snapshots/*.json
+      -> publication automatique
 frontend/src/assets/data/*.json
       -> HttpClient + adaptateurs snake_case/camelCase
       -> composants Angular
@@ -22,9 +22,10 @@ frontend/src/assets/data/*.json
 
 Assets utilisés :
 
-- `frontend/src/assets/data/sample_matches.json`
+- `frontend/src/assets/data/matches.json`
 - `frontend/src/assets/data/predictions.json`
 - `frontend/src/assets/data/backtest_results.json`
+- `frontend/src/assets/data/data_sources.json`
 
 ## Services
 
@@ -33,10 +34,14 @@ Assets utilisés :
   `MatchPrediction`.
 - `BacktestingService` extrait le tableau `results` et retourne tous les
   `BacktestResult`, validés comme non validés.
+- `DataSourceService` charge le registre de provenance du snapshot.
 
 ## Composants
 
-- `HomeComponent` compose la page et charge les trois flux.
+- `HomeComponent` compose la page, charge les quatre flux et affiche l'état des
+  données.
+- `DataSourceBadgeComponent` distingue données démo, générées, évaluées et
+  réelles.
 - `MatchListComponent` affiche les prédictions disponibles.
 - `MatchCardComponent` résume un match, le score principal et le 1X2.
 - `MatchDetailComponent` affiche le snapshot sélectionné.
@@ -66,12 +71,7 @@ grilles responsives.
 Depuis la racine du dépôt :
 
 ```bash
-python3 backend/scripts/generate_sample_predictions.py
-python3 backend/scripts/run_sample_backtest.py
-
-cp backend/data/predictions.json frontend/src/assets/data/predictions.json
-cp backend/data/backtest_results.json frontend/src/assets/data/backtest_results.json
-cp backend/data/sample_matches.json frontend/src/assets/data/sample_matches.json
+python3 backend/scripts/build_snapshots.py
 ```
 
 ## Lancer le frontend
@@ -93,12 +93,7 @@ Workflow complet depuis la régénération des données jusqu'au serveur Angular
 ```bash
 cd "/Users/chloe/Desktop/dossier sans titre/worldcup"
 
-python3 backend/scripts/generate_sample_predictions.py
-python3 backend/scripts/run_sample_backtest.py
-
-cp backend/data/predictions.json frontend/src/assets/data/predictions.json
-cp backend/data/backtest_results.json frontend/src/assets/data/backtest_results.json
-cp backend/data/sample_matches.json frontend/src/assets/data/sample_matches.json
+python3 backend/scripts/build_snapshots.py
 
 cd frontend
 nvm use

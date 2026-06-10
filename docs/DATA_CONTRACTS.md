@@ -172,7 +172,9 @@ but et équipe qualifiée au lieu de surcharger `home_score` et `away_score`.
     "home_score": 1,
     "away_score": 0
   },
-  "evaluated_at": "2026-06-15T23:00:00Z"
+  "evaluated_at": "2026-06-15T23:00:00Z",
+  "source_type": "mock",
+  "is_real_data": false
 }
 ```
 
@@ -186,14 +188,17 @@ Règles :
   du snapshot original, jamais d'un recalcul postérieur.
 - Le backtesting n'évalue que des prédictions générées avant le coup d'envoi.
 
-## Fichiers JSON proposés pour la V1
+## Snapshots publiés en V0.2
 
 ```text
-backend/data/matches.json
-backend/data/predictions.json
-backend/data/results.json
-backend/data/backtest_results.json
+backend/data/snapshots/matches.json
+backend/data/snapshots/predictions.json
+backend/data/snapshots/backtest_results.json
+backend/data/snapshots/data_sources.json
 ```
 
-Chaque fichier peut contenir une liste de contrats du type correspondant. Ce
-flux statique est suffisant pour la première application Angular.
+Les données de travail restent séparées dans `mock/`, `raw/`, `normalized/`,
+`generated/` et `evaluated/`. `build_snapshots.py` publie les quatre contrats
+stables ci-dessus et les copie vers les assets Angular. La provenance est
+obligatoire pour distinguer les données de démonstration des futures données
+réelles.

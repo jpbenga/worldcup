@@ -12,12 +12,7 @@ des résultats fictifs.
 ```bash
 cd "/Users/chloe/Desktop/dossier sans titre/worldcup"
 
-python3 backend/scripts/generate_sample_predictions.py
-python3 backend/scripts/run_sample_backtest.py
-
-cp backend/data/predictions.json frontend/src/assets/data/predictions.json
-cp backend/data/backtest_results.json frontend/src/assets/data/backtest_results.json
-cp backend/data/sample_matches.json frontend/src/assets/data/sample_matches.json
+python3 backend/scripts/build_snapshots.py
 
 cd frontend
 nvm use
@@ -30,15 +25,16 @@ L'application est ensuite disponible sur `http://localhost:4200`.
 ## Backend
 
 ```bash
-python3 backend/scripts/generate_sample_predictions.py
-python3 backend/scripts/run_sample_backtest.py
+python3 backend/scripts/build_snapshots.py
 ```
 
 Les sorties sont écrites dans :
 
 ```text
-backend/data/predictions.json
-backend/data/backtest_results.json
+backend/data/snapshots/matches.json
+backend/data/snapshots/predictions.json
+backend/data/snapshots/backtest_results.json
+backend/data/snapshots/data_sources.json
 ```
 
 ## Frontend
@@ -71,3 +67,7 @@ npm run build
 
 Le moteur métier reste côté backend. Angular charge uniquement les snapshots
 copiés dans `frontend/src/assets/data/`.
+
+La structure et les règles de provenance sont détaillées dans
+`docs/DATA_FOUNDATION.md`. Les données actuelles sont des données de
+démonstration, clairement signalées dans l'interface.

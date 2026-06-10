@@ -91,8 +91,9 @@
   "results": [
     {
       "match_id": "france_senegal_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_france_senegal_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "home_win",
       "predicted_probability": 0.6595166966768848,
       "actual_result": true,
@@ -101,12 +102,15 @@
         "home_score": 1,
         "away_score": 0
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "france_senegal_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_france_senegal_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "home_or_draw",
       "predicted_probability": 0.8765034912144948,
       "actual_result": true,
@@ -115,12 +119,15 @@
         "home_score": 1,
         "away_score": 0
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "france_senegal_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_france_senegal_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "over_1_5",
       "predicted_probability": 0.7494836778220455,
       "actual_result": false,
@@ -129,12 +136,15 @@
         "home_score": 1,
         "away_score": 0
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "france_senegal_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_france_senegal_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "btts_yes",
       "predicted_probability": 0.4433648836569366,
       "actual_result": false,
@@ -143,12 +153,15 @@
         "home_score": 1,
         "away_score": 0
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "brazil_japan_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_brazil_japan_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "home_win",
       "predicted_probability": 0.6909019604262213,
       "actual_result": true,
@@ -157,12 +170,15 @@
         "home_score": 2,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "brazil_japan_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_brazil_japan_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "home_or_draw",
       "predicted_probability": 0.8847274494389312,
       "actual_result": true,
@@ -171,12 +187,15 @@
         "home_score": 2,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "brazil_japan_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_brazil_japan_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "over_1_5",
       "predicted_probability": 0.8031690585989099,
       "actual_result": true,
@@ -185,12 +204,15 @@
         "home_score": 2,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "brazil_japan_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_brazil_japan_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "btts_yes",
       "predicted_probability": 0.4888859772929634,
       "actual_result": true,
@@ -199,12 +221,15 @@
         "home_score": 2,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "canada_morocco_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_canada_morocco_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "home_win",
       "predicted_probability": 0.18629751602187705,
       "actual_result": false,
@@ -213,12 +238,15 @@
         "home_score": 0,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "canada_morocco_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_canada_morocco_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "home_or_draw",
       "predicted_probability": 0.42778464493866053,
       "actual_result": false,
@@ -227,12 +255,15 @@
         "home_score": 0,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "canada_morocco_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_canada_morocco_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "over_1_5",
       "predicted_probability": 0.7624647269679631,
       "actual_result": false,
@@ -241,12 +272,15 @@
         "home_score": 0,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     },
     {
       "match_id": "canada_morocco_001",
-      "prediction_version": "sample-v1",
-      "generated_at": "2026-06-10T06:36:20Z",
+      "prediction_id": "pred_canada_morocco_001_v0.2.0",
+      "model_version": "0.2.0",
+      "generated_at": "2026-06-10T07:01:45Z",
       "market_name": "btts_yes",
       "predicted_probability": 0.5115200550196489,
       "actual_result": false,
@@ -255,7 +289,9 @@
         "home_score": 0,
         "away_score": 1
       },
-      "evaluated_at": "2026-06-10T06:36:21Z"
+      "evaluated_at": "2026-06-10T07:01:45Z",
+      "source_type": "mock",
+      "is_real_data": false
     }
   ]
 }

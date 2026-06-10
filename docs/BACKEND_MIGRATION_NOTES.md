@@ -5,11 +5,15 @@
 Le dossier `backend/` fournit un premier pipeline autonome et simple :
 
 ```text
-sample_matches.json
-      -> generate_sample_predictions.py
-      -> predictions.json
-      -> run_sample_backtest.py
-      -> backtest_results.json
+data/mock/sample_matches.json
+      -> normalize_matches.py
+      -> data/normalized/matches.json
+      -> generate_predictions.py
+      -> data/generated/predictions.json
+      -> run_backtest.py
+      -> data/evaluated/backtest_results.json
+      -> build_snapshots.py
+      -> data/snapshots/*.json + frontend assets
 ```
 
 Le dossier `handoff_worldcup_2026/` reste intact comme source d'origine.
@@ -28,29 +32,31 @@ relatif de `market_derivation.py` reste valide dans le package `backend`.
 
 ## Adaptateurs ajoutés
 
-`backend/scripts/generate_sample_predictions.py` :
+`backend/scripts/generate_predictions.py` :
 
 - approxime les xG de base avec un mélange simple forme offensive/défensive ;
 - utilise `compute_lambdas`, `generate_score_matrix` et `derive_markets` ;
 - convertit la matrice runtime `{score: probability}` vers le contrat JSON ;
 - sépare les top scores des marchés ;
-- écrit un snapshot `sample-v1` dans `backend/data/predictions.json`.
+- écrit les prédictions versionnées dans `backend/data/generated/predictions.json`.
 
-`backend/scripts/run_sample_backtest.py` :
+`backend/scripts/run_backtest.py` :
 
 - utilise le backtester copié pour le résumé ;
 - évalue quatre marchés ;
 - conserve les validations et les échecs avec la version, la probabilité et le
   résultat réel ;
-- écrit `backend/data/backtest_results.json`.
+- écrit `backend/data/evaluated/backtest_results.json`.
+
+Les anciens scripts `generate_sample_predictions.py` et
+`run_sample_backtest.py` restent disponibles comme wrappers de compatibilité.
 
 ## Commandes
 
 Depuis la racine Git opérationnelle :
 
 ```bash
-python3 backend/scripts/generate_sample_predictions.py
-python3 backend/scripts/run_sample_backtest.py
+python3 backend/scripts/build_snapshots.py
 ```
 
 ## Points de vigilance

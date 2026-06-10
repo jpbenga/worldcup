@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { Match } from '../models/worldcup.models';
+import { DataSourceType, Match } from '../models/worldcup.models';
 
 interface BackendMatch {
   match_id: string;
@@ -14,6 +14,9 @@ interface BackendMatch {
   status: Match['status'];
   home_score?: number;
   away_score?: number;
+  source_type: DataSourceType;
+  source_name: string;
+  is_real_fixture: boolean;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -21,7 +24,7 @@ export class MatchService {
   private readonly http = inject(HttpClient);
 
   getMatches(): Observable<Match[]> {
-    return this.http.get<BackendMatch[]>('assets/data/sample_matches.json').pipe(
+    return this.http.get<BackendMatch[]>('assets/data/matches.json').pipe(
       map((matches) =>
         matches.map((match) => ({
           id: match.match_id,
@@ -34,6 +37,9 @@ export class MatchService {
           status: match.status,
           homeScore: match.home_score,
           awayScore: match.away_score,
+          sourceType: match.source_type,
+          sourceName: match.source_name,
+          isRealFixture: match.is_real_fixture,
         })),
       ),
     );

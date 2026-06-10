@@ -1,8 +1,12 @@
 [
   {
+    "prediction_id": "pred_france_senegal_001_v0.2.0",
     "match_id": "france_senegal_001",
-    "generated_at": "2026-06-10T06:36:20Z",
-    "prediction_version": "sample-v1",
+    "generated_at": "2026-06-10T07:01:45Z",
+    "model_version": "0.2.0",
+    "prediction_version": "v0.2.0",
+    "data_source_type": "mock",
+    "is_real_data": false,
     "score_matrix": {
       "match_id": "france_senegal_001",
       "max_goals": 5,
@@ -276,9 +280,13 @@
     ]
   },
   {
+    "prediction_id": "pred_brazil_japan_001_v0.2.0",
     "match_id": "brazil_japan_001",
-    "generated_at": "2026-06-10T06:36:20Z",
-    "prediction_version": "sample-v1",
+    "generated_at": "2026-06-10T07:01:45Z",
+    "model_version": "0.2.0",
+    "prediction_version": "v0.2.0",
+    "data_source_type": "mock",
+    "is_real_data": false,
     "score_matrix": {
       "match_id": "brazil_japan_001",
       "max_goals": 5,
@@ -552,9 +560,13 @@
     ]
   },
   {
+    "prediction_id": "pred_canada_morocco_001_v0.2.0",
     "match_id": "canada_morocco_001",
-    "generated_at": "2026-06-10T06:36:20Z",
-    "prediction_version": "sample-v1",
+    "generated_at": "2026-06-10T07:01:45Z",
+    "model_version": "0.2.0",
+    "prediction_version": "v0.2.0",
+    "data_source_type": "mock",
+    "is_real_data": false,
     "score_matrix": {
       "match_id": "canada_morocco_001",
       "max_goals": 5,

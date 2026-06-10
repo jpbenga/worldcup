@@ -1,3 +1,21 @@
+export type DataSourceType = 'mock' | 'raw' | 'normalized' | 'generated' | 'evaluated' | 'manual' | 'api';
+
+export interface DataSourceInfo {
+  id: string;
+  label: string;
+  sourceType: DataSourceType;
+  sourceName: string;
+  isRealData: boolean;
+  path: string;
+  description: string;
+}
+
+export interface DataSourcesSnapshot {
+  version: string;
+  updatedAt: string;
+  sources: DataSourceInfo[];
+}
+
 export interface Match {
   id: string;
   homeTeam: string;
@@ -9,6 +27,9 @@ export interface Match {
   status: 'scheduled' | 'live' | 'finished';
   homeScore?: number;
   awayScore?: number;
+  sourceType: DataSourceType;
+  sourceName: string;
+  isRealFixture: boolean;
 }
 
 export interface ScoreProbability {
@@ -42,9 +63,13 @@ export interface MatchMarkets {
 }
 
 export interface MatchPrediction {
+  predictionId: string;
   matchId: string;
   generatedAt: string;
+  modelVersion: string;
   version: string;
+  dataSourceType: DataSourceType;
+  isRealData: boolean;
   scoreMatrix: ScoreMatrix;
   markets: MatchMarkets;
   confidence: 'low' | 'medium' | 'high';
@@ -58,4 +83,6 @@ export interface BacktestResult {
   actualResult: boolean;
   validated: boolean;
   evaluatedAt: string;
+  sourceType: DataSourceType;
+  isRealData: boolean;
 }

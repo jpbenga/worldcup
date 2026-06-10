@@ -1,4 +1,4 @@
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { combineLatest } from 'rxjs';
 import { Match, MatchPrediction } from '../../models/worldcup.models';
@@ -9,11 +9,15 @@ import { MatchDetailComponent } from '../../components/match-detail/match-detail
 import { MatchListComponent } from '../../components/match-list/match-list.component';
 import { PredictionHistoryComponent } from '../../components/prediction-history/prediction-history.component';
 import { ResponsibleNoticeComponent } from '../../components/responsible-notice/responsible-notice.component';
+import { DataSourceBadgeComponent } from '../../components/data-source-badge/data-source-badge.component';
+import { DataSourceService } from '../../services/data-source.service';
 
 @Component({
   selector: 'app-home',
   imports: [
     AsyncPipe,
+    DatePipe,
+    DataSourceBadgeComponent,
     MatchDetailComponent,
     MatchListComponent,
     PredictionHistoryComponent,
@@ -26,12 +30,14 @@ export class HomeComponent {
   private readonly matchService = inject(MatchService);
   private readonly predictionService = inject(PredictionService);
   private readonly backtestingService = inject(BacktestingService);
+  private readonly dataSourceService = inject(DataSourceService);
 
   readonly selectedPrediction = signal<MatchPrediction | null>(null);
   readonly viewModel$ = combineLatest({
     matches: this.matchService.getMatches(),
     predictions: this.predictionService.getPredictions(),
     backtests: this.backtestingService.getResults(),
+    dataSources: this.dataSourceService.getSnapshot(),
   });
 
   selectPrediction(prediction: MatchPrediction): void {

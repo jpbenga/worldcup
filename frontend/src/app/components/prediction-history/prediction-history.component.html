@@ -15,6 +15,7 @@
           <th class="px-5 py-3 font-medium">Marché</th>
           <th class="px-5 py-3 font-medium">Probabilité</th>
           <th class="px-5 py-3 font-medium">Résultat</th>
+          <th class="px-5 py-3 font-medium">Source</th>
           <th class="px-5 py-3 font-medium">Évalué le</th>
         </tr>
       </thead>
@@ -34,6 +35,9 @@
               >
                 {{ result.validated ? 'Validé' : 'Non validé' }}
               </span>
+            </td>
+            <td class="px-5 py-4">
+              <app-data-source-badge [sourceType]="result.sourceType" [isRealData]="result.isRealData" />
             </td>
             <td class="px-5 py-4 text-slate-500">{{ result.evaluatedAt | date: 'd MMM y, HH:mm' }}</td>
           </tr>

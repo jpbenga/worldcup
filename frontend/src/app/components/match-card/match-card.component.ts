@@ -1,10 +1,11 @@
 import { DatePipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Match, MatchPrediction } from '../../models/worldcup.models';
+import { DataSourceBadgeComponent } from '../data-source-badge/data-source-badge.component';
 
 @Component({
   selector: 'app-match-card',
-  imports: [DatePipe, PercentPipe],
+  imports: [DatePipe, PercentPipe, DataSourceBadgeComponent],
   templateUrl: './match-card.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

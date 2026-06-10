@@ -1,10 +1,11 @@
 import { DatePipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { BacktestResult, Match } from '../../models/worldcup.models';
+import { DataSourceBadgeComponent } from '../data-source-badge/data-source-badge.component';
 
 @Component({
   selector: 'app-prediction-history',
-  imports: [DatePipe, PercentPipe],
+  imports: [DatePipe, PercentPipe, DataSourceBadgeComponent],
   templateUrl: './prediction-history.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

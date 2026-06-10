@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "updated_at": "2026-06-10T07:01:45Z",
+  "sources": [
+    {
+      "id": "sample_matches",
+      "label": "Sample matches",
+      "source_type": "mock",
+      "source_name": "local_sample_file",
+      "is_real_data": false,
+      "path": "backend/data/mock/sample_matches.json",
+      "description": "Données de démonstration utilisées pour tester le pipeline."
+    },
+    {
+      "id": "normalized_matches",
+      "label": "Normalized matches",
+      "source_type": "normalized",
+      "source_name": "local_normalizer",
+      "is_real_data": false,
+      "path": "backend/data/normalized/matches.json",
+      "description": "Matchs mock convertis au format interne de l’application."
+    },
+    {
+      "id": "predictions",
+      "label": "Generated predictions",
+      "source_type": "generated",
+      "source_name": "backend_prediction_pipeline",
+      "is_real_data": false,
+      "path": "backend/data/generated/predictions.json",
+      "description": "Prédictions générées à partir des matchs normalisés mock."
+    },
+    {
+      "id": "backtest_results",
+      "label": "Backtest results",
+      "source_type": "evaluated",
+      "source_name": "sample_backtest_pipeline",
+      "is_real_data": false,
+      "path": "backend/data/evaluated/backtest_results.json",
+      "description": "Backtests de démonstration sur les prédictions mock."
+    }
+  ]
+}
