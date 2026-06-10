@@ -98,14 +98,16 @@ Install the minimal Python dependencies, then run controlled explorations:
 
 ```bash
 python3 -m pip install -r backend/requirements.txt
+python3 -m playwright install chromium
 
 python3 backend/scripts/explore_api_football.py --mode ping
 python3 backend/scripts/explore_api_football.py --mode discovery
 python3 backend/scripts/explore_api_football.py --mode worldcup
 python3 backend/scripts/explore_api_football.py --mode samples
 
-python3 backend/scripts/explore_elo_ratings.py --mode discovery
-python3 backend/scripts/explore_elo_ratings.py --mode sample
+python3 backend/scripts/explore_elo_ratings.py --mode raw-html
+python3 backend/scripts/explore_elo_ratings.py --mode network
+python3 backend/scripts/explore_elo_ratings.py --mode rendered-table
 python3 backend/scripts/normalize_external_data.py
 ```
 

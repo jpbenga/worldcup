@@ -3,14 +3,19 @@
 from __future__ import annotations
 
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from backend.data_acquisition.elo_ratings_client import EloRatingsClient
+
 DATA_ROOT = PROJECT_ROOT / "backend" / "data"
 API_SAMPLES = DATA_ROOT / "raw" / "api_football" / "samples"
-ELO_SAMPLE = DATA_ROOT / "raw" / "elo" / "samples" / "elo_ratings_sample.json"
+ELO_SAMPLE = DATA_ROOT / "raw" / "elo" / "samples" / "elo_rankings_rendered_table.json"
 NORMALIZED = DATA_ROOT / "normalized"
 
 
@@ -75,6 +80,9 @@ def normalize_teams() -> list[dict[str, Any]]:
 
 def normalize_ratings() -> list[dict[str, Any]]:
     retrieved_at = utc_now()
+    client = EloRatingsClient()
+    structured = client.parse_world_tsv()
+    source_rows = structured if client.rankings_are_reliable(structured) else items(ELO_SAMPLE)
     return [
         {
             "team_name": item.get("team_name"),
@@ -83,10 +91,10 @@ def normalize_ratings() -> list[dict[str, Any]]:
             "rank": item.get("rank"),
             "source_type": "elo",
             "source_name": "eloratings.net",
-            "source_url": "https://eloratings.net/",
+            "source_url": "https://www.eloratings.net/",
             "retrieved_at": retrieved_at,
         }
-        for item in items(ELO_SAMPLE)
+        for item in source_rows
     ]
 
 

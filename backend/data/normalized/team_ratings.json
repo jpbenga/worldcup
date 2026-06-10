@@ -1,1 +1,2442 @@
-[]
+[
+  {
+    "team_name": "Spain",
+    "country_code": null,
+    "elo_rating": 2157,
+    "rank": 1,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Argentina",
+    "country_code": null,
+    "elo_rating": 2114,
+    "rank": 2,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "France",
+    "country_code": null,
+    "elo_rating": 2063,
+    "rank": 3,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "England",
+    "country_code": null,
+    "elo_rating": 2021,
+    "rank": 4,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Brazil",
+    "country_code": null,
+    "elo_rating": 1991,
+    "rank": 5,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Portugal",
+    "country_code": null,
+    "elo_rating": 1986,
+    "rank": 6,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Colombia",
+    "country_code": null,
+    "elo_rating": 1982,
+    "rank": 7,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Netherlands",
+    "country_code": null,
+    "elo_rating": 1948,
+    "rank": 8,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Ecuador",
+    "country_code": null,
+    "elo_rating": 1938,
+    "rank": 9,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Germany",
+    "country_code": null,
+    "elo_rating": 1932,
+    "rank": 10,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Norway",
+    "country_code": null,
+    "elo_rating": 1914,
+    "rank": 11,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Croatia",
+    "country_code": null,
+    "elo_rating": 1912,
+    "rank": 12,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Turkey",
+    "country_code": null,
+    "elo_rating": 1911,
+    "rank": 13,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Japan",
+    "country_code": null,
+    "elo_rating": 1906,
+    "rank": 14,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Belgium",
+    "country_code": null,
+    "elo_rating": 1894,
+    "rank": 15,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Uruguay",
+    "country_code": null,
+    "elo_rating": 1892,
+    "rank": 16,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Switzerland",
+    "country_code": null,
+    "elo_rating": 1891,
+    "rank": 17,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Mexico",
+    "country_code": null,
+    "elo_rating": 1875,
+    "rank": 18,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Denmark",
+    "country_code": null,
+    "elo_rating": 1869,
+    "rank": 19,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Italy",
+    "country_code": null,
+    "elo_rating": 1869,
+    "rank": 19,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Senegal",
+    "country_code": null,
+    "elo_rating": 1860,
+    "rank": 21,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Paraguay",
+    "country_code": null,
+    "elo_rating": 1834,
+    "rank": 22,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Austria",
+    "country_code": null,
+    "elo_rating": 1830,
+    "rank": 23,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Morocco",
+    "country_code": null,
+    "elo_rating": 1827,
+    "rank": 24,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Canada",
+    "country_code": null,
+    "elo_rating": 1788,
+    "rank": 25,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Scotland",
+    "country_code": null,
+    "elo_rating": 1782,
+    "rank": 26,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Ukraine",
+    "country_code": null,
+    "elo_rating": 1780,
+    "rank": 27,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Australia",
+    "country_code": null,
+    "elo_rating": 1777,
+    "rank": 28,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Iran",
+    "country_code": null,
+    "elo_rating": 1772,
+    "rank": 29,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Russia",
+    "country_code": null,
+    "elo_rating": 1772,
+    "rank": 29,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Nigeria",
+    "country_code": null,
+    "elo_rating": 1770,
+    "rank": 31,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Algeria",
+    "country_code": null,
+    "elo_rating": 1760,
+    "rank": 32,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "South Korea",
+    "country_code": null,
+    "elo_rating": 1758,
+    "rank": 33,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Greece",
+    "country_code": null,
+    "elo_rating": 1744,
+    "rank": 34,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Czechia",
+    "country_code": null,
+    "elo_rating": 1740,
+    "rank": 35,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Serbia",
+    "country_code": null,
+    "elo_rating": 1734,
+    "rank": 36,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Panama",
+    "country_code": null,
+    "elo_rating": 1730,
+    "rank": 37,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "United States",
+    "country_code": null,
+    "elo_rating": 1726,
+    "rank": 38,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Venezuela",
+    "country_code": null,
+    "elo_rating": 1722,
+    "rank": 39,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Chile",
+    "country_code": null,
+    "elo_rating": 1717,
+    "rank": 40,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Kosovo",
+    "country_code": null,
+    "elo_rating": 1715,
+    "rank": 41,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Uzbekistan",
+    "country_code": null,
+    "elo_rating": 1714,
+    "rank": 42,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Sweden",
+    "country_code": null,
+    "elo_rating": 1712,
+    "rank": 43,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Hungary",
+    "country_code": null,
+    "elo_rating": 1710,
+    "rank": 44,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Poland",
+    "country_code": null,
+    "elo_rating": 1710,
+    "rank": 44,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Peru",
+    "country_code": null,
+    "elo_rating": 1700,
+    "rank": 46,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Ireland",
+    "country_code": null,
+    "elo_rating": 1699,
+    "rank": 47,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Egypt",
+    "country_code": null,
+    "elo_rating": 1696,
+    "rank": 48,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Ivory Coast",
+    "country_code": null,
+    "elo_rating": 1695,
+    "rank": 49,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Wales",
+    "country_code": null,
+    "elo_rating": 1682,
+    "rank": 50,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Slovenia",
+    "country_code": null,
+    "elo_rating": 1682,
+    "rank": 50,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Jordan",
+    "country_code": null,
+    "elo_rating": 1680,
+    "rank": 52,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Slovakia",
+    "country_code": null,
+    "elo_rating": 1667,
+    "rank": 53,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Georgia",
+    "country_code": null,
+    "elo_rating": 1654,
+    "rank": 54,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "DR Congo",
+    "country_code": null,
+    "elo_rating": 1652,
+    "rank": 55,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Israel",
+    "country_code": null,
+    "elo_rating": 1647,
+    "rank": 56,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Romania",
+    "country_code": null,
+    "elo_rating": 1639,
+    "rank": 57,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bolivia",
+    "country_code": null,
+    "elo_rating": 1633,
+    "rank": 58,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Tunisia",
+    "country_code": null,
+    "elo_rating": 1628,
+    "rank": 59,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Iraq",
+    "country_code": null,
+    "elo_rating": 1618,
+    "rank": 60,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Albania",
+    "country_code": null,
+    "elo_rating": 1616,
+    "rank": 61,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cameroon",
+    "country_code": null,
+    "elo_rating": 1614,
+    "rank": 62,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Costa Rica",
+    "country_code": null,
+    "elo_rating": 1611,
+    "rank": 63,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Northern Ireland",
+    "country_code": null,
+    "elo_rating": 1605,
+    "rank": 64,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bosnia and Herzegovina",
+    "country_code": null,
+    "elo_rating": 1595,
+    "rank": 65,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "North Macedonia",
+    "country_code": null,
+    "elo_rating": 1589,
+    "rank": 66,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Mali",
+    "country_code": null,
+    "elo_rating": 1588,
+    "rank": 67,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cape Verde",
+    "country_code": null,
+    "elo_rating": 1578,
+    "rank": 68,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saudi Arabia",
+    "country_code": null,
+    "elo_rating": 1576,
+    "rank": 69,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Honduras",
+    "country_code": null,
+    "elo_rating": 1570,
+    "rank": 70,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Iceland",
+    "country_code": null,
+    "elo_rating": 1569,
+    "rank": 71,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "New Zealand",
+    "country_code": null,
+    "elo_rating": 1562,
+    "rank": 72,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Haiti",
+    "country_code": null,
+    "elo_rating": 1548,
+    "rank": 73,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Angola",
+    "country_code": null,
+    "elo_rating": 1542,
+    "rank": 74,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "United Arab Emirates",
+    "country_code": null,
+    "elo_rating": 1540,
+    "rank": 75,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Finland",
+    "country_code": null,
+    "elo_rating": 1536,
+    "rank": 76,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Burkina Faso",
+    "country_code": null,
+    "elo_rating": 1529,
+    "rank": 77,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Jamaica",
+    "country_code": null,
+    "elo_rating": 1527,
+    "rank": 78,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Belarus",
+    "country_code": null,
+    "elo_rating": 1522,
+    "rank": 79,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "South Africa",
+    "country_code": null,
+    "elo_rating": 1517,
+    "rank": 80,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Ghana",
+    "country_code": null,
+    "elo_rating": 1510,
+    "rank": 81,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Guatemala",
+    "country_code": null,
+    "elo_rating": 1504,
+    "rank": 82,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Oman",
+    "country_code": null,
+    "elo_rating": 1480,
+    "rank": 83,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Syria",
+    "country_code": null,
+    "elo_rating": 1479,
+    "rank": 84,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Palestine",
+    "country_code": null,
+    "elo_rating": 1465,
+    "rank": 85,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Guinea",
+    "country_code": null,
+    "elo_rating": 1463,
+    "rank": 86,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Montenegro",
+    "country_code": null,
+    "elo_rating": 1461,
+    "rank": 87,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bulgaria",
+    "country_code": null,
+    "elo_rating": 1458,
+    "rank": 88,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Luxembourg",
+    "country_code": null,
+    "elo_rating": 1450,
+    "rank": 89,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Northern Cyprus",
+    "country_code": null,
+    "elo_rating": 1442,
+    "rank": 90,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Curaçao",
+    "country_code": null,
+    "elo_rating": 1434,
+    "rank": 91,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Suriname",
+    "country_code": null,
+    "elo_rating": 1431,
+    "rank": 92,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Kazakhstan",
+    "country_code": null,
+    "elo_rating": 1428,
+    "rank": 93,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "China",
+    "country_code": null,
+    "elo_rating": 1424,
+    "rank": 94,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Kurdistan",
+    "country_code": null,
+    "elo_rating": 1424,
+    "rank": 94,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Qatar",
+    "country_code": null,
+    "elo_rating": 1421,
+    "rank": 96,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Libya",
+    "country_code": null,
+    "elo_rating": 1420,
+    "rank": 97,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Gambia",
+    "country_code": null,
+    "elo_rating": 1419,
+    "rank": 98,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bahrain",
+    "country_code": null,
+    "elo_rating": 1414,
+    "rank": 99,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Benin",
+    "country_code": null,
+    "elo_rating": 1405,
+    "rank": 100,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Gabon",
+    "country_code": null,
+    "elo_rating": 1401,
+    "rank": 101,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Uganda",
+    "country_code": null,
+    "elo_rating": 1394,
+    "rank": 102,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Trinidad and Tobago",
+    "country_code": null,
+    "elo_rating": 1386,
+    "rank": 103,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Faroe Islands",
+    "country_code": null,
+    "elo_rating": 1386,
+    "rank": 103,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Niger",
+    "country_code": null,
+    "elo_rating": 1382,
+    "rank": 105,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Madagascar",
+    "country_code": null,
+    "elo_rating": 1380,
+    "rank": 106,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Equatorial Guinea",
+    "country_code": null,
+    "elo_rating": 1380,
+    "rank": 106,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Togo",
+    "country_code": null,
+    "elo_rating": 1379,
+    "rank": 108,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Thailand",
+    "country_code": null,
+    "elo_rating": 1376,
+    "rank": 109,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "North Korea",
+    "country_code": null,
+    "elo_rating": 1375,
+    "rank": 110,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Comoros",
+    "country_code": null,
+    "elo_rating": 1374,
+    "rank": 111,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Armenia",
+    "country_code": null,
+    "elo_rating": 1373,
+    "rank": 112,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Zimbabwe",
+    "country_code": null,
+    "elo_rating": 1372,
+    "rank": 113,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Indonesia",
+    "country_code": null,
+    "elo_rating": 1372,
+    "rank": 113,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Zambia",
+    "country_code": null,
+    "elo_rating": 1371,
+    "rank": 115,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Kenya",
+    "country_code": null,
+    "elo_rating": 1363,
+    "rank": 116,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Estonia",
+    "country_code": null,
+    "elo_rating": 1360,
+    "rank": 117,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Vietnam",
+    "country_code": null,
+    "elo_rating": 1351,
+    "rank": 118,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Sudan",
+    "country_code": null,
+    "elo_rating": 1350,
+    "rank": 119,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Reunion",
+    "country_code": null,
+    "elo_rating": 1345,
+    "rank": 120,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "El Salvador",
+    "country_code": null,
+    "elo_rating": 1342,
+    "rank": 121,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Mozambique",
+    "country_code": null,
+    "elo_rating": 1342,
+    "rank": 121,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Sierra Leone",
+    "country_code": null,
+    "elo_rating": 1341,
+    "rank": 123,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Guadeloupe",
+    "country_code": null,
+    "elo_rating": 1338,
+    "rank": 124,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Rwanda",
+    "country_code": null,
+    "elo_rating": 1336,
+    "rank": 125,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Nicaragua",
+    "country_code": null,
+    "elo_rating": 1333,
+    "rank": 126,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Kuwait",
+    "country_code": null,
+    "elo_rating": 1332,
+    "rank": 127,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Mauritania",
+    "country_code": null,
+    "elo_rating": 1329,
+    "rank": 128,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Azerbaijan",
+    "country_code": null,
+    "elo_rating": 1322,
+    "rank": 129,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Zanzibar",
+    "country_code": null,
+    "elo_rating": 1320,
+    "rank": 130,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cyprus",
+    "country_code": null,
+    "elo_rating": 1314,
+    "rank": 131,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Tanzania",
+    "country_code": null,
+    "elo_rating": 1313,
+    "rank": 132,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Martinique",
+    "country_code": null,
+    "elo_rating": 1312,
+    "rank": 133,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Liberia",
+    "country_code": null,
+    "elo_rating": 1304,
+    "rank": 134,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Namibia",
+    "country_code": null,
+    "elo_rating": 1303,
+    "rank": 135,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Kyrgyzstan",
+    "country_code": null,
+    "elo_rating": 1295,
+    "rank": 136,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Malaysia",
+    "country_code": null,
+    "elo_rating": 1293,
+    "rank": 137,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Guyana",
+    "country_code": null,
+    "elo_rating": 1292,
+    "rank": 138,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Lebanon",
+    "country_code": null,
+    "elo_rating": 1288,
+    "rank": 139,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Latvia",
+    "country_code": null,
+    "elo_rating": 1288,
+    "rank": 139,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Ethiopia",
+    "country_code": null,
+    "elo_rating": 1287,
+    "rank": 141,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "New Caledonia",
+    "country_code": null,
+    "elo_rating": 1286,
+    "rank": 142,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Tajikistan",
+    "country_code": null,
+    "elo_rating": 1285,
+    "rank": 143,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Burundi",
+    "country_code": null,
+    "elo_rating": 1285,
+    "rank": 143,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Dominican Republic",
+    "country_code": null,
+    "elo_rating": 1283,
+    "rank": 145,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Lithuania",
+    "country_code": null,
+    "elo_rating": 1279,
+    "rank": 146,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Moldova",
+    "country_code": null,
+    "elo_rating": 1270,
+    "rank": 147,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Botswana",
+    "country_code": null,
+    "elo_rating": 1267,
+    "rank": 148,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Malta",
+    "country_code": null,
+    "elo_rating": 1255,
+    "rank": 149,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Guinea-Bissau",
+    "country_code": null,
+    "elo_rating": 1248,
+    "rank": 150,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cuba",
+    "country_code": null,
+    "elo_rating": 1239,
+    "rank": 151,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Malawi",
+    "country_code": null,
+    "elo_rating": 1239,
+    "rank": 151,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Central African Republic",
+    "country_code": null,
+    "elo_rating": 1236,
+    "rank": 153,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "French Guiana",
+    "country_code": null,
+    "elo_rating": 1223,
+    "rank": 154,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Mayotte",
+    "country_code": null,
+    "elo_rating": 1216,
+    "rank": 155,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Turkmenistan",
+    "country_code": null,
+    "elo_rating": 1209,
+    "rank": 156,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Congo",
+    "country_code": null,
+    "elo_rating": 1207,
+    "rank": 157,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Eritrea",
+    "country_code": null,
+    "elo_rating": 1201,
+    "rank": 158,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Lesotho",
+    "country_code": null,
+    "elo_rating": 1198,
+    "rank": 159,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Yemen",
+    "country_code": null,
+    "elo_rating": 1195,
+    "rank": 160,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Philippines",
+    "country_code": null,
+    "elo_rating": 1179,
+    "rank": 161,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Tahiti",
+    "country_code": null,
+    "elo_rating": 1177,
+    "rank": 162,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Eswatini",
+    "country_code": null,
+    "elo_rating": 1148,
+    "rank": 163,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saint Vincent and the Grenadines",
+    "country_code": null,
+    "elo_rating": 1141,
+    "rank": 164,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Papua New Guinea",
+    "country_code": null,
+    "elo_rating": 1135,
+    "rank": 165,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Puerto Rico",
+    "country_code": null,
+    "elo_rating": 1135,
+    "rank": 165,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Singapore",
+    "country_code": null,
+    "elo_rating": 1134,
+    "rank": 167,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "India",
+    "country_code": null,
+    "elo_rating": 1128,
+    "rank": 168,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Vanuatu",
+    "country_code": null,
+    "elo_rating": 1118,
+    "rank": 169,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bermuda",
+    "country_code": null,
+    "elo_rating": 1117,
+    "rank": 170,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "South Sudan",
+    "country_code": null,
+    "elo_rating": 1109,
+    "rank": 171,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Fiji",
+    "country_code": null,
+    "elo_rating": 1104,
+    "rank": 172,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Hong Kong",
+    "country_code": null,
+    "elo_rating": 1101,
+    "rank": 173,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Grenada",
+    "country_code": null,
+    "elo_rating": 1098,
+    "rank": 174,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Andorra",
+    "country_code": null,
+    "elo_rating": 1080,
+    "rank": 175,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Mauritius",
+    "country_code": null,
+    "elo_rating": 1073,
+    "rank": 176,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Chad",
+    "country_code": null,
+    "elo_rating": 1073,
+    "rank": 176,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Belize",
+    "country_code": null,
+    "elo_rating": 1073,
+    "rank": 176,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Solomon Islands",
+    "country_code": null,
+    "elo_rating": 1054,
+    "rank": 179,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saint Martin",
+    "country_code": null,
+    "elo_rating": 1042,
+    "rank": 180,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Sao Tome and Principe",
+    "country_code": null,
+    "elo_rating": 1035,
+    "rank": 181,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saint Kitts and Nevis",
+    "country_code": null,
+    "elo_rating": 1029,
+    "rank": 182,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Gibraltar",
+    "country_code": null,
+    "elo_rating": 1011,
+    "rank": 183,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Somaliland",
+    "country_code": null,
+    "elo_rating": 1005,
+    "rank": 184,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saint Lucia",
+    "country_code": null,
+    "elo_rating": 1003,
+    "rank": 185,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Western Sahara",
+    "country_code": null,
+    "elo_rating": 996,
+    "rank": 186,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Afghanistan",
+    "country_code": null,
+    "elo_rating": 990,
+    "rank": 187,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Myanmar",
+    "country_code": null,
+    "elo_rating": 984,
+    "rank": 188,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Somalia",
+    "country_code": null,
+    "elo_rating": 979,
+    "rank": 189,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Aruba",
+    "country_code": null,
+    "elo_rating": 978,
+    "rank": 190,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Sint Maarten",
+    "country_code": null,
+    "elo_rating": 975,
+    "rank": 191,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Montserrat",
+    "country_code": null,
+    "elo_rating": 972,
+    "rank": 192,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Greenland",
+    "country_code": null,
+    "elo_rating": 945,
+    "rank": 193,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bangladesh",
+    "country_code": null,
+    "elo_rating": 942,
+    "rank": 194,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Djibouti",
+    "country_code": null,
+    "elo_rating": 940,
+    "rank": 195,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Dominica",
+    "country_code": null,
+    "elo_rating": 934,
+    "rank": 196,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Monaco",
+    "country_code": null,
+    "elo_rating": 903,
+    "rank": 197,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Barbados",
+    "country_code": null,
+    "elo_rating": 898,
+    "rank": 198,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Antigua and Barbuda",
+    "country_code": null,
+    "elo_rating": 895,
+    "rank": 199,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Liechtenstein",
+    "country_code": null,
+    "elo_rating": 895,
+    "rank": 199,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Nepal",
+    "country_code": null,
+    "elo_rating": 893,
+    "rank": 201,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Pakistan",
+    "country_code": null,
+    "elo_rating": 880,
+    "rank": 202,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cambodia",
+    "country_code": null,
+    "elo_rating": 871,
+    "rank": 203,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Seychelles",
+    "country_code": null,
+    "elo_rating": 853,
+    "rank": 204,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Sri Lanka",
+    "country_code": null,
+    "elo_rating": 836,
+    "rank": 205,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "San Marino",
+    "country_code": null,
+    "elo_rating": 825,
+    "rank": 206,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Taiwan",
+    "country_code": null,
+    "elo_rating": 822,
+    "rank": 207,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bonaire",
+    "country_code": null,
+    "elo_rating": 817,
+    "rank": 208,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Maldives",
+    "country_code": null,
+    "elo_rating": 801,
+    "rank": 209,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cayman Islands",
+    "country_code": null,
+    "elo_rating": 800,
+    "rank": 210,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Chagos Islands",
+    "country_code": null,
+    "elo_rating": 782,
+    "rank": 211,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Tuvalu",
+    "country_code": null,
+    "elo_rating": 756,
+    "rank": 212,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "British Virgin Islands",
+    "country_code": null,
+    "elo_rating": 743,
+    "rank": 213,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Sint Eustatius",
+    "country_code": null,
+    "elo_rating": 737,
+    "rank": 214,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Laos",
+    "country_code": null,
+    "elo_rating": 734,
+    "rank": 215,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "East Timor",
+    "country_code": null,
+    "elo_rating": 734,
+    "rank": 215,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Samoa",
+    "country_code": null,
+    "elo_rating": 728,
+    "rank": 217,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Mongolia",
+    "country_code": null,
+    "elo_rating": 726,
+    "rank": 218,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saint Barthelemy",
+    "country_code": null,
+    "elo_rating": 725,
+    "rank": 219,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Guam",
+    "country_code": null,
+    "elo_rating": 706,
+    "rank": 220,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Wallis and Futuna",
+    "country_code": null,
+    "elo_rating": 699,
+    "rank": 221,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Vatican",
+    "country_code": null,
+    "elo_rating": 692,
+    "rank": 222,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saba",
+    "country_code": null,
+    "elo_rating": 691,
+    "rank": 223,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bahamas",
+    "country_code": null,
+    "elo_rating": 685,
+    "rank": 224,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Saint Pierre and Miquelon",
+    "country_code": null,
+    "elo_rating": 677,
+    "rank": 225,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Turks and Caicos Islands",
+    "country_code": null,
+    "elo_rating": 657,
+    "rank": 226,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Anguilla",
+    "country_code": null,
+    "elo_rating": 646,
+    "rank": 227,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Tibet",
+    "country_code": null,
+    "elo_rating": 629,
+    "rank": 228,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "US Virgin Islands",
+    "country_code": null,
+    "elo_rating": 628,
+    "rank": 229,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Bhutan",
+    "country_code": null,
+    "elo_rating": 623,
+    "rank": 230,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cook Islands",
+    "country_code": null,
+    "elo_rating": 622,
+    "rank": 231,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Macao",
+    "country_code": null,
+    "elo_rating": 589,
+    "rank": 232,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Christmas Island",
+    "country_code": null,
+    "elo_rating": 578,
+    "rank": 233,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Brunei",
+    "country_code": null,
+    "elo_rating": 572,
+    "rank": 234,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Falkland Islands",
+    "country_code": null,
+    "elo_rating": 571,
+    "rank": 235,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "FS Micronesia",
+    "country_code": null,
+    "elo_rating": 564,
+    "rank": 236,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Marshall Islands",
+    "country_code": null,
+    "elo_rating": 559,
+    "rank": 237,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Kiribati",
+    "country_code": null,
+    "elo_rating": 544,
+    "rank": 238,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Tonga",
+    "country_code": null,
+    "elo_rating": 520,
+    "rank": 239,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Niue",
+    "country_code": null,
+    "elo_rating": 496,
+    "rank": 240,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Northern Mariana Islands",
+    "country_code": null,
+    "elo_rating": 432,
+    "rank": 241,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Cocos Islands",
+    "country_code": null,
+    "elo_rating": 422,
+    "rank": 242,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Palau",
+    "country_code": null,
+    "elo_rating": 402,
+    "rank": 243,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  },
+  {
+    "team_name": "Eastern Samoa",
+    "country_code": null,
+    "elo_rating": 369,
+    "rank": 244,
+    "source_type": "elo",
+    "source_name": "eloratings.net",
+    "source_url": "https://www.eloratings.net/",
+    "retrieved_at": "2026-06-10T10:40:17Z"
+  }
+]

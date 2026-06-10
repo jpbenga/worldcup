@@ -1,0 +1,1710 @@
+[
+  {
+    "rank": 1,
+    "team_name": "Spain",
+    "elo_rating": 2157,
+    "raw_text": "1 | Spain | 2157 | 7 | 1946 | 0 | 0 | 782 | 341 | 302 | 139 | 462 | 138 | 182 | 1595 | 699",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 2,
+    "team_name": "Argentina",
+    "elo_rating": 2114,
+    "raw_text": "2 | Argentina | 2114 | 5 | 1987 | 0 | −32 | 1110 | 381 | 419 | 310 | 611 | 228 | 271 | 2114 | 1136",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 3,
+    "team_name": "France",
+    "elo_rating": 2063,
+    "raw_text": "3 | France | 2063 | 16 | 1795 | 0 | +8 | 940 | 475 | 341 | 124 | 475 | 270 | 195 | 1710 | 1275",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 4,
+    "team_name": "England",
+    "elo_rating": 2021,
+    "raw_text": "4 | England | 2021 | 4 | 1983 | +1 | +10 | 1161 | 509 | 524 | 128 | 684 | 215 | 262 | 2720 | 1118",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 5,
+    "team_name": "Brazil",
+    "elo_rating": 1991,
+    "raw_text": "5 | Brazil | 1991 | 4 | 1998 | +1 | −3 | 1067 | 373 | 346 | 348 | 672 | 172 | 223 | 2302 | 957",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 6,
+    "team_name": "Portugal",
+    "elo_rating": 1986,
+    "raw_text": "6 | Portugal | 1986 | 19 | 1797 | −2 | −44 | 695 | 321 | 262 | 112 | 347 | 189 | 159 | 1224 | 780",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 7,
+    "team_name": "Colombia",
+    "elo_rating": 1982,
+    "raw_text": "7 | Colombia | 1982 | 48 | 1621 | +1 | +46 | 650 | 185 | 229 | 236 | 267 | 205 | 178 | 847 | 742",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 8,
+    "team_name": "Netherlands",
+    "elo_rating": 1948,
+    "raw_text": "8 | Netherlands | 1948 | 15 | 1848 | −1 | −26 | 903 | 430 | 358 | 115 | 466 | 240 | 197 | 1894 | 1144",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 9,
+    "team_name": "Ecuador",
+    "elo_rating": 1938,
+    "raw_text": "9 | Ecuador | 1938 | 64 | 1525 | +2 | +29 | 600 | 183 | 211 | 206 | 185 | 254 | 161 | 724 | 904",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 10,
+    "team_name": "Germany",
+    "elo_rating": 1932,
+    "raw_text": "10 | Germany | 1932 | 8 | 1911 | 0 | +19 | 1047 | 470 | 416 | 161 | 606 | 224 | 217 | 2358 | 1233",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 11,
+    "team_name": "Norway",
+    "elo_rating": 1914,
+    "raw_text": "11 | Norway | 1914 | 38 | 1623 | +3 | +48 | 888 | 426 | 409 | 53 | 335 | 355 | 198 | 1377 | 1445",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 12,
+    "team_name": "Croatia",
+    "elo_rating": 1912,
+    "raw_text": "12 | Croatia | 1912 | 12 | 1881 | −3 | −15 | 400 | 158 | 167 | 75 | 210 | 84 | 106 | 696 | 404",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 13,
+    "team_name": "Turkey",
+    "elo_rating": 1911,
+    "raw_text": "13 | Turkey | 1911 | 43 | 1610 | +4 | +64 | 670 | 290 | 300 | 80 | 264 | 250 | 156 | 950 | 970",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 14,
+    "team_name": "Japan",
+    "elo_rating": 1906,
+    "raw_text": "14 | Japan | 1906 | 61 | 1467 | +2 | +52 | 836 | 332 | 207 | 297 | 409 | 257 | 170 | 1518 | 985",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 15,
+    "team_name": "Belgium",
+    "elo_rating": 1894,
+    "raw_text": "15 | Belgium | 1894 | 24 | 1755 | +2 | +47 | 878 | 416 | 376 | 86 | 392 | 302 | 184 | 1606 | 1359",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 16,
+    "team_name": "Uruguay",
+    "elo_rating": 1892,
+    "raw_text": "16 | Uruguay | 1892 | 12 | 1876 | −4 | +3 | 1019 | 336 | 432 | 251 | 446 | 321 | 252 | 1610 | 1254",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 17,
+    "team_name": "Switzerland",
+    "elo_rating": 1891,
+    "raw_text": "17 | Switzerland | 1891 | 27 | 1689 | +6 | +64 | 896 | 426 | 391 | 79 | 319 | 373 | 204 | 1338 | 1484",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 18,
+    "team_name": "Mexico",
+    "elo_rating": 1875,
+    "raw_text": "18 | Mexico | 1875 | 20 | 1783 | +7 | +73 | 1029 | 297 | 273 | 459 | 535 | 257 | 237 | 1829 | 1054",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 19,
+    "team_name": "Denmark",
+    "elo_rating": 1869,
+    "raw_text": "19 | Denmark | 1869 | 20 | 1799 | −4 | +5 | 905 | 414 | 396 | 95 | 420 | 298 | 187 | 1652 | 1221",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 19,
+    "team_name": "Italy",
+    "elo_rating": 1869,
+    "raw_text": "19 | Italy | 1869 | 8 | 1915 | −6 | −13 | 903 | 407 | 325 | 171 | 481 | 177 | 245 | 1581 | 894",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 21,
+    "team_name": "Senegal",
+    "elo_rating": 1860,
+    "raw_text": "21 | Senegal | 1860 | 56 | 1591 | +10 | +102 | 706 | 221 | 260 | 225 | 319 | 193 | 194 | 969 | 672",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 22,
+    "team_name": "Paraguay",
+    "elo_rating": 1834,
+    "raw_text": "22 | Paraguay | 1834 | 23 | 1755 | 0 | +2 | 789 | 215 | 365 | 209 | 277 | 303 | 209 | 1006 | 1115",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 23,
+    "team_name": "Austria",
+    "elo_rating": 1830,
+    "raw_text": "23 | Austria | 1830 | 20 | 1810 | −4 | −15 | 866 | 432 | 383 | 51 | 371 | 310 | 185 | 1561 | 1321",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 24,
+    "team_name": "Morocco",
+    "elo_rating": 1827,
+    "raw_text": "24 | Morocco | 1827 | 43 | 1657 | 0 | +15 | 730 | 319 | 219 | 192 | 365 | 165 | 200 | 1108 | 615",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 25,
+    "team_name": "Canada",
+    "elo_rating": 1788,
+    "raw_text": "25 | Canada | 1788 | 49 | 1599 | +2 | −8 | 490 | 154 | 200 | 136 | 190 | 185 | 115 | 629 | 624",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 26,
+    "team_name": "Scotland",
+    "elo_rating": 1782,
+    "raw_text": "26 | Scotland | 1782 | 14 | 1879 | +14 | +65 | 869 | 403 | 413 | 53 | 413 | 268 | 188 | 1503 | 1076",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 27,
+    "team_name": "Ukraine",
+    "elo_rating": 1780,
+    "raw_text": "27 | Ukraine | 1780 | 31 | 1745 | +1 | −11 | 340 | 134 | 146 | 60 | 154 | 91 | 95 | 478 | 358",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 28,
+    "team_name": "Australia",
+    "elo_rating": 1777,
+    "raw_text": "28 | Australia | 1777 | 35 | 1672 | +3 | +19 | 637 | 271 | 223 | 143 | 326 | 180 | 131 | 1290 | 716",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 29,
+    "team_name": "Iran",
+    "elo_rating": 1772,
+    "raw_text": "29 | Iran | 1772 | 40 | 1658 | −3 | −26 | 670 | 223 | 195 | 252 | 384 | 132 | 154 | 1275 | 525",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 29,
+    "team_name": "Russia",
+    "elo_rating": 1772,
+    "raw_text": "29 | Russia | 1772 | 24 | 1742 | 0 | −12 | 815 | 313 | 383 | 119 | 432 | 174 | 209 | 1482 | 779",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 31,
+    "team_name": "Nigeria",
+    "elo_rating": 1770,
+    "raw_text": "31 | Nigeria | 1770 | 38 | 1668 | +34 | +194 | 716 | 241 | 263 | 212 | 332 | 179 | 205 | 1080 | 723",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 32,
+    "team_name": "Algeria",
+    "elo_rating": 1760,
+    "raw_text": "32 | Algeria | 1760 | 48 | 1621 | +12 | +50 | 689 | 261 | 234 | 194 | 310 | 196 | 183 | 1053 | 703",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 33,
+    "team_name": "South Korea",
+    "elo_rating": 1758,
+    "raw_text": "33 | South Korea | 1758 | 35 | 1687 | −3 | −9 | 1052 | 353 | 255 | 444 | 573 | 221 | 258 | 1913 | 964",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 34,
+    "team_name": "Greece",
+    "elo_rating": 1744,
+    "raw_text": "34 | Greece | 1744 | 49 | 1559 | −13 | −92 | 658 | 299 | 296 | 63 | 251 | 250 | 157 | 835 | 909",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 35,
+    "team_name": "Czechia",
+    "elo_rating": 1740,
+    "raw_text": "35 | Czechia | 1740 | 13 | 1855 | 0 | −9 | 884 | 361 | 416 | 107 | 426 | 261 | 197 | 1629 | 1099",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 36,
+    "team_name": "Serbia",
+    "elo_rating": 1734,
+    "raw_text": "36 | Serbia | 1734 | 20 | 1787 | −16 | −103 | 862 | 302 | 424 | 136 | 403 | 267 | 192 | 1618 | 1181",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 37,
+    "team_name": "Panama",
+    "elo_rating": 1730,
+    "raw_text": "37 | Panama | 1730 | 99 | 1362 | +2 | +5 | 594 | 201 | 228 | 165 | 197 | 252 | 145 | 743 | 915",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 38,
+    "team_name": "United States",
+    "elo_rating": 1726,
+    "raw_text": "38 | United States | 1726 | 41 | 1642 | +4 | +14 | 827 | 489 | 253 | 85 | 367 | 287 | 173 | 1250 | 1077",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 39,
+    "team_name": "Venezuela",
+    "elo_rating": 1722,
+    "raw_text": "39 | Venezuela | 1722 | 84 | 1432 | −6 | −35 | 482 | 179 | 179 | 124 | 129 | 246 | 107 | 522 | 874",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 40,
+    "team_name": "Chile",
+    "elo_rating": 1717,
+    "raw_text": "40 | Chile | 1717 | 28 | 1678 | 0 | 0 | 854 | 328 | 308 | 218 | 319 | 347 | 188 | 1197 | 1219",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 41,
+    "team_name": "Kosovo",
+    "elo_rating": 1715,
+    "raw_text": "41 | Kosovo | 1715 | 102 | 1420 | +19 | +106 | 109 | 49 | 40 | 20 | 43 | 43 | 23 | 156 | 147",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 42,
+    "team_name": "Uzbekistan",
+    "elo_rating": 1714,
+    "raw_text": "42 | Uzbekistan | 1714 | 59 | 1596 | +5 | +20 | 367 | 130 | 129 | 108 | 180 | 112 | 75 | 636 | 402",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 43,
+    "team_name": "Sweden",
+    "elo_rating": 1712,
+    "raw_text": "43 | Sweden | 1712 | 17 | 1795 | −9 | −42 | 1120 | 490 | 500 | 130 | 549 | 336 | 235 | 2229 | 1487",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 44,
+    "team_name": "Hungary",
+    "elo_rating": 1710,
+    "raw_text": "44 | Hungary | 1710 | 20 | 1835 | +2 | +13 | 1035 | 469 | 492 | 74 | 489 | 324 | 222 | 2074 | 1527",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 44,
+    "team_name": "Poland",
+    "elo_rating": 1710,
+    "raw_text": "44 | Poland | 1710 | 30 | 1712 | +1 | +4 | 921 | 397 | 410 | 114 | 400 | 296 | 225 | 1564 | 1243",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 46,
+    "team_name": "Peru",
+    "elo_rating": 1700,
+    "raw_text": "46 | Peru | 1700 | 34 | 1679 | −9 | −40 | 710 | 266 | 253 | 191 | 229 | 305 | 176 | 860 | 991",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 47,
+    "team_name": "Ireland",
+    "elo_rating": 1699,
+    "raw_text": "47 | Ireland | 1699 | 24 | 1626 | +8 | +64 | 743 | 378 | 305 | 60 | 262 | 287 | 194 | 979 | 1161",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 48,
+    "team_name": "Egypt",
+    "elo_rating": 1696,
+    "raw_text": "48 | Egypt | 1696 | 37 | 1662 | +2 | +30 | 885 | 354 | 281 | 250 | 447 | 217 | 221 | 1546 | 923",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 49,
+    "team_name": "Ivory Coast",
+    "elo_rating": 1695,
+    "raw_text": "49 | Ivory Coast | 1695 | 45 | 1640 | +16 | +119 | 693 | 241 | 238 | 214 | 349 | 166 | 178 | 1132 | 696",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 50,
+    "team_name": "Wales",
+    "elo_rating": 1682,
+    "raw_text": "50 | Wales | 1682 | 22 | 1671 | −12 | −44 | 735 | 346 | 357 | 32 | 236 | 332 | 167 | 919 | 1176",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 50,
+    "team_name": "Slovenia",
+    "elo_rating": 1682,
+    "raw_text": "50 | Slovenia | 1682 | 54 | 1625 | −15 | −67 | 321 | 145 | 146 | 30 | 116 | 118 | 87 | 401 | 381",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 52,
+    "team_name": "Jordan",
+    "elo_rating": 1680,
+    "raw_text": "52 | Jordan | 1680 | 111 | 1324 | −1 | +24 | 585 | 201 | 193 | 191 | 207 | 220 | 158 | 730 | 717",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 53,
+    "team_name": "Slovakia",
+    "elo_rating": 1667,
+    "raw_text": "53 | Slovakia | 1667 | 40 | 1682 | −5 | −10 | 368 | 158 | 166 | 44 | 150 | 131 | 87 | 521 | 460",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 54,
+    "team_name": "Georgia",
+    "elo_rating": 1654,
+    "raw_text": "54 | Georgia | 1654 | 70 | 1553 | −11 | −57 | 321 | 141 | 148 | 32 | 107 | 146 | 68 | 415 | 444",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 55,
+    "team_name": "DR Congo",
+    "elo_rating": 1652,
+    "raw_text": "55 | DR Congo | 1652 | 62 | 1557 | +9 | +69 | 549 | 166 | 225 | 158 | 226 | 172 | 151 | 836 | 643",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 56,
+    "team_name": "Israel",
+    "elo_rating": 1647,
+    "raw_text": "56 | Israel | 1647 | 49 | 1621 | +1 | +30 | 524 | 249 | 213 | 62 | 197 | 207 | 120 | 804 | 764",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 57,
+    "team_name": "Romania",
+    "elo_rating": 1639,
+    "raw_text": "57 | Romania | 1639 | 29 | 1717 | −9 | −38 | 802 | 333 | 377 | 92 | 355 | 247 | 200 | 1306 | 1020",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 58,
+    "team_name": "Bolivia",
+    "elo_rating": 1633,
+    "raw_text": "58 | Bolivia | 1633 | 60 | 1509 | −4 | −3 | 537 | 189 | 205 | 143 | 122 | 294 | 121 | 551 | 1056",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 59,
+    "team_name": "Tunisia",
+    "elo_rating": 1628,
+    "raw_text": "59 | Tunisia | 1628 | 47 | 1616 | −1 | +15 | 777 | 337 | 253 | 187 | 330 | 231 | 216 | 1105 | 845",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 60,
+    "team_name": "Iraq",
+    "elo_rating": 1618,
+    "raw_text": "60 | Iraq | 1618 | 47 | 1622 | +18 | +100 | 761 | 139 | 232 | 390 | 360 | 189 | 212 | 1204 | 708",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 61,
+    "team_name": "Albania",
+    "elo_rating": 1616,
+    "raw_text": "61 | Albania | 1616 | 72 | 1504 | −8 | −23 | 410 | 192 | 185 | 33 | 116 | 209 | 85 | 396 | 604",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 62,
+    "team_name": "Cameroon",
+    "elo_rating": 1614,
+    "raw_text": "62 | Cameroon | 1614 | 53 | 1605 | +1 | +21 | 661 | 184 | 247 | 230 | 287 | 172 | 202 | 952 | 712",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 63,
+    "team_name": "Costa Rica",
+    "elo_rating": 1611,
+    "raw_text": "63 | Costa Rica | 1611 | 36 | 1690 | −11 | −42 | 790 | 259 | 282 | 249 | 356 | 243 | 191 | 1369 | 919",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 64,
+    "team_name": "Northern Ireland",
+    "elo_rating": 1605,
+    "raw_text": "64 | Northern Ireland | 1605 | 40 | 1655 | +8 | +51 | 612 | 276 | 298 | 38 | 172 | 290 | 150 | 645 | 928",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 65,
+    "team_name": "Bosnia and Herzegovina",
+    "elo_rating": 1595,
+    "raw_text": "65 | Bosnia and Herzegovina | 1595 | 53 | 1626 | +12 | +69 | 281 | 118 | 136 | 27 | 104 | 111 | 66 | 394 | 386",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 66,
+    "team_name": "North Macedonia",
+    "elo_rating": 1589,
+    "raw_text": "66 | North Macedonia | 1589 | 74 | 1534 | −10 | −45 | 305 | 141 | 134 | 30 | 95 | 131 | 79 | 364 | 411",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 67,
+    "team_name": "Mali",
+    "elo_rating": 1588,
+    "raw_text": "67 | Mali | 1588 | 70 | 1523 | −5 | −13 | 625 | 195 | 234 | 196 | 249 | 206 | 170 | 824 | 718",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 68,
+    "team_name": "Cape Verde",
+    "elo_rating": 1578,
+    "raw_text": "68 | Cape Verde | 1578 | 120 | 1302 | +10 | +60 | 253 | 80 | 91 | 82 | 96 | 97 | 60 | 273 | 278",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 69,
+    "team_name": "Saudi Arabia",
+    "elo_rating": 1576,
+    "raw_text": "69 | Saudi Arabia | 1576 | 76 | 1499 | −8 | −32 | 839 | 324 | 151 | 364 | 396 | 247 | 196 | 1283 | 896",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 70,
+    "team_name": "Honduras",
+    "elo_rating": 1570,
+    "raw_text": "70 | Honduras | 1570 | 63 | 1500 | −1 | +9 | 668 | 212 | 217 | 239 | 263 | 232 | 173 | 964 | 859",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 71,
+    "team_name": "Iceland",
+    "elo_rating": 1569,
+    "raw_text": "71 | Iceland | 1569 | 81 | 1425 | −1 | +12 | 526 | 216 | 251 | 59 | 160 | 262 | 104 | 635 | 882",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 72,
+    "team_name": "New Zealand",
+    "elo_rating": 1562,
+    "raw_text": "72 | New Zealand | 1562 | 66 | 1500 | −13 | −48 | 441 | 135 | 189 | 117 | 181 | 181 | 79 | 767 | 650",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 73,
+    "team_name": "Haiti",
+    "elo_rating": 1548,
+    "raw_text": "73 | Haiti | 1548 | 81 | 1418 | −3 | −9 | 563 | 181 | 196 | 186 | 247 | 198 | 118 | 962 | 761",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 74,
+    "team_name": "Angola",
+    "elo_rating": 1542,
+    "raw_text": "74 | Angola | 1542 | 86 | 1456 | 0 | +3 | 475 | 166 | 184 | 125 | 176 | 140 | 159 | 579 | 490",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 75,
+    "team_name": "United Arab Emirates",
+    "elo_rating": 1540,
+    "raw_text": "75 | United Arab Emirates | 1540 | 98 | 1395 | −2 | −4 | 674 | 287 | 141 | 246 | 263 | 238 | 173 | 933 | 831",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 76,
+    "team_name": "Finland",
+    "elo_rating": 1536,
+    "raw_text": "76 | Finland | 1536 | 62 | 1500 | −1 | +4 | 825 | 337 | 430 | 58 | 217 | 441 | 167 | 972 | 1699",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 77,
+    "team_name": "Burkina Faso",
+    "elo_rating": 1529,
+    "raw_text": "77 | Burkina Faso | 1529 | 98 | 1402 | +5 | +27 | 493 | 154 | 188 | 151 | 170 | 192 | 131 | 614 | 677",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 78,
+    "team_name": "Jamaica",
+    "elo_rating": 1527,
+    "raw_text": "78 | Jamaica | 1527 | 83 | 1413 | −11 | −42 | 719 | 272 | 268 | 179 | 280 | 272 | 167 | 961 | 942",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 79,
+    "team_name": "Belarus",
+    "elo_rating": 1522,
+    "raw_text": "79 | Belarus | 1522 | 80 | 1505 | +4 | +21 | 308 | 105 | 158 | 45 | 91 | 137 | 80 | 348 | 445",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 80,
+    "team_name": "South Africa",
+    "elo_rating": 1517,
+    "raw_text": "80 | South Africa | 1517 | 32 | 1707 | −13 | −52 | 526 | 276 | 161 | 89 | 231 | 141 | 154 | 720 | 543",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 81,
+    "team_name": "Ghana",
+    "elo_rating": 1510,
+    "raw_text": "81 | Ghana | 1510 | 42 | 1651 | +6 | +33 | 779 | 247 | 298 | 234 | 370 | 213 | 196 | 1248 | 823",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 82,
+    "team_name": "Guatemala",
+    "elo_rating": 1504,
+    "raw_text": "82 | Guatemala | 1504 | 68 | 1486 | +2 | +4 | 628 | 205 | 180 | 243 | 225 | 237 | 166 | 878 | 858",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 83,
+    "team_name": "Oman",
+    "elo_rating": 1480,
+    "raw_text": "83 | Oman | 1480 | 127 | 1211 | −2 | −25 | 594 | 230 | 145 | 219 | 223 | 219 | 152 | 757 | 784",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 84,
+    "team_name": "Syria",
+    "elo_rating": 1479,
+    "raw_text": "84 | Syria | 1479 | 86 | 1428 | +11 | +40 | 598 | 125 | 224 | 249 | 223 | 227 | 148 | 859 | 760",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 85,
+    "team_name": "Palestine",
+    "elo_rating": 1465,
+    "raw_text": "85 | Palestine | 1465 | 121 | 1255 | +5 | +8 | 292 | 19 | 113 | 160 | 84 | 128 | 80 | 370 | 446",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 86,
+    "team_name": "Guinea",
+    "elo_rating": 1463,
+    "raw_text": "86 | Guinea | 1463 | 72 | 1516 | +7 | +12 | 646 | 172 | 263 | 211 | 251 | 211 | 184 | 953 | 804",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 87,
+    "team_name": "Montenegro",
+    "elo_rating": 1461,
+    "raw_text": "87 | Montenegro | 1461 | 60 | 1597 | −7 | −53 | 174 | 91 | 78 | 5 | 58 | 73 | 43 | 205 | 239",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 88,
+    "team_name": "Bulgaria",
+    "elo_rating": 1458,
+    "raw_text": "88 | Bulgaria | 1458 | 41 | 1633 | +3 | +4 | 781 | 299 | 400 | 82 | 286 | 300 | 195 | 1094 | 1152",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 89,
+    "team_name": "Luxembourg",
+    "elo_rating": 1450,
+    "raw_text": "89 | Luxembourg | 1450 | 108 | 1256 | +3 | −3 | 475 | 258 | 201 | 16 | 55 | 358 | 62 | 309 | 1225",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 90,
+    "team_name": "Northern Cyprus",
+    "elo_rating": 1442,
+    "raw_text": "90 | Northern Cyprus | 1442 | 87 | 1450 | +4 | 0 | 16 | 5 | 3 | 8 | 8 | 6 | 2 | 28 | 22",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 91,
+    "team_name": "Curaçao",
+    "elo_rating": 1434,
+    "raw_text": "91 | Curaçao | 1434 | 97 | 1381 | +37 | +104 | 500 | 174 | 177 | 149 | 202 | 174 | 124 | 884 | 771",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 92,
+    "team_name": "Suriname",
+    "elo_rating": 1431,
+    "raw_text": "92 | Suriname | 1431 | 84 | 1404 | +7 | +26 | 543 | 231 | 222 | 90 | 239 | 175 | 129 | 986 | 740",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 93,
+    "team_name": "Kazakhstan",
+    "elo_rating": 1428,
+    "raw_text": "93 | Kazakhstan | 1428 | 100 | 1420 | +7 | +26 | 272 | 103 | 123 | 46 | 70 | 143 | 59 | 285 | 454",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 94,
+    "team_name": "China",
+    "elo_rating": 1424,
+    "raw_text": "94 | China | 1424 | 50 | 1577 | +15 | +40 | 764 | 272 | 265 | 227 | 369 | 231 | 164 | 1422 | 862",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 94,
+    "team_name": "Kurdistan",
+    "elo_rating": 1424,
+    "raw_text": "94 | Kurdistan | 1424 | 100 | 1424 | +2 | 0 | 4 | 2 | 0 | 2 | 3 | 0 | 1 | 12 | 3",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 96,
+    "team_name": "Qatar",
+    "elo_rating": 1421,
+    "raw_text": "96 | Qatar | 1421 | 93 | 1416 | −20 | −109 | 699 | 328 | 147 | 224 | 289 | 233 | 177 | 993 | 826",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 97,
+    "team_name": "Libya",
+    "elo_rating": 1420,
+    "raw_text": "97 | Libya | 1420 | 82 | 1469 | +11 | +35 | 458 | 164 | 166 | 128 | 165 | 185 | 108 | 620 | 611",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 98,
+    "team_name": "Gambia",
+    "elo_rating": 1419,
+    "raw_text": "98 | Gambia | 1419 | 118 | 1309 | +8 | +33 | 299 | 108 | 100 | 91 | 81 | 136 | 82 | 319 | 433",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 99,
+    "team_name": "Bahrain",
+    "elo_rating": 1414,
+    "raw_text": "99 | Bahrain | 1414 | 109 | 1349 | −11 | −54 | 637 | 218 | 159 | 260 | 223 | 248 | 166 | 780 | 826",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 100,
+    "team_name": "Benin",
+    "elo_rating": 1405,
+    "raw_text": "100 | Benin | 1405 | 109 | 1356 | −2 | −2 | 354 | 129 | 142 | 83 | 87 | 182 | 85 | 366 | 623",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 101,
+    "team_name": "Gabon",
+    "elo_rating": 1401,
+    "raw_text": "101 | Gabon | 1401 | 95 | 1413 | −12 | −59 | 462 | 184 | 154 | 124 | 159 | 174 | 129 | 551 | 567",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 102,
+    "team_name": "Uganda",
+    "elo_rating": 1394,
+    "raw_text": "102 | Uganda | 1394 | 75 | 1482 | +9 | +13 | 736 | 251 | 257 | 228 | 304 | 238 | 194 | 1108 | 887",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 103,
+    "team_name": "Trinidad and Tobago",
+    "elo_rating": 1386,
+    "raw_text": "103 | Trinidad and Tobago | 1386 | 61 | 1505 | −2 | −15 | 872 | 344 | 365 | 163 | 375 | 304 | 193 | 1446 | 1130",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 103,
+    "team_name": "Faroe Islands",
+    "elo_rating": 1386,
+    "raw_text": "103 | Faroe Islands | 1386 | 122 | 1252 | +43 | +111 | 283 | 119 | 141 | 23 | 51 | 195 | 37 | 213 | 641",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 105,
+    "team_name": "Niger",
+    "elo_rating": 1382,
+    "raw_text": "105 | Niger | 1382 | 133 | 1239 | +21 | +46 | 292 | 100 | 117 | 75 | 65 | 158 | 69 | 287 | 517",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 106,
+    "team_name": "Madagascar",
+    "elo_rating": 1380,
+    "raw_text": "106 | Madagascar | 1380 | 104 | 1366 | +29 | +67 | 357 | 120 | 121 | 116 | 136 | 143 | 78 | 494 | 536",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 106,
+    "team_name": "Equatorial Guinea",
+    "elo_rating": 1380,
+    "raw_text": "106 | Equatorial Guinea | 1380 | 151 | 1159 | −21 | −100 | 196 | 80 | 64 | 52 | 56 | 96 | 44 | 182 | 288",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 108,
+    "team_name": "Togo",
+    "elo_rating": 1379,
+    "raw_text": "108 | Togo | 1379 | 90 | 1439 | +8 | +8 | 495 | 179 | 198 | 118 | 158 | 210 | 127 | 539 | 675",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 109,
+    "team_name": "Thailand",
+    "elo_rating": 1376,
+    "raw_text": "109 | Thailand | 1376 | 112 | 1318 | −5 | −11 | 935 | 389 | 200 | 346 | 366 | 358 | 211 | 1487 | 1408",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 110,
+    "team_name": "North Korea",
+    "elo_rating": 1375,
+    "raw_text": "110 | North Korea | 1375 | 63 | 1567 | +2 | −3 | 417 | 50 | 149 | 218 | 175 | 127 | 115 | 641 | 447",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 111,
+    "team_name": "Comoros",
+    "elo_rating": 1374,
+    "raw_text": "111 | Comoros | 1374 | 186 | 941 | −15 | −50 | 159 | 29 | 35 | 95 | 41 | 81 | 37 | 145 | 246",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 112,
+    "team_name": "Armenia",
+    "elo_rating": 1373,
+    "raw_text": "112 | Armenia | 1373 | 102 | 1418 | −8 | −14 | 283 | 115 | 132 | 36 | 66 | 158 | 59 | 283 | 539",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 113,
+    "team_name": "Zimbabwe",
+    "elo_rating": 1372,
+    "raw_text": "113 | Zimbabwe | 1372 | 78 | 1462 | +6 | +12 | 552 | 190 | 223 | 139 | 207 | 184 | 161 | 738 | 663",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 113,
+    "team_name": "Indonesia",
+    "elo_rating": 1372,
+    "raw_text": "113 | Indonesia | 1372 | 101 | 1361 | +6 | +12 | 784 | 252 | 192 | 340 | 299 | 332 | 153 | 1317 | 1269",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 115,
+    "team_name": "Zambia",
+    "elo_rating": 1371,
+    "raw_text": "115 | Zambia | 1371 | 60 | 1551 | −9 | −15 | 879 | 282 | 360 | 237 | 393 | 261 | 225 | 1389 | 954",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 116,
+    "team_name": "Kenya",
+    "elo_rating": 1363,
+    "raw_text": "116 | Kenya | 1363 | 90 | 1379 | −1 | −9 | 781 | 291 | 283 | 207 | 294 | 293 | 194 | 1078 | 1062",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 117,
+    "team_name": "Estonia",
+    "elo_rating": 1360,
+    "raw_text": "117 | Estonia | 1360 | 94 | 1353 | +1 | −6 | 541 | 231 | 255 | 55 | 134 | 287 | 120 | 533 | 962",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 118,
+    "team_name": "Vietnam",
+    "elo_rating": 1351,
+    "raw_text": "118 | Vietnam | 1351 | 120 | 1298 | +3 | −8 | 525 | 174 | 131 | 220 | 222 | 200 | 103 | 922 | 771",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 119,
+    "team_name": "Sudan",
+    "elo_rating": 1350,
+    "raw_text": "119 | Sudan | 1350 | 90 | 1444 | −17 | −46 | 553 | 154 | 204 | 195 | 187 | 225 | 141 | 628 | 730",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 120,
+    "team_name": "Reunion",
+    "elo_rating": 1345,
+    "raw_text": "120 | Reunion | 1345 | 125 | 1184 | +4 | 0 | 139 | 53 | 38 | 48 | 55 | 55 | 29 | 237 | 252",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 121,
+    "team_name": "El Salvador",
+    "elo_rating": 1342,
+    "raw_text": "121 | El Salvador | 1342 | 72 | 1471 | −18 | −52 | 687 | 210 | 209 | 268 | 227 | 306 | 154 | 863 | 1023",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 121,
+    "team_name": "Mozambique",
+    "elo_rating": 1342,
+    "raw_text": "121 | Mozambique | 1342 | 116 | 1332 | −35 | −136 | 444 | 166 | 177 | 101 | 139 | 194 | 111 | 466 | 585",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 123,
+    "team_name": "Sierra Leone",
+    "elo_rating": 1341,
+    "raw_text": "123 | Sierra Leone | 1341 | 104 | 1368 | +7 | +16 | 337 | 116 | 141 | 80 | 98 | 150 | 89 | 331 | 474",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 124,
+    "team_name": "Guadeloupe",
+    "elo_rating": 1338,
+    "raw_text": "124 | Guadeloupe | 1338 | 91 | 1408 | −11 | −38 | 293 | 92 | 89 | 112 | 128 | 114 | 51 | 507 | 410",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 125,
+    "team_name": "Rwanda",
+    "elo_rating": 1336,
+    "raw_text": "125 | Rwanda | 1336 | 144 | 1206 | +7 | +16 | 290 | 107 | 100 | 83 | 90 | 126 | 74 | 298 | 364",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 126,
+    "team_name": "Nicaragua",
+    "elo_rating": 1333,
+    "raw_text": "126 | Nicaragua | 1333 | 146 | 1031 | +3 | +4 | 253 | 63 | 100 | 90 | 54 | 167 | 32 | 258 | 621",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 127,
+    "team_name": "Kuwait",
+    "elo_rating": 1332,
+    "raw_text": "127 | Kuwait | 1332 | 83 | 1468 | +11 | +39 | 762 | 269 | 176 | 317 | 321 | 248 | 193 | 1198 | 880",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 128,
+    "team_name": "Mauritania",
+    "elo_rating": 1329,
+    "raw_text": "128 | Mauritania | 1329 | 155 | 1115 | −1 | −5 | 300 | 91 | 103 | 106 | 56 | 173 | 71 | 217 | 527",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 129,
+    "team_name": "Azerbaijan",
+    "elo_rating": 1322,
+    "raw_text": "129 | Azerbaijan | 1322 | 107 | 1397 | −12 | −47 | 324 | 116 | 152 | 56 | 67 | 176 | 81 | 265 | 545",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 130,
+    "team_name": "Zanzibar",
+    "elo_rating": 1320,
+    "raw_text": "130 | Zanzibar | 1320 | 145 | 1119 | +2 | 0 | 217 | 37 | 45 | 135 | 39 | 131 | 47 | 186 | 458",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 131,
+    "team_name": "Cyprus",
+    "elo_rating": 1314,
+    "raw_text": "131 | Cyprus | 1314 | 102 | 1377 | +5 | +11 | 429 | 237 | 186 | 6 | 84 | 271 | 74 | 387 | 932",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 132,
+    "team_name": "Tanzania",
+    "elo_rating": 1313,
+    "raw_text": "132 | Tanzania | 1313 | 117 | 1295 | −23 | −71 | 658 | 244 | 237 | 177 | 193 | 280 | 185 | 752 | 963",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 133,
+    "team_name": "Martinique",
+    "elo_rating": 1312,
+    "raw_text": "133 | Martinique | 1312 | 79 | 1458 | −19 | −61 | 371 | 136 | 125 | 110 | 167 | 116 | 88 | 676 | 488",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 134,
+    "team_name": "Liberia",
+    "elo_rating": 1304,
+    "raw_text": "134 | Liberia | 1304 | 112 | 1342 | +14 | +41 | 342 | 146 | 144 | 52 | 91 | 175 | 76 | 318 | 521",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 135,
+    "team_name": "Namibia",
+    "elo_rating": 1303,
+    "raw_text": "135 | Namibia | 1303 | 136 | 1272 | −13 | −53 | 304 | 102 | 121 | 81 | 77 | 135 | 92 | 295 | 424",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 136,
+    "team_name": "Kyrgyzstan",
+    "elo_rating": 1295,
+    "raw_text": "136 | Kyrgyzstan | 1295 | 155 | 1203 | −6 | −30 | 192 | 49 | 74 | 69 | 55 | 105 | 32 | 208 | 337",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 137,
+    "team_name": "Malaysia",
+    "elo_rating": 1293,
+    "raw_text": "137 | Malaysia | 1293 | 122 | 1290 | +15 | +40 | 925 | 390 | 240 | 295 | 362 | 352 | 211 | 1512 | 1339",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 138,
+    "team_name": "Guyana",
+    "elo_rating": 1292,
+    "raw_text": "138 | Guyana | 1292 | 104 | 1293 | +12 | +36 | 456 | 179 | 194 | 83 | 142 | 224 | 90 | 589 | 790",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 139,
+    "team_name": "Lebanon",
+    "elo_rating": 1288,
+    "raw_text": "139 | Lebanon | 1288 | 108 | 1333 | −14 | −51 | 421 | 140 | 144 | 137 | 123 | 186 | 112 | 507 | 621",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 139,
+    "team_name": "Latvia",
+    "elo_rating": 1288,
+    "raw_text": "139 | Latvia | 1288 | 87 | 1399 | +2 | −1 | 459 | 193 | 213 | 53 | 128 | 220 | 111 | 536 | 754",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 141,
+    "team_name": "Ethiopia",
+    "elo_rating": 1287,
+    "raw_text": "141 | Ethiopia | 1287 | 99 | 1394 | +3 | +8 | 474 | 216 | 163 | 95 | 171 | 199 | 104 | 657 | 691",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 142,
+    "team_name": "New Caledonia",
+    "elo_rating": 1286,
+    "raw_text": "142 | New Caledonia | 1286 | 103 | 1357 | 0 | +1 | 285 | 87 | 71 | 127 | 141 | 110 | 34 | 739 | 419",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 143,
+    "team_name": "Tajikistan",
+    "elo_rating": 1285,
+    "raw_text": "143 | Tajikistan | 1285 | 123 | 1334 | −4 | −6 | 212 | 57 | 84 | 71 | 80 | 86 | 46 | 305 | 297",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 143,
+    "team_name": "Burundi",
+    "elo_rating": 1285,
+    "raw_text": "143 | Burundi | 1285 | 125 | 1285 | −4 | −6 | 241 | 52 | 89 | 100 | 74 | 112 | 55 | 274 | 334",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 145,
+    "team_name": "Dominican Republic",
+    "elo_rating": 1283,
+    "raw_text": "145 | Dominican Republic | 1283 | 167 | 1060 | −2 | +2 | 190 | 86 | 64 | 40 | 69 | 89 | 32 | 301 | 307",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 146,
+    "team_name": "Lithuania",
+    "elo_rating": 1279,
+    "raw_text": "146 | Lithuania | 1279 | 92 | 1319 | −9 | −16 | 418 | 170 | 207 | 41 | 106 | 230 | 82 | 415 | 759",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 147,
+    "team_name": "Moldova",
+    "elo_rating": 1270,
+    "raw_text": "147 | Moldova | 1270 | 109 | 1391 | −13 | −49 | 302 | 115 | 146 | 41 | 60 | 172 | 70 | 247 | 523",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 148,
+    "team_name": "Botswana",
+    "elo_rating": 1267,
+    "raw_text": "148 | Botswana | 1267 | 150 | 1167 | −25 | −83 | 368 | 166 | 136 | 66 | 98 | 166 | 104 | 311 | 490",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 149,
+    "team_name": "Malta",
+    "elo_rating": 1255,
+    "raw_text": "149 | Malta | 1255 | 118 | 1322 | +4 | +4 | 456 | 246 | 183 | 27 | 66 | 314 | 76 | 298 | 1020",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 150,
+    "team_name": "Guinea-Bissau",
+    "elo_rating": 1248,
+    "raw_text": "150 | Guinea-Bissau | 1248 | 126 | 1282 | −3 | −16 | 215 | 66 | 64 | 85 | 58 | 104 | 53 | 215 | 320",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 151,
+    "team_name": "Cuba",
+    "elo_rating": 1239,
+    "raw_text": "151 | Cuba | 1239 | 84 | 1438 | 0 | −16 | 485 | 103 | 212 | 170 | 185 | 189 | 111 | 678 | 684",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 151,
+    "team_name": "Malawi",
+    "elo_rating": 1239,
+    "raw_text": "151 | Malawi | 1239 | 115 | 1327 | −3 | −24 | 700 | 306 | 245 | 149 | 232 | 265 | 203 | 817 | 902",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 153,
+    "team_name": "Central African Republic",
+    "elo_rating": 1236,
+    "raw_text": "153 | Central African Republic | 1236 | 124 | 1295 | −8 | −42 | 164 | 32 | 67 | 65 | 36 | 94 | 34 | 181 | 326",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 154,
+    "team_name": "French Guiana",
+    "elo_rating": 1223,
+    "raw_text": "154 | French Guiana | 1223 | 125 | 1246 | +3 | 0 | 190 | 66 | 67 | 57 | 57 | 92 | 41 | 280 | 328",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 155,
+    "team_name": "Mayotte",
+    "elo_rating": 1216,
+    "raw_text": "155 | Mayotte | 1216 | 157 | 1202 | +4 | 0 | 41 | 2 | 11 | 28 | 13 | 17 | 11 | 55 | 59",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 156,
+    "team_name": "Turkmenistan",
+    "elo_rating": 1209,
+    "raw_text": "156 | Turkmenistan | 1209 | 117 | 1358 | +4 | −6 | 187 | 42 | 76 | 69 | 71 | 82 | 34 | 288 | 281",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 157,
+    "team_name": "Congo",
+    "elo_rating": 1207,
+    "raw_text": "157 | Congo | 1207 | 83 | 1470 | 0 | −16 | 474 | 180 | 188 | 106 | 173 | 186 | 115 | 679 | 662",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 158,
+    "team_name": "Eritrea",
+    "elo_rating": 1201,
+    "raw_text": "158 | Eritrea | 1201 | 164 | 1158 | +7 | +62 | 86 | 20 | 28 | 38 | 17 | 50 | 19 | 61 | 137",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 159,
+    "team_name": "Lesotho",
+    "elo_rating": 1198,
+    "raw_text": "159 | Lesotho | 1198 | 151 | 1179 | −5 | −48 | 354 | 113 | 147 | 94 | 70 | 180 | 104 | 280 | 580",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 160,
+    "team_name": "Yemen",
+    "elo_rating": 1195,
+    "raw_text": "160 | Yemen | 1195 | 144 | 1212 | +12 | +86 | 295 | 56 | 87 | 152 | 66 | 173 | 56 | 304 | 573",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 161,
+    "team_name": "Philippines",
+    "elo_rating": 1179,
+    "raw_text": "161 | Philippines | 1179 | 135 | 1069 | +8 | +49 | 397 | 110 | 127 | 160 | 99 | 238 | 60 | 432 | 1023",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 162,
+    "team_name": "Tahiti",
+    "elo_rating": 1177,
+    "raw_text": "162 | Tahiti | 1177 | 102 | 1386 | −1 | 0 | 254 | 58 | 71 | 125 | 136 | 82 | 36 | 693 | 383",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 163,
+    "team_name": "Eswatini",
+    "elo_rating": 1148,
+    "raw_text": "163 | Eswatini | 1148 | 153 | 1168 | −8 | −80 | 324 | 123 | 131 | 70 | 71 | 158 | 95 | 297 | 542",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 164,
+    "team_name": "St Vincent & Grenadines",
+    "elo_rating": 1141,
+    "raw_text": "164 | St Vincent & Grenadines | 1141 | 110 | 1322 | 0 | −12 | 365 | 138 | 135 | 92 | 131 | 150 | 84 | 566 | 648",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 165,
+    "team_name": "Papua New Guinea",
+    "elo_rating": 1135,
+    "raw_text": "165 | Papua New Guinea | 1135 | 165 | 1091 | +8 | +31 | 165 | 30 | 43 | 92 | 54 | 80 | 31 | 352 | 356",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 165,
+    "team_name": "Puerto Rico",
+    "elo_rating": 1135,
+    "raw_text": "165 | Puerto Rico | 1135 | 169 | 936 | +6 | +17 | 196 | 73 | 67 | 56 | 46 | 121 | 29 | 229 | 491",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 167,
+    "team_name": "Singapore",
+    "elo_rating": 1134,
+    "raw_text": "167 | Singapore | 1134 | 134 | 1228 | +10 | +70 | 772 | 322 | 185 | 265 | 242 | 373 | 157 | 1036 | 1396",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 168,
+    "team_name": "India",
+    "elo_rating": 1128,
+    "raw_text": "168 | India | 1128 | 110 | 1341 | −6 | −30 | 612 | 177 | 172 | 263 | 220 | 263 | 129 | 838 | 1001",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 169,
+    "team_name": "Vanuatu",
+    "elo_rating": 1118,
+    "raw_text": "169 | Vanuatu | 1118 | 156 | 1104 | +13 | +73 | 227 | 54 | 51 | 122 | 71 | 124 | 32 | 404 | 485",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 170,
+    "team_name": "Bermuda",
+    "elo_rating": 1117,
+    "raw_text": "170 | Bermuda | 1117 | 128 | 1284 | −4 | −20 | 236 | 106 | 82 | 48 | 79 | 112 | 45 | 375 | 417",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 171,
+    "team_name": "South Sudan",
+    "elo_rating": 1109,
+    "raw_text": "171 | South Sudan | 1109 | 178 | 1087 | −4 | −24 | 81 | 18 | 29 | 34 | 13 | 52 | 16 | 55 | 145",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 172,
+    "team_name": "Fiji",
+    "elo_rating": 1104,
+    "raw_text": "172 | Fiji | 1104 | 129 | 1246 | −16 | −123 | 288 | 106 | 65 | 117 | 126 | 106 | 56 | 647 | 463",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 173,
+    "team_name": "Hong Kong",
+    "elo_rating": 1101,
+    "raw_text": "173 | Hong Kong | 1101 | 123 | 1288 | −5 | −31 | 514 | 183 | 152 | 179 | 178 | 234 | 102 | 816 | 873",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 174,
+    "team_name": "Grenada",
+    "elo_rating": 1098,
+    "raw_text": "174 | Grenada | 1098 | 101 | 1370 | 0 | +16 | 310 | 115 | 116 | 79 | 103 | 129 | 78 | 490 | 561",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 175,
+    "team_name": "Andorra",
+    "elo_rating": 1080,
+    "raw_text": "175 | Andorra | 1080 | 182 | 1050 | +1 | +14 | 231 | 92 | 106 | 33 | 15 | 184 | 32 | 77 | 543",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 176,
+    "team_name": "Mauritius",
+    "elo_rating": 1073,
+    "raw_text": "176 | Mauritius | 1073 | 108 | 1335 | −1 | −3 | 359 | 124 | 151 | 84 | 100 | 174 | 85 | 450 | 572",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 176,
+    "team_name": "Chad",
+    "elo_rating": 1073,
+    "raw_text": "176 | Chad | 1073 | 135 | 1244 | −13 | −82 | 182 | 45 | 59 | 78 | 35 | 105 | 42 | 165 | 340",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 176,
+    "team_name": "Belize",
+    "elo_rating": 1073,
+    "raw_text": "176 | Belize | 1073 | 139 | 1114 | +3 | +15 | 129 | 44 | 44 | 41 | 32 | 74 | 23 | 138 | 245",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 179,
+    "team_name": "Solomon Islands",
+    "elo_rating": 1054,
+    "raw_text": "179 | Solomon Islands | 1054 | 147 | 1183 | −9 | −72 | 223 | 59 | 62 | 102 | 94 | 92 | 37 | 480 | 428",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 180,
+    "team_name": "Saint Martin",
+    "elo_rating": 1042,
+    "raw_text": "180 | Saint Martin | 1042 | 187 | 983 | +3 | −1 | 86 | 18 | 36 | 32 | 33 | 44 | 9 | 136 | 191",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 181,
+    "team_name": "Sao Tome and Principe",
+    "elo_rating": 1035,
+    "raw_text": "181 | Sao Tome and Principe | 1035 | 174 | 1056 | +3 | −3 | 82 | 24 | 36 | 22 | 11 | 60 | 11 | 59 | 213",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 182,
+    "team_name": "Saint Kitts and Nevis",
+    "elo_rating": 1029,
+    "raw_text": "182 | Saint Kitts and Nevis | 1029 | 138 | 1174 | −2 | −20 | 252 | 121 | 80 | 51 | 104 | 101 | 47 | 431 | 396",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 183,
+    "team_name": "Gibraltar",
+    "elo_rating": 1011,
+    "raw_text": "183 | Gibraltar | 1011 | 178 | 1081 | −2 | −35 | 118 | 41 | 49 | 28 | 18 | 85 | 15 | 70 | 344",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 184,
+    "team_name": "Somaliland",
+    "elo_rating": 1005,
+    "raw_text": "184 | Somaliland | 1005 | 188 | 1004 | +2 | 0 | 2 | 0 | 0 | 2 | 1 | 0 | 1 | 4 | 3",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 185,
+    "team_name": "Saint Lucia",
+    "elo_rating": 1003,
+    "raw_text": "185 | Saint Lucia | 1003 | 126 | 1240 | 0 | −24 | 264 | 89 | 108 | 67 | 90 | 132 | 42 | 361 | 485",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 186,
+    "team_name": "Western Sahara",
+    "elo_rating": 996,
+    "raw_text": "186 | Western Sahara | 996 | 189 | 996 | +1 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 6",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 187,
+    "team_name": "Afghanistan",
+    "elo_rating": 990,
+    "raw_text": "187 | Afghanistan | 990 | 167 | 920 | −9 | −71 | 167 | 8 | 67 | 92 | 38 | 91 | 38 | 153 | 338",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 188,
+    "team_name": "Myanmar",
+    "elo_rating": 984,
+    "raw_text": "188 | Myanmar | 984 | 125 | 1244 | +5 | +42 | 554 | 119 | 139 | 296 | 219 | 231 | 104 | 899 | 958",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 189,
+    "team_name": "Somalia",
+    "elo_rating": 979,
+    "raw_text": "189 | Somalia | 979 | 166 | 1072 | +10 | +68 | 150 | 10 | 48 | 92 | 15 | 112 | 23 | 78 | 375",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 190,
+    "team_name": "Aruba",
+    "elo_rating": 978,
+    "raw_text": "190 | Aruba | 978 | 125 | 1198 | +7 | +61 | 208 | 83 | 81 | 44 | 52 | 112 | 44 | 298 | 471",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 191,
+    "team_name": "Sint Maarten",
+    "elo_rating": 975,
+    "raw_text": "191 | Sint Maarten | 975 | 187 | 909 | +3 | +43 | 75 | 16 | 25 | 34 | 23 | 39 | 13 | 107 | 194",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 192,
+    "team_name": "Montserrat",
+    "elo_rating": 972,
+    "raw_text": "192 | Montserrat | 972 | 191 | 642 | −4 | −7 | 74 | 15 | 26 | 33 | 18 | 48 | 8 | 76 | 235",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 193,
+    "team_name": "Greenland",
+    "elo_rating": 945,
+    "raw_text": "193 | Greenland | 945 | 185 | 975 | −1 | 0 | 22 | 2 | 7 | 13 | 5 | 16 | 1 | 35 | 50",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 194,
+    "team_name": "Bangladesh",
+    "elo_rating": 942,
+    "raw_text": "194 | Bangladesh | 942 | 181 | 980 | +2 | +17 | 327 | 92 | 97 | 138 | 88 | 166 | 73 | 300 | 584",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 195,
+    "team_name": "Djibouti",
+    "elo_rating": 940,
+    "raw_text": "195 | Djibouti | 940 | 178 | 872 | 0 | +11 | 121 | 28 | 40 | 53 | 11 | 99 | 11 | 83 | 424",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 196,
+    "team_name": "Dominica",
+    "elo_rating": 934,
+    "raw_text": "196 | Dominica | 934 | 132 | 1196 | −7 | −41 | 246 | 69 | 97 | 80 | 60 | 132 | 54 | 288 | 488",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 197,
+    "team_name": "Monaco",
+    "elo_rating": 903,
+    "raw_text": "197 | Monaco | 903 | 199 | 900 | +5 | 0 | 9 | 0 | 1 | 8 | 4 | 2 | 3 | 11 | 15",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 198,
+    "team_name": "Barbados",
+    "elo_rating": 898,
+    "raw_text": "198 | Barbados | 898 | 121 | 1243 | −7 | −51 | 375 | 168 | 132 | 75 | 117 | 162 | 96 | 492 | 616",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 199,
+    "team_name": "Antigua and Barbuda",
+    "elo_rating": 895,
+    "raw_text": "199 | Antigua and Barbuda | 895 | 145 | 1178 | +1 | −15 | 285 | 116 | 101 | 68 | 95 | 136 | 54 | 394 | 491",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 199,
+    "team_name": "Liechtenstein",
+    "elo_rating": 895,
+    "raw_text": "199 | Liechtenstein | 895 | 167 | 1114 | +2 | −10 | 259 | 115 | 125 | 19 | 19 | 208 | 32 | 104 | 726",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 201,
+    "team_name": "Nepal",
+    "elo_rating": 893,
+    "raw_text": "201 | Nepal | 893 | 190 | 889 | −11 | −62 | 295 | 74 | 91 | 130 | 68 | 174 | 53 | 247 | 665",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 202,
+    "team_name": "Pakistan",
+    "elo_rating": 880,
+    "raw_text": "202 | Pakistan | 880 | 154 | 1101 | +6 | +56 | 286 | 63 | 97 | 126 | 65 | 170 | 51 | 277 | 642",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 203,
+    "team_name": "Cambodia",
+    "elo_rating": 871,
+    "raw_text": "203 | Cambodia | 871 | 157 | 1058 | +4 | +36 | 318 | 82 | 93 | 143 | 73 | 200 | 45 | 367 | 816",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 204,
+    "team_name": "Seychelles",
+    "elo_rating": 853,
+    "raw_text": "204 | Seychelles | 853 | 182 | 987 | 0 | +2 | 190 | 51 | 58 | 81 | 26 | 131 | 33 | 144 | 425",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 205,
+    "team_name": "Sri Lanka",
+    "elo_rating": 836,
+    "raw_text": "205 | Sri Lanka | 836 | 161 | 933 | +8 | +90 | 285 | 70 | 89 | 126 | 58 | 177 | 50 | 278 | 693",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 206,
+    "team_name": "San Marino",
+    "elo_rating": 825,
+    "raw_text": "206 | San Marino | 825 | 195 | 917 | −1 | −20 | 228 | 110 | 110 | 8 | 3 | 213 | 12 | 44 | 895",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 207,
+    "team_name": "Taiwan",
+    "elo_rating": 822,
+    "raw_text": "207 | Taiwan | 822 | 144 | 1169 | −10 | −95 | 339 | 96 | 109 | 134 | 96 | 191 | 52 | 465 | 788",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 208,
+    "team_name": "Bonaire",
+    "elo_rating": 817,
+    "raw_text": "208 | Bonaire | 817 | 150 | 1037 | −2 | −19 | 104 | 19 | 52 | 33 | 24 | 68 | 12 | 116 | 257",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 209,
+    "team_name": "Maldives",
+    "elo_rating": 801,
+    "raw_text": "209 | Maldives | 801 | 191 | 885 | −6 | −72 | 241 | 65 | 82 | 94 | 67 | 135 | 39 | 289 | 538",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 210,
+    "team_name": "Cayman Islands",
+    "elo_rating": 800,
+    "raw_text": "210 | Cayman Islands | 800 | 183 | 1000 | −1 | −20 | 129 | 60 | 39 | 30 | 26 | 78 | 25 | 125 | 313",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 211,
+    "team_name": "Chagos Islands",
+    "elo_rating": 782,
+    "raw_text": "211 | Chagos Islands | 782 | 211 | 783 | −1 | 0 | 4 | 0 | 0 | 4 | 1 | 2 | 1 | 8 | 10",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 212,
+    "team_name": "Tuvalu",
+    "elo_rating": 756,
+    "raw_text": "212 | Tuvalu | 756 | 204 | 745 | 0 | 0 | 34 | 0 | 4 | 30 | 9 | 21 | 4 | 47 | 182",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 213,
+    "team_name": "British Virgin Islands",
+    "elo_rating": 743,
+    "raw_text": "213 | British Virgin Islands | 743 | 207 | 788 | +16 | +116 | 139 | 35 | 63 | 41 | 24 | 91 | 24 | 129 | 402",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 214,
+    "team_name": "Sint Eustatius",
+    "elo_rating": 737,
+    "raw_text": "214 | Sint Eustatius | 737 | 213 | 753 | 0 | 0 | 11 | 3 | 8 | 0 | 5 | 2 | 4 | 33 | 30",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 215,
+    "team_name": "Laos",
+    "elo_rating": 734,
+    "raw_text": "215 | Laos | 734 | 186 | 895 | +7 | +47 | 235 | 49 | 69 | 117 | 43 | 157 | 35 | 235 | 739",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 215,
+    "team_name": "East Timor",
+    "elo_rating": 734,
+    "raw_text": "215 | East Timor | 734 | 226 | 630 | +9 | +76 | 92 | 5 | 47 | 40 | 13 | 72 | 7 | 86 | 285",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 217,
+    "team_name": "Samoa",
+    "elo_rating": 728,
+    "raw_text": "217 | Samoa | 728 | 211 | 659 | −1 | 0 | 77 | 28 | 15 | 34 | 23 | 50 | 4 | 109 | 279",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 218,
+    "team_name": "Mongolia",
+    "elo_rating": 726,
+    "raw_text": "218 | Mongolia | 726 | 190 | 842 | −3 | −4 | 102 | 22 | 39 | 41 | 21 | 70 | 11 | 100 | 288",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 219,
+    "team_name": "Saint Barthelemy",
+    "elo_rating": 725,
+    "raw_text": "219 | Saint Barthelemy | 725 | 217 | 706 | −2 | 0 | 10 | 7 | 3 | 0 | 4 | 5 | 1 | 25 | 29",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 220,
+    "team_name": "Guam",
+    "elo_rating": 706,
+    "raw_text": "220 | Guam | 706 | 207 | 694 | −2 | −8 | 132 | 25 | 44 | 63 | 31 | 88 | 13 | 169 | 592",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 221,
+    "team_name": "Wallis and Futuna",
+    "elo_rating": 699,
+    "raw_text": "221 | Wallis and Futuna | 699 | 201 | 699 | −2 | 0 | 24 | 0 | 5 | 19 | 5 | 19 | 0 | 23 | 109",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 222,
+    "team_name": "Vatican",
+    "elo_rating": 692,
+    "raw_text": "222 | Vatican | 692 | 218 | 697 | −2 | 0 | 5 | 0 | 0 | 5 | 0 | 3 | 2 | 1 | 6",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 223,
+    "team_name": "Saba",
+    "elo_rating": 691,
+    "raw_text": "223 | Saba | 691 | 223 | 675 | −2 | 0 | 8 | 5 | 3 | 0 | 2 | 4 | 2 | 25 | 26",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 224,
+    "team_name": "Bahamas",
+    "elo_rating": 685,
+    "raw_text": "224 | Bahamas | 685 | 190 | 872 | −14 | −97 | 90 | 30 | 32 | 28 | 17 | 62 | 11 | 90 | 291",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 225,
+    "team_name": "Saint Pierre and Miquelon",
+    "elo_rating": 677,
+    "raw_text": "225 | Saint Pierre and Miquelon | 677 | 223 | 678 | −2 | 0 | 7 | 0 | 0 | 7 | 0 | 7 | 0 | 2 | 78",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 226,
+    "team_name": "Turks and Caicos Islands",
+    "elo_rating": 657,
+    "raw_text": "226 | Turks and Caicos Islands | 657 | 211 | 765 | 0 | +9 | 56 | 16 | 22 | 18 | 13 | 37 | 6 | 54 | 197",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 227,
+    "team_name": "Anguilla",
+    "elo_rating": 646,
+    "raw_text": "227 | Anguilla | 646 | 224 | 556 | +4 | +30 | 117 | 31 | 50 | 36 | 16 | 87 | 14 | 74 | 413",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 228,
+    "team_name": "Tibet",
+    "elo_rating": 629,
+    "raw_text": "228 | Tibet | 629 | 208 | 665 | 0 | 0 | 10 | 0 | 3 | 7 | 0 | 9 | 1 | 8 | 38",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 229,
+    "team_name": "US Virgin Islands",
+    "elo_rating": 628,
+    "raw_text": "229 | US Virgin Islands | 628 | 219 | 685 | +4 | +41 | 81 | 27 | 35 | 19 | 10 | 58 | 13 | 55 | 300",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 230,
+    "team_name": "Bhutan",
+    "elo_rating": 623,
+    "raw_text": "230 | Bhutan | 623 | 219 | 600 | −3 | −12 | 117 | 20 | 40 | 57 | 12 | 97 | 8 | 68 | 423",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 231,
+    "team_name": "Cook Islands",
+    "elo_rating": 622,
+    "raw_text": "231 | Cook Islands | 622 | 206 | 681 | −1 | 0 | 56 | 4 | 14 | 38 | 13 | 39 | 4 | 50 | 276",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 232,
+    "team_name": "Macao",
+    "elo_rating": 589,
+    "raw_text": "232 | Macao | 589 | 175 | 945 | 0 | −7 | 161 | 51 | 50 | 60 | 24 | 120 | 17 | 141 | 490",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 233,
+    "team_name": "Christmas Island",
+    "elo_rating": 578,
+    "raw_text": "233 | Christmas Island | 578 | 228 | 577 | +1 | 0 | 10 | 6 | 4 | 0 | 7 | 2 | 1 | 29 | 8",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 234,
+    "team_name": "Brunei",
+    "elo_rating": 572,
+    "raw_text": "234 | Brunei | 572 | 201 | 778 | −9 | −85 | 153 | 30 | 42 | 81 | 27 | 113 | 13 | 120 | 491",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 235,
+    "team_name": "Falkland Islands",
+    "elo_rating": 571,
+    "raw_text": "235 | Falkland Islands | 571 | 229 | 585 | 0 | 0 | 4 | 0 | 1 | 3 | 0 | 4 | 0 | 0 | 25",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 236,
+    "team_name": "FS Micronesia",
+    "elo_rating": 564,
+    "raw_text": "236 | FS Micronesia | 564 | 231 | 572 | 0 | 0 | 8 | 1 | 3 | 4 | 1 | 7 | 0 | 8 | 64",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 237,
+    "team_name": "Marshall Islands",
+    "elo_rating": 559,
+    "raw_text": "237 | Marshall Islands | 559 | 237 | 559 | − | − | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 2 | 7",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 238,
+    "team_name": "Kiribati",
+    "elo_rating": 544,
+    "raw_text": "238 | Kiribati | 544 | 219 | 578 | −1 | 0 | 11 | 0 | 2 | 9 | 0 | 10 | 1 | 7 | 126",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 239,
+    "team_name": "Tonga",
+    "elo_rating": 520,
+    "raw_text": "239 | Tonga | 520 | 213 | 651 | −1 | 0 | 70 | 10 | 15 | 45 | 16 | 48 | 6 | 82 | 265",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 240,
+    "team_name": "Niue",
+    "elo_rating": 496,
+    "raw_text": "240 | Niue | 496 | 225 | 496 | −1 | 0 | 2 | 0 | 0 | 2 | 0 | 2 | 0 | 0 | 33",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 241,
+    "team_name": "Northern Mariana Islands",
+    "elo_rating": 432,
+    "raw_text": "241 | Northern Mariana Islands | 432 | 233 | 512 | −1 | 0 | 36 | 7 | 11 | 18 | 5 | 28 | 3 | 43 | 153",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 242,
+    "team_name": "Cocos Islands",
+    "elo_rating": 422,
+    "raw_text": "242 | Cocos Islands | 422 | 235 | 423 | −1 | 0 | 10 | 4 | 6 | 0 | 2 | 7 | 1 | 8 | 29",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 243,
+    "team_name": "Palau",
+    "elo_rating": 402,
+    "raw_text": "243 | Palau | 402 | 237 | 402 | −1 | 0 | 2 | 2 | 0 | 0 | 0 | 2 | 0 | 3 | 27",
+    "source_url": "https://www.eloratings.net/"
+  },
+  {
+    "rank": 244,
+    "team_name": "Eastern Samoa",
+    "elo_rating": 369,
+    "raw_text": "244 | Eastern Samoa | 369 | 226 | 467 | −1 | −19 | 59 | 0 | 15 | 44 | 5 | 52 | 2 | 36 | 385",
+    "source_url": "https://www.eloratings.net/"
+  }
+]

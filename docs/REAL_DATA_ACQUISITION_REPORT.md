@@ -70,14 +70,64 @@ et un bloc `venue`. Les prédictions contiennent `predictions`, `league`,
 ### Elo Ratings
 
 - source : https://eloratings.net/ ;
-- récupération possible : page initiale joignable ;
-- format observé : conteneur HTML dont les données sont chargées par JavaScript ;
-- champs disponibles dans la réponse initiale : aucun classement exploitable ;
+- récupération possible : oui, via les TSV structurés chargés par le site ;
+- format observé : conteneur HTML rendu avec SlickGrid et fichiers TSV ;
+- champs disponibles : rang, code équipe, rating et statistiques historiques ;
 - mapping nécessaire : nom Elo vers code et identifiant équipe API-Football ;
-- fiabilité du parsing : insuffisante ;
-- ratings normalisés : aucun, volontairement ;
-- limite : une méthode stable et autorisée d'accès aux données doit être
-  identifiée avant intégration.
+- fiabilité du parsing : exploitable pour le spike, à valider humainement ;
+- ratings normalisés : `244` ;
+- limite : les TSV sont une interface publique observée mais non un contrat
+  d'API garanti.
+
+## Elo Ratings raw acquisition
+
+### Pages tested
+
+- https://www.eloratings.net/
+- https://www.eloratings.net/2026_World_Cup
+- https://www.eloratings.net/latest
+
+### Methods tested
+
+- raw HTML avec `requests` : les trois pages répondent HTTP 200, mais ne
+  contiennent qu'un conteneur et les références JavaScript ;
+- Playwright network capture : un chargement par page, `89` réponses capturées ;
+- Playwright rendered DOM extraction : `244` lignes de classement détectées sur
+  la page d'accueil.
+
+### Findings
+
+- JSON endpoint found: non pour les ratings. Les `15` réponses JSON observées
+  sont des données de localisation CLDR ;
+- structured endpoint found: oui, fichiers TSV publics chargés par la page ;
+- endpoints structurés principaux :
+  - `https://www.eloratings.net/World.tsv`
+  - `https://www.eloratings.net/en.teams.tsv`
+  - `https://www.eloratings.net/2026_World_Cup.tsv`
+  - `https://www.eloratings.net/latest.tsv`
+- rendered table extraction: usable comme contrôle secondaire ;
+- normalized ratings produced: oui, à partir de `World.tsv` joint à
+  `en.teams.tsv` ;
+- number of ratings extracted: `244` ;
+- TSV/DOM comparison: les `244/244` couples rang/rating concordent. Un libellé
+  utilise une forme longue dans le TSV et une forme courte dans le DOM ;
+- limitations: pas de contrat d'API documenté, codes Elo à mapper vers
+  API-Football, fraîcheur à surveiller.
+
+### Decision
+
+Utiliser les TSV Elo uniquement comme source expérimentale parallèle. Préférer
+le TSV au parsing DOM, conserver la comparaison DOM comme contrôle, et attendre
+une validation humaine du mapping avant toute intégration au moteur.
+
+### Alternatives if the source becomes fragile
+
+- `international-football.net` affiche un tableau basé sur Elo Ratings ;
+- des datasets GitHub/Kaggle existent mais peuvent être incomplets ou périmés ;
+- un Elo interne pourrait être recalculé depuis les résultats historiques
+  API-Football.
+
+Ces alternatives sont documentées mais ne sont pas intégrées automatiquement.
 
 ## Mapping vers notre format interne
 
@@ -108,7 +158,7 @@ backend/data/normalized/team_ratings.json
 - garder les données mock pour les tests techniques et le pipeline principal ;
 - valider un mapping d'équipes avant toute fusion avec une source Elo ;
 - ne pas utiliser les odds pour l'instant ;
-- ne pas dépendre d'un parsing Elo fragile.
+- conserver Elo comme source expérimentale parallèle fondée sur les TSV.
 
 ## Prochaine étape recommandée
 

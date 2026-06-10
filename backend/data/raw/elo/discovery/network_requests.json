@@ -1,0 +1,803 @@
+[
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/html",
+    "size": 1815,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/slick.grid.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 3505,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/dygraph.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 2642,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/css.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 11085,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/dygraph.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 399649,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/slick.core.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 13558,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/jquery.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 86659,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/cldr.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 17661,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/supplemental.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 2403,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/globalize.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 8885,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/number.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 38667,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/event.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 18647,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/date.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 44369,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/slick.grid.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 127187,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/ratings.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 102156,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/teams.tsv?_=1781087643216",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 335,
+    "local_file": "network_data_responses/home_teams.tsv"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/tournaments.tsv?_=1781087643217",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 333,
+    "local_file": "network_data_responses/home_tournaments.tsv"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/menu.tsv?_=1781087643218",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 72347,
+    "local_file": "network_data_responses/home_menu.tsv"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/en.labels.tsv?_=1781087643219",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 3867,
+    "local_file": "network_data_responses/home_en.labels.tsv"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/en.teams.tsv?_=1781087643220",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 7279,
+    "local_file": "network_data_responses/home_en.teams.tsv"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/en.tournaments.tsv?_=1781087643221",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 41808,
+    "local_file": "network_data_responses/home_en.tournaments.tsv"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/en.ca-gregorian.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 15411,
+    "local_file": "network_json_responses/home_87652e4350f9.json"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/en.numbers.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 5510,
+    "local_file": "network_json_responses/home_b56c5685dcef.json"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/OpenSans-Light-webfont.woff",
+    "method": "GET",
+    "status": 200,
+    "content_type": "font/woff",
+    "size": 82956,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/weekData.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 6955,
+    "local_file": "network_json_responses/home_bfedd9f13b82.json"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/timeData.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 19703,
+    "local_file": "network_json_responses/home_0d8b1166756e.json"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/likelySubtags.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 51924,
+    "local_file": "network_json_responses/home_aac0cf6cd072.json"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/World.tsv?_=1781087643222",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 35904,
+    "local_file": "network_data_responses/home_World.tsv"
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/OpenSans-CondLight-webfont.woff",
+    "method": "GET",
+    "status": 200,
+    "content_type": "font/woff",
+    "size": 80476,
+    "local_file": null
+  },
+  {
+    "target": "home",
+    "url": "https://www.eloratings.net/scripts/menu.png",
+    "method": "GET",
+    "status": 200,
+    "content_type": "image/png",
+    "size": 205,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/2026_World_Cup",
+    "method": "GET",
+    "status": 200,
+    "content_type": "",
+    "size": 1815,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/slick.grid.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 3505,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/dygraph.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 2642,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/css.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 11085,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/slick.core.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 13558,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/jquery.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 86659,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/cldr.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 17661,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/event.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 18647,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/supplemental.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 2403,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/globalize.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 8885,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/date.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 44369,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/number.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 38667,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/slick.grid.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 127187,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/ratings.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 102156,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/dygraph.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 399649,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/teams.tsv?_=1781087648696",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 335,
+    "local_file": "network_data_responses/worldcup_2026_teams.tsv"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/tournaments.tsv?_=1781087648697",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 333,
+    "local_file": "network_data_responses/worldcup_2026_tournaments.tsv"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/menu.tsv?_=1781087648698",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 72347,
+    "local_file": "network_data_responses/worldcup_2026_menu.tsv"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/en.labels.tsv?_=1781087648699",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 3867,
+    "local_file": "network_data_responses/worldcup_2026_en.labels.tsv"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/en.teams.tsv?_=1781087648700",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 7279,
+    "local_file": "network_data_responses/worldcup_2026_en.teams.tsv"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/en.tournaments.tsv?_=1781087648701",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 41808,
+    "local_file": "network_data_responses/worldcup_2026_en.tournaments.tsv"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/en.ca-gregorian.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 15411,
+    "local_file": "network_json_responses/worldcup_2026_87652e4350f9.json"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/en.numbers.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 5510,
+    "local_file": "network_json_responses/worldcup_2026_b56c5685dcef.json"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/OpenSans-Light-webfont.woff",
+    "method": "GET",
+    "status": 200,
+    "content_type": "font/woff",
+    "size": 82956,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/weekData.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 6955,
+    "local_file": "network_json_responses/worldcup_2026_bfedd9f13b82.json"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/timeData.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 19703,
+    "local_file": "network_json_responses/worldcup_2026_0d8b1166756e.json"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/likelySubtags.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 51924,
+    "local_file": "network_json_responses/worldcup_2026_aac0cf6cd072.json"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/2026_World_Cup.tsv?_=1781087648702",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 6876,
+    "local_file": "network_data_responses/worldcup_2026_2026_World_Cup.tsv"
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/OpenSans-CondLight-webfont.woff",
+    "method": "GET",
+    "status": 200,
+    "content_type": "font/woff",
+    "size": 80476,
+    "local_file": null
+  },
+  {
+    "target": "worldcup_2026",
+    "url": "https://www.eloratings.net/scripts/menu.png",
+    "method": "GET",
+    "status": 200,
+    "content_type": "image/png",
+    "size": 205,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/latest",
+    "method": "GET",
+    "status": 200,
+    "content_type": "",
+    "size": 1815,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/slick.grid.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 3505,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/dygraph.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 2642,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/css.css",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/css",
+    "size": 11085,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/slick.core.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 13558,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/jquery.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 86659,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/slick.grid.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 127187,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/cldr.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 17661,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/globalize.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 8885,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/supplemental.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 2403,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/number.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 38667,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/date.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 44369,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/event.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 18647,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/ratings.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 102156,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/dygraph.js",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/javascript",
+    "size": 399649,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/teams.tsv?_=1781087653924",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 335,
+    "local_file": "network_data_responses/latest_teams.tsv"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/tournaments.tsv?_=1781087653925",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 333,
+    "local_file": "network_data_responses/latest_tournaments.tsv"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/menu.tsv?_=1781087653926",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 72347,
+    "local_file": "network_data_responses/latest_menu.tsv"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/en.labels.tsv?_=1781087653927",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 3867,
+    "local_file": "network_data_responses/latest_en.labels.tsv"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/en.teams.tsv?_=1781087653928",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 7279,
+    "local_file": "network_data_responses/latest_en.teams.tsv"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/en.tournaments.tsv?_=1781087653929",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 41808,
+    "local_file": "network_data_responses/latest_en.tournaments.tsv"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/en.ca-gregorian.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 15411,
+    "local_file": "network_json_responses/latest_87652e4350f9.json"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/en.numbers.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 5510,
+    "local_file": "network_json_responses/latest_b56c5685dcef.json"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/weekData.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 6955,
+    "local_file": "network_json_responses/latest_bfedd9f13b82.json"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/OpenSans-Light-webfont.woff",
+    "method": "GET",
+    "status": 200,
+    "content_type": "font/woff",
+    "size": 82956,
+    "local_file": null
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/timeData.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 19703,
+    "local_file": "network_json_responses/latest_0d8b1166756e.json"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/likelySubtags.json",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json",
+    "size": 51924,
+    "local_file": "network_json_responses/latest_aac0cf6cd072.json"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/latest.tsv?_=1781087653930",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/tab-separated-values",
+    "size": 17138,
+    "local_file": "network_data_responses/latest_latest.tsv"
+  },
+  {
+    "target": "latest",
+    "url": "https://www.eloratings.net/scripts/OpenSans-CondLight-webfont.woff",
+    "method": "GET",
+    "status": 200,
+    "content_type": "font/woff",
+    "size": 80476,
+    "local_file": null
+  }
+]

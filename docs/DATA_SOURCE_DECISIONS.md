@@ -3,7 +3,7 @@
 | Source | Usage envisagé | Statut | Avantages | Limites | Décision |
 |---|---|---|---|---|---|
 | API-Football | fixtures, teams, results, standings | tested / usable | World Cup 2026 présente, contrats structurés, identifiants stables | dépendance externe, quota, statistiques futures encore vides | utiliser comme source principale expérimentale des fixtures et résultats |
-| Elo Ratings | team strength | tested / fragile | source spécialisée pour équipes nationales | page initiale alimentée par JavaScript, parsing HTML direct non fiable | ne pas intégrer avant une méthode d'extraction stable et validée |
+| Elo Ratings | team strength | tested via raw HTML + Playwright network + rendered DOM / usable with review | TSV structurés découverts, 244 ratings normalisés, comparaison DOM possible | source non contractuelle, mapping des noms/codes et fraîcheur à valider | conserver comme source expérimentale parallèle, sans intégration moteur avant validation humaine |
 | FIFA Ranking | team strength alternative | not tested yet | référence officielle potentielle | fréquence et format à étudier | conserver comme source complémentaire future |
 | Mock data | tests techniques | keep | stable, reproductible, hors quota | données non réelles | garder pour les tests et le pipeline principal jusqu'à validation du mapping |
 
@@ -15,3 +15,6 @@
 - Ne pas dépendre des statistiques de fixture avant qu'elles soient disponibles.
 - Ne pas intégrer les cotes au moteur à ce stade.
 - Traiter les noms et codes équipes comme un mapping explicite entre sources.
+- Préférer `World.tsv` + `en.teams.tsv` à l'extraction DOM pour Elo Ratings.
+- Revalider manuellement la fraîcheur et le mapping Elo avant toute utilisation
+  dans le modèle.

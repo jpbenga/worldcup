@@ -1,0 +1,89 @@
+{
+  "home": {
+    "url": "https://www.eloratings.net/",
+    "final_url": "https://www.eloratings.net/",
+    "status": 200,
+    "size": 1815,
+    "scripts": [
+      "scripts/dygraph.js",
+      "scripts/jquery.js",
+      "scripts/slick.core.js",
+      "scripts/slick.grid.js",
+      "scripts/cldr.js",
+      "scripts/event.js",
+      "scripts/supplemental.js",
+      "scripts/globalize.js",
+      "scripts/number.js",
+      "scripts/date.js",
+      "scripts/ratings.js"
+    ],
+    "absolute_urls": [],
+    "keyword_counts": {
+      "rating": 6,
+      "rank": 1,
+      "team": 2,
+      "country": 0,
+      "data": 0,
+      "json": 0,
+      "elo": 4
+    }
+  },
+  "worldcup_2026": {
+    "url": "https://www.eloratings.net/2026_World_Cup",
+    "final_url": "https://www.eloratings.net/2026_World_Cup",
+    "status": 200,
+    "size": 1815,
+    "scripts": [
+      "scripts/dygraph.js",
+      "scripts/jquery.js",
+      "scripts/slick.core.js",
+      "scripts/slick.grid.js",
+      "scripts/cldr.js",
+      "scripts/event.js",
+      "scripts/supplemental.js",
+      "scripts/globalize.js",
+      "scripts/number.js",
+      "scripts/date.js",
+      "scripts/ratings.js"
+    ],
+    "absolute_urls": [],
+    "keyword_counts": {
+      "rating": 6,
+      "rank": 1,
+      "team": 2,
+      "country": 0,
+      "data": 0,
+      "json": 0,
+      "elo": 4
+    }
+  },
+  "latest": {
+    "url": "https://www.eloratings.net/latest",
+    "final_url": "https://www.eloratings.net/latest",
+    "status": 200,
+    "size": 1815,
+    "scripts": [
+      "scripts/dygraph.js",
+      "scripts/jquery.js",
+      "scripts/slick.core.js",
+      "scripts/slick.grid.js",
+      "scripts/cldr.js",
+      "scripts/event.js",
+      "scripts/supplemental.js",
+      "scripts/globalize.js",
+      "scripts/number.js",
+      "scripts/date.js",
+      "scripts/ratings.js"
+    ],
+    "absolute_urls": [],
+    "keyword_counts": {
+      "rating": 6,
+      "rank": 1,
+      "team": 2,
+      "country": 0,
+      "data": 0,
+      "json": 0,
+      "elo": 4
+    }
+  }
+}
