@@ -56,6 +56,35 @@ nvm use
 npm run build
 ```
 
+## Manual validation
+
+Before moving to the next project phase, run:
+
+```bash
+python3 backend/scripts/build_snapshots.py
+
+cd frontend
+nvm use
+npm install
+npm start
+```
+
+Then open:
+
+```text
+http://localhost:4200
+```
+
+Use:
+
+```text
+docs/MANUAL_VALIDATION_CHECKLISTS.md
+```
+
+to manually validate data coherence, provenance badges, UI behavior, and JSON
+consistency. Record the human decision and any reservations in
+`docs/VALIDATION_LOG.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

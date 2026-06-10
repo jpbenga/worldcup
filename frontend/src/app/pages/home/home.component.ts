@@ -1,7 +1,7 @@
 import { AsyncPipe, DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { combineLatest } from 'rxjs';
-import { Match, MatchPrediction } from '../../models/worldcup.models';
+import { DataSourceInfo, DataSourcesSnapshot, Match, MatchPrediction } from '../../models/worldcup.models';
 import { BacktestingService } from '../../services/backtesting.service';
 import { MatchService } from '../../services/match.service';
 import { PredictionService } from '../../services/prediction.service';
@@ -47,5 +47,9 @@ export class HomeComponent {
 
   matchFor(matches: Match[], matchId: string): Match | undefined {
     return matches.find((match) => match.id === matchId);
+  }
+
+  primarySource(snapshot: DataSourcesSnapshot): DataSourceInfo | undefined {
+    return snapshot.sources.find((source) => source.id === 'sample_matches');
   }
 }

@@ -67,6 +67,22 @@
               </article>
             }
           </div>
+          <aside class="mt-5 rounded-xl border border-amber-500/20 bg-amber-500/5 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300">Validation manuelle</p>
+                <p class="mt-2 text-sm text-slate-300">
+                  Données actuelles : démonstration · Statut : à vérifier manuellement
+                </p>
+                @if (primarySource(vm.dataSources); as source) {
+                  <p class="mt-1 text-xs text-slate-500">Source principale : {{ source.path }}</p>
+                }
+              </div>
+              <p class="text-xs text-slate-500">
+                Dernière génération : {{ vm.dataSources.updatedAt | date: 'd MMM y, HH:mm' }}
+              </p>
+            </div>
+          </aside>
         </section>
 
         <app-match-list
