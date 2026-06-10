@@ -1,0 +1,73 @@
+<main class="min-h-screen bg-slate-950 text-slate-100">
+  <div class="pointer-events-none fixed inset-x-0 top-0 h-96 bg-gradient-to-b from-cyan-500/10 to-transparent"></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <nav class="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-3 shadow">
+      <a class="font-black tracking-tight" href="#">SimuMondial <span class="text-cyan-300">2026</span></a>
+      <div class="flex gap-4 text-sm text-slate-400">
+        <a class="transition hover:text-slate-100" href="#predictions">Prédictions</a>
+        <a class="transition hover:text-slate-100" href="#history">Historique</a>
+      </div>
+    </nav>
+
+    <header class="py-16 sm:py-24">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Prototype personnel</p>
+      <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl lg:text-7xl">
+        Simuler le Mondial, puis confronter les probabilités au réel.
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
+        Matrices de scores, marchés déduits et historique transparent des prédictions.
+      </p>
+      <a
+        href="#predictions"
+        class="mt-8 inline-flex rounded-xl bg-cyan-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-200"
+      >
+        Explorer les prédictions
+      </a>
+    </header>
+
+    <section class="mb-16 grid gap-4 md:grid-cols-3">
+      @for (
+        item of [
+          ['Matrice de scores', 'Chaque score possible est associé à une probabilité normalisée.'],
+          ['Marchés déduits', 'Les indicateurs 1X2, buts et BTTS viennent uniquement de la matrice.'],
+          ['Historique IA', 'Les prédictions validées et non validées restent visibles.']
+        ];
+        track item[0]
+      ) {
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow">
+          <div class="h-1.5 w-12 rounded-full bg-cyan-300"></div>
+          <h2 class="mt-5 text-xl font-bold">{{ item[0] }}</h2>
+          <p class="mt-3 leading-6 text-slate-400">{{ item[1] }}</p>
+        </article>
+      }
+    </section>
+
+    @if (viewModel$ | async; as vm) {
+      <div class="space-y-16">
+        <app-match-list
+          [matches]="vm.matches"
+          [predictions]="vm.predictions"
+          (predictionSelected)="selectPrediction($event)"
+        />
+
+        @if (selectedPrediction(); as prediction) {
+          <div id="match-detail">
+            <app-match-detail [prediction]="prediction" [match]="matchFor(vm.matches, prediction.matchId)" />
+          </div>
+        }
+
+        <app-prediction-history [results]="vm.backtests" [matches]="vm.matches" />
+        <app-responsible-notice />
+      </div>
+    } @else {
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-8 text-center text-slate-400">
+        Chargement des snapshots…
+      </div>
+    }
+
+    <footer class="mt-16 border-t border-slate-800 py-8 text-sm text-slate-500">
+      SimuMondial 2026 · prototype personnel non commercial
+    </footer>
+  </div>
+</main>

@@ -1,0 +1,19 @@
+<section id="predictions">
+  <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Snapshots disponibles</p>
+      <h2 class="mt-2 text-2xl font-bold sm:text-3xl">Prédictions de match</h2>
+    </div>
+    <p class="text-sm text-slate-400">{{ predictions.length }} matchs analysés</p>
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    @for (prediction of predictions; track prediction.matchId) {
+      <app-match-card
+        [prediction]="prediction"
+        [match]="matchFor(prediction.matchId)"
+        (viewDetail)="predictionSelected.emit($event)"
+      />
+    }
+  </div>
+</section>
