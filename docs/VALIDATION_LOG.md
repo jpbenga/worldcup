@@ -145,19 +145,26 @@ prediction model.
 ## V0.4 — Elo Model Experiment
 
 Date: 2026-06-10
-Validator: technical automation only
+Validator: Jeanpaul Benga
+Commit: `08a0a08 Add experimental Elo-adjusted prediction model`
 
 ### Technical validation
 
-- [x] Team mapping validator passed with `PASS`
-- [x] Baseline model remains available and compatible
-- [x] Experimental Elo model generated separately
+- [x] Team mapping validation passed
+- [x] Baseline predictions available
+- [x] Elo predictions available
+- [x] Model comparison available
+- [x] Baseline remains unchanged
+- [x] Elo remains experimental
+- [x] JSON files valid
+- [x] No probability aberration detected
+- [x] Max absolute delta below `0.05`
+- [x] Impact levels are low
+- [x] Documentation exists
 - [x] Missing Elo rating falls back exactly to baseline expected goals
-- [x] Baseline, Elo and comparison snapshots generated
 - [x] Score-matrix probabilities remain in `[0, 1]` and normalized
 - [x] Market probabilities remain in `[0, 1]`
 - [x] 1X2 markets remain normalized
-- [x] Maximum observed market delta measured at `0.0389`
 - [x] Angular build passed
 - [x] Angular tests passed
 - [x] Secret scan passed
@@ -180,20 +187,54 @@ Backtesting model: baseline only
 
 ### Manual visual validation
 
-- [ ] Elo impact is reasonable
-- [ ] Baseline versus Elo deltas are coherent
-- [ ] No match has an aberrant probability
-- [ ] Experimental-model message is visible
-- [ ] Baseline remains clearly available
+- [x] Model comparison inspected manually
+- [x] France vs Senegal delta reviewed
+- [x] Brazil vs Japan delta reviewed
+- [x] Canada vs Morocco delta reviewed
+- [x] Top scores baseline vs Elo checked
+- [x] Elo ratings association checked
+- [x] Deltas judged reasonable
+- [x] Experimental status accepted
+
+### Observed comparison summary
+
+```text
+France vs Senegal:
+- Elo: 2063 vs 1860
+- Top score baseline: 2-0
+- Top score Elo: 2-0
+- Impact: low
+- Largest delta: home_win +0.0389
+
+Brazil vs Japan:
+- Elo: 1991 vs 1906
+- Top score baseline: 2-0
+- Top score Elo: 2-0
+- Impact: low
+- Largest delta: home_win +0.0239
+
+Canada vs Morocco:
+- Elo: 1788 vs 1827
+- Top score baseline: 1-1
+- Top score Elo: 1-1
+- Impact: low
+- Largest delta: away_win +0.0123
+```
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
 ### Notes
 
-V0.4 is an experimental parallel model. It does not replace the baseline and
-is not used by the backtesting pipeline. Human review remains required before
-any model decision.
+Human review completed. Elo impact is moderate and coherent for the current
+V0.4 experiment. The baseline model remains preserved, and Elo is accepted as
+an experimental parallel model only.
+
+### Issues to fix before next phase
+
+- Keep Elo marked as experimental.
+- Do not make Elo the default model without additional backtesting.
+- Future phases must compare predictive quality before promoting Elo.
