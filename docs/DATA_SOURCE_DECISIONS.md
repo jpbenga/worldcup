@@ -18,3 +18,14 @@
 - Préférer `World.tsv` + `en.teams.tsv` à l'extraction DOM pour Elo Ratings.
 - Revalider manuellement la fraîcheur et le mapping Elo avant toute utilisation
   dans le modèle.
+
+## Décision V0.3.1 — Team Identity Mapping
+
+- La couche d'identité API-Football vers Elo est obligatoire avant toute fusion
+  de données entre les deux sources.
+- Les correspondances exactes et les alias explicites peuvent être publiés dans
+  le mapping déterministe.
+- Toute suggestion floue reste en revue humaine et ne peut pas être
+  auto-validée.
+- Le mapping ne constitue pas une autorisation d'utiliser Elo dans le moteur :
+  les ratings restent parallèles et n'affectent aucune probabilité.

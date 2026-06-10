@@ -39,6 +39,7 @@ export class HomeComponent {
     backtests: this.backtestingService.getResults(),
     dataSources: this.dataSourceService.getSnapshot(),
     acquisitionStatus: this.dataSourceService.getAcquisitionStatus(),
+    teamMappingStatus: this.dataSourceService.getTeamMappingStatus(),
   });
 
   selectPrediction(prediction: MatchPrediction): void {

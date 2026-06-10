@@ -31,6 +31,19 @@ export interface DataAcquisitionStatus {
   sources: AcquisitionSourceStatus[];
 }
 
+export interface TeamMappingStatus {
+  updatedAt: string;
+  status: 'PASS' | 'PASS_WITH_REVIEW_REQUIRED' | 'FAIL';
+  apiFootballTotal: number;
+  eloTotal: number;
+  matched: number;
+  autoValidated: number;
+  needsReview: number;
+  unmappedApiFootball: number;
+  coveragePercent: number;
+  eloConnectedToPredictionEngine: boolean;
+}
+
 export interface Match {
   id: string;
   homeTeam: string;

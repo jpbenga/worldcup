@@ -7,6 +7,7 @@ import {
   DataSourceInfo,
   DataSourcesSnapshot,
   DataSourceType,
+  TeamMappingStatus,
 } from '../models/worldcup.models';
 
 interface BackendDataSourceInfo {
@@ -40,6 +41,19 @@ interface BackendDataAcquisitionStatus {
   sources: BackendAcquisitionSourceStatus[];
 }
 
+interface BackendTeamMappingStatus {
+  updated_at: string;
+  status: TeamMappingStatus['status'];
+  api_football_teams_count: number;
+  elo_teams_count: number;
+  mapped_count: number;
+  auto_validated_count: number;
+  needs_review_count: number;
+  unmapped_api_count: number;
+  coverage_percent: number;
+  elo_connected_to_prediction_engine: boolean;
+}
+
 @Injectable({ providedIn: 'root' })
 export class DataSourceService {
   private readonly http = inject(HttpClient);
@@ -61,6 +75,24 @@ export class DataSourceService {
         sources: snapshot.sources.map((source) => this.toAcquisitionSource(source)),
       })),
       catchError(() => of({ updatedAt: '', sources: [] })),
+    );
+  }
+
+  getTeamMappingStatus(): Observable<TeamMappingStatus | null> {
+    return this.http.get<BackendTeamMappingStatus>('assets/data/team_mapping_status.json').pipe(
+      map((snapshot) => ({
+        updatedAt: snapshot.updated_at,
+        status: snapshot.status,
+        apiFootballTotal: snapshot.api_football_teams_count,
+        eloTotal: snapshot.elo_teams_count,
+        matched: snapshot.mapped_count,
+        autoValidated: snapshot.auto_validated_count,
+        needsReview: snapshot.needs_review_count,
+        unmappedApiFootball: snapshot.unmapped_api_count,
+        coveragePercent: snapshot.coverage_percent,
+        eloConnectedToPredictionEngine: snapshot.elo_connected_to_prediction_engine,
+      })),
+      catchError(() => of(null)),
     );
   }
 

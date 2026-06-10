@@ -1,0 +1,1378 @@
+{
+  "updated_at": "2026-06-10T15:17:20Z",
+  "unmapped_api_teams": [],
+  "unmapped_elo_teams": [
+    {
+      "team_name": "Denmark",
+      "rank": 19,
+      "elo_rating": 1869,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Italy",
+      "rank": 19,
+      "elo_rating": 1869,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Ukraine",
+      "rank": 27,
+      "elo_rating": 1780,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Russia",
+      "rank": 29,
+      "elo_rating": 1772,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Nigeria",
+      "rank": 31,
+      "elo_rating": 1770,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Greece",
+      "rank": 34,
+      "elo_rating": 1744,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Serbia",
+      "rank": 36,
+      "elo_rating": 1734,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Venezuela",
+      "rank": 39,
+      "elo_rating": 1722,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Chile",
+      "rank": 40,
+      "elo_rating": 1717,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Kosovo",
+      "rank": 41,
+      "elo_rating": 1715,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Hungary",
+      "rank": 44,
+      "elo_rating": 1710,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Poland",
+      "rank": 44,
+      "elo_rating": 1710,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Peru",
+      "rank": 46,
+      "elo_rating": 1700,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Ireland",
+      "rank": 47,
+      "elo_rating": 1699,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Wales",
+      "rank": 50,
+      "elo_rating": 1682,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Slovenia",
+      "rank": 50,
+      "elo_rating": 1682,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Slovakia",
+      "rank": 53,
+      "elo_rating": 1667,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Georgia",
+      "rank": 54,
+      "elo_rating": 1654,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Israel",
+      "rank": 56,
+      "elo_rating": 1647,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Romania",
+      "rank": 57,
+      "elo_rating": 1639,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bolivia",
+      "rank": 58,
+      "elo_rating": 1633,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Albania",
+      "rank": 61,
+      "elo_rating": 1616,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Cameroon",
+      "rank": 62,
+      "elo_rating": 1614,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Costa Rica",
+      "rank": 63,
+      "elo_rating": 1611,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Northern Ireland",
+      "rank": 64,
+      "elo_rating": 1605,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "North Macedonia",
+      "rank": 66,
+      "elo_rating": 1589,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Mali",
+      "rank": 67,
+      "elo_rating": 1588,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Honduras",
+      "rank": 70,
+      "elo_rating": 1570,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Iceland",
+      "rank": 71,
+      "elo_rating": 1569,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Angola",
+      "rank": 74,
+      "elo_rating": 1542,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "United Arab Emirates",
+      "rank": 75,
+      "elo_rating": 1540,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Finland",
+      "rank": 76,
+      "elo_rating": 1536,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Burkina Faso",
+      "rank": 77,
+      "elo_rating": 1529,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Jamaica",
+      "rank": 78,
+      "elo_rating": 1527,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Belarus",
+      "rank": 79,
+      "elo_rating": 1522,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Guatemala",
+      "rank": 82,
+      "elo_rating": 1504,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Oman",
+      "rank": 83,
+      "elo_rating": 1480,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Syria",
+      "rank": 84,
+      "elo_rating": 1479,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Palestine",
+      "rank": 85,
+      "elo_rating": 1465,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Guinea",
+      "rank": 86,
+      "elo_rating": 1463,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Montenegro",
+      "rank": 87,
+      "elo_rating": 1461,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bulgaria",
+      "rank": 88,
+      "elo_rating": 1458,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Luxembourg",
+      "rank": 89,
+      "elo_rating": 1450,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Northern Cyprus",
+      "rank": 90,
+      "elo_rating": 1442,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Suriname",
+      "rank": 92,
+      "elo_rating": 1431,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Kazakhstan",
+      "rank": 93,
+      "elo_rating": 1428,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "China",
+      "rank": 94,
+      "elo_rating": 1424,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Kurdistan",
+      "rank": 94,
+      "elo_rating": 1424,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Libya",
+      "rank": 97,
+      "elo_rating": 1420,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Gambia",
+      "rank": 98,
+      "elo_rating": 1419,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bahrain",
+      "rank": 99,
+      "elo_rating": 1414,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Benin",
+      "rank": 100,
+      "elo_rating": 1405,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Gabon",
+      "rank": 101,
+      "elo_rating": 1401,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Uganda",
+      "rank": 102,
+      "elo_rating": 1394,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Trinidad and Tobago",
+      "rank": 103,
+      "elo_rating": 1386,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Faroe Islands",
+      "rank": 103,
+      "elo_rating": 1386,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Niger",
+      "rank": 105,
+      "elo_rating": 1382,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Madagascar",
+      "rank": 106,
+      "elo_rating": 1380,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Equatorial Guinea",
+      "rank": 106,
+      "elo_rating": 1380,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Togo",
+      "rank": 108,
+      "elo_rating": 1379,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Thailand",
+      "rank": 109,
+      "elo_rating": 1376,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "North Korea",
+      "rank": 110,
+      "elo_rating": 1375,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Comoros",
+      "rank": 111,
+      "elo_rating": 1374,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Armenia",
+      "rank": 112,
+      "elo_rating": 1373,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Zimbabwe",
+      "rank": 113,
+      "elo_rating": 1372,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Indonesia",
+      "rank": 113,
+      "elo_rating": 1372,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Zambia",
+      "rank": 115,
+      "elo_rating": 1371,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Kenya",
+      "rank": 116,
+      "elo_rating": 1363,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Estonia",
+      "rank": 117,
+      "elo_rating": 1360,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Vietnam",
+      "rank": 118,
+      "elo_rating": 1351,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Sudan",
+      "rank": 119,
+      "elo_rating": 1350,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Reunion",
+      "rank": 120,
+      "elo_rating": 1345,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "El Salvador",
+      "rank": 121,
+      "elo_rating": 1342,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Mozambique",
+      "rank": 121,
+      "elo_rating": 1342,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Sierra Leone",
+      "rank": 123,
+      "elo_rating": 1341,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Guadeloupe",
+      "rank": 124,
+      "elo_rating": 1338,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Rwanda",
+      "rank": 125,
+      "elo_rating": 1336,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Nicaragua",
+      "rank": 126,
+      "elo_rating": 1333,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Kuwait",
+      "rank": 127,
+      "elo_rating": 1332,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Mauritania",
+      "rank": 128,
+      "elo_rating": 1329,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Azerbaijan",
+      "rank": 129,
+      "elo_rating": 1322,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Zanzibar",
+      "rank": 130,
+      "elo_rating": 1320,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Cyprus",
+      "rank": 131,
+      "elo_rating": 1314,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Tanzania",
+      "rank": 132,
+      "elo_rating": 1313,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Martinique",
+      "rank": 133,
+      "elo_rating": 1312,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Liberia",
+      "rank": 134,
+      "elo_rating": 1304,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Namibia",
+      "rank": 135,
+      "elo_rating": 1303,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Kyrgyzstan",
+      "rank": 136,
+      "elo_rating": 1295,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Malaysia",
+      "rank": 137,
+      "elo_rating": 1293,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Guyana",
+      "rank": 138,
+      "elo_rating": 1292,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Lebanon",
+      "rank": 139,
+      "elo_rating": 1288,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Latvia",
+      "rank": 139,
+      "elo_rating": 1288,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Ethiopia",
+      "rank": 141,
+      "elo_rating": 1287,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "New Caledonia",
+      "rank": 142,
+      "elo_rating": 1286,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Tajikistan",
+      "rank": 143,
+      "elo_rating": 1285,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Burundi",
+      "rank": 143,
+      "elo_rating": 1285,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Dominican Republic",
+      "rank": 145,
+      "elo_rating": 1283,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Lithuania",
+      "rank": 146,
+      "elo_rating": 1279,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Moldova",
+      "rank": 147,
+      "elo_rating": 1270,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Botswana",
+      "rank": 148,
+      "elo_rating": 1267,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Malta",
+      "rank": 149,
+      "elo_rating": 1255,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Guinea-Bissau",
+      "rank": 150,
+      "elo_rating": 1248,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Cuba",
+      "rank": 151,
+      "elo_rating": 1239,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Malawi",
+      "rank": 151,
+      "elo_rating": 1239,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Central African Republic",
+      "rank": 153,
+      "elo_rating": 1236,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "French Guiana",
+      "rank": 154,
+      "elo_rating": 1223,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Mayotte",
+      "rank": 155,
+      "elo_rating": 1216,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Turkmenistan",
+      "rank": 156,
+      "elo_rating": 1209,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Congo",
+      "rank": 157,
+      "elo_rating": 1207,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Eritrea",
+      "rank": 158,
+      "elo_rating": 1201,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Lesotho",
+      "rank": 159,
+      "elo_rating": 1198,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Yemen",
+      "rank": 160,
+      "elo_rating": 1195,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Philippines",
+      "rank": 161,
+      "elo_rating": 1179,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Tahiti",
+      "rank": 162,
+      "elo_rating": 1177,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Eswatini",
+      "rank": 163,
+      "elo_rating": 1148,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Saint Vincent and the Grenadines",
+      "rank": 164,
+      "elo_rating": 1141,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Papua New Guinea",
+      "rank": 165,
+      "elo_rating": 1135,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Puerto Rico",
+      "rank": 165,
+      "elo_rating": 1135,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Singapore",
+      "rank": 167,
+      "elo_rating": 1134,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "India",
+      "rank": 168,
+      "elo_rating": 1128,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Vanuatu",
+      "rank": 169,
+      "elo_rating": 1118,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bermuda",
+      "rank": 170,
+      "elo_rating": 1117,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "South Sudan",
+      "rank": 171,
+      "elo_rating": 1109,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Fiji",
+      "rank": 172,
+      "elo_rating": 1104,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Hong Kong",
+      "rank": 173,
+      "elo_rating": 1101,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Grenada",
+      "rank": 174,
+      "elo_rating": 1098,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Andorra",
+      "rank": 175,
+      "elo_rating": 1080,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Mauritius",
+      "rank": 176,
+      "elo_rating": 1073,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Chad",
+      "rank": 176,
+      "elo_rating": 1073,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Belize",
+      "rank": 176,
+      "elo_rating": 1073,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Solomon Islands",
+      "rank": 179,
+      "elo_rating": 1054,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Saint Martin",
+      "rank": 180,
+      "elo_rating": 1042,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Sao Tome and Principe",
+      "rank": 181,
+      "elo_rating": 1035,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Saint Kitts and Nevis",
+      "rank": 182,
+      "elo_rating": 1029,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Gibraltar",
+      "rank": 183,
+      "elo_rating": 1011,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Somaliland",
+      "rank": 184,
+      "elo_rating": 1005,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Saint Lucia",
+      "rank": 185,
+      "elo_rating": 1003,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Western Sahara",
+      "rank": 186,
+      "elo_rating": 996,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Afghanistan",
+      "rank": 187,
+      "elo_rating": 990,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Myanmar",
+      "rank": 188,
+      "elo_rating": 984,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Somalia",
+      "rank": 189,
+      "elo_rating": 979,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Aruba",
+      "rank": 190,
+      "elo_rating": 978,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Sint Maarten",
+      "rank": 191,
+      "elo_rating": 975,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Montserrat",
+      "rank": 192,
+      "elo_rating": 972,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Greenland",
+      "rank": 193,
+      "elo_rating": 945,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bangladesh",
+      "rank": 194,
+      "elo_rating": 942,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Djibouti",
+      "rank": 195,
+      "elo_rating": 940,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Dominica",
+      "rank": 196,
+      "elo_rating": 934,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Monaco",
+      "rank": 197,
+      "elo_rating": 903,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Barbados",
+      "rank": 198,
+      "elo_rating": 898,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Antigua and Barbuda",
+      "rank": 199,
+      "elo_rating": 895,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Liechtenstein",
+      "rank": 199,
+      "elo_rating": 895,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Nepal",
+      "rank": 201,
+      "elo_rating": 893,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Pakistan",
+      "rank": 202,
+      "elo_rating": 880,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Cambodia",
+      "rank": 203,
+      "elo_rating": 871,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Seychelles",
+      "rank": 204,
+      "elo_rating": 853,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Sri Lanka",
+      "rank": 205,
+      "elo_rating": 836,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "San Marino",
+      "rank": 206,
+      "elo_rating": 825,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Taiwan",
+      "rank": 207,
+      "elo_rating": 822,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bonaire",
+      "rank": 208,
+      "elo_rating": 817,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Maldives",
+      "rank": 209,
+      "elo_rating": 801,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Cayman Islands",
+      "rank": 210,
+      "elo_rating": 800,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Chagos Islands",
+      "rank": 211,
+      "elo_rating": 782,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Tuvalu",
+      "rank": 212,
+      "elo_rating": 756,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "British Virgin Islands",
+      "rank": 213,
+      "elo_rating": 743,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Sint Eustatius",
+      "rank": 214,
+      "elo_rating": 737,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Laos",
+      "rank": 215,
+      "elo_rating": 734,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "East Timor",
+      "rank": 215,
+      "elo_rating": 734,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Samoa",
+      "rank": 217,
+      "elo_rating": 728,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Mongolia",
+      "rank": 218,
+      "elo_rating": 726,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Saint Barthelemy",
+      "rank": 219,
+      "elo_rating": 725,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Guam",
+      "rank": 220,
+      "elo_rating": 706,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Wallis and Futuna",
+      "rank": 221,
+      "elo_rating": 699,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Vatican",
+      "rank": 222,
+      "elo_rating": 692,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Saba",
+      "rank": 223,
+      "elo_rating": 691,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bahamas",
+      "rank": 224,
+      "elo_rating": 685,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Saint Pierre and Miquelon",
+      "rank": 225,
+      "elo_rating": 677,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Turks and Caicos Islands",
+      "rank": 226,
+      "elo_rating": 657,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Anguilla",
+      "rank": 227,
+      "elo_rating": 646,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Tibet",
+      "rank": 228,
+      "elo_rating": 629,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "US Virgin Islands",
+      "rank": 229,
+      "elo_rating": 628,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Bhutan",
+      "rank": 230,
+      "elo_rating": 623,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Cook Islands",
+      "rank": 231,
+      "elo_rating": 622,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Macao",
+      "rank": 232,
+      "elo_rating": 589,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Christmas Island",
+      "rank": 233,
+      "elo_rating": 578,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Brunei",
+      "rank": 234,
+      "elo_rating": 572,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Falkland Islands",
+      "rank": 235,
+      "elo_rating": 571,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "FS Micronesia",
+      "rank": 236,
+      "elo_rating": 564,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Marshall Islands",
+      "rank": 237,
+      "elo_rating": 559,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Kiribati",
+      "rank": 238,
+      "elo_rating": 544,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Tonga",
+      "rank": 239,
+      "elo_rating": 520,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Niue",
+      "rank": 240,
+      "elo_rating": 496,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Northern Mariana Islands",
+      "rank": 241,
+      "elo_rating": 432,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Cocos Islands",
+      "rank": 242,
+      "elo_rating": 422,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Palau",
+      "rank": 243,
+      "elo_rating": 402,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    },
+    {
+      "team_name": "Eastern Samoa",
+      "rank": 244,
+      "elo_rating": 369,
+      "status": "unmapped_elo_team",
+      "possible_api_matches": []
+    }
+  ]
+}

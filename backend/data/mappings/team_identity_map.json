@@ -1,0 +1,1058 @@
+[
+  {
+    "team_id": "belgium",
+    "display_name": "Belgium",
+    "country_code": "BEL",
+    "api_football": {
+      "team_id": 1,
+      "name": "Belgium",
+      "country": "Belgium"
+    },
+    "elo": {
+      "team_name": "Belgium",
+      "rank": 15,
+      "elo_rating": 1894
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Belgium matched to Belgium via exact."
+    }
+  },
+  {
+    "team_id": "france",
+    "display_name": "France",
+    "country_code": "FRA",
+    "api_football": {
+      "team_id": 2,
+      "name": "France",
+      "country": "France"
+    },
+    "elo": {
+      "team_name": "France",
+      "rank": 3,
+      "elo_rating": 2063
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "France matched to France via exact."
+    }
+  },
+  {
+    "team_id": "croatia",
+    "display_name": "Croatia",
+    "country_code": "CRO",
+    "api_football": {
+      "team_id": 3,
+      "name": "Croatia",
+      "country": "Croatia"
+    },
+    "elo": {
+      "team_name": "Croatia",
+      "rank": 12,
+      "elo_rating": 1912
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Croatia matched to Croatia via exact."
+    }
+  },
+  {
+    "team_id": "sweden",
+    "display_name": "Sweden",
+    "country_code": "SWE",
+    "api_football": {
+      "team_id": 5,
+      "name": "Sweden",
+      "country": "Sweden"
+    },
+    "elo": {
+      "team_name": "Sweden",
+      "rank": 43,
+      "elo_rating": 1712
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Sweden matched to Sweden via exact."
+    }
+  },
+  {
+    "team_id": "brazil",
+    "display_name": "Brazil",
+    "country_code": "BRA",
+    "api_football": {
+      "team_id": 6,
+      "name": "Brazil",
+      "country": "Brazil"
+    },
+    "elo": {
+      "team_name": "Brazil",
+      "rank": 5,
+      "elo_rating": 1991
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Brazil matched to Brazil via exact."
+    }
+  },
+  {
+    "team_id": "uruguay",
+    "display_name": "Uruguay",
+    "country_code": "URU",
+    "api_football": {
+      "team_id": 7,
+      "name": "Uruguay",
+      "country": "Uruguay"
+    },
+    "elo": {
+      "team_name": "Uruguay",
+      "rank": 16,
+      "elo_rating": 1892
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Uruguay matched to Uruguay via exact."
+    }
+  },
+  {
+    "team_id": "colombia",
+    "display_name": "Colombia",
+    "country_code": "COL",
+    "api_football": {
+      "team_id": 8,
+      "name": "Colombia",
+      "country": "Colombia"
+    },
+    "elo": {
+      "team_name": "Colombia",
+      "rank": 7,
+      "elo_rating": 1982
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Colombia matched to Colombia via exact."
+    }
+  },
+  {
+    "team_id": "spain",
+    "display_name": "Spain",
+    "country_code": "ESP",
+    "api_football": {
+      "team_id": 9,
+      "name": "Spain",
+      "country": "Spain"
+    },
+    "elo": {
+      "team_name": "Spain",
+      "rank": 1,
+      "elo_rating": 2157
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Spain matched to Spain via exact."
+    }
+  },
+  {
+    "team_id": "england",
+    "display_name": "England",
+    "country_code": "ENG",
+    "api_football": {
+      "team_id": 10,
+      "name": "England",
+      "country": "England"
+    },
+    "elo": {
+      "team_name": "England",
+      "rank": 4,
+      "elo_rating": 2021
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "England matched to England via exact."
+    }
+  },
+  {
+    "team_id": "panama",
+    "display_name": "Panama",
+    "country_code": "PAN",
+    "api_football": {
+      "team_id": 11,
+      "name": "Panama",
+      "country": "Panama"
+    },
+    "elo": {
+      "team_name": "Panama",
+      "rank": 37,
+      "elo_rating": 1730
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Panama matched to Panama via exact."
+    }
+  },
+  {
+    "team_id": "japan",
+    "display_name": "Japan",
+    "country_code": "JPN",
+    "api_football": {
+      "team_id": 12,
+      "name": "Japan",
+      "country": "Japan"
+    },
+    "elo": {
+      "team_name": "Japan",
+      "rank": 14,
+      "elo_rating": 1906
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Japan matched to Japan via exact."
+    }
+  },
+  {
+    "team_id": "senegal",
+    "display_name": "Senegal",
+    "country_code": "SEN",
+    "api_football": {
+      "team_id": 13,
+      "name": "Senegal",
+      "country": "Senegal"
+    },
+    "elo": {
+      "team_name": "Senegal",
+      "rank": 21,
+      "elo_rating": 1860
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Senegal matched to Senegal via exact."
+    }
+  },
+  {
+    "team_id": "switzerland",
+    "display_name": "Switzerland",
+    "country_code": "SUI",
+    "api_football": {
+      "team_id": 15,
+      "name": "Switzerland",
+      "country": "Switzerland"
+    },
+    "elo": {
+      "team_name": "Switzerland",
+      "rank": 17,
+      "elo_rating": 1891
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Switzerland matched to Switzerland via exact."
+    }
+  },
+  {
+    "team_id": "mexico",
+    "display_name": "Mexico",
+    "country_code": "MEX",
+    "api_football": {
+      "team_id": 16,
+      "name": "Mexico",
+      "country": "Mexico"
+    },
+    "elo": {
+      "team_name": "Mexico",
+      "rank": 18,
+      "elo_rating": 1875
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Mexico matched to Mexico via exact."
+    }
+  },
+  {
+    "team_id": "south_korea",
+    "display_name": "South Korea",
+    "country_code": "KOR",
+    "api_football": {
+      "team_id": 17,
+      "name": "South Korea",
+      "country": "South-Korea"
+    },
+    "elo": {
+      "team_name": "South Korea",
+      "rank": 33,
+      "elo_rating": 1758
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "South Korea matched to South Korea via exact."
+    }
+  },
+  {
+    "team_id": "australia",
+    "display_name": "Australia",
+    "country_code": "AUS",
+    "api_football": {
+      "team_id": 20,
+      "name": "Australia",
+      "country": "Australia"
+    },
+    "elo": {
+      "team_name": "Australia",
+      "rank": 28,
+      "elo_rating": 1777
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Australia matched to Australia via exact."
+    }
+  },
+  {
+    "team_id": "iran",
+    "display_name": "Iran",
+    "country_code": "IRN",
+    "api_football": {
+      "team_id": 22,
+      "name": "Iran",
+      "country": "Iran"
+    },
+    "elo": {
+      "team_name": "Iran",
+      "rank": 29,
+      "elo_rating": 1772
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Iran matched to Iran via exact."
+    }
+  },
+  {
+    "team_id": "saudi_arabia",
+    "display_name": "Saudi Arabia",
+    "country_code": "KSA",
+    "api_football": {
+      "team_id": 23,
+      "name": "Saudi Arabia",
+      "country": "Saudi-Arabia"
+    },
+    "elo": {
+      "team_name": "Saudi Arabia",
+      "rank": 69,
+      "elo_rating": 1576
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Saudi Arabia matched to Saudi Arabia via exact."
+    }
+  },
+  {
+    "team_id": "germany",
+    "display_name": "Germany",
+    "country_code": "GER",
+    "api_football": {
+      "team_id": 25,
+      "name": "Germany",
+      "country": "Germany"
+    },
+    "elo": {
+      "team_name": "Germany",
+      "rank": 10,
+      "elo_rating": 1932
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Germany matched to Germany via exact."
+    }
+  },
+  {
+    "team_id": "argentina",
+    "display_name": "Argentina",
+    "country_code": "ARG",
+    "api_football": {
+      "team_id": 26,
+      "name": "Argentina",
+      "country": "Argentina"
+    },
+    "elo": {
+      "team_name": "Argentina",
+      "rank": 2,
+      "elo_rating": 2114
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Argentina matched to Argentina via exact."
+    }
+  },
+  {
+    "team_id": "portugal",
+    "display_name": "Portugal",
+    "country_code": "POR",
+    "api_football": {
+      "team_id": 27,
+      "name": "Portugal",
+      "country": "Portugal"
+    },
+    "elo": {
+      "team_name": "Portugal",
+      "rank": 6,
+      "elo_rating": 1986
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Portugal matched to Portugal via exact."
+    }
+  },
+  {
+    "team_id": "tunisia",
+    "display_name": "Tunisia",
+    "country_code": "TUN",
+    "api_football": {
+      "team_id": 28,
+      "name": "Tunisia",
+      "country": "Tunisia"
+    },
+    "elo": {
+      "team_name": "Tunisia",
+      "rank": 59,
+      "elo_rating": 1628
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Tunisia matched to Tunisia via exact."
+    }
+  },
+  {
+    "team_id": "morocco",
+    "display_name": "Morocco",
+    "country_code": "MAR",
+    "api_football": {
+      "team_id": 31,
+      "name": "Morocco",
+      "country": "Morocco"
+    },
+    "elo": {
+      "team_name": "Morocco",
+      "rank": 24,
+      "elo_rating": 1827
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Morocco matched to Morocco via exact."
+    }
+  },
+  {
+    "team_id": "egypt",
+    "display_name": "Egypt",
+    "country_code": "EGY",
+    "api_football": {
+      "team_id": 32,
+      "name": "Egypt",
+      "country": "Egypt"
+    },
+    "elo": {
+      "team_name": "Egypt",
+      "rank": 48,
+      "elo_rating": 1696
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Egypt matched to Egypt via exact."
+    }
+  },
+  {
+    "team_id": "czech_republic",
+    "display_name": "Czech Republic",
+    "country_code": "CZE",
+    "api_football": {
+      "team_id": 770,
+      "name": "Czech Republic",
+      "country": "Czech-Republic"
+    },
+    "elo": {
+      "team_name": "Czechia",
+      "rank": 35,
+      "elo_rating": 1740
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 0.98,
+      "method": "alias",
+      "needs_human_review": false,
+      "notes": "Czech Republic matched to Czechia via alias."
+    }
+  },
+  {
+    "team_id": "austria",
+    "display_name": "Austria",
+    "country_code": "AUT",
+    "api_football": {
+      "team_id": 775,
+      "name": "Austria",
+      "country": "Austria"
+    },
+    "elo": {
+      "team_name": "Austria",
+      "rank": 23,
+      "elo_rating": 1830
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Austria matched to Austria via exact."
+    }
+  },
+  {
+    "team_id": "turkiye",
+    "display_name": "Türkiye",
+    "country_code": "TUR",
+    "api_football": {
+      "team_id": 777,
+      "name": "Türkiye",
+      "country": "Turkey"
+    },
+    "elo": {
+      "team_name": "Turkey",
+      "rank": 13,
+      "elo_rating": 1911
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 0.98,
+      "method": "alias",
+      "needs_human_review": false,
+      "notes": "Türkiye matched to Turkey via alias."
+    }
+  },
+  {
+    "team_id": "norway",
+    "display_name": "Norway",
+    "country_code": "NOR",
+    "api_football": {
+      "team_id": 1090,
+      "name": "Norway",
+      "country": "Norway"
+    },
+    "elo": {
+      "team_name": "Norway",
+      "rank": 11,
+      "elo_rating": 1914
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Norway matched to Norway via exact."
+    }
+  },
+  {
+    "team_id": "scotland",
+    "display_name": "Scotland",
+    "country_code": "SCO",
+    "api_football": {
+      "team_id": 1108,
+      "name": "Scotland",
+      "country": "Scotland"
+    },
+    "elo": {
+      "team_name": "Scotland",
+      "rank": 26,
+      "elo_rating": 1782
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Scotland matched to Scotland via exact."
+    }
+  },
+  {
+    "team_id": "bosnia_herzegovina",
+    "display_name": "Bosnia & Herzegovina",
+    "country_code": "BIH",
+    "api_football": {
+      "team_id": 1113,
+      "name": "Bosnia & Herzegovina",
+      "country": "Bosnia"
+    },
+    "elo": {
+      "team_name": "Bosnia and Herzegovina",
+      "rank": 65,
+      "elo_rating": 1595
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 0.98,
+      "method": "alias",
+      "needs_human_review": false,
+      "notes": "Bosnia & Herzegovina matched to Bosnia and Herzegovina via alias."
+    }
+  },
+  {
+    "team_id": "netherlands",
+    "display_name": "Netherlands",
+    "country_code": "NED",
+    "api_football": {
+      "team_id": 1118,
+      "name": "Netherlands",
+      "country": "Netherlands"
+    },
+    "elo": {
+      "team_name": "Netherlands",
+      "rank": 8,
+      "elo_rating": 1948
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Netherlands matched to Netherlands via exact."
+    }
+  },
+  {
+    "team_id": "ivory_coast",
+    "display_name": "Ivory Coast",
+    "country_code": "CIV",
+    "api_football": {
+      "team_id": 1501,
+      "name": "Ivory Coast",
+      "country": "Ivory-Coast"
+    },
+    "elo": {
+      "team_name": "Ivory Coast",
+      "rank": 49,
+      "elo_rating": 1695
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Ivory Coast matched to Ivory Coast via exact."
+    }
+  },
+  {
+    "team_id": "ghana",
+    "display_name": "Ghana",
+    "country_code": "GHA",
+    "api_football": {
+      "team_id": 1504,
+      "name": "Ghana",
+      "country": "Ghana"
+    },
+    "elo": {
+      "team_name": "Ghana",
+      "rank": 81,
+      "elo_rating": 1510
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Ghana matched to Ghana via exact."
+    }
+  },
+  {
+    "team_id": "congo_dr",
+    "display_name": "Congo DR",
+    "country_code": "CGO",
+    "api_football": {
+      "team_id": 1508,
+      "name": "Congo DR",
+      "country": "Congo-DR"
+    },
+    "elo": {
+      "team_name": "DR Congo",
+      "rank": 55,
+      "elo_rating": 1652
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 0.98,
+      "method": "alias",
+      "needs_human_review": false,
+      "notes": "Congo DR matched to DR Congo via alias."
+    }
+  },
+  {
+    "team_id": "south_africa",
+    "display_name": "South Africa",
+    "country_code": "RSA",
+    "api_football": {
+      "team_id": 1531,
+      "name": "South Africa",
+      "country": "South-Africa"
+    },
+    "elo": {
+      "team_name": "South Africa",
+      "rank": 80,
+      "elo_rating": 1517
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "South Africa matched to South Africa via exact."
+    }
+  },
+  {
+    "team_id": "algeria",
+    "display_name": "Algeria",
+    "country_code": "ALG",
+    "api_football": {
+      "team_id": 1532,
+      "name": "Algeria",
+      "country": "Algeria"
+    },
+    "elo": {
+      "team_name": "Algeria",
+      "rank": 32,
+      "elo_rating": 1760
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Algeria matched to Algeria via exact."
+    }
+  },
+  {
+    "team_id": "cape_verde_islands",
+    "display_name": "Cape Verde Islands",
+    "country_code": "CPV",
+    "api_football": {
+      "team_id": 1533,
+      "name": "Cape Verde Islands",
+      "country": "Cape-Verde-Islands"
+    },
+    "elo": {
+      "team_name": "Cape Verde",
+      "rank": 68,
+      "elo_rating": 1578
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 0.98,
+      "method": "alias",
+      "needs_human_review": false,
+      "notes": "Cape Verde Islands matched to Cape Verde via alias."
+    }
+  },
+  {
+    "team_id": "jordan",
+    "display_name": "Jordan",
+    "country_code": "JOR",
+    "api_football": {
+      "team_id": 1548,
+      "name": "Jordan",
+      "country": "Jordan"
+    },
+    "elo": {
+      "team_name": "Jordan",
+      "rank": 52,
+      "elo_rating": 1680
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Jordan matched to Jordan via exact."
+    }
+  },
+  {
+    "team_id": "iraq",
+    "display_name": "Iraq",
+    "country_code": "IRQ",
+    "api_football": {
+      "team_id": 1567,
+      "name": "Iraq",
+      "country": "Iraq"
+    },
+    "elo": {
+      "team_name": "Iraq",
+      "rank": 60,
+      "elo_rating": 1618
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Iraq matched to Iraq via exact."
+    }
+  },
+  {
+    "team_id": "uzbekistan",
+    "display_name": "Uzbekistan",
+    "country_code": "UZB",
+    "api_football": {
+      "team_id": 1568,
+      "name": "Uzbekistan",
+      "country": "Uzbekistan"
+    },
+    "elo": {
+      "team_name": "Uzbekistan",
+      "rank": 42,
+      "elo_rating": 1714
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Uzbekistan matched to Uzbekistan via exact."
+    }
+  },
+  {
+    "team_id": "qatar",
+    "display_name": "Qatar",
+    "country_code": "QAT",
+    "api_football": {
+      "team_id": 1569,
+      "name": "Qatar",
+      "country": "Qatar"
+    },
+    "elo": {
+      "team_name": "Qatar",
+      "rank": 96,
+      "elo_rating": 1421
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Qatar matched to Qatar via exact."
+    }
+  },
+  {
+    "team_id": "paraguay",
+    "display_name": "Paraguay",
+    "country_code": "PAR",
+    "api_football": {
+      "team_id": 2380,
+      "name": "Paraguay",
+      "country": "Paraguay"
+    },
+    "elo": {
+      "team_name": "Paraguay",
+      "rank": 22,
+      "elo_rating": 1834
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Paraguay matched to Paraguay via exact."
+    }
+  },
+  {
+    "team_id": "ecuador",
+    "display_name": "Ecuador",
+    "country_code": "ECU",
+    "api_football": {
+      "team_id": 2382,
+      "name": "Ecuador",
+      "country": "Ecuador"
+    },
+    "elo": {
+      "team_name": "Ecuador",
+      "rank": 9,
+      "elo_rating": 1938
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Ecuador matched to Ecuador via exact."
+    }
+  },
+  {
+    "team_id": "usa",
+    "display_name": "USA",
+    "country_code": "USA",
+    "api_football": {
+      "team_id": 2384,
+      "name": "USA",
+      "country": "USA"
+    },
+    "elo": {
+      "team_name": "United States",
+      "rank": 38,
+      "elo_rating": 1726
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 0.98,
+      "method": "alias",
+      "needs_human_review": false,
+      "notes": "USA matched to United States via alias."
+    }
+  },
+  {
+    "team_id": "haiti",
+    "display_name": "Haiti",
+    "country_code": "HAI",
+    "api_football": {
+      "team_id": 2386,
+      "name": "Haiti",
+      "country": "Haiti"
+    },
+    "elo": {
+      "team_name": "Haiti",
+      "rank": 73,
+      "elo_rating": 1548
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Haiti matched to Haiti via exact."
+    }
+  },
+  {
+    "team_id": "new_zealand",
+    "display_name": "New Zealand",
+    "country_code": "NZL",
+    "api_football": {
+      "team_id": 4673,
+      "name": "New Zealand",
+      "country": "New-Zealand"
+    },
+    "elo": {
+      "team_name": "New Zealand",
+      "rank": 72,
+      "elo_rating": 1562
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "New Zealand matched to New Zealand via exact."
+    }
+  },
+  {
+    "team_id": "canada",
+    "display_name": "Canada",
+    "country_code": "CAN",
+    "api_football": {
+      "team_id": 5529,
+      "name": "Canada",
+      "country": "Canada"
+    },
+    "elo": {
+      "team_name": "Canada",
+      "rank": 25,
+      "elo_rating": 1788
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Canada matched to Canada via exact."
+    }
+  },
+  {
+    "team_id": "curacao",
+    "display_name": "Curaçao",
+    "country_code": "CUR",
+    "api_football": {
+      "team_id": 5530,
+      "name": "Curaçao",
+      "country": "Curacao"
+    },
+    "elo": {
+      "team_name": "Curaçao",
+      "rank": 91,
+      "elo_rating": 1434
+    },
+    "mapping": {
+      "status": "auto_validated",
+      "confidence": 1.0,
+      "method": "exact",
+      "needs_human_review": false,
+      "notes": "Curaçao matched to Curaçao via exact."
+    }
+  }
+]

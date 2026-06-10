@@ -1,0 +1,19 @@
+{
+  "Bosnia & Herzegovina": ["Bosnia and Herzegovina"],
+  "Cape Verde Islands": ["Cape Verde"],
+  "Congo DR": ["DR Congo", "Democratic Republic of the Congo"],
+  "Côte d'Ivoire": ["Ivory Coast", "Cote d'Ivoire"],
+  "Czech Republic": ["Czechia"],
+  "DR Congo": ["Congo DR", "Democratic Republic of the Congo"],
+  "IR Iran": ["Iran"],
+  "Iran": ["IR Iran"],
+  "Ivory Coast": ["Côte d'Ivoire", "Cote d'Ivoire"],
+  "Korea Republic": ["South Korea", "Korea Rep."],
+  "South Korea": ["Korea Republic", "Korea Rep."],
+  "Turkey": ["Türkiye"],
+  "Türkiye": ["Turkey"],
+  "UAE": ["United Arab Emirates"],
+  "USA": ["United States", "United States of America", "USMNT"],
+  "United Arab Emirates": ["UAE"],
+  "United States": ["USA", "United States of America", "USMNT"]
+}

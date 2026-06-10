@@ -118,6 +118,19 @@ docs/REAL_DATA_ACQUISITION_REPORT.md
 docs/DATA_SOURCE_DECISIONS.md
 ```
 
+## Team identity mapping
+
+Build and validate the explicit API-Football to Elo identity layer:
+
+```bash
+python3 backend/scripts/build_team_identity_map.py
+python3 backend/scripts/validate_team_mappings.py
+python3 backend/scripts/build_snapshots.py
+```
+
+The mapping is documented in `docs/TEAM_MAPPING_GUIDE.md`. It does not connect
+Elo ratings to the prediction engine or alter probabilities.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

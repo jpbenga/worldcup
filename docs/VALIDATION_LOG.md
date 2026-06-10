@@ -53,3 +53,27 @@ Manual visual validation still requires human review before moving to V0.3.
 ### Issues to fix before next phase
 
 - Complete the manual visual validation checklist and record the human decision.
+
+## V0.3.1 — Team Identity Mapping
+
+Date: 2026-06-10
+Validator: technical automation only
+
+### Technical validation
+
+- [x] Mapping generated for 48 API-Football teams
+- [x] Mapping validator passed
+- [x] No fuzzy candidate auto-validated
+- [x] Elo remains disconnected from the prediction engine
+- [x] Angular build passed
+- [x] Angular tests passed
+- [ ] Manual alias and UI review completed
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+Human validation remains required before Elo ratings can be considered for any
+future model integration.

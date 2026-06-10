@@ -166,3 +166,18 @@ Créer une V0.4 limitée au mapping validé des équipes et à l'import manuel d
 petit snapshot API-Football vers un pipeline parallèle. Ne remplacer le
 pipeline principal qu'après validation humaine des correspondances, statuts et
 résultats.
+
+## V0.3.1 — Team Identity Mapping
+
+La couche d'identité relie les `48` équipes API-Football normalisées aux
+ratings Elo sans modifier le pipeline principal.
+
+- résultat : `48/48` équipes API mappées, couverture `100 %` ;
+- méthodes : `42` noms exacts et `6` alias explicites ;
+- revue requise : `0` ;
+- équipes API non mappées : `0` ;
+- entrées Elo hors périmètre API-Football actuel : `196` ;
+- intégration au moteur de prédiction : non.
+
+Les règles, alias et étapes de revue sont détaillés dans
+`docs/TEAM_MAPPING_GUIDE.md`.

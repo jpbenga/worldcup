@@ -72,6 +72,9 @@ def main() -> None:
     acquisition_status = DATA_DIR / "snapshots" / "data_acquisition_status.json"
     if acquisition_status.exists():
         snapshot_sources["data_acquisition_status.json"] = acquisition_status
+    mapping_status = DATA_DIR / "snapshots" / "team_mapping_status.json"
+    if mapping_status.exists():
+        snapshot_sources["team_mapping_status.json"] = mapping_status
     snapshots_dir = DATA_DIR / "snapshots"
     snapshots_dir.mkdir(parents=True, exist_ok=True)
     FRONTEND_DATA_DIR.mkdir(parents=True, exist_ok=True)

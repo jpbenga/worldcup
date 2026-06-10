@@ -213,3 +213,47 @@ Notes :
 - [ ] la section “Sources réelles explorées” est lisible.
 - [ ] les limites du plan et du parsing Elo sont comprises.
 - [ ] la décision de passer à l'intégration réelle est consignée.
+
+## Checklist V0.3.1 — Team Identity Mapping
+
+### Génération et cohérence
+
+- [ ] `team_identity_map.json` existe.
+- [ ] `unmapped_teams.json` existe.
+- [ ] `team_mapping_report.json` existe.
+- [ ] `build_team_identity_map.py` termine sans erreur.
+- [ ] `validate_team_mappings.py` retourne `PASS` ou un statut expliqué.
+- [ ] la couverture API-Football vers Elo est affichée.
+- [ ] tous les mappings `needs_review` sont listés.
+- [ ] les `48` équipes API-Football sont présentes dans le rapport.
+- [ ] chaque équipe mappée possède un identifiant API, un nom Elo et un code pays.
+- [ ] aucun identifiant API, `team_id` ou nom Elo n'est dupliqué.
+- [ ] les six alias explicites documentés sont corrects.
+- [ ] aucune correspondance floue n'est auto-validée.
+- [ ] les éléments ambigus restent `needs_review` ou `unmapped`.
+- [ ] les alias USA/United States sont vérifiés.
+- [ ] les alias Korea Republic/South Korea sont vérifiés.
+- [ ] les alias Congo DR/DR Congo sont vérifiés.
+- [ ] les alias Côte d'Ivoire/Ivory Coast sont vérifiés.
+- [ ] les alias Türkiye/Turkey sont vérifiés.
+- [ ] la décision humaine est notée dans `docs/VALIDATION_LOG.md`.
+
+### Interface et sécurité
+
+- [ ] l'encart “API-Football ↔ Elo Ratings” affiche les bons compteurs.
+- [ ] l'absence du snapshot de statut ne bloque pas l'interface.
+- [ ] le frontend indique qu'Elo n'est pas connecté au moteur de prédiction.
+- [ ] aucune probabilité n'a changé à cause du mapping.
+- [ ] aucun secret ni fichier `.env` n'est suivi par Git.
+
+### Décision V0.3.1
+
+- [ ] Validé
+- [ ] Validé avec réserves
+- [ ] Non validé
+
+Notes :
+
+```text
+À compléter par la personne qui effectue la validation humaine.
+```

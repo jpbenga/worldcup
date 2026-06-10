@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-06-10T15:17:20Z",
+  "api_football_teams_count": 48,
+  "elo_teams_count": 244,
+  "mapped_count": 48,
+  "auto_validated_count": 48,
+  "needs_review_count": 0,
+  "unmapped_api_count": 0,
+  "coverage_percent": 100.0,
+  "status": "PASS",
+  "elo_connected_to_prediction_engine": false
+}
