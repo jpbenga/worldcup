@@ -39,3 +39,15 @@
 - Retomber exactement sur les expected goals baseline si un rating manque.
 - Ne considérer aucune amélioration comme validée sans comparaison et décision
   humaine.
+
+## Décision V0.5 — API-Football Active Source
+
+- Utiliser les fixtures API-Football World Cup 2026 comme source active réelle.
+- Conserver les réponses brutes et leur résumé sans secret.
+- Utiliser des entrées baseline neutres, déclarées comme prototype non calibré,
+  lorsque les données historiques ne sont pas disponibles.
+- Continuer à publier baseline, Elo et comparaison dans des snapshots séparés.
+- Marquer le backtesting `not_evaluable` pour les fixtures futures et ne jamais
+  réutiliser les résultats mock.
+- Présenter partout le moteur actuel comme un Prototype Prediction Engine
+  expérimental et non historiquement calibré.

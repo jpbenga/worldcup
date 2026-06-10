@@ -57,6 +57,6 @@ export class HomeComponent {
   }
 
   primarySource(snapshot: DataSourcesSnapshot): DataSourceInfo | undefined {
-    return snapshot.sources.find((source) => source.id === 'sample_matches');
+    return snapshot.sources.find((source) => source.id === 'active_matches');
   }
 }

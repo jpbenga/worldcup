@@ -238,3 +238,51 @@ an experimental parallel model only.
 - Keep Elo marked as experimental.
 - Do not make Elo the default model without additional backtesting.
 - Future phases must compare predictive quality before promoting Elo.
+
+## V0.5 — API-Football Active Source with Prototype Engine
+
+Date: 2026-06-10
+Validator: technical automation only
+
+### Technical validation
+
+- [x] API-Football fetch completed without endpoint errors
+- [x] 72 fixtures and 48 teams normalized
+- [x] API-Football fixtures activated in `matches.json`
+- [x] Baseline and Elo prototype predictions generated
+- [x] Model comparison generated
+- [x] Engine marked experimental and not historically calibrated
+- [x] Future fixtures marked real and future
+- [x] Backtesting marked `not_evaluable`
+- [x] No mock results used for real future fixtures
+- [x] Mock source compatibility retained
+- [x] Prediction probabilities and 1X2 markets normalized
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Secret and artifact audit passed
+
+### Manual visual validation
+
+- [ ] Real fixtures checked
+- [ ] Active API-Football source checked
+- [ ] Prototype-engine warning checked
+- [ ] No-false-backtesting message checked
+- [ ] Baseline/Elo predictions and comparison checked
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+Technical validation produced `72` real future fixtures, `48` teams, `72`
+baseline predictions, `72` Elo predictions and `72` model comparisons.
+Standings and rounds were fetched successfully. The active-source backtesting
+snapshot contains no evaluated result and is explicitly marked
+`not_evaluable`.
+
+The prototype uses neutral baseline inputs when historical features are
+unavailable. These inputs and every generated prediction are marked as
+experimental and not historically calibrated.

@@ -1,0 +1,482 @@
+[
+  {
+    "team_id": "belgium",
+    "api_football_team_id": 1,
+    "name": "Belgium",
+    "country": "Belgium",
+    "country_code": "BEL",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "france",
+    "api_football_team_id": 2,
+    "name": "France",
+    "country": "France",
+    "country_code": "FRA",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "croatia",
+    "api_football_team_id": 3,
+    "name": "Croatia",
+    "country": "Croatia",
+    "country_code": "CRO",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "sweden",
+    "api_football_team_id": 5,
+    "name": "Sweden",
+    "country": "Sweden",
+    "country_code": "SWE",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "brazil",
+    "api_football_team_id": 6,
+    "name": "Brazil",
+    "country": "Brazil",
+    "country_code": "BRA",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "uruguay",
+    "api_football_team_id": 7,
+    "name": "Uruguay",
+    "country": "Uruguay",
+    "country_code": "URU",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "colombia",
+    "api_football_team_id": 8,
+    "name": "Colombia",
+    "country": "Colombia",
+    "country_code": "COL",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "spain",
+    "api_football_team_id": 9,
+    "name": "Spain",
+    "country": "Spain",
+    "country_code": "ESP",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "england",
+    "api_football_team_id": 10,
+    "name": "England",
+    "country": "England",
+    "country_code": "ENG",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "panama",
+    "api_football_team_id": 11,
+    "name": "Panama",
+    "country": "Panama",
+    "country_code": "PAN",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "japan",
+    "api_football_team_id": 12,
+    "name": "Japan",
+    "country": "Japan",
+    "country_code": "JPN",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "senegal",
+    "api_football_team_id": 13,
+    "name": "Senegal",
+    "country": "Senegal",
+    "country_code": "SEN",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "switzerland",
+    "api_football_team_id": 15,
+    "name": "Switzerland",
+    "country": "Switzerland",
+    "country_code": "SUI",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "mexico",
+    "api_football_team_id": 16,
+    "name": "Mexico",
+    "country": "Mexico",
+    "country_code": "MEX",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "south_korea",
+    "api_football_team_id": 17,
+    "name": "South Korea",
+    "country": "South-Korea",
+    "country_code": "KOR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "australia",
+    "api_football_team_id": 20,
+    "name": "Australia",
+    "country": "Australia",
+    "country_code": "AUS",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "iran",
+    "api_football_team_id": 22,
+    "name": "Iran",
+    "country": "Iran",
+    "country_code": "IRN",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "saudi_arabia",
+    "api_football_team_id": 23,
+    "name": "Saudi Arabia",
+    "country": "Saudi-Arabia",
+    "country_code": "KSA",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "germany",
+    "api_football_team_id": 25,
+    "name": "Germany",
+    "country": "Germany",
+    "country_code": "GER",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "argentina",
+    "api_football_team_id": 26,
+    "name": "Argentina",
+    "country": "Argentina",
+    "country_code": "ARG",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "portugal",
+    "api_football_team_id": 27,
+    "name": "Portugal",
+    "country": "Portugal",
+    "country_code": "POR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "tunisia",
+    "api_football_team_id": 28,
+    "name": "Tunisia",
+    "country": "Tunisia",
+    "country_code": "TUN",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "morocco",
+    "api_football_team_id": 31,
+    "name": "Morocco",
+    "country": "Morocco",
+    "country_code": "MAR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "egypt",
+    "api_football_team_id": 32,
+    "name": "Egypt",
+    "country": "Egypt",
+    "country_code": "EGY",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "czech_republic",
+    "api_football_team_id": 770,
+    "name": "Czech Republic",
+    "country": "Czech-Republic",
+    "country_code": "CZE",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "austria",
+    "api_football_team_id": 775,
+    "name": "Austria",
+    "country": "Austria",
+    "country_code": "AUT",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "turkiye",
+    "api_football_team_id": 777,
+    "name": "Türkiye",
+    "country": "Turkey",
+    "country_code": "TUR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "norway",
+    "api_football_team_id": 1090,
+    "name": "Norway",
+    "country": "Norway",
+    "country_code": "NOR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "scotland",
+    "api_football_team_id": 1108,
+    "name": "Scotland",
+    "country": "Scotland",
+    "country_code": "SCO",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "bosnia_herzegovina",
+    "api_football_team_id": 1113,
+    "name": "Bosnia & Herzegovina",
+    "country": "Bosnia",
+    "country_code": "BIH",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "netherlands",
+    "api_football_team_id": 1118,
+    "name": "Netherlands",
+    "country": "Netherlands",
+    "country_code": "NED",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "ivory_coast",
+    "api_football_team_id": 1501,
+    "name": "Ivory Coast",
+    "country": "Ivory-Coast",
+    "country_code": "CIV",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "ghana",
+    "api_football_team_id": 1504,
+    "name": "Ghana",
+    "country": "Ghana",
+    "country_code": "GHA",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "congo_dr",
+    "api_football_team_id": 1508,
+    "name": "Congo DR",
+    "country": "Congo-DR",
+    "country_code": "CGO",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "south_africa",
+    "api_football_team_id": 1531,
+    "name": "South Africa",
+    "country": "South-Africa",
+    "country_code": "RSA",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "algeria",
+    "api_football_team_id": 1532,
+    "name": "Algeria",
+    "country": "Algeria",
+    "country_code": "ALG",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "cape_verde_islands",
+    "api_football_team_id": 1533,
+    "name": "Cape Verde Islands",
+    "country": "Cape-Verde-Islands",
+    "country_code": "CPV",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "jordan",
+    "api_football_team_id": 1548,
+    "name": "Jordan",
+    "country": "Jordan",
+    "country_code": "JOR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "iraq",
+    "api_football_team_id": 1567,
+    "name": "Iraq",
+    "country": "Iraq",
+    "country_code": "IRQ",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "uzbekistan",
+    "api_football_team_id": 1568,
+    "name": "Uzbekistan",
+    "country": "Uzbekistan",
+    "country_code": "UZB",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "qatar",
+    "api_football_team_id": 1569,
+    "name": "Qatar",
+    "country": "Qatar",
+    "country_code": "QAT",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "paraguay",
+    "api_football_team_id": 2380,
+    "name": "Paraguay",
+    "country": "Paraguay",
+    "country_code": "PAR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "ecuador",
+    "api_football_team_id": 2382,
+    "name": "Ecuador",
+    "country": "Ecuador",
+    "country_code": "ECU",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "usa",
+    "api_football_team_id": 2384,
+    "name": "USA",
+    "country": "USA",
+    "country_code": "USA",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "haiti",
+    "api_football_team_id": 2386,
+    "name": "Haiti",
+    "country": "Haiti",
+    "country_code": "HAI",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "new_zealand",
+    "api_football_team_id": 4673,
+    "name": "New Zealand",
+    "country": "New-Zealand",
+    "country_code": "NZL",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "canada",
+    "api_football_team_id": 5529,
+    "name": "Canada",
+    "country": "Canada",
+    "country_code": "CAN",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  },
+  {
+    "team_id": "curacao",
+    "api_football_team_id": 5530,
+    "name": "Curaçao",
+    "country": "Curacao",
+    "country_code": "CUR",
+    "source_type": "api_football",
+    "source_name": "api_football_worldcup_2026",
+    "is_real_data": true
+  }
+]

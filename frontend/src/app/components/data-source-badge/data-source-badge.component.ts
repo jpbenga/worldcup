@@ -11,7 +11,7 @@ export class DataSourceBadgeComponent {
   @Input({ required: true }) isRealData = false;
 
   label(): string {
-    if (this.isRealData || this.sourceType === 'api') {
+    if (this.isRealData || this.sourceType === 'api' || this.sourceType === 'api_football') {
       return 'Données réelles';
     }
     if (this.sourceType === 'generated') {
@@ -24,7 +24,7 @@ export class DataSourceBadgeComponent {
   }
 
   badgeClass(): string {
-    if (this.isRealData || this.sourceType === 'api') {
+    if (this.isRealData || this.sourceType === 'api' || this.sourceType === 'api_football') {
       return 'border-emerald-500/30 bg-emerald-500/10 text-emerald-300';
     }
     if (this.sourceType === 'generated') {

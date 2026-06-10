@@ -285,3 +285,35 @@ Notes :
 ```text
 À compléter par la personne qui effectue la validation humaine.
 ```
+
+## Checklist V0.5 — API-Football Active Source with Prototype Engine
+
+- [ ] fetch API-Football réussi.
+- [ ] fixtures brutes sauvegardées.
+- [ ] teams brutes sauvegardées.
+- [ ] fixtures normalisées.
+- [ ] teams normalisées.
+- [ ] `matches.json` contient les fixtures API-Football.
+- [ ] Angular affiche Source active : API-Football.
+- [ ] Angular affiche Données réelles : oui.
+- [ ] Angular affiche Fixtures futures : oui.
+- [ ] Angular affiche moteur prototype non calibré.
+- [ ] backtesting non disponible pour futures fixtures.
+- [ ] baseline predictions générées.
+- [ ] Elo predictions générées.
+- [ ] model comparison générée.
+- [ ] aucune donnée mock n'est présentée comme active.
+- [ ] aucune probabilité aberrante visible.
+- [ ] aucun secret n'est commité.
+
+### Décision V0.5
+
+- [ ] Validé
+- [ ] Validé avec réserves
+- [ ] Non validé
+
+Notes :
+
+```text
+À compléter par la personne qui effectue la validation humaine.
+```

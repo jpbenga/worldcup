@@ -17,6 +17,7 @@ interface BackendMatch {
   source_type: DataSourceType;
   source_name: string;
   is_real_fixture: boolean;
+  is_future_fixture?: boolean;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -40,6 +41,7 @@ export class MatchService {
           sourceType: match.source_type,
           sourceName: match.source_name,
           isRealFixture: match.is_real_fixture,
+          isFutureFixture: match.is_future_fixture,
         })),
       ),
     );

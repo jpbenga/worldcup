@@ -147,6 +147,20 @@ npm start
 The baseline remains available in `predictions.json`. The experiment and its
 moderate adjustment are documented in `docs/ELO_MODEL_EXPERIMENT.md`.
 
+## API-Football active source
+
+Fetch and activate the real future World Cup 2026 fixtures:
+
+```bash
+python3 backend/scripts/fetch_worldcup_api_football.py --season 2026
+python3 backend/scripts/normalize_api_football_worldcup.py
+python3 backend/scripts/build_snapshots.py --source api_football --model both
+```
+
+The current engine is a replaceable, non-historically-calibrated prototype.
+Future fixtures are never evaluated against mock results. See
+`docs/API_FOOTBALL_ACTIVE_SOURCE.md` and `docs/PROTOTYPE_ENGINE_STATUS.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

@@ -1,4 +1,12 @@
-export type DataSourceType = 'mock' | 'raw' | 'normalized' | 'generated' | 'evaluated' | 'manual' | 'api';
+export type DataSourceType = 'mock' | 'raw' | 'normalized' | 'generated' | 'evaluated' | 'manual' | 'api' | 'api_football';
+
+export interface PredictionEngineStatus {
+  name: string;
+  version: string;
+  status: 'experimental';
+  historicallyCalibrated: boolean;
+  description: string;
+}
 
 export interface DataSourceInfo {
   id: string;
@@ -13,6 +21,11 @@ export interface DataSourceInfo {
 export interface DataSourcesSnapshot {
   version: string;
   updatedAt: string;
+  activeSource: string;
+  isRealData: boolean;
+  isFutureFixtureSet: boolean;
+  backtestingStatus: string;
+  engine: PredictionEngineStatus;
   sources: DataSourceInfo[];
 }
 
@@ -81,6 +94,7 @@ export interface Match {
   sourceType: DataSourceType;
   sourceName: string;
   isRealFixture: boolean;
+  isFutureFixture?: boolean;
 }
 
 export interface ScoreProbability {

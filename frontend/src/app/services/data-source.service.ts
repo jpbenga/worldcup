@@ -8,6 +8,7 @@ import {
   DataSourcesSnapshot,
   DataSourceType,
   TeamMappingStatus,
+  PredictionEngineStatus,
 } from '../models/worldcup.models';
 
 interface BackendDataSourceInfo {
@@ -23,6 +24,17 @@ interface BackendDataSourceInfo {
 interface BackendDataSourcesSnapshot {
   version: string;
   updated_at: string;
+  active_source: string;
+  is_real_data: boolean;
+  is_future_fixture_set: boolean;
+  backtesting_status: string;
+  engine: {
+    name: string;
+    version: string;
+    status: PredictionEngineStatus['status'];
+    historically_calibrated: boolean;
+    description: string;
+  };
   sources: BackendDataSourceInfo[];
 }
 
@@ -63,6 +75,17 @@ export class DataSourceService {
       map((snapshot) => ({
         version: snapshot.version,
         updatedAt: snapshot.updated_at,
+        activeSource: snapshot.active_source,
+        isRealData: snapshot.is_real_data,
+        isFutureFixtureSet: snapshot.is_future_fixture_set,
+        backtestingStatus: snapshot.backtesting_status,
+        engine: {
+          name: snapshot.engine.name,
+          version: snapshot.engine.version,
+          status: snapshot.engine.status,
+          historicallyCalibrated: snapshot.engine.historically_calibrated,
+          description: snapshot.engine.description,
+        },
         sources: snapshot.sources.map((source) => this.toDataSource(source)),
       })),
     );

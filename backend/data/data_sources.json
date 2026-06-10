@@ -1,42 +1,44 @@
 {
   "version": "0.2.0",
-  "updated_at": "2026-06-10T10:42:28Z",
+  "updated_at": "2026-06-10T16:24:07Z",
+  "active_source": "api_football",
+  "is_real_data": true,
+  "is_future_fixture_set": true,
+  "backtesting_status": "not_evaluable_future_fixtures",
+  "engine": {
+    "name": "Prototype Prediction Engine",
+    "version": "0.5.0",
+    "status": "experimental",
+    "historically_calibrated": false,
+    "description": "Simple prototype engine used to generate score matrices and derived markets. It is not yet trained or calibrated on historical competitions."
+  },
   "sources": [
     {
-      "id": "sample_matches",
-      "label": "Sample matches",
-      "source_type": "mock",
-      "source_name": "local_sample_file",
-      "is_real_data": false,
-      "path": "backend/data/mock/sample_matches.json",
-      "description": "Données de démonstration utilisées pour tester le pipeline."
-    },
-    {
-      "id": "normalized_matches",
-      "label": "Normalized matches",
-      "source_type": "normalized",
-      "source_name": "local_normalizer",
-      "is_real_data": false,
+      "id": "active_matches",
+      "label": "Active World Cup fixtures",
+      "source_type": "api_football",
+      "source_name": "api_football_worldcup_2026",
+      "is_real_data": true,
       "path": "backend/data/normalized/matches.json",
-      "description": "Matchs mock convertis au format interne de l’application."
+      "description": "Fixtures réelles et futures API-Football Coupe du Monde 2026."
     },
     {
       "id": "predictions",
-      "label": "Generated predictions",
+      "label": "Prototype predictions",
       "source_type": "generated",
-      "source_name": "backend_prediction_pipeline",
+      "source_name": "prototype_prediction_engine",
       "is_real_data": false,
       "path": "backend/data/generated/predictions.json",
-      "description": "Prédictions générées à partir des matchs normalisés mock."
+      "description": "Prédictions générées par un moteur prototype non calibré historiquement."
     },
     {
       "id": "backtest_results",
       "label": "Backtest results",
       "source_type": "evaluated",
-      "source_name": "sample_backtest_pipeline",
+      "source_name": "not_evaluable_future_fixtures",
       "is_real_data": false,
       "path": "backend/data/evaluated/backtest_results.json",
-      "description": "Backtests de démonstration sur les prédictions mock."
+      "description": "Non disponible pour les fixtures réelles futures."
     }
   ]
 }

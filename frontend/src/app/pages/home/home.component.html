@@ -72,7 +72,17 @@
               <div>
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300">Validation manuelle</p>
                 <p class="mt-2 text-sm text-slate-300">
-                  Données actuelles : démonstration · Statut : à vérifier manuellement
+                  Source active : {{ vm.dataSources.activeSource === 'api_football' ? 'API-Football' : 'Mock' }} ·
+                  Données réelles : {{ vm.dataSources.isRealData ? 'oui' : 'non' }} · Fixtures futures :
+                  {{ vm.dataSources.isFutureFixtureSet ? 'oui' : 'non' }}
+                </p>
+                <p class="mt-1 text-xs text-slate-400">
+                  Backtesting :
+                  {{
+                    vm.dataSources.backtestingStatus === 'not_evaluable_future_fixtures'
+                      ? 'non disponible pour les matchs futurs'
+                      : 'disponible sur résultats mock'
+                  }}
                 </p>
                 @if (primarySource(vm.dataSources); as source) {
                   <p class="mt-1 text-xs text-slate-500">Source principale : {{ source.path }}</p>
@@ -82,6 +92,14 @@
                 Dernière génération : {{ vm.dataSources.updatedAt | date: 'd MMM y, HH:mm' }}
               </p>
             </div>
+          </aside>
+          <aside class="mt-5 rounded-xl border border-rose-500/20 bg-rose-500/5 p-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-rose-300">Moteur prototype</p>
+            <p class="mt-2 font-semibold">{{ vm.dataSources.engine.name }} · {{ vm.dataSources.engine.status }}</p>
+            <p class="mt-2 text-sm leading-6 text-slate-400">
+              Le moteur actuel génère des matrices de scores et des marchés dérivés, mais il n’est pas encore calibré
+              sur des compétitions historiques.
+            </p>
           </aside>
         </section>
 

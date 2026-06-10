@@ -18,6 +18,16 @@ from backend.score_matrix.score_matrix import generate_score_matrix, top_exact_s
 
 MAX_GOALS = 5
 RHO = -0.05
+ENGINE = {
+    "name": "Prototype Prediction Engine",
+    "version": "0.5.0",
+    "status": "experimental",
+    "historically_calibrated": False,
+    "description": (
+        "Simple prototype engine used to generate score matrices and derived markets. "
+        "It is not yet trained or calibrated on historical competitions."
+    ),
+}
 
 
 def score_probability(score: str, probability: float) -> dict[str, object]:
@@ -72,6 +82,7 @@ def prediction_from_expected_goals(
         "prediction_version": f"v{model_version}",
         "data_source_type": match["source_type"],
         "is_real_data": bool(match["is_real_fixture"]),
+        "engine": ENGINE,
         "score_matrix": {
             "match_id": match["match_id"],
             "max_goals": MAX_GOALS,
@@ -86,6 +97,8 @@ def prediction_from_expected_goals(
     }
     if model_family:
         prediction["model_family"] = model_family
+        prediction["engine_status"] = "experimental"
+        prediction["historically_calibrated"] = False
     if extra:
         prediction.update(extra)
     return prediction
