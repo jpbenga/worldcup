@@ -7,6 +7,26 @@ Le dépôt contient un premier pipeline backend capable de générer une matrice
 scores, d'en déduire des marchés statistiques et de comparer ces prédictions à
 des résultats fictifs.
 
+## Lancer l'application localement
+
+```bash
+cd "/Users/chloe/Desktop/dossier sans titre/worldcup"
+
+python3 backend/scripts/generate_sample_predictions.py
+python3 backend/scripts/run_sample_backtest.py
+
+cp backend/data/predictions.json frontend/src/assets/data/predictions.json
+cp backend/data/backtest_results.json frontend/src/assets/data/backtest_results.json
+cp backend/data/sample_matches.json frontend/src/assets/data/sample_matches.json
+
+cd frontend
+nvm use
+npm install
+npm start
+```
+
+L'application est ensuite disponible sur `http://localhost:4200`.
+
 ## Backend
 
 ```bash

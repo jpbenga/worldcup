@@ -1,7 +1,7 @@
 [
   {
     "match_id": "france_senegal_001",
-    "generated_at": "2026-06-10T06:17:15Z",
+    "generated_at": "2026-06-10T06:36:20Z",
     "prediction_version": "sample-v1",
     "score_matrix": {
       "match_id": "france_senegal_001",
@@ -277,7 +277,7 @@
   },
   {
     "match_id": "brazil_japan_001",
-    "generated_at": "2026-06-10T06:17:15Z",
+    "generated_at": "2026-06-10T06:36:20Z",
     "prediction_version": "sample-v1",
     "score_matrix": {
       "match_id": "brazil_japan_001",
@@ -553,7 +553,7 @@
   },
   {
     "match_id": "canada_morocco_001",
-    "generated_at": "2026-06-10T06:17:15Z",
+    "generated_at": "2026-06-10T06:36:20Z",
     "prediction_version": "sample-v1",
     "score_matrix": {
       "match_id": "canada_morocco_001",

@@ -86,6 +86,28 @@ npm install
 npm start
 ```
 
+## Lancer l'application localement
+
+Workflow complet depuis la régénération des données jusqu'au serveur Angular :
+
+```bash
+cd "/Users/chloe/Desktop/dossier sans titre/worldcup"
+
+python3 backend/scripts/generate_sample_predictions.py
+python3 backend/scripts/run_sample_backtest.py
+
+cp backend/data/predictions.json frontend/src/assets/data/predictions.json
+cp backend/data/backtest_results.json frontend/src/assets/data/backtest_results.json
+cp backend/data/sample_matches.json frontend/src/assets/data/sample_matches.json
+
+cd frontend
+nvm use
+npm install
+npm start
+```
+
+URL attendue : `http://localhost:4200`.
+
 ## Builder et tester
 
 ```bash
