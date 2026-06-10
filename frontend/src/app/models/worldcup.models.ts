@@ -44,6 +44,29 @@ export interface TeamMappingStatus {
   eloConnectedToPredictionEngine: boolean;
 }
 
+export interface ModelComparisonDelta {
+  homeWin: number;
+  draw: number;
+  awayWin: number;
+  over25?: number;
+  bttsYes?: number;
+}
+
+export interface ModelComparison {
+  matchId: string;
+  baselineModelVersion: string;
+  eloModelVersion: string;
+  homeTeam?: string;
+  awayTeam?: string;
+  eloAvailable: boolean;
+  homeElo?: number;
+  awayElo?: number;
+  deltas: ModelComparisonDelta;
+  baselineTopScore?: string;
+  eloTopScore?: string;
+  impactLevel: 'none' | 'low' | 'medium' | 'high';
+}
+
 export interface Match {
   id: string;
   homeTeam: string;

@@ -11,6 +11,8 @@ import { PredictionHistoryComponent } from '../../components/prediction-history/
 import { ResponsibleNoticeComponent } from '../../components/responsible-notice/responsible-notice.component';
 import { DataSourceBadgeComponent } from '../../components/data-source-badge/data-source-badge.component';
 import { DataSourceService } from '../../services/data-source.service';
+import { ModelComparisonService } from '../../services/model-comparison.service';
+import { ModelComparisonComponent } from '../../components/model-comparison/model-comparison.component';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +22,7 @@ import { DataSourceService } from '../../services/data-source.service';
     DataSourceBadgeComponent,
     MatchDetailComponent,
     MatchListComponent,
+    ModelComparisonComponent,
     PredictionHistoryComponent,
     ResponsibleNoticeComponent,
   ],
@@ -31,6 +34,7 @@ export class HomeComponent {
   private readonly predictionService = inject(PredictionService);
   private readonly backtestingService = inject(BacktestingService);
   private readonly dataSourceService = inject(DataSourceService);
+  private readonly modelComparisonService = inject(ModelComparisonService);
 
   readonly selectedPrediction = signal<MatchPrediction | null>(null);
   readonly viewModel$ = combineLatest({
@@ -40,6 +44,7 @@ export class HomeComponent {
     dataSources: this.dataSourceService.getSnapshot(),
     acquisitionStatus: this.dataSourceService.getAcquisitionStatus(),
     teamMappingStatus: this.dataSourceService.getTeamMappingStatus(),
+    modelComparisons: this.modelComparisonService.getComparisons(),
   });
 
   selectPrediction(prediction: MatchPrediction): void {

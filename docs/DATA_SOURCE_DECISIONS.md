@@ -29,3 +29,13 @@
   auto-validée.
 - Le mapping ne constitue pas une autorisation d'utiliser Elo dans le moteur :
   les ratings restent parallèles et n'affectent aucune probabilité.
+
+## Décision V0.4 — Elo Model Experiment
+
+- Conserver `predictions.json` et le backtesting sur le baseline existant.
+- Autoriser un modèle Elo séparé uniquement pour mesurer des deltas.
+- Utiliser exclusivement les ratings issus du mapping validé.
+- Appliquer un poids modéré de `0.20` et plafonner le facteur Elo à `±0.35`.
+- Retomber exactement sur les expected goals baseline si un rating manque.
+- Ne considérer aucune amélioration comme validée sans comparaison et décision
+  humaine.

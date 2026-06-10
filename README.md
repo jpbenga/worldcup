@@ -131,6 +131,22 @@ python3 backend/scripts/build_snapshots.py
 The mapping is documented in `docs/TEAM_MAPPING_GUIDE.md`. It does not connect
 Elo ratings to the prediction engine or alter probabilities.
 
+## Experimental Elo model
+
+Generate the stable baseline, the separate Elo-adjusted experiment, and their
+comparison:
+
+```bash
+python3 backend/scripts/build_snapshots.py --model both
+
+cd frontend
+nvm use
+npm start
+```
+
+The baseline remains available in `predictions.json`. The experiment and its
+moderate adjustment are documented in `docs/ELO_MODEL_EXPERIMENT.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

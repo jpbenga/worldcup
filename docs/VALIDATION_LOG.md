@@ -141,3 +141,59 @@ prediction model.
 ### Issues to fix before next phase
 
 - To be completed after human review.
+
+## V0.4 — Elo Model Experiment
+
+Date: 2026-06-10
+Validator: technical automation only
+
+### Technical validation
+
+- [x] Team mapping validator passed with `PASS`
+- [x] Baseline model remains available and compatible
+- [x] Experimental Elo model generated separately
+- [x] Missing Elo rating falls back exactly to baseline expected goals
+- [x] Baseline, Elo and comparison snapshots generated
+- [x] Score-matrix probabilities remain in `[0, 1]` and normalized
+- [x] Market probabilities remain in `[0, 1]`
+- [x] 1X2 markets remain normalized
+- [x] Maximum observed market delta measured at `0.0389`
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Secret scan passed
+- [x] Forbidden artifacts check passed
+
+### Experiment summary
+
+```text
+Matches compared: 3
+Elo available: 3/3
+Impact none: 0
+Impact low: 3
+Impact medium: 0
+Impact high: 0
+Maximum absolute market delta: 0.0389
+Elo weight: 0.20
+Elo factor clamp: ±0.35
+Backtesting model: baseline only
+```
+
+### Manual visual validation
+
+- [ ] Elo impact is reasonable
+- [ ] Baseline versus Elo deltas are coherent
+- [ ] No match has an aberrant probability
+- [ ] Experimental-model message is visible
+- [ ] Baseline remains clearly available
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+V0.4 is an experimental parallel model. It does not replace the baseline and
+is not used by the backtesting pipeline. Human review remains required before
+any model decision.

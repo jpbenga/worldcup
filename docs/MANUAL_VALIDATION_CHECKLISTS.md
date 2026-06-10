@@ -257,3 +257,31 @@ Notes :
 ```text
 À compléter par la personne qui effectue la validation humaine.
 ```
+
+## Checklist V0.4 — Elo Model Experiment
+
+- [ ] Le mapping équipe est validé.
+- [ ] Le modèle baseline existe toujours.
+- [ ] Le modèle Elo génère un fichier séparé.
+- [ ] `predictions_baseline.json` existe.
+- [ ] `predictions_elo.json` existe.
+- [ ] `model_comparison.json` existe.
+- [ ] Les deltas sont lisibles.
+- [ ] Aucun impact extrême non expliqué.
+- [ ] Les matchs sans Elo fallback correctement.
+- [ ] Angular affiche clairement que le modèle Elo est expérimental.
+- [ ] Les probabilités restent dans `[0, 1]`.
+- [ ] Les marchés 1X2 restent normalisés.
+- [ ] La décision humaine est notée dans `VALIDATION_LOG.md`.
+
+### Décision V0.4
+
+- [ ] Validé
+- [ ] Validé avec réserves
+- [ ] Non validé
+
+Notes :
+
+```text
+À compléter par la personne qui effectue la validation humaine.
+```

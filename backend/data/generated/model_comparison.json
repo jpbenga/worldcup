@@ -1,0 +1,62 @@
+[
+  {
+    "match_id": "france_senegal_001",
+    "baseline_model_version": "0.2.0",
+    "elo_model_version": "elo_v0.4.0",
+    "home_team": "France",
+    "away_team": "Senegal",
+    "elo_available": true,
+    "home_elo": 2063,
+    "away_elo": 1860,
+    "deltas": {
+      "home_win": 0.03889332728685724,
+      "draw": -0.018053273725707863,
+      "away_win": -0.0208400535611495,
+      "over_2_5": 0.01909752764656958,
+      "btts_yes": -0.013405122905672473
+    },
+    "baseline_top_score": "2-0",
+    "elo_top_score": "2-0",
+    "impact_level": "low"
+  },
+  {
+    "match_id": "brazil_japan_001",
+    "baseline_model_version": "0.2.0",
+    "elo_model_version": "elo_v0.4.0",
+    "home_team": "Brazil",
+    "away_team": "Japan",
+    "elo_available": true,
+    "home_elo": 1991,
+    "away_elo": 1906,
+    "deltas": {
+      "home_win": 0.023875171464848743,
+      "draw": -0.010992207675420529,
+      "away_win": -0.012882963789427937,
+      "over_2_5": 0.011799312885205082,
+      "btts_yes": -0.009027073108563044
+    },
+    "baseline_top_score": "2-0",
+    "elo_top_score": "2-0",
+    "impact_level": "low"
+  },
+  {
+    "match_id": "canada_morocco_001",
+    "baseline_model_version": "0.2.0",
+    "elo_model_version": "elo_v0.4.0",
+    "home_team": "Canada",
+    "away_team": "Morocco",
+    "elo_available": true,
+    "home_elo": 1788,
+    "away_elo": 1827,
+    "deltas": {
+      "home_win": -0.008292710926236152,
+      "draw": -0.003997109530221171,
+      "away_win": 0.012289820456457323,
+      "over_2_5": 0.0037533764628812083,
+      "btts_yes": -0.002782812673567281
+    },
+    "baseline_top_score": "1-1",
+    "elo_top_score": "1-1",
+    "impact_level": "low"
+  }
+]

@@ -1,0 +1,58 @@
+<section class="overflow-hidden rounded-2xl border border-violet-500/20 bg-violet-500/5 shadow">
+  <header class="border-b border-violet-500/20 px-5 py-5 sm:px-6">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Expérience V0.4</p>
+    <h2 class="mt-2 text-2xl font-bold">Comparaison modèle baseline vs Elo</h2>
+    <p class="mt-3 max-w-4xl text-sm leading-6 text-slate-400">
+      Le modèle Elo v0.4 est expérimental. Il sert à mesurer l’impact des ratings Elo sur les prédictions
+      baseline, pas à remplacer le modèle actuel.
+    </p>
+  </header>
+
+  @if (comparisons.length) {
+    <div class="overflow-x-auto">
+      <table class="w-full min-w-[980px] text-left text-sm">
+        <thead class="bg-slate-950/60 text-xs uppercase tracking-wider text-slate-500">
+          <tr>
+            <th class="px-5 py-3 font-medium">Match</th>
+            <th class="px-5 py-3 font-medium">Elo</th>
+            <th class="px-5 py-3 font-medium">Delta 1</th>
+            <th class="px-5 py-3 font-medium">Delta X</th>
+            <th class="px-5 py-3 font-medium">Delta 2</th>
+            <th class="px-5 py-3 font-medium">Top scores</th>
+            <th class="px-5 py-3 font-medium">Impact</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800">
+          @for (comparison of comparisons; track comparison.matchId) {
+            <tr class="transition hover:bg-slate-800/30">
+              <td class="px-5 py-4">
+                <p class="font-semibold">{{ matchLabel(comparison) }}</p>
+                <p class="mt-1 text-xs text-slate-500">{{ comparison.matchId }}</p>
+              </td>
+              <td class="px-5 py-4 text-slate-300">
+                @if (comparison.eloAvailable) {
+                  {{ comparison.homeElo | number: '1.0-0' }} / {{ comparison.awayElo | number: '1.0-0' }}
+                } @else {
+                  indisponible
+                }
+              </td>
+              <td class="px-5 py-4 text-slate-300">{{ comparison.deltas.homeWin | percent: '1.1-1' }}</td>
+              <td class="px-5 py-4 text-slate-300">{{ comparison.deltas.draw | percent: '1.1-1' }}</td>
+              <td class="px-5 py-4 text-slate-300">{{ comparison.deltas.awayWin | percent: '1.1-1' }}</td>
+              <td class="px-5 py-4 text-slate-300">
+                {{ comparison.baselineTopScore ?? '—' }} → {{ comparison.eloTopScore ?? '—' }}
+              </td>
+              <td class="px-5 py-4">
+                <span class="rounded-full px-3 py-1 text-xs font-semibold" [class]="impactClass(comparison.impactLevel)">
+                  {{ comparison.impactLevel }}
+                </span>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  } @else {
+    <p class="px-5 py-6 text-sm text-slate-400">Aucune comparaison expérimentale publiée.</p>
+  }
+</section>
