@@ -6,6 +6,11 @@ V0.5 utilise les fixtures réelles et futures de la Coupe du Monde 2026 comme
 source active du pipeline. Angular continue à lire uniquement des snapshots
 JSON générés localement.
 
+Depuis V0.5.1, API-Football est aussi la source par défaut de
+`build_snapshots.py`. Si ses fichiers sont absents, le pipeline échoue avec une
+erreur explicite : il ne revient jamais silencieusement aux données mock. Le
+mode mock reste disponible uniquement via `--source mock`.
+
 ## Acquisition
 
 La clé API reste exclusivement dans `.env`. Le fetcher réalise quatre appels
@@ -32,9 +37,11 @@ python3 backend/scripts/normalize_api_football_worldcup.py
 python3 backend/scripts/build_snapshots.py --source api_football --model both
 ```
 
-La normalisation produit `api_football_matches.json` et
-`api_football_teams.json`. Les groupes ne sont renseignés que lorsqu'ils sont
-cohérents dans les standings. Les scores absents restent `null`.
+La normalisation produit `api_football_matches.json`, `api_football_teams.json`
+et le contrat générique `teams.json`. Les groupes ne sont renseignés que
+lorsqu'ils sont cohérents dans les standings. La table API annexe de classement
+des meilleurs troisièmes n'écrase pas les groupes A à L. Les scores absents
+restent `null`.
 
 Les fixtures ne fournissant pas d'historique calibré, le baseline utilise des
 entrées xG neutres explicitement marquées comme valeurs prototype non
@@ -46,6 +53,10 @@ mapping validé.
 Le pipeline active les fixtures API-Football dans `matches.json`, génère les
 prédictions baseline/Elo et leur comparaison, puis copie les fichiers vers
 `frontend/src/assets/data/`.
+
+Il publie aussi les équipes enrichies, les groupes, les classements disponibles,
+les résumés de force Elo et l'audit de diversité des prédictions. Angular
+présente ces données par groupe et ouvre le détail d'un match dans une modale.
 
 Les matchs étant futurs et sans résultats, `backtest_results.json` porte le
 statut `not_evaluable`. Aucun résultat mock n'est utilisé pour évaluer ces

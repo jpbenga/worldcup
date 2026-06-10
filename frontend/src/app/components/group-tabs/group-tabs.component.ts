@@ -1,0 +1,36 @@
+import { DatePipe, PercentPipe } from '@angular/common';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, signal } from '@angular/core';
+import { GroupStrength, MatchPrediction, WorldCupGroup } from '../../models/worldcup.models';
+import { GroupStandingsComponent } from '../group-standings/group-standings.component';
+import { GroupStrengthSummaryComponent } from '../group-strength-summary/group-strength-summary.component';
+import { TeamBadgeComponent } from '../team-badge/team-badge.component';
+
+@Component({
+  selector: 'app-group-tabs',
+  imports: [DatePipe, PercentPipe, GroupStandingsComponent, GroupStrengthSummaryComponent, TeamBadgeComponent],
+  templateUrl: './group-tabs.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class GroupTabsComponent {
+  @Input({ required: true }) groups: WorldCupGroup[] = [];
+  @Input({ required: true }) strengths: GroupStrength[] = [];
+  @Input({ required: true }) predictions: MatchPrediction[] = [];
+  @Output() matchSelected = new EventEmitter<string>();
+  readonly selectedGroup = signal('A');
+
+  get currentGroup(): WorldCupGroup | undefined {
+    return this.groups.find((group) => group.group === this.selectedGroup()) ?? this.groups[0];
+  }
+
+  get matchCount(): number {
+    return this.groups.reduce((total, group) => total + group.matches.length, 0);
+  }
+
+  strengthFor(group: string): GroupStrength | undefined {
+    return this.strengths.find((strength) => strength.group === group);
+  }
+
+  predictionFor(matchId: string): MatchPrediction | undefined {
+    return this.predictions.find((prediction) => prediction.matchId === matchId);
+  }
+}

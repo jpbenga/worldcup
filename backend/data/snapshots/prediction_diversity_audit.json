@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-06-10T17:09:03Z",
+  "total_matches": 72,
+  "baseline_top_score_distribution": {
+    "1-1": 72
+  },
+  "elo_top_score_distribution": {
+    "1-1": 72
+  },
+  "one_one_count_baseline": 72,
+  "one_one_count_elo": 72,
+  "one_one_rate_baseline": 1.0,
+  "one_one_rate_elo": 1.0,
+  "top_score_changed_count": 0,
+  "elo_unavailable_count": 0,
+  "average_absolute_elo_diff": 228.6,
+  "max_delta": 0.043477191323083975,
+  "baseline_home_xg_unique": [
+    1.35
+  ],
+  "elo_adjusted_home_xg_range": [
+    1.2555,
+    1.4445000000000001
+  ],
+  "elo_adjusted_away_xg_range": [
+    1.2555,
+    1.4445000000000001
+  ],
+  "is_highly_uniform": true,
+  "engine_warning": "Predictions are highly concentrated on 1-1 because every real fixture currently receives the same neutral baseline expected goals. Elo adjusts markets but does not change the modal score.",
+  "recommendations": [
+    "Keep the current engine marked as experimental and not historically calibrated.",
+    "Replace neutral baseline xG with validated team-specific historical features in a future phase.",
+    "Expose Elo and xG inputs so users can understand the uniform top-score output.",
+    "Do not force artificial score diversity."
+  ]
+}

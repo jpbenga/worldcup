@@ -286,3 +286,42 @@ snapshot contains no evaluated result and is explicitly marked
 The prototype uses neutral baseline inputs when historical features are
 unavailable. These inputs and every generated prediction are marked as
 experimental and not historically calibrated.
+
+## V0.5.1 — Real Data Only + UX Review
+
+Date: 2026-06-10
+Validator: technical automation only
+
+### Technical validation
+
+- [x] API-Football confirmed as the default source without silent mock fallback
+- [x] enriched teams, groups, standings and group strengths generated
+- [x] prediction diversity audit generated and reviewed
+- [x] 72 baseline and 72 Elo modal scores honestly reported as `1-1`
+- [x] grouped Angular UX and match-detail modal built
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] secret and artifact audit passed
+
+### Manual visual validation
+
+- [ ] group tabs and compact fixture cards checked
+- [ ] team logos, standings and group strengths checked
+- [ ] modal detail and close interactions checked
+- [ ] prediction uniformity warning checked
+- [ ] mobile and desktop rendering checked
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+V0.5 remains unvalidated. V0.5.1 technical checks do not replace the requested
+human review and do not introduce fake backtesting.
+
+The standalone recycled Python tests were not run because `pytest` is not
+installed in the system Python environment. The active backend generation
+pipeline, Angular production build and Angular test suite passed.

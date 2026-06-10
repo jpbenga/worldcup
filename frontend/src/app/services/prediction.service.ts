@@ -58,8 +58,16 @@ export class PredictionService {
   private readonly http = inject(HttpClient);
 
   getPredictions(): Observable<MatchPrediction[]> {
+    return this.getFromSnapshot('predictions.json');
+  }
+
+  getEloPredictions(): Observable<MatchPrediction[]> {
+    return this.getFromSnapshot('predictions_elo.json');
+  }
+
+  private getFromSnapshot(filename: string): Observable<MatchPrediction[]> {
     return this.http
-      .get<BackendPrediction[]>('assets/data/predictions.json')
+      .get<BackendPrediction[]>(`assets/data/${filename}`)
       .pipe(map((predictions) => predictions.map((prediction) => this.toPrediction(prediction))));
   }
 

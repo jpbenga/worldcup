@@ -18,6 +18,11 @@ interface BackendMatch {
   source_name: string;
   is_real_fixture: boolean;
   is_future_fixture?: boolean;
+  round?: string;
+  venue?: string;
+  city?: string;
+  home_team_logo_url?: string;
+  away_team_logo_url?: string;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -42,6 +47,11 @@ export class MatchService {
           sourceName: match.source_name,
           isRealFixture: match.is_real_fixture,
           isFutureFixture: match.is_future_fixture,
+          round: match.round,
+          venue: match.venue,
+          city: match.city,
+          homeTeamLogoUrl: match.home_team_logo_url,
+          awayTeamLogoUrl: match.away_team_logo_url,
         })),
       ),
     );

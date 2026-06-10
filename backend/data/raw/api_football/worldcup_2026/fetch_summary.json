@@ -1,34 +1,34 @@
 {
-  "fetched_at": "2026-06-10T16:18:34Z",
+  "fetched_at": "2026-06-10T17:06:46Z",
   "league_id": 1,
   "season": 2026,
   "dry_run": false,
   "endpoints": {
     "fixtures": {
-      "status": "fetched",
+      "status": "cached",
       "items": 72,
       "errors": [],
       "path": "backend/data/raw/api_football/worldcup_2026/fixtures.json"
     },
     "teams": {
-      "status": "fetched",
+      "status": "cached",
       "items": 48,
       "errors": [],
       "path": "backend/data/raw/api_football/worldcup_2026/teams.json"
     },
     "standings": {
-      "status": "fetched",
+      "status": "cached",
       "items": 1,
       "errors": [],
       "path": "backend/data/raw/api_football/worldcup_2026/standings.json"
     },
     "rounds": {
-      "status": "fetched",
+      "status": "cached",
       "items": 3,
       "errors": [],
       "path": "backend/data/raw/api_football/worldcup_2026/rounds.json"
     }
   },
   "status": "PASS",
-  "api_calls": 4
+  "api_calls": 0
 }

@@ -2,7 +2,7 @@
   {
     "prediction_id": "pred_api_football_1489369_v0.2.0",
     "match_id": "api_football_1489369",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -284,12 +284,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1875,
+      "away_elo": 1517,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1538999_v0.2.0",
     "match_id": "api_football_1538999",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -571,12 +581,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1758,
+      "away_elo": 1740,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539000_v0.2.0",
     "match_id": "api_football_1539000",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -858,12 +878,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1788,
+      "away_elo": 1595,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489370_v0.2.0",
     "match_id": "api_football_1489370",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -1145,12 +1175,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1726,
+      "away_elo": 1834,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489373_v0.2.0",
     "match_id": "api_football_1489373",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -1432,12 +1472,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1421,
+      "away_elo": 1891,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489371_v0.2.0",
     "match_id": "api_football_1489371",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -1719,12 +1769,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1991,
+      "away_elo": 1827,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489372_v0.2.0",
     "match_id": "api_football_1489372",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -2006,12 +2066,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1548,
+      "away_elo": 1782,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539001_v0.2.0",
     "match_id": "api_football_1539001",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -2293,12 +2363,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1777,
+      "away_elo": 1911,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489374_v0.2.0",
     "match_id": "api_football_1489374",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -2580,12 +2660,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1932,
+      "away_elo": 1434,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489376_v0.2.0",
     "match_id": "api_football_1489376",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -2867,12 +2957,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1948,
+      "away_elo": 1906,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489375_v0.2.0",
     "match_id": "api_football_1489375",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -3154,12 +3254,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1695,
+      "away_elo": 1938,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539002_v0.2.0",
     "match_id": "api_football_1539002",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -3441,12 +3551,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1712,
+      "away_elo": 1628,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489380_v0.2.0",
     "match_id": "api_football_1489380",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -3728,12 +3848,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2157,
+      "away_elo": 1578,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489377_v0.2.0",
     "match_id": "api_football_1489377",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -4015,12 +4145,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1894,
+      "away_elo": 1696,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489379_v0.2.0",
     "match_id": "api_football_1489379",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -4302,12 +4442,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1576,
+      "away_elo": 1892,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489378_v0.2.0",
     "match_id": "api_football_1489378",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -4589,12 +4739,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1772,
+      "away_elo": 1562,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489383_v0.2.0",
     "match_id": "api_football_1489383",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -4876,12 +5036,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2063,
+      "away_elo": 1860,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539016_v0.2.0",
     "match_id": "api_football_1539016",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -5163,12 +5333,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1618,
+      "away_elo": 1914,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489381_v0.2.0",
     "match_id": "api_football_1489381",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -5450,12 +5630,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2114,
+      "away_elo": 1760,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489382_v0.2.0",
     "match_id": "api_football_1489382",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -5737,12 +5927,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1830,
+      "away_elo": 1680,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539003_v0.2.0",
     "match_id": "api_football_1539003",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -6024,12 +6224,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1986,
+      "away_elo": 1652,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489384_v0.2.0",
     "match_id": "api_football_1489384",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -6311,12 +6521,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2021,
+      "away_elo": 1912,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489385_v0.2.0",
     "match_id": "api_football_1489385",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -6598,12 +6818,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1510,
+      "away_elo": 1730,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489386_v0.2.0",
     "match_id": "api_football_1489386",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -6885,12 +7115,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1714,
+      "away_elo": 1982,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539004_v0.2.0",
     "match_id": "api_football_1539004",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -7172,12 +7412,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1740,
+      "away_elo": 1517,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539005_v0.2.0",
     "match_id": "api_football_1539005",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -7459,12 +7709,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1891,
+      "away_elo": 1595,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489387_v0.2.0",
     "match_id": "api_football_1489387",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -7746,12 +8006,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1788,
+      "away_elo": 1421,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489388_v0.2.0",
     "match_id": "api_football_1489388",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -8033,12 +8303,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1875,
+      "away_elo": 1758,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489391_v0.2.0",
     "match_id": "api_football_1489391",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -8320,12 +8600,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1726,
+      "away_elo": 1777,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489390_v0.2.0",
     "match_id": "api_football_1489390",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -8607,12 +8897,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1782,
+      "away_elo": 1827,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489389_v0.2.0",
     "match_id": "api_football_1489389",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -8894,12 +9194,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1991,
+      "away_elo": 1548,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539006_v0.2.0",
     "match_id": "api_football_1539006",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -9181,12 +9491,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1911,
+      "away_elo": 1834,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539007_v0.2.0",
     "match_id": "api_football_1539007",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -9468,12 +9788,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1948,
+      "away_elo": 1712,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489393_v0.2.0",
     "match_id": "api_football_1489393",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -9755,12 +10085,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1932,
+      "away_elo": 1695,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489392_v0.2.0",
     "match_id": "api_football_1489392",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -10042,12 +10382,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1938,
+      "away_elo": 1434,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489394_v0.2.0",
     "match_id": "api_football_1489394",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -10329,12 +10679,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1628,
+      "away_elo": 1906,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489397_v0.2.0",
     "match_id": "api_football_1489397",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -10616,12 +10976,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2157,
+      "away_elo": 1576,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489395_v0.2.0",
     "match_id": "api_football_1489395",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -10903,12 +11273,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1894,
+      "away_elo": 1772,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489398_v0.2.0",
     "match_id": "api_football_1489398",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -11190,12 +11570,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1892,
+      "away_elo": 1578,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489396_v0.2.0",
     "match_id": "api_football_1489396",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -11477,12 +11867,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1562,
+      "away_elo": 1696,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489399_v0.2.0",
     "match_id": "api_football_1489399",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -11764,12 +12164,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2114,
+      "away_elo": 1830,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539017_v0.2.0",
     "match_id": "api_football_1539017",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -12051,12 +12461,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2063,
+      "away_elo": 1618,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489401_v0.2.0",
     "match_id": "api_football_1489401",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -12338,12 +12758,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1914,
+      "away_elo": 1860,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489400_v0.2.0",
     "match_id": "api_football_1489400",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -12625,12 +13055,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1680,
+      "away_elo": 1760,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489404_v0.2.0",
     "match_id": "api_football_1489404",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -12912,12 +13352,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1986,
+      "away_elo": 1714,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489402_v0.2.0",
     "match_id": "api_football_1489402",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -13199,12 +13649,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 2021,
+      "away_elo": 1510,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489403_v0.2.0",
     "match_id": "api_football_1489403",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -13486,12 +13946,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1730,
+      "away_elo": 1912,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539008_v0.2.0",
     "match_id": "api_football_1539008",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -13773,12 +14243,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1982,
+      "away_elo": 1652,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489408_v0.2.0",
     "match_id": "api_football_1489408",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -14060,12 +14540,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1891,
+      "away_elo": 1788,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539009_v0.2.0",
     "match_id": "api_football_1539009",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -14347,12 +14837,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1595,
+      "away_elo": 1421,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489405_v0.2.0",
     "match_id": "api_football_1489405",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -14634,12 +15134,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1827,
+      "away_elo": 1548,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489406_v0.2.0",
     "match_id": "api_football_1489406",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -14921,12 +15431,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1782,
+      "away_elo": 1991,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539010_v0.2.0",
     "match_id": "api_football_1539010",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -15208,12 +15728,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1740,
+      "away_elo": 1875,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489407_v0.2.0",
     "match_id": "api_football_1489407",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -15495,12 +16025,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1517,
+      "away_elo": 1758,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489410_v0.2.0",
     "match_id": "api_football_1489410",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -15782,12 +16322,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1938,
+      "away_elo": 1932,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489409_v0.2.0",
     "match_id": "api_football_1489409",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -16069,12 +16619,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1434,
+      "away_elo": 1695,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539011_v0.2.0",
     "match_id": "api_football_1539011",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -16356,12 +16916,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1906,
+      "away_elo": 1712,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489412_v0.2.0",
     "match_id": "api_football_1489412",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -16643,12 +17213,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1628,
+      "away_elo": 1948,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539012_v0.2.0",
     "match_id": "api_football_1539012",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -16930,12 +17510,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1911,
+      "away_elo": 1726,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489411_v0.2.0",
     "match_id": "api_football_1489411",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -17217,12 +17807,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1834,
+      "away_elo": 1777,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539074_v0.2.0",
     "match_id": "api_football_1539074",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -17504,12 +18104,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1860,
+      "away_elo": 1618,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489416_v0.2.0",
     "match_id": "api_football_1489416",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -17791,12 +18401,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1914,
+      "away_elo": 2063,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489417_v0.2.0",
     "match_id": "api_football_1489417",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -18078,12 +18698,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1892,
+      "away_elo": 2157,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489413_v0.2.0",
     "match_id": "api_football_1489413",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -18365,12 +18995,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1578,
+      "away_elo": 1576,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489414_v0.2.0",
     "match_id": "api_football_1489414",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -18652,12 +19292,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1696,
+      "away_elo": 1772,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489415_v0.2.0",
     "match_id": "api_football_1489415",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -18939,12 +19589,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1562,
+      "away_elo": 1894,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489420_v0.2.0",
     "match_id": "api_football_1489420",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -19226,12 +19886,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1912,
+      "away_elo": 1510,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489422_v0.2.0",
     "match_id": "api_football_1489422",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -19513,12 +20183,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1730,
+      "away_elo": 2021,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489419_v0.2.0",
     "match_id": "api_football_1489419",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -19800,12 +20480,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1982,
+      "away_elo": 1986,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1539013_v0.2.0",
     "match_id": "api_football_1539013",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -20087,12 +20777,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1652,
+      "away_elo": 1714,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489418_v0.2.0",
     "match_id": "api_football_1489418",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -20374,12 +21074,22 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1760,
+      "away_elo": 1830,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   },
   {
     "prediction_id": "pred_api_football_1489421_v0.2.0",
     "match_id": "api_football_1489421",
-    "generated_at": "2026-06-10T16:24:07Z",
+    "generated_at": "2026-06-10T17:09:02Z",
     "model_version": "0.2.0",
     "prediction_version": "v0.2.0",
     "data_source_type": "api_football",
@@ -20661,6 +21371,16 @@
         "away_goals": 1,
         "probability": 0.08312083204822701
       }
-    ]
+    ],
+    "model_inputs": {
+      "baseline_home_xg": 1.35,
+      "baseline_away_xg": 1.35,
+      "adjusted_home_xg": 1.35,
+      "adjusted_away_xg": 1.35,
+      "home_elo": 1680,
+      "away_elo": 2114,
+      "elo_used_in_baseline": false,
+      "input_basis": "neutral_prototype_defaults_not_historically_calibrated"
+    }
   }
 ]

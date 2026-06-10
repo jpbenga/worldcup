@@ -95,6 +95,72 @@ export interface Match {
   sourceName: string;
   isRealFixture: boolean;
   isFutureFixture?: boolean;
+  round?: string;
+  venue?: string;
+  city?: string;
+  homeTeamLogoUrl?: string;
+  awayTeamLogoUrl?: string;
+}
+
+export interface WorldCupTeam {
+  teamId: string;
+  apiFootballTeamId: number;
+  name: string;
+  country: string;
+  countryCode: string;
+  logoUrl?: string;
+  flagUrl?: string;
+  eloRating?: number;
+  eloRank?: number;
+}
+
+export interface GroupStanding {
+  rank: number;
+  teamId: number;
+  teamName: string;
+  logoUrl?: string;
+  points: number;
+  played: number;
+  won: number;
+  drawn: number;
+  lost: number;
+  goalsFor: number;
+  goalsAgainst: number;
+  goalDifference: number;
+}
+
+export interface WorldCupGroup {
+  group: string;
+  groupLabel: string;
+  teams: WorldCupTeam[];
+  matches: Match[];
+  standingsAvailable: boolean;
+  standings: GroupStanding[];
+}
+
+export interface GroupStrength {
+  group: string;
+  groupLabel: string;
+  groupDataAvailable: boolean;
+  teamCount: number;
+  matchCount: number;
+  averageElo?: number;
+  maxElo?: number;
+  minElo?: number;
+  strongestTeam?: string;
+  weakestTeam?: string;
+}
+
+export interface PredictionDiversityAudit {
+  totalMatches: number;
+  baselineTopScoreDistribution: Record<string, number>;
+  eloTopScoreDistribution: Record<string, number>;
+  oneOneRateBaseline: number;
+  oneOneRateElo: number;
+  topScoreChangedCount: number;
+  maxDelta: number;
+  isHighlyUniform: boolean;
+  engineWarning: string;
 }
 
 export interface ScoreProbability {

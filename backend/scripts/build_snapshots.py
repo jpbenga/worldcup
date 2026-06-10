@@ -6,6 +6,8 @@ import argparse
 import shutil
 from pathlib import Path
 
+import audit_prediction_diversity
+import build_worldcup_views
 import compare_prediction_models
 import generate_predictions
 import normalize_matches
@@ -108,8 +110,8 @@ def write_not_evaluable_backtest(matches: list[dict[str, object]]) -> None:
 
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", choices=("mock", "api_football"), default="mock")
-    parser.add_argument("--model", choices=("baseline", "elo", "both"), default="baseline")
+    parser.add_argument("--source", choices=("mock", "api_football"), default="api_football")
+    parser.add_argument("--model", choices=("baseline", "elo", "both"), default="both")
     args = parser.parse_args(argv)
 
     matches = activate_source(args.source)
@@ -120,6 +122,10 @@ def main(argv: list[str] | None = None) -> None:
         run_backtest.main()
     if args.model == "both":
         compare_prediction_models.main()
+        if args.source == "api_football":
+            audit_prediction_diversity.main()
+    if args.source == "api_football":
+        build_worldcup_views.main()
 
     data_sources = build_data_sources(utc_now(), args.source, matches)
     write_json(data_sources, DATA_DIR / "data_sources.json")
@@ -135,7 +141,14 @@ def main(argv: list[str] | None = None) -> None:
         snapshot_sources["predictions_elo.json"] = DATA_DIR / "generated" / "predictions_elo.json"
     if args.model == "both":
         snapshot_sources["model_comparison.json"] = DATA_DIR / "generated" / "model_comparison.json"
-    for optional in ("data_acquisition_status.json", "team_mapping_status.json"):
+    for optional in (
+        "data_acquisition_status.json",
+        "team_mapping_status.json",
+        "teams.json",
+        "worldcup_groups.json",
+        "group_strengths.json",
+        "prediction_diversity_audit.json",
+    ):
         optional_path = DATA_DIR / "snapshots" / optional
         if optional_path.exists():
             snapshot_sources[optional] = optional_path

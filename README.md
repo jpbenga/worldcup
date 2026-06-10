@@ -3,9 +3,9 @@
 Prototype personnel et non commercial de simulation probabiliste pour la Coupe
 du Monde 2026.
 
-Le dépôt contient un premier pipeline backend capable de générer une matrice de
-scores, d'en déduire des marchés statistiques et de comparer ces prédictions à
-des résultats fictifs.
+Le dépôt contient un pipeline backend qui active les fixtures réelles
+API-Football de la Coupe du Monde 2026, génère des matrices de scores prototype
+et publie une interface de revue par groupes.
 
 ## Lancer l'application localement
 
@@ -35,6 +35,10 @@ backend/data/snapshots/matches.json
 backend/data/snapshots/predictions.json
 backend/data/snapshots/backtest_results.json
 backend/data/snapshots/data_sources.json
+backend/data/snapshots/teams.json
+backend/data/snapshots/worldcup_groups.json
+backend/data/snapshots/group_strengths.json
+backend/data/snapshots/prediction_diversity_audit.json
 ```
 
 ## Frontend
@@ -159,7 +163,12 @@ python3 backend/scripts/build_snapshots.py --source api_football --model both
 
 The current engine is a replaceable, non-historically-calibrated prototype.
 Future fixtures are never evaluated against mock results. See
-`docs/API_FOOTBALL_ACTIVE_SOURCE.md` and `docs/PROTOTYPE_ENGINE_STATUS.md`.
+`docs/API_FOOTBALL_ACTIVE_SOURCE.md`, `docs/PROTOTYPE_ENGINE_STATUS.md` and
+`docs/PREDICTION_ENGINE_AUDIT_V0_5.md`.
+
+API-Football est la source par défaut. Le pipeline ne bascule jamais
+silencieusement vers le mock ; ce mode doit être demandé explicitement avec
+`--source mock`.
 
 ## Structure
 
@@ -174,5 +183,6 @@ Le moteur métier reste côté backend. Angular charge uniquement les snapshots
 copiés dans `frontend/src/assets/data/`.
 
 La structure et les règles de provenance sont détaillées dans
-`docs/DATA_FOUNDATION.md`. Les données actuelles sont des données de
-démonstration, clairement signalées dans l'interface.
+`docs/DATA_FOUNDATION.md`. Les fixtures actives sont réelles et futures ; les
+prédictions restent celles d'un moteur expérimental non calibré, clairement
+signalé dans l'interface.

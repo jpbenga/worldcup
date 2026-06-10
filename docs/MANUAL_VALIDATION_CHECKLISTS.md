@@ -286,6 +286,51 @@ Notes :
 À compléter par la personne qui effectue la validation humaine.
 ```
 
+## Checklist V0.5.1 — Real Data Only + UX Review
+
+### Source et snapshots
+
+- [ ] la commande sans `--source` active API-Football.
+- [ ] l'absence des données API-Football provoque une erreur claire, sans fallback mock.
+- [ ] le mode mock fonctionne uniquement avec `--source mock`.
+- [ ] `teams.json`, `worldcup_groups.json`, `group_strengths.json` et `prediction_diversity_audit.json` existent.
+- [ ] les 12 groupes A à L contiennent chacun 4 équipes et 6 matchs.
+- [ ] le classement annexe des meilleurs troisièmes n'écrase aucun groupe.
+- [ ] les logos d'équipes disponibles sont affichés.
+- [ ] aucune fixture mock n'est présentée dans le parcours principal.
+
+### Audit du moteur
+
+- [ ] l'avertissement d'uniformité des prédictions est visible.
+- [ ] le taux de score modal `1-1` correspond à l'audit JSON.
+- [ ] la modale distingue clairement baseline et variation Elo.
+- [ ] aucune diversité artificielle n'a été introduite.
+- [ ] le caractère expérimental et non calibré reste visible.
+- [ ] aucun faux backtesting n'est présenté pour les fixtures futures.
+
+### Revue UX humaine
+
+- [ ] les onglets de groupes sont utilisables sur desktop.
+- [ ] les onglets de groupes sont utilisables en largeur mobile.
+- [ ] les équipes, forces de groupe et classements sont lisibles.
+- [ ] les états vides des classements sont explicites.
+- [ ] chaque carte de match ouvre la bonne modale.
+- [ ] la modale se ferme par le bouton, le fond et la touche Échap.
+- [ ] les matrices et marchés de la modale correspondent aux snapshots.
+- [ ] aucune erreur critique ni aucun 404 n'apparaît dans le navigateur.
+
+### Décision V0.5.1
+
+- [ ] Validé
+- [ ] Validé avec réserves
+- [ ] Non validé
+
+Notes :
+
+```text
+À compléter exclusivement après la revue visuelle humaine.
+```
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

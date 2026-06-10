@@ -1,0 +1,9 @@
+@if (strength?.groupDataAvailable) {
+  <div class="grid gap-2 sm:grid-cols-3">
+    <div class="rounded-xl bg-slate-950/60 p-3"><p class="text-xs text-slate-500">Elo moyen</p><p class="mt-1 font-bold">{{ strength?.averageElo | number: '1.0-0' }}</p></div>
+    <div class="rounded-xl bg-slate-950/60 p-3"><p class="text-xs text-slate-500">Plus forte</p><p class="mt-1 font-bold text-emerald-300">{{ strength?.strongestTeam }}</p></div>
+    <div class="rounded-xl bg-slate-950/60 p-3"><p class="text-xs text-slate-500">Plus faible</p><p class="mt-1 font-bold text-amber-300">{{ strength?.weakestTeam }}</p></div>
+  </div>
+} @else {
+  <p class="text-sm text-slate-400">Forces de groupe indisponibles.</p>
+}

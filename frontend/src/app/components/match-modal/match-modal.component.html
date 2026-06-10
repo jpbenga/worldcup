@@ -1,0 +1,104 @@
+<div class="fixed inset-0 z-50 overflow-y-auto bg-slate-950/85 p-3 backdrop-blur-sm sm:p-6" (click)="close()">
+  <article
+    class="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-slate-700 bg-slate-950 shadow-2xl"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Détail de la prédiction"
+    (click)="$event.stopPropagation()"
+  >
+    <header class="border-b border-slate-800 bg-slate-900/80 p-5 sm:p-7">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">
+            {{ match?.group }} · {{ match?.round }}
+          </p>
+          <p class="mt-2 text-sm text-slate-400">
+            {{ match?.kickoffAt | date: 'EEEE d MMMM y, HH:mm' }}
+            @if (match?.venue) { · {{ match?.venue }} }
+            @if (match?.city) { · {{ match?.city }} }
+          </p>
+        </div>
+        <button
+          type="button"
+          class="rounded-xl border border-slate-700 px-3 py-2 text-sm text-slate-300 transition hover:border-cyan-300 hover:text-white"
+          aria-label="Fermer"
+          (click)="close()"
+        >
+          Fermer
+        </button>
+      </div>
+
+      @if (match) {
+        <div class="mt-7 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+          <div class="text-center">
+            @if (match.homeTeamLogoUrl) {
+              <img class="mx-auto h-16 w-16 object-contain sm:h-20 sm:w-20" [src]="match.homeTeamLogoUrl" [alt]="match.homeTeam" />
+            }
+            <h2 class="mt-3 text-lg font-black sm:text-2xl">{{ match.homeTeam }}</h2>
+          </div>
+          <span class="text-sm font-bold uppercase tracking-widest text-slate-600">vs</span>
+          <div class="text-center">
+            @if (match.awayTeamLogoUrl) {
+              <img class="mx-auto h-16 w-16 object-contain sm:h-20 sm:w-20" [src]="match.awayTeamLogoUrl" [alt]="match.awayTeam" />
+            }
+            <h2 class="mt-3 text-lg font-black sm:text-2xl">{{ match.awayTeam }}</h2>
+          </div>
+        </div>
+      }
+    </header>
+
+    <div class="space-y-6 p-5 sm:p-7">
+      <aside class="rounded-xl border border-rose-500/30 bg-rose-500/5 p-4 text-sm leading-6 text-slate-300">
+        Ces probabilités proviennent d’un moteur prototype expérimental, non calibré historiquement. Le score modal
+        1-1 est actuellement surreprésenté et ne doit pas être interprété comme un conseil.
+      </aside>
+
+      <div class="grid gap-4 md:grid-cols-2">
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">Baseline neutre</p>
+          @if (baseline) {
+            <p class="mt-3 text-4xl font-black">{{ baseline.topScores[0].score }}</p>
+            <p class="mt-1 text-sm text-slate-400">{{ baseline.topScores[0].probability | percent: '1.1-1' }}</p>
+          } @else {
+            <p class="mt-3 text-sm text-slate-400">Prédiction baseline indisponible.</p>
+          }
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">Variation Elo expérimentale</p>
+          @if (elo) {
+            <p class="mt-3 text-4xl font-black">{{ elo.topScores[0].score }}</p>
+            <p class="mt-1 text-sm text-slate-400">{{ elo.topScores[0].probability | percent: '1.1-1' }}</p>
+          } @else {
+            <p class="mt-3 text-sm text-slate-400">Prédiction Elo indisponible.</p>
+          }
+        </article>
+      </div>
+
+      @if (comparison; as item) {
+        <article class="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">Impact Elo</p>
+              <p class="mt-2 text-sm text-slate-300">
+                Elo domicile {{ item.homeElo ?? 'indisponible' }} · Elo extérieur {{ item.awayElo ?? 'indisponible' }}
+              </p>
+            </div>
+            <span class="rounded-full bg-slate-900 px-3 py-1 text-xs">Impact {{ item.impactLevel }}</span>
+          </div>
+          <div class="mt-4 grid gap-2 text-sm sm:grid-cols-3">
+            <p>Victoire domicile : {{ item.deltas.homeWin | percent: '1.1-1' : 'fr-FR' }}</p>
+            <p>Nul : {{ item.deltas.draw | percent: '1.1-1' : 'fr-FR' }}</p>
+            <p>Victoire extérieur : {{ item.deltas.awayWin | percent: '1.1-1' : 'fr-FR' }}</p>
+          </div>
+        </article>
+      }
+
+      @if (baseline; as prediction) {
+        <div class="grid gap-6 xl:grid-cols-[0.7fr_1.3fr]">
+          <app-score-matrix [matrix]="prediction.scoreMatrix" />
+          <app-market-summary [markets]="prediction.markets" />
+        </div>
+      }
+    </div>
+  </article>
+</div>

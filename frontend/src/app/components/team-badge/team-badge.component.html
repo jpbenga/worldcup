@@ -1,0 +1,14 @@
+<div class="flex items-center gap-3" [class.py-2]="!compact">
+  @if (team.logoUrl) {
+    <img class="h-9 w-9 object-contain" [src]="team.logoUrl" [alt]="team.name + ' logo'" />
+  }
+  <div class="min-w-0">
+    <p class="truncate font-semibold">{{ team.name }}</p>
+    <p class="text-xs text-slate-500">
+      {{ team.countryCode }}
+      @if (team.eloRating) {
+        · Elo {{ team.eloRating }} · #{{ team.eloRank }}
+      }
+    </p>
+  </div>
+</div>

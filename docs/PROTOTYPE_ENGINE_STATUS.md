@@ -19,6 +19,12 @@ ne démontre pas encore une qualité prédictive suffisante pour être présent�
 comme un modèle robuste. Avec les fixtures API-Football futures, ses entrées
 baseline sont neutres et clairement documentées comme non calibrées.
 
+L'audit V0.5.1 confirme que le score modal baseline est `1-1` pour les `72`
+fixtures, et que la variante Elo ne change aucun de ces scores modaux. Cette
+uniformité vient des xG neutres `1.35 / 1.35`, pas d'un bug de tri ou d'une
+absence de ratings Elo. Elle est affichée dans l'interface et ne doit pas être
+masquée par une diversification artificielle.
+
 Il ne réalise ni simulation de tournoi, ni apprentissage historique, ni
 backtesting sur des matchs sans résultat.
 
@@ -33,3 +39,5 @@ Nous conservons ce moteur pour construire et valider l'acquisition, la
 normalisation, la provenance, les snapshots et l'interface. Une future version
 pourra remplacer ses fonctions internes par un moteur historiquement calibré
 sans changer le contrat général du pipeline.
+
+Voir `docs/PREDICTION_ENGINE_AUDIT_V0_5.md` pour les mesures et la décision.

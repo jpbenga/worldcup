@@ -76,7 +76,7 @@ def group_by_team_id() -> dict[int, str]:
             for standing in standing_group:
                 team_id = standing.get("team", {}).get("id")
                 group = standing.get("group")
-                if isinstance(team_id, int) and isinstance(group, str):
+                if isinstance(team_id, int) and isinstance(group, str) and group.startswith("Group "):
                     groups[team_id] = group
     return groups
 
@@ -88,6 +88,14 @@ def country_codes() -> dict[str, str]:
 
 def normalize_teams() -> list[dict[str, Any]]:
     codes = country_codes()
+    mappings = json.loads(MAPPING_PATH.read_text(encoding="utf-8"))
+    elo_by_name = {
+        item["display_name"]: {
+            "elo_rating": item.get("elo", {}).get("elo_rating"),
+            "elo_rank": item.get("elo", {}).get("rank"),
+        }
+        for item in mappings
+    }
     return [
         {
             "team_id": slugify(item.get("team", {}).get("name", "")),
@@ -95,6 +103,10 @@ def normalize_teams() -> list[dict[str, Any]]:
             "name": item.get("team", {}).get("name"),
             "country": item.get("team", {}).get("country"),
             "country_code": item.get("team", {}).get("code") or codes.get(item.get("team", {}).get("name")),
+            "logo_url": item.get("team", {}).get("logo"),
+            "flag_url": None,
+            "elo_rating": elo_by_name.get(item.get("team", {}).get("name"), {}).get("elo_rating"),
+            "elo_rank": elo_by_name.get(item.get("team", {}).get("name"), {}).get("elo_rank"),
             "source_type": "api_football",
             "source_name": "api_football_worldcup_2026",
             "is_real_data": True,
@@ -135,6 +147,10 @@ def normalize_matches() -> list[dict[str, Any]]:
                 "kickoff_at": fixture.get("date"),
                 "venue": fixture.get("venue", {}).get("name"),
                 "city": fixture.get("venue", {}).get("city"),
+                "league_logo_url": league.get("logo"),
+                "league_flag_url": league.get("flag"),
+                "home_team_logo_url": home.get("logo"),
+                "away_team_logo_url": away.get("logo"),
                 "status": normalized_status(status_short),
                 "source_status": status_short,
                 "home_score": goals.get("home"),
@@ -162,6 +178,7 @@ def main() -> None:
     teams = normalize_teams()
     matches = normalize_matches()
     write_json(NORMALIZED_DIR / "api_football_teams.json", teams)
+    write_json(NORMALIZED_DIR / "teams.json", teams)
     write_json(NORMALIZED_DIR / "api_football_matches.json", matches)
     print(f"Normalized {len(matches)} API-Football fixtures and {len(teams)} teams.")
 

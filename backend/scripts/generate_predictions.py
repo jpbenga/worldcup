@@ -106,7 +106,26 @@ def prediction_from_expected_goals(
 
 def generate_baseline_prediction(match: dict[str, object], generated_at: str) -> dict[str, object]:
     home_xg, away_xg = baseline_expected_goals(match)
-    return prediction_from_expected_goals(match, generated_at, home_xg, away_xg, MODEL_VERSION)
+    elo_features = get_match_elo_features(str(match["home_team"]), str(match["away_team"]))
+    return prediction_from_expected_goals(
+        match,
+        generated_at,
+        home_xg,
+        away_xg,
+        MODEL_VERSION,
+        extra={
+            "model_inputs": {
+                "baseline_home_xg": home_xg,
+                "baseline_away_xg": away_xg,
+                "adjusted_home_xg": home_xg,
+                "adjusted_away_xg": away_xg,
+                "home_elo": elo_features["home_elo"],
+                "away_elo": elo_features["away_elo"],
+                "elo_used_in_baseline": False,
+                "input_basis": match.get("model_inputs", {}).get("input_basis", "existing_baseline_inputs"),
+            }
+        },
+    )
 
 
 def generate_elo_prediction(match: dict[str, object], generated_at: str) -> dict[str, object]:
