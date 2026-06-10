@@ -331,6 +331,19 @@ Notes :
 À compléter exclusivement après la revue visuelle humaine.
 ```
 
+## Checklist V0.6 — Prediction Engine Discovery & Blueprint
+
+- [ ] Current engine audit completed
+- [ ] Engine reference inventory completed
+- [ ] Historical dependencies reviewed
+- [ ] Historical data strategy documented
+- [ ] Future engine blueprint created
+- [ ] ADR created
+- [ ] No prediction logic changed
+- [ ] No snapshots regenerated unnecessarily
+- [ ] No secret committed
+- [ ] Next implementation phase identified
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

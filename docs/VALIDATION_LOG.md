@@ -325,3 +325,35 @@ human review and do not introduce fake backtesting.
 The standalone recycled Python tests were not run because `pytest` is not
 installed in the system Python environment. The active backend generation
 pipeline, Angular production build and Angular test suite passed.
+
+## V0.6 — Prediction Engine Discovery & Future Blueprint
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Current engine audit completed
+- [x] Engine reference inventory completed
+- [x] Historical dependency review completed
+- [x] Historical data strategy created
+- [x] Future engine blueprint created
+- [x] ADR created
+- [x] No prediction logic changed
+- [x] No generated prediction values changed intentionally
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+The recommended next implementation phase is **V0.7 — Historical Data
+Acquisition Spike**. V0.6 changes documentation and adds a deterministic
+reference-inventory script only; it does not replace, calibrate or rerun the
+prediction engine.

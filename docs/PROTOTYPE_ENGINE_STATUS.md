@@ -41,3 +41,14 @@ pourra remplacer ses fonctions internes par un moteur historiquement calibré
 sans changer le contrat général du pipeline.
 
 Voir `docs/PREDICTION_ENGINE_AUDIT_V0_5.md` pour les mesures et la décision.
+
+## V0.6 — Discovery et trajectoire
+
+V0.6 confirme que les briques nettoyées de l'ancien moteur sont présentes,
+mais qu'aucun modèle entraîné fiable ni jeu de paramètres historiques validé
+n'est récupérable tel quel. Le moteur prototype reste donc inchangé.
+
+La trajectoire retenue est de préserver les contrats JSON, puis d'acquérir un
+historique international chronologique avant de reconstruire un
+Poisson/Dixon-Coles calibré. Voir `docs/CURRENT_ENGINE_AUDIT.md`,
+`docs/HISTORICAL_DATA_STRATEGY.md` et `docs/FUTURE_ENGINE_BLUEPRINT.md`.

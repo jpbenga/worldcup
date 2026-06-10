@@ -170,6 +170,28 @@ API-Football est la source par défaut. Le pipeline ne bascule jamais
 silencieusement vers le mock ; ce mode doit être demandé explicitement avec
 `--source mock`.
 
+## Prediction engine discovery
+
+V0.6 documents the current prototype, recovered historical references and the
+path toward a future calibrated engine without changing prediction logic:
+
+```text
+docs/CURRENT_ENGINE_AUDIT.md
+docs/ENGINE_REFERENCE_INVENTORY.md
+docs/HISTORICAL_DATA_STRATEGY.md
+docs/FUTURE_ENGINE_BLUEPRINT.md
+docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md
+```
+
+Regenerate the tracked reference inventory with:
+
+```bash
+python3 backend/scripts/discover_engine_references.py
+```
+
+The recommended next implementation phase is **V0.7 — Historical Data
+Acquisition Spike**.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

@@ -25,3 +25,7 @@ layer changes market probabilities, but does not change the most likely score.
 Do not force diversity and do not present these predictions as calibrated.
 Keep the prototype visible, expose its inputs, and replace neutral baseline
 features only when validated historical data is available.
+
+V0.6 documents the replacement boundary and future calibrated-engine path in
+`docs/CURRENT_ENGINE_AUDIT.md` and `docs/FUTURE_ENGINE_BLUEPRINT.md`. It does
+not change these audited prediction values.

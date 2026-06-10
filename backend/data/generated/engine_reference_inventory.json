@@ -1,0 +1,3509 @@
+[
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 23,
+    "term": "Elo",
+    "excerpt": "-> optional bounded Elo adjustment",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 24,
+    "term": "Dixon-Coles",
+    "excerpt": "-> Poisson/Dixon-Coles score matrix",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 24,
+    "term": "Dixon",
+    "excerpt": "-> Poisson/Dixon-Coles score matrix",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 24,
+    "term": "Poisson",
+    "excerpt": "-> Poisson/Dixon-Coles score matrix",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 26,
+    "term": "Elo",
+    "excerpt": "-> baseline/Elo/comparison snapshots",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 31,
+    "term": "Elo",
+    "excerpt": "`generate_predictions.generate_models(\"both\")` for baseline and Elo outputs.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 40,
+    "term": "xG",
+    "excerpt": "| Baseline xG | `generate_predictions.baseline_expected_goals` | Blends recent goals-for and goals-against inputs, then calls `compute_lambdas`. |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 41,
+    "term": "xG",
+    "excerpt": "| Lambda helper | `expected_goals.compute_lambdas` | Modulates xG with a logistic Elo-strength formula and optional home advantage. |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 41,
+    "term": "Elo",
+    "excerpt": "| Lambda helper | `expected_goals.compute_lambdas` | Modulates xG with a logistic Elo-strength formula and optional home advantage. |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 43,
+    "term": "Elo",
+    "excerpt": "| Elo lookup | `elo_features.get_match_elo_features` | Reads validated API-Football-to-Elo mappings. |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 44,
+    "term": "xG",
+    "excerpt": "| Elo variant | `elo_adjusted_model.adjust_expected_goals` | Applies a bounded, moderate Elo factor to baseline xG. |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 44,
+    "term": "Elo",
+    "excerpt": "| Elo variant | `elo_adjusted_model.adjust_expected_goals` | Applies a bounded, moderate Elo factor to baseline xG. |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 45,
+    "term": "Dixon-Coles",
+    "excerpt": "| Score matrix | `score_matrix.generate_score_matrix` | Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. |",
+    "category": "data"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 45,
+    "term": "Dixon",
+    "excerpt": "| Score matrix | `score_matrix.generate_score_matrix` | Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. |",
+    "category": "data"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 45,
+    "term": "Poisson",
+    "excerpt": "| Score matrix | `score_matrix.generate_score_matrix` | Multiplies independent Poisson probabilities, applies Dixon-Coles low-score correction and normalizes. |",
+    "category": "data"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 52,
+    "term": "xG",
+    "excerpt": "## How baseline xG is generated",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 72,
+    "term": "Elo",
+    "excerpt": "It then calls `compute_lambdas` with neutral input Elo, no home-field advantage",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 76,
+    "term": "xG",
+    "excerpt": "The xG are neutral because the active 2026 fixture feed does not itself provide",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 78,
+    "term": "calibration",
+    "excerpt": "features would falsely imply calibration, so V0.5 deliberately chose explicit",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 81,
+    "term": "Dixon-Coles",
+    "excerpt": "## Poisson and Dixon-Coles matrix",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 81,
+    "term": "Dixon",
+    "excerpt": "## Poisson and Dixon-Coles matrix",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 81,
+    "term": "Poisson",
+    "excerpt": "## Poisson and Dixon-Coles matrix",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 87,
+    "term": "Poisson",
+    "excerpt": "Poisson(home_goals | home_lambda) * Poisson(away_goals | away_lambda)",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 111,
+    "term": "Elo",
+    "excerpt": "## Elo injection and unchanged modal scores",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 113,
+    "term": "Elo",
+    "excerpt": "The baseline records mapped Elo values as metadata but does not use them.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 114,
+    "term": "Elo",
+    "excerpt": "The separate Elo variant reads validated ratings and computes:",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 125,
+    "term": "Elo",
+    "excerpt": "enough to move another exact score above `1-1`; therefore baseline and Elo both",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 135,
+    "term": "Elo",
+    "excerpt": "- Elo predictions with `engine_status = \"experimental\"` and",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 142,
+    "term": "backtest",
+    "excerpt": "calibration, no tournament simulation, no valid backtest for future fixtures,",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 142,
+    "term": "calibration",
+    "excerpt": "calibration, no tournament simulation, no valid backtest for future fixtures,",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 143,
+    "term": "calibration",
+    "excerpt": "no probabilistic calibration metrics, a finite matrix tail and a simple",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 150,
+    "term": "xG",
+    "excerpt": "- `drc-prototype/optimizer.py`: explicit xG/Elo formulas,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 150,
+    "term": "Elo",
+    "excerpt": "- `drc-prototype/optimizer.py`: explicit xG/Elo formulas,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 151,
+    "term": "Dixon-Coles",
+    "excerpt": "Poisson/Dixon-Coles and chronological optimization with log loss;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 151,
+    "term": "Dixon",
+    "excerpt": "Poisson/Dixon-Coles and chronological optimization with log loss;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 151,
+    "term": "Poisson",
+    "excerpt": "Poisson/Dixon-Coles and chronological optimization with log loss;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 151,
+    "term": "log loss",
+    "excerpt": "Poisson/Dixon-Coles and chronological optimization with log loss;",
+    "category": "metric"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 152,
+    "term": "xG",
+    "excerpt": "- `drc-prototype/xg-backtest.js`: rolling baseline and chronological backtest;",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 152,
+    "term": "backtest",
+    "excerpt": "- `drc-prototype/xg-backtest.js`: rolling baseline and chronological backtest;",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 153,
+    "term": "backtest",
+    "excerpt": "- `drc-prototype/backtest.js`: detailed validation history;",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 165,
+    "term": "Poisson",
+    "excerpt": "| Statistical modeling | No declared runtime library; current Poisson implementation uses standard-library `math`. |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 166,
+    "term": "optuna",
+    "excerpt": "| Optimization | `scipy` and `optuna` are explicitly listed as optional legacy optimizer candidates. |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 166,
+    "term": "scipy",
+    "excerpt": "| Optimization | `scipy` and `optuna` are explicitly listed as optional legacy optimizer candidates. |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 167,
+    "term": "scikit",
+    "excerpt": "| Machine learning | No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 167,
+    "term": "xgboost",
+    "excerpt": "| Machine learning | No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 167,
+    "term": "lightgbm",
+    "excerpt": "| Machine learning | No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 167,
+    "term": "catboost",
+    "excerpt": "| Machine learning | No tracked dependency on scikit-learn, XGBoost, LightGBM or CatBoost. |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 168,
+    "term": "penaltyblog",
+    "excerpt": "| Football modeling | No tracked dependency on `penaltyblog`; football formulas are local. |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 173,
+    "term": "numpy",
+    "excerpt": "`numpy` is also explicitly listed as an optional legacy optimizer candidate.",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 174,
+    "term": "scikit",
+    "excerpt": "No clear historical dependency on `pandas`, `statsmodels`, `scikit-learn`,",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 174,
+    "term": "statsmodels",
+    "excerpt": "No clear historical dependency on `pandas`, `statsmodels`, `scikit-learn`,",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 174,
+    "term": "pandas",
+    "excerpt": "No clear historical dependency on `pandas`, `statsmodels`, `scikit-learn`,",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 175,
+    "term": "penaltyblog",
+    "excerpt": "`penaltyblog`, `xgboost`, `lightgbm` or `catboost` was found.",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 175,
+    "term": "xgboost",
+    "excerpt": "`penaltyblog`, `xgboost`, `lightgbm` or `catboost` was found.",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 175,
+    "term": "lightgbm",
+    "excerpt": "`penaltyblog`, `xgboost`, `lightgbm` or `catboost` was found.",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 175,
+    "term": "catboost",
+    "excerpt": "`penaltyblog`, `xgboost`, `lightgbm` or `catboost` was found.",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 191,
+    "term": "calibration",
+    "excerpt": "| `data_sources.json` | Honest source, calibration and backtesting status. |",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/CURRENT_ENGINE_AUDIT.md",
+    "line": 198,
+    "term": "calibration",
+    "excerpt": "explicit engine/calibration metadata. Any incompatible change requires a",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 14,
+    "term": "Elo",
+    "excerpt": "| Inputs | Neutral `1.35 / 1.35`, current mapped Elo | Chronological results, attack/defence strength, neutral/home context, pre-match Elo | Level 2 plus dynamic Elo, recent form, importance and consistent advanced stats",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 15,
+    "term": "Dixon-Coles",
+    "excerpt": "| Model | Simple Poisson/Dixon-Coles; separate bounded Elo variant | Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature | Hybrid statistical/ML model with calibrated probability outputs ",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 15,
+    "term": "Dixon",
+    "excerpt": "| Model | Simple Poisson/Dixon-Coles; separate bounded Elo variant | Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature | Hybrid statistical/ML model with calibrated probability outputs ",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 15,
+    "term": "Poisson",
+    "excerpt": "| Model | Simple Poisson/Dixon-Coles; separate bounded Elo variant | Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature | Hybrid statistical/ML model with calibrated probability outputs ",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 15,
+    "term": "Elo",
+    "excerpt": "| Model | Simple Poisson/Dixon-Coles; separate bounded Elo variant | Fitted Poisson/Dixon-Coles with team attack/defence parameters and Elo prior/feature | Hybrid statistical/ML model with calibrated probability outputs ",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 16,
+    "term": "calibration",
+    "excerpt": "| Parameters | Hard-coded blend, `rho=-0.05`, Elo weight `0.20`, clamp `±0.35` | Fitted decay, attack/defence, neutral advantage, rho and Elo contribution | Tuned feature sets, model families, ensembles and calibration l",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 16,
+    "term": "Elo",
+    "excerpt": "| Parameters | Hard-coded blend, `rho=-0.05`, Elo weight `0.20`, clamp `±0.35` | Fitted decay, attack/defence, neutral advantage, rho and Elo contribution | Tuned feature sets, model families, ensembles and calibration l",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 18,
+    "term": "optuna",
+    "excerpt": "| Training | None | Chronological fitting, likely SciPy or Optuna | Automated tuning and model-family comparison |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 18,
+    "term": "scipy",
+    "excerpt": "| Training | None | Chronological fitting, likely SciPy or Optuna | Automated tuning and model-family comparison |",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 20,
+    "term": "calibration",
+    "excerpt": "| Metrics | Diversity audit and market deltas | Negative log likelihood/log loss, Brier score, RPS and calibration | Level 2 plus segmented performance, drift and calibration monitoring |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 20,
+    "term": "log loss",
+    "excerpt": "| Metrics | Diversity audit and market deltas | Negative log likelihood/log loss, Brier score, RPS and calibration | Level 2 plus segmented performance, drift and calibration monitoring |",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 20,
+    "term": "Brier",
+    "excerpt": "| Metrics | Diversity audit and market deltas | Negative log likelihood/log loss, Brier score, RPS and calibration | Level 2 plus segmented performance, drift and calibration monitoring |",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 20,
+    "term": "RPS",
+    "excerpt": "| Metrics | Diversity audit and market deltas | Negative log likelihood/log loss, Brier score, RPS and calibration | Level 2 plus segmented performance, drift and calibration monitoring |",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 20,
+    "term": "negative log likelihood",
+    "excerpt": "| Metrics | Diversity audit and market deltas | Negative log likelihood/log loss, Brier score, RPS and calibration | Level 2 plus segmented performance, drift and calibration monitoring |",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 21,
+    "term": "calibration",
+    "excerpt": "| Output JSON | Existing stable snapshots | Same contracts with new explicit model version/calibration metadata | Same or deliberately versioned contracts |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 26,
+    "term": "xG",
+    "excerpt": "The current engine uses equal baseline xG for all 72 fixtures, a simple",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 27,
+    "term": "Dixon-Coles",
+    "excerpt": "Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 27,
+    "term": "Dixon",
+    "excerpt": "Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 27,
+    "term": "Poisson",
+    "excerpt": "Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 27,
+    "term": "Elo",
+    "excerpt": "Poisson/Dixon-Coles score matrix and a moderate separate Elo adjustment. It has",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 28,
+    "term": "calibration",
+    "excerpt": "no fitting or historical calibration. Baseline and Elo both return `1-1` as",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 28,
+    "term": "Elo",
+    "excerpt": "no fitting or historical calibration. Baseline and Elo both return `1-1` as",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 43,
+    "term": "Elo",
+    "excerpt": "- pre-match Elo or a chronologically reconstructed Elo;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 48,
+    "term": "Dixon-Coles",
+    "excerpt": "Fit a Poisson/Dixon-Coles model with team attack and defence strengths,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 48,
+    "term": "Dixon",
+    "excerpt": "Fit a Poisson/Dixon-Coles model with team attack and defence strengths,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 48,
+    "term": "Poisson",
+    "excerpt": "Fit a Poisson/Dixon-Coles model with team attack and defence strengths,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 48,
+    "term": "fit",
+    "excerpt": "Fit a Poisson/Dixon-Coles model with team attack and defence strengths,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 50,
+    "term": "Elo",
+    "excerpt": "correlation. Elo can act as a prior, regularizer or explicit feature, but its",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 53,
+    "term": "expected goals",
+    "excerpt": "The model should generate differentiated expected goals per match. It should",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 59,
+    "term": "fit",
+    "excerpt": "- Fit only on completed matches available before each evaluation date.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 60,
+    "term": "scipy",
+    "excerpt": "- Use SciPy for a transparent likelihood optimizer first.",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 61,
+    "term": "optuna",
+    "excerpt": "- Consider Optuna only for bounded hyperparameter tuning after the objective",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 61,
+    "term": "objective",
+    "excerpt": "- Consider Optuna only for bounded hyperparameter tuning after the objective",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 70,
+    "term": "log loss",
+    "excerpt": "- negative log likelihood / log loss for probabilistic fit;",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 70,
+    "term": "negative log likelihood",
+    "excerpt": "- negative log likelihood / log loss for probabilistic fit;",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 70,
+    "term": "fit",
+    "excerpt": "- negative log likelihood / log loss for probabilistic fit;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 71,
+    "term": "Brier",
+    "excerpt": "- Brier score for outcome probabilities;",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 72,
+    "term": "ranked probability score",
+    "excerpt": "- ranked probability score for ordered goal/outcome distributions;",
+    "category": "metric"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 73,
+    "term": "calibration",
+    "excerpt": "- calibration curves and reliability by probability bucket;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 82,
+    "term": "Elo",
+    "excerpt": "preselected algorithm. Candidate inputs include dynamic Elo, recent form,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 83,
+    "term": "xG",
+    "excerpt": "competition importance, rest/travel context and consistent shot/xG features.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 87,
+    "term": "optuna",
+    "excerpt": "Optuna may tune hyperparameters only inside chronological validation. Any",
+    "category": "dependency"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 88,
+    "term": "calibration",
+    "excerpt": "probabilities should receive explicit calibration testing and, where justified,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 89,
+    "term": "calibration",
+    "excerpt": "post-model calibration. A model registry should record data version, features,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 90,
+    "term": "calibration",
+    "excerpt": "parameters, metrics, calibration status and promotion decision.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+    "line": 118,
+    "term": "Elo",
+    "excerpt": "and pre-match Elo feasibility. Produce a small audited historical sample and a",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 7,
+    "term": "train",
+    "excerpt": "V0.6 does not fetch history, train a model or alter current predictions.",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 14,
+    "term": "Elo",
+    "excerpt": "| Elo Ratings | 244 normalized ratings and validated mapping for all 48 World Cup teams. | Current ratings are snapshots, not guaranteed pre-match historical ratings. |",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 29,
+    "term": "Elo",
+    "excerpt": "- pre-match Elo or the closest valid rating strictly before kickoff;",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 33,
+    "term": "xG",
+    "excerpt": "shots on target, possession and provider xG. Sparse advanced statistics must",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 61,
+    "term": "Elo",
+    "excerpt": "8. Join only pre-match Elo values or reconstruct Elo chronologically from results.",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 68,
+    "term": "train",
+    "excerpt": "- Split train, validation and test sets by date, never randomly across time.",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 71,
+    "term": "train",
+    "excerpt": "- Tune parameters only on train/validation periods.",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 73,
+    "term": "train",
+    "excerpt": "- Never train on future World Cup 2026 fixtures.",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 74,
+    "term": "Elo",
+    "excerpt": "- Never use final standings, post-match statistics or current Elo as if they",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 80,
+    "term": "train",
+    "excerpt": "train through T1 -> validate on T1..T2",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 81,
+    "term": "train",
+    "excerpt": "train through T2 -> validate on T2..T3",
+    "category": "data"
+  },
+  {
+    "file": "docs/HISTORICAL_DATA_STRATEGY.md",
+    "line": 88,
+    "term": "calibration",
+    "excerpt": "Before model calibration, the historical dataset must pass:",
+    "category": "data"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 11,
+    "term": "Elo",
+    "excerpt": "modal score for `72/72` baseline fixtures and for all Elo variants because the",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 12,
+    "term": "xG",
+    "excerpt": "baseline xG are neutral `1.35 / 1.35`.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 16,
+    "term": "Dixon-Coles",
+    "excerpt": "Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 16,
+    "term": "Dixon",
+    "excerpt": "Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 16,
+    "term": "Poisson",
+    "excerpt": "Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 16,
+    "term": "Elo",
+    "excerpt": "Poisson/Dixon-Coles, market and Elo-related components, but no trustworthy",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 23,
+    "term": "force",
+    "excerpt": "- Do not force artificial prediction diversity.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 32,
+    "term": "xG",
+    "excerpt": "- Uniform modal scores remain visible until validated inputs replace neutral xG.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/adr/ADR-0001-prototype-engine-now-calibrated-engine-later.md",
+    "line": 34,
+    "term": "calibration",
+    "excerpt": "- A replacement model must prove out-of-sample performance and calibration.",
+    "category": "documentation"
+  },
+  {
+    "file": "README.md",
+    "line": 127,
+    "term": "Elo",
+    "excerpt": "Build and validate the explicit API-Football to Elo identity layer:",
+    "category": "documentation"
+  },
+  {
+    "file": "README.md",
+    "line": 136,
+    "term": "Elo",
+    "excerpt": "Elo ratings to the prediction engine or alter probabilities.",
+    "category": "documentation"
+  },
+  {
+    "file": "README.md",
+    "line": 138,
+    "term": "Elo",
+    "excerpt": "## Experimental Elo model",
+    "category": "documentation"
+  },
+  {
+    "file": "README.md",
+    "line": 140,
+    "term": "Elo",
+    "excerpt": "Generate the stable baseline, the separate Elo-adjusted experiment, and their",
+    "category": "documentation"
+  },
+  {
+    "file": "README.md",
+    "line": 201,
+    "term": "historique",
+    "excerpt": "historique.",
+    "category": "documentation"
+  },
+  {
+    "file": "backend/backtesting/backtester.py",
+    "line": 1,
+    "term": "backtest",
+    "excerpt": "\"\"\"Small chronological-friendly market backtester adapted from prototype backtest scripts.\"\"\"",
+    "category": "backtest"
+  },
+  {
+    "file": "backend/data_acquisition/elo_ratings_client.py",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "\"\"\"Minimal Elo Ratings exploration via raw HTML, network capture, and rendered DOM.\"\"\"",
+    "category": "data"
+  },
+  {
+    "file": "backend/data_acquisition/elo_ratings_client.py",
+    "line": 20,
+    "term": "Elo",
+    "excerpt": "RAW_ROOT = PROJECT_ROOT / \"backend\" / \"data\" / \"raw\" / \"elo\"",
+    "category": "data"
+  },
+  {
+    "file": "backend/data_acquisition/elo_ratings_client.py",
+    "line": 30,
+    "term": "Elo",
+    "excerpt": "KEYWORDS = (\"rating\", \"rank\", \"team\", \"country\", \"data\", \"json\", \"elo\")",
+    "category": "data"
+  },
+  {
+    "file": "backend/data_acquisition/elo_ratings_client.py",
+    "line": 137,
+    "term": "Elo",
+    "excerpt": "\"source_type\": \"elo\",",
+    "category": "data"
+  },
+  {
+    "file": "backend/prediction/elo_adjusted_model.py",
+    "line": 1,
+    "term": "expected goals",
+    "excerpt": "\"\"\"Moderate experimental Elo adjustment layered on top of baseline expected goals.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_adjusted_model.py",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "\"\"\"Moderate experimental Elo adjustment layered on top of baseline expected goals.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_adjusted_model.py",
+    "line": 22,
+    "term": "Elo",
+    "excerpt": "\"\"\"Apply a bounded Elo adjustment, with exact baseline fallback.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_adjusted_model.py",
+    "line": 24,
+    "term": "expected goals",
+    "excerpt": "raise ValueError(\"Expected goals must be non-negative\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_adjusted_model.py",
+    "line": 26,
+    "term": "Elo",
+    "excerpt": "raise ValueError(\"Elo weight must be between 0 and 1\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_features.py",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "\"\"\"Read validated team mappings and expose experimental Elo match features.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_features.py",
+    "line": 27,
+    "term": "Elo",
+    "excerpt": "elo = item.get(\"elo\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_features.py",
+    "line": 29,
+    "term": "Elo",
+    "excerpt": "if not isinstance(elo, dict) or mapping.get(\"status\") not in {\"auto_validated\", \"manual_validated\"}:",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_features.py",
+    "line": 31,
+    "term": "Elo",
+    "excerpt": "rating = elo.get(\"elo_rating\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_features.py",
+    "line": 38,
+    "term": "Elo",
+    "excerpt": "elo.get(\"team_name\"),",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_features.py",
+    "line": 47,
+    "term": "Elo",
+    "excerpt": "\"\"\"Return a validated mapped Elo rating, or None when none exists.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/elo_features.py",
+    "line": 52,
+    "term": "Elo",
+    "excerpt": "\"\"\"Return symmetric Elo strengths only when both teams have mapped ratings.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/expected_goals.py",
+    "line": 1,
+    "term": "xG",
+    "excerpt": "\"\"\"Expected-goal helpers extracted from drc-prototype/optimizer.py and xg-backtest.js.\"\"\"",
+    "category": "backtest"
+  },
+  {
+    "file": "backend/prediction/expected_goals.py",
+    "line": 1,
+    "term": "backtest",
+    "excerpt": "\"\"\"Expected-goal helpers extracted from drc-prototype/optimizer.py and xg-backtest.js.\"\"\"",
+    "category": "backtest"
+  },
+  {
+    "file": "backend/prediction/expected_goals.py",
+    "line": 7,
+    "term": "Elo",
+    "excerpt": "\"\"\"Convert an Elo difference into a home-win strength probability.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/expected_goals.py",
+    "line": 19,
+    "term": "xG",
+    "excerpt": "\"\"\"Modulate baseline team xG with Elo strength and home-field advantage.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/expected_goals.py",
+    "line": 19,
+    "term": "Elo",
+    "excerpt": "\"\"\"Modulate baseline team xG with Elo strength and home-field advantage.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/expected_goals.py",
+    "line": 21,
+    "term": "expected goals",
+    "excerpt": "raise ValueError(\"Expected goals must be non-negative\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/prediction/expected_goals.py",
+    "line": 37,
+    "term": "xG",
+    "excerpt": "\"\"\"Build matchup xG baselines using the prototype's rolling attack/defence blend.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/score_matrix/score_matrix.py",
+    "line": 1,
+    "term": "Dixon-Coles",
+    "excerpt": "\"\"\"Autonomous Poisson/Dixon-Coles score-matrix generator recycled from the prototype.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/score_matrix/score_matrix.py",
+    "line": 1,
+    "term": "Dixon",
+    "excerpt": "\"\"\"Autonomous Poisson/Dixon-Coles score-matrix generator recycled from the prototype.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/score_matrix/score_matrix.py",
+    "line": 1,
+    "term": "Poisson",
+    "excerpt": "\"\"\"Autonomous Poisson/Dixon-Coles score-matrix generator recycled from the prototype.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/score_matrix/score_matrix.py",
+    "line": 47,
+    "term": "expected goals",
+    "excerpt": "raise ValueError(\"Expected goals must be non-negative\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 24,
+    "term": "Elo",
+    "excerpt": "elo = load_json(DATA_DIR / \"generated\" / \"predictions_elo.json\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 28,
+    "term": "Elo",
+    "excerpt": "elo_dist = distribution(elo)",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 31,
+    "term": "Elo",
+    "excerpt": "elo_inputs = [prediction.get(\"model_inputs\", {}) for prediction in elo]",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 32,
+    "term": "Elo",
+    "excerpt": "elo_diffs = [prediction.get(\"elo_features\", {}).get(\"elo_diff\") for prediction in elo]",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 38,
+    "term": "expected goals",
+    "excerpt": "\"neutral baseline expected goals. Elo adjusts markets but does not change the modal score.\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 38,
+    "term": "Elo",
+    "excerpt": "\"neutral baseline expected goals. Elo adjusts markets but does not change the modal score.\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 70,
+    "term": "xG",
+    "excerpt": "\"Replace neutral baseline xG with validated team-specific historical features in a future phase.\",",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 71,
+    "term": "xG",
+    "excerpt": "\"Expose Elo and xG inputs so users can understand the uniform top-score output.\",",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 71,
+    "term": "Elo",
+    "excerpt": "\"Expose Elo and xG inputs so users can understand the uniform top-score output.\",",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 72,
+    "term": "force",
+    "excerpt": "\"Do not force artificial score diversity.\",",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 90,
+    "term": "Elo",
+    "excerpt": "- Elo top-score distribution: `{elo_dist}`",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 92,
+    "term": "Elo",
+    "excerpt": "- Elo 1-1 rate: `{one_one_elo:.1%}`",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 93,
+    "term": "Elo",
+    "excerpt": "- Top scores changed by Elo: `{audit['top_score_changed_count']}`",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 94,
+    "term": "Elo",
+    "excerpt": "- Elo unavailable: `{audit['elo_unavailable_count']}`",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 101,
+    "term": "Elo",
+    "excerpt": "This is not a sorting bug or a missing-Elo fallback. The active real-data",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 102,
+    "term": "expected goals",
+    "excerpt": "baseline assigns neutral `1.35 / 1.35` expected goals to every fixture because",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 103,
+    "term": "Elo",
+    "excerpt": "validated historical team features are not yet available. The moderate Elo",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 108,
+    "term": "force",
+    "excerpt": "Do not force diversity and do not present these predictions as calibrated.",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/audit_prediction_diversity.py",
+    "line": 114,
+    "term": "Elo",
+    "excerpt": "print(f\"Audited {total} predictions; baseline 1-1 rate={one_one_baseline:.1%}, Elo 1-1 rate={one_one_elo:.1%}.\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/build_snapshots.py",
+    "line": 56,
+    "term": "backtest",
+    "excerpt": "\"label\": \"Backtest results\",",
+    "category": "backtest"
+  },
+  {
+    "file": "backend/scripts/build_snapshots.py",
+    "line": 114,
+    "term": "Elo",
+    "excerpt": "parser.add_argument(\"--model\", choices=(\"baseline\", \"elo\", \"both\"), default=\"both\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/build_snapshots.py",
+    "line": 140,
+    "term": "Elo",
+    "excerpt": "if args.model in {\"elo\", \"both\"}:",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/build_team_identity_map.py",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "\"\"\"Build an explicit, reviewable API-Football to Elo team identity map.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/build_team_identity_map.py",
+    "line": 109,
+    "term": "Elo",
+    "excerpt": "\"elo\": {",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/build_team_identity_map.py",
+    "line": 172,
+    "term": "Elo",
+    "excerpt": "\"Some teams require human validation before using Elo ratings in the model.\",",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/build_team_identity_map.py",
+    "line": 173,
+    "term": "Elo",
+    "excerpt": "\"Elo ratings remain excluded from the prediction engine.\",",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/compare_prediction_models.py",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "\"\"\"Compare baseline and experimental Elo-adjusted prediction snapshots.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/compare_prediction_models.py",
+    "line": 25,
+    "term": "Elo",
+    "excerpt": "elo = load_json(DATA_DIR / \"generated\" / \"predictions_elo.json\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/compare_prediction_models.py",
+    "line": 27,
+    "term": "Elo",
+    "excerpt": "elo_by_match = {prediction[\"match_id\"]: prediction for prediction in elo}",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/compare_prediction_models.py",
+    "line": 31,
+    "term": "Elo",
+    "excerpt": "raise ValueError(\"Baseline and Elo prediction match IDs differ\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/explore_elo_ratings.py",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "\"\"\"Explore Elo Ratings through three controlled acquisition strategies.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/explore_elo_ratings.py",
+    "line": 51,
+    "term": "Elo",
+    "excerpt": "rendered_path = PROJECT_ROOT / \"backend\" / \"data\" / \"raw\" / \"elo\" / \"samples\" / \"elo_rankings_rendered_table.json\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/explore_elo_ratings.py",
+    "line": 59,
+    "term": "Elo",
+    "excerpt": "\"label\": \"Elo Ratings\",",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/explore_elo_ratings.py",
+    "line": 88,
+    "term": "Elo",
+    "excerpt": "raise SystemExit(f\"Elo Ratings raw request failed: {exc}\") from exc",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/explore_elo_ratings.py",
+    "line": 91,
+    "term": "Elo",
+    "excerpt": "f\"Elo Ratings exploration failed: {exc}. \"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/fetch_worldcup_api_football.py",
+    "line": 40,
+    "term": "force",
+    "excerpt": "parser.add_argument(\"--force-refresh\", action=\"store_true\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/generate_predictions.py",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "\"\"\"Generate baseline and experimental Elo-adjusted predictions.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/generate_predictions.py",
+    "line": 159,
+    "term": "Elo",
+    "excerpt": "if model in {\"elo\", \"both\"}:",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/generate_predictions.py",
+    "line": 160,
+    "term": "Elo",
+    "excerpt": "elo = [generate_elo_prediction(match, generated_at) for match in matches]",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/generate_predictions.py",
+    "line": 161,
+    "term": "Elo",
+    "excerpt": "write_json(elo, DATA_DIR / \"generated\" / \"predictions_elo.json\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/generate_predictions.py",
+    "line": 162,
+    "term": "Elo",
+    "excerpt": "print(f\"Generated {len(elo)} experimental Elo predictions.\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/generate_predictions.py",
+    "line": 167,
+    "term": "Elo",
+    "excerpt": "parser.add_argument(\"--model\", choices=(\"baseline\", \"elo\", \"both\"), default=\"baseline\")",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/normalize_api_football_worldcup.py",
+    "line": 94,
+    "term": "Elo",
+    "excerpt": "\"elo_rating\": item.get(\"elo\", {}).get(\"elo_rating\"),",
+    "category": "data"
+  },
+  {
+    "file": "backend/scripts/normalize_api_football_worldcup.py",
+    "line": 95,
+    "term": "Elo",
+    "excerpt": "\"elo_rank\": item.get(\"elo\", {}).get(\"rank\"),",
+    "category": "data"
+  },
+  {
+    "file": "backend/scripts/normalize_external_data.py",
+    "line": 18,
+    "term": "Elo",
+    "excerpt": "ELO_SAMPLE = DATA_ROOT / \"raw\" / \"elo\" / \"samples\" / \"elo_rankings_rendered_table.json\"",
+    "category": "data"
+  },
+  {
+    "file": "backend/scripts/normalize_external_data.py",
+    "line": 92,
+    "term": "Elo",
+    "excerpt": "\"source_type\": \"elo\",",
+    "category": "data"
+  },
+  {
+    "file": "backend/scripts/validate_team_mappings.py",
+    "line": 23,
+    "term": "Elo",
+    "excerpt": "for field in (\"team_id\", \"display_name\", \"country_code\", \"api_football\", \"elo\", \"mapping\"):",
+    "category": "model"
+  },
+  {
+    "file": "backend/scripts/validate_team_mappings.py",
+    "line": 29,
+    "term": "Elo",
+    "excerpt": "([team[\"elo\"][\"team_name\"] for team in teams], \"elo.team_name\"),",
+    "category": "model"
+  },
+  {
+    "file": "docs/ANGULAR_FRONTEND_NOTES.md",
+    "line": 50,
+    "term": "historique",
+    "excerpt": "- `PredictionHistoryComponent` affiche l'historique complet.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ANGULAR_MODELS.md",
+    "line": 72,
+    "term": "historique",
+    "excerpt": "Pour afficher un historique reproductible, l'implémentation Angular pourra",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ANGULAR_MODELS.md",
+    "line": 104,
+    "term": "historique",
+    "excerpt": "| `PredictionHistoryComponent` | Historique complet des validations et échecs |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ANGULAR_MODELS.md",
+    "line": 117,
+    "term": "historique",
+    "excerpt": "| `BacktestingService` | Charger et filtrer l'historique des validations |",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/API_FOOTBALL_ACTIVE_SOURCE.md",
+    "line": 46,
+    "term": "historique",
+    "excerpt": "Les fixtures ne fournissant pas d'historique calibré, le baseline utilise des",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/API_FOOTBALL_ACTIVE_SOURCE.md",
+    "line": 47,
+    "term": "xG",
+    "excerpt": "entrées xG neutres explicitement marquées comme valeurs prototype non",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/API_FOOTBALL_ACTIVE_SOURCE.md",
+    "line": 48,
+    "term": "Elo",
+    "excerpt": "calibrées. Le modèle Elo parallèle utilise uniquement les ratings issus du",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/API_FOOTBALL_ACTIVE_SOURCE.md",
+    "line": 54,
+    "term": "Elo",
+    "excerpt": "prédictions baseline/Elo et leur comparaison, puis copie les fichiers vers",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/API_FOOTBALL_ACTIVE_SOURCE.md",
+    "line": 58,
+    "term": "force",
+    "excerpt": "les résumés de force Elo et l'audit de diversité des prédictions. Angular",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/API_FOOTBALL_ACTIVE_SOURCE.md",
+    "line": 58,
+    "term": "Elo",
+    "excerpt": "les résumés de force Elo et l'audit de diversité des prédictions. Angular",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/BACKEND_MIGRATION_NOTES.md",
+    "line": 37,
+    "term": "xG",
+    "excerpt": "- approxime les xG de base avec un mélange simple forme offensive/défensive ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/BACKEND_MIGRATION_NOTES.md",
+    "line": 37,
+    "term": "forme",
+    "excerpt": "- approxime les xG de base avec un mélange simple forme offensive/défensive ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/BACKEND_MIGRATION_NOTES.md",
+    "line": 65,
+    "term": "xG",
+    "excerpt": "- Les paramètres xG/Elo, `rho`, la confiance et `max_goals=5` ne sont pas",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/BACKEND_MIGRATION_NOTES.md",
+    "line": 65,
+    "term": "Elo",
+    "excerpt": "- Les paramètres xG/Elo, `rho`, la confiance et `max_goals=5` ne sont pas",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/BACKEND_MIGRATION_NOTES.md",
+    "line": 68,
+    "term": "backtest",
+    "excerpt": "- Le backtest d'exemple mesure la réalisation d'un marché, pas la calibration",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/BACKEND_MIGRATION_NOTES.md",
+    "line": 68,
+    "term": "calibration",
+    "excerpt": "- Le backtest d'exemple mesure la réalisation d'un marché, pas la calibration",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/DATA_CONTRACTS.md",
+    "line": 160,
+    "term": "backtest",
+    "excerpt": "## Backtest result",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/DATA_CONTRACTS.md",
+    "line": 184,
+    "term": "historique",
+    "excerpt": "filtrer les échecs hors de l'historique.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_FOUNDATION.md",
+    "line": 18,
+    "term": "backtest",
+    "excerpt": "| `backend/data/evaluated/` | Résultats de backtest et mesures |",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/DATA_FOUNDATION.md",
+    "line": 46,
+    "term": "backtest",
+    "excerpt": "3. exécute le backtest ;",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 6,
+    "term": "Elo",
+    "excerpt": "| Elo Ratings | team strength | tested via raw HTML + Playwright network + rendered DOM / usable with review | TSV structurés découverts, 244 ratings normalisés, comparaison DOM possible | source non contractuelle, mappi",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 18,
+    "term": "Elo",
+    "excerpt": "- Préférer `World.tsv` + `en.teams.tsv` à l'extraction DOM pour Elo Ratings.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 19,
+    "term": "Elo",
+    "excerpt": "- Revalider manuellement la fraîcheur et le mapping Elo avant toute utilisation",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 24,
+    "term": "Elo",
+    "excerpt": "- La couche d'identité API-Football vers Elo est obligatoire avant toute fusion",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 30,
+    "term": "Elo",
+    "excerpt": "- Le mapping ne constitue pas une autorisation d'utiliser Elo dans le moteur :",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 33,
+    "term": "Elo",
+    "excerpt": "## Décision V0.4 — Elo Model Experiment",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 36,
+    "term": "Elo",
+    "excerpt": "- Autoriser un modèle Elo séparé uniquement pour mesurer des deltas.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 38,
+    "term": "Elo",
+    "excerpt": "- Appliquer un poids modéré de `0.20` et plafonner le facteur Elo à `±0.35`.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 39,
+    "term": "expected goals",
+    "excerpt": "- Retomber exactement sur les expected goals baseline si un rating manque.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/DATA_SOURCE_DECISIONS.md",
+    "line": 49,
+    "term": "Elo",
+    "excerpt": "- Continuer à publier baseline, Elo et comparaison dans des snapshots séparés.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 1,
+    "term": "Elo",
+    "excerpt": "# Elo Model Experiment V0.4",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 5,
+    "term": "Elo",
+    "excerpt": "V0.4 mesure l'impact de ratings Elo validés sur les prédictions baseline. Le",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 6,
+    "term": "Elo",
+    "excerpt": "modèle Elo est expérimental : il ne remplace ni `predictions.json`, ni le",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 13,
+    "term": "Elo",
+    "excerpt": "équipes Elo. Un rating absent n'est jamais inventé : si une équipe ne possède",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 14,
+    "term": "expected goals",
+    "excerpt": "pas de mapping validé, la prédiction Elo reprend exactement les expected goals",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 14,
+    "term": "Elo",
+    "excerpt": "pas de mapping validé, la prédiction Elo reprend exactement les expected goals",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 19,
+    "term": "expected goals",
+    "excerpt": "Le baseline calcule d'abord ses expected goals selon sa logique existante.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 35,
+    "term": "Elo",
+    "excerpt": "- `predictions_elo.json` : modèle Elo expérimental ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/ELO_MODEL_EXPERIMENT.md",
+    "line": 36,
+    "term": "Elo",
+    "excerpt": "- `model_comparison.json` : deltas baseline vers Elo par match ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/IGNORED_REQUIREMENTS.md",
+    "line": 105,
+    "term": "historique",
+    "excerpt": "le détail d'un match, la matrice, les marchés et l'historique.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 157,
+    "term": "historique",
+    "excerpt": "* [ ] l'historique affiche les validations ET les échecs.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 202,
+    "term": "Elo",
+    "excerpt": "- [ ] Elo Ratings est testé.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 203,
+    "term": "Elo",
+    "excerpt": "- [ ] parsing Elo possible ou non est documenté.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 214,
+    "term": "Elo",
+    "excerpt": "- [ ] les limites du plan et du parsing Elo sont comprises.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 226,
+    "term": "Elo",
+    "excerpt": "- [ ] la couverture API-Football vers Elo est affichée.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 229,
+    "term": "Elo",
+    "excerpt": "- [ ] chaque équipe mappée possède un identifiant API, un nom Elo et un code pays.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 230,
+    "term": "Elo",
+    "excerpt": "- [ ] aucun identifiant API, `team_id` ou nom Elo n'est dupliqué.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 243,
+    "term": "Elo",
+    "excerpt": "- [ ] l'encart “API-Football ↔ Elo Ratings” affiche les bons compteurs.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 245,
+    "term": "Elo",
+    "excerpt": "- [ ] le frontend indique qu'Elo n'est pas connecté au moteur de prédiction.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 261,
+    "term": "Elo",
+    "excerpt": "## Checklist V0.4 — Elo Model Experiment",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 265,
+    "term": "Elo",
+    "excerpt": "- [ ] Le modèle Elo génère un fichier séparé.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 271,
+    "term": "Elo",
+    "excerpt": "- [ ] Les matchs sans Elo fallback correctement.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 272,
+    "term": "Elo",
+    "excerpt": "- [ ] Angular affiche clairement que le modèle Elo est expérimental.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 306,
+    "term": "Elo",
+    "excerpt": "- [ ] la modale distingue clairement baseline et variation Elo.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "line": 361,
+    "term": "Elo",
+    "excerpt": "- [ ] Elo predictions générées.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 7,
+    "term": "Elo",
+    "excerpt": "- Elo top-score distribution: `{'1-1': 72}`",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 9,
+    "term": "Elo",
+    "excerpt": "- Elo 1-1 rate: `100.0%`",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 10,
+    "term": "Elo",
+    "excerpt": "- Top scores changed by Elo: `0`",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 11,
+    "term": "Elo",
+    "excerpt": "- Elo unavailable: `0`",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 16,
+    "term": "expected goals",
+    "excerpt": "Predictions are highly concentrated on 1-1 because every real fixture currently receives the same neutral baseline expected goals. Elo adjusts markets but does not change the modal score.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 16,
+    "term": "Elo",
+    "excerpt": "Predictions are highly concentrated on 1-1 because every real fixture currently receives the same neutral baseline expected goals. Elo adjusts markets but does not change the modal score.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 18,
+    "term": "Elo",
+    "excerpt": "This is not a sorting bug or a missing-Elo fallback. The active real-data",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 19,
+    "term": "expected goals",
+    "excerpt": "baseline assigns neutral `1.35 / 1.35` expected goals to every fixture because",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 20,
+    "term": "Elo",
+    "excerpt": "validated historical team features are not yet available. The moderate Elo",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PREDICTION_ENGINE_AUDIT_V0_5.md",
+    "line": 25,
+    "term": "force",
+    "excerpt": "Do not force diversity and do not present these predictions as calibrated.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 11,
+    "term": "xG",
+    "excerpt": "calcul de lambdas xG/Elo, la génération d'une matrice de scores, la déduction des",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 11,
+    "term": "Elo",
+    "excerpt": "calcul de lambdas xG/Elo, la génération d'une matrice de scores, la déduction des",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 39,
+    "term": "xG",
+    "excerpt": "calcul de lambdas modulés par xG/Elo et baselines glissantes.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 39,
+    "term": "Elo",
+    "excerpt": "calcul de lambdas modulés par xG/Elo et baselines glissantes.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 41,
+    "term": "Dixon-Coles",
+    "excerpt": "matrice Poisson, correction Dixon-Coles, normalisation et top scores.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 41,
+    "term": "Dixon",
+    "excerpt": "matrice Poisson, correction Dixon-Coles, normalisation et top scores.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 41,
+    "term": "Poisson",
+    "excerpt": "matrice Poisson, correction Dixon-Coles, normalisation et top scores.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 53,
+    "term": "Dixon-Coles",
+    "excerpt": "- `drc-prototype/optimizer.py` contenait les formules xG/Elo, Poisson/Dixon-Coles et",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 53,
+    "term": "Dixon",
+    "excerpt": "- `drc-prototype/optimizer.py` contenait les formules xG/Elo, Poisson/Dixon-Coles et",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 53,
+    "term": "Poisson",
+    "excerpt": "- `drc-prototype/optimizer.py` contenait les formules xG/Elo, Poisson/Dixon-Coles et",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 53,
+    "term": "xG",
+    "excerpt": "- `drc-prototype/optimizer.py` contenait les formules xG/Elo, Poisson/Dixon-Coles et",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 53,
+    "term": "Elo",
+    "excerpt": "- `drc-prototype/optimizer.py` contenait les formules xG/Elo, Poisson/Dixon-Coles et",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 55,
+    "term": "xG",
+    "excerpt": "- `drc-prototype/xg-backtest.js` contenait la baseline glissante et le backtest chronologique.",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 55,
+    "term": "backtest",
+    "excerpt": "- `drc-prototype/xg-backtest.js` contenait la baseline glissante et le backtest chronologique.",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 56,
+    "term": "backtest",
+    "excerpt": "- `drc-prototype/backtest.js` contenait un historique détaillé de validations.",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 56,
+    "term": "historique",
+    "excerpt": "- `drc-prototype/backtest.js` contenait un historique détaillé de validations.",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 57,
+    "term": "historique",
+    "excerpt": "- `drc-prototype/history_*.json` utilisait le format fournisseur historique et des données de",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 68,
+    "term": "xG",
+    "excerpt": "| Calcul xG/Elo | Oui | Élevée | Calibration sélections et terrain neutre |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 68,
+    "term": "calibration",
+    "excerpt": "| Calcul xG/Elo | Oui | Élevée | Calibration sélections et terrain neutre |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 68,
+    "term": "Elo",
+    "excerpt": "| Calcul xG/Elo | Oui | Élevée | Calibration sélections et terrain neutre |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 74,
+    "term": "historique",
+    "excerpt": "| Backtesting de marchés | Oui, minimal | Moyenne | Historique versionné, résultat réel et métriques |",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 85,
+    "term": "xG",
+    "excerpt": "1. construction de xG de base à partir d'historiques glissants ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 86,
+    "term": "Elo",
+    "excerpt": "2. modulation par différence Elo ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 87,
+    "term": "Dixon-Coles",
+    "excerpt": "3. génération Poisson avec correction Dixon-Coles ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 87,
+    "term": "Dixon",
+    "excerpt": "3. génération Poisson avec correction Dixon-Coles ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 87,
+    "term": "Poisson",
+    "excerpt": "3. génération Poisson avec correction Dixon-Coles ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 136,
+    "term": "calibration",
+    "excerpt": "- les métriques de calibration comme Brier score et log loss.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 136,
+    "term": "log loss",
+    "excerpt": "- les métriques de calibration comme Brier score et log loss.",
+    "category": "metric"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 136,
+    "term": "Brier",
+    "excerpt": "- les métriques de calibration comme Brier score et log loss.",
+    "category": "metric"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 138,
+    "term": "historique",
+    "excerpt": "Elle doit donc être enrichie avant de servir d'historique fiable. Les réussites",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 143,
+    "term": "historique",
+    "excerpt": "- Historique fournisseur : blocs `fixture`, `league`, `teams`, `goals` et",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 158,
+    "term": "backtest",
+    "excerpt": "- validation simple d'un backtest.",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 175,
+    "term": "calibration",
+    "excerpt": "- calibration sur matchs internationaux ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 177,
+    "term": "historique",
+    "excerpt": "- stockage de l'historique de backtesting complet ;",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 187,
+    "term": "backtest",
+    "excerpt": "prédiction ou un backtest.",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 188,
+    "term": "calibration",
+    "excerpt": "- Mauvaise calibration en réutilisant des paramètres de championnats de clubs.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 202,
+    "term": "xG",
+    "excerpt": "│ ├── prediction/ # xG/Elo et orchestration",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 202,
+    "term": "Elo",
+    "excerpt": "│ ├── prediction/ # xG/Elo et orchestration",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 205,
+    "term": "historique",
+    "excerpt": "│ ├── backtesting/ # Évaluation et historique",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 219,
+    "term": "xG",
+    "excerpt": "2. Calibrer les entrées xG/Elo et la méthode de confiance.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROJECT_START_REPORT.md",
+    "line": 219,
+    "term": "Elo",
+    "excerpt": "2. Calibrer les entrées xG/Elo et la méthode de confiance.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 10,
+    "term": "expected goals",
+    "excerpt": "- des expected goals à partir d'entrées simples ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 11,
+    "term": "Dixon-Coles",
+    "excerpt": "- une matrice de scores Poisson/Dixon-Coles ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 11,
+    "term": "Dixon",
+    "excerpt": "- une matrice de scores Poisson/Dixon-Coles ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 11,
+    "term": "Poisson",
+    "excerpt": "- une matrice de scores Poisson/Dixon-Coles ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 13,
+    "term": "Elo",
+    "excerpt": "- une variante Elo expérimentale et une comparaison avec le baseline.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 23,
+    "term": "Elo",
+    "excerpt": "fixtures, et que la variante Elo ne change aucun de ces scores modaux. Cette",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 24,
+    "term": "xG",
+    "excerpt": "uniformité vient des xG neutres `1.35 / 1.35`, pas d'un bug de tri ou d'une",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 25,
+    "term": "Elo",
+    "excerpt": "absence de ratings Elo. Elle est affichée dans l'interface et ne doit pas être",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 28,
+    "term": "historique",
+    "excerpt": "Il ne réalise ni simulation de tournoi, ni apprentissage historique, ni",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 52,
+    "term": "historique",
+    "excerpt": "historique international chronologique avant de reconstruire un",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 53,
+    "term": "Dixon-Coles",
+    "excerpt": "Poisson/Dixon-Coles calibré. Voir `docs/CURRENT_ENGINE_AUDIT.md`,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 53,
+    "term": "Dixon",
+    "excerpt": "Poisson/Dixon-Coles calibré. Voir `docs/CURRENT_ENGINE_AUDIT.md`,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/PROTOTYPE_ENGINE_STATUS.md",
+    "line": 53,
+    "term": "Poisson",
+    "excerpt": "Poisson/Dixon-Coles calibré. Voir `docs/CURRENT_ENGINE_AUDIT.md`,",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 13,
+    "term": "forme",
+    "excerpt": "- clé configurée : oui, affichée uniquement sous forme masquée ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 59,
+    "term": "historique",
+    "excerpt": "comparaison et historique direct ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 70,
+    "term": "Elo",
+    "excerpt": "### Elo Ratings",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 76,
+    "term": "Elo",
+    "excerpt": "- mapping nécessaire : nom Elo vers code et identifiant équipe API-Football ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 82,
+    "term": "Elo",
+    "excerpt": "## Elo Ratings raw acquisition",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 113,
+    "term": "forme",
+    "excerpt": "utilise une forme longue dans le TSV et une forme courte dans le DOM ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 114,
+    "term": "Elo",
+    "excerpt": "- limitations: pas de contrat d'API documenté, codes Elo à mapper vers",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 119,
+    "term": "Elo",
+    "excerpt": "Utiliser les TSV Elo uniquement comme source expérimentale parallèle. Préférer",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 125,
+    "term": "Elo",
+    "excerpt": "- `international-football.net` affiche un tableau basé sur Elo Ratings ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 127,
+    "term": "Elo",
+    "excerpt": "- un Elo interne pourrait être recalculé depuis les résultats historiques",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 142,
+    "term": "Elo",
+    "excerpt": "Elo rating",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 159,
+    "term": "Elo",
+    "excerpt": "- valider un mapping d'équipes avant toute fusion avec une source Elo ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 161,
+    "term": "Elo",
+    "excerpt": "- conserver Elo comme source expérimentale parallèle fondée sur les TSV.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 173,
+    "term": "Elo",
+    "excerpt": "ratings Elo sans modifier le pipeline principal.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REAL_DATA_ACQUISITION_REPORT.md",
+    "line": 179,
+    "term": "Elo",
+    "excerpt": "- entrées Elo hors périmètre API-Football actuel : `196` ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REPO_STRUCTURE_NOTES.md",
+    "line": 32,
+    "term": "historique",
+    "excerpt": "avait perdu ses fichiers de travail après une réécriture d'historique, mais son",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/REPO_STRUCTURE_NOTES.md",
+    "line": 38,
+    "term": "historique",
+    "excerpt": "Python ou le virtualenv historique.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 5,
+    "term": "Elo",
+    "excerpt": "La couche V0.3.1 relie les équipes normalisées API-Football aux libellés Elo",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 6,
+    "term": "Elo",
+    "excerpt": "Ratings et à un code pays interne. Elle ne branche pas les ratings Elo au",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 40,
+    "term": "Elo",
+    "excerpt": "et le rating Elo, puis le statut, la méthode, la confiance et le besoin de",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 41,
+    "term": "Elo",
+    "excerpt": "revue. `unmapped_teams.json` sépare les équipes API non résolues des entrées Elo",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 46,
+    "term": "Elo",
+    "excerpt": "| API-Football | Elo Ratings |",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 83,
+    "term": "Elo",
+    "excerpt": "- [ ] aucun doublon de `team_id`, identifiant API ou nom Elo ;",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 87,
+    "term": "Elo",
+    "excerpt": "- [ ] Elo reste non connecté au moteur de prédiction.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/TEAM_MAPPING_GUIDE.md",
+    "line": 96,
+    "term": "Elo",
+    "excerpt": "- [ ] Les ratings Elo semblent associés à la bonne équipe.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 61,
+    "term": "Elo",
+    "excerpt": "Commit: `8254b2b Add team identity mapping for API-Football and Elo`",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 73,
+    "term": "Elo",
+    "excerpt": "- [x] Elo teams count checked",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 86,
+    "term": "Elo",
+    "excerpt": "Elo teams: 244",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 100,
+    "term": "Elo",
+    "excerpt": "1. API-Football: Czech Republic → Elo: Czechia | code: CZE | method: alias | confidence: 0.98 | Elo: 1740, rank: 35",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 101,
+    "term": "Elo",
+    "excerpt": "2. API-Football: Türkiye → Elo: Turkey | code: TUR | method: alias | confidence: 0.98 | Elo: 1911, rank: 13",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 102,
+    "term": "Elo",
+    "excerpt": "3. API-Football: Bosnia & Herzegovina → Elo: Bosnia and Herzegovina | code: BIH | method: alias | confidence: 0.98 | Elo: 1595, rank: 65",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 103,
+    "term": "Elo",
+    "excerpt": "4. API-Football: Congo DR → Elo: DR Congo | code: CGO | method: alias | confidence: 0.98 | Elo: 1652, rank: 55",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 104,
+    "term": "Elo",
+    "excerpt": "5. API-Football: Cape Verde Islands → Elo: Cape Verde | code: CPV | method: alias | confidence: 0.98 | Elo: 1578, rank: 68",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 105,
+    "term": "Elo",
+    "excerpt": "6. API-Football: USA → Elo: United States | code: USA | method: alias | confidence: 0.98 | Elo: 1726, rank: 38",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 112,
+    "term": "Elo",
+    "excerpt": "- [ ] Elo ratings association checked",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 138,
+    "term": "Elo",
+    "excerpt": "Manual validation still requires human review before integrating Elo into the",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 145,
+    "term": "Elo",
+    "excerpt": "## V0.4 — Elo Model Experiment",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 149,
+    "term": "Elo",
+    "excerpt": "Commit: `08a0a08 Add experimental Elo-adjusted prediction model`",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 155,
+    "term": "Elo",
+    "excerpt": "- [x] Elo predictions available",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 158,
+    "term": "Elo",
+    "excerpt": "- [x] Elo remains experimental",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 164,
+    "term": "expected goals",
+    "excerpt": "- [x] Missing Elo rating falls back exactly to baseline expected goals",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 164,
+    "term": "Elo",
+    "excerpt": "- [x] Missing Elo rating falls back exactly to baseline expected goals",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 177,
+    "term": "Elo",
+    "excerpt": "Elo available: 3/3",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 183,
+    "term": "Elo",
+    "excerpt": "Elo weight: 0.20",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 184,
+    "term": "Elo",
+    "excerpt": "Elo factor clamp: ±0.35",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 194,
+    "term": "Elo",
+    "excerpt": "- [x] Top scores baseline vs Elo checked",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 195,
+    "term": "Elo",
+    "excerpt": "- [x] Elo ratings association checked",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 203,
+    "term": "Elo",
+    "excerpt": "- Elo: 2063 vs 1860",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 205,
+    "term": "Elo",
+    "excerpt": "- Top score Elo: 2-0",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 210,
+    "term": "Elo",
+    "excerpt": "- Elo: 1991 vs 1906",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 212,
+    "term": "Elo",
+    "excerpt": "- Top score Elo: 2-0",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 217,
+    "term": "Elo",
+    "excerpt": "- Elo: 1788 vs 1827",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 219,
+    "term": "Elo",
+    "excerpt": "- Top score Elo: 1-1",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 232,
+    "term": "Elo",
+    "excerpt": "Human review completed. Elo impact is moderate and coherent for the current",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 233,
+    "term": "Elo",
+    "excerpt": "V0.4 experiment. The baseline model remains preserved, and Elo is accepted as",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 238,
+    "term": "Elo",
+    "excerpt": "- Keep Elo marked as experimental.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 239,
+    "term": "Elo",
+    "excerpt": "- Do not make Elo the default model without additional backtesting.",
+    "category": "backtest"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 240,
+    "term": "Elo",
+    "excerpt": "- Future phases must compare predictive quality before promoting Elo.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 252,
+    "term": "Elo",
+    "excerpt": "- [x] Baseline and Elo prototype predictions generated",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 270,
+    "term": "Elo",
+    "excerpt": "- [ ] Baseline/Elo predictions and comparison checked",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 281,
+    "term": "Elo",
+    "excerpt": "baseline predictions, `72` Elo predictions and `72` model comparisons.",
+    "category": "documentation"
+  },
+  {
+    "file": "docs/VALIDATION_LOG.md",
+    "line": 300,
+    "term": "Elo",
+    "excerpt": "- [x] 72 baseline and 72 Elo modal scores honestly reported as `1-1`",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/ARCHITECTURE_NOTES.md",
+    "line": 25,
+    "term": "xG",
+    "excerpt": "`optimizer.py` est retenu comme référence des formules car ses fonctions sont explicites et son objectif de log loss est méthodologiquement plus solide. `xg-backtest.js` est retenu pour la fenêtre glissante et l'ordre ch",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/ARCHITECTURE_NOTES.md",
+    "line": 25,
+    "term": "backtest",
+    "excerpt": "`optimizer.py` est retenu comme référence des formules car ses fonctions sont explicites et son objectif de log loss est méthodologiquement plus solide. `xg-backtest.js` est retenu pour la fenêtre glissante et l'ordre ch",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/ARCHITECTURE_NOTES.md",
+    "line": 25,
+    "term": "log loss",
+    "excerpt": "`optimizer.py` est retenu comme référence des formules car ses fonctions sont explicites et son objectif de log loss est méthodologiquement plus solide. `xg-backtest.js` est retenu pour la fenêtre glissante et l'ordre ch",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/DATA_FORMATS.md",
+    "line": 89,
+    "term": "historique",
+    "excerpt": "## Format fournisseur historique observé",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "Dixon",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "Poisson",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "xG",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "backtest",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "attaque",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "défense",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "historique",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 5,
+    "term": "Elo",
+    "excerpt": "Le projet historique contient une chaîne football exploitable mais fortement couplée à des scripts ponctuels : ingestion API-Football, enrichissement des rencontres avec statistiques/xG, historique Elo, calcul de lambdas",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 11,
+    "term": "historique",
+    "excerpt": "| Composant | Source historique | Destination | Réutilisabilité |",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 13,
+    "term": "xG",
+    "excerpt": "| Probabilité Elo et lambdas xG/Elo | `drc-prototype/optimizer.py`, `drc-prototype/xg-backtest.js` | `recycled_code/score_prediction/expected_goals.py` | Élevée après calibration |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 13,
+    "term": "backtest",
+    "excerpt": "| Probabilité Elo et lambdas xG/Elo | `drc-prototype/optimizer.py`, `drc-prototype/xg-backtest.js` | `recycled_code/score_prediction/expected_goals.py` | Élevée après calibration |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 13,
+    "term": "calibration",
+    "excerpt": "| Probabilité Elo et lambdas xG/Elo | `drc-prototype/optimizer.py`, `drc-prototype/xg-backtest.js` | `recycled_code/score_prediction/expected_goals.py` | Élevée après calibration |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 13,
+    "term": "Elo",
+    "excerpt": "| Probabilité Elo et lambdas xG/Elo | `drc-prototype/optimizer.py`, `drc-prototype/xg-backtest.js` | `recycled_code/score_prediction/expected_goals.py` | Élevée après calibration |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 14,
+    "term": "Dixon",
+    "excerpt": "| Poisson et Dixon–Coles | mêmes sources | `recycled_code/score_matrix/score_matrix.py` | Élevée |",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 14,
+    "term": "Poisson",
+    "excerpt": "| Poisson et Dixon–Coles | mêmes sources | `recycled_code/score_matrix/score_matrix.py` | Élevée |",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 15,
+    "term": "xG",
+    "excerpt": "| Baseline xG glissante | `drc-prototype/xg-backtest.js` | `recycled_code/score_prediction/expected_goals.py` | Moyenne à élevée |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 15,
+    "term": "backtest",
+    "excerpt": "| Baseline xG glissante | `drc-prototype/xg-backtest.js` | `recycled_code/score_prediction/expected_goals.py` | Moyenne à élevée |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 16,
+    "term": "xG",
+    "excerpt": "| Backtest chronologique / validation | `drc-prototype/xg-backtest.js`, `drc-prototype/backtest.js`, `drc-prototype/optimizer.py` | `recycled_code/backtesting/backtester.py` | Moyenne |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 16,
+    "term": "backtest",
+    "excerpt": "| Backtest chronologique / validation | `drc-prototype/xg-backtest.js`, `drc-prototype/backtest.js`, `drc-prototype/optimizer.py` | `recycled_code/backtesting/backtester.py` | Moyenne |",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 22,
+    "term": "xG",
+    "excerpt": "- Les interfaces HTML/serveurs de `backtest.js`, `xg-backtest.js` et `3_scanner.js` : présentation couplée aux scripts, non nécessaire au moteur.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 22,
+    "term": "backtest",
+    "excerpt": "- Les interfaces HTML/serveurs de `backtest.js`, `xg-backtest.js` et `3_scanner.js` : présentation couplée aux scripts, non nécessaire au moteur.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 26,
+    "term": "Elo",
+    "excerpt": "- Les historiques JSON, archives Elo, résultats et fichiers de paris : volumineux, spécifiques aux ligues, non nécessaires au bundle et susceptibles de contenir des données non redistribuables.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 38,
+    "term": "optuna",
+    "excerpt": "- Reproduction facultative de l'optimiseur historique : `numpy`, `scipy`, `optuna` et un dataset chronologique propre.",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 38,
+    "term": "scipy",
+    "excerpt": "- Reproduction facultative de l'optimiseur historique : `numpy`, `scipy`, `optuna` et un dataset chronologique propre.",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 38,
+    "term": "numpy",
+    "excerpt": "- Reproduction facultative de l'optimiseur historique : `numpy`, `scipy`, `optuna` et un dataset chronologique propre.",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 38,
+    "term": "historique",
+    "excerpt": "- Reproduction facultative de l'optimiseur historique : `numpy`, `scipy`, `optuna` et un dataset chronologique propre.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 44,
+    "term": "Dixon",
+    "excerpt": "- Dixon–Coles peut produire des probabilités négatives avec un `rho` inadapté; le générateur lève alors une erreur.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 45,
+    "term": "calibration",
+    "excerpt": "- La Coupe du Monde comporte peu de données récentes par sélection, des terrains neutres, prolongations et tirs au but : la calibration de ligue ne peut pas être reprise telle quelle.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 47,
+    "term": "historique",
+    "excerpt": "- Les formats API-Football sont documentés comme source historique, mais doivent être placés derrière un adaptateur fournisseur.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 52,
+    "term": "calibration",
+    "excerpt": "2. Utiliser la matrice et les marchés tels quels pour un premier prototype, puis tester calibration et sensibilité à `max_goals`/`rho`.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 56,
+    "term": "calibration",
+    "excerpt": "6. Ajouter Brier score, log loss, calibration par bucket et suivi par version de modèle.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 56,
+    "term": "log loss",
+    "excerpt": "6. Ajouter Brier score, log loss, calibration par bucket et suivi par version de modèle.",
+    "category": "metric"
+  },
+  {
+    "file": "handoff_worldcup_2026/EXTRACTION_REPORT.md",
+    "line": 56,
+    "term": "Brier",
+    "excerpt": "6. Ajouter Brier score, log loss, calibration par bucket et suivi par version de modèle.",
+    "category": "metric"
+  },
+  {
+    "file": "handoff_worldcup_2026/LIMITATIONS.md",
+    "line": 3,
+    "term": "calibration",
+    "excerpt": "- **Calibration :** aucune valeur par défaut n'est revendiquée comme calibrée pour les sélections nationales ou la Coupe du Monde 2026.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/LIMITATIONS.md",
+    "line": 5,
+    "term": "Dixon",
+    "excerpt": "- **Matrice :** Poisson suppose une structure simple; Dixon–Coles ne corrige que les faibles scores. La renormalisation masque la queue au-delà de `max_goals`.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/LIMITATIONS.md",
+    "line": 5,
+    "term": "Poisson",
+    "excerpt": "- **Matrice :** Poisson suppose une structure simple; Dixon–Coles ne corrige que les faibles scores. La renormalisation masque la queue au-delà de `max_goals`.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/LIMITATIONS.md",
+    "line": 7,
+    "term": "calibration",
+    "excerpt": "- **Backtesting :** le module minimal mesure des validations de signaux, mais pas la calibration, le Brier score, la log loss, le ROI ou les intervalles de confiance.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/LIMITATIONS.md",
+    "line": 7,
+    "term": "log loss",
+    "excerpt": "- **Backtesting :** le module minimal mesure des validations de signaux, mais pas la calibration, le Brier score, la log loss, le ROI ou les intervalles de confiance.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/LIMITATIONS.md",
+    "line": 7,
+    "term": "Brier",
+    "excerpt": "- **Backtesting :** le module minimal mesure des validations de signaux, mais pas la calibration, le Brier score, la log loss, le ROI ou les intervalles de confiance.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 34,
+    "term": "backtest",
+    "excerpt": "## Lancer un backtest",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 50,
+    "term": "optuna",
+    "excerpt": "Le runtime actuel utilise uniquement Python standard. `pytest` sert aux tests. NumPy/SciPy/Optuna ne sont nécessaires que si l'optimiseur historique est reconstruit.",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 50,
+    "term": "scipy",
+    "excerpt": "Le runtime actuel utilise uniquement Python standard. `pytest` sert aux tests. NumPy/SciPy/Optuna ne sont nécessaires que si l'optimiseur historique est reconstruit.",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 50,
+    "term": "numpy",
+    "excerpt": "Le runtime actuel utilise uniquement Python standard. `pytest` sert aux tests. NumPy/SciPy/Optuna ne sont nécessaires que si l'optimiseur historique est reconstruit.",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 50,
+    "term": "historique",
+    "excerpt": "Le runtime actuel utilise uniquement Python standard. `pytest` sert aux tests. NumPy/SciPy/Optuna ne sont nécessaires que si l'optimiseur historique est reconstruit.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 56,
+    "term": "xG",
+    "excerpt": "- Calcul de lambdas xG/Elo paramétrable.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 56,
+    "term": "Elo",
+    "excerpt": "- Calcul de lambdas xG/Elo paramétrable.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/NEXT_PROJECT_INTEGRATION_GUIDE.md",
+    "line": 64,
+    "term": "calibration",
+    "excerpt": "- Entraînement/calibration chronologique Coupe du Monde.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 3,
+    "term": "historique",
+    "excerpt": "Ce dossier est une extraction autonome et sans secret des briques football utiles du projet historique `drc-prototype`. Il ne constitue **pas** l'application Coupe du Monde finale : il fournit un socle vérifiable pour pr",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 17,
+    "term": "xG",
+    "excerpt": "- `recycled_code/score_prediction/expected_goals.py` : modulation xG par Elo et construction de baselines glissantes.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 17,
+    "term": "Elo",
+    "excerpt": "- `recycled_code/score_prediction/expected_goals.py` : modulation xG par Elo et construction de baselines glissantes.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 18,
+    "term": "Dixon",
+    "excerpt": "- `recycled_code/score_matrix/score_matrix.py` : matrice Poisson avec correction Dixon–Coles et normalisation.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 18,
+    "term": "Poisson",
+    "excerpt": "- `recycled_code/score_matrix/score_matrix.py` : matrice Poisson avec correction Dixon–Coles et normalisation.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 25,
+    "term": "historique",
+    "excerpt": "- Aucun fichier historique massif, `.env`, token ou identifiant API n'est inclus.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 27,
+    "term": "xG",
+    "excerpt": "- La logique mathématique provient prioritairement de `drc-prototype/optimizer.py` et `drc-prototype/xg-backtest.js`; les paramètres optimisés historiques ne sont pas déclarés fiables pour une Coupe du Monde.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 27,
+    "term": "backtest",
+    "excerpt": "- La logique mathématique provient prioritairement de `drc-prototype/optimizer.py` et `drc-prototype/xg-backtest.js`; les paramètres optimisés historiques ne sont pas déclarés fiables pour une Coupe du Monde.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/README.md",
+    "line": 28,
+    "term": "forme",
+    "excerpt": "- Les marchés absents sous forme autonome dans l'ancien projet ont été ajoutés comme couche minimale autour de la matrice.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 3,
+    "term": "expected goals",
+    "excerpt": "## Expected Goals / Elo Lambda Engine",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 3,
+    "term": "Elo",
+    "excerpt": "## Expected Goals / Elo Lambda Engine",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 5,
+    "term": "xG",
+    "excerpt": "**Ancien chemin :** `drc-prototype/optimizer.py` (`clubelo_win_probability`, `compute_lambdas`) et `drc-prototype/xg-backtest.js` (`calculatePoissonPro`).",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 5,
+    "term": "backtest",
+    "excerpt": "**Ancien chemin :** `drc-prototype/optimizer.py` (`clubelo_win_probability`, `compute_lambdas`) et `drc-prototype/xg-backtest.js` (`calculatePoissonPro`).",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 7,
+    "term": "Poisson",
+    "excerpt": "**Rôle :** transforme des xG de base en intensités Poisson domicile/extérieur modulées par Elo; produit aussi des baselines glissantes attaque/défense.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 7,
+    "term": "xG",
+    "excerpt": "**Rôle :** transforme des xG de base en intensités Poisson domicile/extérieur modulées par Elo; produit aussi des baselines glissantes attaque/défense.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 7,
+    "term": "attaque",
+    "excerpt": "**Rôle :** transforme des xG de base en intensités Poisson domicile/extérieur modulées par Elo; produit aussi des baselines glissantes attaque/défense.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 7,
+    "term": "défense",
+    "excerpt": "**Rôle :** transforme des xG de base en intensités Poisson domicile/extérieur modulées par Elo; produit aussi des baselines glissantes attaque/défense.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 7,
+    "term": "Elo",
+    "excerpt": "**Rôle :** transforme des xG de base en intensités Poisson domicile/extérieur modulées par Elo; produit aussi des baselines glissantes attaque/défense.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 8,
+    "term": "xG",
+    "excerpt": "**Entrées :** xG, delta Elo, poids xG/Elo, avantage terrain; ou quatre historiques glissants.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 8,
+    "term": "Elo",
+    "excerpt": "**Entrées :** xG, delta Elo, poids xG/Elo, avantage terrain; ou quatre historiques glissants.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 11,
+    "term": "calibration",
+    "excerpt": "**Réutilisabilité :** élevée pour la formule, calibration obligatoire.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 13,
+    "term": "calibration",
+    "excerpt": "**Limites :** aucune calibration internationale fournie; l'avantage terrain doit être neutralisé/adapté.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 17,
+    "term": "Dixon",
+    "excerpt": "**Ancien chemin :** boucles Poisson/Dixon–Coles dans `drc-prototype/optimizer.py` et `drc-prototype/xg-backtest.js`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 17,
+    "term": "Poisson",
+    "excerpt": "**Ancien chemin :** boucles Poisson/Dixon–Coles dans `drc-prototype/optimizer.py` et `drc-prototype/xg-backtest.js`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 17,
+    "term": "xG",
+    "excerpt": "**Ancien chemin :** boucles Poisson/Dixon–Coles dans `drc-prototype/optimizer.py` et `drc-prototype/xg-backtest.js`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 17,
+    "term": "backtest",
+    "excerpt": "**Ancien chemin :** boucles Poisson/Dixon–Coles dans `drc-prototype/optimizer.py` et `drc-prototype/xg-backtest.js`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 24,
+    "term": "scipy",
+    "excerpt": "**Adaptations :** remplacement de SciPy par la PMF standard, normalisation explicite, top scores, contrôles d'erreur.",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 29,
+    "term": "xG",
+    "excerpt": "**Ancien chemin :** agrégations partielles 1X2/double chance dans `drc-prototype/xg-backtest.js` et évaluations OU/BTTS dans `drc-prototype/old/analyze_markets.js`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 29,
+    "term": "backtest",
+    "excerpt": "**Ancien chemin :** agrégations partielles 1X2/double chance dans `drc-prototype/xg-backtest.js` et évaluations OU/BTTS dans `drc-prototype/old/analyze_markets.js`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 41,
+    "term": "xG",
+    "excerpt": "**Ancien chemin :** `drc-prototype/xg-backtest.js`, `drc-prototype/backtest.js`, `drc-prototype/optimizer.py`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 41,
+    "term": "backtest",
+    "excerpt": "**Ancien chemin :** `drc-prototype/xg-backtest.js`, `drc-prototype/backtest.js`, `drc-prototype/optimizer.py`.",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 49,
+    "term": "log loss",
+    "excerpt": "**Limites :** pas de log loss/Brier score, cotes, ROI, persistance ou contrôle temporel automatique.",
+    "category": "metric"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 49,
+    "term": "Brier",
+    "excerpt": "**Limites :** pas de log loss/Brier score, cotes, ROI, persistance ou contrôle temporel automatique.",
+    "category": "metric"
+  },
+  {
+    "file": "handoff_worldcup_2026/REUSABLE_COMPONENTS.md",
+    "line": 61,
+    "term": "historique",
+    "excerpt": "**Limites :** adaptateur spécifique au schéma API-Football; le mapping manuel historique de clubs européens n'est pas pertinent tel quel pour les sélections.",
+    "category": "documentation"
+  },
+  {
+    "file": "handoff_worldcup_2026/examples/example_generate_score_matrix.py",
+    "line": 10,
+    "term": "xG",
+    "excerpt": "print(f\"Équipe A xG ajusté: {home_lambda:.2f}; Équipe B: {away_lambda:.2f}\")",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/backtesting/backtester.py",
+    "line": 1,
+    "term": "backtest",
+    "excerpt": "\"\"\"Small chronological-friendly market backtester adapted from prototype backtest scripts.\"\"\"",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_matrix/score_matrix.py",
+    "line": 1,
+    "term": "Dixon-Coles",
+    "excerpt": "\"\"\"Autonomous Poisson/Dixon-Coles score-matrix generator recycled from the prototype.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_matrix/score_matrix.py",
+    "line": 1,
+    "term": "Dixon",
+    "excerpt": "\"\"\"Autonomous Poisson/Dixon-Coles score-matrix generator recycled from the prototype.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_matrix/score_matrix.py",
+    "line": 1,
+    "term": "Poisson",
+    "excerpt": "\"\"\"Autonomous Poisson/Dixon-Coles score-matrix generator recycled from the prototype.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_matrix/score_matrix.py",
+    "line": 47,
+    "term": "expected goals",
+    "excerpt": "raise ValueError(\"Expected goals must be non-negative\")",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_prediction/expected_goals.py",
+    "line": 1,
+    "term": "xG",
+    "excerpt": "\"\"\"Expected-goal helpers extracted from drc-prototype/optimizer.py and xg-backtest.js.\"\"\"",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_prediction/expected_goals.py",
+    "line": 1,
+    "term": "backtest",
+    "excerpt": "\"\"\"Expected-goal helpers extracted from drc-prototype/optimizer.py and xg-backtest.js.\"\"\"",
+    "category": "backtest"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_prediction/expected_goals.py",
+    "line": 7,
+    "term": "Elo",
+    "excerpt": "\"\"\"Convert an Elo difference into a home-win strength probability.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_prediction/expected_goals.py",
+    "line": 19,
+    "term": "xG",
+    "excerpt": "\"\"\"Modulate baseline team xG with Elo strength and home-field advantage.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_prediction/expected_goals.py",
+    "line": 19,
+    "term": "Elo",
+    "excerpt": "\"\"\"Modulate baseline team xG with Elo strength and home-field advantage.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_prediction/expected_goals.py",
+    "line": 21,
+    "term": "expected goals",
+    "excerpt": "raise ValueError(\"Expected goals must be non-negative\")",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/recycled_code/score_prediction/expected_goals.py",
+    "line": 37,
+    "term": "xG",
+    "excerpt": "\"\"\"Build matchup xG baselines using the prototype's rolling attack/defence blend.\"\"\"",
+    "category": "model"
+  },
+  {
+    "file": "handoff_worldcup_2026/requirements_recycled.txt",
+    "line": 6,
+    "term": "numpy",
+    "excerpt": "# numpy",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/requirements_recycled.txt",
+    "line": 7,
+    "term": "scipy",
+    "excerpt": "# scipy",
+    "category": "dependency"
+  },
+  {
+    "file": "handoff_worldcup_2026/requirements_recycled.txt",
+    "line": 8,
+    "term": "optuna",
+    "excerpt": "# optuna",
+    "category": "dependency"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 69,
+    "term": "historique",
+    "excerpt": "- Est-ce que l’historique des prédictions les rassure ?",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 357,
+    "term": "historique",
+    "excerpt": "9. L’historique compare la prédiction initiale au résultat réel",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 389,
+    "term": "historique",
+    "excerpt": "Mise à jour de l’historique IA",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 468,
+    "term": "historique",
+    "excerpt": "- afficher un historique crédible ;",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 494,
+    "term": "historique",
+    "excerpt": "Historique des signaux IA",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 542,
+    "term": "historique",
+    "excerpt": "- sur une page complète : afficher l’historique complet, réussites et échecs.",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 812,
+    "term": "historique",
+    "excerpt": "### Historique",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 862,
+    "term": "historique",
+    "excerpt": "- historique partiel des signaux IA ;",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 887,
+    "term": "historique",
+    "excerpt": "- historique des signaux IA.",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 1003,
+    "term": "forme",
+    "excerpt": "- forme récente ;",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 1030,
+    "term": "Poisson",
+    "excerpt": "probability = poisson(home_goals, home_xg) * poisson(away_goals, away_xg)",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 1225,
+    "term": "historique",
+    "excerpt": "- page historique ;",
+    "category": "documentation"
+  },
+  {
+    "file": "prototype_ia_coupe_du_monde_2026.md",
+    "line": 1372,
+    "term": "historique",
+    "excerpt": "- Historique IA",
+    "category": "documentation"
+  }
+]
