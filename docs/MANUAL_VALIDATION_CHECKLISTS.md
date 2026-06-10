@@ -187,3 +187,29 @@ Notes :
 ```text
 À compléter par la personne qui effectue la validation.
 ```
+
+## Checklist V0.3 — Real Data Acquisition Spike
+
+### Sécurité et acquisition
+
+- [ ] `.env` existe localement mais n'est pas suivi par Git.
+- [ ] `.env.example` existe et ne contient pas de vraie clé.
+- [ ] API-Football ping fonctionne ou l'erreur est documentée.
+- [ ] les endpoints testés sont listés.
+- [ ] les réponses brutes sont sauvegardées sans secret.
+- [ ] la structure des objets API-Football est documentée.
+- [ ] World Cup 2026 disponible ou non est clairement indiqué.
+- [ ] Elo Ratings est testé.
+- [ ] parsing Elo possible ou non est documenté.
+- [ ] `DATA_SOURCE_DECISIONS.md` contient une décision claire.
+- [ ] Angular affiche l'état des sources réelles.
+- [ ] aucun secret n'est visible dans l'interface.
+- [ ] aucun secret n'est commité.
+
+### Revue humaine
+
+- [ ] les résultats du rapport correspondent aux fichiers raw.
+- [ ] les mappings expérimentaux sont cohérents avec les objets sources.
+- [ ] la section “Sources réelles explorées” est lisible.
+- [ ] les limites du plan et du parsing Elo sont comprises.
+- [ ] la décision de passer à l'intégration réelle est consignée.

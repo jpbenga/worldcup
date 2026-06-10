@@ -1,0 +1,209 @@
+[
+  {
+    "league_id": 1,
+    "name": "World Cup",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2010,
+      2014,
+      2018,
+      2022,
+      2026
+    ]
+  },
+  {
+    "league_id": 8,
+    "name": "World Cup - Women",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2011,
+      2015,
+      2019,
+      2023
+    ]
+  },
+  {
+    "league_id": 15,
+    "name": "FIFA Club World Cup",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2011,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2025
+    ]
+  },
+  {
+    "league_id": 37,
+    "name": "World Cup - Qualification Intercontinental Play-offs",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2014,
+      2018,
+      2022,
+      2026
+    ]
+  },
+  {
+    "league_id": 490,
+    "name": "World Cup - U20",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2017,
+      2019,
+      2023,
+      2025
+    ]
+  },
+  {
+    "league_id": 31,
+    "name": "World Cup - Qualification CONCACAF",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2018,
+      2022,
+      2026
+    ]
+  },
+  {
+    "league_id": 32,
+    "name": "World Cup - Qualification Europe",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2018,
+      2020,
+      2024
+    ]
+  },
+  {
+    "league_id": 33,
+    "name": "World Cup - Qualification Oceania",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2018,
+      2022,
+      2026
+    ]
+  },
+  {
+    "league_id": 34,
+    "name": "World Cup - Qualification South America",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2018,
+      2022,
+      2026
+    ]
+  },
+  {
+    "league_id": 29,
+    "name": "World Cup - Qualification Africa",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2018,
+      2022,
+      2023
+    ]
+  },
+  {
+    "league_id": 30,
+    "name": "World Cup - Qualification Asia",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2018,
+      2022,
+      2026
+    ]
+  },
+  {
+    "league_id": 587,
+    "name": "World Cup - U17",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2019,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  {
+    "league_id": 920,
+    "name": "World Cup - U20 - Women",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2022,
+      2024
+    ]
+  },
+  {
+    "league_id": 927,
+    "name": "World Cup - Women - Qualification Concacaf",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2022,
+      2026
+    ]
+  },
+  {
+    "league_id": 950,
+    "name": "World Cup - U17 - Women",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "league_id": 880,
+    "name": "World Cup - Women - Qualification Europe",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2023,
+      2027
+    ]
+  },
+  {
+    "league_id": 1186,
+    "name": "FIFA Club World Cup - Play-In",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2025
+    ]
+  },
+  {
+    "league_id": 1213,
+    "name": "Kings World Cup Nations",
+    "type": "Cup",
+    "country": "World",
+    "seasons": [
+      2026
+    ]
+  }
+]

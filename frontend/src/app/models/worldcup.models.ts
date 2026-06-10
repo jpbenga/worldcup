@@ -16,6 +16,21 @@ export interface DataSourcesSnapshot {
   sources: DataSourceInfo[];
 }
 
+export interface AcquisitionSourceStatus {
+  id: string;
+  label: string;
+  configured: boolean;
+  reachable: boolean;
+  usable: boolean;
+  worldcup2026Found: boolean;
+  notes: string;
+}
+
+export interface DataAcquisitionStatus {
+  updatedAt: string;
+  sources: AcquisitionSourceStatus[];
+}
+
 export interface Match {
   id: string;
   homeTeam: string;

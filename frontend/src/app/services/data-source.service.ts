@@ -1,7 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
-import { DataSourceInfo, DataSourcesSnapshot, DataSourceType } from '../models/worldcup.models';
+import { catchError, map, Observable, of } from 'rxjs';
+import {
+  AcquisitionSourceStatus,
+  DataAcquisitionStatus,
+  DataSourceInfo,
+  DataSourcesSnapshot,
+  DataSourceType,
+} from '../models/worldcup.models';
 
 interface BackendDataSourceInfo {
   id: string;
@@ -19,6 +25,21 @@ interface BackendDataSourcesSnapshot {
   sources: BackendDataSourceInfo[];
 }
 
+interface BackendAcquisitionSourceStatus {
+  id: string;
+  label: string;
+  configured: boolean;
+  reachable: boolean;
+  usable: boolean;
+  worldcup_2026_found: boolean;
+  notes: string;
+}
+
+interface BackendDataAcquisitionStatus {
+  updated_at: string;
+  sources: BackendAcquisitionSourceStatus[];
+}
+
 @Injectable({ providedIn: 'root' })
 export class DataSourceService {
   private readonly http = inject(HttpClient);
@@ -33,6 +54,16 @@ export class DataSourceService {
     );
   }
 
+  getAcquisitionStatus(): Observable<DataAcquisitionStatus> {
+    return this.http.get<BackendDataAcquisitionStatus>('assets/data/data_acquisition_status.json').pipe(
+      map((snapshot) => ({
+        updatedAt: snapshot.updated_at,
+        sources: snapshot.sources.map((source) => this.toAcquisitionSource(source)),
+      })),
+      catchError(() => of({ updatedAt: '', sources: [] })),
+    );
+  }
+
   private toDataSource(source: BackendDataSourceInfo): DataSourceInfo {
     return {
       id: source.id,
@@ -42,6 +73,18 @@ export class DataSourceService {
       isRealData: source.is_real_data,
       path: source.path,
       description: source.description,
+    };
+  }
+
+  private toAcquisitionSource(source: BackendAcquisitionSourceStatus): AcquisitionSourceStatus {
+    return {
+      id: source.id,
+      label: source.label,
+      configured: source.configured,
+      reachable: source.reachable,
+      usable: source.usable,
+      worldcup2026Found: source.worldcup_2026_found,
+      notes: source.notes,
     };
   }
 }

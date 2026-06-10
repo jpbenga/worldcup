@@ -69,11 +69,16 @@ def main() -> None:
         "backtest_results.json": DATA_DIR / "evaluated" / "backtest_results.json",
         "data_sources.json": DATA_DIR / "data_sources.json",
     }
+    acquisition_status = DATA_DIR / "snapshots" / "data_acquisition_status.json"
+    if acquisition_status.exists():
+        snapshot_sources["data_acquisition_status.json"] = acquisition_status
     snapshots_dir = DATA_DIR / "snapshots"
     snapshots_dir.mkdir(parents=True, exist_ok=True)
     FRONTEND_DATA_DIR.mkdir(parents=True, exist_ok=True)
     for filename, source in snapshot_sources.items():
-        shutil.copy2(source, snapshots_dir / filename)
+        snapshot_target = snapshots_dir / filename
+        if source.resolve() != snapshot_target.resolve():
+            shutil.copy2(source, snapshot_target)
         shutil.copy2(source, FRONTEND_DATA_DIR / filename)
 
     print(f"Published {len(snapshot_sources)} snapshots to {snapshots_dir.relative_to(PROJECT_ROOT)}")

@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-06-10T09:56:45Z",
+  "sources": [
+    {
+      "id": "api_football",
+      "label": "API-Football",
+      "configured": true,
+      "reachable": true,
+      "usable": true,
+      "worldcup_2026_found": true,
+      "notes": "Mode samples completed with 3 controlled call(s)."
+    },
+    {
+      "id": "elo_ratings",
+      "label": "Elo Ratings",
+      "configured": true,
+      "reachable": true,
+      "usable": false,
+      "worldcup_2026_found": false,
+      "notes": "Page reachable at https://eloratings.net/; automatic parsing requires validation."
+    }
+  ]
+}

@@ -85,6 +85,37 @@ to manually validate data coherence, provenance badges, UI behavior, and JSON
 consistency. Record the human decision and any reservations in
 `docs/VALIDATION_LOG.md`.
 
+## Real data acquisition spike
+
+Create a local `.env` file from `.env.example` and set your own key:
+
+```env
+API_FOOTBALL_KEY=your_key_here
+API_FOOTBALL_BASE_URL=https://v3.football.api-sports.io
+```
+
+Install the minimal Python dependencies, then run controlled explorations:
+
+```bash
+python3 -m pip install -r backend/requirements.txt
+
+python3 backend/scripts/explore_api_football.py --mode ping
+python3 backend/scripts/explore_api_football.py --mode discovery
+python3 backend/scripts/explore_api_football.py --mode worldcup
+python3 backend/scripts/explore_api_football.py --mode samples
+
+python3 backend/scripts/explore_elo_ratings.py --mode discovery
+python3 backend/scripts/explore_elo_ratings.py --mode sample
+python3 backend/scripts/normalize_external_data.py
+```
+
+Then read:
+
+```text
+docs/REAL_DATA_ACQUISITION_REPORT.md
+docs/DATA_SOURCE_DECISIONS.md
+```
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

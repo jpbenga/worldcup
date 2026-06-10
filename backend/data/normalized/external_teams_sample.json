@@ -1,0 +1,386 @@
+[
+  {
+    "external_team_id": 1,
+    "team_name": "Belgium",
+    "country": "Belgium",
+    "code": "BEL",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 2,
+    "team_name": "France",
+    "country": "France",
+    "code": "FRA",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 3,
+    "team_name": "Croatia",
+    "country": "Croatia",
+    "code": "CRO",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 5,
+    "team_name": "Sweden",
+    "country": "Sweden",
+    "code": "SWE",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 6,
+    "team_name": "Brazil",
+    "country": "Brazil",
+    "code": "BRA",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 7,
+    "team_name": "Uruguay",
+    "country": "Uruguay",
+    "code": "URU",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 8,
+    "team_name": "Colombia",
+    "country": "Colombia",
+    "code": "COL",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 9,
+    "team_name": "Spain",
+    "country": "Spain",
+    "code": "ESP",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 10,
+    "team_name": "England",
+    "country": "England",
+    "code": "ENG",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 11,
+    "team_name": "Panama",
+    "country": "Panama",
+    "code": "PAN",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 12,
+    "team_name": "Japan",
+    "country": "Japan",
+    "code": "JPN",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 13,
+    "team_name": "Senegal",
+    "country": "Senegal",
+    "code": "SEN",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 15,
+    "team_name": "Switzerland",
+    "country": "Switzerland",
+    "code": "SUI",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 16,
+    "team_name": "Mexico",
+    "country": "Mexico",
+    "code": "MEX",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 17,
+    "team_name": "South Korea",
+    "country": "South-Korea",
+    "code": "KOR",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 20,
+    "team_name": "Australia",
+    "country": "Australia",
+    "code": "AUS",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 22,
+    "team_name": "Iran",
+    "country": "Iran",
+    "code": "IRN",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 23,
+    "team_name": "Saudi Arabia",
+    "country": "Saudi-Arabia",
+    "code": "KSA",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 25,
+    "team_name": "Germany",
+    "country": "Germany",
+    "code": "GER",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 26,
+    "team_name": "Argentina",
+    "country": "Argentina",
+    "code": "ARG",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 27,
+    "team_name": "Portugal",
+    "country": "Portugal",
+    "code": "POR",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 28,
+    "team_name": "Tunisia",
+    "country": "Tunisia",
+    "code": "TUN",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 31,
+    "team_name": "Morocco",
+    "country": "Morocco",
+    "code": "MAR",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 32,
+    "team_name": "Egypt",
+    "country": "Egypt",
+    "code": "EGY",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 770,
+    "team_name": "Czech Republic",
+    "country": "Czech-Republic",
+    "code": "CZE",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 775,
+    "team_name": "Austria",
+    "country": "Austria",
+    "code": "AUT",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 777,
+    "team_name": "Türkiye",
+    "country": "Turkey",
+    "code": "TUR",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1090,
+    "team_name": "Norway",
+    "country": "Norway",
+    "code": "NOR",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1108,
+    "team_name": "Scotland",
+    "country": "Scotland",
+    "code": "SCO",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1113,
+    "team_name": "Bosnia & Herzegovina",
+    "country": "Bosnia",
+    "code": "BIH",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1118,
+    "team_name": "Netherlands",
+    "country": "Netherlands",
+    "code": "NED",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1501,
+    "team_name": "Ivory Coast",
+    "country": "Ivory-Coast",
+    "code": "CIV",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1504,
+    "team_name": "Ghana",
+    "country": "Ghana",
+    "code": "GHA",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1508,
+    "team_name": "Congo DR",
+    "country": "Congo-DR",
+    "code": "CGO",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1531,
+    "team_name": "South Africa",
+    "country": "South-Africa",
+    "code": "RSA",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1532,
+    "team_name": "Algeria",
+    "country": "Algeria",
+    "code": "ALG",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1533,
+    "team_name": "Cape Verde Islands",
+    "country": "Cape-Verde-Islands",
+    "code": "CPV",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1548,
+    "team_name": "Jordan",
+    "country": "Jordan",
+    "code": "JOR",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1567,
+    "team_name": "Iraq",
+    "country": "Iraq",
+    "code": "IRQ",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1568,
+    "team_name": "Uzbekistan",
+    "country": "Uzbekistan",
+    "code": "UZB",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 1569,
+    "team_name": "Qatar",
+    "country": "Qatar",
+    "code": "QAT",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 2380,
+    "team_name": "Paraguay",
+    "country": "Paraguay",
+    "code": "PAR",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 2382,
+    "team_name": "Ecuador",
+    "country": "Ecuador",
+    "code": "ECU",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 2384,
+    "team_name": "USA",
+    "country": "USA",
+    "code": "USA",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 2386,
+    "team_name": "Haiti",
+    "country": "Haiti",
+    "code": "HAI",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 4673,
+    "team_name": "New Zealand",
+    "country": "New-Zealand",
+    "code": "NZL",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 5529,
+    "team_name": "Canada",
+    "country": "Canada",
+    "code": "CAN",
+    "source_type": "api",
+    "source_name": "api_football"
+  },
+  {
+    "external_team_id": 5530,
+    "team_name": "Curaçao",
+    "country": "Curacao",
+    "code": "CUR",
+    "source_type": "api",
+    "source_name": "api_football"
+  }
+]
