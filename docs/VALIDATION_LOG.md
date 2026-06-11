@@ -470,34 +470,88 @@ only for first calibration experiments, not as a final robust training source.
 
 ## V0.9 — First Calibration Experiment on Historical Dataset
 
-Commit: TBD
+Commit: a0814c0 Add first historical calibration experiment
 
 ### Technical validation
 
-- [ ] Historical calibrated model trained
-- [ ] Validation predictions generated
-- [ ] Test predictions generated
-- [ ] Validation metrics generated
-- [ ] Test metrics generated
-- [ ] Prototype comparison generated
-- [ ] No 2026 predictions modified
-- [ ] Current engine not replaced
-- [ ] Results documented honestly
-- [ ] No secret committed
+- [x] Historical calibrated model trained
+- [x] Validation predictions generated
+- [x] Test predictions generated
+- [x] Validation metrics generated
+- [x] Test metrics generated
+- [x] Prototype comparison generated
+- [x] No 2026 predictions modified
+- [x] Current engine not replaced
+- [x] Results documented honestly
+- [x] No secret committed
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Calibrated model accepted as experimental
+- [x] Validation metrics reviewed
+- [x] Test metrics reviewed
+- [x] Prototype comparison reviewed
+- [x] Improvement over prototype acknowledged
+- [x] Promotion recommendation accepted as do_not_promote_yet
+- [x] Current engine remains unchanged
+- [x] 2026 predictions remain unchanged
+
+### Observed calibration summary
+
+```text
+Model:
+- Type: calibrated Simple Poisson
+- Train matches: 917
+- Train teams: 159
+- Smoothing: weight 8, min team matches 5
+- xG bounds: 0.2–3.5
+- Status: experimental
+- Historically calibrated: true
+
+Validation:
+- Matches: 196
+- Accuracy 1X2: 53.06%
+- Log loss: 1.0374
+- Brier: 0.6232
+- Exact score accuracy: 9.18%
+- Top-3 exact score hit rate: 32.14%
+
+Test:
+- Matches: 198
+- Accuracy 1X2: 45.96%
+- Log loss: 1.0412
+- Brier: 0.6277
+- Exact score accuracy: 15.15%
+- Top-3 exact score hit rate: 34.34%
+
+Comparison vs neutral prototype:
+- Validation accuracy delta: +9.69 pts
+- Validation log loss delta: -0.0428
+- Validation Brier delta: -0.0318
+- Test accuracy delta: +5.56 pts
+- Test log loss delta: -0.0625
+- Test Brier delta: -0.0420
+- Test exact score delta: -0.51 pt
+- Promotion recommendation: do_not_promote_yet
+```
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
 ### Notes
 
-Technical outputs report improvements over the neutral prototype for 1X2
-accuracy, log loss and Brier score on validation and test. Exact-score results
-are mixed. The model remains an isolated experiment with promotion
-recommendation `do_not_promote_yet`; human review is still required.
+Human review completed. The first calibrated Simple Poisson model improves over
+the neutral prototype on validation and test for 1X2 accuracy, log loss and
+Brier score. However, exact-score performance is not consistently better and
+the model remains experimental. The recommendation `do_not_promote_yet` is
+accepted. The current production prototype engine and World Cup 2026
+predictions remain unchanged.
+
+### Next step
+
+Analyze segmented errors before creating a second challenger or promoting any
+calibrated model.
