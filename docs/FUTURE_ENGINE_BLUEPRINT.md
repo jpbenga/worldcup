@@ -250,3 +250,18 @@ exploratory shots-based proxy is not approved as a primary feature. The V2.1 dec
 `proceed_to_v2_2_limited_retrain`: a future V2.2 may benchmark the refreshed
 result-history signals, while advanced features require a larger coverage
 audit first.
+
+## V2.2 limited quant retrain
+
+V2.2 retrains the existing quant architecture exclusively on the refreshed
+V2.1 chronological splits. The standard 500-trial Optuna run retains 24
+conservative pre-match result-history features and excludes sparse provider
+statistics, events, lineups, provider xG, xG proxy and odds.
+
+The final refreshed test reaches `0.8812` log loss and `0.5158` Brier, reduces
+modal `1-1` to `23.7%`, reaches `82.3%` clear-favorite score alignment and
+reduces the train-validation log-loss gap to `0.0178`. DNB at confidence
+`0.60` reaches `87.6%` wins excluding pushes at `70.2%` coverage. Every strict
+deployment gate passed, so `quant_hybrid_v2.2` replaced the active World Cup
+2026 prediction engine. The comparisons with V2.0 and V0.9 remain directional
+because their historical test periods differ.

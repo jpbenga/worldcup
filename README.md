@@ -354,6 +354,24 @@ python3 backend/scripts/audit_temporal_leakage_v2_1.py
 V2.1 does not train XGBoost, run Optuna or modify active 2026 predictions. See
 `docs/DATA_SIGNAL_UPGRADE_RECOMMENDATION_V2_1.md`.
 
+## Limited quant retrain V2.2
+
+V2.2 retrains the conservative V2 quant architecture exclusively on the
+refreshed V2.1 chronological splits. It deliberately excludes sparse provider
+xG, exploratory xG proxy, odds, and current-match post-match statistics,
+events, or lineups.
+
+```bash
+python3 backend/scripts/run_limited_quant_retrain_v2_2.py
+python3 backend/scripts/run_limited_quant_retrain_v2_2.py --quick
+python3 backend/scripts/run_limited_quant_retrain_v2_2.py --full
+```
+
+The standard 500-trial validation-only run passed every strict deployment gate
+and promoted `quant_hybrid_v2.2` to the active World Cup 2026 prediction
+engine. See `docs/QUANT_ENGINE_V2_2_RESULTS.md` and
+`docs/ACTIVE_ENGINE_DEPLOYMENT_V2_2.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

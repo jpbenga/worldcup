@@ -530,6 +530,30 @@ Notes :
 - [ ] No 2026 active predictions modified
 - [ ] No secret committed
 
+## Checklist V2.2 — Limited Quant Retrain on Refreshed Dataset
+
+- [ ] V2.1 human validation recorded
+- [ ] V2.1 refreshed splits used
+- [ ] Old historical splits not used for training
+- [ ] Internal rating V2.2 recalculated
+- [ ] Feature builder V2.2 created
+- [ ] Advanced post-match features excluded unless lagged
+- [ ] Provider xG not used as truth
+- [ ] XGBoost V2.2 trained
+- [ ] Optuna V2.2 run on validation only
+- [ ] Test evaluated once after selection
+- [ ] Historical replay V2.2 completed
+- [ ] Secondary markets V2.2 evaluated
+- [ ] DNB win/loss/push separated
+- [ ] Monte Carlo 1500 simulations completed
+- [ ] Coherence audit completed
+- [ ] V2.2 compared with V2.0
+- [ ] V2.2 compared with V0.9
+- [ ] Deployment decision documented
+- [ ] Active predictions regenerated only if deployment_decision=deploy_active_engine
+- [ ] No future World Cup 2026 fixture used for training or selection
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

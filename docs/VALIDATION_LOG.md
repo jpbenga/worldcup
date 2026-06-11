@@ -328,7 +328,7 @@ pipeline, Angular production build and Angular test suite passed.
 
 ## V0.6 — Prediction Engine Discovery & Future Blueprint
 
-Commit: TBD
+Commit: `634a39e Refresh historical data and feature coverage`
 
 ### Technical validation
 
@@ -343,11 +343,13 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] V2.1 accepted as data-only enrichment
+- [x] Decision accepted: proceed_to_v2_2_limited_retrain
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
@@ -1024,4 +1026,52 @@ Decision:
 - model retrained: no
 - Optuna rerun: no
 - active 2026 predictions modified: no
+```
+
+## V2.2 — Limited Quant Retrain on Refreshed Dataset
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.1 human validation recorded
+- [x] V2.1 refreshed splits used
+- [x] Internal rating V2.2 recalculated
+- [x] Feature builder V2.2 created
+- [x] XGBoost V2.2 trained
+- [x] Optuna V2.2 run on validation only
+- [x] Test evaluated once after selection
+- [x] Historical replay V2.2 completed
+- [x] Secondary markets V2.2 evaluated
+- [x] DNB win/loss/push separated
+- [x] Monte Carlo 1500 simulations completed
+- [x] Coherence audit completed
+- [x] V2.2 compared with V2.0
+- [x] V2.2 compared with V0.9
+- [x] Deployment decision documented
+- [x] No future World Cup 2026 fixture used for training or selection
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.2 result
+
+```text
+Dataset: historical_splits_v2_1 only
+Optuna: standard, 500 validation-only trials
+Test log loss / Brier: 0.8812 / 0.5158
+Train-validation log-loss gap: 0.0178
+Test modal 1-1: 23.7%
+Clear-favorite score alignment: 82.3%
+DNB >= 0.60: 87.6% wins excluding pushes at 70.2% coverage
+Decision: deploy_active_engine
+Active engine replacement: yes
 ```
