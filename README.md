@@ -211,6 +211,24 @@ candidate, not a sufficient final dataset. See
 `docs/HISTORICAL_API_FOOTBALL_EXPLORATION.md` and
 `docs/HISTORICAL_DATASET_AUDIT.md`.
 
+## Expanded historical dataset and chronological split
+
+V0.8 keeps the V0.7 World Cup-only dataset intact and creates a separate
+multi-competition dataset:
+
+```bash
+python3 backend/scripts/explore_expanded_historical_competitions.py --max-requests 60
+python3 backend/scripts/fetch_expanded_historical_matches.py --preset conservative --max-requests 100
+python3 backend/scripts/normalize_expanded_historical_matches.py
+python3 backend/scripts/audit_expanded_historical_dataset.py
+python3 backend/scripts/create_historical_dataset_splits.py
+```
+
+`historical_matches_expanded.json` contains `1,311` real finished matches from
+six senior international competitions. Its deterministic chronological split
+contains `917` train, `196` validation and `198` test matches. No model is
+trained and active World Cup 2026 predictions remain unchanged.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

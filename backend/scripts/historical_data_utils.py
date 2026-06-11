@@ -29,6 +29,46 @@ COMPETITIONS = {
     "uefa_nations_league": {"league_id": 5, "name": "UEFA Nations League"},
 }
 
+EXPANDED_COMPETITIONS = {
+    "world_cup": {**COMPETITIONS["world_cup"], "family": "world_championship", "tier": "major_tournament", "weight": "normal"},
+    "euro": {**COMPETITIONS["euro"], "family": "continental_championship", "tier": "major_tournament", "weight": "normal"},
+    "copa_america": {**COMPETITIONS["copa_america"], "family": "continental_championship", "tier": "major_tournament", "weight": "normal"},
+    "afcon": {**COMPETITIONS["africa_cup_of_nations"], "family": "continental_championship", "tier": "major_tournament", "weight": "normal"},
+    "asian_cup": {**COMPETITIONS["asian_cup"], "family": "continental_championship", "tier": "major_tournament", "weight": "normal"},
+    "gold_cup": {**COMPETITIONS["gold_cup"], "family": "continental_championship", "tier": "major_tournament", "weight": "normal"},
+    "uefa_nations_league": {**COMPETITIONS["uefa_nations_league"], "family": "nations_league", "tier": "competitive", "weight": "normal"},
+    "friendlies": {**COMPETITIONS["friendlies"], "family": "friendly", "tier": "friendly", "weight": "low"},
+    "world_cup_qualification_europe": {**COMPETITIONS["world_cup_qualification_europe"], "family": "world_cup_qualification", "tier": "qualification", "weight": "normal"},
+    "world_cup_qualification_africa": {**COMPETITIONS["world_cup_qualification_africa"], "family": "world_cup_qualification", "tier": "qualification", "weight": "normal"},
+    "world_cup_qualification_asia": {**COMPETITIONS["world_cup_qualification_asia"], "family": "world_cup_qualification", "tier": "qualification", "weight": "normal"},
+    "world_cup_qualification_concacaf": {**COMPETITIONS["world_cup_qualification_concacaf"], "family": "world_cup_qualification", "tier": "qualification", "weight": "normal"},
+    "world_cup_qualification_oceania": {**COMPETITIONS["world_cup_qualification_oceania"], "family": "world_cup_qualification", "tier": "qualification", "weight": "normal"},
+    "world_cup_qualification_south_america": {**COMPETITIONS["world_cup_qualification_south_america"], "family": "world_cup_qualification", "tier": "qualification", "weight": "normal"},
+}
+
+EXPANDED_PRESETS = {
+    "conservative": {
+        "world_cup": [2014, 2018, 2022],
+        "euro": [2016, 2020, 2024],
+        "copa_america": [2016, 2019, 2021, 2024],
+        "afcon": [2017, 2019, 2021, 2023],
+        "asian_cup": [2015, 2019, 2023],
+        "gold_cup": [2017, 2019, 2021, 2023],
+    },
+}
+
+EXPANDED_PRESETS["broad"] = {
+    **EXPANDED_PRESETS["conservative"],
+    "uefa_nations_league": [2018, 2020, 2022, 2024],
+    "friendlies": [2022, 2023, 2024, 2025],
+    "world_cup_qualification_europe": [2018, 2020, 2024],
+    "world_cup_qualification_africa": [2018, 2022, 2023],
+    "world_cup_qualification_asia": [2018, 2022],
+    "world_cup_qualification_concacaf": [2018, 2022],
+    "world_cup_qualification_oceania": [2018, 2022],
+    "world_cup_qualification_south_america": [2018, 2022],
+}
+
 FINISHED_STATUSES = {"FT", "AET", "PEN"}
 
 

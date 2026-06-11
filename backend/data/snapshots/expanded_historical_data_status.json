@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-06-11T06:15:35Z",
+  "scope": "expanded_international_historical_matches",
+  "dry_run": false,
+  "competitions_checked": [
+    "afcon",
+    "asian_cup",
+    "copa_america",
+    "euro",
+    "friendlies",
+    "gold_cup",
+    "uefa_nations_league",
+    "world_cup",
+    "world_cup_qualification_africa",
+    "world_cup_qualification_asia",
+    "world_cup_qualification_concacaf",
+    "world_cup_qualification_europe",
+    "world_cup_qualification_oceania",
+    "world_cup_qualification_south_america"
+  ],
+  "usable_competitions": [
+    "world_cup",
+    "euro",
+    "copa_america",
+    "afcon",
+    "asian_cup",
+    "gold_cup",
+    "uefa_nations_league",
+    "friendlies",
+    "world_cup_qualification_europe",
+    "world_cup_qualification_africa",
+    "world_cup_qualification_asia",
+    "world_cup_qualification_concacaf",
+    "world_cup_qualification_oceania",
+    "world_cup_qualification_south_america"
+  ],
+  "unusable_competitions": [],
+  "seasons_checked": [
+    {
+      "competition": "world_cup",
+      "season": 2014
+    },
+    {
+      "competition": "world_cup",
+      "season": 2018
+    },
+    {
+      "competition": "world_cup",
+      "season": 2022
+    },
+    {
+      "competition": "euro",
+      "season": 2016
+    },
+    {
+      "competition": "euro",
+      "season": 2020
+    },
+    {
+      "competition": "euro",
+      "season": 2024
+    },
+    {
+      "competition": "copa_america",
+      "season": 2016
+    },
+    {
+      "competition": "copa_america",
+      "season": 2019
+    },
+    {
+      "competition": "copa_america",
+      "season": 2021
+    },
+    {
+      "competition": "copa_america",
+      "season": 2024
+    },
+    {
+      "competition": "afcon",
+      "season": 2017
+    },
+    {
+      "competition": "afcon",
+      "season": 2019
+    },
+    {
+      "competition": "afcon",
+      "season": 2021
+    },
+    {
+      "competition": "afcon",
+      "season": 2023
+    },
+    {
+      "competition": "asian_cup",
+      "season": 2015
+    },
+    {
+      "competition": "asian_cup",
+      "season": 2019
+    },
+    {
+      "competition": "asian_cup",
+      "season": 2023
+    },
+    {
+      "competition": "gold_cup",
+      "season": 2017
+    },
+    {
+      "competition": "gold_cup",
+      "season": 2019
+    },
+    {
+      "competition": "gold_cup",
+      "season": 2021
+    },
+    {
+      "competition": "gold_cup",
+      "season": 2023
+    },
+    {
+      "competition": "uefa_nations_league",
+      "season": 2018
+    },
+    {
+      "competition": "uefa_nations_league",
+      "season": 2020
+    },
+    {
+      "competition": "uefa_nations_league",
+      "season": 2022
+    },
+    {
+      "competition": "uefa_nations_league",
+      "season": 2024
+    },
+    {
+      "competition": "friendlies",
+      "season": 2022
+    },
+    {
+      "competition": "friendlies",
+      "season": 2023
+    },
+    {
+      "competition": "friendlies",
+      "season": 2024
+    },
+    {
+      "competition": "friendlies",
+      "season": 2025
+    },
+    {
+      "competition": "world_cup_qualification_europe",
+      "season": 2018
+    },
+    {
+      "competition": "world_cup_qualification_europe",
+      "season": 2020
+    },
+    {
+      "competition": "world_cup_qualification_europe",
+      "season": 2024
+    },
+    {
+      "competition": "world_cup_qualification_africa",
+      "season": 2018
+    },
+    {
+      "competition": "world_cup_qualification_africa",
+      "season": 2022
+    },
+    {
+      "competition": "world_cup_qualification_africa",
+      "season": 2023
+    },
+    {
+      "competition": "world_cup_qualification_asia",
+      "season": 2018
+    },
+    {
+      "competition": "world_cup_qualification_asia",
+      "season": 2022
+    },
+    {
+      "competition": "world_cup_qualification_concacaf",
+      "season": 2018
+    },
+    {
+      "competition": "world_cup_qualification_concacaf",
+      "season": 2022
+    },
+    {
+      "competition": "world_cup_qualification_oceania",
+      "season": 2018
+    },
+    {
+      "competition": "world_cup_qualification_oceania",
+      "season": 2022
+    },
+    {
+      "competition": "world_cup_qualification_south_america",
+      "season": 2018
+    },
+    {
+      "competition": "world_cup_qualification_south_america",
+      "season": 2022
+    }
+  ],
+  "requests_planned": 43,
+  "requests_executed": 43,
+  "finished_fixtures_found": 5901,
+  "failed_requests": [],
+  "limitations": [
+    "Counts describe only checked senior international league/season pairs.",
+    "Competition families have different score distributions and must remain tagged.",
+    "No club competition is included."
+  ],
+  "quota_notes": [
+    "Execution capped at 60 calls."
+  ]
+}

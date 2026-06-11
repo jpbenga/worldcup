@@ -130,3 +130,16 @@ Before Level 2 fitting, V0.8 must define chronological train/validation splits,
 resolve regulation-time semantics for AET/PEN fixtures, and establish a simple
 benchmark. Broader qualifiers, friendlies and continental competitions remain
 necessary before considering a robust promoted engine.
+
+## V0.8 expanded dataset input
+
+Future calibration experiments should now begin with
+`backend/data/normalized/historical_matches_expanded.json`, not only the V0.7
+World Cup-only dataset. The expanded source contains `1,311` finished matches
+from six senior international competitions and provides deterministic
+chronological train/validation/test files.
+
+The source remains experimental. Rows preserve competition family, tier,
+training-weight hint and source-scope confidence. V0.9 must segment or exclude
+`mixed_scope_possible` rows, resolve AET/PEN score semantics and compare simple
+baselines before fitting anything intended for promotion.

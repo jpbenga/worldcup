@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-06-11T06:18:47Z",
+  "total_matches": 1311,
+  "teams_count": 168,
+  "competition_count": 6,
+  "competitions_covered": [
+    "Africa Cup of Nations",
+    "Asian Cup",
+    "CONCACAF Gold Cup",
+    "Copa America",
+    "Euro Championship",
+    "World Cup"
+  ],
+  "seasons_covered": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "matches_by_competition": {
+    "World Cup": 192,
+    "Asian Cup": 134,
+    "Copa America": 118,
+    "Euro Championship": 415,
+    "Africa Cup of Nations": 334,
+    "CONCACAF Gold Cup": 118
+  },
+  "matches_by_season": {
+    "2014": 64,
+    "2015": 32,
+    "2016": 83,
+    "2017": 57,
+    "2019": 306,
+    "2018": 64,
+    "2020": 313,
+    "2021": 111,
+    "2022": 64,
+    "2023": 134,
+    "2024": 83
+  },
+  "date_min": "2014-06-12T20:00:00+00:00",
+  "date_max": "2024-07-15T00:30:00+00:00",
+  "average_goals_per_match": 2.629,
+  "home_win_rate": 0.45156369183829137,
+  "draw_rate": 0.2295957284515637,
+  "away_win_rate": 0.3188405797101449,
+  "score_distribution": {
+    "1-0": 149,
+    "1-1": 130,
+    "2-1": 117,
+    "0-1": 116,
+    "0-0": 105,
+    "2-0": 96,
+    "0-2": 74,
+    "1-2": 72,
+    "3-0": 58,
+    "2-2": 53,
+    "3-1": 44,
+    "0-3": 41,
+    "4-0": 33,
+    "0-4": 24,
+    "1-3": 23,
+    "2-3": 21,
+    "3-2": 21,
+    "4-1": 20,
+    "1-4": 16,
+    "5-0": 13,
+    "3-3": 11,
+    "6-0": 10,
+    "2-4": 8,
+    "4-2": 8,
+    "0-5": 6,
+    "1-5": 5,
+    "7-0": 5,
+    "6-1": 4,
+    "0-6": 4,
+    "5-1": 3,
+    "2-5": 2,
+    "4-4": 2,
+    "5-2": 2,
+    "9-0": 2,
+    "1-6": 2,
+    "1-7": 1,
+    "7-1": 1,
+    "0-7": 1,
+    "4-3": 1,
+    "1-8": 1,
+    "8-0": 1,
+    "5-3": 1,
+    "9-1": 1,
+    "3-5": 1,
+    "6-2": 1,
+    "6-4": 1
+  },
+  "top_teams_by_matches": [
+    {
+      "team": "France",
+      "matches": 46
+    },
+    {
+      "team": "Argentina",
+      "matches": 43
+    },
+    {
+      "team": "Mexico",
+      "matches": 41
+    },
+    {
+      "team": "England",
+      "matches": 41
+    },
+    {
+      "team": "USA",
+      "matches": 40
+    },
+    {
+      "team": "Belgium",
+      "matches": 39
+    },
+    {
+      "team": "Spain",
+      "matches": 38
+    },
+    {
+      "team": "Brazil",
+      "matches": 37
+    },
+    {
+      "team": "Croatia",
+      "matches": 36
+    },
+    {
+      "team": "Germany",
+      "matches": 36
+    },
+    {
+      "team": "Portugal",
+      "matches": 36
+    },
+    {
+      "team": "Senegal",
+      "matches": 35
+    },
+    {
+      "team": "Costa Rica",
+      "matches": 34
+    },
+    {
+      "team": "Switzerland",
+      "matches": 34
+    },
+    {
+      "team": "Cameroon",
+      "matches": 33
+    },
+    {
+      "team": "Morocco",
+      "matches": 33
+    },
+    {
+      "team": "Colombia",
+      "matches": 32
+    },
+    {
+      "team": "Qatar",
+      "matches": 32
+    },
+    {
+      "team": "Nigeria",
+      "matches": 31
+    },
+    {
+      "team": "Tunisia",
+      "matches": 31
+    }
+  ],
+  "competition_families": {
+    "world_championship": 192,
+    "continental_championship": 851,
+    "continental_qualification": 268
+  },
+  "major_vs_friendlies": {
+    "major_or_competitive": 1311,
+    "friendlies": 0
+  },
+  "training_weight_hints": {
+    "normal": 1311
+  },
+  "source_scopes": {
+    "clear": 1068,
+    "mixed_scope_possible": 243
+  },
+  "gaps_or_limitations": [
+    "Competition families have different selection processes and score distributions.",
+    "Qualifications and friendlies, when included, require explicit weighting and segmented evaluation.",
+    "AET/PEN score semantics, pre-match Elo and neutral-site quality remain unresolved.",
+    "Rows tagged mixed_scope_possible require review before calibration.",
+    "The expanded dataset is an experimental calibration input, not a final training corpus."
+  ],
+  "limitations": [
+    "Competition families have different selection processes and score distributions.",
+    "Qualifications and friendlies, when included, require explicit weighting and segmented evaluation.",
+    "AET/PEN score semantics, pre-match Elo and neutral-site quality remain unresolved.",
+    "Rows tagged mixed_scope_possible require review before calibration.",
+    "The expanded dataset is an experimental calibration input, not a final training corpus."
+  ],
+  "dataset_sufficiency": "medium",
+  "usable_for_calibration_experiment": true
+}

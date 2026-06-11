@@ -1,0 +1,64 @@
+{
+  "split_method": "chronological_70_15_15",
+  "total_matches": 1311,
+  "train_matches": 917,
+  "validation_matches": 196,
+  "test_matches": 198,
+  "train_date_min": "2014-06-12T20:00:00+00:00",
+  "train_date_max": "2021-06-23T21:00:00+00:00",
+  "validation_date_min": "2021-06-24T00:00:00+00:00",
+  "validation_date_max": "2023-07-03T01:00:00+00:00",
+  "test_date_min": "2023-07-03T01:00:00+00:00",
+  "test_date_max": "2024-07-15T00:30:00+00:00",
+  "competitions_by_split": {
+    "train": {
+      "World Cup": 128,
+      "Asian Cup": 83,
+      "Copa America": 71,
+      "Euro Championship": 349,
+      "Africa Cup of Nations": 230,
+      "CONCACAF Gold Cup": 56
+    },
+    "validation": {
+      "Copa America": 15,
+      "Euro Championship": 15,
+      "CONCACAF Gold Cup": 50,
+      "Africa Cup of Nations": 52,
+      "World Cup": 64
+    },
+    "test": {
+      "CONCACAF Gold Cup": 12,
+      "Asian Cup": 51,
+      "Africa Cup of Nations": 52,
+      "Euro Championship": 51,
+      "Copa America": 32
+    }
+  },
+  "seasons_by_split": {
+    "train": {
+      "2014": 64,
+      "2015": 32,
+      "2016": 83,
+      "2017": 57,
+      "2019": 306,
+      "2018": 64,
+      "2020": 298,
+      "2021": 13
+    },
+    "validation": {
+      "2021": 98,
+      "2020": 15,
+      "2022": 64,
+      "2023": 19
+    },
+    "test": {
+      "2023": 115,
+      "2024": 83
+    }
+  },
+  "leakage_checks": {
+    "future_2026_fixtures_excluded": true,
+    "date_order_valid": true,
+    "duplicate_fixture_ids_across_splits": false
+  }
+}

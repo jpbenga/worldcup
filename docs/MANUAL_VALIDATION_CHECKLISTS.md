@@ -359,6 +359,27 @@ Notes :
 - [ ] No fake backtesting introduced
 - [ ] No secret committed
 
+## Checklist V0.8 — Expanded Historical Dataset & Chronological Split
+
+- [ ] Competitions beyond World Cup explored
+- [ ] Euro checked
+- [ ] Copa América checked
+- [ ] Africa Cup of Nations checked
+- [ ] AFC Asian Cup checked
+- [ ] CONCACAF Gold Cup checked
+- [ ] Qualifiers/friendlies clearly tagged if included
+- [ ] Expanded historical matches normalized
+- [ ] 2026 future fixtures excluded
+- [ ] Club competitions excluded
+- [ ] Scores present for all matches
+- [ ] Dataset audit completed
+- [ ] Chronological split created
+- [ ] No random split used
+- [ ] No model training introduced
+- [ ] No prediction logic changed
+- [ ] Dataset limitations documented
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

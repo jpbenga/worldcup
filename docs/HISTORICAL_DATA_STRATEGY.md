@@ -143,3 +143,27 @@ score semantics must be defined before fitting.
 Recommended next phase: **V0.8 — Historical Dataset Split & Baseline
 Calibration Experiment**, beginning with an explicit chronological split and
 score-semantics decision before any model promotion.
+
+## V0.8 result
+
+V0.8 preserves `historical_matches.json` and publishes the separate
+`historical_matches_expanded.json` dataset. The conservative expanded fetch
+adds Euro Championship, Copa America, Africa Cup of Nations, Asian Cup and
+CONCACAF Gold Cup seasons to the three World Cups.
+
+- `1,311` real finished matches;
+- `168` teams;
+- `6` named senior international competitions;
+- seasons from `2014` through `2024`;
+- `268` rows explicitly identified as continental qualifications;
+- no future 2026 fixture and no club competition.
+
+This is substantially better than V0.7 because it covers multiple
+confederations and a decade of tournament cycles. It remains experimental:
+API-Football can group qualification and final-tournament scope under the same
+league/season, leaving `243` rows tagged `mixed_scope_possible`; AET/PEN score
+semantics, pre-match Elo and neutral-site validation also remain unresolved.
+
+The deterministic chronological split is `917` train, `196` validation and
+`198` test matches. Recommended next phase: **V0.9 — First Calibration
+Experiment on Historical Dataset**, with no promotion to the active engine.

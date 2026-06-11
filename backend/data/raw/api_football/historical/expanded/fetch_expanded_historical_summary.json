@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-06-11T06:17:32Z",
+  "scope": "expanded_international_historical_matches",
+  "preset": "conservative",
+  "requested_competitions": [
+    "world_cup",
+    "euro",
+    "copa_america",
+    "afcon",
+    "asian_cup",
+    "gold_cup"
+  ],
+  "requested_seasons": {
+    "world_cup": [
+      2014,
+      2018,
+      2022
+    ],
+    "euro": [
+      2016,
+      2020,
+      2024
+    ],
+    "copa_america": [
+      2016,
+      2019,
+      2021,
+      2024
+    ],
+    "afcon": [
+      2017,
+      2019,
+      2021,
+      2023
+    ],
+    "asian_cup": [
+      2015,
+      2019,
+      2023
+    ],
+    "gold_cup": [
+      2017,
+      2019,
+      2021,
+      2023
+    ]
+  },
+  "requests_executed": 18,
+  "max_requests": 100,
+  "fixtures_downloaded": 1315,
+  "finished_fixtures": 1311,
+  "files": [
+    {
+      "competition": "world_cup",
+      "competition_name": "World Cup",
+      "league_id": 1,
+      "season": 2014,
+      "status": "copied_v0_7_cache",
+      "fixtures_downloaded": 64,
+      "finished_fixtures": 64,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_world_cup_2014.json"
+    },
+    {
+      "competition": "world_cup",
+      "competition_name": "World Cup",
+      "league_id": 1,
+      "season": 2018,
+      "status": "copied_v0_7_cache",
+      "fixtures_downloaded": 64,
+      "finished_fixtures": 64,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_world_cup_2018.json"
+    },
+    {
+      "competition": "world_cup",
+      "competition_name": "World Cup",
+      "league_id": 1,
+      "season": 2022,
+      "status": "copied_v0_7_cache",
+      "fixtures_downloaded": 64,
+      "finished_fixtures": 64,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_world_cup_2022.json"
+    },
+    {
+      "competition": "euro",
+      "competition_name": "Euro Championship",
+      "league_id": 4,
+      "season": 2016,
+      "status": "fetched",
+      "fixtures_downloaded": 51,
+      "finished_fixtures": 51,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_euro_2016.json"
+    },
+    {
+      "competition": "euro",
+      "competition_name": "Euro Championship",
+      "league_id": 4,
+      "season": 2020,
+      "status": "fetched",
+      "fixtures_downloaded": 313,
+      "finished_fixtures": 313,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_euro_2020.json"
+    },
+    {
+      "competition": "euro",
+      "competition_name": "Euro Championship",
+      "league_id": 4,
+      "season": 2024,
+      "status": "fetched",
+      "fixtures_downloaded": 51,
+      "finished_fixtures": 51,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_euro_2024.json"
+    },
+    {
+      "competition": "copa_america",
+      "competition_name": "Copa America",
+      "league_id": 9,
+      "season": 2016,
+      "status": "fetched",
+      "fixtures_downloaded": 32,
+      "finished_fixtures": 32,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2016.json"
+    },
+    {
+      "competition": "copa_america",
+      "competition_name": "Copa America",
+      "league_id": 9,
+      "season": 2019,
+      "status": "fetched",
+      "fixtures_downloaded": 26,
+      "finished_fixtures": 26,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2019.json"
+    },
+    {
+      "competition": "copa_america",
+      "competition_name": "Copa America",
+      "league_id": 9,
+      "season": 2021,
+      "status": "fetched",
+      "fixtures_downloaded": 28,
+      "finished_fixtures": 28,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2021.json"
+    },
+    {
+      "competition": "copa_america",
+      "competition_name": "Copa America",
+      "league_id": 9,
+      "season": 2024,
+      "status": "fetched",
+      "fixtures_downloaded": 32,
+      "finished_fixtures": 32,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2024.json"
+    },
+    {
+      "competition": "afcon",
+      "competition_name": "Africa Cup of Nations",
+      "league_id": 6,
+      "season": 2017,
+      "status": "fetched",
+      "fixtures_downloaded": 32,
+      "finished_fixtures": 32,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2017.json"
+    },
+    {
+      "competition": "afcon",
+      "competition_name": "Africa Cup of Nations",
+      "league_id": 6,
+      "season": 2019,
+      "status": "fetched",
+      "fixtures_downloaded": 202,
+      "finished_fixtures": 198,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2019.json"
+    },
+    {
+      "competition": "afcon",
+      "competition_name": "Africa Cup of Nations",
+      "league_id": 6,
+      "season": 2021,
+      "status": "fetched",
+      "fixtures_downloaded": 52,
+      "finished_fixtures": 52,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2021.json"
+    },
+    {
+      "competition": "afcon",
+      "competition_name": "Africa Cup of Nations",
+      "league_id": 6,
+      "season": 2023,
+      "status": "fetched",
+      "fixtures_downloaded": 52,
+      "finished_fixtures": 52,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2023.json"
+    },
+    {
+      "competition": "asian_cup",
+      "competition_name": "Asian Cup",
+      "league_id": 7,
+      "season": 2015,
+      "status": "fetched",
+      "fixtures_downloaded": 32,
+      "finished_fixtures": 32,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_asian_cup_2015.json"
+    },
+    {
+      "competition": "asian_cup",
+      "competition_name": "Asian Cup",
+      "league_id": 7,
+      "season": 2019,
+      "status": "fetched",
+      "fixtures_downloaded": 51,
+      "finished_fixtures": 51,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_asian_cup_2019.json"
+    },
+    {
+      "competition": "asian_cup",
+      "competition_name": "Asian Cup",
+      "league_id": 7,
+      "season": 2023,
+      "status": "fetched",
+      "fixtures_downloaded": 51,
+      "finished_fixtures": 51,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_asian_cup_2023.json"
+    },
+    {
+      "competition": "gold_cup",
+      "competition_name": "CONCACAF Gold Cup",
+      "league_id": 22,
+      "season": 2017,
+      "status": "fetched",
+      "fixtures_downloaded": 25,
+      "finished_fixtures": 25,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2017.json"
+    },
+    {
+      "competition": "gold_cup",
+      "competition_name": "CONCACAF Gold Cup",
+      "league_id": 22,
+      "season": 2019,
+      "status": "fetched",
+      "fixtures_downloaded": 31,
+      "finished_fixtures": 31,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2019.json"
+    },
+    {
+      "competition": "gold_cup",
+      "competition_name": "CONCACAF Gold Cup",
+      "league_id": 22,
+      "season": 2021,
+      "status": "fetched",
+      "fixtures_downloaded": 31,
+      "finished_fixtures": 31,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2021.json"
+    },
+    {
+      "competition": "gold_cup",
+      "competition_name": "CONCACAF Gold Cup",
+      "league_id": 22,
+      "season": 2023,
+      "status": "fetched",
+      "fixtures_downloaded": 31,
+      "finished_fixtures": 31,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2023.json"
+    }
+  ],
+  "failed_requests": [],
+  "skipped_competitions": [],
+  "quota_notes": [
+    "Cached files consume no API quota.",
+    "Execution capped at 100 API calls."
+  ],
+  "usable_for_training_experiment": true
+}

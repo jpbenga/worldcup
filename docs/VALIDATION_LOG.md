@@ -395,3 +395,42 @@ World Cup fixtures from 2014, 2018 and 2022. The dataset contains no future
 Dataset sufficiency is rated `medium`: useful for a controlled experimental
 baseline, but insufficient for the final advanced engine. No model was trained
 and no backtesting was performed.
+
+## V0.8 — Expanded Historical Dataset & Chronological Split
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Expanded competition exploration completed
+- [x] Expanded historical fetch completed
+- [x] Expanded historical matches normalized
+- [x] Historical dataset audit completed
+- [x] Chronological split created
+- [x] 2026 future fixtures excluded
+- [x] Club competitions excluded
+- [x] No model training introduced
+- [x] No prediction logic changed
+- [x] No fake backtesting introduced
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+The expanded conservative dataset contains `1,311` real finished matches from
+six senior international competitions and `168` teams. The chronological split
+contains `917` train, `196` validation and `198` test matches with passing
+leakage checks.
+
+Dataset sufficiency remains `medium`. API-Football league/season responses can
+mix qualification and final-tournament scope; `243` rows are explicitly tagged
+`mixed_scope_possible`. No model was trained and no prediction was evaluated.

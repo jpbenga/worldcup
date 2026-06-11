@@ -1,0 +1,104 @@
+{
+  "total_matches": 1311,
+  "source_files": [
+    "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2017.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2019.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2021.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_afcon_2023.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_asian_cup_2015.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_asian_cup_2019.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_asian_cup_2023.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2016.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2019.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2021.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_copa_america_2024.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_euro_2016.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_euro_2020.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_euro_2024.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2017.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2019.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2021.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_gold_cup_2023.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_world_cup_2014.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_world_cup_2018.json",
+    "backend/data/raw/api_football/historical/expanded/fixtures_world_cup_2022.json"
+  ],
+  "rejected_future_club_or_incomplete_fixtures": 4,
+  "competitions": {
+    "Africa Cup of Nations": {
+      "seasons": [
+        2017,
+        2019,
+        2021,
+        2023
+      ],
+      "matches": 334
+    },
+    "Asian Cup": {
+      "seasons": [
+        2015,
+        2019,
+        2023
+      ],
+      "matches": 134
+    },
+    "CONCACAF Gold Cup": {
+      "seasons": [
+        2017,
+        2019,
+        2021,
+        2023
+      ],
+      "matches": 118
+    },
+    "Copa America": {
+      "seasons": [
+        2016,
+        2019,
+        2021,
+        2024
+      ],
+      "matches": 118
+    },
+    "Euro Championship": {
+      "seasons": [
+        2016,
+        2020,
+        2024
+      ],
+      "matches": 415
+    },
+    "World Cup": {
+      "seasons": [
+        2014,
+        2018,
+        2022
+      ],
+      "matches": 192
+    }
+  },
+  "competition_families": {
+    "world_championship": 192,
+    "continental_championship": 851,
+    "continental_qualification": 268
+  },
+  "training_weight_hints": {
+    "normal": 1311
+  },
+  "source_scopes": {
+    "clear": 1068,
+    "mixed_scope_possible": 243
+  },
+  "teams_count": 168,
+  "date_min": "2014-06-12T20:00:00+00:00",
+  "date_max": "2024-07-15T00:30:00+00:00",
+  "future_2026_fixtures_excluded": true,
+  "club_competitions_excluded": true,
+  "usable_for_calibration_experiment": true,
+  "limitations": [
+    "Competition families and friendlies may have materially different score distributions.",
+    "Some API-Football league/season responses mix final-tournament and qualification scope; uncertain rows are tagged.",
+    "AET/PEN score semantics must be resolved before fitting.",
+    "Pre-match Elo history and neutral-site validation are not included."
+  ]
+}
