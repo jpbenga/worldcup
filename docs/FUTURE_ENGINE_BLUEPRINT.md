@@ -117,3 +117,16 @@ Do not implement a new model first. Measure historical API-Football coverage,
 competition IDs, seasons, quota cost, neutral-venue quality, result chronology
 and pre-match Elo feasibility. Produce a small audited historical sample and a
 dataset coverage report before deciding the exact Level 2 implementation.
+
+## V0.7 dataset input
+
+`backend/data/normalized/historical_matches.json` is now the first real
+training-candidate source for a future experiment. It contains `192` finished
+World Cup fixtures from 2014, 2018 and 2022 and remains completely separate
+from the future 2026 fixtures.
+
+It is an experimental starting point, not the final historical dataset.
+Before Level 2 fitting, V0.8 must define chronological train/validation splits,
+resolve regulation-time semantics for AET/PEN fixtures, and establish a simple
+benchmark. Broader qualifiers, friendlies and continental competitions remain
+necessary before considering a robust promoted engine.

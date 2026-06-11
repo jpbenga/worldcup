@@ -192,6 +192,25 @@ python3 backend/scripts/discover_engine_references.py
 The recommended next implementation phase is **V0.7 — Historical Data
 Acquisition Spike**.
 
+## Historical data acquisition spike
+
+V0.7 explores API-Football international history and publishes an isolated,
+real dataset without changing the active 2026 prediction engine:
+
+```bash
+python3 backend/scripts/explore_historical_api_football.py --limit-seasons 5
+python3 backend/scripts/fetch_historical_international_matches.py --preset conservative
+python3 backend/scripts/normalize_historical_matches.py
+python3 backend/scripts/audit_historical_dataset.py
+```
+
+The conservative dataset contains `192` finished World Cup fixtures from 2014,
+2018 and 2022 in `backend/data/normalized/historical_matches.json`. It excludes
+all future 2026 fixtures and is documented as an experimental training
+candidate, not a sufficient final dataset. See
+`docs/HISTORICAL_API_FOOTBALL_EXPLORATION.md` and
+`docs/HISTORICAL_DATASET_AUDIT.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

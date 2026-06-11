@@ -357,3 +357,41 @@ The recommended next implementation phase is **V0.7 — Historical Data
 Acquisition Spike**. V0.6 changes documentation and adds a deterministic
 reference-inventory script only; it does not replace, calibrate or rerun the
 prediction engine.
+
+## V0.7 — Historical Data Acquisition Spike
+
+Commit: TBD
+
+### Technical validation
+
+- [x] API-Football historical exploration completed
+- [x] Historical fixtures fetched
+- [x] Historical matches normalized
+- [x] Historical dataset audit completed
+- [x] Future 2026 fixtures excluded from historical dataset
+- [x] No model training introduced
+- [x] No prediction logic changed
+- [x] No fake backtesting introduced
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+The controlled exploration executed `5` API requests and found `872` finished
+fixtures across five checked international competition seasons. The
+conservative fetch executed `3` requests and normalized `192` real finished
+World Cup fixtures from 2014, 2018 and 2022. The dataset contains no future
+2026 fixture, duplicate ID or missing score.
+
+Dataset sufficiency is rated `medium`: useful for a controlled experimental
+baseline, but insufficient for the final advanced engine. No model was trained
+and no backtesting was performed.

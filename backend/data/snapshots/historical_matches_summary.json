@@ -1,0 +1,28 @@
+{
+  "total_matches": 192,
+  "source_files": [
+    "backend/data/raw/api_football/historical/fixtures_world_cup_2014.json",
+    "backend/data/raw/api_football/historical/fixtures_world_cup_2018.json",
+    "backend/data/raw/api_football/historical/fixtures_world_cup_2022.json"
+  ],
+  "rejected_or_future_fixtures": 0,
+  "competitions": {
+    "World Cup": {
+      "seasons": [
+        2014,
+        2018,
+        2022
+      ],
+      "matches": 192
+    }
+  },
+  "teams_count": 47,
+  "date_min": "2014-06-12T20:00:00+00:00",
+  "date_max": "2022-12-18T15:00:00+00:00",
+  "usable_for_training": true,
+  "limitations": [
+    "The conservative dataset contains World Cup fixtures only.",
+    "AET/PEN fixtures are retained; regulation-time score semantics must be defined before model fitting.",
+    "Pre-match Elo history, neutral-site validation and advanced statistics are not included."
+  ]
+}

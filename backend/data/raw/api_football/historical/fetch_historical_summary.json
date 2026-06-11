@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-11T05:56:04Z",
+  "api_provider": "api_football",
+  "scope": "historical_international_matches",
+  "requested_competitions": [
+    "world_cup"
+  ],
+  "requested_seasons": [
+    2014,
+    2018,
+    2022
+  ],
+  "available_seasons": [
+    2022,
+    2018,
+    2014,
+    2010
+  ],
+  "unavailable_requested_seasons": [],
+  "requests_executed": 3,
+  "max_requests": 50,
+  "fixtures_downloaded": 192,
+  "finished_fixtures": 192,
+  "files": [
+    {
+      "competition": "world_cup",
+      "competition_name": "World Cup",
+      "league_id": 1,
+      "season": 2014,
+      "status": "fetched",
+      "fixtures_downloaded": 64,
+      "finished_fixtures": 64,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/fixtures_world_cup_2014.json"
+    },
+    {
+      "competition": "world_cup",
+      "competition_name": "World Cup",
+      "league_id": 1,
+      "season": 2018,
+      "status": "fetched",
+      "fixtures_downloaded": 64,
+      "finished_fixtures": 64,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/fixtures_world_cup_2018.json"
+    },
+    {
+      "competition": "world_cup",
+      "competition_name": "World Cup",
+      "league_id": 1,
+      "season": 2022,
+      "status": "fetched",
+      "fixtures_downloaded": 64,
+      "finished_fixtures": 64,
+      "errors": [],
+      "path": "backend/data/raw/api_football/historical/fixtures_world_cup_2022.json"
+    }
+  ],
+  "failed_requests": [],
+  "quota_notes": [
+    "Execution capped at 50 API calls.",
+    "Cached raw fixture files do not consume API quota."
+  ],
+  "usable_for_training": true
+}

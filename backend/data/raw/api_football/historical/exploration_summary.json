@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-06-11T05:58:30Z",
+  "api_provider": "api_football",
+  "scope": "historical_international_matches",
+  "dry_run": false,
+  "competitions_checked": [
+    "world_cup",
+    "world_cup_qualification_africa",
+    "world_cup_qualification_asia",
+    "world_cup_qualification_concacaf",
+    "world_cup_qualification_europe"
+  ],
+  "seasons_checked": [
+    {
+      "competition": "world_cup",
+      "league_id": 1,
+      "season": 2022
+    },
+    {
+      "competition": "world_cup_qualification_europe",
+      "league_id": 32,
+      "season": 2024
+    },
+    {
+      "competition": "world_cup_qualification_africa",
+      "league_id": 29,
+      "season": 2023
+    },
+    {
+      "competition": "world_cup_qualification_asia",
+      "league_id": 30,
+      "season": 2022
+    },
+    {
+      "competition": "world_cup_qualification_concacaf",
+      "league_id": 31,
+      "season": 2022
+    }
+  ],
+  "requests_planned": 5,
+  "requests_executed": 5,
+  "total_finished_fixtures_found": 872,
+  "failed_requests": [],
+  "usable_for_training": true,
+  "limitations": [
+    "Fixture counts cover only explicitly checked league/season pairs, not every available international competition.",
+    "Advanced statistics and neutral-site quality were not evaluated in this controlled spike."
+  ],
+  "next_steps": [
+    "Fetch the conservative World Cup 2014, 2018 and 2022 dataset.",
+    "Normalize only finished fixtures with real scores and audit chronology before any training."
+  ]
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "key": "world_cup",
+    "league_id": 1,
+    "name": "World Cup",
+    "available_seasons": [
+      2022,
+      2018,
+      2014,
+      2010
+    ],
+    "checked_seasons": [
+      2022
+    ],
+    "finished_fixtures_found": 64,
+    "checks": [
+      {
+        "key": "world_cup",
+        "league_id": 1,
+        "name": "World Cup",
+        "season": 2022,
+        "status": "checked",
+        "fixtures": 64,
+        "finished_fixtures": 64,
+        "errors": []
+      }
+    ]
+  },
+  {
+    "key": "world_cup_qualification_europe",
+    "league_id": 32,
+    "name": "World Cup - Qualification Europe",
+    "available_seasons": [
+      2024,
+      2020,
+      2018
+    ],
+    "checked_seasons": [
+      2024
+    ],
+    "finished_fixtures_found": 204,
+    "checks": [
+      {
+        "key": "world_cup_qualification_europe",
+        "league_id": 32,
+        "name": "World Cup - Qualification Europe",
+        "season": 2024,
+        "status": "checked",
+        "fixtures": 204,
+        "finished_fixtures": 204,
+        "errors": []
+      }
+    ]
+  },
+  {
+    "key": "world_cup_qualification_africa",
+    "league_id": 29,
+    "name": "World Cup - Qualification Africa",
+    "available_seasons": [
+      2023,
+      2022,
+      2018
+    ],
+    "checked_seasons": [
+      2023
+    ],
+    "finished_fixtures_found": 256,
+    "checks": [
+      {
+        "key": "world_cup_qualification_africa",
+        "league_id": 29,
+        "name": "World Cup - Qualification Africa",
+        "season": 2023,
+        "status": "checked",
+        "fixtures": 273,
+        "finished_fixtures": 256,
+        "errors": []
+      }
+    ]
+  },
+  {
+    "key": "world_cup_qualification_asia",
+    "league_id": 30,
+    "name": "World Cup - Qualification Asia",
+    "available_seasons": [
+      2022,
+      2018
+    ],
+    "checked_seasons": [
+      2022
+    ],
+    "finished_fixtures_found": 230,
+    "checks": [
+      {
+        "key": "world_cup_qualification_asia",
+        "league_id": 30,
+        "name": "World Cup - Qualification Asia",
+        "season": 2022,
+        "status": "checked",
+        "fixtures": 233,
+        "finished_fixtures": 230,
+        "errors": []
+      }
+    ]
+  },
+  {
+    "key": "world_cup_qualification_concacaf",
+    "league_id": 31,
+    "name": "World Cup - Qualification CONCACAF",
+    "available_seasons": [
+      2022,
+      2018
+    ],
+    "checked_seasons": [
+      2022
+    ],
+    "finished_fixtures_found": 118,
+    "checks": [
+      {
+        "key": "world_cup_qualification_concacaf",
+        "league_id": 31,
+        "name": "World Cup - Qualification CONCACAF",
+        "season": 2022,
+        "status": "checked",
+        "fixtures": 122,
+        "finished_fixtures": 118,
+        "errors": []
+      }
+    ]
+  },
+  {
+    "key": "world_cup_qualification_oceania",
+    "league_id": 33,
+    "name": "World Cup - Qualification Oceania",
+    "available_seasons": [
+      2022,
+      2018
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "world_cup_qualification_south_america",
+    "league_id": 34,
+    "name": "World Cup - Qualification South America",
+    "available_seasons": [
+      2022,
+      2018
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "friendlies",
+    "league_id": 10,
+    "name": "Friendlies",
+    "available_seasons": [
+      2025,
+      2024,
+      2023,
+      2022,
+      2021,
+      2020,
+      2019,
+      2018,
+      2017
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "euro",
+    "league_id": 4,
+    "name": "Euro Championship",
+    "available_seasons": [
+      2024,
+      2020,
+      2016,
+      2012,
+      2008
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "copa_america",
+    "league_id": 9,
+    "name": "Copa America",
+    "available_seasons": [
+      2024,
+      2021,
+      2019,
+      2016,
+      2015
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "africa_cup_of_nations",
+    "league_id": 6,
+    "name": "Africa Cup of Nations",
+    "available_seasons": [
+      2025,
+      2023,
+      2021,
+      2019,
+      2017,
+      2015
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "asian_cup",
+    "league_id": 7,
+    "name": "Asian Cup",
+    "available_seasons": [
+      2023,
+      2019,
+      2015,
+      2011
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "gold_cup",
+    "league_id": 22,
+    "name": "CONCACAF Gold Cup",
+    "available_seasons": [
+      2025,
+      2023,
+      2021,
+      2019,
+      2017,
+      2015
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  },
+  {
+    "key": "uefa_nations_league",
+    "league_id": 5,
+    "name": "UEFA Nations League",
+    "available_seasons": [
+      2024,
+      2022,
+      2020,
+      2018
+    ],
+    "checked_seasons": [],
+    "finished_fixtures_found": 0,
+    "checks": []
+  }
+]

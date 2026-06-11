@@ -115,3 +115,31 @@ separate from model-ready features.
 Proceed with **V0.7 — Historical Data Acquisition Spike**. Its purpose is to
 measure API-Football historical coverage, quota cost, identity quality and
 chronological feature feasibility before implementing any calibrated model.
+
+## V0.7 result
+
+The controlled exploration used `5` API requests and checked one season from
+each of five international competition families: World Cup, and European,
+African, Asian and CONCACAF World Cup qualification. These checked seasons
+contained `872` finished fixtures in total. The cached league inventory also
+confirms available seasons for friendlies, continental championships, Gold Cup
+and UEFA Nations League, but those fixtures were not downloaded in V0.7.
+
+The conservative fetch then used `3` requests and downloaded the complete
+API-Football fixture sets for World Cup `2014`, `2018` and `2022`:
+
+- `64` fixtures per season;
+- `192` finished fixtures normalized;
+- `47` teams;
+- date range from `2014-06-12` through `2022-12-18`;
+- no 2026 fixture, future fixture, missing score or duplicate fixture ID.
+
+The dataset is real and suitable as the first experimental input for a
+controlled baseline-calibration exercise. It is not sufficient for the final
+engine because it covers only three World Cups, lacks qualifiers/friendlies and
+pre-match Elo history, and retains `AET/PEN` fixtures whose regulation-time
+score semantics must be defined before fitting.
+
+Recommended next phase: **V0.8 — Historical Dataset Split & Baseline
+Calibration Experiment**, beginning with an explicit chronological split and
+score-semantics decision before any model promotion.

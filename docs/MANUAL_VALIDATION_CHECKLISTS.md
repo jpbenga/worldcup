@@ -344,6 +344,21 @@ Notes :
 - [ ] No secret committed
 - [ ] Next implementation phase identified
 
+## Checklist V0.7 — Historical Data Acquisition Spike
+
+- [ ] API-Football historical exploration completed
+- [ ] Historical fixtures fetched
+- [ ] Historical matches normalized
+- [ ] Historical matches are real data
+- [ ] Future 2026 fixtures are not mixed into historical dataset
+- [ ] Scores are present for all historical matches
+- [ ] Dataset audit completed
+- [ ] Dataset limitations documented
+- [ ] No model training introduced
+- [ ] No prediction logic changed
+- [ ] No fake backtesting introduced
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.
