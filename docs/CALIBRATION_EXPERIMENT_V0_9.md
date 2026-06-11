@@ -66,3 +66,11 @@ splits, and AET/PEN, neutral-site and mixed-scope semantics remain unresolved.
 Review the validation/test deltas and segmented errors manually before a V1.0
 experiment. A next challenger should test competition-aware or chronological
 form features without touching the active engine.
+
+## V1.0 diagnostic follow-up
+
+V1.0 performs the requested error segmentation without retraining this model.
+The analysis finds near-zero draw-class selections despite substantial actual
+draw rates, strong modal `1-1` concentration, underestimation of 4+ goal
+matches and uneven competition/team performance. Promotion remains
+`do_not_promote_yet`. See `docs/CALIBRATION_ERROR_ANALYSIS_V1_0.md`.

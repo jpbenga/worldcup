@@ -555,3 +555,39 @@ predictions remain unchanged.
 
 Analyze segmented errors before creating a second challenger or promoting any
 calibrated model.
+
+## V1.0 — Calibration Error Analysis & Segmentation
+
+Commit: TBD
+
+### Technical validation
+
+- [ ] Error analysis generated
+- [ ] Competition segmentation completed
+- [ ] Season segmentation completed
+- [ ] Team segmentation completed
+- [ ] Bias analysis completed
+- [ ] Score distribution analysis completed
+- [ ] Worst matches identified
+- [ ] Recommendations documented
+- [ ] No model retrained
+- [ ] No 2026 predictions modified
+- [ ] No promotion decision changed
+- [ ] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+V1.0 analyzes the fixed V0.9 predictions only. Initial findings identify
+draw-class underprediction, modal `1-1` concentration, high-total
+underestimation and uneven segment performance. Promotion remains
+`do_not_promote_yet`; human review is required before V1.1 design.

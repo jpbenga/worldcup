@@ -157,3 +157,16 @@ dataset limitations remain unresolved. The active engine is unchanged and the
 promotion recommendation is `do_not_promote_yet`. A later experiment should
 test segmented competition effects, regulation-time score semantics and
 chronological form before any promotion decision.
+
+## V1.0 error-analysis result
+
+V1.0 analyzes the fixed V0.9 predictions without fitting a new model. Draw is
+almost never the predicted 1X2 class even though actual draw rates are `24.0%`
+on validation and `31.8%` on test. The modal score remains heavily concentrated
+on `1-1`, and the model underestimates the total goals of observed 4+ goal
+matches. Africa Cup of Nations test performance is the weakest eligible
+competition segment.
+
+These observed errors justify testing draw calibration, competition effects,
+recent form or time decay, and improved high-total behavior in a future
+challenger. They do not justify promotion of V0.9.

@@ -245,6 +245,20 @@ isolated under `backend/calibration/`. It improves 1X2, log loss and Brier
 metrics over the neutral prototype on validation and test, but is explicitly
 not promoted. See `docs/CALIBRATION_EXPERIMENT_V0_9.md`.
 
+## Calibration error analysis
+
+V1.0 analyzes the existing V0.9 validation/test predictions without retraining
+the model or changing World Cup 2026 outputs:
+
+```bash
+python3 backend/scripts/analyze_calibration_errors_v1_0.py
+```
+
+The report segments errors by competition, season, team, result, confidence and
+goal total. It documents draw-class underprediction, modal `1-1`
+concentration, high-total underestimation and problematic matches. Promotion
+remains `do_not_promote_yet`; see `docs/CALIBRATION_ERROR_ANALYSIS_V1_0.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

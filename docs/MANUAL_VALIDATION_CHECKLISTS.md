@@ -396,6 +396,23 @@ Notes :
 - [ ] No fake backtesting introduced
 - [ ] No secret committed
 
+## Checklist V1.0 — Calibration Error Analysis & Segmentation
+
+- [ ] Validation/test predictions loaded
+- [ ] Competition segmentation completed
+- [ ] Season segmentation completed
+- [ ] Team segmentation completed
+- [ ] Draw bias analyzed
+- [ ] Favorite bias analyzed
+- [ ] Confidence buckets analyzed
+- [ ] Score distribution analyzed
+- [ ] Worst matches identified
+- [ ] Recommendations generated from observed results
+- [ ] No model retrained
+- [ ] No 2026 predictions modified
+- [ ] No promotion decision changed
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.
