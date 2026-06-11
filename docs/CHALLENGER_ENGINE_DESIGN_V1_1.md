@@ -176,3 +176,11 @@ matrix. Dixon-Coles optimization regenerates score matrices from fixed V0.9
 xG. Both parameter grids are selected on validation only; test remains final
 evaluation evidence and cannot influence selection. The combined challenger
 remains deferred.
+
+## V1.3 design continuation
+
+Human review accepted V1.2 with reservations: neither post-probability
+challenger passed the guardrails. V1.3 moves the next design focus upstream to
+xG generation through competition weighting, time decay, Elo priors and
+low-sample fallback. These are specified for isolated V1.4 experiments only;
+no combined challenger or promotion is authorized.

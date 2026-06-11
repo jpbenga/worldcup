@@ -1,0 +1,80 @@
+{
+  "version": "v1.3",
+  "status": "design_only",
+  "base_model": "calibrated_simple_poisson_v0.9",
+  "previous_challenger_result": "v1.2_no_isolated_post_probability_challenger_passed",
+  "promotion_recommendation": "do_not_promote_yet",
+  "implementation_phase": "v1.4",
+  "challengers": [
+    {
+      "id": "competition_weighted_xg",
+      "priority": 1,
+      "target": "competition-specific scoring distributions",
+      "implementation_phase": "v1.4",
+      "candidate_params": {
+        "major_tournament_weight": 1.0,
+        "continental_championship_weight": 0.9,
+        "qualifier_weight": 0.75,
+        "friendly_weight": 0.4
+      },
+      "risk": "arbitrary weighting"
+    },
+    {
+      "id": "time_decay_xg",
+      "priority": 2,
+      "target": "recent team-strength changes",
+      "implementation_phase": "v1.4",
+      "candidate_params": {
+        "half_life_months": [
+          12,
+          24,
+          36,
+          48
+        ]
+      },
+      "risk": "low effective sample size and recent-tournament overfitting"
+    },
+    {
+      "id": "elo_prior_xg",
+      "priority": 3,
+      "target": "strength prior and low-sample stabilization",
+      "implementation_phase": "v1.4_limited_unless_historical_elo_is_available",
+      "candidate_params": {
+        "elo_prior_weight": 0.15,
+        "elo_diff_scale": 400,
+        "elo_factor_cap": 0.25
+      },
+      "risk": "temporal leakage from current static Elo"
+    },
+    {
+      "id": "low_sample_fallback_xg",
+      "priority": 4,
+      "target": "stable xG for teams with sparse historical evidence",
+      "implementation_phase": "v1.4",
+      "candidate_params": {
+        "low_sample_threshold": 8,
+        "extra_smoothing_weight": 12
+      },
+      "risk": "oversmoothing real differences"
+    },
+    {
+      "id": "upstream_combined_candidate",
+      "priority": 5,
+      "target": "combine only independently successful upstream features",
+      "implementation_phase": "deferred",
+      "risk": "confounded gains before isolated evidence exists"
+    }
+  ],
+  "guardrails": [
+    "Select parameters on validation only and use test only for final evaluation.",
+    "Improve V0.9 test log loss and Brier by at least 0.01 each.",
+    "Do not materially worsen draw calibration, modal 1-1 concentration, or high-confidence errors.",
+    "Do not use current static Elo as historical pre-match Elo without labeling temporal leakage.",
+    "Do not promote automatically or implement the combined candidate before isolated successes."
+  ],
+  "do_not_modify": [
+    "World Cup 2026 predictions",
+    "current prototype engine",
+    "main Angular app predictions"
+  ]
+}

@@ -114,3 +114,11 @@ by no more than `0.02`.
 These are selection guards, not promotion gates. The stricter prudential
 success gates above still determine whether a challenger can be called
 promising.
+
+## V1.4 upstream extension
+
+The upstream xG challengers follow the dedicated protocol in
+`docs/UPSTREAM_XG_EXPERIMENT_PROTOCOL_V1_4.md`. It preserves the validation-only
+selection and final-test rules while adding required feature-coverage,
+low-sample and temporal-leakage reporting. Current/static Elo is not historical
+pre-match evidence and cannot support promotion.

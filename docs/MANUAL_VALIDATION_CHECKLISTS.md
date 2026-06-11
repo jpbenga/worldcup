@@ -446,6 +446,24 @@ Notes :
 - [ ] Results documented honestly
 - [ ] No secret committed
 
+## Checklist V1.3 — Upstream xG Feature Challenger Design
+
+- [ ] V1.2 result incorporated
+- [ ] Upstream xG challenger design created
+- [ ] Competition-weighted xG specified
+- [ ] Time-decay xG specified
+- [ ] Elo-prior xG specified
+- [ ] Low-sample fallback specified
+- [ ] Combined upstream challenger deferred
+- [ ] V1.4 experiment protocol created
+- [ ] Feature availability inspected
+- [ ] Temporal leakage risks documented
+- [ ] No model implemented
+- [ ] No model retrained
+- [ ] No 2026 predictions modified
+- [ ] No promotion decision changed
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

@@ -284,6 +284,22 @@ on test, and publishes `docs/CHALLENGER_RESULTS_V1_2.md`. It does not implement
 a combined challenger, replace the active engine, modify World Cup 2026
 predictions, or promote a model.
 
+## Upstream xG challenger design
+
+V1.3 is a design-only response to the V1.2 result: post-probability
+corrections did not pass the guardrails, so the next isolated experiments must
+improve expected-goals generation upstream.
+
+```bash
+python3 backend/scripts/inspect_upstream_xg_feature_availability_v1_3.py
+```
+
+The read-only inspection publishes feature coverage and the V1.3 design. See
+`docs/UPSTREAM_XG_FEATURE_CHALLENGER_DESIGN_V1_3.md`,
+`docs/UPSTREAM_XG_FEATURE_AVAILABILITY_V1_3.md`, and
+`docs/UPSTREAM_XG_EXPERIMENT_PROTOCOL_V1_4.md`. No challenger is implemented,
+no model is trained, and promotion remains `do_not_promote_yet`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

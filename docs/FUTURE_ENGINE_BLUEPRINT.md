@@ -191,3 +191,16 @@ historical experiments over fixed V0.9 predictions and xG. Parameter selection
 uses validation only, and test is reserved for final evaluation. Results are
 published in `docs/CHALLENGER_RESULTS_V1_2.md`; no combined challenger is
 implemented, no model is promoted, and the active engine remains unchanged.
+
+## V1.3 upstream xG challenger design
+
+V1.2 confirms that post-probability adjustments alone do not reliably repair
+the observed calibration defects. V1.3 therefore defines isolated upstream xG
+challengers for competition weighting, chronological time decay, a bounded Elo
+prior and low-sample fallback handling.
+
+The feature inspection finds sufficient competition and date fields for
+competition weighting and time decay, but current Elo is a static 2026
+snapshot rather than historical pre-match evidence. V1.4 must not treat it as
+temporally safe. The combined upstream candidate remains deferred, no model is
+implemented, and promotion remains `do_not_promote_yet`.

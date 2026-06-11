@@ -760,3 +760,30 @@ regresses on test and increases high-confidence wrong predictions. No
 challenger should be promoted or combined yet. The next work should focus on
 improving upstream xG generation through competition weighting, time decay,
 Elo priors and better low-sample team handling.
+
+## V1.3 — Upstream xG Feature Challenger Design
+
+Commit: TBD
+
+### Technical validation
+
+- [ ] V1.2 result incorporated
+- [ ] Upstream xG challenger design created
+- [ ] V1.4 experiment protocol created
+- [ ] Feature availability inspected
+- [ ] Temporal leakage risks documented
+- [ ] No model implemented
+- [ ] No model retrained
+- [ ] No 2026 predictions modified
+- [ ] No promotion decision changed
+- [ ] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
