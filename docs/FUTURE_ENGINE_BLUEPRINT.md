@@ -204,3 +204,16 @@ competition weighting and time decay, but current Elo is a static 2026
 snapshot rather than historical pre-match evidence. V1.4 must not treat it as
 temporally safe. The combined upstream candidate remains deferred, no model is
 implemented, and promotion remains `do_not_promote_yet`.
+
+## V1.4 upstream xG isolated challenger result
+
+V1.4 implements competition weighting, time decay and low-sample fallback as
+isolated weighted Simple Poisson experiments. It also measures a current/static
+Elo prior strictly as non-promotable temporal-leakage-risk evidence.
+
+No promotable challenger passes every guardrail. Competition weighting is
+nearly neutral, low-sample fallback produces only a very small test gain while
+validation regresses, and time decay improves validation before degrading test
+and increasing modal `1-1` concentration. Static Elo produces attractive
+apparent metrics but cannot support promotion and increases high-confidence
+errors. The active engine and World Cup 2026 predictions remain unchanged.

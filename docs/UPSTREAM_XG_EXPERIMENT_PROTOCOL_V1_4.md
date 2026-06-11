@@ -86,3 +86,11 @@ limitations and a promotion recommendation.
 - No combined challenger is allowed before isolated successes.
 - No active engine or World Cup 2026 prediction changes without a later,
   explicit human decision.
+
+## Implemented V1.4 interpretation
+
+Competition, time-decay and low-sample parameters are selected by validation
+log loss subject to their documented validation guards. Test remains final
+evidence. Static Elo is reported alongside the isolated challengers for
+diagnostic comparison but is always marked temporal-leakage risk,
+`promotion_eligible: false`, and `candidate_for_future_combination: false`.

@@ -464,6 +464,24 @@ Notes :
 - [ ] No promotion decision changed
 - [ ] No secret committed
 
+## Checklist V1.4 — Upstream xG Isolated Challenger Experiments
+
+- [ ] Competition-weighted xG implemented
+- [ ] Time-decay xG implemented
+- [ ] Low-sample fallback xG implemented
+- [ ] Elo-prior handled with temporal leakage restriction
+- [ ] Parameters selected on validation only
+- [ ] Test used only for final evaluation
+- [ ] V0.9 comparison generated
+- [ ] Segment reports generated
+- [ ] Guardrails evaluated
+- [ ] No combined challenger implemented
+- [ ] No model promoted
+- [ ] No 2026 predictions modified
+- [ ] No main engine replacement
+- [ ] Results documented honestly
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

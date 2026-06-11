@@ -147,3 +147,9 @@ V1.3 promotes nothing. V1.4 challengers remain isolated experiments selected
 on validation and evaluated once on test. Any future promotion requires
 separate human validation and explicit authorization before changing the
 active engine or World Cup 2026 predictions.
+
+## V1.4 implementation note
+
+V1.4 implements C, D and F separately and evaluates E only as a static-Elo
+diagnostic marked `temporal_leakage_risk: true`. G remains deferred. The
+experiment does not change the V1.3 no-promotion boundary.

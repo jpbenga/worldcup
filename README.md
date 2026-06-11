@@ -300,6 +300,21 @@ The read-only inspection publishes feature coverage and the V1.3 design. See
 `docs/UPSTREAM_XG_EXPERIMENT_PROTOCOL_V1_4.md`. No challenger is implemented,
 no model is trained, and promotion remains `do_not_promote_yet`.
 
+## Upstream xG isolated challengers
+
+V1.4 implements the competition-weighted, time-decay and low-sample fallback
+xG challengers as separate train-only experiments. It also runs current/static
+Elo as an explicitly non-promotable temporal-leakage-risk diagnostic.
+
+```bash
+python3 backend/scripts/run_upstream_xg_challenger_experiments_v1_4.py
+```
+
+Parameters are selected on validation only and test is reserved for final
+evaluation. No combined challenger is implemented, the active engine and 2026
+predictions remain unchanged, and promotion remains `do_not_promote_yet`. See
+`docs/UPSTREAM_XG_CHALLENGER_RESULTS_V1_4.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

@@ -838,3 +838,34 @@ competition weighting, time decay, Elo prior only with strict
 temporal-leakage handling, and low-sample fallback. The combined upstream
 challenger remains deferred until isolated components prove value. No model is
 promoted and the default recommendation remains `do_not_promote_yet`.
+
+## V1.4 — Upstream xG Isolated Challenger Experiments
+
+Commit: TBD
+
+### Technical validation
+
+- [ ] Competition-weighted xG implemented
+- [ ] Time-decay xG implemented
+- [ ] Low-sample fallback xG implemented
+- [ ] Elo-prior handled with temporal leakage restriction
+- [ ] Parameters selected on validation only
+- [ ] Test used only for final evaluation
+- [ ] V0.9 comparison generated
+- [ ] Segment reports generated
+- [ ] Guardrails evaluated
+- [ ] No combined challenger implemented
+- [ ] No model promoted
+- [ ] No 2026 predictions modified
+- [ ] No main engine replacement
+- [ ] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
