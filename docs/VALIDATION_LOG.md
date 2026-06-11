@@ -763,27 +763,78 @@ Elo priors and better low-sample team handling.
 
 ## V1.3 — Upstream xG Feature Challenger Design
 
-Commit: TBD
+Commit: 449fc2f Design upstream xG feature challengers
 
 ### Technical validation
 
-- [ ] V1.2 result incorporated
-- [ ] Upstream xG challenger design created
-- [ ] V1.4 experiment protocol created
-- [ ] Feature availability inspected
-- [ ] Temporal leakage risks documented
-- [ ] No model implemented
-- [ ] No model retrained
-- [ ] No 2026 predictions modified
-- [ ] No promotion decision changed
-- [ ] No secret committed
+- [x] V1.2 result incorporated
+- [x] Upstream xG challenger design created
+- [x] V1.4 experiment protocol created
+- [x] Feature availability inspected
+- [x] Temporal leakage risks documented
+- [x] No model implemented
+- [x] No model retrained
+- [x] No 2026 predictions modified
+- [x] No promotion decision changed
+- [x] No secret committed
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Upstream xG direction accepted
+- [x] Competition-weighted xG challenger accepted
+- [x] Time-decay xG challenger accepted
+- [x] Elo-prior xG challenger accepted with temporal leakage restriction
+- [x] Low-sample fallback challenger accepted
+- [x] Combined upstream challenger deferred
+- [x] V1.4 protocol accepted
+- [x] No-promotion boundary accepted
+
+### Observed design summary
+
+```text
+V1.3 diagnosis:
+- V1.2 post-probability corrections were insufficient.
+- Future improvements should target upstream xG generation.
+
+Feature availability:
+- historical matches: 1,311
+- teams: 168
+- competitions: 6
+- Elo coverage: 162/168 teams
+- Elo limitation: current/static snapshot only
+- low-sample teams: <5 = 17, <8 = 39, <10 = 59
+
+V1.4 challengers:
+- Competition-Weighted xG
+- Time-Decay xG
+- Elo-Prior xG
+- Low-Sample Fallback xG
+- Combined upstream candidate deferred
+
+Temporal constraint:
+- current/static Elo cannot justify promotion on historical backtests.
+- Elo must be historical pre-match or explicitly marked leakage-risk.
+
+Status:
+- Design only
+- No model implemented
+- No model retrained
+- 2026 predictions unchanged
+- Promotion recommendation remains do_not_promote_yet
+```
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+
+### Notes
+
+Human review completed. V1.3 is accepted as a design-only step. The next
+implementation phase should focus on isolated upstream xG challengers:
+competition weighting, time decay, Elo prior only with strict
+temporal-leakage handling, and low-sample fallback. The combined upstream
+challenger remains deferred until isolated components prove value. No model is
+promoted and the default recommendation remains `do_not_promote_yet`.
