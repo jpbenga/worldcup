@@ -6,6 +6,7 @@
       <a class="font-black tracking-tight" href="#">SimuMondial <span class="text-cyan-300">2026</span></a>
       <div class="flex gap-4 text-sm text-slate-400">
         <a class="transition hover:text-slate-100" href="#groups">Groupes</a>
+        <a class="transition hover:text-slate-100" routerLink="/simulation">Simulation</a>
         <a class="transition hover:text-slate-100" href="#history">Historique</a>
       </div>
     </nav>
@@ -23,6 +24,12 @@
         class="mt-8 inline-flex rounded-xl bg-cyan-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-200"
       >
         Explorer les prédictions
+      </a>
+      <a
+        routerLink="/simulation"
+        class="ml-3 mt-8 inline-flex rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-300"
+      >
+        Voir la simulation des groupes
       </a>
     </header>
 
@@ -93,12 +100,12 @@
               </p>
             </div>
           </aside>
-          <aside class="mt-5 rounded-xl border border-rose-500/20 bg-rose-500/5 p-4">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-rose-300">Moteur prototype</p>
-            <p class="mt-2 font-semibold">{{ vm.dataSources.engine.name }} · {{ vm.dataSources.engine.status }}</p>
+          <aside class="mt-5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">Moteur actif vérifié</p>
+            <p class="mt-2 font-semibold">quant_hybrid_v2.2 · release candidate V2.4</p>
             <p class="mt-2 text-sm leading-6 text-slate-400">
-              Le moteur actuel génère des matrices de scores et des marchés dérivés, mais il n’est pas encore calibré
-              sur des compétitions historiques.
+              Les cartes et la modale utilisent le release candidate V2.4 du moteur actif quant_hybrid_v2.2.
+              Les probabilités restent une estimation et non un conseil.
             </p>
           </aside>
         </section>
@@ -161,12 +168,10 @@
           }
         </section>
 
-        <app-prediction-engine-warning [audit]="vm.diversityAudit" />
-
         <app-group-tabs
           [groups]="vm.groups"
           [strengths]="vm.groupStrengths"
-          [predictions]="vm.predictions"
+          [predictions]="vm.releasePredictions"
           (matchSelected)="selectedMatchId.set($event)"
         />
 
@@ -176,6 +181,7 @@
             [baseline]="predictionFor(vm.predictions, matchId)"
             [elo]="predictionFor(vm.eloPredictions, matchId)"
             [comparison]="comparisonFor(vm.modelComparisons, matchId)"
+            [activePrediction]="releasePredictionFor(vm.releasePredictions, matchId)"
             (closed)="selectedMatchId.set(null)"
           />
         }

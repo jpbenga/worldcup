@@ -33,7 +33,8 @@
               </div>
               @if (predictionFor(match.id); as prediction) {
                 <div class="mt-4 flex items-center justify-between rounded-xl bg-slate-900 px-3 py-2 text-xs">
-                  <span>Prototype : {{ prediction.topScores[0].score }}</span><span class="text-cyan-300">{{ prediction.topScores[0].probability | percent: '1.1-1' }}</span>
+                  <span>Score probable <strong class="ml-1 text-slate-100">{{ prediction.scoreModal }}</strong></span>
+                  <span class="text-cyan-300">Favori {{ prediction.confidence.favoriteProbability | percent: '1.0-0' }}</span>
                 </div>
               }
             </button>

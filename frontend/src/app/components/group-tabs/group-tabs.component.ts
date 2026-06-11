@@ -1,6 +1,6 @@
 import { DatePipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, signal } from '@angular/core';
-import { GroupStrength, MatchPrediction, WorldCupGroup } from '../../models/worldcup.models';
+import { GroupStrength, ReleaseCandidatePrediction, WorldCupGroup } from '../../models/worldcup.models';
 import { GroupStandingsComponent } from '../group-standings/group-standings.component';
 import { GroupStrengthSummaryComponent } from '../group-strength-summary/group-strength-summary.component';
 import { TeamBadgeComponent } from '../team-badge/team-badge.component';
@@ -14,7 +14,7 @@ import { TeamBadgeComponent } from '../team-badge/team-badge.component';
 export class GroupTabsComponent {
   @Input({ required: true }) groups: WorldCupGroup[] = [];
   @Input({ required: true }) strengths: GroupStrength[] = [];
-  @Input({ required: true }) predictions: MatchPrediction[] = [];
+  @Input({ required: true }) predictions: ReleaseCandidatePrediction[] = [];
   @Output() matchSelected = new EventEmitter<string>();
   readonly selectedGroup = signal('A');
 
@@ -30,7 +30,7 @@ export class GroupTabsComponent {
     return this.strengths.find((strength) => strength.group === group);
   }
 
-  predictionFor(matchId: string): MatchPrediction | undefined {
+  predictionFor(matchId: string): ReleaseCandidatePrediction | undefined {
     return this.predictions.find((prediction) => prediction.matchId === matchId);
   }
 }

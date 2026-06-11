@@ -6,6 +6,8 @@ import {
   GroupStrength,
   Match,
   PredictionDiversityAudit,
+  TournamentSimulation,
+  TournamentTeamSimulation,
   WorldCupGroup,
   WorldCupTeam,
 } from '../models/worldcup.models';
@@ -64,6 +66,32 @@ export class WorldCupService {
     );
   }
 
+  getTournamentSimulation(): Observable<TournamentSimulation> {
+    return this.http.get<any>('assets/data/worldcup_tournament_simulation_v2_4.json').pipe(
+      map((simulation) => {
+        const teams = Object.entries(simulation.teams).map(([team, item]) =>
+          this.tournamentTeam(team, item as any),
+        );
+        return {
+          generatedAt: simulation.generated_at,
+          version: simulation.version,
+          engineVersion: simulation.engine_version,
+          simulationCount: simulation.simulation_count,
+          fixtureCount: simulation.fixture_count,
+          fullTournamentSimulationAvailable: simulation.full_tournament_simulation_available,
+          groupStageSimulationAvailable: simulation.group_stage_simulation_available,
+          qualificationRule: simulation.qualification_rule,
+          limitations: simulation.limitations,
+          teams,
+          groups: Object.entries(simulation.groups).map(([group, groupTeams]) => ({
+            group,
+            teams: (groupTeams as string[]).map((team) => teams.find((item) => item.team === team)!),
+          })),
+        };
+      }),
+    );
+  }
+
   private team(team: any): WorldCupTeam {
     return {
       teamId: team.team_id,
@@ -116,6 +144,20 @@ export class WorldCupService {
       goalsFor: row.goals_for,
       goalsAgainst: row.goals_against,
       goalDifference: row.goal_difference,
+    };
+  }
+
+  private tournamentTeam(team: string, item: any): TournamentTeamSimulation {
+    return {
+      team,
+      group: item.group,
+      finishFirstProbability: item.finish_first_probability,
+      finishSecondProbability: item.finish_second_probability,
+      finishThirdProbability: item.finish_third_probability,
+      finishFourthProbability: item.finish_fourth_probability,
+      qualificationProbability: item.qualification_probability,
+      bestThirdQualificationProbability: item.best_third_qualification_probability,
+      groupEliminationProbability: item.group_elimination_probability,
     };
   }
 }

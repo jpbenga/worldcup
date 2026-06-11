@@ -402,6 +402,25 @@ The active files contain 72 metadata-complete predictions. V2.4 simulates all
 12 groups and the best-third qualification route; it does not invent a
 knockout bracket that is not present in the source fixtures.
 
+## Existing UI enrichment V2.5
+
+V2.5 keeps the group-first Angular interface and existing match modal while
+connecting them to the V2.4 release-candidate contract. Group cards expose a
+compact active signal, the modal adds progressive match analysis, and
+`/simulation` presents the 50,000 group-stage scenarios.
+
+```bash
+python3 backend/scripts/validate_frontend_prediction_assets_v2_5.py
+
+cd frontend
+nvm use
+npm run build
+npm test -- --watch=false
+```
+
+The simulation route covers groups only. No knockout bracket is invented, and
+V2.5 does not change active prediction probabilities.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

@@ -1,7 +1,8 @@
 import { AsyncPipe, DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { combineLatest } from 'rxjs';
-import { DataSourceInfo, DataSourcesSnapshot, Match, MatchPrediction, ModelComparison } from '../../models/worldcup.models';
+import { DataSourceInfo, DataSourcesSnapshot, Match, MatchPrediction, ModelComparison, ReleaseCandidatePrediction } from '../../models/worldcup.models';
 import { BacktestingService } from '../../services/backtesting.service';
 import { MatchService } from '../../services/match.service';
 import { PredictionService } from '../../services/prediction.service';
@@ -13,7 +14,6 @@ import { ModelComparisonService } from '../../services/model-comparison.service'
 import { WorldCupService } from '../../services/worldcup.service';
 import { GroupTabsComponent } from '../../components/group-tabs/group-tabs.component';
 import { MatchModalComponent } from '../../components/match-modal/match-modal.component';
-import { PredictionEngineWarningComponent } from '../../components/prediction-engine-warning/prediction-engine-warning.component';
 
 @Component({
   selector: 'app-home',
@@ -23,9 +23,9 @@ import { PredictionEngineWarningComponent } from '../../components/prediction-en
     DataSourceBadgeComponent,
     GroupTabsComponent,
     MatchModalComponent,
-    PredictionEngineWarningComponent,
     PredictionHistoryComponent,
     ResponsibleNoticeComponent,
+    RouterLink,
   ],
   templateUrl: './home.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -42,6 +42,7 @@ export class HomeComponent {
   readonly viewModel$ = combineLatest({
     matches: this.matchService.getMatches(),
     predictions: this.predictionService.getPredictions(),
+    releasePredictions: this.predictionService.getReleaseCandidatePredictions(),
     eloPredictions: this.predictionService.getEloPredictions(),
     backtests: this.backtestingService.getResults(),
     dataSources: this.dataSourceService.getSnapshot(),
@@ -50,7 +51,6 @@ export class HomeComponent {
     modelComparisons: this.modelComparisonService.getComparisons(),
     groups: this.worldCupService.getGroups(),
     groupStrengths: this.worldCupService.getStrengths(),
-    diversityAudit: this.worldCupService.getDiversityAudit(),
   });
 
   matchFor(matches: Match[], matchId: string): Match | undefined {
@@ -63,6 +63,10 @@ export class HomeComponent {
 
   comparisonFor(comparisons: ModelComparison[], matchId: string): ModelComparison | undefined {
     return comparisons.find((comparison) => comparison.matchId === matchId);
+  }
+
+  releasePredictionFor(predictions: ReleaseCandidatePrediction[], matchId: string): ReleaseCandidatePrediction | undefined {
+    return predictions.find((prediction) => prediction.matchId === matchId);
   }
 
   primarySource(snapshot: DataSourcesSnapshot): DataSourceInfo | undefined {

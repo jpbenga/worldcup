@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-11T23:05:39Z",
+  "version": "v2.5",
+  "status": "PASS",
+  "assets": [
+    {
+      "name": "worldcup_2026_predictions_release_candidate_v2_4.json",
+      "published_to_all_targets": true,
+      "copies_consistent": true,
+      "sha256": "735218182585b7c16c96fba91a898fd1a6ccebe2030451f92d7df45e92035370"
+    },
+    {
+      "name": "worldcup_tournament_simulation_v2_4.json",
+      "published_to_all_targets": true,
+      "copies_consistent": true,
+      "sha256": "ebe253207d91318a80043366768fa094519744145dbcfbd3eced79de6f72ea35"
+    },
+    {
+      "name": "secondary_market_performance_summary_v2_4.json",
+      "published_to_all_targets": true,
+      "copies_consistent": true,
+      "sha256": "a12208dcb930b20eccb2b335c39ff9bf8f7b48c79336866425ce5eb484742244"
+    },
+    {
+      "name": "active_engine_verification_v2_4.json",
+      "published_to_all_targets": true,
+      "copies_consistent": true,
+      "sha256": "4629be7da6f96402dcb92bd615056295fd223065010ab79b074897dddcc6b346"
+    }
+  ],
+  "ui_contract": {
+    "release_candidate_matches": 72,
+    "simulation_count": 50000,
+    "simulation_teams": 48,
+    "simulation_groups": 12,
+    "full_tournament_simulation_available": false
+  },
+  "guards": {
+    "model_retrained": false,
+    "optuna_rerun": false,
+    "active_prediction_probabilities_changed": false,
+    "secret_scan_scope": "Published frontend prediction assets contain no credential fields."
+  },
+  "issues": []
+}

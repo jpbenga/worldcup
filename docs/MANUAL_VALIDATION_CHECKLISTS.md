@@ -258,6 +258,35 @@ Notes :
 À compléter par la personne qui effectue la validation humaine.
 ```
 
+## Checklist V2.5 — Existing UI Enrichment & Tournament Simulation Experience
+
+- [ ] Existing UI structure audited
+- [ ] Existing group-based match UI preserved
+- [ ] Existing match modal preserved
+- [ ] Match cards enriched without clutter
+- [ ] Match modal enriched with prediction details
+- [ ] Secondary markets integrated in modal
+- [ ] DNB/push explained briefly
+- [ ] Top scores explained briefly
+- [ ] Score matrix available without clutter
+- [ ] Tournament simulation experience added
+- [ ] Group simulation probabilities displayed
+- [ ] Knockout limitation documented if unavailable
+- [ ] Frontend assets validated
+- [ ] TypeScript contracts updated if appropriate
+- [ ] Angular build passed
+- [ ] Angular tests passed
+- [ ] No model retrained
+- [ ] No Optuna rerun
+- [ ] No active prediction probabilities changed
+- [ ] No secret committed
+
+### Décision V2.5
+
+- [ ] Validé
+- [ ] Validé avec réserves
+- [ ] Non validé
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.

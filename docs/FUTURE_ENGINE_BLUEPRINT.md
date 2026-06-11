@@ -294,3 +294,14 @@ tournament simulation remains unavailable because no complete knockout
 fixture or bracket contract exists; V2.4 does not invent one. The next product
 work can consume the documented match-detail, matrix, markets, group
 simulation and transparency contracts.
+
+## V2.5 existing UI enrichment
+
+V2.5 consumes the V2.4 contracts in the existing Angular product structure.
+It preserves group cards and the match modal, adds active prediction detail
+through progressive disclosure, and introduces a dedicated group-simulation
+route. A frontend-asset validator confirms that generated, snapshot and
+Angular copies remain consistent.
+
+This is a product-consumption iteration only. It does not retrain a model,
+rerun Optuna, alter active probabilities or invent a knockout bracket.

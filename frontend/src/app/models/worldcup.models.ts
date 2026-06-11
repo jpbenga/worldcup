@@ -207,6 +207,100 @@ export interface MatchPrediction {
   topScores: ScoreProbability[];
 }
 
+export interface ReleaseCandidateMarkets {
+  doubleChance: {
+    homeOrDraw: number;
+    awayOrDraw: number;
+    noDraw: number;
+  };
+  drawNoBet: {
+    home: number;
+    away: number;
+  };
+  overUnder: {
+    over05: number;
+    over15: number;
+    over25: number;
+    over35: number;
+    under15: number;
+    under25: number;
+    under35: number;
+  };
+  bothTeamsToScore: {
+    yes: number;
+    no: number;
+  };
+  teamGoals: {
+    homeOver05: number;
+    awayOver05: number;
+    homeOver15: number;
+    awayOver15: number;
+  };
+}
+
+export interface ReleaseCandidatePrediction {
+  fixtureId: number;
+  matchId: string;
+  group: string;
+  stage: string;
+  kickoffAt: string;
+  homeTeam: string;
+  awayTeam: string;
+  engineVersion: string;
+  releaseCandidateVersion: string;
+  predictionVersion: string;
+  generatedAt: string;
+  scoreMatrix: ScoreMatrix;
+  topScores: ScoreProbability[];
+  scoreModal: string;
+  probabilities: {
+    homeWin: number;
+    draw: number;
+    awayWin: number;
+  };
+  markets: ReleaseCandidateMarkets;
+  confidence: {
+    level: 'low' | 'medium' | 'high';
+    favoriteProbability: number;
+    outcomeGap: number;
+  };
+  coherence: {
+    favoriteScoreAligned: boolean;
+    notes: string[];
+  };
+}
+
+export interface TournamentTeamSimulation {
+  team: string;
+  group: string;
+  finishFirstProbability: number;
+  finishSecondProbability: number;
+  finishThirdProbability: number;
+  finishFourthProbability: number;
+  qualificationProbability: number;
+  bestThirdQualificationProbability: number;
+  groupEliminationProbability: number;
+}
+
+export interface TournamentGroupSimulation {
+  group: string;
+  teams: TournamentTeamSimulation[];
+}
+
+export interface TournamentSimulation {
+  generatedAt: string;
+  version: string;
+  engineVersion: string;
+  simulationCount: number;
+  fixtureCount: number;
+  fullTournamentSimulationAvailable: boolean;
+  groupStageSimulationAvailable: boolean;
+  qualificationRule: string;
+  limitations: string[];
+  teams: TournamentTeamSimulation[];
+  groups: TournamentGroupSimulation[];
+}
+
 export interface BacktestResult {
   matchId: string;
   marketName: string;

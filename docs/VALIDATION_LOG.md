@@ -1183,3 +1183,55 @@ Group-stage simulations: 50,000
 Teams / groups: 48 / 12
 Full tournament simulation: unavailable; knockout bracket not present
 ```
+
+## V2.5 — Existing UI Enrichment & Tournament Simulation Experience
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Existing Angular structure audited
+- [x] Group-first journey and existing match modal preserved
+- [x] Existing group-based match UI preserved
+- [x] Existing match modal preserved
+- [x] Match cards enriched without clutter
+- [x] Match modal enriched with prediction details
+- [x] Secondary markets integrated in modal
+- [x] DNB/push explained briefly
+- [x] Top scores explained briefly
+- [x] Score matrix available without clutter
+- [x] Tournament simulation experience added
+- [x] Group simulation probabilities displayed
+- [x] Knockout limitation documented
+- [x] Frontend assets validated
+- [x] TypeScript contracts updated
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] No active prediction probability changed
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+- [ ] Desktop and mobile density accepted
+- [ ] Match modal and simulation values compared with JSON
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.5 result
+
+```text
+Frontend asset validation: PASS
+Release-candidate matches: 72
+Group-stage simulations: 50,000
+Teams / groups: 48 / 12
+Full tournament simulation: unavailable
+Angular tests: 1 existing app-creation test passed; coverage remains limited
+Model retrained / Optuna rerun / active probabilities changed: no / no / no
+```
