@@ -398,7 +398,7 @@ and no backtesting was performed.
 
 ## V0.8 — Expanded Historical Dataset & Chronological Split
 
-Commit: TBD
+Commit: e2912d1 Expand historical international dataset and create chronological splits
 
 ### Technical validation
 
@@ -416,21 +416,54 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Expanded historical dataset accepted
+- [x] Dataset larger than V0.7 accepted
+- [x] Competitions beyond World Cup accepted
+- [x] Chronological split accepted
+- [x] 2026 future fixtures excluded
+- [x] No model training introduced
+- [x] Dataset sufficiency accepted as medium
+- [x] Dataset accepted for first calibration experiments only
+
+### Observed dataset summary
+
+```text
+Exploration:
+- Competitions explored: 14
+- API requests executed: 43
+- Finished fixtures detected: 5,901
+
+Expanded dataset:
+- Matches: 1,311
+- Teams: 168
+- Competitions: 6
+- Date range: 2014 to 2024
+- Future 2026 fixtures: excluded
+- Duplicate fixtures: none
+
+Chronological split:
+- Train: 917
+- Validation: 196
+- Test: 198
+- Split type: strict chronological
+
+Status:
+- Dataset sufficiency: medium
+- Intended use: first calibration experiments only
+- Motor/prediction logic changed: no
+```
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
 ### Notes
 
-The expanded conservative dataset contains `1,311` real finished matches from
-six senior international competitions and `168` teams. The chronological split
-contains `917` train, `196` validation and `198` test matches with passing
-leakage checks.
-
-Dataset sufficiency remains `medium`. API-Football league/season responses can
-mix qualification and final-tournament scope; `243` rows are explicitly tagged
-`mixed_scope_possible`. No model was trained and no prediction was evaluated.
+Human review completed. The expanded historical dataset is accepted as a
+stronger experimental base than V0.7. It includes 1,311 real international
+matches from 2014 to 2024 across 6 competitions and 168 teams, with a strict
+chronological split. The dataset remains medium-sufficiency and should be used
+only for first calibration experiments, not as a final robust training source.
