@@ -1,0 +1,1097 @@
+{
+  "generated_at": "2026-06-11T15:15:48Z",
+  "version": "v1.2",
+  "status": "experimental",
+  "promotion_recommendation": "do_not_promote_yet",
+  "base_model": "calibrated_simple_poisson_v0.9",
+  "selection_policy": "validation_only",
+  "test_used_for_parameter_selection": false,
+  "v0_9_reference": {
+    "validation": {
+      "model_version": "calibrated_simple_poisson_v0.9",
+      "split": "validation",
+      "matches": 196,
+      "accuracy_1x2": 0.5306122448979592,
+      "log_loss_1x2": 1.0374239386654645,
+      "brier_score_1x2": 0.6231607870669007,
+      "exact_score_accuracy": 0.09183673469387756,
+      "top_3_score_hit_rate": 0.32142857142857145,
+      "average_real_result_probability": 0.3781952124915143,
+      "draw_actual_rate": 0.23979591836734693,
+      "draw_predicted_rate": 0.00510204081632653,
+      "draw_probability_average": 0.2672623322461352,
+      "draw_calibration_gap": -0.027466413878788287,
+      "favorite_actual_win_rate": 0.5255102040816326,
+      "favorite_predicted_win_rate": 0.481204472140899,
+      "modal_score_distribution": {
+        "1-1": 125,
+        "1-0": 50,
+        "2-0": 11,
+        "2-1": 4,
+        "0-0": 4,
+        "3-1": 1,
+        "0-1": 1
+      },
+      "modal_1_1_rate": 0.6377551020408163,
+      "high_confidence_wrong_predictions": 12
+    },
+    "test": {
+      "model_version": "calibrated_simple_poisson_v0.9",
+      "split": "test",
+      "matches": 198,
+      "accuracy_1x2": 0.4595959595959596,
+      "log_loss_1x2": 1.0412190253172982,
+      "brier_score_1x2": 0.6277293494283444,
+      "exact_score_accuracy": 0.15151515151515152,
+      "top_3_score_hit_rate": 0.3434343434343434,
+      "average_real_result_probability": 0.3739962383809251,
+      "draw_actual_rate": 0.3181818181818182,
+      "draw_predicted_rate": 0.0,
+      "draw_probability_average": 0.26755630113442214,
+      "draw_calibration_gap": 0.05062551704739604,
+      "favorite_actual_win_rate": 0.4595959595959596,
+      "favorite_predicted_win_rate": 0.47135799571704634,
+      "modal_score_distribution": {
+        "1-1": 134,
+        "1-0": 41,
+        "2-0": 8,
+        "2-1": 5,
+        "0-0": 4,
+        "0-1": 3,
+        "1-2": 2,
+        "3-0": 1
+      },
+      "modal_1_1_rate": 0.6767676767676768,
+      "high_confidence_wrong_predictions": 4
+    }
+  },
+  "source_v0_9_reports": {
+    "validation": {
+      "model_version": "calibrated_simple_poisson_v0.9",
+      "split": "validation",
+      "matches": 196,
+      "accuracy_1x2": 0.5306122448979592,
+      "log_loss_1x2": 1.0374239386654645,
+      "brier_score_1x2": 0.6231607870669007,
+      "exact_score_accuracy": 0.09183673469387756,
+      "top_3_score_hit_rate": 0.32142857142857145,
+      "average_real_result_probability": 0.3781952124915143,
+      "average_predicted_home_goals": 1.4722613027797018,
+      "average_predicted_away_goals": 1.0957396256440544,
+      "average_actual_home_goals": 1.4081632653061225,
+      "average_actual_away_goals": 1.1734693877551021,
+      "modal_score_distribution": {
+        "1-1": 125,
+        "1-0": 50,
+        "2-0": 11,
+        "2-1": 4,
+        "0-0": 4,
+        "3-1": 1,
+        "0-1": 1
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 38,
+          "average_predicted_outcome_probability": 0.37842739714745144,
+          "realized_rate": 0.5526315789473685
+        },
+        "0.4-0.5": {
+          "matches": 88,
+          "average_predicted_outcome_probability": 0.4496040695767211,
+          "realized_rate": 0.5227272727272727
+        },
+        "0.5-0.6": {
+          "matches": 49,
+          "average_predicted_outcome_probability": 0.5399153205601294,
+          "realized_rate": 0.5714285714285714
+        },
+        "0.6-0.7": {
+          "matches": 16,
+          "average_predicted_outcome_probability": 0.6408526607632944,
+          "realized_rate": 0.375
+        },
+        "0.7-0.8": {
+          "matches": 5,
+          "average_predicted_outcome_probability": 0.7333831111704396,
+          "realized_rate": 0.6
+        }
+      },
+      "limitations": [
+        "Experimental first calibration; it is not the active or promoted prediction engine.",
+        "The model uses goals and team identity only, without Elo, venue neutrality, form, or competition parameters.",
+        "AET/PEN score semantics and mixed-scope competition rows remain unresolved.",
+        "The chronological split changes competition composition over time."
+      ]
+    },
+    "test": {
+      "model_version": "calibrated_simple_poisson_v0.9",
+      "split": "test",
+      "matches": 198,
+      "accuracy_1x2": 0.4595959595959596,
+      "log_loss_1x2": 1.0412190253172982,
+      "brier_score_1x2": 0.6277293494283444,
+      "exact_score_accuracy": 0.15151515151515152,
+      "top_3_score_hit_rate": 0.3434343434343434,
+      "average_real_result_probability": 0.3739962383809251,
+      "average_predicted_home_goals": 1.441321837857732,
+      "average_predicted_away_goals": 1.148546877270198,
+      "average_actual_home_goals": 1.393939393939394,
+      "average_actual_away_goals": 1.0353535353535352,
+      "modal_score_distribution": {
+        "1-1": 134,
+        "1-0": 41,
+        "2-0": 8,
+        "2-1": 5,
+        "0-0": 4,
+        "0-1": 3,
+        "1-2": 2,
+        "3-0": 1
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 50,
+          "average_predicted_outcome_probability": 0.37671379850887277,
+          "realized_rate": 0.4
+        },
+        "0.4-0.5": {
+          "matches": 84,
+          "average_predicted_outcome_probability": 0.44760750389864734,
+          "realized_rate": 0.44047619047619047
+        },
+        "0.5-0.6": {
+          "matches": 45,
+          "average_predicted_outcome_probability": 0.5388583488419657,
+          "realized_rate": 0.4222222222222222
+        },
+        "0.6-0.7": {
+          "matches": 14,
+          "average_predicted_outcome_probability": 0.6336089880244923,
+          "realized_rate": 0.8571428571428571
+        },
+        "0.7-0.8": {
+          "matches": 4,
+          "average_predicted_outcome_probability": 0.7243721270838677,
+          "realized_rate": 0.5
+        },
+        "0.8-0.9": {
+          "matches": 1,
+          "average_predicted_outcome_probability": 0.8775228604783128,
+          "realized_rate": 1.0
+        }
+      },
+      "limitations": [
+        "Experimental first calibration; it is not the active or promoted prediction engine.",
+        "The model uses goals and team identity only, without Elo, venue neutrality, form, or competition parameters.",
+        "AET/PEN score semantics and mixed-scope competition rows remain unresolved.",
+        "The chronological split changes competition composition over time."
+      ]
+    }
+  },
+  "prototype_reference": {
+    "validation": {
+      "model_version": "prototype_neutral_v0.5",
+      "split": "validation",
+      "matches": 196,
+      "accuracy_1x2": 0.4336734693877551,
+      "log_loss_1x2": 1.0802175957877427,
+      "brier_score_1x2": 0.6549509216466424,
+      "exact_score_accuracy": 0.09183673469387756,
+      "top_3_score_hit_rate": 0.30612244897959184,
+      "average_real_result_probability": 0.342158359182123,
+      "average_predicted_home_goals": 1.349999999999997,
+      "average_predicted_away_goals": 1.349999999999997,
+      "average_actual_home_goals": 1.4081632653061225,
+      "average_actual_away_goals": 1.1734693877551021,
+      "modal_score_distribution": {
+        "1-1": 196
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 196,
+          "average_predicted_outcome_probability": 0.36478251635811065,
+          "realized_rate": 0.4336734693877551
+        }
+      },
+      "limitations": [
+        "Neutral fixed 1.35 / 1.35 xG baseline; not historically calibrated."
+      ]
+    },
+    "test": {
+      "model_version": "prototype_neutral_v0.5",
+      "split": "test",
+      "matches": 198,
+      "accuracy_1x2": 0.40404040404040403,
+      "log_loss_1x2": 1.1036761187626802,
+      "brier_score_1x2": 0.6697419567056062,
+      "exact_score_accuracy": 0.15656565656565657,
+      "top_3_score_hit_rate": 0.3434343434343434,
+      "average_real_result_probability": 0.3347628416526415,
+      "average_predicted_home_goals": 1.3499999999999972,
+      "average_predicted_away_goals": 1.3499999999999972,
+      "average_actual_home_goals": 1.393939393939394,
+      "average_actual_away_goals": 1.0353535353535352,
+      "modal_score_distribution": {
+        "1-1": 198
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 198,
+          "average_predicted_outcome_probability": 0.3647825163581106,
+          "realized_rate": 0.40404040404040403
+        }
+      },
+      "limitations": [
+        "Neutral fixed 1.35 / 1.35 xG baseline; not historically calibrated."
+      ]
+    }
+  },
+  "challengers": {
+    "draw_calibrated_poisson": {
+      "selected_params": {
+        "draw_factor": 1.1
+      },
+      "selection_basis": "minimum validation log loss among candidates passing documented validation guardrails",
+      "validation_trials": [
+        {
+          "params": {
+            "draw_factor": 1.05
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5306122448979592,
+            "log_loss_1x2": 1.038997420710497,
+            "brier_score_1x2": 0.6240332780734087,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.3764776872319876,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.00510204081632653,
+            "draw_probability_average": 0.2768646040498975,
+            "draw_calibration_gap": -0.03706868568255056,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.47497464248710297,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 11
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": true,
+            "accuracy_drop_at_most_2_points": true,
+            "predicted_draw_rate_closer": false
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.1
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5204081632653061,
+            "log_loss_1x2": 1.0409386043849795,
+            "brier_score_1x2": 0.6251606429827834,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.37480291003149563,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.015306122448979591,
+            "draw_probability_average": 0.28621432717518314,
+            "draw_calibration_gap": -0.04641840880783621,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.46890706356128786,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 10
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": true,
+            "accuracy_drop_at_most_2_points": true,
+            "predicted_draw_rate_closer": true
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.15
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5204081632653061,
+            "log_loss_1x2": 1.043203779941839,
+            "brier_score_1x2": 0.6265221273149358,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.3731692925446351,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.015306122448979591,
+            "draw_probability_average": 0.29532147191159036,
+            "draw_calibration_gap": -0.05552555354424343,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4629953812847456,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 9
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": true,
+            "accuracy_drop_at_most_2_points": true,
+            "predicted_draw_rate_closer": true
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.2
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5306122448979592,
+            "log_loss_1x2": 1.045755234551131,
+            "brier_score_1x2": 0.6280986171587417,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.37157532433372875,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.03571428571428571,
+            "draw_probability_average": 0.30419548440744554,
+            "draw_calibration_gap": -0.06439956604009861,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4572335733770517,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 9
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": true,
+            "accuracy_drop_at_most_2_points": true,
+            "predicted_draw_rate_closer": true
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.25
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5408163265306123,
+            "log_loss_1x2": 1.0485602517644161,
+            "brier_score_1x2": 0.6298724963985751,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.3700195681579198,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.0663265306122449,
+            "draw_probability_average": 0.31284532101851487,
+            "draw_calibration_gap": -0.07304940265116794,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.451615927735847,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 7
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": true,
+            "accuracy_drop_at_most_2_points": true,
+            "predicted_draw_rate_closer": true
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.3
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5459183673469388,
+            "log_loss_1x2": 1.0515903086256966,
+            "brier_score_1x2": 0.6318275178333341,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.36850065559825024,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.09693877551020408,
+            "draw_probability_average": 0.3212794799658504,
+            "draw_calibration_gap": -0.08148356159850345,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4461370225020506,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 6
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": true,
+            "accuracy_drop_at_most_2_points": true,
+            "predicted_draw_rate_closer": true
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.35
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5102040816326531,
+            "log_loss_1x2": 1.0548204255395681,
+            "brier_score_1x2": 0.6339486866825791,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.36701728299132985,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.15306122448979592,
+            "draw_probability_average": 0.3295060305475535,
+            "draw_calibration_gap": -0.08971011218020658,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.44079170765783604,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 4
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": false,
+            "accuracy_drop_at_most_2_points": false,
+            "predicted_draw_rate_closer": true
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.4
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.49489795918367346,
+            "log_loss_1x2": 1.058228635453695,
+            "brier_score_1x2": 0.6362221551545596,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.3655682076467239,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.1989795918367347,
+            "draw_probability_average": 0.33753264012393897,
+            "draw_calibration_gap": -0.09773672175659204,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.435575088020419,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 4
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": false,
+            "accuracy_drop_at_most_2_points": false,
+            "predicted_draw_rate_closer": true
+          }
+        },
+        {
+          "params": {
+            "draw_factor": 1.5
+          },
+          "metrics": {
+            "model_version": "draw_calibrated_poisson_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.4387755102040816,
+            "log_loss_1x2": 1.0655039833681443,
+            "brier_score_1x2": 0.6411757703718071,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.3627682619585189,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.32653061224489793,
+            "draw_probability_average": 0.3530148438946865,
+            "draw_calibration_gap": -0.11321892552733959,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.425509534571692,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 3
+          },
+          "selection_guardrails": {
+            "brier_not_materially_worse": false,
+            "accuracy_drop_at_most_2_points": false,
+            "predicted_draw_rate_closer": true
+          }
+        }
+      ],
+      "validation": {
+        "model_version": "draw_calibrated_poisson_v1.2",
+        "split": "validation",
+        "matches": 196,
+        "accuracy_1x2": 0.5204081632653061,
+        "log_loss_1x2": 1.0409386043849795,
+        "brier_score_1x2": 0.6251606429827834,
+        "exact_score_accuracy": 0.09183673469387756,
+        "top_3_score_hit_rate": 0.32142857142857145,
+        "average_real_result_probability": 0.37480291003149563,
+        "draw_actual_rate": 0.23979591836734693,
+        "draw_predicted_rate": 0.015306122448979591,
+        "draw_probability_average": 0.28621432717518314,
+        "draw_calibration_gap": -0.04641840880783621,
+        "favorite_actual_win_rate": 0.5255102040816326,
+        "favorite_predicted_win_rate": 0.46890706356128786,
+        "modal_score_distribution": {
+          "1-1": 125,
+          "1-0": 50,
+          "2-0": 11,
+          "2-1": 4,
+          "0-0": 4,
+          "3-1": 1,
+          "0-1": 1
+        },
+        "modal_1_1_rate": 0.6377551020408163,
+        "high_confidence_wrong_predictions": 10
+      },
+      "test": {
+        "model_version": "draw_calibrated_poisson_v1.2",
+        "split": "test",
+        "matches": 198,
+        "accuracy_1x2": 0.46464646464646464,
+        "log_loss_1x2": 1.0372910135734688,
+        "brier_score_1x2": 0.625612560933486,
+        "exact_score_accuracy": 0.15151515151515152,
+        "top_3_score_hit_rate": 0.3434343434343434,
+        "average_real_result_probability": 0.37278676494838325,
+        "draw_actual_rate": 0.3181818181818182,
+        "draw_predicted_rate": 0.010101010101010102,
+        "draw_probability_average": 0.2865138357919805,
+        "draw_calibration_gap": 0.0316679823898377,
+        "favorite_actual_win_rate": 0.4595959595959596,
+        "favorite_predicted_win_rate": 0.45931387820557595,
+        "modal_score_distribution": {
+          "1-1": 134,
+          "1-0": 41,
+          "2-0": 8,
+          "2-1": 5,
+          "0-0": 4,
+          "0-1": 3,
+          "1-2": 2,
+          "3-0": 1
+        },
+        "modal_1_1_rate": 0.6767676767676768,
+        "high_confidence_wrong_predictions": 4
+      },
+      "delta_vs_v0_9": {
+        "validation": {
+          "accuracy_1x2": -0.010204081632653073,
+          "log_loss_1x2": 0.0035146657195150866,
+          "brier_score_1x2": 0.001999855915882698,
+          "exact_score_accuracy": 0.0,
+          "top_3_score_hit_rate": 0.0,
+          "draw_calibration_gap": 0.01895199492904792,
+          "modal_1_1_rate": 0.0,
+          "high_confidence_wrong_predictions": -2
+        },
+        "test": {
+          "accuracy_1x2": 0.0050505050505050275,
+          "log_loss_1x2": -0.003928011743829396,
+          "brier_score_1x2": -0.0021167884948583016,
+          "exact_score_accuracy": 0.0,
+          "top_3_score_hit_rate": 0.0,
+          "draw_calibration_gap": -0.01895753465755834,
+          "modal_1_1_rate": 0.0,
+          "high_confidence_wrong_predictions": 0
+        }
+      },
+      "guardrails": {
+        "test_log_loss_improves_by_0_01": false,
+        "test_brier_improves_by_0_01": false,
+        "draw_gap_reduced_validation": false,
+        "draw_gap_reduced_test": true,
+        "validation_log_loss_improved": false,
+        "validation_brier_improved": false,
+        "accuracy_guardrail_validation": false,
+        "accuracy_guardrail_test": true,
+        "top_3_guardrail_validation": true,
+        "top_3_guardrail_test": true,
+        "modal_1_1_reduced": false,
+        "high_confidence_wrong_not_increased_validation": true,
+        "high_confidence_wrong_not_increased_test": true
+      },
+      "passed_guardrails": false,
+      "candidate_for_future_combination": false,
+      "notes": [
+        "Only 1X2 probabilities are adjusted; the V0.9 score matrix and exact-score rankings are preserved."
+      ]
+    },
+    "dixon_coles_rho_optimized": {
+      "selected_params": {
+        "rho": 0.1
+      },
+      "selection_basis": "minimum validation log loss among candidates passing documented validation guardrails",
+      "validation_trials": [
+        {
+          "params": {
+            "rho": -0.2
+          },
+          "metrics": {
+            "model_version": "dixon_coles_rho_optimized_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5306122448979592,
+            "log_loss_1x2": 1.0463784797660662,
+            "brier_score_1x2": 0.6280591786263736,
+            "exact_score_accuracy": 0.10204081632653061,
+            "top_3_score_hit_rate": 0.336734693877551,
+            "average_real_result_probability": 0.37341062841284867,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.03571428571428571,
+            "draw_probability_average": 0.3024788042125803,
+            "draw_calibration_gap": -0.06268288584523335,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4635962361576763,
+            "modal_score_distribution": {
+              "1-1": 160,
+              "0-0": 18,
+              "2-0": 10,
+              "1-0": 5,
+              "2-1": 2,
+              "3-1": 1
+            },
+            "modal_1_1_rate": 0.8163265306122449,
+            "high_confidence_wrong_predictions": 10
+          },
+          "selection_guardrails": {
+            "modal_1_1_not_increased": false,
+            "brier_not_materially_worse": true,
+            "top_3_drop_at_most_2_points": true
+          }
+        },
+        {
+          "params": {
+            "rho": -0.15
+          },
+          "metrics": {
+            "model_version": "dixon_coles_rho_optimized_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5204081632653061,
+            "log_loss_1x2": 1.042732323518331,
+            "brier_score_1x2": 0.6260068339032011,
+            "exact_score_accuracy": 0.09693877551020408,
+            "top_3_score_hit_rate": 0.35714285714285715,
+            "average_real_result_probability": 0.3750054897724042,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.015306122448979591,
+            "draw_probability_average": 0.2907399802237652,
+            "draw_calibration_gap": -0.050944061856418255,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.46946564815208425,
+            "modal_score_distribution": {
+              "1-1": 155,
+              "0-0": 15,
+              "1-0": 14,
+              "2-0": 8,
+              "2-1": 3,
+              "3-1": 1
+            },
+            "modal_1_1_rate": 0.7908163265306123,
+            "high_confidence_wrong_predictions": 11
+          },
+          "selection_guardrails": {
+            "modal_1_1_not_increased": false,
+            "brier_not_materially_worse": true,
+            "top_3_drop_at_most_2_points": true
+          }
+        },
+        {
+          "params": {
+            "rho": -0.1
+          },
+          "metrics": {
+            "model_version": "dixon_coles_rho_optimized_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5306122448979592,
+            "log_loss_1x2": 1.0397404995154564,
+            "brier_score_1x2": 0.62437403671671,
+            "exact_score_accuracy": 0.10714285714285714,
+            "top_3_score_hit_rate": 0.32653061224489793,
+            "average_real_result_probability": 0.3766003511319594,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.00510204081632653,
+            "draw_probability_average": 0.27900115623495025,
+            "draw_calibration_gap": -0.039205237867603326,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4753350601464916,
+            "modal_score_distribution": {
+              "1-1": 143,
+              "1-0": 28,
+              "2-0": 10,
+              "0-0": 10,
+              "2-1": 4,
+              "3-1": 1
+            },
+            "modal_1_1_rate": 0.7295918367346939,
+            "high_confidence_wrong_predictions": 11
+          },
+          "selection_guardrails": {
+            "modal_1_1_not_increased": false,
+            "brier_not_materially_worse": true,
+            "top_3_drop_at_most_2_points": true
+          }
+        },
+        {
+          "params": {
+            "rho": -0.05
+          },
+          "metrics": {
+            "model_version": "dixon_coles_rho_optimized_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5306122448979592,
+            "log_loss_1x2": 1.0374239386654645,
+            "brier_score_1x2": 0.6231607870669007,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.32142857142857145,
+            "average_real_result_probability": 0.3781952124915143,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.00510204081632653,
+            "draw_probability_average": 0.2672623322461352,
+            "draw_calibration_gap": -0.027466413878788287,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.481204472140899,
+            "modal_score_distribution": {
+              "1-1": 125,
+              "1-0": 50,
+              "2-0": 11,
+              "2-1": 4,
+              "0-0": 4,
+              "3-1": 1,
+              "0-1": 1
+            },
+            "modal_1_1_rate": 0.6377551020408163,
+            "high_confidence_wrong_predictions": 12
+          },
+          "selection_guardrails": {
+            "modal_1_1_not_increased": true,
+            "brier_not_materially_worse": true,
+            "top_3_drop_at_most_2_points": true
+          }
+        },
+        {
+          "params": {
+            "rho": 0.0
+          },
+          "metrics": {
+            "model_version": "dixon_coles_rho_optimized_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5255102040816326,
+            "log_loss_1x2": 1.0358090570047047,
+            "brier_score_1x2": 0.6223670849537729,
+            "exact_score_accuracy": 0.08673469387755102,
+            "top_3_score_hit_rate": 0.30612244897959184,
+            "average_real_result_probability": 0.3797900738510696,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.0,
+            "draw_probability_average": 0.2555235082573204,
+            "draw_calibration_gap": -0.01572758988997347,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4870738841353062,
+            "modal_score_distribution": {
+              "1-1": 97,
+              "1-0": 71,
+              "2-0": 10,
+              "0-1": 9,
+              "2-1": 6,
+              "0-0": 1,
+              "3-1": 1,
+              "1-2": 1
+            },
+            "modal_1_1_rate": 0.49489795918367346,
+            "high_confidence_wrong_predictions": 12
+          },
+          "selection_guardrails": {
+            "modal_1_1_not_increased": true,
+            "brier_not_materially_worse": true,
+            "top_3_drop_at_most_2_points": true
+          }
+        },
+        {
+          "params": {
+            "rho": 0.05
+          },
+          "metrics": {
+            "model_version": "dixon_coles_rho_optimized_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5255102040816326,
+            "log_loss_1x2": 1.0349284928810618,
+            "brier_score_1x2": 0.621992930377327,
+            "exact_score_accuracy": 0.09183673469387756,
+            "top_3_score_hit_rate": 0.30612244897959184,
+            "average_real_result_probability": 0.3813849352106249,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.0,
+            "draw_probability_average": 0.24378468426850555,
+            "draw_calibration_gap": -0.003988765901158625,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4929432961297138,
+            "modal_score_distribution": {
+              "1-0": 91,
+              "1-1": 67,
+              "0-1": 20,
+              "2-0": 7,
+              "2-1": 6,
+              "1-2": 3,
+              "0-0": 1,
+              "3-1": 1
+            },
+            "modal_1_1_rate": 0.34183673469387754,
+            "high_confidence_wrong_predictions": 12
+          },
+          "selection_guardrails": {
+            "modal_1_1_not_increased": true,
+            "brier_not_materially_worse": true,
+            "top_3_drop_at_most_2_points": true
+          }
+        },
+        {
+          "params": {
+            "rho": 0.1
+          },
+          "metrics": {
+            "model_version": "dixon_coles_rho_optimized_v1.2",
+            "split": "validation",
+            "matches": 196,
+            "accuracy_1x2": 0.5255102040816326,
+            "log_loss_1x2": 1.0348220719298964,
+            "brier_score_1x2": 0.6220383233375625,
+            "exact_score_accuracy": 0.1326530612244898,
+            "top_3_score_hit_rate": 0.3112244897959184,
+            "average_real_result_probability": 0.3829797965701799,
+            "draw_actual_rate": 0.23979591836734693,
+            "draw_predicted_rate": 0.0,
+            "draw_probability_average": 0.23204586027969024,
+            "draw_calibration_gap": 0.007750058087656692,
+            "favorite_actual_win_rate": 0.5255102040816326,
+            "favorite_predicted_win_rate": 0.4988127081241212,
+            "modal_score_distribution": {
+              "1-0": 119,
+              "0-1": 36,
+              "1-1": 23,
+              "2-1": 8,
+              "2-0": 5,
+              "1-2": 4,
+              "3-1": 1
+            },
+            "modal_1_1_rate": 0.11734693877551021,
+            "high_confidence_wrong_predictions": 13
+          },
+          "selection_guardrails": {
+            "modal_1_1_not_increased": true,
+            "brier_not_materially_worse": true,
+            "top_3_drop_at_most_2_points": true
+          }
+        }
+      ],
+      "validation": {
+        "model_version": "dixon_coles_rho_optimized_v1.2",
+        "split": "validation",
+        "matches": 196,
+        "accuracy_1x2": 0.5255102040816326,
+        "log_loss_1x2": 1.0348220719298964,
+        "brier_score_1x2": 0.6220383233375625,
+        "exact_score_accuracy": 0.1326530612244898,
+        "top_3_score_hit_rate": 0.3112244897959184,
+        "average_real_result_probability": 0.3829797965701799,
+        "draw_actual_rate": 0.23979591836734693,
+        "draw_predicted_rate": 0.0,
+        "draw_probability_average": 0.23204586027969024,
+        "draw_calibration_gap": 0.007750058087656692,
+        "favorite_actual_win_rate": 0.5255102040816326,
+        "favorite_predicted_win_rate": 0.4988127081241212,
+        "modal_score_distribution": {
+          "1-0": 119,
+          "0-1": 36,
+          "1-1": 23,
+          "2-1": 8,
+          "2-0": 5,
+          "1-2": 4,
+          "3-1": 1
+        },
+        "modal_1_1_rate": 0.11734693877551021,
+        "high_confidence_wrong_predictions": 13
+      },
+      "test": {
+        "model_version": "dixon_coles_rho_optimized_v1.2",
+        "split": "test",
+        "matches": 198,
+        "accuracy_1x2": 0.4595959595959596,
+        "log_loss_1x2": 1.0554806543052022,
+        "brier_score_1x2": 0.6350945300483976,
+        "exact_score_accuracy": 0.09090909090909091,
+        "top_3_score_hit_rate": 0.35353535353535354,
+        "average_real_result_probability": 0.3745241890044214,
+        "draw_actual_rate": 0.3181818181818182,
+        "draw_predicted_rate": 0.0,
+        "draw_probability_average": 0.2322372231522841,
+        "draw_calibration_gap": 0.08594459502953408,
+        "favorite_actual_win_rate": 0.4595959595959596,
+        "favorite_predicted_win_rate": 0.4890175347081151,
+        "modal_score_distribution": {
+          "1-0": 111,
+          "1-1": 34,
+          "0-1": 34,
+          "2-1": 8,
+          "2-0": 5,
+          "1-2": 5,
+          "3-0": 1
+        },
+        "modal_1_1_rate": 0.1717171717171717,
+        "high_confidence_wrong_predictions": 8
+      },
+      "delta_vs_v0_9": {
+        "validation": {
+          "accuracy_1x2": -0.005102040816326592,
+          "log_loss_1x2": -0.002601866735568059,
+          "brier_score_1x2": -0.001122463729338219,
+          "exact_score_accuracy": 0.04081632653061225,
+          "top_3_score_hit_rate": -0.010204081632653073,
+          "draw_calibration_gap": -0.019716355791131596,
+          "modal_1_1_rate": -0.5204081632653061,
+          "high_confidence_wrong_predictions": 1
+        },
+        "test": {
+          "accuracy_1x2": 0.0,
+          "log_loss_1x2": 0.014261628987904063,
+          "brier_score_1x2": 0.007365180620053202,
+          "exact_score_accuracy": -0.06060606060606061,
+          "top_3_score_hit_rate": 0.01010101010101011,
+          "draw_calibration_gap": 0.03531907798213804,
+          "modal_1_1_rate": -0.5050505050505051,
+          "high_confidence_wrong_predictions": 4
+        }
+      },
+      "guardrails": {
+        "test_log_loss_improves_by_0_01": false,
+        "test_brier_improves_by_0_01": false,
+        "draw_gap_reduced_validation": true,
+        "draw_gap_reduced_test": false,
+        "validation_log_loss_improved": true,
+        "validation_brier_improved": true,
+        "accuracy_guardrail_validation": true,
+        "accuracy_guardrail_test": true,
+        "top_3_guardrail_validation": false,
+        "top_3_guardrail_test": true,
+        "modal_1_1_reduced": true,
+        "high_confidence_wrong_not_increased_validation": false,
+        "high_confidence_wrong_not_increased_test": false
+      },
+      "passed_guardrails": false,
+      "candidate_for_future_combination": false,
+      "notes": [
+        "Score matrices are regenerated from fixed V0.9 xG; no xG parameter is retrained."
+      ]
+    }
+  },
+  "ranking": [
+    {
+      "challenger": "draw_calibrated_poisson",
+      "test_log_loss_1x2": 1.0372910135734688,
+      "test_brier_score_1x2": 0.625612560933486,
+      "passed_guardrails": false,
+      "candidate_for_future_combination": false
+    },
+    {
+      "challenger": "dixon_coles_rho_optimized",
+      "test_log_loss_1x2": 1.0554806543052022,
+      "test_brier_score_1x2": 0.6350945300483976,
+      "passed_guardrails": false,
+      "candidate_for_future_combination": false
+    }
+  ],
+  "recommendations": [
+    "Do not promote either challenger; promotion_recommendation remains do_not_promote_yet.",
+    "Neither challenger passes every prudential gate for a future combination."
+  ],
+  "next_steps": [
+    "Complete human review of V1.2 metrics and validation-only selection evidence.",
+    "Keep the combined challenger deferred until an explicit post-review decision."
+  ],
+  "combined_challenger_implemented": false,
+  "active_engine_replaced": false,
+  "world_cup_2026_predictions_modified": false
+}

@@ -183,3 +183,11 @@ Selection requires improved validation and test log loss/Brier, reduced draw
 calibration gap, guardrails on accuracy/top-3 and no increase in
 high-confidence wrong predictions. No challenger is promoted automatically,
 and the active engine and World Cup 2026 predictions remain unchanged.
+
+## V1.2 isolated challenger result
+
+V1.2 implements draw calibration and Dixon-Coles rho optimization as separate
+historical experiments over fixed V0.9 predictions and xG. Parameter selection
+uses validation only, and test is reserved for final evaluation. Results are
+published in `docs/CHALLENGER_RESULTS_V1_2.md`; no combined challenger is
+implemented, no model is promoted, and the active engine remains unchanged.

@@ -167,3 +167,12 @@ No challenger is promoted automatically. V1.2 outputs remain historical
 experiments. Promotion requires the protocol in
 `docs/CHALLENGER_EVALUATION_PROTOCOL.md`, explicit human review and a separate
 decision that authorizes any future 2026 prediction change.
+
+## V1.2 implementation note
+
+V1.2 implements only Challenger A and Challenger B as isolated experiments.
+Draw calibration adjusts the V0.9 1X2 market while preserving its score
+matrix. Dixon-Coles optimization regenerates score matrices from fixed V0.9
+xG. Both parameter grids are selected on validation only; test remains final
+evaluation evidence and cannot influence selection. The combined challenger
+remains deferred.

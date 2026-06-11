@@ -100,3 +100,17 @@ Each implemented challenger should publish:
 - comparison against prototype and V0.9;
 - segmented error analysis using the V1.0 schema;
 - explicit promotion recommendation and human-validation status.
+
+## V1.2 isolated selection thresholds
+
+For the first isolated batch, draw-factor selection minimizes validation log
+loss among candidates whose validation Brier is no more than `0.01` worse,
+whose accuracy falls by no more than `0.02`, and whose predicted draw-class
+rate moves closer to the actual draw rate. Dixon-Coles rho selection minimizes
+validation log loss among candidates whose modal `1-1` rate does not increase,
+whose Brier is no more than `0.01` worse, and whose top-3 score hit rate falls
+by no more than `0.02`.
+
+These are selection guards, not promotion gates. The stricter prudential
+success gates above still determine whether a challenger can be called
+promising.

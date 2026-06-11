@@ -431,6 +431,21 @@ Notes :
 - [ ] No promotion decision changed
 - [ ] No secret committed
 
+## Checklist V1.2 — Isolated Calibration Challenger Experiments
+
+- [ ] Draw-calibrated challenger implemented
+- [ ] Dixon-Coles rho challenger implemented
+- [ ] Parameters selected on validation only
+- [ ] Test used only for final evaluation
+- [ ] V0.9 comparison generated
+- [ ] Guardrails evaluated
+- [ ] No combined challenger implemented
+- [ ] No model promoted
+- [ ] No 2026 predictions modified
+- [ ] No main engine replacement
+- [ ] Results documented honestly
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

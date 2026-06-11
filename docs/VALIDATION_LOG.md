@@ -678,3 +678,31 @@ implement isolated challengers one by one, starting with draw calibration and
 Dixon-Coles rho. The combined challenger remains deferred until isolated tests
 prove which components improve the model. No promotion is allowed without
 validation and the default recommendation remains `do_not_promote_yet`.
+
+## V1.2 — Isolated Calibration Challenger Experiments
+
+Commit: TBD
+
+### Technical validation
+
+- [ ] Draw-calibrated challenger implemented
+- [ ] Dixon-Coles rho challenger implemented
+- [ ] Parameters selected on validation only
+- [ ] Test used only for final evaluation
+- [ ] V0.9 comparison generated
+- [ ] Guardrails evaluated
+- [ ] No combined challenger implemented
+- [ ] No model promoted
+- [ ] No 2026 predictions modified
+- [ ] No main engine replacement
+- [ ] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated

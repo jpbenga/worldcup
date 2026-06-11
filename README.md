@@ -270,6 +270,20 @@ See `docs/CHALLENGER_ENGINE_DESIGN_V1_1.md` and
 `docs/CHALLENGER_EVALUATION_PROTOCOL.md`. No model is implemented or retrained,
 and promotion remains `do_not_promote_yet`.
 
+## Isolated calibration challengers
+
+V1.2 implements only draw-calibrated Poisson and validation-selected
+Dixon-Coles rho as isolated historical experiments:
+
+```bash
+python3 backend/scripts/run_isolated_challenger_experiments_v1_2.py
+```
+
+The script selects parameters on validation only, evaluates the fixed choices
+on test, and publishes `docs/CHALLENGER_RESULTS_V1_2.md`. It does not implement
+a combined challenger, replace the active engine, modify World Cup 2026
+predictions, or promote a model.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.
