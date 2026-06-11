@@ -143,3 +143,17 @@ The source remains experimental. Rows preserve competition family, tier,
 training-weight hint and source-scope confidence. V0.9 must segment or exclude
 `mixed_scope_possible` rows, resolve AET/PEN score semantics and compare simple
 baselines before fitting anything intended for promotion.
+
+## V0.9 first calibration experiment
+
+V0.9 implements a separate first challenger under `backend/calibration/`. The
+Calibrated Simple Poisson Model v0.9 fits smoothed home/away team attack and
+defence strengths on the `917`-match train split only, then evaluates the fixed
+model on the chronological validation and test splits.
+
+It improves 1X2 accuracy, log loss and Brier score over the neutral prototype
+on both splits, but test exact-score accuracy is slightly worse and the known
+dataset limitations remain unresolved. The active engine is unchanged and the
+promotion recommendation is `do_not_promote_yet`. A later experiment should
+test segmented competition effects, regulation-time score semantics and
+chronological form before any promotion decision.

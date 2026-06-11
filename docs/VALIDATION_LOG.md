@@ -467,3 +467,37 @@ stronger experimental base than V0.7. It includes 1,311 real international
 matches from 2014 to 2024 across 6 competitions and 168 teams, with a strict
 chronological split. The dataset remains medium-sufficiency and should be used
 only for first calibration experiments, not as a final robust training source.
+
+## V0.9 — First Calibration Experiment on Historical Dataset
+
+Commit: TBD
+
+### Technical validation
+
+- [ ] Historical calibrated model trained
+- [ ] Validation predictions generated
+- [ ] Test predictions generated
+- [ ] Validation metrics generated
+- [ ] Test metrics generated
+- [ ] Prototype comparison generated
+- [ ] No 2026 predictions modified
+- [ ] Current engine not replaced
+- [ ] Results documented honestly
+- [ ] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+Technical outputs report improvements over the neutral prototype for 1X2
+accuracy, log loss and Brier score on validation and test. Exact-score results
+are mixed. The model remains an isolated experiment with promotion
+recommendation `do_not_promote_yet`; human review is still required.

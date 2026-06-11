@@ -229,6 +229,22 @@ six senior international competitions. Its deterministic chronological split
 contains `917` train, `196` validation and `198` test matches. No model is
 trained and active World Cup 2026 predictions remain unchanged.
 
+## First historical calibration experiment
+
+V0.9 trains a separate, experimental simple Poisson model on the historical
+train split and evaluates it chronologically without replacing the active
+engine:
+
+```bash
+python3 backend/scripts/run_first_calibration_experiment.py
+python3 backend/scripts/compare_calibrated_vs_prototype.py
+```
+
+The model uses smoothed team home/away attack and defence strengths and remains
+isolated under `backend/calibration/`. It improves 1X2, log loss and Brier
+metrics over the neutral prototype on validation and test, but is explicitly
+not promoted. See `docs/CALIBRATION_EXPERIMENT_V0_9.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

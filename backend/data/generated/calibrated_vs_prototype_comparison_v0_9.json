@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-06-11T07:10:04Z",
+  "prototype_model_version": "prototype_neutral_v0.5",
+  "calibrated_model_version": "calibrated_simple_poisson_v0.9",
+  "validation": {
+    "prototype": {
+      "model_version": "prototype_neutral_v0.5",
+      "split": "validation",
+      "matches": 196,
+      "accuracy_1x2": 0.4336734693877551,
+      "log_loss_1x2": 1.0802175957877427,
+      "brier_score_1x2": 0.6549509216466424,
+      "exact_score_accuracy": 0.09183673469387756,
+      "top_3_score_hit_rate": 0.30612244897959184,
+      "average_real_result_probability": 0.342158359182123,
+      "average_predicted_home_goals": 1.349999999999997,
+      "average_predicted_away_goals": 1.349999999999997,
+      "average_actual_home_goals": 1.4081632653061225,
+      "average_actual_away_goals": 1.1734693877551021,
+      "modal_score_distribution": {
+        "1-1": 196
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 196,
+          "average_predicted_outcome_probability": 0.36478251635811065,
+          "realized_rate": 0.4336734693877551
+        }
+      },
+      "limitations": [
+        "Neutral fixed 1.35 / 1.35 xG baseline; not historically calibrated."
+      ]
+    },
+    "calibrated": {
+      "model_version": "calibrated_simple_poisson_v0.9",
+      "split": "validation",
+      "matches": 196,
+      "accuracy_1x2": 0.5306122448979592,
+      "log_loss_1x2": 1.0374239386654645,
+      "brier_score_1x2": 0.6231607870669007,
+      "exact_score_accuracy": 0.09183673469387756,
+      "top_3_score_hit_rate": 0.32142857142857145,
+      "average_real_result_probability": 0.3781952124915143,
+      "average_predicted_home_goals": 1.4722613027797018,
+      "average_predicted_away_goals": 1.0957396256440544,
+      "average_actual_home_goals": 1.4081632653061225,
+      "average_actual_away_goals": 1.1734693877551021,
+      "modal_score_distribution": {
+        "1-1": 125,
+        "1-0": 50,
+        "2-0": 11,
+        "2-1": 4,
+        "0-0": 4,
+        "3-1": 1,
+        "0-1": 1
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 38,
+          "average_predicted_outcome_probability": 0.37842739714745144,
+          "realized_rate": 0.5526315789473685
+        },
+        "0.4-0.5": {
+          "matches": 88,
+          "average_predicted_outcome_probability": 0.4496040695767211,
+          "realized_rate": 0.5227272727272727
+        },
+        "0.5-0.6": {
+          "matches": 49,
+          "average_predicted_outcome_probability": 0.5399153205601294,
+          "realized_rate": 0.5714285714285714
+        },
+        "0.6-0.7": {
+          "matches": 16,
+          "average_predicted_outcome_probability": 0.6408526607632944,
+          "realized_rate": 0.375
+        },
+        "0.7-0.8": {
+          "matches": 5,
+          "average_predicted_outcome_probability": 0.7333831111704396,
+          "realized_rate": 0.6
+        }
+      },
+      "limitations": []
+    },
+    "delta": {
+      "accuracy_1x2": 0.09693877551020413,
+      "log_loss_1x2": -0.04279365712227823,
+      "brier_score_1x2": -0.03179013457974167,
+      "exact_score_accuracy": 0.0,
+      "top_3_score_hit_rate": 0.015306122448979609
+    }
+  },
+  "test": {
+    "prototype": {
+      "model_version": "prototype_neutral_v0.5",
+      "split": "test",
+      "matches": 198,
+      "accuracy_1x2": 0.40404040404040403,
+      "log_loss_1x2": 1.1036761187626802,
+      "brier_score_1x2": 0.6697419567056062,
+      "exact_score_accuracy": 0.15656565656565657,
+      "top_3_score_hit_rate": 0.3434343434343434,
+      "average_real_result_probability": 0.3347628416526415,
+      "average_predicted_home_goals": 1.3499999999999972,
+      "average_predicted_away_goals": 1.3499999999999972,
+      "average_actual_home_goals": 1.393939393939394,
+      "average_actual_away_goals": 1.0353535353535352,
+      "modal_score_distribution": {
+        "1-1": 198
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 198,
+          "average_predicted_outcome_probability": 0.3647825163581106,
+          "realized_rate": 0.40404040404040403
+        }
+      },
+      "limitations": [
+        "Neutral fixed 1.35 / 1.35 xG baseline; not historically calibrated."
+      ]
+    },
+    "calibrated": {
+      "model_version": "calibrated_simple_poisson_v0.9",
+      "split": "test",
+      "matches": 198,
+      "accuracy_1x2": 0.4595959595959596,
+      "log_loss_1x2": 1.0412190253172982,
+      "brier_score_1x2": 0.6277293494283444,
+      "exact_score_accuracy": 0.15151515151515152,
+      "top_3_score_hit_rate": 0.3434343434343434,
+      "average_real_result_probability": 0.3739962383809251,
+      "average_predicted_home_goals": 1.441321837857732,
+      "average_predicted_away_goals": 1.148546877270198,
+      "average_actual_home_goals": 1.393939393939394,
+      "average_actual_away_goals": 1.0353535353535352,
+      "modal_score_distribution": {
+        "1-1": 134,
+        "1-0": 41,
+        "2-0": 8,
+        "2-1": 5,
+        "0-0": 4,
+        "0-1": 3,
+        "1-2": 2,
+        "3-0": 1
+      },
+      "calibration_buckets": {
+        "0.3-0.4": {
+          "matches": 50,
+          "average_predicted_outcome_probability": 0.37671379850887277,
+          "realized_rate": 0.4
+        },
+        "0.4-0.5": {
+          "matches": 84,
+          "average_predicted_outcome_probability": 0.44760750389864734,
+          "realized_rate": 0.44047619047619047
+        },
+        "0.5-0.6": {
+          "matches": 45,
+          "average_predicted_outcome_probability": 0.5388583488419657,
+          "realized_rate": 0.4222222222222222
+        },
+        "0.6-0.7": {
+          "matches": 14,
+          "average_predicted_outcome_probability": 0.6336089880244923,
+          "realized_rate": 0.8571428571428571
+        },
+        "0.7-0.8": {
+          "matches": 4,
+          "average_predicted_outcome_probability": 0.7243721270838677,
+          "realized_rate": 0.5
+        },
+        "0.8-0.9": {
+          "matches": 1,
+          "average_predicted_outcome_probability": 0.8775228604783128,
+          "realized_rate": 1.0
+        }
+      },
+      "limitations": []
+    },
+    "delta": {
+      "accuracy_1x2": 0.05555555555555558,
+      "log_loss_1x2": -0.062457093445382084,
+      "brier_score_1x2": -0.04201260727726186,
+      "exact_score_accuracy": -0.005050505050505055,
+      "top_3_score_hit_rate": 0.0
+    }
+  },
+  "decision": "experimental_only",
+  "promotion_recommendation": "do_not_promote_yet",
+  "active_engine_replaced": false,
+  "world_cup_2026_predictions_modified": false
+}

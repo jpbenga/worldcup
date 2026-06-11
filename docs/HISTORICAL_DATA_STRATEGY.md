@@ -167,3 +167,17 @@ semantics, pre-match Elo and neutral-site validation also remain unresolved.
 The deterministic chronological split is `917` train, `196` validation and
 `198` test matches. Recommended next phase: **V0.9 — First Calibration
 Experiment on Historical Dataset**, with no promotion to the active engine.
+
+## V0.9 result
+
+The first calibration experiment fits a smoothed team-strength Poisson model
+on the train split only. It uses no future 2026 fixtures, Elo, post-match
+features or active prediction snapshots. The fixed model is evaluated on the
+`196` validation and `198` test matches.
+
+Compared with the neutral `1.35 / 1.35` prototype, the calibrated experiment
+improves validation and test 1X2 accuracy, log loss and Brier score. Exact-score
+performance is mixed: validation is unchanged and test is slightly worse.
+Because the dataset remains medium-sufficiency and unresolved AET/PEN,
+neutral-site and mixed-scope issues remain, the model stays experimental and
+is not promoted.

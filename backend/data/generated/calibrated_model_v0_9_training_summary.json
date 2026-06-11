@@ -1,0 +1,27 @@
+{
+  "model_version": "calibrated_simple_poisson_v0.9",
+  "model_family": "historical_calibrated_simple_poisson",
+  "trained_on": "historical_train_matches.json",
+  "historically_calibrated": true,
+  "status": "experimental",
+  "train_matches": 917,
+  "train_teams": 159,
+  "date_min": "2014-06-12T20:00:00+00:00",
+  "date_max": "2021-06-23T21:00:00+00:00",
+  "competitions": {
+    "World Cup": 128,
+    "Asian Cup": 83,
+    "Copa America": 71,
+    "Euro Championship": 349,
+    "Africa Cup of Nations": 230,
+    "CONCACAF Gold Cup": 56
+  },
+  "global_home_goals": 1.4940021810250819,
+  "global_away_goals": 1.187568157033806,
+  "limitations": [
+    "Experimental first calibration; it is not the active or promoted prediction engine.",
+    "The model uses goals and team identity only, without Elo, venue neutrality, form, or competition parameters.",
+    "AET/PEN score semantics and mixed-scope competition rows remain unresolved.",
+    "The chronological split changes competition composition over time."
+  ]
+}

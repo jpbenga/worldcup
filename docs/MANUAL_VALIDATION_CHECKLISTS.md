@@ -380,6 +380,22 @@ Notes :
 - [ ] Dataset limitations documented
 - [ ] No secret committed
 
+## Checklist V0.9 — First Calibration Experiment
+
+- [ ] Historical train/validation/test splits loaded
+- [ ] Calibrated model trained on train split only
+- [ ] Validation predictions generated
+- [ ] Test predictions generated
+- [ ] 1X2 metrics calculated
+- [ ] Exact score metrics calculated
+- [ ] Prototype comparison generated
+- [ ] No 2026 predictions modified
+- [ ] Current app engine not replaced
+- [ ] Results documented honestly
+- [ ] Promotion recommendation explicit
+- [ ] No fake backtesting introduced
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

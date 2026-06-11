@@ -1,0 +1,63 @@
+{
+  "model_version": "calibrated_simple_poisson_v0.9",
+  "split": "test",
+  "matches": 198,
+  "accuracy_1x2": 0.4595959595959596,
+  "log_loss_1x2": 1.0412190253172982,
+  "brier_score_1x2": 0.6277293494283444,
+  "exact_score_accuracy": 0.15151515151515152,
+  "top_3_score_hit_rate": 0.3434343434343434,
+  "average_real_result_probability": 0.3739962383809251,
+  "average_predicted_home_goals": 1.441321837857732,
+  "average_predicted_away_goals": 1.148546877270198,
+  "average_actual_home_goals": 1.393939393939394,
+  "average_actual_away_goals": 1.0353535353535352,
+  "modal_score_distribution": {
+    "1-1": 134,
+    "1-0": 41,
+    "2-0": 8,
+    "2-1": 5,
+    "0-0": 4,
+    "0-1": 3,
+    "1-2": 2,
+    "3-0": 1
+  },
+  "calibration_buckets": {
+    "0.3-0.4": {
+      "matches": 50,
+      "average_predicted_outcome_probability": 0.37671379850887277,
+      "realized_rate": 0.4
+    },
+    "0.4-0.5": {
+      "matches": 84,
+      "average_predicted_outcome_probability": 0.44760750389864734,
+      "realized_rate": 0.44047619047619047
+    },
+    "0.5-0.6": {
+      "matches": 45,
+      "average_predicted_outcome_probability": 0.5388583488419657,
+      "realized_rate": 0.4222222222222222
+    },
+    "0.6-0.7": {
+      "matches": 14,
+      "average_predicted_outcome_probability": 0.6336089880244923,
+      "realized_rate": 0.8571428571428571
+    },
+    "0.7-0.8": {
+      "matches": 4,
+      "average_predicted_outcome_probability": 0.7243721270838677,
+      "realized_rate": 0.5
+    },
+    "0.8-0.9": {
+      "matches": 1,
+      "average_predicted_outcome_probability": 0.8775228604783128,
+      "realized_rate": 1.0
+    }
+  },
+  "limitations": [
+    "Experimental first calibration; it is not the active or promoted prediction engine.",
+    "The model uses goals and team identity only, without Elo, venue neutrality, form, or competition parameters.",
+    "AET/PEN score semantics and mixed-scope competition rows remain unresolved.",
+    "The chronological split changes competition composition over time."
+  ]
+}

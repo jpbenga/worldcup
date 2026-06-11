@@ -1,0 +1,57 @@
+{
+  "model_version": "calibrated_simple_poisson_v0.9",
+  "split": "validation",
+  "matches": 196,
+  "accuracy_1x2": 0.5306122448979592,
+  "log_loss_1x2": 1.0374239386654645,
+  "brier_score_1x2": 0.6231607870669007,
+  "exact_score_accuracy": 0.09183673469387756,
+  "top_3_score_hit_rate": 0.32142857142857145,
+  "average_real_result_probability": 0.3781952124915143,
+  "average_predicted_home_goals": 1.4722613027797018,
+  "average_predicted_away_goals": 1.0957396256440544,
+  "average_actual_home_goals": 1.4081632653061225,
+  "average_actual_away_goals": 1.1734693877551021,
+  "modal_score_distribution": {
+    "1-1": 125,
+    "1-0": 50,
+    "2-0": 11,
+    "2-1": 4,
+    "0-0": 4,
+    "3-1": 1,
+    "0-1": 1
+  },
+  "calibration_buckets": {
+    "0.3-0.4": {
+      "matches": 38,
+      "average_predicted_outcome_probability": 0.37842739714745144,
+      "realized_rate": 0.5526315789473685
+    },
+    "0.4-0.5": {
+      "matches": 88,
+      "average_predicted_outcome_probability": 0.4496040695767211,
+      "realized_rate": 0.5227272727272727
+    },
+    "0.5-0.6": {
+      "matches": 49,
+      "average_predicted_outcome_probability": 0.5399153205601294,
+      "realized_rate": 0.5714285714285714
+    },
+    "0.6-0.7": {
+      "matches": 16,
+      "average_predicted_outcome_probability": 0.6408526607632944,
+      "realized_rate": 0.375
+    },
+    "0.7-0.8": {
+      "matches": 5,
+      "average_predicted_outcome_probability": 0.7333831111704396,
+      "realized_rate": 0.6
+    }
+  },
+  "limitations": [
+    "Experimental first calibration; it is not the active or promoted prediction engine.",
+    "The model uses goals and team identity only, without Elo, venue neutrality, form, or competition parameters.",
+    "AET/PEN score semantics and mixed-scope competition rows remain unresolved.",
+    "The chronological split changes competition composition over time."
+  ]
+}
