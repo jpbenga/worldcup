@@ -607,33 +607,74 @@ integration and better treatment of low-sample teams.
 
 ## V1.1 — Improved Calibrated Engine Challenger Design
 
-Commit: TBD
+Commit: 617e512 Design improved calibrated engine challengers
 
 ### Technical validation
 
-- [ ] V1.0 human validation recorded
-- [ ] Challenger design document created
-- [ ] Evaluation protocol created
-- [ ] Challenger design JSON created
-- [ ] Promotion rules documented
-- [ ] No model implemented
-- [ ] No model retrained
-- [ ] No 2026 predictions modified
-- [ ] No promotion decision changed
-- [ ] No secret committed
+- [x] V1.0 human validation recorded
+- [x] Challenger design document created
+- [x] Evaluation protocol created
+- [x] Challenger design JSON created
+- [x] Promotion rules documented
+- [x] No model implemented
+- [x] No model retrained
+- [x] No 2026 predictions modified
+- [x] No promotion decision changed
+- [x] No secret committed
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Challenger design accepted
+- [x] Draw calibration priority accepted
+- [x] Dixon-Coles rho priority accepted
+- [x] Competition-weighted challenger accepted
+- [x] Time-decay challenger accepted
+- [x] Elo-prior challenger accepted
+- [x] Combined challenger deferred
+- [x] Promotion rules accepted
+- [x] V1.2 can implement isolated challengers
+
+### Observed design summary
+
+```text
+Challengers:
+- Draw-Calibrated Poisson
+- Dixon-Coles Rho Optimized
+- Competition-Weighted Poisson
+- Time-Decay Poisson
+- Elo-Prior Poisson
+- Combined Candidate deferred
+
+Priorities:
+- First: Draw calibration
+- Second: Dixon-Coles rho optimization
+
+Evaluation:
+- 13 mandatory metrics
+- Validation and test required
+- Human validation required before promotion
+- Test log loss improvement threshold: >= 0.01
+- Test Brier improvement threshold: >= 0.01
+
+Status:
+- Design only
+- No model implemented
+- No model retrained
+- 2026 predictions unchanged
+- Promotion recommendation remains do_not_promote_yet
+```
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
 ### Notes
 
-V1.1 is design-only. It specifies isolated V1.2 challengers and prudential
-evaluation gates while retaining `do_not_promote_yet`. No challenger is
-implemented, no model is retrained and no active prediction is changed.
+Human review completed. V1.1 is accepted as a design-only step. V1.2 can
+implement isolated challengers one by one, starting with draw calibration and
+Dixon-Coles rho. The combined challenger remains deferred until isolated tests
+prove which components improve the model. No promotion is allowed without
+validation and the default recommendation remains `do_not_promote_yet`.
