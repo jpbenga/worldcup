@@ -681,28 +681,82 @@ validation and the default recommendation remains `do_not_promote_yet`.
 
 ## V1.2 — Isolated Calibration Challenger Experiments
 
-Commit: TBD
+Commit: dde8e23 Evaluate isolated calibration challengers
 
 ### Technical validation
 
-- [ ] Draw-calibrated challenger implemented
-- [ ] Dixon-Coles rho challenger implemented
-- [ ] Parameters selected on validation only
-- [ ] Test used only for final evaluation
-- [ ] V0.9 comparison generated
-- [ ] Guardrails evaluated
-- [ ] No combined challenger implemented
-- [ ] No model promoted
-- [ ] No 2026 predictions modified
-- [ ] No main engine replacement
-- [ ] No secret committed
+- [x] Draw-calibrated challenger implemented
+- [x] Dixon-Coles rho challenger implemented
+- [x] Parameters selected on validation only
+- [x] Test used only for final evaluation
+- [x] V0.9 comparison generated
+- [x] Guardrails evaluated
+- [x] No combined challenger implemented
+- [x] No model promoted
+- [x] No 2026 predictions modified
+- [x] No main engine replacement
+- [x] No secret committed
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Draw-calibrated challenger reviewed
+- [x] Dixon-Coles rho challenger reviewed
+- [x] Guardrail failures accepted
+- [x] No challenger accepted for promotion
+- [x] No challenger accepted for combination
+- [x] Current engine remains unchanged
+- [x] 2026 predictions remain unchanged
+
+### Observed challenger summary
+
+```text
+Draw-Calibrated Poisson:
+- selected draw_factor: 1.10
+- validation log loss: 1.0409
+- validation Brier: 0.6252
+- validation accuracy: 52.04%
+- test log loss: 1.0373
+- test Brier: 0.6256
+- test accuracy: 46.46%
+- test delta vs V0.9 log loss: -0.0039
+- test delta vs V0.9 Brier: -0.0021
+- test draw gap delta: -0.0190
+- guardrails: failed
+
+Dixon-Coles Rho Optimized:
+- selected rho: 0.10
+- validation log loss: 1.0348
+- validation Brier: 0.6220
+- validation modal 1-1: 11.73%
+- test log loss: 1.0555
+- test Brier: 0.6351
+- test modal 1-1: 17.17%
+- test delta vs V0.9 log loss: +0.0143
+- test delta vs V0.9 Brier: +0.0074
+- test modal 1-1 delta: -0.5051
+- guardrails: failed
+
+Decision:
+- best challenger: Draw-Calibrated Poisson, but not promising enough
+- promotion recommendation: do_not_promote_yet
+- candidate for combination: none
+- combined challenger implemented: no
+```
 
 ### Result
 
 - [ ] Validated
-- [ ] Validated with reservations
+- [x] Validated with reservations
 - [ ] Not validated
+
+### Notes
+
+Human review completed. V1.2 is technically valid and useful, but neither
+isolated challenger passes the promotion guardrails. Draw calibration slightly
+improves test log loss and Brier but not enough to qualify, and it degrades
+validation. Dixon-Coles rho strongly reduces 1-1 modal concentration but
+regresses on test and increases high-confidence wrong predictions. No
+challenger should be promoted or combined yet. The next work should focus on
+improving upstream xG generation through competition weighting, time decay,
+Elo priors and better low-sample team handling.
