@@ -413,6 +413,24 @@ Notes :
 - [ ] No promotion decision changed
 - [ ] No secret committed
 
+## Checklist V1.1 — Improved Calibrated Engine Challenger Design
+
+- [ ] V1.0 human validation recorded
+- [ ] Challenger design document created
+- [ ] Evaluation protocol created
+- [ ] Draw-calibrated challenger specified
+- [ ] Dixon-Coles rho challenger specified
+- [ ] Competition-weighted challenger specified
+- [ ] Time-decay challenger specified
+- [ ] Elo-prior challenger specified
+- [ ] Combined challenger deferred until isolated tests
+- [ ] Promotion rules defined
+- [ ] No model implemented
+- [ ] No model retrained
+- [ ] No 2026 predictions modified
+- [ ] No promotion decision changed
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

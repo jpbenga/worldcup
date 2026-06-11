@@ -1,0 +1,142 @@
+{
+  "version": "v1.1",
+  "status": "design_only",
+  "base_model": "calibrated_simple_poisson_v0.9",
+  "source_analysis": "calibration_error_analysis_v1_0.json",
+  "implementation_phase": "v1.2",
+  "promotion_recommendation": "do_not_promote_yet",
+  "design_principle": "Reimplement useful historical-engine ideas cleanly without restoring sensitive files or unreliable parameters.",
+  "challengers": [
+    {
+      "id": "draw_calibrated_poisson",
+      "name": "Challenger A — Draw-Calibrated Poisson",
+      "priority": 1,
+      "problem_targeted": "draw underprediction",
+      "observed_evidence": "Draw is predicted as the 1X2 class in 0.5% of validation and 0.0% of test matches versus actual rates of 24.0% and 31.8%.",
+      "expected_benefit": "reduce draw calibration gap",
+      "implementation_phase": "v1.2",
+      "risk": "overpredicting draws",
+      "success_gates": [
+        "reduce absolute draw calibration gap on validation and test",
+        "improve test log loss and Brier score",
+        "do not reduce accuracy by more than 0.01",
+        "do not increase high-confidence wrong predictions"
+      ]
+    },
+    {
+      "id": "dixon_coles_rho_optimized",
+      "name": "Challenger B — Dixon-Coles Rho Optimized",
+      "priority": 2,
+      "problem_targeted": "low-score and modal 1-1 concentration",
+      "observed_evidence": "1-1 is modal in 63.8% of validation and 67.7% of test predictions.",
+      "expected_benefit": "improve low-score calibration and reduce modal 1-1 concentration",
+      "implementation_phase": "v1.2",
+      "risk": "optimizing exact scores while worsening probabilistic metrics",
+      "success_gates": [
+        "improve validation and test log loss or Brier score",
+        "reduce modal 1-1 concentration",
+        "improve draw calibration",
+        "do not increase high-confidence wrong predictions"
+      ]
+    },
+    {
+      "id": "competition_weighted_poisson",
+      "name": "Challenger C — Competition-Weighted Poisson",
+      "priority": 3,
+      "problem_targeted": "uneven competition performance",
+      "observed_evidence": "Africa Cup of Nations test is the weakest eligible competition segment with log loss 1.0796.",
+      "expected_benefit": "improve weak competition segments without degrading major tournaments",
+      "implementation_phase": "v1.2",
+      "risk": "overfitting small competition segments",
+      "success_gates": [
+        "improve aggregate validation and test log loss and Brier score",
+        "improve AFCON test performance",
+        "avoid material regression in major tournament segments"
+      ]
+    },
+    {
+      "id": "time_decay_poisson",
+      "name": "Challenger D — Time-Decay Poisson",
+      "priority": 4,
+      "problem_targeted": "temporal drift and stale team strengths",
+      "observed_evidence": "Season 2023 validation is the weakest eligible season segment with log loss 1.0702.",
+      "expected_benefit": "improve test stability with greater weight on recent matches",
+      "implementation_phase": "v1.2",
+      "risk": "reducing effective sample size for sparse teams",
+      "success_gates": [
+        "improve validation and test log loss and Brier score",
+        "show stable results for half-lives 12, 24 and 36 months",
+        "preserve effective sample safeguards"
+      ]
+    },
+    {
+      "id": "elo_prior_poisson",
+      "name": "Challenger E — Elo-Prior Poisson",
+      "priority": 5,
+      "problem_targeted": "favorite confidence and low-sample teams",
+      "observed_evidence": "39/75 validation teams and 60/93 test teams have fewer than five matches in their split.",
+      "expected_benefit": "improve low-sample fallback and favorite calibration",
+      "implementation_phase": "v1.2_after_pre_match_elo_provenance",
+      "risk": "Elo overwhelming historical evidence or leaking current ratings",
+      "success_gates": [
+        "use only pre-match or chronologically reconstructed Elo",
+        "improve low-sample team log loss and Brier score",
+        "reduce high-confidence wrong favorites"
+      ]
+    },
+    {
+      "id": "combined_candidate",
+      "name": "Challenger F — Combined Candidate",
+      "priority": 6,
+      "problem_targeted": "combine independently validated improvements",
+      "observed_evidence": "Multiple independent defects were identified by V1.0.",
+      "expected_benefit": "combine only causal improvements that passed isolated evaluation",
+      "implementation_phase": "deferred_until_A_to_E_isolated_tests",
+      "risk": "complexity hiding which component causes gains or regressions",
+      "success_gates": [
+        "include only independently successful components",
+        "beat prototype, V0.9 and included isolated challengers",
+        "pass all promotion protocol gates"
+      ]
+    }
+  ],
+  "evaluation_metrics": [
+    "log_loss_1x2",
+    "brier_score_1x2",
+    "accuracy_1x2",
+    "average_real_result_probability",
+    "exact_score_accuracy",
+    "top_3_score_hit_rate",
+    "draw_calibration_gap",
+    "favorite_calibration_gap",
+    "modal_score_concentration",
+    "high_confidence_wrong_predictions",
+    "performance_by_competition",
+    "performance_by_season",
+    "performance_by_team_sample_size"
+  ],
+  "mandatory_success_thresholds": {
+    "test_log_loss_improvement_min": 0.01,
+    "test_brier_improvement_min": 0.01,
+    "accuracy_max_absolute_decrease": 0.01,
+    "top_3_max_absolute_decrease": 0.01,
+    "draw_calibration_gap_must_reduce": true,
+    "modal_1_1_concentration_must_reduce": true,
+    "high_confidence_wrong_predictions_must_not_increase": true
+  },
+  "promotion_rules": [
+    "no automatic promotion",
+    "human validation required",
+    "beat calibrated_simple_poisson_v0.9 on validation and test",
+    "reduce at least one major V1.0 defect",
+    "do not modify World Cup 2026 predictions before explicit approval",
+    "preserve or explicitly version JSON contracts",
+    "compare against prototype_neutral_v0.5 and calibrated_simple_poisson_v0.9"
+  ],
+  "do_not_modify": [
+    "World Cup 2026 predictions",
+    "current prototype engine",
+    "main Angular app predictions",
+    "historical train validation and test splits"
+  ]
+}

@@ -259,6 +259,17 @@ goal total. It documents draw-class underprediction, modal `1-1`
 concentration, high-total underestimation and problematic matches. Promotion
 remains `do_not_promote_yet`; see `docs/CALIBRATION_ERROR_ANALYSIS_V1_0.md`.
 
+## Improved challenger design
+
+V1.1 is a design-only phase for isolated V1.2 challengers. It defines
+draw-calibrated, optimized Dixon-Coles rho, competition-weighted, time-decay
+and Elo-prior candidates, with a combined candidate deferred until isolated
+benefits are proven.
+
+See `docs/CHALLENGER_ENGINE_DESIGN_V1_1.md` and
+`docs/CHALLENGER_EVALUATION_PROTOCOL.md`. No model is implemented or retrained,
+and promotion remains `do_not_promote_yet`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

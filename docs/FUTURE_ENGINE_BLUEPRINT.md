@@ -170,3 +170,16 @@ competition segment.
 These observed errors justify testing draw calibration, competition effects,
 recent form or time decay, and improved high-total behavior in a future
 challenger. They do not justify promotion of V0.9.
+
+## V1.1 challenger design
+
+V1.1 defines isolated challengers for V1.2 without implementing them:
+draw-calibrated Poisson, optimized Dixon-Coles rho, competition weighting,
+time decay and an Elo prior after chronological provenance is verified. A
+combined candidate is explicitly deferred until isolated changes demonstrate
+benefits.
+
+Selection requires improved validation and test log loss/Brier, reduced draw
+calibration gap, guardrails on accuracy/top-3 and no increase in
+high-confidence wrong predictions. No challenger is promoted automatically,
+and the active engine and World Cup 2026 predictions remain unchanged.

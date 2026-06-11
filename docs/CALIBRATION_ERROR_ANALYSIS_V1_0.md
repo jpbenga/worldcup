@@ -148,3 +148,11 @@ no World Cup 2026 prediction is regenerated, and promotion remains blocked.
 
 The next step is **V1.1 — Second Calibration Challenger Design**, after human
 review of the full JSON rankings and problematic matches.
+
+## V1.1 design follow-up
+
+Human review accepted the V1.0 diagnosis and retained
+`do_not_promote_yet`. V1.1 converts the observed defects into isolated,
+testable challenger specifications and a prudential evaluation protocol. It
+does not implement or train a new model. See
+`docs/CHALLENGER_ENGINE_DESIGN_V1_1.md`.

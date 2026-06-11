@@ -558,7 +558,7 @@ calibrated model.
 
 ## V1.0 — Calibration Error Analysis & Segmentation
 
-Commit: TBD
+Commit: ecc025a Analyze calibration errors and segmentation
 
 ### Technical validation
 
@@ -577,6 +577,53 @@ Commit: TBD
 
 ### Human validation
 
+- [x] Reviewed by Jeanpaul Benga
+- [x] Error analysis accepted
+- [x] Competition segmentation reviewed
+- [x] Season segmentation reviewed
+- [x] Team segmentation reviewed
+- [x] Draw bias reviewed
+- [x] Favorite bias reviewed
+- [x] Score distribution reviewed
+- [x] Worst matches reviewed
+- [x] Promotion recommendation accepted as do_not_promote_yet
+- [x] V1.1 priorities accepted
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Notes
+
+Human review completed. V1.0 confirms that the calibrated Simple Poisson v0.9
+improves over the neutral prototype but remains unsuitable for promotion. The
+main issues are severe draw underprediction, excessive `1-1` modal-score
+concentration, underestimation of high-scoring matches and fragile favorite
+confidence. V1.1 should focus on challenger design around draw calibration,
+score diversity, competition effects, recent form/time decay, Elo prior
+integration and better treatment of low-sample teams.
+
+## V1.1 — Improved Calibrated Engine Challenger Design
+
+Commit: TBD
+
+### Technical validation
+
+- [ ] V1.0 human validation recorded
+- [ ] Challenger design document created
+- [ ] Evaluation protocol created
+- [ ] Challenger design JSON created
+- [ ] Promotion rules documented
+- [ ] No model implemented
+- [ ] No model retrained
+- [ ] No 2026 predictions modified
+- [ ] No promotion decision changed
+- [ ] No secret committed
+
+### Human validation
+
 - [ ] Reviewed by Jeanpaul Benga
 
 ### Result
@@ -587,7 +634,6 @@ Commit: TBD
 
 ### Notes
 
-V1.0 analyzes the fixed V0.9 predictions only. Initial findings identify
-draw-class underprediction, modal `1-1` concentration, high-total
-underestimation and uneven segment performance. Promotion remains
-`do_not_promote_yet`; human review is required before V1.1 design.
+V1.1 is design-only. It specifies isolated V1.2 challengers and prudential
+evaluation gates while retaining `do_not_promote_yet`. No challenger is
+implemented, no model is retrained and no active prediction is changed.
