@@ -265,3 +265,18 @@ reduces the train-validation log-loss gap to `0.0178`. DNB at confidence
 deployment gate passed, so `quant_hybrid_v2.2` replaced the active World Cup
 2026 prediction engine. The comparisons with V2.0 and V0.9 remain directional
 because their historical test periods differ.
+
+## V2.3 active matrix secondary-market audit
+
+V2.3 audits V2.2 without retraining or changing active predictions. It
+reconstructs all supported secondary probabilities directly from each
+published test score matrix, compares them with the aggregate XGBoost-direct
+market evidence that V2.2 retained, and keeps active hybrid 1X2 separate.
+
+The matrix is useful beyond exact score on broad markets: over 0.5 reaches
+`91.7%` at full coverage, double chance 1X reaches `81.9%` at `75.7%`
+coverage, and matrix DNB at confidence `0.60` reaches `87.6%` wins excluding
+pushes and `90.1%` non-loss including pushes at `70.2%` coverage. The 90%
+claim therefore applies only when pushes count as non-losses. BTTS yes, clean
+sheets, winning margins and several high-total lines remain too sparse or
+unstable for unqualified product display.

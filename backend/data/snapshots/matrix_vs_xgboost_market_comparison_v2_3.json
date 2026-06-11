@@ -1,0 +1,429 @@
+{
+  "version": "v2.3",
+  "engine_version": "quant_hybrid_v2.2",
+  "source_availability": {
+    "matrix_derived": "per-match score matrices available",
+    "xgboost_direct": "aggregate V2.2 threshold metrics only; no per-match direct probabilities published",
+    "active_hybrid": "per-match hybrid available for 1X2 only; active secondary fields are matrix-derived"
+  },
+  "one_x_two": {
+    "matrix": {
+      "accuracy": 0.6217391304347826,
+      "brier": 0.5211514878135842
+    },
+    "xgboost": {
+      "accuracy": 0.6,
+      "brier": 0.5207499254397702
+    },
+    "hybrid": {
+      "accuracy": 0.6021739130434782,
+      "brier": 0.5158034605928804
+    }
+  },
+  "secondary_markets": {
+    "over_1_5": {
+      "matrix_derived": {
+        "brier": 0.19200506688844685,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.8108695652173913,
+          "selections": 373,
+          "wins": 286,
+          "losses": 87,
+          "accuracy": 0.7667560321715817,
+          "average_confidence": 0.6989628822534314,
+          "average_probability": 0.6989628822534314,
+          "calibration_gap": 0.06779314991815033,
+          "brier": 0.17886233983962427
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.19193103068729409,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.9108695652173913,
+          "selections": 419,
+          "wins": 314,
+          "losses": 105,
+          "accuracy": 0.7494033412887828,
+          "win_rate": 0.7494033412887828,
+          "brier_if_binary_market": 0.18598400076603425,
+          "average_confidence": 0.7256150302568313
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "xgboost_direct"
+    },
+    "over_2_5": {
+      "matrix_derived": {
+        "brier": 0.24549973215425785,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.06304347826086956,
+          "selections": 29,
+          "wins": 26,
+          "losses": 3,
+          "accuracy": 0.896551724137931,
+          "average_confidence": 0.681414830214693,
+          "average_probability": 0.681414830214693,
+          "calibration_gap": 0.2151368939232381,
+          "brier": 0.14526394531006126
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.24423155836519253,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.1782608695652174,
+          "selections": 82,
+          "wins": 48,
+          "losses": 34,
+          "accuracy": 0.5853658536585366,
+          "win_rate": 0.5853658536585366,
+          "brier_if_binary_market": 0.23689245966185485,
+          "average_confidence": 0.6705749921682405
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "xgboost_direct"
+    },
+    "over_3_5": {
+      "matrix_derived": {
+        "brier": 0.21686577827736936,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.0,
+          "selections": 0,
+          "wins": 0,
+          "losses": 0,
+          "accuracy": null,
+          "average_confidence": null,
+          "average_probability": null,
+          "calibration_gap": null,
+          "brier": null
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.20960583285810586,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.010869565217391304,
+          "selections": 5,
+          "wins": 5,
+          "losses": 0,
+          "accuracy": 1.0,
+          "win_rate": 1.0,
+          "brier_if_binary_market": 0.1163671654534788,
+          "average_confidence": 0.6612717986106873
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "xgboost_direct"
+    },
+    "both_teams_to_score_yes": {
+      "matrix_derived": {
+        "brier": 0.2399121731977847,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.0,
+          "selections": 0,
+          "wins": 0,
+          "losses": 0,
+          "accuracy": null,
+          "average_confidence": null,
+          "average_probability": null,
+          "calibration_gap": null,
+          "brier": null
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.23972122873558807,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.05217391304347826,
+          "selections": 24,
+          "wins": 12,
+          "losses": 12,
+          "accuracy": 0.5,
+          "win_rate": 0.5,
+          "brier_if_binary_market": 0.2687687845524766,
+          "average_confidence": 0.6250164856513342
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "xgboost_direct"
+    },
+    "home_over_0_5": {
+      "matrix_derived": {
+        "brier": 0.16815262747007587,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.841304347826087,
+          "selections": 387,
+          "wins": 307,
+          "losses": 80,
+          "accuracy": 0.7932816537467701,
+          "average_confidence": 0.7366147794093636,
+          "average_probability": 0.7366147794093636,
+          "calibration_gap": 0.05666687433740647,
+          "brier": 0.1500923303232605
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.1667081024863406,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.8978260869565218,
+          "selections": 413,
+          "wins": 315,
+          "losses": 98,
+          "accuracy": 0.7627118644067796,
+          "win_rate": 0.7627118644067796,
+          "brier_if_binary_market": 0.15836982939907565,
+          "average_confidence": 0.7809573947373083
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "xgboost_direct"
+    },
+    "away_over_0_5": {
+      "matrix_derived": {
+        "brier": 0.22130952100881832,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.532608695652174,
+          "selections": 245,
+          "wins": 174,
+          "losses": 71,
+          "accuracy": 0.710204081632653,
+          "average_confidence": 0.7100505792905587,
+          "average_probability": 0.7100505792905587,
+          "calibration_gap": 0.0001535023420943249,
+          "brier": 0.19715828577229833
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.22443104443818943,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.5173913043478261,
+          "selections": 238,
+          "wins": 165,
+          "losses": 73,
+          "accuracy": 0.6932773109243697,
+          "win_rate": 0.6932773109243697,
+          "brier_if_binary_market": 0.20781313568583734,
+          "average_confidence": 0.7056824434705141
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "matrix_derived"
+    },
+    "home_over_1_5": {
+      "matrix_derived": {
+        "brier": 0.22406924232978961,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.08478260869565217,
+          "selections": 39,
+          "wins": 34,
+          "losses": 5,
+          "accuracy": 0.8717948717948718,
+          "average_confidence": 0.7206127351106035,
+          "average_probability": 0.7206127351106035,
+          "calibration_gap": 0.15118213668426828,
+          "brier": 0.13493298335737863
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.21702898009489424,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.17391304347826086,
+          "selections": 80,
+          "wins": 59,
+          "losses": 21,
+          "accuracy": 0.7375,
+          "win_rate": 0.7375,
+          "brier_if_binary_market": 0.19197927106613336,
+          "average_confidence": 0.6884172648191452
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "xgboost_direct"
+    },
+    "away_over_1_5": {
+      "matrix_derived": {
+        "brier": 0.16739259943560325,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.034782608695652174,
+          "selections": 16,
+          "wins": 14,
+          "losses": 2,
+          "accuracy": 0.875,
+          "average_confidence": 0.6965705198782726,
+          "average_probability": 0.6965705198782726,
+          "calibration_gap": 0.17842948012172744,
+          "brier": 0.13535118971425047
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.16911515048092396,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.02608695652173913,
+          "selections": 12,
+          "wins": 11,
+          "losses": 1,
+          "accuracy": 0.9166666666666666,
+          "win_rate": 0.9166666666666666,
+          "brier_if_binary_market": 0.14508377032567457,
+          "average_confidence": 0.6441526561975479
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "matrix_derived"
+    },
+    "double_chance_1X": {
+      "matrix_derived": {
+        "brier": 0.15539565515388087,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.7565217391304347,
+          "selections": 348,
+          "wins": 285,
+          "losses": 63,
+          "accuracy": 0.8189655172413793,
+          "average_confidence": 0.7624030462437824,
+          "average_probability": 0.7624030462437824,
+          "calibration_gap": 0.056562470997596925,
+          "brier": 0.13330812019212032
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.15991135391705158,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.8130434782608695,
+          "selections": 374,
+          "wins": 296,
+          "losses": 78,
+          "accuracy": 0.7914438502673797,
+          "win_rate": 0.7914438502673797,
+          "brier_if_binary_market": 0.1427613727979254,
+          "average_confidence": 0.811496045181458
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "matrix_derived"
+    },
+    "double_chance_X2": {
+      "matrix_derived": {
+        "brier": 0.19694639487047122,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 0.4369565217391304,
+          "selections": 201,
+          "wins": 155,
+          "losses": 46,
+          "accuracy": 0.7711442786069652,
+          "average_confidence": 0.7215608276531544,
+          "average_probability": 0.7215608276531544,
+          "calibration_gap": 0.04958345095381078,
+          "brier": 0.171868944443816
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.19108139832132906,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.4369565217391304,
+          "selections": 201,
+          "wins": 150,
+          "losses": 51,
+          "accuracy": 0.746268656716418,
+          "win_rate": 0.746268656716418,
+          "brier_if_binary_market": 0.183477379363333,
+          "average_confidence": 0.7442989708179265
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "xgboost_direct"
+    },
+    "double_chance_12": {
+      "matrix_derived": {
+        "brier": 0.16880943778923269,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "coverage": 1.0,
+          "selections": 460,
+          "wins": 359,
+          "losses": 101,
+          "accuracy": 0.7804347826086957,
+          "average_confidence": 0.7397024058511108,
+          "average_probability": 0.7397024058511108,
+          "calibration_gap": 0.0407323767575849,
+          "brier": 0.16880943778923269
+        }
+      },
+      "xgboost_direct": {
+        "brier": 0.1713868639670378,
+        "threshold_0_60": {
+          "threshold": 0.6,
+          "total_predictions": 460,
+          "coverage_if_thresholded": 0.9391304347826087,
+          "selections": 432,
+          "wins": 341,
+          "losses": 91,
+          "accuracy": 0.7893518518518519,
+          "win_rate": 0.7893518518518519,
+          "brier_if_binary_market": 0.16746093117155075,
+          "average_confidence": 0.7342201283684483
+        }
+      },
+      "active_hybrid": {
+        "availability": "secondary active probabilities are matrix-derived; no distinct hybrid secondary source"
+      },
+      "best_source_by_brier": "matrix_derived"
+    }
+  },
+  "best_source_counts_by_brier": {
+    "xgboost_direct": 7,
+    "matrix_derived": 4
+  },
+  "comparison_limitations": [
+    "No secondary XGBoost model was retrained or reconstructed in V2.3.",
+    "Hybrid secondary performance cannot be claimed because no distinct hybrid secondary probabilities are published."
+  ]
+}

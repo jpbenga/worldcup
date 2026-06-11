@@ -372,6 +372,20 @@ and promoted `quant_hybrid_v2.2` to the active World Cup 2026 prediction
 engine. See `docs/QUANT_ENGINE_V2_2_RESULTS.md` and
 `docs/ACTIVE_ENGINE_DEPLOYMENT_V2_2.md`.
 
+## Active matrix market audit V2.3
+
+V2.3 audits the deployed V2.2 score matrix on all supported secondary markets
+without retraining, Optuna, new data or active-prediction regeneration.
+
+```bash
+python3 backend/scripts/audit_active_matrix_markets_v2_3.py
+```
+
+The audit separates matrix-derived markets, published aggregate XGBoost-direct
+metrics and active hybrid 1X2 probabilities. It also publishes calibration
+buckets, segment reports and a descriptive market audit of the 72 active World
+Cup 2026 fixtures. See `docs/ACTIVE_MATRIX_MARKET_AUDIT_V2_3.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

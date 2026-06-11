@@ -554,6 +554,26 @@ Notes :
 - [ ] No future World Cup 2026 fixture used for training or selection
 - [ ] No secret committed
 
+## Checklist V2.3 — Active Matrix Secondary Market Performance Audit
+
+- [ ] Active V2.2 engine audited
+- [ ] Matrix-derived markets separated from XGBoost direct markets
+- [ ] DNB wins/losses/pushes separated
+- [ ] Double chance audited
+- [ ] Over/under markets audited
+- [ ] BTTS audited
+- [ ] Team goal markets audited
+- [ ] Clean sheet markets audited
+- [ ] Winning margin markets audited
+- [ ] Confidence thresholds audited
+- [ ] Calibration buckets generated
+- [ ] Matrix vs XGBoost comparison generated
+- [ ] World Cup 2026 market audit generated
+- [ ] No model retrained
+- [ ] No Optuna rerun
+- [ ] No active prediction regeneration
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

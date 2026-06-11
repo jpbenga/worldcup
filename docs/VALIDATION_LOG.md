@@ -1075,3 +1075,52 @@ DNB >= 0.60: 87.6% wins excluding pushes at 70.2% coverage
 Decision: deploy_active_engine
 Active engine replacement: yes
 ```
+
+## V2.3 — Active Matrix Secondary Market Performance Audit
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Active V2.2 engine audited
+- [x] Matrix-derived markets separated from XGBoost direct markets
+- [x] DNB wins/losses/pushes separated
+- [x] Double chance audited
+- [x] Over/under markets audited
+- [x] BTTS audited
+- [x] Team goal markets audited
+- [x] Clean sheet markets audited
+- [x] Winning margin markets audited
+- [x] Confidence thresholds audited
+- [x] Calibration buckets generated
+- [x] Matrix vs XGBoost comparison generated
+- [x] World Cup 2026 market audit generated
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] No active prediction regeneration
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.3 result
+
+```text
+Engine audited: quant_hybrid_v2.2
+Historical test matches: 460
+Active World Cup 2026 fixtures: 72
+Matrix DNB >= 0.60: 87.6% wins excluding pushes
+Matrix DNB >= 0.60: 90.1% non-loss including pushes
+Matrix DNB >= 0.60 coverage: 70.2%
+Matrix over 0.5 >= 0.60: 91.7% accuracy at 100.0% coverage
+No model retrained: yes
+No Optuna rerun: yes
+No active predictions regenerated: yes
+```

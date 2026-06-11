@@ -1,0 +1,786 @@
+{
+  "version": "v2.3",
+  "engine_version": "quant_hybrid_v2.2",
+  "definitions": {
+    "dnb_push_treatment": "push counted as non-loss for calibration buckets"
+  },
+  "markets": {
+    "predicted_1x2": {
+      "0.50-0.55": {
+        "count": 60,
+        "predicted_probability_average": 0.5257471693834698,
+        "actual_hit_rate": 0.6666666666666666,
+        "calibration_gap": 0.14091949728319678
+      },
+      "0.55-0.60": {
+        "count": 42,
+        "predicted_probability_average": 0.5779509475363084,
+        "actual_hit_rate": 0.8095238095238095,
+        "calibration_gap": 0.23157286198750116
+      },
+      "0.60-0.65": {
+        "count": 29,
+        "predicted_probability_average": 0.6236761840856994,
+        "actual_hit_rate": 0.7586206896551724,
+        "calibration_gap": 0.1349445055694731
+      },
+      "0.65-0.70": {
+        "count": 20,
+        "predicted_probability_average": 0.6796258347832217,
+        "actual_hit_rate": 0.85,
+        "calibration_gap": 0.17037416521677848
+      },
+      "0.70-0.75": {
+        "count": 17,
+        "predicted_probability_average": 0.7242371458387219,
+        "actual_hit_rate": 0.7647058823529411,
+        "calibration_gap": 0.04046873651421943
+      },
+      "0.75-0.80": {
+        "count": 11,
+        "predicted_probability_average": 0.7769514363453962,
+        "actual_hit_rate": 0.9090909090909091,
+        "calibration_gap": 0.132139472745513
+      },
+      "0.80-0.90": {
+        "count": 16,
+        "predicted_probability_average": 0.8455414550287879,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.15445854497121214
+      },
+      "0.90-1.00": {
+        "count": 2,
+        "predicted_probability_average": 0.9167716381466224,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.08322836185337762
+      }
+    },
+    "draw_no_bet": {
+      "0.50-0.55": {
+        "count": 68,
+        "predicted_probability_average": 0.5252849434186511,
+        "actual_hit_rate": 0.7058823529411765,
+        "calibration_gap": 0.1805974095225254
+      },
+      "0.55-0.60": {
+        "count": 69,
+        "predicted_probability_average": 0.5737234931449244,
+        "actual_hit_rate": 0.7101449275362319,
+        "calibration_gap": 0.13642143439130736
+      },
+      "0.60-0.65": {
+        "count": 75,
+        "predicted_probability_average": 0.6256323477848333,
+        "actual_hit_rate": 0.8133333333333334,
+        "calibration_gap": 0.1877009855485
+      },
+      "0.65-0.70": {
+        "count": 58,
+        "predicted_probability_average": 0.6754020641415196,
+        "actual_hit_rate": 0.896551724137931,
+        "calibration_gap": 0.22114965999641148
+      },
+      "0.70-0.75": {
+        "count": 60,
+        "predicted_probability_average": 0.7213078801482031,
+        "actual_hit_rate": 0.9166666666666666,
+        "calibration_gap": 0.1953587865184635
+      },
+      "0.75-0.80": {
+        "count": 46,
+        "predicted_probability_average": 0.7753967914168463,
+        "actual_hit_rate": 0.9130434782608695,
+        "calibration_gap": 0.1376466868440231
+      },
+      "0.80-0.90": {
+        "count": 55,
+        "predicted_probability_average": 0.8476571412338076,
+        "actual_hit_rate": 0.9454545454545454,
+        "calibration_gap": 0.09779740422073782
+      },
+      "0.90-1.00": {
+        "count": 29,
+        "predicted_probability_average": 0.9348793251289836,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.06512067487101635
+      }
+    },
+    "double_chance_1X": {
+      "0.50-0.55": {
+        "count": 22,
+        "predicted_probability_average": 0.5211138847411781,
+        "actual_hit_rate": 0.36363636363636365,
+        "calibration_gap": -0.1574775211048144
+      },
+      "0.55-0.60": {
+        "count": 33,
+        "predicted_probability_average": 0.5747909295203378,
+        "actual_hit_rate": 0.6060606060606061,
+        "calibration_gap": 0.031269676540268285
+      },
+      "0.60-0.65": {
+        "count": 37,
+        "predicted_probability_average": 0.6247715597537703,
+        "actual_hit_rate": 0.4594594594594595,
+        "calibration_gap": -0.16531210029431082
+      },
+      "0.65-0.70": {
+        "count": 66,
+        "predicted_probability_average": 0.6790090814725067,
+        "actual_hit_rate": 0.6818181818181818,
+        "calibration_gap": 0.0028091003456751874
+      },
+      "0.70-0.75": {
+        "count": 65,
+        "predicted_probability_average": 0.7287207082127423,
+        "actual_hit_rate": 0.8153846153846154,
+        "calibration_gap": 0.08666390717187303
+      },
+      "0.75-0.80": {
+        "count": 66,
+        "predicted_probability_average": 0.7728181454673463,
+        "actual_hit_rate": 0.9090909090909091,
+        "calibration_gap": 0.13627276362356283
+      },
+      "0.80-0.90": {
+        "count": 84,
+        "predicted_probability_average": 0.8444896333538642,
+        "actual_hit_rate": 0.9523809523809523,
+        "calibration_gap": 0.10789131902708841
+      },
+      "0.90-1.00": {
+        "count": 30,
+        "predicted_probability_average": 0.9358380056121152,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.06416199438788489
+      }
+    },
+    "double_chance_X2": {
+      "0.50-0.55": {
+        "count": 53,
+        "predicted_probability_average": 0.5229535201271638,
+        "actual_hit_rate": 0.33962264150943394,
+        "calibration_gap": -0.18333087861772993
+      },
+      "0.55-0.60": {
+        "count": 66,
+        "predicted_probability_average": 0.5750964239643481,
+        "actual_hit_rate": 0.48484848484848486,
+        "calibration_gap": -0.09024793911586332
+      },
+      "0.60-0.65": {
+        "count": 48,
+        "predicted_probability_average": 0.6248512866539919,
+        "actual_hit_rate": 0.6875,
+        "calibration_gap": 0.06264871334600791
+      },
+      "0.65-0.70": {
+        "count": 49,
+        "predicted_probability_average": 0.6722852946643907,
+        "actual_hit_rate": 0.6938775510204082,
+        "calibration_gap": 0.021592256356017688
+      },
+      "0.70-0.75": {
+        "count": 33,
+        "predicted_probability_average": 0.7233457479297046,
+        "actual_hit_rate": 0.7575757575757576,
+        "calibration_gap": 0.03423000964605276
+      },
+      "0.75-0.80": {
+        "count": 34,
+        "predicted_probability_average": 0.7772623545493886,
+        "actual_hit_rate": 0.8823529411764706,
+        "calibration_gap": 0.10509058662708191
+      },
+      "0.80-0.90": {
+        "count": 27,
+        "predicted_probability_average": 0.8359241639216016,
+        "actual_hit_rate": 0.8518518518518519,
+        "calibration_gap": 0.015927687930250227
+      },
+      "0.90-1.00": {
+        "count": 10,
+        "predicted_probability_average": 0.9231602998094468,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.07683970019055301
+      }
+    },
+    "double_chance_12": {
+      "0.50-0.55": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.55-0.60": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.60-0.65": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.65-0.70": {
+        "count": 85,
+        "predicted_probability_average": 0.6856227189858204,
+        "actual_hit_rate": 0.6705882352941176,
+        "calibration_gap": -0.015034483691702507
+      },
+      "0.70-0.75": {
+        "count": 238,
+        "predicted_probability_average": 0.7225825526686431,
+        "actual_hit_rate": 0.7815126050420168,
+        "calibration_gap": 0.058930052373373565
+      },
+      "0.75-0.80": {
+        "count": 80,
+        "predicted_probability_average": 0.7688022238426451,
+        "actual_hit_rate": 0.8,
+        "calibration_gap": 0.03119777615735504
+      },
+      "0.80-0.90": {
+        "count": 49,
+        "predicted_probability_average": 0.8395816731469287,
+        "actual_hit_rate": 0.8979591836734694,
+        "calibration_gap": 0.0583775105265407
+      },
+      "0.90-1.00": {
+        "count": 8,
+        "predicted_probability_average": 0.9208560188709595,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.07914398112904054
+      }
+    },
+    "over_1_5": {
+      "0.50-0.55": {
+        "count": 18,
+        "predicted_probability_average": 0.5311242805483807,
+        "actual_hit_rate": 0.6111111111111112,
+        "calibration_gap": 0.07998683056273034
+      },
+      "0.55-0.60": {
+        "count": 67,
+        "predicted_probability_average": 0.5773762517386765,
+        "actual_hit_rate": 0.5373134328358209,
+        "calibration_gap": -0.04006281890285569
+      },
+      "0.60-0.65": {
+        "count": 114,
+        "predicted_probability_average": 0.624742716449262,
+        "actual_hit_rate": 0.7017543859649122,
+        "calibration_gap": 0.07701166951565
+      },
+      "0.65-0.70": {
+        "count": 102,
+        "predicted_probability_average": 0.6751728291654138,
+        "actual_hit_rate": 0.7450980392156863,
+        "calibration_gap": 0.06992521005027255
+      },
+      "0.70-0.75": {
+        "count": 75,
+        "predicted_probability_average": 0.7230802105106305,
+        "actual_hit_rate": 0.7466666666666667,
+        "calibration_gap": 0.02358645615603635
+      },
+      "0.75-0.80": {
+        "count": 47,
+        "predicted_probability_average": 0.7757962624607946,
+        "actual_hit_rate": 0.8723404255319149,
+        "calibration_gap": 0.0965441630711206
+      },
+      "0.80-0.90": {
+        "count": 32,
+        "predicted_probability_average": 0.8499554830115411,
+        "actual_hit_rate": 0.96875,
+        "calibration_gap": 0.11879451698845896
+      },
+      "0.90-1.00": {
+        "count": 3,
+        "predicted_probability_average": 0.9109470833726986,
+        "actual_hit_rate": 0.6666666666666666,
+        "calibration_gap": -0.24428041670603187
+      }
+    },
+    "over_2_5": {
+      "0.50-0.55": {
+        "count": 37,
+        "predicted_probability_average": 0.5254924347276084,
+        "actual_hit_rate": 0.5135135135135135,
+        "calibration_gap": -0.011978921214095018
+      },
+      "0.55-0.60": {
+        "count": 21,
+        "predicted_probability_average": 0.5711796560898572,
+        "actual_hit_rate": 0.47619047619047616,
+        "calibration_gap": -0.09498917989938103
+      },
+      "0.60-0.65": {
+        "count": 7,
+        "predicted_probability_average": 0.6184028760558794,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.3815971239441206
+      },
+      "0.65-0.70": {
+        "count": 13,
+        "predicted_probability_average": 0.6749917081835861,
+        "actual_hit_rate": 0.8461538461538461,
+        "calibration_gap": 0.1711621379702602
+      },
+      "0.70-0.75": {
+        "count": 6,
+        "predicted_probability_average": 0.726854845673616,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.27314515432638403
+      },
+      "0.75-0.80": {
+        "count": 3,
+        "predicted_probability_average": 0.7653962211355433,
+        "actual_hit_rate": 0.6666666666666666,
+        "calibration_gap": -0.09872955446887662
+      },
+      "0.80-0.90": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.90-1.00": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      }
+    },
+    "under_3_5": {
+      "0.50-0.55": {
+        "count": 8,
+        "predicted_probability_average": 0.5266037161166318,
+        "actual_hit_rate": 0.375,
+        "calibration_gap": -0.15160371611663181
+      },
+      "0.55-0.60": {
+        "count": 9,
+        "predicted_probability_average": 0.5694807890202223,
+        "actual_hit_rate": 0.3333333333333333,
+        "calibration_gap": -0.23614745568688889
+      },
+      "0.60-0.65": {
+        "count": 11,
+        "predicted_probability_average": 0.6299831807892354,
+        "actual_hit_rate": 0.36363636363636365,
+        "calibration_gap": -0.2663468171528718
+      },
+      "0.65-0.70": {
+        "count": 37,
+        "predicted_probability_average": 0.6768785938966231,
+        "actual_hit_rate": 0.5405405405405406,
+        "calibration_gap": -0.13633805335608268
+      },
+      "0.70-0.75": {
+        "count": 47,
+        "predicted_probability_average": 0.728776928090975,
+        "actual_hit_rate": 0.723404255319149,
+        "calibration_gap": -0.005372672771826181
+      },
+      "0.75-0.80": {
+        "count": 108,
+        "predicted_probability_average": 0.7780131727797981,
+        "actual_hit_rate": 0.6759259259259259,
+        "calibration_gap": -0.10208724685387244
+      },
+      "0.80-0.90": {
+        "count": 226,
+        "predicted_probability_average": 0.8445101336146407,
+        "actual_hit_rate": 0.7433628318584071,
+        "calibration_gap": -0.10114730175623377
+      },
+      "0.90-1.00": {
+        "count": 6,
+        "predicted_probability_average": 0.9075040078430598,
+        "actual_hit_rate": 0.8333333333333334,
+        "calibration_gap": -0.07417067450972649
+      }
+    },
+    "both_teams_to_score_yes": {
+      "0.50-0.55": {
+        "count": 50,
+        "predicted_probability_average": 0.5225364436690647,
+        "actual_hit_rate": 0.48,
+        "calibration_gap": -0.0425364436690647
+      },
+      "0.55-0.60": {
+        "count": 7,
+        "predicted_probability_average": 0.5661917581285024,
+        "actual_hit_rate": 0.2857142857142857,
+        "calibration_gap": -0.2804774724142168
+      },
+      "0.60-0.65": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.65-0.70": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.70-0.75": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.75-0.80": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.80-0.90": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.90-1.00": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      }
+    },
+    "both_teams_to_score_no": {
+      "0.50-0.55": {
+        "count": 107,
+        "predicted_probability_average": 0.5277966063029029,
+        "actual_hit_rate": 0.4953271028037383,
+        "calibration_gap": -0.03246950349916447
+      },
+      "0.55-0.60": {
+        "count": 153,
+        "predicted_probability_average": 0.5747485456597098,
+        "actual_hit_rate": 0.6535947712418301,
+        "calibration_gap": 0.0788462255821201
+      },
+      "0.60-0.65": {
+        "count": 113,
+        "predicted_probability_average": 0.6220157714743736,
+        "actual_hit_rate": 0.6460176991150443,
+        "calibration_gap": 0.02400192764067079
+      },
+      "0.65-0.70": {
+        "count": 30,
+        "predicted_probability_average": 0.6645781999946702,
+        "actual_hit_rate": 0.6333333333333333,
+        "calibration_gap": -0.031244866661336974
+      },
+      "0.70-0.75": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.75-0.80": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.80-0.90": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.90-1.00": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      }
+    },
+    "home_over_0_5": {
+      "0.50-0.55": {
+        "count": 28,
+        "predicted_probability_average": 0.5273599657902093,
+        "actual_hit_rate": 0.35714285714285715,
+        "calibration_gap": -0.1702171086473522
+      },
+      "0.55-0.60": {
+        "count": 36,
+        "predicted_probability_average": 0.5788454074749113,
+        "actual_hit_rate": 0.4166666666666667,
+        "calibration_gap": -0.16217874080824457
+      },
+      "0.60-0.65": {
+        "count": 75,
+        "predicted_probability_average": 0.6269125499282129,
+        "actual_hit_rate": 0.6133333333333333,
+        "calibration_gap": -0.013579216594879984
+      },
+      "0.65-0.70": {
+        "count": 77,
+        "predicted_probability_average": 0.6730784411889607,
+        "actual_hit_rate": 0.5974025974025974,
+        "calibration_gap": -0.0756758437863632
+      },
+      "0.70-0.75": {
+        "count": 87,
+        "predicted_probability_average": 0.7241892601461112,
+        "actual_hit_rate": 0.8505747126436781,
+        "calibration_gap": 0.12638545249756686
+      },
+      "0.75-0.80": {
+        "count": 56,
+        "predicted_probability_average": 0.7762586420195722,
+        "actual_hit_rate": 0.9642857142857143,
+        "calibration_gap": 0.18802707226614226
+      },
+      "0.80-0.90": {
+        "count": 67,
+        "predicted_probability_average": 0.8406679391050069,
+        "actual_hit_rate": 0.9253731343283582,
+        "calibration_gap": 0.08470519522335129
+      },
+      "0.90-1.00": {
+        "count": 25,
+        "predicted_probability_average": 0.9369894763765829,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.06301052362341694
+      }
+    },
+    "away_over_0_5": {
+      "0.50-0.55": {
+        "count": 74,
+        "predicted_probability_average": 0.5250230920080095,
+        "actual_hit_rate": 0.5,
+        "calibration_gap": -0.025023092008009278
+      },
+      "0.55-0.60": {
+        "count": 80,
+        "predicted_probability_average": 0.579459814250896,
+        "actual_hit_rate": 0.475,
+        "calibration_gap": -0.10445981425089576
+      },
+      "0.60-0.65": {
+        "count": 69,
+        "predicted_probability_average": 0.6236457456683047,
+        "actual_hit_rate": 0.6376811594202898,
+        "calibration_gap": 0.014035413751985195
+      },
+      "0.65-0.70": {
+        "count": 65,
+        "predicted_probability_average": 0.671879581799103,
+        "actual_hit_rate": 0.6307692307692307,
+        "calibration_gap": -0.041110351029872275
+      },
+      "0.70-0.75": {
+        "count": 41,
+        "predicted_probability_average": 0.7209667332132002,
+        "actual_hit_rate": 0.7560975609756098,
+        "calibration_gap": 0.03513082776240954
+      },
+      "0.75-0.80": {
+        "count": 32,
+        "predicted_probability_average": 0.7765258578160069,
+        "actual_hit_rate": 0.78125,
+        "calibration_gap": 0.00472414218399304
+      },
+      "0.80-0.90": {
+        "count": 28,
+        "predicted_probability_average": 0.8421519091580695,
+        "actual_hit_rate": 0.8214285714285714,
+        "calibration_gap": -0.020723337729498293
+      },
+      "0.90-1.00": {
+        "count": 10,
+        "predicted_probability_average": 0.9269945689852774,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.07300543101472255
+      }
+    },
+    "home_over_1_5": {
+      "0.50-0.55": {
+        "count": 26,
+        "predicted_probability_average": 0.5206214872258134,
+        "actual_hit_rate": 0.5384615384615384,
+        "calibration_gap": 0.017840051235725074
+      },
+      "0.55-0.60": {
+        "count": 13,
+        "predicted_probability_average": 0.5807760383662542,
+        "actual_hit_rate": 0.6923076923076923,
+        "calibration_gap": 0.11153165394143802
+      },
+      "0.60-0.65": {
+        "count": 10,
+        "predicted_probability_average": 0.6302577131563121,
+        "actual_hit_rate": 0.7,
+        "calibration_gap": 0.06974228684368794
+      },
+      "0.65-0.70": {
+        "count": 10,
+        "predicted_probability_average": 0.6747845501922868,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.3252154498077132
+      },
+      "0.70-0.75": {
+        "count": 6,
+        "predicted_probability_average": 0.7216660890319675,
+        "actual_hit_rate": 0.8333333333333334,
+        "calibration_gap": 0.11166724430136583
+      },
+      "0.75-0.80": {
+        "count": 4,
+        "predicted_probability_average": 0.7880005405757022,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.21199945942429776
+      },
+      "0.80-0.90": {
+        "count": 9,
+        "predicted_probability_average": 0.8412750377036594,
+        "actual_hit_rate": 0.8888888888888888,
+        "calibration_gap": 0.04761385118522943
+      },
+      "0.90-1.00": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      }
+    },
+    "away_over_1_5": {
+      "0.50-0.55": {
+        "count": 12,
+        "predicted_probability_average": 0.5254977742214885,
+        "actual_hit_rate": 0.5833333333333334,
+        "calibration_gap": 0.05783555911184483
+      },
+      "0.55-0.60": {
+        "count": 6,
+        "predicted_probability_average": 0.5734369166422897,
+        "actual_hit_rate": 0.8333333333333334,
+        "calibration_gap": 0.2598964166910437
+      },
+      "0.60-0.65": {
+        "count": 6,
+        "predicted_probability_average": 0.6293361377559298,
+        "actual_hit_rate": 0.8333333333333334,
+        "calibration_gap": 0.2039971955774035
+      },
+      "0.65-0.70": {
+        "count": 2,
+        "predicted_probability_average": 0.6810860345713838,
+        "actual_hit_rate": 0.5,
+        "calibration_gap": -0.18108603457138378
+      },
+      "0.70-0.75": {
+        "count": 4,
+        "predicted_probability_average": 0.725972798105673,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.27402720189432694
+      },
+      "0.75-0.80": {
+        "count": 4,
+        "predicted_probability_average": 0.775762057487831,
+        "actual_hit_rate": 1.0,
+        "calibration_gap": 0.22423794251216897
+      },
+      "0.80-0.90": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      },
+      "0.90-1.00": {
+        "count": 0,
+        "predicted_probability_average": null,
+        "actual_hit_rate": null,
+        "calibration_gap": null
+      }
+    }
+  },
+  "summary": {
+    "by_market": {
+      "predicted_1x2": {
+        "eligible_bucket_count": 4,
+        "weighted_mean_absolute_calibration_gap": 0.1688881060021003,
+        "high_confidence_bucket_reliable": true
+      },
+      "draw_no_bet": {
+        "eligible_bucket_count": 8,
+        "weighted_mean_absolute_calibration_gap": 0.16069258392563962,
+        "high_confidence_bucket_reliable": false
+      },
+      "double_chance_1X": {
+        "eligible_bucket_count": 8,
+        "weighted_mean_absolute_calibration_gap": 0.09035543453865434,
+        "high_confidence_bucket_reliable": false
+      },
+      "double_chance_X2": {
+        "eligible_bucket_count": 7,
+        "weighted_mean_absolute_calibration_gap": 0.08022831351031354,
+        "high_confidence_bucket_reliable": false
+      },
+      "double_chance_12": {
+        "eligible_bucket_count": 4,
+        "weighted_mean_absolute_calibration_gap": 0.045707087803200264,
+        "high_confidence_bucket_reliable": true
+      },
+      "over_1_5": {
+        "eligible_bucket_count": 6,
+        "weighted_mean_absolute_calibration_gap": 0.0656839703342776,
+        "high_confidence_bucket_reliable": false
+      },
+      "over_2_5": {
+        "eligible_bucket_count": 2,
+        "weighted_mean_absolute_calibration_gap": 0.04203435970359513,
+        "high_confidence_bucket_reliable": true
+      },
+      "under_3_5": {
+        "eligible_bucket_count": 4,
+        "weighted_mean_absolute_calibration_gap": 0.0937362116066458,
+        "high_confidence_bucket_reliable": false
+      },
+      "both_teams_to_score_yes": {
+        "eligible_bucket_count": 1,
+        "weighted_mean_absolute_calibration_gap": 0.0425364436690647,
+        "high_confidence_bucket_reliable": true
+      },
+      "both_teams_to_score_no": {
+        "eligible_bucket_count": 4,
+        "weighted_mean_absolute_calibration_gap": 0.0476110997809203,
+        "high_confidence_bucket_reliable": true
+      },
+      "home_over_0_5": {
+        "eligible_bucket_count": 8,
+        "weighted_mean_absolute_calibration_gap": 0.10249569071425912,
+        "high_confidence_bucket_reliable": false
+      },
+      "away_over_0_5": {
+        "eligible_bucket_count": 7,
+        "weighted_mean_absolute_calibration_gap": 0.04118483357086258,
+        "high_confidence_bucket_reliable": true
+      },
+      "home_over_1_5": {
+        "eligible_bucket_count": 1,
+        "weighted_mean_absolute_calibration_gap": 0.017840051235725074,
+        "high_confidence_bucket_reliable": true
+      },
+      "away_over_1_5": {
+        "eligible_bucket_count": 0,
+        "weighted_mean_absolute_calibration_gap": null,
+        "high_confidence_bucket_reliable": true
+      }
+    },
+    "best_calibrated_market": "home_over_1_5",
+    "worst_calibrated_market": "predicted_1x2",
+    "high_confidence_reliability_rule": "absolute calibration gap <= 0.10 in every eligible bucket from 0.75 upward"
+  }
+}
