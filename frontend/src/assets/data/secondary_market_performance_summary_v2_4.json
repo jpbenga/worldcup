@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-06-11T22:29:39Z",
+  "version": "v2.4",
+  "engine_version": "quant_hybrid_v2.2",
+  "source_version": "v2.3",
+  "plain_language_definitions": {
+    "top_3": "The actual score appears among the three highest-probability scores.",
+    "top_5": "The actual score appears among the five highest-probability scores.",
+    "modal_score": "The single score with the highest matrix probability.",
+    "coverage": "Selections divided by all audited matches.",
+    "push": "A DNB draw returns the stake and is neither a win nor a loss.",
+    "win_excluding_push": "Wins divided by wins plus losses.",
+    "non_loss_including_push": "Wins plus pushes divided by all selections."
+  },
+  "score_matrix": {
+    "exact_score": 0.14565217391304347,
+    "top_3_score": 0.358695652173913,
+    "top_5_score": 0.5130434782608696,
+    "modal_1_1_rate": 0.23695652173913043
+  },
+  "draw_no_bet": {
+    "0.00": {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "selections": 460,
+      "wins": 287,
+      "losses": 72,
+      "pushes": 101,
+      "win_rate_excluding_pushes": 0.7994428969359332,
+      "non_loss_rate_including_pushes": 0.8434782608695652,
+      "push_rate": 0.21956521739130436,
+      "average_confidence": 0.6827856769439254,
+      "average_probability": 0.6827856769439254,
+      "calibration_gap_excluding_pushes": 0.11665721999200773
+    },
+    "0.60": {
+      "threshold": 0.6,
+      "coverage": 0.7021739130434783,
+      "selections": 323,
+      "wins": 227,
+      "losses": 32,
+      "pushes": 64,
+      "win_rate_excluding_pushes": 0.8764478764478765,
+      "non_loss_rate_including_pushes": 0.9009287925696594,
+      "push_rate": 0.19814241486068113,
+      "average_confidence": 0.7392418396741103,
+      "average_probability": 0.7392418396741103,
+      "calibration_gap_excluding_pushes": 0.1372060367737662
+    },
+    "0.70": {
+      "threshold": 0.7,
+      "coverage": 0.41304347826086957,
+      "selections": 190,
+      "wins": 147,
+      "losses": 12,
+      "pushes": 31,
+      "win_rate_excluding_pushes": 0.9245283018867925,
+      "non_loss_rate_including_pushes": 0.9368421052631579,
+      "push_rate": 0.1631578947368421,
+      "average_confidence": 0.8035756232140373,
+      "average_probability": 0.8035756232140373,
+      "calibration_gap_excluding_pushes": 0.12095267867275517
+    }
+  },
+  "matrix_markets_at_0_60": {
+    "over_0_5": {
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "selections": 460,
+      "wins": 422,
+      "losses": 38,
+      "accuracy": 0.9173913043478261,
+      "average_confidence": 0.8988743768858852,
+      "average_probability": 0.8988743768858852,
+      "calibration_gap": 0.01851692746194089,
+      "brier": 0.07437437852485747
+    },
+    "over_1_5": {
+      "threshold": 0.6,
+      "coverage": 0.8108695652173913,
+      "selections": 373,
+      "wins": 286,
+      "losses": 87,
+      "accuracy": 0.7667560321715817,
+      "average_confidence": 0.6989628822534314,
+      "average_probability": 0.6989628822534314,
+      "calibration_gap": 0.06779314991815033,
+      "brier": 0.17886233983962427
+    },
+    "over_2_5": {
+      "threshold": 0.6,
+      "coverage": 0.06304347826086956,
+      "selections": 29,
+      "wins": 26,
+      "losses": 3,
+      "accuracy": 0.896551724137931,
+      "average_confidence": 0.681414830214693,
+      "average_probability": 0.681414830214693,
+      "calibration_gap": 0.2151368939232381,
+      "brier": 0.14526394531006126
+    },
+    "under_2_5": {
+      "threshold": 0.6,
+      "coverage": 0.48695652173913045,
+      "selections": 224,
+      "wins": 131,
+      "losses": 93,
+      "accuracy": 0.5848214285714286,
+      "average_confidence": 0.6640526018995059,
+      "average_probability": 0.6640526018995059,
+      "calibration_gap": -0.07923117332807728,
+      "brier": 0.24943239772836026
+    },
+    "under_3_5": {
+      "threshold": 0.6,
+      "coverage": 0.9456521739130435,
+      "selections": 435,
+      "wins": 304,
+      "losses": 131,
+      "accuracy": 0.6988505747126437,
+      "average_confidence": 0.7966817827294658,
+      "average_probability": 0.7966817827294658,
+      "calibration_gap": -0.0978312080168221,
+      "brier": 0.2145580772617297
+    },
+    "double_chance_1X": {
+      "threshold": 0.6,
+      "coverage": 0.7565217391304347,
+      "selections": 348,
+      "wins": 285,
+      "losses": 63,
+      "accuracy": 0.8189655172413793,
+      "average_confidence": 0.7624030462437824,
+      "average_probability": 0.7624030462437824,
+      "calibration_gap": 0.056562470997596925,
+      "brier": 0.13330812019212032
+    },
+    "double_chance_X2": {
+      "threshold": 0.6,
+      "coverage": 0.4369565217391304,
+      "selections": 201,
+      "wins": 155,
+      "losses": 46,
+      "accuracy": 0.7711442786069652,
+      "average_confidence": 0.7215608276531544,
+      "average_probability": 0.7215608276531544,
+      "calibration_gap": 0.04958345095381078,
+      "brier": 0.171868944443816
+    },
+    "double_chance_12": {
+      "threshold": 0.6,
+      "coverage": 1.0,
+      "selections": 460,
+      "wins": 359,
+      "losses": 101,
+      "accuracy": 0.7804347826086957,
+      "average_confidence": 0.7397024058511108,
+      "average_probability": 0.7397024058511108,
+      "calibration_gap": 0.0407323767575849,
+      "brier": 0.16880943778923269
+    },
+    "both_teams_to_score_yes": {
+      "threshold": 0.6,
+      "coverage": 0.0,
+      "selections": 0,
+      "wins": 0,
+      "losses": 0,
+      "accuracy": null,
+      "average_confidence": null,
+      "average_probability": null,
+      "calibration_gap": null,
+      "brier": null
+    },
+    "both_teams_to_score_no": {
+      "threshold": 0.6,
+      "coverage": 0.3108695652173913,
+      "selections": 143,
+      "wins": 92,
+      "losses": 51,
+      "accuracy": 0.6433566433566433,
+      "average_confidence": 0.6309449522828273,
+      "average_probability": 0.6309449522828273,
+      "calibration_gap": 0.012411691073816011,
+      "brier": 0.23126288470816844
+    },
+    "home_over_0_5": {
+      "threshold": 0.6,
+      "coverage": 0.841304347826087,
+      "selections": 387,
+      "wins": 307,
+      "losses": 80,
+      "accuracy": 0.7932816537467701,
+      "average_confidence": 0.7366147794093636,
+      "average_probability": 0.7366147794093636,
+      "calibration_gap": 0.05666687433740647,
+      "brier": 0.1500923303232605
+    },
+    "away_over_0_5": {
+      "threshold": 0.6,
+      "coverage": 0.532608695652174,
+      "selections": 245,
+      "wins": 174,
+      "losses": 71,
+      "accuracy": 0.710204081632653,
+      "average_confidence": 0.7100505792905587,
+      "average_probability": 0.7100505792905587,
+      "calibration_gap": 0.0001535023420943249,
+      "brier": 0.19715828577229833
+    }
+  },
+  "matrix_vs_xgboost": {
+    "best_source_counts_by_brier": {
+      "xgboost_direct": 7,
+      "matrix_derived": 4
+    },
+    "one_x_two": {
+      "matrix": {
+        "accuracy": 0.6217391304347826,
+        "brier": 0.5211514878135842
+      },
+      "xgboost": {
+        "accuracy": 0.6,
+        "brier": 0.5207499254397702
+      },
+      "hybrid": {
+        "accuracy": 0.6021739130434782,
+        "brier": 0.5158034605928804
+      }
+    },
+    "limitations": [
+      "No secondary XGBoost model was retrained or reconstructed in V2.3.",
+      "Hybrid secondary performance cannot be claimed because no distinct hybrid secondary probabilities are published."
+    ]
+  },
+  "product_guidance": {
+    "show": [
+      "over_0_5",
+      "double_chance",
+      "DNB with push definition",
+      "team_over_0_5",
+      "filtered over_1_5"
+    ],
+    "warn_or_hide": [
+      "BTTS yes",
+      "clean sheets",
+      "winning margins",
+      "low-coverage high totals"
+    ]
+  }
+}

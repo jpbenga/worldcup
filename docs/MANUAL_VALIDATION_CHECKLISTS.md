@@ -574,6 +574,26 @@ Notes :
 - [ ] No active prediction regeneration
 - [ ] No secret committed
 
+## Checklist V2.4 — Active 2026 Prediction Release Candidate & Tournament Simulation
+
+- [ ] V2.2 human validation recorded
+- [ ] V2.3 human validation recorded
+- [ ] Active engine quant_hybrid_v2.2 verified
+- [ ] Active engine deployed if missing
+- [ ] 72 active predictions verified
+- [ ] 72 release-candidate predictions generated
+- [ ] Score matrices validated
+- [ ] Top scores validated
+- [ ] Markets validated
+- [ ] Secondary-market performance summary integrated
+- [ ] Tournament/group simulation generated
+- [ ] 50,000 simulations completed
+- [ ] Frontend data contracts documented
+- [ ] Product screens spec documented
+- [ ] No model retrained
+- [ ] No Optuna rerun
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

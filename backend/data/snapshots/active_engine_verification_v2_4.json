@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-11T22:33:20Z",
+  "version": "v2.4",
+  "engine_version": "quant_hybrid_v2.2",
+  "active_engine_valid": true,
+  "fixture_count": 72,
+  "match_count": 72,
+  "active_files": [
+    "backend/data/generated/predictions.json",
+    "backend/data/snapshots/predictions.json",
+    "frontend/src/assets/data/predictions.json"
+  ],
+  "files_consistent": true,
+  "metadata_enrichment_applied": true,
+  "metadata_enrichment_applied_this_run": false,
+  "fixtures_with_elapsed_kickoff_in_source_snapshot": 1,
+  "fixture_snapshot_warning": "The normalized fixture source is a release snapshot, not a live result/status feed.",
+  "model_probabilities_regenerated": false,
+  "model_retrained": false,
+  "optuna_rerun": false,
+  "validation": {
+    "prediction_count": 72,
+    "score_matrices": 72,
+    "top_scores": 72,
+    "market_blocks": 72
+  },
+  "issues": [],
+  "secret_scan": "No secret-valued fields are present in active prediction JSON."
+}

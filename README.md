@@ -386,6 +386,22 @@ metrics and active hybrid 1X2 probabilities. It also publishes calibration
 buckets, segment reports and a descriptive market audit of the 72 active World
 Cup 2026 fixtures. See `docs/ACTIVE_MATRIX_MARKET_AUDIT_V2_3.md`.
 
+## Active 2026 release candidate V2.4
+
+V2.4 verifies and packages the active `quant_hybrid_v2.2` predictions as a
+frontend release candidate, integrates the V2.3 market-performance summary and
+runs a 50,000-scenario group-stage tournament simulation.
+
+```bash
+python3 backend/scripts/verify_active_quant_engine_v2_4.py
+python3 backend/scripts/build_2026_prediction_release_candidate_v2_4.py
+python3 backend/scripts/run_worldcup_tournament_simulation_v2_4.py --simulations 50000
+```
+
+The active files contain 72 metadata-complete predictions. V2.4 simulates all
+12 groups and the best-third qualification route; it does not invent a
+knockout bracket that is not present in the source fixtures.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.
@@ -399,6 +415,6 @@ Le moteur métier reste côté backend. Angular charge uniquement les snapshots
 copiés dans `frontend/src/assets/data/`.
 
 La structure et les règles de provenance sont détaillées dans
-`docs/DATA_FOUNDATION.md`. Les fixtures actives sont réelles et futures ; les
-prédictions restent celles d'un moteur expérimental non calibré, clairement
-signalé dans l'interface.
+`docs/DATA_FOUNDATION.md`. Les fixtures actives sont réelles et les prédictions
+proviennent désormais du moteur release-candidate historiquement validé
+`quant_hybrid_v2.2`.

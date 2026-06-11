@@ -501,7 +501,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489369,
+    "home_team": "Mexico",
+    "away_team": "South Africa",
+    "kickoff_at": "2026-06-11T19:00:00+00:00",
+    "group": "Group A",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Estadio Azteca",
+    "city": "Mexico City"
   },
   {
     "prediction_id": "pred_api_football_1538999_quant_hybrid_v2.2",
@@ -1005,7 +1014,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1538999,
+    "home_team": "South Korea",
+    "away_team": "Czech Republic",
+    "kickoff_at": "2026-06-12T02:00:00+00:00",
+    "group": "Group A",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Estadio Akron",
+    "city": "Guadalajara"
   },
   {
     "prediction_id": "pred_api_football_1539000_quant_hybrid_v2.2",
@@ -1509,7 +1527,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539000,
+    "home_team": "Canada",
+    "away_team": "Bosnia & Herzegovina",
+    "kickoff_at": "2026-06-12T19:00:00+00:00",
+    "group": "Group B",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "BMO Field",
+    "city": "Toronto"
   },
   {
     "prediction_id": "pred_api_football_1489370_quant_hybrid_v2.2",
@@ -2013,7 +2040,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489370,
+    "home_team": "USA",
+    "away_team": "Paraguay",
+    "kickoff_at": "2026-06-13T01:00:00+00:00",
+    "group": "Group D",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "SoFi Stadium",
+    "city": "Los Angeles"
   },
   {
     "prediction_id": "pred_api_football_1489373_quant_hybrid_v2.2",
@@ -2517,7 +2553,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489373,
+    "home_team": "Qatar",
+    "away_team": "Switzerland",
+    "kickoff_at": "2026-06-13T19:00:00+00:00",
+    "group": "Group B",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Levi's Stadium",
+    "city": "San Francisco Bay Area"
   },
   {
     "prediction_id": "pred_api_football_1489371_quant_hybrid_v2.2",
@@ -3021,7 +3066,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489371,
+    "home_team": "Brazil",
+    "away_team": "Morocco",
+    "kickoff_at": "2026-06-13T22:00:00+00:00",
+    "group": "Group C",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "MetLife Stadium",
+    "city": "New York New Jersey"
   },
   {
     "prediction_id": "pred_api_football_1489372_quant_hybrid_v2.2",
@@ -3525,7 +3579,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489372,
+    "home_team": "Haiti",
+    "away_team": "Scotland",
+    "kickoff_at": "2026-06-14T01:00:00+00:00",
+    "group": "Group C",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Gillette Stadium",
+    "city": "Boston"
   },
   {
     "prediction_id": "pred_api_football_1539001_quant_hybrid_v2.2",
@@ -4029,7 +4092,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539001,
+    "home_team": "Australia",
+    "away_team": "Türkiye",
+    "kickoff_at": "2026-06-14T04:00:00+00:00",
+    "group": "Group D",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "BC Place",
+    "city": "Vancouver"
   },
   {
     "prediction_id": "pred_api_football_1489374_quant_hybrid_v2.2",
@@ -4533,7 +4605,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489374,
+    "home_team": "Germany",
+    "away_team": "Curaçao",
+    "kickoff_at": "2026-06-14T17:00:00+00:00",
+    "group": "Group E",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "NRG Stadium",
+    "city": "Houston"
   },
   {
     "prediction_id": "pred_api_football_1489376_quant_hybrid_v2.2",
@@ -5037,7 +5118,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489376,
+    "home_team": "Netherlands",
+    "away_team": "Japan",
+    "kickoff_at": "2026-06-14T20:00:00+00:00",
+    "group": "Group F",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "AT&T Stadium",
+    "city": "Dallas"
   },
   {
     "prediction_id": "pred_api_football_1489375_quant_hybrid_v2.2",
@@ -5541,7 +5631,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489375,
+    "home_team": "Ivory Coast",
+    "away_team": "Ecuador",
+    "kickoff_at": "2026-06-14T23:00:00+00:00",
+    "group": "Group E",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Lincoln Financial Field",
+    "city": "Philadelphia"
   },
   {
     "prediction_id": "pred_api_football_1539002_quant_hybrid_v2.2",
@@ -6045,7 +6144,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539002,
+    "home_team": "Sweden",
+    "away_team": "Tunisia",
+    "kickoff_at": "2026-06-15T02:00:00+00:00",
+    "group": "Group F",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Estadio BBVA",
+    "city": "Monterrey"
   },
   {
     "prediction_id": "pred_api_football_1489380_quant_hybrid_v2.2",
@@ -6549,7 +6657,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489380,
+    "home_team": "Spain",
+    "away_team": "Cape Verde Islands",
+    "kickoff_at": "2026-06-15T16:00:00+00:00",
+    "group": "Group H",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Mercedes-Benz Stadium",
+    "city": "Atlanta"
   },
   {
     "prediction_id": "pred_api_football_1489377_quant_hybrid_v2.2",
@@ -7053,7 +7170,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489377,
+    "home_team": "Belgium",
+    "away_team": "Egypt",
+    "kickoff_at": "2026-06-15T19:00:00+00:00",
+    "group": "Group G",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Lumen Field",
+    "city": "Seattle"
   },
   {
     "prediction_id": "pred_api_football_1489379_quant_hybrid_v2.2",
@@ -7557,7 +7683,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489379,
+    "home_team": "Saudi Arabia",
+    "away_team": "Uruguay",
+    "kickoff_at": "2026-06-15T22:00:00+00:00",
+    "group": "Group H",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Hard Rock Stadium",
+    "city": "Miami"
   },
   {
     "prediction_id": "pred_api_football_1489378_quant_hybrid_v2.2",
@@ -8061,7 +8196,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489378,
+    "home_team": "Iran",
+    "away_team": "New Zealand",
+    "kickoff_at": "2026-06-16T01:00:00+00:00",
+    "group": "Group G",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "SoFi Stadium",
+    "city": "Los Angeles"
   },
   {
     "prediction_id": "pred_api_football_1489383_quant_hybrid_v2.2",
@@ -8565,7 +8709,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489383,
+    "home_team": "France",
+    "away_team": "Senegal",
+    "kickoff_at": "2026-06-16T19:00:00+00:00",
+    "group": "Group I",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "MetLife Stadium",
+    "city": "New York New Jersey"
   },
   {
     "prediction_id": "pred_api_football_1539016_quant_hybrid_v2.2",
@@ -9069,7 +9222,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539016,
+    "home_team": "Iraq",
+    "away_team": "Norway",
+    "kickoff_at": "2026-06-16T22:00:00+00:00",
+    "group": "Group I",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Gillette Stadium",
+    "city": "Boston"
   },
   {
     "prediction_id": "pred_api_football_1489381_quant_hybrid_v2.2",
@@ -9573,7 +9735,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489381,
+    "home_team": "Argentina",
+    "away_team": "Algeria",
+    "kickoff_at": "2026-06-17T01:00:00+00:00",
+    "group": "Group J",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Arrowhead Stadium",
+    "city": "Kansas City"
   },
   {
     "prediction_id": "pred_api_football_1489382_quant_hybrid_v2.2",
@@ -10077,7 +10248,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489382,
+    "home_team": "Austria",
+    "away_team": "Jordan",
+    "kickoff_at": "2026-06-17T04:00:00+00:00",
+    "group": "Group J",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Levi's Stadium",
+    "city": "San Francisco Bay Area"
   },
   {
     "prediction_id": "pred_api_football_1539003_quant_hybrid_v2.2",
@@ -10581,7 +10761,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539003,
+    "home_team": "Portugal",
+    "away_team": "Congo DR",
+    "kickoff_at": "2026-06-17T17:00:00+00:00",
+    "group": "Group K",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "NRG Stadium",
+    "city": "Houston"
   },
   {
     "prediction_id": "pred_api_football_1489384_quant_hybrid_v2.2",
@@ -11085,7 +11274,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489384,
+    "home_team": "England",
+    "away_team": "Croatia",
+    "kickoff_at": "2026-06-17T20:00:00+00:00",
+    "group": "Group L",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "AT&T Stadium",
+    "city": "Dallas"
   },
   {
     "prediction_id": "pred_api_football_1489385_quant_hybrid_v2.2",
@@ -11589,7 +11787,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489385,
+    "home_team": "Ghana",
+    "away_team": "Panama",
+    "kickoff_at": "2026-06-17T23:00:00+00:00",
+    "group": "Group L",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "BMO Field",
+    "city": "Toronto"
   },
   {
     "prediction_id": "pred_api_football_1489386_quant_hybrid_v2.2",
@@ -12093,7 +12300,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489386,
+    "home_team": "Uzbekistan",
+    "away_team": "Colombia",
+    "kickoff_at": "2026-06-18T02:00:00+00:00",
+    "group": "Group K",
+    "stage": "group",
+    "round": "Group Stage - 1",
+    "venue": "Estadio Azteca",
+    "city": "Mexico City"
   },
   {
     "prediction_id": "pred_api_football_1539004_quant_hybrid_v2.2",
@@ -12597,7 +12813,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539004,
+    "home_team": "Czech Republic",
+    "away_team": "South Africa",
+    "kickoff_at": "2026-06-18T16:00:00+00:00",
+    "group": "Group A",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Mercedes-Benz Stadium",
+    "city": "Atlanta"
   },
   {
     "prediction_id": "pred_api_football_1539005_quant_hybrid_v2.2",
@@ -13101,7 +13326,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539005,
+    "home_team": "Switzerland",
+    "away_team": "Bosnia & Herzegovina",
+    "kickoff_at": "2026-06-18T19:00:00+00:00",
+    "group": "Group B",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "SoFi Stadium",
+    "city": "Los Angeles"
   },
   {
     "prediction_id": "pred_api_football_1489387_quant_hybrid_v2.2",
@@ -13605,7 +13839,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489387,
+    "home_team": "Canada",
+    "away_team": "Qatar",
+    "kickoff_at": "2026-06-18T22:00:00+00:00",
+    "group": "Group B",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "BC Place",
+    "city": "Vancouver"
   },
   {
     "prediction_id": "pred_api_football_1489388_quant_hybrid_v2.2",
@@ -14109,7 +14352,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489388,
+    "home_team": "Mexico",
+    "away_team": "South Korea",
+    "kickoff_at": "2026-06-19T01:00:00+00:00",
+    "group": "Group A",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Estadio Akron",
+    "city": "Guadalajara"
   },
   {
     "prediction_id": "pred_api_football_1489391_quant_hybrid_v2.2",
@@ -14613,7 +14865,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489391,
+    "home_team": "USA",
+    "away_team": "Australia",
+    "kickoff_at": "2026-06-19T19:00:00+00:00",
+    "group": "Group D",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Lumen Field",
+    "city": "Seattle"
   },
   {
     "prediction_id": "pred_api_football_1489390_quant_hybrid_v2.2",
@@ -15117,7 +15378,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489390,
+    "home_team": "Scotland",
+    "away_team": "Morocco",
+    "kickoff_at": "2026-06-19T22:00:00+00:00",
+    "group": "Group C",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Gillette Stadium",
+    "city": "Boston"
   },
   {
     "prediction_id": "pred_api_football_1489389_quant_hybrid_v2.2",
@@ -15621,7 +15891,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489389,
+    "home_team": "Brazil",
+    "away_team": "Haiti",
+    "kickoff_at": "2026-06-20T00:30:00+00:00",
+    "group": "Group C",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Lincoln Financial Field",
+    "city": "Philadelphia"
   },
   {
     "prediction_id": "pred_api_football_1539006_quant_hybrid_v2.2",
@@ -16125,7 +16404,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539006,
+    "home_team": "Türkiye",
+    "away_team": "Paraguay",
+    "kickoff_at": "2026-06-20T03:00:00+00:00",
+    "group": "Group D",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Levi's Stadium",
+    "city": "San Francisco Bay Area"
   },
   {
     "prediction_id": "pred_api_football_1539007_quant_hybrid_v2.2",
@@ -16629,7 +16917,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539007,
+    "home_team": "Netherlands",
+    "away_team": "Sweden",
+    "kickoff_at": "2026-06-20T17:00:00+00:00",
+    "group": "Group F",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "NRG Stadium",
+    "city": "Houston"
   },
   {
     "prediction_id": "pred_api_football_1489393_quant_hybrid_v2.2",
@@ -17133,7 +17430,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489393,
+    "home_team": "Germany",
+    "away_team": "Ivory Coast",
+    "kickoff_at": "2026-06-20T20:00:00+00:00",
+    "group": "Group E",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "BMO Field",
+    "city": "Toronto"
   },
   {
     "prediction_id": "pred_api_football_1489392_quant_hybrid_v2.2",
@@ -17637,7 +17943,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489392,
+    "home_team": "Ecuador",
+    "away_team": "Curaçao",
+    "kickoff_at": "2026-06-21T00:00:00+00:00",
+    "group": "Group E",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Arrowhead Stadium",
+    "city": "Kansas City"
   },
   {
     "prediction_id": "pred_api_football_1489394_quant_hybrid_v2.2",
@@ -18141,7 +18456,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489394,
+    "home_team": "Tunisia",
+    "away_team": "Japan",
+    "kickoff_at": "2026-06-21T04:00:00+00:00",
+    "group": "Group F",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Estadio BBVA",
+    "city": "Monterrey"
   },
   {
     "prediction_id": "pred_api_football_1489397_quant_hybrid_v2.2",
@@ -18645,7 +18969,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489397,
+    "home_team": "Spain",
+    "away_team": "Saudi Arabia",
+    "kickoff_at": "2026-06-21T16:00:00+00:00",
+    "group": "Group H",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Mercedes-Benz Stadium",
+    "city": "Atlanta"
   },
   {
     "prediction_id": "pred_api_football_1489395_quant_hybrid_v2.2",
@@ -19149,7 +19482,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489395,
+    "home_team": "Belgium",
+    "away_team": "Iran",
+    "kickoff_at": "2026-06-21T19:00:00+00:00",
+    "group": "Group G",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "SoFi Stadium",
+    "city": "Los Angeles"
   },
   {
     "prediction_id": "pred_api_football_1489398_quant_hybrid_v2.2",
@@ -19653,7 +19995,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489398,
+    "home_team": "Uruguay",
+    "away_team": "Cape Verde Islands",
+    "kickoff_at": "2026-06-21T22:00:00+00:00",
+    "group": "Group H",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Hard Rock Stadium",
+    "city": "Miami"
   },
   {
     "prediction_id": "pred_api_football_1489396_quant_hybrid_v2.2",
@@ -20157,7 +20508,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489396,
+    "home_team": "New Zealand",
+    "away_team": "Egypt",
+    "kickoff_at": "2026-06-22T01:00:00+00:00",
+    "group": "Group G",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "BC Place",
+    "city": "Vancouver"
   },
   {
     "prediction_id": "pred_api_football_1489399_quant_hybrid_v2.2",
@@ -20661,7 +21021,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489399,
+    "home_team": "Argentina",
+    "away_team": "Austria",
+    "kickoff_at": "2026-06-22T17:00:00+00:00",
+    "group": "Group J",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "AT&T Stadium",
+    "city": "Dallas"
   },
   {
     "prediction_id": "pred_api_football_1539017_quant_hybrid_v2.2",
@@ -21165,7 +21534,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539017,
+    "home_team": "France",
+    "away_team": "Iraq",
+    "kickoff_at": "2026-06-22T21:00:00+00:00",
+    "group": "Group I",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Lincoln Financial Field",
+    "city": "Philadelphia"
   },
   {
     "prediction_id": "pred_api_football_1489401_quant_hybrid_v2.2",
@@ -21669,7 +22047,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489401,
+    "home_team": "Norway",
+    "away_team": "Senegal",
+    "kickoff_at": "2026-06-23T00:00:00+00:00",
+    "group": "Group I",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "MetLife Stadium",
+    "city": "New York New Jersey"
   },
   {
     "prediction_id": "pred_api_football_1489400_quant_hybrid_v2.2",
@@ -22173,7 +22560,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489400,
+    "home_team": "Jordan",
+    "away_team": "Algeria",
+    "kickoff_at": "2026-06-23T03:00:00+00:00",
+    "group": "Group J",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Levi's Stadium",
+    "city": "San Francisco Bay Area"
   },
   {
     "prediction_id": "pred_api_football_1489404_quant_hybrid_v2.2",
@@ -22677,7 +23073,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489404,
+    "home_team": "Portugal",
+    "away_team": "Uzbekistan",
+    "kickoff_at": "2026-06-23T17:00:00+00:00",
+    "group": "Group K",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "NRG Stadium",
+    "city": "Houston"
   },
   {
     "prediction_id": "pred_api_football_1489402_quant_hybrid_v2.2",
@@ -23181,7 +23586,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489402,
+    "home_team": "England",
+    "away_team": "Ghana",
+    "kickoff_at": "2026-06-23T20:00:00+00:00",
+    "group": "Group L",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Gillette Stadium",
+    "city": "Boston"
   },
   {
     "prediction_id": "pred_api_football_1489403_quant_hybrid_v2.2",
@@ -23685,7 +24099,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489403,
+    "home_team": "Panama",
+    "away_team": "Croatia",
+    "kickoff_at": "2026-06-23T23:00:00+00:00",
+    "group": "Group L",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "BMO Field",
+    "city": "Toronto"
   },
   {
     "prediction_id": "pred_api_football_1539008_quant_hybrid_v2.2",
@@ -24189,7 +24612,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539008,
+    "home_team": "Colombia",
+    "away_team": "Congo DR",
+    "kickoff_at": "2026-06-24T02:00:00+00:00",
+    "group": "Group K",
+    "stage": "group",
+    "round": "Group Stage - 2",
+    "venue": "Estadio Akron",
+    "city": "Guadalajara"
   },
   {
     "prediction_id": "pred_api_football_1489408_quant_hybrid_v2.2",
@@ -24693,7 +25125,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489408,
+    "home_team": "Switzerland",
+    "away_team": "Canada",
+    "kickoff_at": "2026-06-24T19:00:00+00:00",
+    "group": "Group B",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "BC Place",
+    "city": "Vancouver"
   },
   {
     "prediction_id": "pred_api_football_1539009_quant_hybrid_v2.2",
@@ -25197,7 +25638,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539009,
+    "home_team": "Bosnia & Herzegovina",
+    "away_team": "Qatar",
+    "kickoff_at": "2026-06-24T19:00:00+00:00",
+    "group": "Group B",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Lumen Field",
+    "city": "Seattle"
   },
   {
     "prediction_id": "pred_api_football_1489405_quant_hybrid_v2.2",
@@ -25701,7 +26151,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489405,
+    "home_team": "Morocco",
+    "away_team": "Haiti",
+    "kickoff_at": "2026-06-24T22:00:00+00:00",
+    "group": "Group C",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Mercedes-Benz Stadium",
+    "city": "Atlanta"
   },
   {
     "prediction_id": "pred_api_football_1489406_quant_hybrid_v2.2",
@@ -26205,7 +26664,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489406,
+    "home_team": "Scotland",
+    "away_team": "Brazil",
+    "kickoff_at": "2026-06-24T22:00:00+00:00",
+    "group": "Group C",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Hard Rock Stadium",
+    "city": "Miami"
   },
   {
     "prediction_id": "pred_api_football_1539010_quant_hybrid_v2.2",
@@ -26709,7 +27177,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539010,
+    "home_team": "Czech Republic",
+    "away_team": "Mexico",
+    "kickoff_at": "2026-06-25T01:00:00+00:00",
+    "group": "Group A",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Estadio Azteca",
+    "city": "Mexico City"
   },
   {
     "prediction_id": "pred_api_football_1489407_quant_hybrid_v2.2",
@@ -27213,7 +27690,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489407,
+    "home_team": "South Africa",
+    "away_team": "South Korea",
+    "kickoff_at": "2026-06-25T01:00:00+00:00",
+    "group": "Group A",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Estadio BBVA",
+    "city": "Monterrey"
   },
   {
     "prediction_id": "pred_api_football_1489410_quant_hybrid_v2.2",
@@ -27717,7 +28203,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489410,
+    "home_team": "Ecuador",
+    "away_team": "Germany",
+    "kickoff_at": "2026-06-25T20:00:00+00:00",
+    "group": "Group E",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "MetLife Stadium",
+    "city": "New York New Jersey"
   },
   {
     "prediction_id": "pred_api_football_1489409_quant_hybrid_v2.2",
@@ -28221,7 +28716,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489409,
+    "home_team": "Curaçao",
+    "away_team": "Ivory Coast",
+    "kickoff_at": "2026-06-25T20:00:00+00:00",
+    "group": "Group E",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Lincoln Financial Field",
+    "city": "Philadelphia"
   },
   {
     "prediction_id": "pred_api_football_1539011_quant_hybrid_v2.2",
@@ -28725,7 +29229,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539011,
+    "home_team": "Japan",
+    "away_team": "Sweden",
+    "kickoff_at": "2026-06-25T23:00:00+00:00",
+    "group": "Group F",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "AT&T Stadium",
+    "city": "Dallas"
   },
   {
     "prediction_id": "pred_api_football_1489412_quant_hybrid_v2.2",
@@ -29229,7 +29742,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489412,
+    "home_team": "Tunisia",
+    "away_team": "Netherlands",
+    "kickoff_at": "2026-06-25T23:00:00+00:00",
+    "group": "Group F",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Arrowhead Stadium",
+    "city": "Kansas City"
   },
   {
     "prediction_id": "pred_api_football_1539012_quant_hybrid_v2.2",
@@ -29733,7 +30255,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539012,
+    "home_team": "Türkiye",
+    "away_team": "USA",
+    "kickoff_at": "2026-06-26T02:00:00+00:00",
+    "group": "Group D",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "SoFi Stadium",
+    "city": "Los Angeles"
   },
   {
     "prediction_id": "pred_api_football_1489411_quant_hybrid_v2.2",
@@ -30237,7 +30768,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489411,
+    "home_team": "Paraguay",
+    "away_team": "Australia",
+    "kickoff_at": "2026-06-26T02:00:00+00:00",
+    "group": "Group D",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Levi's Stadium",
+    "city": "San Francisco Bay Area"
   },
   {
     "prediction_id": "pred_api_football_1539074_quant_hybrid_v2.2",
@@ -30741,7 +31281,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539074,
+    "home_team": "Senegal",
+    "away_team": "Iraq",
+    "kickoff_at": "2026-06-26T19:00:00+00:00",
+    "group": "Group I",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "BMO Field",
+    "city": "Toronto"
   },
   {
     "prediction_id": "pred_api_football_1489416_quant_hybrid_v2.2",
@@ -31245,7 +31794,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489416,
+    "home_team": "Norway",
+    "away_team": "France",
+    "kickoff_at": "2026-06-26T19:00:00+00:00",
+    "group": "Group I",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Gillette Stadium",
+    "city": "Boston"
   },
   {
     "prediction_id": "pred_api_football_1489417_quant_hybrid_v2.2",
@@ -31749,7 +32307,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489417,
+    "home_team": "Uruguay",
+    "away_team": "Spain",
+    "kickoff_at": "2026-06-27T00:00:00+00:00",
+    "group": "Group H",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Estadio Akron",
+    "city": "Guadalajara"
   },
   {
     "prediction_id": "pred_api_football_1489413_quant_hybrid_v2.2",
@@ -32253,7 +32820,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489413,
+    "home_team": "Cape Verde Islands",
+    "away_team": "Saudi Arabia",
+    "kickoff_at": "2026-06-27T00:00:00+00:00",
+    "group": "Group H",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "NRG Stadium",
+    "city": "Houston"
   },
   {
     "prediction_id": "pred_api_football_1489414_quant_hybrid_v2.2",
@@ -32757,7 +33333,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489414,
+    "home_team": "Egypt",
+    "away_team": "Iran",
+    "kickoff_at": "2026-06-27T03:00:00+00:00",
+    "group": "Group G",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Lumen Field",
+    "city": "Seattle"
   },
   {
     "prediction_id": "pred_api_football_1489415_quant_hybrid_v2.2",
@@ -33261,7 +33846,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489415,
+    "home_team": "New Zealand",
+    "away_team": "Belgium",
+    "kickoff_at": "2026-06-27T03:00:00+00:00",
+    "group": "Group G",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "BC Place",
+    "city": "Vancouver"
   },
   {
     "prediction_id": "pred_api_football_1489420_quant_hybrid_v2.2",
@@ -33765,7 +34359,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489420,
+    "home_team": "Croatia",
+    "away_team": "Ghana",
+    "kickoff_at": "2026-06-27T21:00:00+00:00",
+    "group": "Group L",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Lincoln Financial Field",
+    "city": "Philadelphia"
   },
   {
     "prediction_id": "pred_api_football_1489422_quant_hybrid_v2.2",
@@ -34269,7 +34872,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489422,
+    "home_team": "Panama",
+    "away_team": "England",
+    "kickoff_at": "2026-06-27T21:00:00+00:00",
+    "group": "Group L",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "MetLife Stadium",
+    "city": "New York New Jersey"
   },
   {
     "prediction_id": "pred_api_football_1489419_quant_hybrid_v2.2",
@@ -34773,7 +35385,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489419,
+    "home_team": "Colombia",
+    "away_team": "Portugal",
+    "kickoff_at": "2026-06-27T23:30:00+00:00",
+    "group": "Group K",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Hard Rock Stadium",
+    "city": "Miami"
   },
   {
     "prediction_id": "pred_api_football_1539013_quant_hybrid_v2.2",
@@ -35277,7 +35898,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1539013,
+    "home_team": "Congo DR",
+    "away_team": "Uzbekistan",
+    "kickoff_at": "2026-06-27T23:30:00+00:00",
+    "group": "Group K",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Mercedes-Benz Stadium",
+    "city": "Atlanta"
   },
   {
     "prediction_id": "pred_api_football_1489418_quant_hybrid_v2.2",
@@ -35781,7 +36411,16 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489418,
+    "home_team": "Algeria",
+    "away_team": "Austria",
+    "kickoff_at": "2026-06-28T02:00:00+00:00",
+    "group": "Group J",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "Arrowhead Stadium",
+    "city": "Kansas City"
   },
   {
     "prediction_id": "pred_api_football_1489421_quant_hybrid_v2.2",
@@ -36285,6 +36924,15 @@
         "away_effective_smoothing": 6.0
       },
       "pre_match_only": true
-    }
+    },
+    "fixture_id": 1489421,
+    "home_team": "Jordan",
+    "away_team": "Argentina",
+    "kickoff_at": "2026-06-28T02:00:00+00:00",
+    "group": "Group J",
+    "stage": "group",
+    "round": "Group Stage - 3",
+    "venue": "AT&T Stadium",
+    "city": "Dallas"
   }
 ]

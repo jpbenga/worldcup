@@ -280,3 +280,17 @@ pushes and `90.1%` non-loss including pushes at `70.2%` coverage. The 90%
 claim therefore applies only when pushes count as non-losses. BTTS yes, clean
 sheets, winning margins and several high-total lines remain too sparse or
 unstable for unqualified product display.
+
+## V2.4 active prediction release candidate
+
+V2.4 turns the accepted active engine into a product release candidate without
+retuning. It verifies and metadata-enriches the 72 active prediction files,
+publishes a frontend-oriented match contract, integrates the V2.3
+secondary-market evidence and runs 50,000 group-stage tournament scenarios.
+
+All 12 groups and 48 teams are simulated using the active score matrices. The
+top two teams per group and eight best third-placed teams qualify. Full
+tournament simulation remains unavailable because no complete knockout
+fixture or bracket contract exists; V2.4 does not invent one. The next product
+work can consume the documented match-detail, matrix, markets, group
+simulation and transparency contracts.

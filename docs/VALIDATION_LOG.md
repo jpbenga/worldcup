@@ -1030,7 +1030,7 @@ Decision:
 
 ## V2.2 — Limited Quant Retrain on Refreshed Dataset
 
-Commit: TBD
+Commit: `7d919e3 Retrain quant engine on refreshed historical data`
 
 ### Technical validation
 
@@ -1054,11 +1054,17 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] V2.2 accepted as active quant engine
+- [x] Deployment decision accepted: deploy_active_engine
+- [x] Active engine accepted: quant_hybrid_v2.2
+- [x] 72 active World Cup 2026 predictions accepted as required output
+- [x] Historical test improvement accepted
+- [x] DNB and secondary-market progress accepted
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
@@ -1078,7 +1084,7 @@ Active engine replacement: yes
 
 ## V2.3 — Active Matrix Secondary Market Performance Audit
 
-Commit: TBD
+Commit: `a2260ae Audit active matrix secondary market performance`
 
 ### Technical validation
 
@@ -1102,11 +1108,15 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] V2.3 accepted as market-performance audit
+- [x] Matrix-derived, XGBoost direct and hybrid sources separated
+- [x] Secondary-market performance accepted as useful context
+- [x] Decision accepted: integrate market-performance summary into the next roadmap iteration, not as a standalone micro-iteration
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
@@ -1123,4 +1133,53 @@ Matrix over 0.5 >= 0.60: 91.7% accuracy at 100.0% coverage
 No model retrained: yes
 No Optuna rerun: yes
 No active predictions regenerated: yes
+```
+
+## V2.4 — Active 2026 Prediction Release Candidate & Tournament Simulation
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.2 human validation recorded
+- [x] V2.3 human validation recorded
+- [x] Active engine quant_hybrid_v2.2 verified
+- [x] Active engine deployed if missing
+- [x] 72 active predictions verified
+- [x] 72 release-candidate predictions generated
+- [x] Score matrices validated
+- [x] Top scores validated
+- [x] Markets validated
+- [x] Secondary-market performance summary integrated
+- [x] Tournament/group simulation generated
+- [x] 50,000 simulations completed
+- [x] Frontend data contracts documented
+- [x] Product screens spec documented
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.4 result
+
+```text
+Active engine: quant_hybrid_v2.2
+Active engine valid: yes
+Active predictions: 72
+Metadata enrichment applied: yes
+Model probabilities regenerated: no
+Release-candidate predictions: 72
+Release-candidate incoherence flags: 25
+Group-stage simulations: 50,000
+Teams / groups: 48 / 12
+Full tournament simulation: unavailable; knockout bracket not present
 ```
