@@ -870,9 +870,9 @@ Commit: TBD
 - [ ] Validated with reservations
 - [ ] Not validated
 
-## V2.0 — Quant Hybrid Engine with Active Deployment
+## V2.0 — Quant Hybrid Engine with XGBoost and Optuna
 
-Commit: TBD
+Commit: `3b16043 Build quant hybrid engine with XGBoost and Optuna`
 
 ### Technical validation
 
@@ -890,8 +890,8 @@ Commit: TBD
 - [x] DNB metrics distinguish wins, losses and pushes
 - [x] Favorite-score alignment audited
 - [x] Deployment decision documented
-- [x] Active engine replaced if model established
-- [x] 2026 predictions regenerated if deployed
+- [x] Active engine not replaced because model was not established
+- [x] 2026 active predictions not modified
 - [x] JSON artifacts validation passed
 - [x] Python compilation passed
 - [x] Frontend build passed
@@ -900,17 +900,29 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] V2.0 accepted as technically successful
+- [x] V2.0 rejected for active deployment
+- [x] Overfitting concern accepted
+- [x] 1-1 modal concentration concern accepted
+- [x] DNB benchmark failure accepted
+- [x] Data freshness limitation accepted
+- [x] Decision accepted: do_not_deploy
+- [x] Next step accepted: historical data refresh and feature coverage upgrade
 
-### Result
-
-- [ ] Validated
-- [ ] Validated with reservations
-- [ ] Not validated
-
-### Automated result
+### Observed V2.0 summary
 
 ```text
+Engine:
+- internal chronological rating
+- 24 pre-match features
+- XGBoost 3.2.0
+- Optuna 4.9.0
+- historical replay
+- secondary markets
+- Poisson score matrix
+- Monte Carlo 1,500 simulations per match
+
 Deployment decision: do_not_deploy
 Validation log loss / Brier: 0.9602 / 0.5694
 Test log loss / Brier: 1.0513 / 0.6367
@@ -925,7 +937,91 @@ Active history staleness: 696 days
 Active 2026 predictions modified by V2.0: no
 ```
 
-V2.0 is technically reproducible but not established. It overfits validation,
-regresses against V0.9 on final test, remains too concentrated on modal `1-1`,
-and lacks sufficiently fresh historical inputs for responsible active 2026
-deployment.
+### Result
+
+- [ ] Validated
+- [x] Validated with strong reservations
+- [ ] Not validated
+
+### Notes
+
+Human review completed. V2.0 is accepted as a technically successful quant
+rebuild but rejected for active deployment. The model demonstrates useful
+infrastructure but does not generalize well enough on test, remains too
+concentrated on 1-1, misses the DNB benchmark and shows overfitting. The next
+phase must enrich and refresh the historical dataset before any further model
+tuning or deployment attempt.
+
+## V2.1 — Historical Data Refresh & Feature Coverage Upgrade
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.0 human validation recorded with strong reservations
+- [x] API-Football coverage discovered
+- [x] Recent international history refreshed
+- [x] Finished matches only
+- [x] Club matches excluded
+- [x] Future World Cup 2026 fixtures excluded
+- [x] Match statistics availability audited
+- [x] Events availability audited
+- [x] Lineups availability audited
+- [x] Venue/neutrality availability audited
+- [x] xG or xG-proxy feasibility audited
+- [x] Chronological refreshed splits created
+- [x] Temporal leakage audit passed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] No 2026 active predictions modified
+- [x] JSON and documentation validation passed
+- [x] Frontend build passed
+- [x] Frontend tests passed
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.1 result
+
+```text
+Coverage discovery:
+- competitions checked: 14
+- competition-seasons checked: 64
+- cached discovery requests: 0
+
+Historical refresh:
+- API requests: 11
+- old matches: 1,311
+- refreshed matches: 3,062
+- matches added: 1,751
+- non-senior friendlies excluded: 429
+- previous latest match: 2024-07-15
+- refreshed latest match: 2026-03-31
+- refreshed-history staleness: 71 days
+
+Feature probe:
+- API requests: 18
+- sample matches: 6
+- statistics available: 6/6
+- events available: 6/6
+- lineups available: 6/6
+- reliable neutral flag: unavailable
+- true provider xG: available on 2/12 sampled team-stat rows
+- true provider xG coverage sufficient: no
+- exploratory xG-proxy: technically possible
+- broad proxy coverage proven: no
+
+Decision:
+- proceed_to_v2_2_limited_retrain
+- model retrained: no
+- Optuna rerun: no
+- active 2026 predictions modified: no
+```

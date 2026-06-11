@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-11T18:04:34Z",
+  "version": "v2.1",
+  "model_retrained": false,
+  "optuna_rerun": false,
+  "status": "feature_probe",
+  "request_count": 18,
+  "sample_matches": 6,
+  "statistics_available_matches": 6,
+  "events_available_matches": 6,
+  "lineups_available_matches": 6,
+  "venue_available_matches": 5,
+  "neutral_flag_available_matches": 0,
+  "coverage": {
+    "statistics": 1.0,
+    "events": 1.0,
+    "lineups": 1.0
+  },
+  "post_match_features_not_valid_for_same_match_prediction": true,
+  "odds_used_as_feature": false,
+  "failures": [],
+  "limitations": [
+    "The bounded sample measures feasibility, not whole-dataset coverage.",
+    "Statistics, events and lineups are post-match evidence and require lagged aggregation for V2.2.",
+    "No reliable neutral flag was found in normalized fixture records."
+  ]
+}

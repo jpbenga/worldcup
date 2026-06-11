@@ -233,3 +233,20 @@ analytical Poisson model. Promotion is no longer categorically forbidden, but
 the active engine changes only if all quantitative, coherence, leakage,
 overfit, and operational-data gates pass. The measured decision is documented
 in `docs/ACTIVE_ENGINE_DEPLOYMENT_V2_0.md`.
+
+## V2.1 historical data refresh and feature coverage
+
+V2.1 responds to V2.0's stale-data and overfit findings without retraining the
+model. It expands completed senior-international history from `1,311` to
+`3,062` matches after excluding `429` non-senior friendlies, and moves the
+latest historical date from July 15, 2024 to
+March 31, 2026. The refreshed chronological test period is only `71` days old
+at generation time.
+
+API-Football metadata and a bounded six-match probe show that statistics,
+events and lineups can be available, but broad cross-era coverage is not yet
+proven. Provider xG appears on only `2/12` sampled team-stat rows, and the
+exploratory shots-based proxy is not approved as a primary feature. The V2.1 decision is
+`proceed_to_v2_2_limited_retrain`: a future V2.2 may benchmark the refreshed
+result-history signals, while advanced features require a larger coverage
+audit first.

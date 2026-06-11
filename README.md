@@ -335,6 +335,25 @@ separately and leaves active World Cup 2026 predictions unchanged. See
 `docs/QUANT_ENGINE_V2_0_RESULTS.md` and
 `docs/ACTIVE_ENGINE_DEPLOYMENT_V2_0.md`.
 
+## Historical data refresh V2.1
+
+V2.1 is a data-only follow-up to the non-deployed V2.0 engine. It refreshes
+completed senior-international history, measures API-Football statistics,
+events and lineup availability, audits exploratory xG-proxy feasibility,
+creates refreshed chronological splits and checks temporal leakage.
+
+```bash
+python3 backend/scripts/discover_api_football_feature_coverage_v2_1.py
+python3 backend/scripts/fetch_recent_international_history_v2_1.py
+python3 backend/scripts/fetch_match_features_v2_1.py
+python3 backend/scripts/build_xg_proxy_feature_report_v2_1.py
+python3 backend/scripts/build_refreshed_historical_splits_v2_1.py
+python3 backend/scripts/audit_temporal_leakage_v2_1.py
+```
+
+V2.1 does not train XGBoost, run Optuna or modify active 2026 predictions. See
+`docs/DATA_SIGNAL_UPGRADE_RECOMMENDATION_V2_1.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

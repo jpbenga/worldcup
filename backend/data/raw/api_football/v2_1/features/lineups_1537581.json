@@ -1,0 +1,486 @@
+{
+  "get": "fixtures/lineups",
+  "parameters": {
+    "fixture": "1537581"
+  },
+  "errors": [],
+  "results": 2,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 5,
+        "name": "Sweden",
+        "logo": "https://media.api-sports.io/football/teams/5.png",
+        "colors": {
+          "player": {
+            "primary": "f3ef97",
+            "number": "000000",
+            "border": "f3ef97"
+          },
+          "goalkeeper": {
+            "primary": "089f67",
+            "number": "ffffff",
+            "border": "089f67"
+          }
+        }
+      },
+      "coach": {
+        "id": 7682,
+        "name": "Jon Dahl Tomasson",
+        "photo": "https://media.api-sports.io/football/coachs/7682.png"
+      },
+      "formation": "3-4-2-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 2851,
+            "name": "K. Nordfeldt",
+            "number": 23,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 137721,
+            "name": "G. Lagerbielke",
+            "number": 2,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 47988,
+            "name": "C. Starfelt",
+            "number": 15,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 889,
+            "name": "V. Lindelof",
+            "number": 3,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 198654,
+            "name": "D. Svensson",
+            "number": 8,
+            "pos": "M",
+            "grid": "3:4"
+          }
+        },
+        {
+          "player": {
+            "id": 265820,
+            "name": "Y. Ayari",
+            "number": 18,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 48047,
+            "name": "J. Karlstrom",
+            "number": 16,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 47969,
+            "name": "G. Gudmundsson",
+            "number": 5,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 153430,
+            "name": "A. Elanga",
+            "number": 11,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 48002,
+            "name": "B. Nygren",
+            "number": 10,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        },
+        {
+          "player": {
+            "id": 18979,
+            "name": "V. Gyökeres",
+            "number": 17,
+            "pos": "F",
+            "grid": "5:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 278454,
+            "name": "M. Ellborg",
+            "number": 12,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 193328,
+            "name": "N. Tornqvist",
+            "number": 1,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 15683,
+            "name": "G. Nilsson",
+            "number": 9,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 30484,
+            "name": "M. Svanberg",
+            "number": 19,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 160925,
+            "name": "T. Ali",
+            "number": 21,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 269163,
+            "name": "W. Swedberg",
+            "number": 6,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 239472,
+            "name": "G. Lundgren",
+            "number": 14,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 100155,
+            "name": "V. Eriksson",
+            "number": 4,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 226765,
+            "name": "E. Stroud",
+            "number": 13,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 335094,
+            "name": "H. Larsson",
+            "number": 20,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 347316,
+            "name": "L. Bergvall",
+            "number": 7,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 350850,
+            "name": "B. Zeneli",
+            "number": 22,
+            "pos": "M",
+            "grid": null
+          }
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": 24,
+        "name": "Poland",
+        "logo": "https://media.api-sports.io/football/teams/24.png",
+        "colors": {
+          "player": {
+            "primary": "ffffff",
+            "number": "d0021f",
+            "border": "ffffff"
+          },
+          "goalkeeper": {
+            "primary": "00e031",
+            "number": "ffffff",
+            "border": "00e031"
+          }
+        }
+      },
+      "coach": {
+        "id": 15260,
+        "name": "Jan Urban",
+        "photo": "https://media.api-sports.io/football/coachs/15260.png"
+      },
+      "formation": "3-4-2-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 15573,
+            "name": "K. Grabara",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 40231,
+            "name": "P. Wisniewski",
+            "number": 3,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 2999,
+            "name": "J. Bednarek",
+            "number": 5,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 61431,
+            "name": "J. Kiwior",
+            "number": 14,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 19298,
+            "name": "M. Cash",
+            "number": 2,
+            "pos": "M",
+            "grid": "3:4"
+          }
+        },
+        {
+          "player": {
+            "id": 40403,
+            "name": "S. Szymanski",
+            "number": 20,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 329,
+            "name": "P. Zielinski",
+            "number": 10,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 203474,
+            "name": "N. Zalewski",
+            "number": 21,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 2385,
+            "name": "K. Swiderski",
+            "number": 7,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 40560,
+            "name": "J. Kaminski",
+            "number": 13,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        },
+        {
+          "player": {
+            "id": 521,
+            "name": "R. Lewandowski",
+            "number": 9,
+            "pos": "F",
+            "grid": "5:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 128640,
+            "name": "M. Kochalski",
+            "number": 12,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 31035,
+            "name": "B. Dragowski",
+            "number": 22,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 3012,
+            "name": "K. Grosicki",
+            "number": 11,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 3000,
+            "name": "B. Bereszynski",
+            "number": 18,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 1651,
+            "name": "K. Piatek",
+            "number": 23,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 40911,
+            "name": "J. Moder",
+            "number": 8,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 40809,
+            "name": "M. Skoras",
+            "number": 19,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 384543,
+            "name": "J. Ziolkowski",
+            "number": 16,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 394955,
+            "name": "F. Rozga",
+            "number": 17,
+            "pos": null,
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 2164,
+            "name": "T. Kedziora",
+            "number": 4,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 40534,
+            "name": "B. Slisz",
+            "number": 6,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 442540,
+            "name": "O. Pietuszewski",
+            "number": 15,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ]
+    }
+  ]
+}

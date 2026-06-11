@@ -510,6 +510,26 @@ Notes :
 - [ ] 2026 predictions regenerated if deployed
 - [ ] No secret committed
 
+## Checklist V2.1 — Historical Data Refresh & Feature Coverage Upgrade
+
+- [ ] V2.0 human validation recorded with strong reservations
+- [ ] API-Football coverage discovered
+- [ ] Recent international history refreshed
+- [ ] Finished matches only
+- [ ] Club matches excluded
+- [ ] Future World Cup 2026 fixtures excluded
+- [ ] Match statistics availability audited
+- [ ] Events availability audited
+- [ ] Lineups availability audited
+- [ ] Venue/neutrality availability audited
+- [ ] xG or xG-proxy feasibility audited
+- [ ] Chronological refreshed splits created
+- [ ] Temporal leakage audit passed
+- [ ] No model retrained
+- [ ] No Optuna rerun
+- [ ] No 2026 active predictions modified
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

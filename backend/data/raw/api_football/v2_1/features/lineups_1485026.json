@@ -1,0 +1,450 @@
+{
+  "get": "fixtures/lineups",
+  "parameters": {
+    "fixture": "1485026"
+  },
+  "errors": [],
+  "results": 2,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png",
+        "colors": {
+          "player": {
+            "primary": "ffffff",
+            "number": "000000",
+            "border": "ffffff"
+          },
+          "goalkeeper": {
+            "primary": "dcff26",
+            "number": "65635b",
+            "border": "dcff26"
+          }
+        }
+      },
+      "formation": "4-2-3-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 2417,
+            "name": "Pedro Gallese",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 291686,
+            "name": "Marco Huaman",
+            "number": 2,
+            "pos": "D",
+            "grid": "2:4"
+          }
+        },
+        {
+          "player": {
+            "id": 39781,
+            "name": "Gianfranco Chávez",
+            "number": 4,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 39838,
+            "name": "Alfonso Barco",
+            "number": 15,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 196693,
+            "name": "Mathias Llontop",
+            "number": 6,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 39826,
+            "name": "Jorge Murrugarra",
+            "number": 13,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 39388,
+            "name": "Jesús Castillo",
+            "number": 16,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 39376,
+            "name": "Carlos Cabello",
+            "number": 14,
+            "pos": "M",
+            "grid": "4:3"
+          }
+        },
+        {
+          "player": {
+            "id": 39607,
+            "name": "Rodrigo Vilca",
+            "number": 22,
+            "pos": "M",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 118339,
+            "name": "Christian Neira",
+            "number": 10,
+            "pos": "M",
+            "grid": "4:1"
+          }
+        },
+        {
+          "player": {
+            "id": 63979,
+            "name": "Matías Succar",
+            "number": 9,
+            "pos": "F",
+            "grid": "5:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 454727,
+            "name": "Hernan Lupú",
+            "number": 18,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 196345,
+            "name": "Erick Canales",
+            "number": 3,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 314660,
+            "name": "Piero Magallanes",
+            "number": 17,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 414371,
+            "name": "Bassco Soyer",
+            "number": 20,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 354813,
+            "name": "Sebastian Aranda",
+            "number": 23,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 363130,
+            "name": "Juan Pablo Goicochea",
+            "number": 7,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 39587,
+            "name": "Steven Rivadeneyra",
+            "number": 21,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 39975,
+            "name": "Daniel Prieto",
+            "number": 12,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 39777,
+            "name": "Emile Franco",
+            "number": 32,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 463946,
+            "name": "Rafael Guzmán",
+            "number": 25,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 382987,
+            "name": "Jhair Soto",
+            "number": 24,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 373774,
+            "name": "Alvaro Rojas",
+            "number": 8,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 431653,
+            "name": "Juan Martínez",
+            "number": 19,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 4082,
+        "name": "Óscar Manuel Ibáñez Holzmann",
+        "photo": "https://media.api-sports.io/football/coachs/4082.png"
+      }
+    },
+    {
+      "team": {
+        "id": 2381,
+        "name": "Bolivia",
+        "logo": "https://media.api-sports.io/football/teams/2381.png",
+        "colors": {
+          "player": {
+            "primary": "ffffff",
+            "number": "ab986b",
+            "border": "ffffff"
+          },
+          "goalkeeper": {
+            "primary": "11538a",
+            "number": "f0ecec",
+            "border": "11538a"
+          }
+        }
+      },
+      "formation": "4-1-4-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 509430,
+            "name": "Gerónimo Govea",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 307545,
+            "name": "Diego Medina",
+            "number": 3,
+            "pos": "D",
+            "grid": "2:4"
+          }
+        },
+        {
+          "player": {
+            "id": 414459,
+            "name": "Marcelo Torrez",
+            "number": 2,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 362712,
+            "name": "Leonardo Zabala",
+            "number": 22,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 551405,
+            "name": "Marcelo Timorán",
+            "number": 14,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 191858,
+            "name": "Leonardo Justiniano",
+            "number": 16,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 65766,
+            "name": "Gustavo Peredo",
+            "number": 18,
+            "pos": "M",
+            "grid": "4:4"
+          }
+        },
+        {
+          "player": {
+            "id": 345584,
+            "name": "Carlos Sejas",
+            "number": 8,
+            "pos": "M",
+            "grid": "4:3"
+          }
+        },
+        {
+          "player": {
+            "id": 65978,
+            "name": "Adalid Terrazas",
+            "number": 10,
+            "pos": "M",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 404644,
+            "name": "Fernando Nava",
+            "number": 11,
+            "pos": "M",
+            "grid": "4:1"
+          }
+        },
+        {
+          "player": {
+            "id": 191855,
+            "name": "José Martínez",
+            "number": 15,
+            "pos": "F",
+            "grid": "5:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 65718,
+            "name": "Widen Saucedo",
+            "number": 6,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 513550,
+            "name": "Jesús Maraude",
+            "number": 20,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 65645,
+            "name": "Dario Torrico",
+            "number": 7,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 499908,
+            "name": "Óscar López",
+            "number": 5,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 349164,
+            "name": "Bruno Poveda",
+            "number": 12,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 606789,
+            "name": "Carlos Fabian Borda",
+            "number": 23,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 506488,
+            "name": "Lucas Macazaga",
+            "number": 17,
+            "pos": "D",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 19933,
+        "name": "Óscar Adolfo Villegas Cámara",
+        "photo": "https://media.api-sports.io/football/coachs/19933.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "get": "fixtures/events",
+  "parameters": {
+    "fixture": "1485026"
+  },
+  "errors": [],
+  "results": 15,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "time": {
+        "elapsed": 17,
+        "extra": null
+      },
+      "team": {
+        "id": 2381,
+        "name": "Bolivia",
+        "logo": "https://media.api-sports.io/football/teams/2381.png"
+      },
+      "player": {
+        "id": 362712,
+        "name": "Leonardo Zabala"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Argument"
+    },
+    {
+      "time": {
+        "elapsed": 28,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 39826,
+        "name": "Jorge Murrugarra"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
+    },
+    {
+      "time": {
+        "elapsed": 44,
+        "extra": null
+      },
+      "team": {
+        "id": 2381,
+        "name": "Bolivia",
+        "logo": "https://media.api-sports.io/football/teams/2381.png"
+      },
+      "player": {
+        "id": 345584,
+        "name": "Carlos Sejas"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": "Foul"
+    },
+    {
+      "time": {
+        "elapsed": 46,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 39826,
+        "name": "Jorge Murrugarra"
+      },
+      "assist": {
+        "id": 454727,
+        "name": "Hernan Lupú"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 46,
+        "extra": null
+      },
+      "team": {
+        "id": 2381,
+        "name": "Bolivia",
+        "logo": "https://media.api-sports.io/football/teams/2381.png"
+      },
+      "player": {
+        "id": 551405,
+        "name": "Marcelo Timorán"
+      },
+      "assist": {
+        "id": 65718,
+        "name": "Widen Saucedo"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 57,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 291686,
+        "name": "Marco Huaman"
+      },
+      "assist": {
+        "id": 196345,
+        "name": "Erick Canales"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 70,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 118339,
+        "name": "Christian Neira"
+      },
+      "assist": {
+        "id": 314660,
+        "name": "Piero Magallanes"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 70,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 39607,
+        "name": "Rodrigo Vilca"
+      },
+      "assist": {
+        "id": 414371,
+        "name": "Bassco Soyer"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 74,
+        "extra": null
+      },
+      "team": {
+        "id": 2381,
+        "name": "Bolivia",
+        "logo": "https://media.api-sports.io/football/teams/2381.png"
+      },
+      "player": {
+        "id": 65766,
+        "name": "Gustavo Peredo"
+      },
+      "assist": {
+        "id": 513550,
+        "name": "Jesús Maraude"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 75,
+        "extra": null
+      },
+      "team": {
+        "id": 2381,
+        "name": "Bolivia",
+        "logo": "https://media.api-sports.io/football/teams/2381.png"
+      },
+      "player": {
+        "id": 345584,
+        "name": "Carlos Sejas"
+      },
+      "assist": {
+        "id": 65645,
+        "name": "Dario Torrico"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 80,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 39376,
+        "name": "Carlos Cabello"
+      },
+      "assist": {
+        "id": 354813,
+        "name": "Sebastian Aranda"
+      },
+      "type": "subst",
+      "detail": "Substitution 5",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 80,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 63979,
+        "name": "Matías Succar"
+      },
+      "assist": {
+        "id": 363130,
+        "name": "Juan Pablo Goicochea"
+      },
+      "type": "subst",
+      "detail": "Substitution 6",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 83,
+        "extra": null
+      },
+      "team": {
+        "id": 2381,
+        "name": "Bolivia",
+        "logo": "https://media.api-sports.io/football/teams/2381.png"
+      },
+      "player": {
+        "id": 191855,
+        "name": "José Martínez"
+      },
+      "assist": {
+        "id": 499908,
+        "name": "Óscar López"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 87,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 314660,
+        "name": "Piero Magallanes"
+      },
+      "assist": {
+        "id": 39388,
+        "name": "Jesús Castillo"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 90,
+        "extra": null
+      },
+      "team": {
+        "id": 30,
+        "name": "Peru",
+        "logo": "https://media.api-sports.io/football/teams/30.png"
+      },
+      "player": {
+        "id": 414371,
+        "name": "Bassco Soyer"
+      },
+      "assist": {
+        "id": 363130,
+        "name": "Juan Pablo Goicochea"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    }
+  ]
+}

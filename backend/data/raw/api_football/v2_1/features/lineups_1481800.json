@@ -1,0 +1,486 @@
+{
+  "get": "fixtures/lineups",
+  "parameters": {
+    "fixture": "1481800"
+  },
+  "errors": [],
+  "results": 2,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 1567,
+        "name": "Iraq",
+        "logo": "https://media.api-sports.io/football/teams/1567.png",
+        "colors": {
+          "player": {
+            "primary": "47a46d",
+            "number": "ffffff",
+            "border": "47a46d"
+          },
+          "goalkeeper": {
+            "primary": "385cff",
+            "number": "ffffff",
+            "border": "385cff"
+          }
+        }
+      },
+      "formation": null,
+      "startXI": [
+        {
+          "player": {
+            "id": 53886,
+            "name": "Jalal Hassan",
+            "number": 12,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 145465,
+            "name": "Hussein Ali",
+            "number": 3,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 296373,
+            "name": "Zaid Tahseen",
+            "number": 4,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 453073,
+            "name": "Akam Hashem",
+            "number": 5,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 271444,
+            "name": "Merchas Doski",
+            "number": 23,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 48129,
+            "name": "Aimar Sher",
+            "number": 8,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 47792,
+            "name": "Amir Al-Ammari",
+            "number": 16,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 542644,
+            "name": "Ali Jasim",
+            "number": 17,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 7694,
+            "name": "Gubari Sherko",
+            "number": 7,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 265448,
+            "name": "Marko Farji",
+            "number": 21,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 49451,
+            "name": "Aymen Hussein",
+            "number": 18,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 284295,
+            "name": "Zidane Iqbal",
+            "number": 14,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 154767,
+            "name": "Mohanad Ali",
+            "number": 10,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 427187,
+            "name": "Mustafa Saadoon",
+            "number": 2,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 139709,
+            "name": "Amar Muhsin",
+            "number": 13,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 123802,
+            "name": "Fahad Talib",
+            "number": 1,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 197933,
+            "name": "Ahmed Basil",
+            "number": 22,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 453071,
+            "name": "Ahmed Al-Hajjaj",
+            "number": 15,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 295394,
+            "name": "Munaf Younus",
+            "number": 6,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 48025,
+            "name": "Kevin Yakob",
+            "number": 19,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 41216,
+            "name": "Osama Rashid",
+            "number": 20,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 543070,
+            "name": "Mohammad Jawad",
+            "number": 9,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 348089,
+            "name": "Hasan Sayyid",
+            "number": 11,
+            "pos": "M",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 356,
+        "name": "Graham James Arnold",
+        "photo": "https://media.api-sports.io/football/coachs/356.png"
+      }
+    },
+    {
+      "team": {
+        "id": 1563,
+        "name": "United Arab Emirates",
+        "logo": "https://media.api-sports.io/football/teams/1563.png",
+        "colors": {
+          "player": {
+            "primary": "ffffff",
+            "number": "f51414",
+            "border": "ffffff"
+          },
+          "goalkeeper": {
+            "primary": "060707",
+            "number": "fbf9f9",
+            "border": "060707"
+          }
+        }
+      },
+      "formation": null,
+      "startXI": [
+        {
+          "player": {
+            "id": 44040,
+            "name": "Khalid Eisa",
+            "number": 17,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 49622,
+            "name": "Alaeddine Zouhir",
+            "number": 5,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 196226,
+            "name": "Lucas Pimenta",
+            "number": 3,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 156202,
+            "name": "Kouame Autonne",
+            "number": 4,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 294796,
+            "name": "Rúben Amaral",
+            "number": 2,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 156769,
+            "name": "Bruno Oliveira",
+            "number": 21,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 146683,
+            "name": "Marcus Meloni",
+            "number": 16,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 44069,
+            "name": "Yahia Nader",
+            "number": 15,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 10532,
+            "name": "Luan Pereira",
+            "number": 20,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6685,
+            "name": "Nicolás Giménez",
+            "number": 14,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 44067,
+            "name": "Caio",
+            "number": 10,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 50543,
+            "name": "Ali Saleh",
+            "number": 7,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 283324,
+            "name": "Sultan Adil",
+            "number": 23,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 50353,
+            "name": "Abdallah Ramadan",
+            "number": 6,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 50248,
+            "name": "Adel Al Hosani",
+            "number": 1,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 459646,
+            "name": "Hamad Al Meqebaali",
+            "number": 22,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 401646,
+            "name": "Richard Akonnor",
+            "number": 8,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 157837,
+            "name": "Gustavo Alemão",
+            "number": 13,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 50372,
+            "name": "Khaled Aldhanhani",
+            "number": 19,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 5203,
+            "name": "Gaston Alvarez Suarez",
+            "number": 12,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 181135,
+            "name": "Harib Suhail",
+            "number": 9,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 50605,
+            "name": "Majid Rashid",
+            "number": 18,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 50542,
+            "name": "Caio Canedo",
+            "number": 11,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 63,
+        "name": "Aurelian Cosmin Olăroiu",
+        "photo": "https://media.api-sports.io/football/coachs/63.png"
+      }
+    }
+  ]
+}

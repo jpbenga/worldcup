@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-06-11T18:09:47Z",
+  "version": "v2.1",
+  "model_retrained": false,
+  "optuna_rerun": false,
+  "status": "feasibility_analysis",
+  "true_xg_available": true,
+  "true_xg_team_rows": 2,
+  "team_stat_rows": 12,
+  "true_xg_team_row_coverage": 0.16666666666666666,
+  "true_xg_coverage_sufficient": false,
+  "xg_proxy_possible": true,
+  "statistical_coverage_sufficient": false,
+  "sample_matches": 6,
+  "complete_proxy_matches": 6,
+  "complete_proxy_coverage": 1.0,
+  "competitions_covered": [
+    "Africa Cup of Nations",
+    "Friendlies",
+    "UEFA Nations League",
+    "World Cup - Qualification Asia",
+    "World Cup - Qualification CONCACAF",
+    "World Cup - Qualification Europe"
+  ],
+  "seasons_covered": [
+    2024,
+    2025,
+    2026
+  ],
+  "formula": "0.05 * shots_total + 0.18 * shots_on_goal + 0.03 * corners",
+  "proxy_rows": [
+    {
+      "match_id": "api_football_1537581",
+      "competition": "World Cup - Qualification Europe",
+      "post_match_only": true,
+      "teams": [
+        {
+          "team": "Sweden",
+          "shots_total": 9.0,
+          "shots_on_goal": 5.0,
+          "corners": 2.0,
+          "provider_expected_goals": 1.52,
+          "xg_proxy_exploratory": 1.41
+        },
+        {
+          "team": "Poland",
+          "shots_total": 15.0,
+          "shots_on_goal": 7.0,
+          "corners": 9.0,
+          "provider_expected_goals": 1.36,
+          "xg_proxy_exploratory": 2.28
+        }
+      ]
+    },
+    {
+      "match_id": "api_football_1316572",
+      "competition": "UEFA Nations League",
+      "post_match_only": true,
+      "teams": [
+        {
+          "team": "Luxembourg",
+          "shots_total": 13.0,
+          "shots_on_goal": 6.0,
+          "corners": 3.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 1.82
+        },
+        {
+          "team": "Malta",
+          "shots_total": 13.0,
+          "shots_on_goal": 5.0,
+          "corners": 6.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 1.7299999999999998
+        }
+      ]
+    },
+    {
+      "match_id": "api_football_1508003",
+      "competition": "Africa Cup of Nations",
+      "post_match_only": true,
+      "teams": [
+        {
+          "team": "Senegal",
+          "shots_total": 14.0,
+          "shots_on_goal": 7.0,
+          "corners": 8.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 2.2
+        },
+        {
+          "team": "Morocco",
+          "shots_total": 20.0,
+          "shots_on_goal": 3.0,
+          "corners": 10.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 1.84
+        }
+      ]
+    },
+    {
+      "match_id": "api_football_1485026",
+      "competition": "Friendlies",
+      "post_match_only": true,
+      "teams": [
+        {
+          "team": "Peru",
+          "shots_total": 5.0,
+          "shots_on_goal": 4.0,
+          "corners": 2.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 1.03
+        },
+        {
+          "team": "Bolivia",
+          "shots_total": 5.0,
+          "shots_on_goal": 0.0,
+          "corners": 2.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 0.31
+        }
+      ]
+    },
+    {
+      "match_id": "api_football_1453336",
+      "competition": "World Cup - Qualification CONCACAF",
+      "post_match_only": true,
+      "teams": [
+        {
+          "team": "Jamaica",
+          "shots_total": 13.0,
+          "shots_on_goal": 1.0,
+          "corners": 3.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 0.92
+        },
+        {
+          "team": "Curaçao",
+          "shots_total": 16.0,
+          "shots_on_goal": 4.0,
+          "corners": 3.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 1.61
+        }
+      ]
+    },
+    {
+      "match_id": "api_football_1481800",
+      "competition": "World Cup - Qualification Asia",
+      "post_match_only": true,
+      "teams": [
+        {
+          "team": "Iraq",
+          "shots_total": 10.0,
+          "shots_on_goal": 2.0,
+          "corners": 4.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 0.98
+        },
+        {
+          "team": "United Arab Emirates",
+          "shots_total": 13.0,
+          "shots_on_goal": 4.0,
+          "corners": 3.0,
+          "provider_expected_goals": null,
+          "xg_proxy_exploratory": 1.4600000000000002
+        }
+      ]
+    }
+  ],
+  "risk_of_bias": [
+    "The coefficients are heuristic and not calibrated to shot location or chance quality.",
+    "The sampled post-match statistics cannot be used for the same-match prediction.",
+    "Coverage measured on a bounded sample may not generalize across eras and competitions."
+  ],
+  "recommendation_for_v2_2": "Technically feasible, but use only after broad coverage validation as an exploratory lagged team-form aggregate."
+}

@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-11T18:10:42Z",
+  "version": "v2.1",
+  "model_retrained": false,
+  "optuna_rerun": false,
+  "passed": true,
+  "temporal_leakage_detected": false,
+  "checks": {
+    "no_future_fixtures": true,
+    "no_future_world_cup_2026_fixtures": true,
+    "no_club_matches": true,
+    "senior_friendlies_only": true,
+    "no_missing_scores": true,
+    "finished_statuses_only": true,
+    "no_duplicates": true,
+    "odds_not_used_as_feature": true,
+    "post_match_features_clearly_marked": true,
+    "post_match_features_not_used_for_same_match_prediction": true,
+    "no_model_retrained": true,
+    "no_optuna_rerun": true
+  },
+  "future_fixtures": [],
+  "future_world_cup_2026_fixtures": [],
+  "club_matches": [],
+  "non_senior_friendlies": [],
+  "missing_scores": [],
+  "unfinished_matches": [],
+  "duplicate_fixture_ids": [],
+  "warnings": [
+    "Statistics, events and lineups are post-match-only and require lagged aggregation before V2.2.",
+    "Qualification seasons labelled 2026 contain only completed historical matches in V2.1.",
+    "Neutral venue inference remains unresolved."
+  ]
+}

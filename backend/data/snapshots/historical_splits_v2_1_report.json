@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-06-11T18:10:42Z",
+  "version": "v2.1",
+  "model_retrained": false,
+  "optuna_rerun": false,
+  "split_method": "chronological_70_15_15",
+  "total_matches": 3062,
+  "train": {
+    "matches": 2143,
+    "date_min": "2014-06-12T20:00:00+00:00",
+    "date_max": "2024-11-19T19:45:00+00:00",
+    "competitions": {
+      "World Cup": 192,
+      "Asian Cup": 134,
+      "Copa America": 118,
+      "Euro Championship": 415,
+      "Africa Cup of Nations": 334,
+      "CONCACAF Gold Cup": 118,
+      "World Cup - Qualification South America": 55,
+      "World Cup - Qualification Asia": 181,
+      "World Cup - Qualification Africa": 101,
+      "Friendlies": 297,
+      "World Cup - Qualification CONCACAF": 34,
+      "UEFA Nations League": 149,
+      "World Cup - Qualification Oceania": 15
+    },
+    "teams": 219
+  },
+  "validation": {
+    "matches": 459,
+    "date_min": "2024-11-19T19:45:00+00:00",
+    "date_max": "2025-09-06T11:45:00+00:00",
+    "competitions": {
+      "UEFA Nations League": 35,
+      "World Cup - Qualification South America": 30,
+      "Friendlies": 148,
+      "World Cup - Qualification Africa": 74,
+      "World Cup - Qualification Asia": 36,
+      "World Cup - Qualification Oceania": 3,
+      "World Cup - Qualification Europe": 66,
+      "World Cup - Qualification CONCACAF": 36,
+      "CONCACAF Gold Cup": 31
+    },
+    "teams": 203
+  },
+  "test": {
+    "matches": 460,
+    "date_min": "2025-09-06T13:00:00+00:00",
+    "date_max": "2026-03-31T18:45:00+00:00",
+    "competitions": {
+      "World Cup - Qualification Europe": 138,
+      "World Cup - Qualification Africa": 81,
+      "Friendlies": 142,
+      "World Cup - Qualification CONCACAF": 30,
+      "World Cup - Qualification South America": 5,
+      "World Cup - Qualification Asia": 8,
+      "Africa Cup of Nations": 52,
+      "UEFA Nations League": 4
+    },
+    "teams": 184
+  },
+  "test_freshness_days": 71,
+  "comparison_with_old_splits": {
+    "old_total_matches": 1311,
+    "new_total_matches": 3062,
+    "old_train_matches": 917,
+    "new_train_matches": 2143,
+    "old_validation_matches": 196,
+    "new_validation_matches": 459,
+    "old_test_matches": 198,
+    "new_test_matches": 460,
+    "old_test_date_max": "2024-07-15T00:30:00+00:00",
+    "new_test_date_max": "2026-03-31T18:45:00+00:00"
+  },
+  "leakage_checks": {
+    "date_order_valid": true,
+    "duplicate_fixture_ids_across_splits": false,
+    "future_world_cup_2026_fixtures_excluded": true,
+    "random_split_used": false
+  }
+}
