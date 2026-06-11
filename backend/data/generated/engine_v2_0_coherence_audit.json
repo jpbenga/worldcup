@@ -1,0 +1,524 @@
+{
+  "train": {
+    "favorite_score_alignment_rate": 0.42202835332606325,
+    "clear_favorite_matches": 707,
+    "clear_favorite_score_alignment_rate": 0.4681753889674682,
+    "share_clear_favorites_with_draw_modal_score": 0.512022630834512,
+    "share_favorites_with_1_1_modal_score": 0.5027262813522355,
+    "examples_misaligned_matches": [
+      {
+        "match_id": "api_football_208330",
+        "home_team": "Mexico",
+        "away_team": "Cameroon",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4763307007413786,
+          0.18515970406896998,
+          0.33850958326872255
+        ]
+      },
+      {
+        "match_id": "api_football_208332",
+        "home_team": "Chile",
+        "away_team": "Australia",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4642438122387681,
+          0.18932685221286905,
+          0.3464293504495239
+        ]
+      },
+      {
+        "match_id": "api_football_208333",
+        "home_team": "Colombia",
+        "away_team": "Greece",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.47693392952226277,
+          0.18689629458398455,
+          0.3361697699332884
+        ]
+      },
+      {
+        "match_id": "api_football_208334",
+        "home_team": "Uruguay",
+        "away_team": "Costa Rica",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4575288499941772,
+          0.197047517377916,
+          0.3454236266674428
+        ]
+      },
+      {
+        "match_id": "api_football_208335",
+        "home_team": "England",
+        "away_team": "Italy",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4642438122387681,
+          0.18932685221286905,
+          0.3464293504495239
+        ]
+      },
+      {
+        "match_id": "api_football_208336",
+        "home_team": "Ivory Coast",
+        "away_team": "Japan",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4714771617154975,
+          0.19804803939276486,
+          0.3304747869708088
+        ]
+      },
+      {
+        "match_id": "api_football_208337",
+        "home_team": "Switzerland",
+        "away_team": "Ecuador",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4726883375849744,
+          0.20347447558855414,
+          0.323837192786936
+        ]
+      },
+      {
+        "match_id": "api_football_208338",
+        "home_team": "France",
+        "away_team": "Honduras",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.47411072731803205,
+          0.20380004350096276,
+          0.32208922918100535
+        ]
+      },
+      {
+        "match_id": "api_football_208339",
+        "home_team": "Argentina",
+        "away_team": "Bosnia & Herzegovina",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4703665389380424,
+          0.20701072486511907,
+          0.3226227481177677
+        ]
+      },
+      {
+        "match_id": "api_football_208340",
+        "home_team": "Germany",
+        "away_team": "Portugal",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4711765527527716,
+          0.20658891337529386,
+          0.32223453387193474
+        ]
+      },
+      {
+        "match_id": "api_football_208341",
+        "home_team": "Iran",
+        "away_team": "Nigeria",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.46952086395354403,
+          0.2080295461762539,
+          0.3224495839097379
+        ]
+      },
+      {
+        "match_id": "api_football_208342",
+        "home_team": "Ghana",
+        "away_team": "USA",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.45214705379173364,
+          0.21136850480696054,
+          0.33648444140130584
+        ]
+      },
+      {
+        "match_id": "api_football_208343",
+        "home_team": "Belgium",
+        "away_team": "Algeria",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.45432254443387377,
+          0.21119992465900986,
+          0.33447753090711624
+        ]
+      },
+      {
+        "match_id": "api_football_208344",
+        "home_team": "Russia",
+        "away_team": "South Korea",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.44640391585780737,
+          0.21843905166960764,
+          0.3351570265121204
+        ]
+      },
+      {
+        "match_id": "api_football_208348",
+        "home_team": "Cameroon",
+        "away_team": "Croatia",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.34433227490437784,
+          0.1958249579099301,
+          0.45984276420546
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "favorite_score_alignment_rate": 0.5714285714285714,
+    "clear_favorite_matches": 162,
+    "clear_favorite_score_alignment_rate": 0.6234567901234568,
+    "share_clear_favorites_with_draw_modal_score": 0.35802469135802467,
+    "share_favorites_with_1_1_modal_score": 0.3622448979591837,
+    "examples_misaligned_matches": [
+      {
+        "match_id": "api_football_713160",
+        "home_team": "Wales",
+        "away_team": "Denmark",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.23364538485508324,
+          0.24598815724067513,
+          0.5203664400228485
+        ]
+      },
+      {
+        "match_id": "api_football_312573",
+        "home_team": "Venezuela",
+        "away_team": "Peru",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.26781656688648103,
+          0.32207017174638813,
+          0.41011327328806
+        ]
+      },
+      {
+        "match_id": "api_football_713474",
+        "home_team": "France",
+        "away_team": "Switzerland",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.6163950050431322,
+          0.20545345247925834,
+          0.17815156631946721
+        ]
+      },
+      {
+        "match_id": "api_football_713476",
+        "home_team": "Sweden",
+        "away_team": "Ukraine",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5877924272181807,
+          0.2202113672877324,
+          0.1919962114545512
+        ]
+      },
+      {
+        "match_id": "api_football_718248",
+        "home_team": "Peru",
+        "away_team": "Paraguay",
+        "modal_score": "0-1",
+        "probabilities": [
+          0.2736939850578135,
+          0.41682739379355616,
+          0.3094786271090946
+        ]
+      },
+      {
+        "match_id": "api_football_718250",
+        "home_team": "Uruguay",
+        "away_team": "Colombia",
+        "modal_score": "0-0",
+        "probabilities": [
+          0.3150154712008773,
+          0.28843600487582943,
+          0.396548517962829
+        ]
+      },
+      {
+        "match_id": "api_football_721122",
+        "home_team": "Italy",
+        "away_team": "Spain",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5859626009708669,
+          0.19770442425391532,
+          0.21633299265661135
+        ]
+      },
+      {
+        "match_id": "api_football_721123",
+        "home_team": "England",
+        "away_team": "Denmark",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.48491643080972946,
+          0.2272524753417276,
+          0.28783107000668506
+        ]
+      },
+      {
+        "match_id": "api_football_723369",
+        "home_team": "Argentina",
+        "away_team": "Brazil",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.3006954049413255,
+          0.27047039058631583,
+          0.42883422831421625
+        ]
+      },
+      {
+        "match_id": "api_football_704137",
+        "home_team": "El Salvador",
+        "away_team": "Guatemala",
+        "modal_score": "0-1",
+        "probabilities": [
+          0.4860406508009987,
+          0.19164708593233287,
+          0.32231225730620416
+        ]
+      },
+      {
+        "match_id": "api_football_704139",
+        "home_team": "Jamaica",
+        "away_team": "Suriname",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5416882726796746,
+          0.21055331103798855,
+          0.2477583924404788
+        ]
+      },
+      {
+        "match_id": "api_football_723374",
+        "home_team": "Costa Rica",
+        "away_team": "Guadeloupe",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5973353367836504,
+          0.19632303825073968,
+          0.20634163092607458
+        ]
+      },
+      {
+        "match_id": "api_football_704140",
+        "home_team": "Qatar",
+        "away_team": "Panama",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.6302155874710551,
+          0.2034991298294429,
+          0.16628530058089577
+        ]
+      },
+      {
+        "match_id": "api_football_704141",
+        "home_team": "Honduras",
+        "away_team": "Grenada",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4853708606670027,
+          0.2160963823519235,
+          0.29853275102060967
+        ]
+      },
+      {
+        "match_id": "api_football_704147",
+        "home_team": "USA",
+        "away_team": "Canada",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5291517966933654,
+          0.20915850727431567,
+          0.2616897079532482
+        ]
+      }
+    ]
+  },
+  "test": {
+    "favorite_score_alignment_rate": 0.5,
+    "clear_favorite_matches": 163,
+    "clear_favorite_score_alignment_rate": 0.5950920245398773,
+    "share_clear_favorites_with_draw_modal_score": 0.3987730061349693,
+    "share_favorites_with_1_1_modal_score": 0.4696969696969697,
+    "examples_misaligned_matches": [
+      {
+        "match_id": "api_football_1023116",
+        "home_team": "Panama",
+        "away_team": "El Salvador",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4619395528751957,
+          0.2112747834176173,
+          0.3267856517862582
+        ]
+      },
+      {
+        "match_id": "api_football_1036613",
+        "home_team": "Costa Rica",
+        "away_team": "Martinique",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5986139642047383,
+          0.18951937777816835,
+          0.21186664609616432
+        ]
+      },
+      {
+        "match_id": "api_football_1051774",
+        "home_team": "Mexico",
+        "away_team": "Costa Rica",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.6240007523374829,
+          0.20454826342924395,
+          0.1714509752925764
+        ]
+      },
+      {
+        "match_id": "api_football_1060870",
+        "home_team": "Jamaica",
+        "away_team": "Mexico",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.23948663425412753,
+          0.28998207817589317,
+          0.47053126968858616
+        ]
+      },
+      {
+        "match_id": "api_football_1034492",
+        "home_team": "Qatar",
+        "away_team": "Lebanon",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5286997754343616,
+          0.21633192729363748,
+          0.2549682823708396
+        ]
+      },
+      {
+        "match_id": "api_football_1034493",
+        "home_team": "Australia",
+        "away_team": "India",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4850954901154461,
+          0.2471913037950727,
+          0.2677132150301779
+        ]
+      },
+      {
+        "match_id": "api_football_1034494",
+        "home_team": "China",
+        "away_team": "Tajikistan",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5590218816144936,
+          0.2030561135100268,
+          0.2379219959347831
+        ]
+      },
+      {
+        "match_id": "api_football_1034496",
+        "home_team": "Japan",
+        "away_team": "Vietnam",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5730794191586883,
+          0.23661480274873353,
+          0.19030578703327494
+        ]
+      },
+      {
+        "match_id": "api_football_1034497",
+        "home_team": "United Arab Emirates",
+        "away_team": "Hong Kong",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.5252645661527118,
+          0.24516522318892336,
+          0.22957023151999087
+        ]
+      },
+      {
+        "match_id": "api_football_1034499",
+        "home_team": "South Korea",
+        "away_team": "Bahrain",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4930690476376929,
+          0.26105114318567635,
+          0.24587980917663088
+        ]
+      },
+      {
+        "match_id": "api_football_1034500",
+        "home_team": "Indonesia",
+        "away_team": "Iraq",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.2513897630904706,
+          0.26122871788747903,
+          0.48738152498251475
+        ]
+      },
+      {
+        "match_id": "api_football_1034501",
+        "home_team": "Malaysia",
+        "away_team": "Jordan",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.23340291049067907,
+          0.2272983082483789,
+          0.5392987872214066
+        ]
+      },
+      {
+        "match_id": "api_football_1138706",
+        "home_team": "Mali",
+        "away_team": "South Africa",
+        "modal_score": "0-0",
+        "probabilities": [
+          0.4308517512469093,
+          0.2615971676260961,
+          0.30755106324560144
+        ]
+      },
+      {
+        "match_id": "api_football_1034504",
+        "home_team": "Lebanon",
+        "away_team": "China",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.21304904093936752,
+          0.22112578067493552,
+          0.5658251724252323
+        ]
+      },
+      {
+        "match_id": "api_football_1138708",
+        "home_team": "Congo DR",
+        "away_team": "Zambia",
+        "modal_score": "1-1",
+        "probabilities": [
+          0.4341341473347542,
+          0.28535680555022447,
+          0.28050907095687916
+        ]
+      }
+    ]
+  }
+}

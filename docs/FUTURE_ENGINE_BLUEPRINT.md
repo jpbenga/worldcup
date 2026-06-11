@@ -217,3 +217,19 @@ validation regresses, and time decay improves validation before degrading test
 and increasing modal `1-1` concentration. Static Elo produces attractive
 apparent metrics but cannot support promotion and increases high-confidence
 errors. The active engine and World Cup 2026 predictions remain unchanged.
+
+## V2.0 quant hybrid rebuild
+
+V2.0 implements the advanced hybrid direction as an isolated but deployable
+candidate. It replaces external static Elo as a primary signal with an
+internally reconstructed chronological rating, builds all features before each
+result is observed, and combines regularized XGBoost 1X2 probabilities with an
+independent-Poisson exact-score distribution.
+
+Optuna selects parameters on validation only. Historical validation and test
+are replayed in `predict -> observe -> update` order, secondary markets and DNB
+pushes are evaluated explicitly, and Monte Carlo checks the stability of the
+analytical Poisson model. Promotion is no longer categorically forbidden, but
+the active engine changes only if all quantitative, coherence, leakage,
+overfit, and operational-data gates pass. The measured decision is documented
+in `docs/ACTIVE_ENGINE_DEPLOYMENT_V2_0.md`.

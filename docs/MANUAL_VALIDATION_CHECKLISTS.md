@@ -482,6 +482,34 @@ Notes :
 - [ ] Results documented honestly
 - [ ] No secret committed
 
+## Checklist V2.0 — Quant Hybrid Engine with Active Deployment
+
+- [ ] Prompt analysis completed
+- [ ] XGBoost dependency added
+- [ ] Optuna dependency added
+- [ ] Dependency imports validated
+- [ ] Internal chronological rating implemented
+- [ ] Feature builder uses pre-match data only
+- [ ] XGBoost 1X2 model implemented
+- [ ] XGBoost secondary market models implemented
+- [ ] Optuna optimization implemented
+- [ ] Optuna optimizes validation only
+- [ ] Test evaluated only once after selection
+- [ ] Historical replay implemented
+- [ ] Predict -> observe -> update confirmed
+- [ ] Monte Carlo simulation implemented with 1500 simulations per match
+- [ ] Secondary market evaluation implemented
+- [ ] DNB metrics distinguish wins, losses and pushes
+- [ ] Score exact evaluated realistically
+- [ ] Favorite-score alignment audited
+- [ ] 1-1 concentration audited
+- [ ] No external static Elo used as primary signal
+- [ ] Deployment decision documented
+- [ ] Active engine replaced if and only if model established
+- [ ] Previous active predictions archived if deployed
+- [ ] 2026 predictions regenerated if deployed
+- [ ] No secret committed
+
 ## Checklist V0.5 — API-Football Active Source with Prototype Engine
 
 - [ ] fetch API-Football réussi.

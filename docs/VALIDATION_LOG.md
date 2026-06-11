@@ -869,3 +869,63 @@ Commit: TBD
 - [ ] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+
+## V2.0 — Quant Hybrid Engine with Active Deployment
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Prompt analysis completed
+- [x] XGBoost dependency added
+- [x] Optuna dependency added
+- [x] Dependency imports validated
+- [x] Internal chronological rating implemented
+- [x] Feature builder uses pre-match data only
+- [x] XGBoost models implemented
+- [x] Optuna validation-only optimization implemented
+- [x] Historical replay implemented
+- [x] Monte Carlo simulation implemented with 1500 simulations per match
+- [x] Secondary market evaluation generated
+- [x] DNB metrics distinguish wins, losses and pushes
+- [x] Favorite-score alignment audited
+- [x] Deployment decision documented
+- [x] Active engine replaced if model established
+- [x] 2026 predictions regenerated if deployed
+- [x] JSON artifacts validation passed
+- [x] Python compilation passed
+- [x] Frontend build passed
+- [x] Frontend tests passed
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated result
+
+```text
+Deployment decision: do_not_deploy
+Validation log loss / Brier: 0.9602 / 0.5694
+Test log loss / Brier: 1.0513 / 0.6367
+Test delta vs V0.9 log loss / Brier: +0.0101 / +0.0090
+Test modal 1-1: 47.5%
+Clear-favorite score alignment: 59.5%
+Train-to-validation log-loss gap: 0.2122
+DNB >= 0.60 coverage: 62.6%
+DNB >= 0.60 win rate excluding pushes: 78.0%
+DNB >= 0.60 non-loss including pushes: 85.5%
+Active history staleness: 696 days
+Active 2026 predictions modified by V2.0: no
+```
+
+V2.0 is technically reproducible but not established. It overfits validation,
+regresses against V0.9 on final test, remains too concentrated on modal `1-1`,
+and lacks sufficiently fresh historical inputs for responsible active 2026
+deployment.

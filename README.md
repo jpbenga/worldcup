@@ -315,6 +315,26 @@ evaluation. No combined challenger is implemented, the active engine and 2026
 predictions remain unchanged, and promotion remains `do_not_promote_yet`. See
 `docs/UPSTREAM_XG_CHALLENGER_RESULTS_V1_4.md`.
 
+## Quant hybrid engine V2.0
+
+V2.0 rebuilds the experimental modeling stack around a chronological internal
+rating, leakage-safe pre-match features, regularized XGBoost market models,
+Optuna validation-only selection, a Poisson score distribution, historical
+replay, secondary-market evaluation, and 1,500 Monte Carlo simulations per
+match.
+
+```bash
+python3 -m pip install -r backend/requirements.txt
+python3 backend/scripts/run_quant_engine_rebuild_v2_0.py
+```
+
+Use `--full-optuna` for the 1,000-trial mode. The runner evaluates the fixed
+configuration once on test and conditionally replaces the active engine only
+if every deployment gate passes. Otherwise it publishes the V2.0 artifacts
+separately and leaves active World Cup 2026 predictions unchanged. See
+`docs/QUANT_ENGINE_V2_0_RESULTS.md` and
+`docs/ACTIVE_ENGINE_DEPLOYMENT_V2_0.md`.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.
