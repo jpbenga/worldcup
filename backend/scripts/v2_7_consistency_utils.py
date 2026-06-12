@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import shutil
 from pathlib import Path
 from typing import Any
@@ -17,7 +18,8 @@ def publish(payload: Any, name: str) -> None:
     generated = DATA_DIR / "generated" / name
     write_json(payload, generated)
     shutil.copy2(generated, DATA_DIR / "snapshots" / name)
-    shutil.copy2(generated, FRONTEND_DATA_DIR / name)
+    if os.getenv("MATCHDAY_SKIP_FRONTEND_COPY") != "1":
+        shutil.copy2(generated, FRONTEND_DATA_DIR / name)
 
 
 def group_code(value: str | None) -> str:

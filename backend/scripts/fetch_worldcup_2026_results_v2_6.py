@@ -52,12 +52,13 @@ def normalized_fixture(item: dict[str, Any], match_id: str | None) -> dict[str, 
 def main(argv=None) -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--force-refresh", action="store_true")
+    parser.add_argument("--no-fetch", action="store_true", help="Never call API-Football; use cached or fallback data only.")
     args = parser.parse_args(argv)
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     raw_path = RAW_DIR / "fixtures.json"
     request_count, notes, source = 0, [], "cached"
     payload: dict[str, Any] | None = None
-    if API_FOOTBALL_KEY and (args.force_refresh or not raw_path.exists()):
+    if not args.no_fetch and API_FOOTBALL_KEY and (args.force_refresh or not raw_path.exists()):
         try:
             client = ApiFootballClient(max_calls=1)
             payload = client.get("fixtures", {"league": 1, "season": 2026})
@@ -66,6 +67,8 @@ def main(argv=None) -> None:
             source = "api_football"
         except ApiFootballError as exc:
             notes.append(f"API fetch failed; cached fixture data used when available: {exc}")
+    elif args.no_fetch:
+        notes.append("Network fetch disabled; cached fixture data used when available.")
     elif not API_FOOTBALL_KEY:
         notes.append("API_FOOTBALL_KEY is not configured; cached fixture data used when available.")
     if payload is None and raw_path.exists():

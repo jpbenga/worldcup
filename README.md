@@ -486,6 +486,20 @@ The match modal offers a secondary active/alternative comparison and
 `/simulation` compares both conditioned group scenarios. The active forecast
 remains the official default; the alternative is always marked non-active.
 
+## Operational matchday refresh V2.10
+
+V2.10 runs every result-aware layer in one protected operational workflow:
+
+```bash
+python3 backend/scripts/run_matchday_refresh_v2_10.py --fetch --simulations 50000
+python3 backend/scripts/audit_generated_artifact_hygiene_v2_10.py
+python3 backend/scripts/validate_matchday_refresh_v2_10.py
+```
+
+Use `--no-fetch` for cached data and `--dry-run` to inspect the ordered plan.
+The workflow protects frozen pre-match predictions and model artifacts with
+before/after hashes; it never retrains, reruns Optuna or promotes the candidate.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import os
 import shutil
 from pathlib import Path
 from typing import Any, Callable
@@ -19,7 +20,8 @@ def publish(payload: Any, name: str) -> None:
     target = DATA_DIR / "generated" / name
     write_json(payload, target)
     shutil.copy2(target, DATA_DIR / "snapshots" / name)
-    shutil.copy2(target, FRONTEND_DATA_DIR / name)
+    if os.getenv("MATCHDAY_SKIP_FRONTEND_COPY") != "1":
+        shutil.copy2(target, FRONTEND_DATA_DIR / name)
 
 
 def matrix_entries(matrix: dict[str, Any] | list[dict[str, Any]]) -> list[dict[str, Any]]:

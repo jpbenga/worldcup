@@ -1,0 +1,451 @@
+{
+  "generated_at": "2026-06-12T23:16:49Z",
+  "version": "v2.10",
+  "engine_version": "quant_hybrid_v2.2",
+  "files": [
+    {
+      "path": "README.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/data_sources.json",
+      "category": "manual_source_file",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/active_vs_candidate_simulation_comparison_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/dual_matrix_validation_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/generated_artifact_hygiene_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/matchday_refresh_manifest_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/matchday_refresh_validation_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/prediction_diversity_audit.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/predictions_baseline.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/predictions_elo.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/result_consistency_validation_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_2026_prediction_evaluation_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_2026_results_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_knockout_structure_v2_6.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_live_group_standings_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_match_state_view_model_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_projected_campaign_candidate_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_projected_campaign_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_tournament_simulation_candidate_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/generated/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/active_vs_candidate_simulation_comparison_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/data_sources.json",
+      "category": "manual_source_file",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/dual_matrix_validation_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/generated_artifact_hygiene_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/matchday_refresh_manifest_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/matchday_refresh_validation_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/prediction_diversity_audit.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/predictions_baseline.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/predictions_elo.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/result_consistency_validation_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_2026_prediction_evaluation_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_2026_results_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_knockout_structure_v2_6.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_live_group_standings_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_match_state_view_model_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_projected_campaign_candidate_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_projected_campaign_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_tournament_simulation_candidate_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/audit_generated_artifact_hygiene_v2_10.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/fetch_worldcup_2026_results_v2_6.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/run_matchday_refresh_v2_10.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/v2_10_refresh_utils.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/v2_6_live_utils.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/v2_7_consistency_utils.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/v2_9_dual_matrix_utils.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "backend/scripts/validate_matchday_refresh_v2_10.py",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/ACTIVE_VS_CANDIDATE_SIMULATION_COMPARISON_V2_9.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/FUTURE_ENGINE_BLUEPRINT.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/GENERATED_ARTIFACT_HYGIENE_V2_10.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/MATCHDAY_REFRESH_MANIFEST_V2_10.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/MATCHDAY_REFRESH_PIPELINE_STRATEGY_V2_10.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/MATCHDAY_REFRESH_RUNBOOK_V2_10.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/MATCHDAY_REFRESH_VALIDATION_V2_10.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/VALIDATION_LOG.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/WORLDCUP_2026_RESULTS_FETCH_V2_6.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "docs/WORLDCUP_TOURNAMENT_SIMULATION_CONDITIONED_V2_6.md",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/active_vs_candidate_simulation_comparison_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/dual_matrix_validation_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/generated_artifact_hygiene_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/matchday_refresh_manifest_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/matchday_refresh_validation_v2_10.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/result_consistency_validation_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_2026_prediction_evaluation_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_2026_results_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_knockout_structure_v2_6.json",
+      "category": "legacy_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_live_group_standings_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_match_state_view_model_v2_7.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_projected_campaign_candidate_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_projected_campaign_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_tournament_simulation_candidate_v2_9.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "category": "expected_refresh_artifact",
+      "preexisting_before_refresh": true
+    }
+  ],
+  "category_counts": {
+    "expected_refresh_artifact": 62,
+    "manual_source_file": 2,
+    "legacy_artifact": 9
+  },
+  "monitored_files": [
+    {
+      "path": "backend/data/generated/predictions.json",
+      "exists": true,
+      "modified": false,
+      "category": "active_prediction_file"
+    },
+    {
+      "path": "backend/data/snapshots/predictions.json",
+      "exists": true,
+      "modified": false,
+      "category": "active_prediction_file"
+    },
+    {
+      "path": "frontend/src/assets/data/predictions.json",
+      "exists": true,
+      "modified": false,
+      "category": "active_prediction_file"
+    },
+    {
+      "path": "backend/data/generated/quant_engine_v2_2_results.json",
+      "exists": true,
+      "modified": false,
+      "category": "active_prediction_file"
+    },
+    {
+      "path": "backend/data/generated/optuna_study_summary_v2_2.json",
+      "exists": true,
+      "modified": false,
+      "category": "active_prediction_file"
+    },
+    {
+      "path": "backend/data/generated/quant_engine_v2_2_results.json",
+      "exists": true,
+      "modified": false,
+      "category": "active_prediction_file"
+    },
+    {
+      "path": "backend/data/generated/optuna_study_summary_v2_2.json",
+      "exists": true,
+      "modified": false,
+      "category": "active_prediction_file"
+    },
+    {
+      "path": "backend/data/generated/worldcup_2026_results_v2_6.json",
+      "exists": true,
+      "modified": true,
+      "category": "expected_refresh_artifact"
+    },
+    {
+      "path": "backend/data/generated/worldcup_match_state_view_model_v2_7.json",
+      "exists": true,
+      "modified": true,
+      "category": "expected_refresh_artifact"
+    },
+    {
+      "path": "backend/data/generated/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "exists": true,
+      "modified": true,
+      "category": "expected_refresh_artifact"
+    },
+    {
+      "path": "backend/data/generated/worldcup_tournament_simulation_candidate_v2_9.json",
+      "exists": true,
+      "modified": true,
+      "category": "expected_refresh_artifact"
+    }
+  ],
+  "active_prediction_files_protected": true,
+  "unexpected_changes": [],
+  "notes": [
+    "Preexisting workspace changes are reported explicitly and are not automatically staged.",
+    "Legacy artifacts are visible but are not matchday refresh outputs."
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "version": "v2.10",
+  "generated_at": "2026-06-12T23:15:44Z",
+  "engine_version": "quant_hybrid_v2.2",
+  "candidate_version": "score_matrix_candidate_v2.8",
+  "fetch_enabled": false,
+  "fetch_mode": "cached_only",
+  "simulation_count": 50000,
+  "skip_frontend_copy": false,
+  "force": false,
+  "steps": [
+    {
+      "name": "results",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/fetch_worldcup_2026_results_v2_6.py",
+        "--no-fetch"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.447,
+      "stdout": "V2.6 results: requests=0, finished=1, live=0, available=True",
+      "stderr": ""
+    },
+    {
+      "name": "prediction_evaluation",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/evaluate_predictions_against_results_v2_6.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.159,
+      "stdout": "V2.6 evaluation: finished=1, sample_size_too_small=True",
+      "stderr": ""
+    },
+    {
+      "name": "live_standings",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/build_live_group_standings_v2_7.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.13,
+      "stdout": "V2.7 live standings: 1 finished result(s), 12 groups",
+      "stderr": ""
+    },
+    {
+      "name": "match_state",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/build_match_state_view_model_v2_7.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.692,
+      "stdout": "V2.7 match state: 72 matches, 25 modal/favorite divergences",
+      "stderr": ""
+    },
+    {
+      "name": "active_conditioned_simulation",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/run_worldcup_tournament_simulation_v2_6.py",
+        "--simulations",
+        "50000"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 35.1,
+      "stdout": "V2.6 conditioned simulation: locked=1, simulated=71",
+      "stderr": ""
+    },
+    {
+      "name": "candidate_simulation",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/run_candidate_tournament_simulation_v2_9.py",
+        "--simulations",
+        "50000"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 35.381,
+      "stdout": "{\"simulations\": 50000, \"locked\": 1, \"future\": 71}",
+      "stderr": ""
+    },
+    {
+      "name": "active_candidate_comparison",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/compare_active_vs_candidate_simulation_v2_9.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.122,
+      "stdout": "{\"max_qualification_delta\": 0.14205999999999996, \"proxy_leader\": \"Spain\"}",
+      "stderr": ""
+    },
+    {
+      "name": "active_projected_campaign",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/build_worldcup_projected_campaign_v2_6.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.12,
+      "stdout": "V2.6 projected campaign: proxy leader=Spain",
+      "stderr": ""
+    },
+    {
+      "name": "candidate_projected_campaign",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/build_candidate_projected_campaign_v2_9.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.108,
+      "stdout": "{\"active_proxy\": \"Spain\", \"candidate_proxy\": \"Spain\"}",
+      "stderr": ""
+    },
+    {
+      "name": "result_consistency_validation",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/validate_result_consistency_v2_7.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.146,
+      "stdout": "V2.7 result consistency validation: PASS",
+      "stderr": ""
+    },
+    {
+      "name": "dual_matrix_validation",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "backend/scripts/validate_dual_matrix_v2_9.py"
+      ],
+      "status": "pass",
+      "return_code": 0,
+      "duration_seconds": 0.196,
+      "stdout": "V2.9 dual matrix validation: PASS",
+      "stderr": ""
+    }
+  ],
+  "outputs": [
+    "backend/data/generated/active_vs_candidate_simulation_comparison_v2_9.json",
+    "backend/data/generated/dual_matrix_validation_v2_9.json",
+    "backend/data/generated/result_consistency_validation_v2_7.json",
+    "backend/data/generated/worldcup_2026_prediction_evaluation_v2_6.json",
+    "backend/data/generated/worldcup_2026_results_v2_6.json",
+    "backend/data/generated/worldcup_live_group_standings_v2_7.json",
+    "backend/data/generated/worldcup_match_state_view_model_v2_7.json",
+    "backend/data/generated/worldcup_projected_campaign_candidate_v2_9.json",
+    "backend/data/generated/worldcup_projected_campaign_v2_6.json",
+    "backend/data/generated/worldcup_tournament_simulation_candidate_v2_9.json",
+    "backend/data/generated/worldcup_tournament_simulation_conditioned_v2_6.json",
+    "backend/data/snapshots/active_vs_candidate_simulation_comparison_v2_9.json",
+    "backend/data/snapshots/dual_matrix_validation_v2_9.json",
+    "backend/data/snapshots/result_consistency_validation_v2_7.json",
+    "backend/data/snapshots/worldcup_2026_prediction_evaluation_v2_6.json",
+    "backend/data/snapshots/worldcup_2026_results_v2_6.json",
+    "backend/data/snapshots/worldcup_live_group_standings_v2_7.json",
+    "backend/data/snapshots/worldcup_match_state_view_model_v2_7.json",
+    "backend/data/snapshots/worldcup_projected_campaign_candidate_v2_9.json",
+    "backend/data/snapshots/worldcup_projected_campaign_v2_6.json",
+    "backend/data/snapshots/worldcup_tournament_simulation_candidate_v2_9.json",
+    "backend/data/snapshots/worldcup_tournament_simulation_conditioned_v2_6.json",
+    "docs/ACTIVE_VS_CANDIDATE_SIMULATION_COMPARISON_V2_9.md",
+    "docs/WORLDCUP_2026_RESULTS_FETCH_V2_6.md",
+    "docs/WORLDCUP_TOURNAMENT_SIMULATION_CONDITIONED_V2_6.md",
+    "frontend/src/assets/data/active_vs_candidate_simulation_comparison_v2_9.json",
+    "frontend/src/assets/data/dual_matrix_validation_v2_9.json",
+    "frontend/src/assets/data/result_consistency_validation_v2_7.json",
+    "frontend/src/assets/data/worldcup_2026_prediction_evaluation_v2_6.json",
+    "frontend/src/assets/data/worldcup_2026_results_v2_6.json",
+    "frontend/src/assets/data/worldcup_live_group_standings_v2_7.json",
+    "frontend/src/assets/data/worldcup_match_state_view_model_v2_7.json",
+    "frontend/src/assets/data/worldcup_projected_campaign_candidate_v2_9.json",
+    "frontend/src/assets/data/worldcup_projected_campaign_v2_6.json",
+    "frontend/src/assets/data/worldcup_tournament_simulation_candidate_v2_9.json",
+    "frontend/src/assets/data/worldcup_tournament_simulation_conditioned_v2_6.json"
+  ],
+  "result_summary": {
+    "finished_matches": 1,
+    "live_matches": 0,
+    "not_started_matches": 71
+  },
+  "model_integrity": {
+    "pre_match_predictions_modified": false,
+    "protected_hashes_before": {
+      "backend/data/generated/predictions.json": "73b5a960513634e2159df464e33ff030c14d45b0ba5115b0e290a73287e16c44",
+      "backend/data/snapshots/predictions.json": "73b5a960513634e2159df464e33ff030c14d45b0ba5115b0e290a73287e16c44",
+      "frontend/src/assets/data/predictions.json": "73b5a960513634e2159df464e33ff030c14d45b0ba5115b0e290a73287e16c44",
+      "backend/data/generated/quant_engine_v2_2_results.json": "02ef1535a121e25a12a3aac3bdfe2206932505ed380550bfe8cc3a623c6930c8",
+      "backend/data/generated/optuna_study_summary_v2_2.json": "344e4eede7897d176b4394428b0b77aafd492e890eb3bdafce9a19b69075bbba"
+    },
+    "protected_hashes_after": {
+      "backend/data/generated/predictions.json": "73b5a960513634e2159df464e33ff030c14d45b0ba5115b0e290a73287e16c44",
+      "backend/data/snapshots/predictions.json": "73b5a960513634e2159df464e33ff030c14d45b0ba5115b0e290a73287e16c44",
+      "frontend/src/assets/data/predictions.json": "73b5a960513634e2159df464e33ff030c14d45b0ba5115b0e290a73287e16c44",
+      "backend/data/generated/quant_engine_v2_2_results.json": "02ef1535a121e25a12a3aac3bdfe2206932505ed380550bfe8cc3a623c6930c8",
+      "backend/data/generated/optuna_study_summary_v2_2.json": "344e4eede7897d176b4394428b0b77aafd492e890eb3bdafce9a19b69075bbba"
+    },
+    "retrain_run": false,
+    "optuna_run": false
+  },
+  "git_hygiene": {
+    "preexisting_modified_files": [
+      "README.md",
+      "backend/data/data_sources.json",
+      "backend/data/generated/active_vs_candidate_simulation_comparison_v2_9.json",
+      "backend/data/generated/dual_matrix_validation_v2_9.json",
+      "backend/data/generated/generated_artifact_hygiene_v2_10.json",
+      "backend/data/generated/matchday_refresh_manifest_v2_10.json",
+      "backend/data/generated/matchday_refresh_validation_v2_10.json",
+      "backend/data/generated/prediction_diversity_audit.json",
+      "backend/data/generated/predictions_baseline.json",
+      "backend/data/generated/predictions_elo.json",
+      "backend/data/generated/result_consistency_validation_v2_7.json",
+      "backend/data/generated/worldcup_2026_prediction_evaluation_v2_6.json",
+      "backend/data/generated/worldcup_2026_results_v2_6.json",
+      "backend/data/generated/worldcup_knockout_structure_v2_6.json",
+      "backend/data/generated/worldcup_live_group_standings_v2_7.json",
+      "backend/data/generated/worldcup_match_state_view_model_v2_7.json",
+      "backend/data/generated/worldcup_projected_campaign_candidate_v2_9.json",
+      "backend/data/generated/worldcup_projected_campaign_v2_6.json",
+      "backend/data/generated/worldcup_tournament_simulation_candidate_v2_9.json",
+      "backend/data/generated/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "backend/data/snapshots/active_vs_candidate_simulation_comparison_v2_9.json",
+      "backend/data/snapshots/data_sources.json",
+      "backend/data/snapshots/dual_matrix_validation_v2_9.json",
+      "backend/data/snapshots/generated_artifact_hygiene_v2_10.json",
+      "backend/data/snapshots/matchday_refresh_manifest_v2_10.json",
+      "backend/data/snapshots/matchday_refresh_validation_v2_10.json",
+      "backend/data/snapshots/prediction_diversity_audit.json",
+      "backend/data/snapshots/predictions_baseline.json",
+      "backend/data/snapshots/predictions_elo.json",
+      "backend/data/snapshots/result_consistency_validation_v2_7.json",
+      "backend/data/snapshots/worldcup_2026_prediction_evaluation_v2_6.json",
+      "backend/data/snapshots/worldcup_2026_results_v2_6.json",
+      "backend/data/snapshots/worldcup_knockout_structure_v2_6.json",
+      "backend/data/snapshots/worldcup_live_group_standings_v2_7.json",
+      "backend/data/snapshots/worldcup_match_state_view_model_v2_7.json",
+      "backend/data/snapshots/worldcup_projected_campaign_candidate_v2_9.json",
+      "backend/data/snapshots/worldcup_projected_campaign_v2_6.json",
+      "backend/data/snapshots/worldcup_tournament_simulation_candidate_v2_9.json",
+      "backend/data/snapshots/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "backend/scripts/audit_generated_artifact_hygiene_v2_10.py",
+      "backend/scripts/fetch_worldcup_2026_results_v2_6.py",
+      "backend/scripts/run_matchday_refresh_v2_10.py",
+      "backend/scripts/v2_10_refresh_utils.py",
+      "backend/scripts/v2_6_live_utils.py",
+      "backend/scripts/v2_7_consistency_utils.py",
+      "backend/scripts/v2_9_dual_matrix_utils.py",
+      "backend/scripts/validate_matchday_refresh_v2_10.py",
+      "docs/ACTIVE_VS_CANDIDATE_SIMULATION_COMPARISON_V2_9.md",
+      "docs/FUTURE_ENGINE_BLUEPRINT.md",
+      "docs/GENERATED_ARTIFACT_HYGIENE_V2_10.md",
+      "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+      "docs/MATCHDAY_REFRESH_MANIFEST_V2_10.md",
+      "docs/MATCHDAY_REFRESH_PIPELINE_STRATEGY_V2_10.md",
+      "docs/MATCHDAY_REFRESH_RUNBOOK_V2_10.md",
+      "docs/MATCHDAY_REFRESH_VALIDATION_V2_10.md",
+      "docs/VALIDATION_LOG.md",
+      "docs/WORLDCUP_2026_RESULTS_FETCH_V2_6.md",
+      "docs/WORLDCUP_TOURNAMENT_SIMULATION_CONDITIONED_V2_6.md",
+      "frontend/src/assets/data/active_vs_candidate_simulation_comparison_v2_9.json",
+      "frontend/src/assets/data/dual_matrix_validation_v2_9.json",
+      "frontend/src/assets/data/generated_artifact_hygiene_v2_10.json",
+      "frontend/src/assets/data/matchday_refresh_manifest_v2_10.json",
+      "frontend/src/assets/data/matchday_refresh_validation_v2_10.json",
+      "frontend/src/assets/data/result_consistency_validation_v2_7.json",
+      "frontend/src/assets/data/worldcup_2026_prediction_evaluation_v2_6.json",
+      "frontend/src/assets/data/worldcup_2026_results_v2_6.json",
+      "frontend/src/assets/data/worldcup_knockout_structure_v2_6.json",
+      "frontend/src/assets/data/worldcup_live_group_standings_v2_7.json",
+      "frontend/src/assets/data/worldcup_match_state_view_model_v2_7.json",
+      "frontend/src/assets/data/worldcup_projected_campaign_candidate_v2_9.json",
+      "frontend/src/assets/data/worldcup_projected_campaign_v2_6.json",
+      "frontend/src/assets/data/worldcup_tournament_simulation_candidate_v2_9.json",
+      "frontend/src/assets/data/worldcup_tournament_simulation_conditioned_v2_6.json"
+    ],
+    "expected_modified_files": [],
+    "unexpected_modified_files": []
+  },
+  "status": "pass"
+}

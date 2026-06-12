@@ -1414,7 +1414,7 @@ Model retrained / Optuna rerun: no / no
 
 ## V2.9 — Dual Matrix Display & Candidate Simulation Comparison
 
-Commit: TBD
+Commit: 4858457 Compare active and alternative score matrices
 
 ### Technical validation
 
@@ -1434,6 +1434,49 @@ Commit: TBD
 - [x] Angular tests passed
 - [x] No model retrained
 - [x] No Optuna rerun
+- [x] No secret committed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Active vs candidate comparison accepted
+- [x] Candidate simulation comparison accepted
+- [x] Projection alternative accepted as non-active
+- [x] Active predictions remain official
+- [x] Next roadmap iteration accepted: operational matchday refresh pipeline
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.10 — Operational Matchday Refresh Pipeline
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.9 human validation recorded
+- [x] Matchday refresh strategy created
+- [x] Single refresh pipeline created
+- [x] Results refresh integrated
+- [x] Prediction evaluation integrated
+- [x] Live standings refresh integrated
+- [x] Match state view model refresh integrated
+- [x] Active conditioned simulation integrated
+- [x] Candidate simulation integrated
+- [x] Active/candidate comparison integrated
+- [x] Projected campaigns integrated
+- [x] Refresh manifest generated
+- [x] Artifact hygiene audit generated
+- [x] Runbook created
+- [x] Refresh validation passed
+- [x] Active predictions unchanged
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] Angular build passed if frontend changed
+- [x] Angular tests passed if frontend changed
 - [x] No secret committed
 
 ### Human validation

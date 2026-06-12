@@ -373,6 +373,30 @@ Notes :
 - [x] No Optuna rerun
 - [x] No secret committed
 
+## Checklist V2.10 — Operational Matchday Refresh Pipeline
+
+- [x] V2.9 human validation recorded
+- [x] Matchday refresh strategy created
+- [x] Single refresh pipeline created
+- [x] Results refresh integrated
+- [x] Prediction evaluation integrated
+- [x] Live standings refresh integrated
+- [x] Match state view model refresh integrated
+- [x] Active conditioned simulation integrated
+- [x] Candidate simulation integrated
+- [x] Active/candidate comparison integrated
+- [x] Projected campaigns integrated
+- [x] Refresh manifest generated
+- [x] Artifact hygiene audit generated
+- [x] Runbook created
+- [x] Refresh validation passed
+- [x] Active predictions unchanged
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] Angular build passed if frontend changed
+- [x] Angular tests passed if frontend changed
+- [x] No secret committed
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.

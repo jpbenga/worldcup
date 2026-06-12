@@ -358,3 +358,17 @@ simulation page. The alternative appears only through explicit labels,
 secondary disclosure and a user-controlled toggle. Its qualification deltas
 and projected-campaign proxy are comparative evidence, not official
 predictions. No model, Optuna study or active probability is changed.
+
+## V2.10 operational matchday refresh pipeline
+
+V2.10 turns the separate result-aware scripts into one ordered operational
+workflow. A single command refreshes official-result overlays, post-match
+evaluation, live standings, unified match state, active and candidate
+conditioned simulations, their comparison, projected-campaign proxies and
+consistency validation.
+
+The workflow records protected-file hashes, step output and Git hygiene in a
+versioned manifest. Cached-only, online fetch, dry-run and frontend-copy
+control modes support routine matchday operations without changing frozen
+pre-match probabilities, retraining the model, rerunning Optuna or promoting
+the candidate.
