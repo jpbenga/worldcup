@@ -421,6 +421,23 @@ npm test -- --watch=false
 The simulation route covers groups only. No knockout bracket is invented, and
 V2.5 does not change active prediction probabilities.
 
+## Live results and conditioned simulation V2.6
+
+V2.6 keeps pre-match predictions frozen and publishes official results,
+post-match evaluation and conditioned group simulation as separate layers.
+
+```bash
+python3 backend/scripts/fetch_worldcup_2026_results_v2_6.py
+python3 backend/scripts/evaluate_predictions_against_results_v2_6.py
+python3 backend/scripts/run_worldcup_tournament_simulation_v2_6.py
+python3 backend/scripts/discover_worldcup_knockout_structure_v2_6.py
+python3 backend/scripts/build_worldcup_projected_campaign_v2_6.py
+```
+
+The existing cards and modal display official results only when available.
+`/simulation` locks finished scores and shows a clearly labelled Projected
+Campaign proxy because no official knockout bracket is currently available.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

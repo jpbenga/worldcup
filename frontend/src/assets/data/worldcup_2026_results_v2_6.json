@@ -1,0 +1,1241 @@
+{
+  "version": "v2.6",
+  "source": "api_football",
+  "generated_at": "2026-06-11T23:56:07Z",
+  "request_count": 1,
+  "fixture_count": 72,
+  "finished_count": 1,
+  "live_count": 0,
+  "not_started_count": 71,
+  "postponed_count": 0,
+  "cancelled_count": 0,
+  "unknown_count": 0,
+  "result_available": true,
+  "fixtures": [
+    {
+      "fixture_id": 1489369,
+      "match_id": "api_football_1489369",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "kickoff_at": "2026-06-11T19:00:00+00:00",
+      "status": "finished",
+      "elapsed": 90,
+      "actual_score": {
+        "home": 2,
+        "away": 0
+      },
+      "winner": "home",
+      "source_updated_at": "2026-06-11T19:00:00+00:00",
+      "confidence": "official",
+      "source_status": "FT"
+    },
+    {
+      "fixture_id": 1538999,
+      "match_id": "api_football_1538999",
+      "home_team": "South Korea",
+      "away_team": "Czech Republic",
+      "kickoff_at": "2026-06-12T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-12T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539000,
+      "match_id": "api_football_1539000",
+      "home_team": "Canada",
+      "away_team": "Bosnia & Herzegovina",
+      "kickoff_at": "2026-06-12T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-12T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489370,
+      "match_id": "api_football_1489370",
+      "home_team": "USA",
+      "away_team": "Paraguay",
+      "kickoff_at": "2026-06-13T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-13T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489373,
+      "match_id": "api_football_1489373",
+      "home_team": "Qatar",
+      "away_team": "Switzerland",
+      "kickoff_at": "2026-06-13T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-13T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489371,
+      "match_id": "api_football_1489371",
+      "home_team": "Brazil",
+      "away_team": "Morocco",
+      "kickoff_at": "2026-06-13T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-13T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489372,
+      "match_id": "api_football_1489372",
+      "home_team": "Haiti",
+      "away_team": "Scotland",
+      "kickoff_at": "2026-06-14T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-14T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539001,
+      "match_id": "api_football_1539001",
+      "home_team": "Australia",
+      "away_team": "Türkiye",
+      "kickoff_at": "2026-06-14T04:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-14T04:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489374,
+      "match_id": "api_football_1489374",
+      "home_team": "Germany",
+      "away_team": "Curaçao",
+      "kickoff_at": "2026-06-14T17:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-14T17:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489376,
+      "match_id": "api_football_1489376",
+      "home_team": "Netherlands",
+      "away_team": "Japan",
+      "kickoff_at": "2026-06-14T20:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-14T20:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489375,
+      "match_id": "api_football_1489375",
+      "home_team": "Ivory Coast",
+      "away_team": "Ecuador",
+      "kickoff_at": "2026-06-14T23:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-14T23:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539002,
+      "match_id": "api_football_1539002",
+      "home_team": "Sweden",
+      "away_team": "Tunisia",
+      "kickoff_at": "2026-06-15T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-15T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489380,
+      "match_id": "api_football_1489380",
+      "home_team": "Spain",
+      "away_team": "Cape Verde Islands",
+      "kickoff_at": "2026-06-15T16:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-15T16:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489377,
+      "match_id": "api_football_1489377",
+      "home_team": "Belgium",
+      "away_team": "Egypt",
+      "kickoff_at": "2026-06-15T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-15T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489379,
+      "match_id": "api_football_1489379",
+      "home_team": "Saudi Arabia",
+      "away_team": "Uruguay",
+      "kickoff_at": "2026-06-15T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-15T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489378,
+      "match_id": "api_football_1489378",
+      "home_team": "Iran",
+      "away_team": "New Zealand",
+      "kickoff_at": "2026-06-16T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-16T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489383,
+      "match_id": "api_football_1489383",
+      "home_team": "France",
+      "away_team": "Senegal",
+      "kickoff_at": "2026-06-16T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-16T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539016,
+      "match_id": "api_football_1539016",
+      "home_team": "Iraq",
+      "away_team": "Norway",
+      "kickoff_at": "2026-06-16T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-16T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489381,
+      "match_id": "api_football_1489381",
+      "home_team": "Argentina",
+      "away_team": "Algeria",
+      "kickoff_at": "2026-06-17T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-17T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489382,
+      "match_id": "api_football_1489382",
+      "home_team": "Austria",
+      "away_team": "Jordan",
+      "kickoff_at": "2026-06-17T04:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-17T04:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539003,
+      "match_id": "api_football_1539003",
+      "home_team": "Portugal",
+      "away_team": "Congo DR",
+      "kickoff_at": "2026-06-17T17:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-17T17:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489384,
+      "match_id": "api_football_1489384",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "kickoff_at": "2026-06-17T20:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-17T20:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489385,
+      "match_id": "api_football_1489385",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "kickoff_at": "2026-06-17T23:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-17T23:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489386,
+      "match_id": "api_football_1489386",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "kickoff_at": "2026-06-18T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-18T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539004,
+      "match_id": "api_football_1539004",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "kickoff_at": "2026-06-18T16:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-18T16:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539005,
+      "match_id": "api_football_1539005",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia & Herzegovina",
+      "kickoff_at": "2026-06-18T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-18T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489387,
+      "match_id": "api_football_1489387",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "kickoff_at": "2026-06-18T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-18T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489388,
+      "match_id": "api_football_1489388",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "kickoff_at": "2026-06-19T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-19T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489391,
+      "match_id": "api_football_1489391",
+      "home_team": "USA",
+      "away_team": "Australia",
+      "kickoff_at": "2026-06-19T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-19T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489390,
+      "match_id": "api_football_1489390",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "kickoff_at": "2026-06-19T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-19T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489389,
+      "match_id": "api_football_1489389",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "kickoff_at": "2026-06-20T00:30:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-20T00:30:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539006,
+      "match_id": "api_football_1539006",
+      "home_team": "Türkiye",
+      "away_team": "Paraguay",
+      "kickoff_at": "2026-06-20T03:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-20T03:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539007,
+      "match_id": "api_football_1539007",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "kickoff_at": "2026-06-20T17:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-20T17:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489393,
+      "match_id": "api_football_1489393",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "kickoff_at": "2026-06-20T20:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-20T20:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489392,
+      "match_id": "api_football_1489392",
+      "home_team": "Ecuador",
+      "away_team": "Curaçao",
+      "kickoff_at": "2026-06-21T00:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-21T00:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489394,
+      "match_id": "api_football_1489394",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "kickoff_at": "2026-06-21T04:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-21T04:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489397,
+      "match_id": "api_football_1489397",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "kickoff_at": "2026-06-21T16:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-21T16:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489395,
+      "match_id": "api_football_1489395",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "kickoff_at": "2026-06-21T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-21T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489398,
+      "match_id": "api_football_1489398",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde Islands",
+      "kickoff_at": "2026-06-21T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-21T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489396,
+      "match_id": "api_football_1489396",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "kickoff_at": "2026-06-22T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-22T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489399,
+      "match_id": "api_football_1489399",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "kickoff_at": "2026-06-22T17:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-22T17:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539017,
+      "match_id": "api_football_1539017",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "kickoff_at": "2026-06-22T21:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-22T21:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489401,
+      "match_id": "api_football_1489401",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "kickoff_at": "2026-06-23T00:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-23T00:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489400,
+      "match_id": "api_football_1489400",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "kickoff_at": "2026-06-23T03:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-23T03:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489404,
+      "match_id": "api_football_1489404",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "kickoff_at": "2026-06-23T17:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-23T17:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489402,
+      "match_id": "api_football_1489402",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "kickoff_at": "2026-06-23T20:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-23T20:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489403,
+      "match_id": "api_football_1489403",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "kickoff_at": "2026-06-23T23:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-23T23:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539008,
+      "match_id": "api_football_1539008",
+      "home_team": "Colombia",
+      "away_team": "Congo DR",
+      "kickoff_at": "2026-06-24T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-24T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489408,
+      "match_id": "api_football_1489408",
+      "home_team": "Switzerland",
+      "away_team": "Canada",
+      "kickoff_at": "2026-06-24T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-24T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539009,
+      "match_id": "api_football_1539009",
+      "home_team": "Bosnia & Herzegovina",
+      "away_team": "Qatar",
+      "kickoff_at": "2026-06-24T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-24T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489405,
+      "match_id": "api_football_1489405",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "kickoff_at": "2026-06-24T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-24T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489406,
+      "match_id": "api_football_1489406",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "kickoff_at": "2026-06-24T22:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-24T22:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539010,
+      "match_id": "api_football_1539010",
+      "home_team": "Czech Republic",
+      "away_team": "Mexico",
+      "kickoff_at": "2026-06-25T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-25T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489407,
+      "match_id": "api_football_1489407",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "kickoff_at": "2026-06-25T01:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-25T01:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489410,
+      "match_id": "api_football_1489410",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "kickoff_at": "2026-06-25T20:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-25T20:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489409,
+      "match_id": "api_football_1489409",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "kickoff_at": "2026-06-25T20:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-25T20:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539011,
+      "match_id": "api_football_1539011",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "kickoff_at": "2026-06-25T23:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-25T23:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489412,
+      "match_id": "api_football_1489412",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "kickoff_at": "2026-06-25T23:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-25T23:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539012,
+      "match_id": "api_football_1539012",
+      "home_team": "Türkiye",
+      "away_team": "USA",
+      "kickoff_at": "2026-06-26T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-26T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489411,
+      "match_id": "api_football_1489411",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "kickoff_at": "2026-06-26T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-26T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539074,
+      "match_id": "api_football_1539074",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "kickoff_at": "2026-06-26T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-26T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489416,
+      "match_id": "api_football_1489416",
+      "home_team": "Norway",
+      "away_team": "France",
+      "kickoff_at": "2026-06-26T19:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-26T19:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489417,
+      "match_id": "api_football_1489417",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "kickoff_at": "2026-06-27T00:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T00:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489413,
+      "match_id": "api_football_1489413",
+      "home_team": "Cape Verde Islands",
+      "away_team": "Saudi Arabia",
+      "kickoff_at": "2026-06-27T00:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T00:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489414,
+      "match_id": "api_football_1489414",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "kickoff_at": "2026-06-27T03:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T03:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489415,
+      "match_id": "api_football_1489415",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "kickoff_at": "2026-06-27T03:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T03:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489420,
+      "match_id": "api_football_1489420",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "kickoff_at": "2026-06-27T21:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T21:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489422,
+      "match_id": "api_football_1489422",
+      "home_team": "Panama",
+      "away_team": "England",
+      "kickoff_at": "2026-06-27T21:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T21:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489419,
+      "match_id": "api_football_1489419",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "kickoff_at": "2026-06-27T23:30:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T23:30:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1539013,
+      "match_id": "api_football_1539013",
+      "home_team": "Congo DR",
+      "away_team": "Uzbekistan",
+      "kickoff_at": "2026-06-27T23:30:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-27T23:30:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489418,
+      "match_id": "api_football_1489418",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "kickoff_at": "2026-06-28T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-28T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    },
+    {
+      "fixture_id": 1489421,
+      "match_id": "api_football_1489421",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "kickoff_at": "2026-06-28T02:00:00+00:00",
+      "status": "not_started",
+      "elapsed": null,
+      "actual_score": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "source_updated_at": "2026-06-28T02:00:00+00:00",
+      "confidence": "cached",
+      "source_status": "NS"
+    }
+  ],
+  "notes": []
+}

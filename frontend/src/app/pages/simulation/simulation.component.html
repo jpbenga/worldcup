@@ -8,20 +8,57 @@
 
     @if (simulation$ | async; as simulation) {
       <header class="py-14 sm:py-20">
-        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">Simulation V2.4</p>
-        <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">Les chemins probables hors des groupes.</h1>
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">Simulation conditionnée V2.6</p>
+        <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">Le tournoi bouge avec le réel.</h1>
         <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-400">
-          {{ simulation.simulationCount | number }} scénarios calculés à partir des 72 matrices de scores actives.
-          Chaque pourcentage décrit une fréquence dans ces scénarios.
+          {{ simulation.simulationCount | number }} scénarios : {{ simulation.finishedMatchesLocked }} résultat officiel verrouillé,
+          {{ simulation.futureMatchesSimulated }} matchs futurs simulés avec les matrices pré-match figées.
         </p>
       </header>
 
-      <aside class="rounded-2xl border border-amber-500/25 bg-amber-500/5 p-5">
+      <section class="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
+        <article class="rounded-3xl border border-violet-500/25 bg-violet-500/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Projected Campaign · proxy</p>
+          <p class="mt-4 text-sm text-slate-400">Contender proxy en tête</p>
+          <h2 class="mt-1 text-4xl font-black">{{ simulation.campaign.championProxy }}</h2>
+          <p class="mt-4 text-sm leading-6 text-slate-400">
+            Ce n’est pas une probabilité officielle de victoire finale. Le bracket knockout manque, donc aucun adversaire ni parcours n’est inventé.
+          </p>
+          <div class="mt-5 space-y-2">
+            @for (step of simulation.campaign.topContenders[0].campaignSteps; track step.label) {
+              <div class="border-l-2 border-violet-400/40 pl-3"><p class="text-sm font-semibold">{{ step.label }}</p><p class="text-xs text-slate-500">{{ step.detail }}</p></div>
+            }
+          </div>
+        </article>
+        <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Top contenders</p>
+          <div class="mt-4 grid gap-3 sm:grid-cols-3">
+            @for (team of simulation.campaign.topContenders.slice(0, 3); track team.team) {
+              <div class="rounded-xl bg-slate-950/60 p-4">
+                <p class="font-bold">{{ team.team }}</p>
+                <p class="mt-2 text-sm text-cyan-300">Qualification {{ team.qualificationProbability | percent: '1.0-0' }}</p>
+                <p class="mt-1 text-xs text-slate-500">Groupe : rang probable {{ team.mostProbableGroupFinish }}</p>
+              </div>
+            }
+          </div>
+        </article>
+      </section>
+
+      <aside class="mt-8 rounded-2xl border border-amber-500/25 bg-amber-500/5 p-5">
         <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300">Périmètre honnête</p>
-        <p class="mt-2 text-sm leading-6 text-slate-300">
-          La simulation couvre uniquement la phase de groupes. Aucun tableau à élimination directe n’est disponible ou inventé.
-        </p>
+        <p class="mt-2 text-sm leading-6 text-slate-300">La simulation couvre uniquement la phase de groupes. Le leader ci-dessus est un proxy de campagne, pas un champion officiellement simulé.</p>
       </aside>
+
+      <section class="mt-8 grid gap-4 lg:grid-cols-2">
+        <article class="rounded-3xl border border-emerald-500/20 bg-emerald-500/5 p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">En hausse depuis V2.4</p>
+          <div class="mt-4 space-y-3">@for (item of simulation.largestRises; track item[0]) { <div class="flex justify-between gap-3"><strong>{{ item[0] }}</strong><span class="text-emerald-300">+{{ item[1] | percent: '1.1-1' }}</span></div> }</div>
+        </article>
+        <article class="rounded-3xl border border-rose-500/20 bg-rose-500/5 p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-rose-300">En baisse depuis V2.4</p>
+          <div class="mt-4 space-y-3">@for (item of simulation.largestFalls; track item[0]) { <div class="flex justify-between gap-3"><strong>{{ item[0] }}</strong><span class="text-rose-300">{{ item[1] | percent: '1.1-1' }}</span></div> }</div>
+        </article>
+      </section>
 
       <section class="mt-8 rounded-3xl border border-slate-800 bg-slate-900/70 p-5 sm:p-6">
         <div class="flex flex-wrap items-end justify-between gap-3">

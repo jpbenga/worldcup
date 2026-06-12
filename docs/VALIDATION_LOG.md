@@ -1186,7 +1186,7 @@ Full tournament simulation: unavailable; knockout bracket not present
 
 ## V2.5 — Existing UI Enrichment & Tournament Simulation Experience
 
-Commit: TBD
+Commit: b8c6d2e Enrich existing UI with active predictions and simulation
 
 ### Technical validation
 
@@ -1214,13 +1214,17 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
-- [ ] Desktop and mobile density accepted
-- [ ] Match modal and simulation values compared with JSON
+- [x] Reviewed by Jeanpaul Benga
+- [x] Existing group-based UI accepted
+- [x] Existing match modal accepted
+- [x] UI enrichment accepted
+- [x] Tournament simulation route accepted
+- [x] Decision accepted: continue roadmap without UI rebuild
+- [x] Next step accepted: live results overlay, prediction scoring and creative tournament path
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
@@ -1234,4 +1238,59 @@ Teams / groups: 48 / 12
 Full tournament simulation: unavailable
 Angular tests: 1 existing app-creation test passed; coverage remains limited
 Model retrained / Optuna rerun / active probabilities changed: no / no / no
+```
+
+## V2.6 — Live Results Overlay, Prediction Scoring & Creative Tournament Path
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.5 human validation recorded
+- [x] World Cup 2026 results fetched or status file generated
+- [x] Results layer separated from pre-match predictions
+- [x] Prediction-vs-result evaluation generated
+- [x] Match cards show result status without clutter
+- [x] Match modal shows prediction vs actual result when available
+- [x] DNB win/loss/push evaluated for played matches
+- [x] Secondary markets evaluated for played matches
+- [x] Conditional tournament simulation generated
+- [x] Finished matches locked in simulation
+- [x] Knockout structure limitation documented
+- [x] Official most-probable path correctly omitted because bracket is unavailable
+- [x] Projected campaign proxy generated
+- [x] Simulation UX enriched creatively
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] Pre-match probabilities not modified
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.6 result
+
+```text
+Results source: API-Football, one cached request
+Fixtures: 72
+Finished / live / not started: 1 / 0 / 71
+Evaluated finished matches: 1
+Sample size too small: yes
+Exact score / Top-3 / Top-5 / 1X2 hits: 0 / 0 / 1 / 1
+DNB wins / losses / pushes: 1 / 0 / 0
+Conditioned simulations: 50,000
+Finished matches locked / future simulated: 1 / 71
+Knockout structure available: no
+Projected campaign proxy leader: Spain
+Angular build and tests: passed
+Model retrained / Optuna rerun / pre-match probabilities modified: no / no / no
 ```

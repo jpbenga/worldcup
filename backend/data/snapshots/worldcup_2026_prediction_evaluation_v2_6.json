@@ -1,0 +1,114 @@
+{
+  "version": "v2.6",
+  "engine_version": "quant_hybrid_v2.2",
+  "generated_at": "2026-06-12T00:02:15Z",
+  "evaluated_finished_matches": 1,
+  "pending_matches": 71,
+  "sample_size_too_small": true,
+  "exact_score": {
+    "hits": 0,
+    "total": 1,
+    "rate": 0.0
+  },
+  "top_3": {
+    "hits": 0,
+    "total": 1,
+    "rate": 0.0
+  },
+  "top_5": {
+    "hits": 1,
+    "total": 1,
+    "rate": 1.0
+  },
+  "one_x_two": {
+    "hits": 1,
+    "total": 1,
+    "rate": 1.0
+  },
+  "draw_no_bet": {
+    "wins": 1,
+    "losses": 0,
+    "pushes": 0,
+    "total": 1
+  },
+  "over_under": {
+    "over_0_5_hit": {
+      "hits": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "over_1_5_hit": {
+      "hits": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "over_2_5_hit": {
+      "hits": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "under_2_5_hit": {
+      "hits": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "under_3_5_hit": {
+      "hits": 1,
+      "total": 1,
+      "rate": 1.0
+    }
+  },
+  "btts": {
+    "hits": 1,
+    "total": 1,
+    "rate": 1.0
+  },
+  "team_goals": {
+    "evaluated_markets": 2,
+    "hits": 1
+  },
+  "matches": [
+    {
+      "match_id": "api_football_1489369",
+      "fixture_id": 1489369,
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "actual_score": "2-0",
+      "score_modal": "0-0",
+      "exact_score_hit": false,
+      "top_3_score_hit": false,
+      "top_5_score_hit": true,
+      "predicted_1x2": "home",
+      "actual_1x2": "home",
+      "one_x_two_hit": true,
+      "favorite_hit": true,
+      "draw_no_bet": {
+        "selection": "home",
+        "outcome": "win"
+      },
+      "over_under": {
+        "over_0_5_hit": true,
+        "over_1_5_hit": true,
+        "over_2_5_hit": true,
+        "under_2_5_hit": true,
+        "under_3_5_hit": true
+      },
+      "btts_hit": true,
+      "team_goals_hit": {
+        "home_over_0_5": true,
+        "away_over_0_5": false
+      },
+      "clean_sheet_hit": {
+        "home": false,
+        "away": true
+      },
+      "confidence_bucket": "low",
+      "prediction_evaluation_label": "one_x_two",
+      "post_match_summary": "Bon résultat 1X2, score différent"
+    }
+  ],
+  "secondary_market_context_version": "v2.4",
+  "notes": [
+    "Sample is too small for a strong global conclusion."
+  ]
+}

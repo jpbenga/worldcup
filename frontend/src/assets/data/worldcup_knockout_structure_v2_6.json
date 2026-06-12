@@ -1,0 +1,17 @@
+{
+  "version": "v2.6",
+  "generated_at": "2026-06-12T00:02:16Z",
+  "knockout_structure_available": false,
+  "source": [
+    "backend/data/raw/api_football/v2_6/worldcup_results/fixtures.json",
+    "backend/data/raw/api_football/worldcup_2026/fixtures.json"
+  ],
+  "rounds": [],
+  "mapping": {},
+  "discovered_knockout_fixtures": [],
+  "limitations": [
+    "Available API-Football fixture files contain only the 72 group-stage fixtures.",
+    "No official mapping from qualified group positions to knockout slots is available.",
+    "An official champion path cannot be simulated without inventing a bracket."
+  ]
+}

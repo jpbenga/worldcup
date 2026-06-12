@@ -4,10 +4,14 @@ import { map, Observable } from 'rxjs';
 import {
   GroupStanding,
   GroupStrength,
+  ConditionedTournamentSimulation,
   Match,
+  PredictionEvaluation,
   PredictionDiversityAudit,
+  ProjectedCampaign,
   TournamentSimulation,
   TournamentTeamSimulation,
+  WorldCupResult,
   WorldCupGroup,
   WorldCupTeam,
 } from '../models/worldcup.models';
@@ -92,6 +96,84 @@ export class WorldCupService {
     );
   }
 
+  getResults(): Observable<WorldCupResult[]> {
+    return this.http.get<any>('assets/data/worldcup_2026_results_v2_6.json').pipe(
+      map((payload) => payload.fixtures.map((item: any) => ({
+        fixtureId: item.fixture_id,
+        matchId: item.match_id,
+        homeTeam: item.home_team,
+        awayTeam: item.away_team,
+        kickoffAt: item.kickoff_at,
+        status: item.status,
+        elapsed: item.elapsed,
+        actualScore: { home: item.actual_score.home, away: item.actual_score.away },
+        winner: item.winner,
+        confidence: item.confidence,
+      }))),
+    );
+  }
+
+  getPredictionEvaluations(): Observable<PredictionEvaluation[]> {
+    return this.http.get<any>('assets/data/worldcup_2026_prediction_evaluation_v2_6.json').pipe(
+      map((payload) => payload.matches.map((item: any) => ({
+        matchId: item.match_id,
+        actualScore: item.actual_score,
+        scoreModal: item.score_modal,
+        exactScoreHit: item.exact_score_hit,
+        top3ScoreHit: item.top_3_score_hit,
+        top5ScoreHit: item.top_5_score_hit,
+        predicted1x2: item.predicted_1x2,
+        actual1x2: item.actual_1x2,
+        oneXTwoHit: item.one_x_two_hit,
+        drawNoBet: item.draw_no_bet,
+        overUnder: item.over_under,
+        bttsHit: item.btts_hit,
+        teamGoalsHit: item.team_goals_hit,
+        predictionEvaluationLabel: item.prediction_evaluation_label,
+        postMatchSummary: item.post_match_summary,
+      }))),
+    );
+  }
+
+  getConditionedTournamentSimulation(): Observable<ConditionedTournamentSimulation> {
+    return this.http.get<any>('assets/data/worldcup_tournament_simulation_conditioned_v2_6.json').pipe(
+      map((simulation) => {
+        const base = this.tournamentSimulation(simulation);
+        return {
+          ...base,
+          finishedMatchesLocked: simulation.finished_matches_locked,
+          futureMatchesSimulated: simulation.future_matches_simulated,
+          changesVsV24: simulation.changes_vs_v2_4,
+          largestRises: simulation.largest_rises,
+          largestFalls: simulation.largest_falls,
+        };
+      }),
+    );
+  }
+
+  getProjectedCampaign(): Observable<ProjectedCampaign> {
+    return this.http.get<any>('assets/data/worldcup_projected_campaign_v2_6.json').pipe(
+      map((campaign) => ({
+        pathType: campaign.path_type,
+        isOfficialChampionSimulation: campaign.is_official_champion_simulation,
+        championProxy: campaign.champion_proxy,
+        championProxyScore: campaign.champion_proxy_score,
+        topContenders: campaign.top_contenders.map((item: any) => ({
+          team: item.team,
+          group: item.group,
+          qualificationProbability: item.qualification_probability,
+          groupWinnerProbability: item.group_winner_probability,
+          eloRating: item.elo_rating,
+          eloRank: item.elo_rank,
+          contenderProxyScore: item.contender_proxy_score,
+          mostProbableGroupFinish: item.most_probable_group_finish,
+          campaignSteps: item.campaign_steps,
+        })),
+        limitations: campaign.limitations,
+      })),
+    );
+  }
+
   private team(team: any): WorldCupTeam {
     return {
       teamId: team.team_id,
@@ -158,6 +240,26 @@ export class WorldCupService {
       qualificationProbability: item.qualification_probability,
       bestThirdQualificationProbability: item.best_third_qualification_probability,
       groupEliminationProbability: item.group_elimination_probability,
+    };
+  }
+
+  private tournamentSimulation(simulation: any): TournamentSimulation {
+    const teams = Object.entries(simulation.teams).map(([team, item]) => this.tournamentTeam(team, item as any));
+    return {
+      generatedAt: simulation.generated_at,
+      version: simulation.version,
+      engineVersion: simulation.engine_version,
+      simulationCount: simulation.simulation_count,
+      fixtureCount: simulation.fixture_count,
+      fullTournamentSimulationAvailable: simulation.full_tournament_simulation_available,
+      groupStageSimulationAvailable: simulation.group_stage_simulation_available,
+      qualificationRule: simulation.qualification_rule,
+      limitations: simulation.limitations,
+      teams,
+      groups: Object.entries(simulation.groups).map(([group, groupTeams]) => ({
+        group,
+        teams: (groupTeams as string[]).map((team) => teams.find((item) => item.team === team)!),
+      })),
     };
   }
 }

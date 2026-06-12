@@ -21,6 +21,38 @@
     </header>
 
     <div class="space-y-5 p-5 sm:p-7">
+      @if (result?.status === 'finished' && evaluation; as item) {
+        <section class="rounded-2xl border border-emerald-500/25 bg-emerald-500/5 p-5">
+          <div class="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">Résultat réel vs prédiction</p>
+              <p class="mt-2 text-xl font-bold">{{ item.postMatchSummary }}</p>
+              <p class="mt-2 text-sm text-slate-400">Prédiction figée {{ item.scoreModal }} · résultat officiel {{ item.actualScore }}</p>
+            </div>
+            <span class="rounded-full bg-slate-950 px-3 py-1 text-xs text-emerald-300">Résultat officiel</span>
+          </div>
+          <div class="mt-4 grid gap-2 text-xs sm:grid-cols-3 lg:grid-cols-6">
+            <span class="rounded-lg bg-slate-950/70 p-3">Score exact <strong class="block">{{ item.exactScoreHit ? 'oui' : 'non' }}</strong></span>
+            <span class="rounded-lg bg-slate-950/70 p-3">Top-3 <strong class="block">{{ item.top3ScoreHit ? 'oui' : 'non' }}</strong></span>
+            <span class="rounded-lg bg-slate-950/70 p-3">Top-5 <strong class="block">{{ item.top5ScoreHit ? 'oui' : 'non' }}</strong></span>
+            <span class="rounded-lg bg-slate-950/70 p-3">1X2 <strong class="block">{{ item.oneXTwoHit ? 'réussi' : 'raté' }}</strong></span>
+            <span class="rounded-lg bg-slate-950/70 p-3">DNB <strong class="block">{{ item.drawNoBet.outcome }}</strong></span>
+            <span class="rounded-lg bg-slate-950/70 p-3">BTTS <strong class="block">{{ item.bttsHit ? 'réussi' : 'raté' }}</strong></span>
+          </div>
+          <details class="mt-4 text-sm text-slate-400">
+            <summary class="cursor-pointer font-semibold text-slate-300">Marchés post-match</summary>
+            <div class="mt-3 flex flex-wrap gap-2">
+              @for (market of item.overUnder | keyvalue; track market.key) {
+                <span class="rounded-full bg-slate-950 px-3 py-1">{{ market.key }} : {{ market.value ? 'réussi' : 'raté' }}</span>
+              }
+            </div>
+          </details>
+        </section>
+      } @else if (result?.status === 'live') {
+        <aside class="rounded-xl border border-rose-500/25 bg-rose-500/5 p-4 text-sm text-slate-300">
+          Match en direct · {{ result?.elapsed }}' · {{ result?.actualScore?.home }}-{{ result?.actualScore?.away }}. L’évaluation définitive attend le coup de sifflet final.
+        </aside>
+      }
       @if (activePrediction; as prediction) {
         <section class="grid gap-4 lg:grid-cols-[0.75fr_1.25fr]">
           <article class="rounded-2xl border border-cyan-500/25 bg-cyan-500/5 p-5">

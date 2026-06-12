@@ -301,6 +301,68 @@ export interface TournamentSimulation {
   groups: TournamentGroupSimulation[];
 }
 
+export type ResultStatus = 'not_started' | 'live' | 'finished' | 'postponed' | 'cancelled' | 'unknown';
+
+export interface WorldCupResult {
+  fixtureId: number;
+  matchId: string;
+  homeTeam: string;
+  awayTeam: string;
+  kickoffAt: string;
+  status: ResultStatus;
+  elapsed?: number;
+  actualScore: { home?: number; away?: number };
+  winner?: 'home' | 'draw' | 'away';
+  confidence: 'official' | 'cached' | 'manual' | 'unknown';
+}
+
+export interface PredictionEvaluation {
+  matchId: string;
+  actualScore: string;
+  scoreModal: string;
+  exactScoreHit: boolean;
+  top3ScoreHit: boolean;
+  top5ScoreHit: boolean;
+  predicted1x2: string;
+  actual1x2: string;
+  oneXTwoHit: boolean;
+  drawNoBet: { selection: string; outcome: 'win' | 'loss' | 'push' | 'not_applicable' };
+  overUnder: Record<string, boolean>;
+  bttsHit: boolean;
+  teamGoalsHit: Record<string, boolean>;
+  predictionEvaluationLabel: string;
+  postMatchSummary: string;
+}
+
+export interface ConditionedTournamentSimulation extends TournamentSimulation {
+  finishedMatchesLocked: number;
+  futureMatchesSimulated: number;
+  changesVsV24: Record<string, number>;
+  largestRises: [string, number][];
+  largestFalls: [string, number][];
+}
+
+export interface ProjectedContender {
+  team: string;
+  group: string;
+  qualificationProbability: number;
+  groupWinnerProbability: number;
+  eloRating?: number;
+  eloRank?: number;
+  contenderProxyScore: number;
+  mostProbableGroupFinish: number;
+  campaignSteps: { label: string; detail: string }[];
+}
+
+export interface ProjectedCampaign {
+  pathType: 'projected_campaign_proxy';
+  isOfficialChampionSimulation: boolean;
+  championProxy: string;
+  championProxyScore: number;
+  topContenders: ProjectedContender[];
+  limitations: string[];
+}
+
 export interface BacktestResult {
   matchId: string;
   marketName: string;

@@ -1,0 +1,1007 @@
+{
+  "generated_at": "2026-06-11T23:56:49Z",
+  "version": "v2.6",
+  "engine_version": "quant_hybrid_v2.2",
+  "simulation_count": 50000,
+  "fixture_count": 72,
+  "finished_matches_locked": 1,
+  "future_matches_simulated": 71,
+  "group_stage_simulation_available": true,
+  "full_tournament_simulation_available": false,
+  "teams": {
+    "Czech Republic": {
+      "group": "Group A",
+      "finish_first_probability": 0.20072,
+      "finish_second_probability": 0.24696,
+      "finish_third_probability": 0.27438,
+      "finish_fourth_probability": 0.27794,
+      "qualification_probability": 0.63354,
+      "best_third_qualification_probability": 0.18586,
+      "group_elimination_probability": 0.36646
+    },
+    "Mexico": {
+      "group": "Group A",
+      "finish_first_probability": 0.4683,
+      "finish_second_probability": 0.31276,
+      "finish_third_probability": 0.17758,
+      "finish_fourth_probability": 0.04136,
+      "qualification_probability": 0.93064,
+      "best_third_qualification_probability": 0.14958,
+      "group_elimination_probability": 0.06936
+    },
+    "South Africa": {
+      "group": "Group A",
+      "finish_first_probability": 0.04832,
+      "finish_second_probability": 0.15896,
+      "finish_third_probability": 0.3022,
+      "finish_fourth_probability": 0.49052,
+      "qualification_probability": 0.40884,
+      "best_third_qualification_probability": 0.20156,
+      "group_elimination_probability": 0.59116
+    },
+    "South Korea": {
+      "group": "Group A",
+      "finish_first_probability": 0.28266,
+      "finish_second_probability": 0.28132,
+      "finish_third_probability": 0.24584,
+      "finish_fourth_probability": 0.19018,
+      "qualification_probability": 0.7354,
+      "best_third_qualification_probability": 0.17142,
+      "group_elimination_probability": 0.2646
+    },
+    "Bosnia & Herzegovina": {
+      "group": "Group B",
+      "finish_first_probability": 0.1205,
+      "finish_second_probability": 0.19038,
+      "finish_third_probability": 0.28694,
+      "finish_fourth_probability": 0.40218,
+      "qualification_probability": 0.49342,
+      "best_third_qualification_probability": 0.18254,
+      "group_elimination_probability": 0.50658
+    },
+    "Canada": {
+      "group": "Group B",
+      "finish_first_probability": 0.3061,
+      "finish_second_probability": 0.30368,
+      "finish_third_probability": 0.23294,
+      "finish_fourth_probability": 0.15728,
+      "qualification_probability": 0.77802,
+      "best_third_qualification_probability": 0.16824,
+      "group_elimination_probability": 0.22198
+    },
+    "Qatar": {
+      "group": "Group B",
+      "finish_first_probability": 0.1591,
+      "finish_second_probability": 0.2269,
+      "finish_third_probability": 0.29004,
+      "finish_fourth_probability": 0.32396,
+      "qualification_probability": 0.57568,
+      "best_third_qualification_probability": 0.18968,
+      "group_elimination_probability": 0.42432
+    },
+    "Switzerland": {
+      "group": "Group B",
+      "finish_first_probability": 0.4143,
+      "finish_second_probability": 0.27904,
+      "finish_third_probability": 0.19008,
+      "finish_fourth_probability": 0.11658,
+      "qualification_probability": 0.8389,
+      "best_third_qualification_probability": 0.14556,
+      "group_elimination_probability": 0.1611
+    },
+    "Australia": {
+      "group": "Group D",
+      "finish_first_probability": 0.27614,
+      "finish_second_probability": 0.282,
+      "finish_third_probability": 0.2523,
+      "finish_fourth_probability": 0.18956,
+      "qualification_probability": 0.73392,
+      "best_third_qualification_probability": 0.17578,
+      "group_elimination_probability": 0.26608
+    },
+    "Paraguay": {
+      "group": "Group D",
+      "finish_first_probability": 0.09596,
+      "finish_second_probability": 0.16822,
+      "finish_third_probability": 0.26942,
+      "finish_fourth_probability": 0.4664,
+      "qualification_probability": 0.42744,
+      "best_third_qualification_probability": 0.16326,
+      "group_elimination_probability": 0.57256
+    },
+    "Türkiye": {
+      "group": "Group D",
+      "finish_first_probability": 0.23848,
+      "finish_second_probability": 0.26922,
+      "finish_third_probability": 0.2737,
+      "finish_fourth_probability": 0.2186,
+      "qualification_probability": 0.69554,
+      "best_third_qualification_probability": 0.18784,
+      "group_elimination_probability": 0.30446
+    },
+    "USA": {
+      "group": "Group D",
+      "finish_first_probability": 0.38942,
+      "finish_second_probability": 0.28056,
+      "finish_third_probability": 0.20458,
+      "finish_fourth_probability": 0.12544,
+      "qualification_probability": 0.82194,
+      "best_third_qualification_probability": 0.15196,
+      "group_elimination_probability": 0.17806
+    },
+    "Brazil": {
+      "group": "Group C",
+      "finish_first_probability": 0.38544,
+      "finish_second_probability": 0.33818,
+      "finish_third_probability": 0.18744,
+      "finish_fourth_probability": 0.08894,
+      "qualification_probability": 0.86446,
+      "best_third_qualification_probability": 0.14084,
+      "group_elimination_probability": 0.13554
+    },
+    "Haiti": {
+      "group": "Group C",
+      "finish_first_probability": 0.0725,
+      "finish_second_probability": 0.16342,
+      "finish_third_probability": 0.3353,
+      "finish_fourth_probability": 0.42878,
+      "qualification_probability": 0.42838,
+      "best_third_qualification_probability": 0.19246,
+      "group_elimination_probability": 0.57162
+    },
+    "Morocco": {
+      "group": "Group C",
+      "finish_first_probability": 0.44992,
+      "finish_second_probability": 0.32356,
+      "finish_third_probability": 0.15928,
+      "finish_fourth_probability": 0.06724,
+      "qualification_probability": 0.89614,
+      "best_third_qualification_probability": 0.12266,
+      "group_elimination_probability": 0.10386
+    },
+    "Scotland": {
+      "group": "Group C",
+      "finish_first_probability": 0.09214,
+      "finish_second_probability": 0.17484,
+      "finish_third_probability": 0.31798,
+      "finish_fourth_probability": 0.41504,
+      "qualification_probability": 0.45498,
+      "best_third_qualification_probability": 0.188,
+      "group_elimination_probability": 0.54502
+    },
+    "Curaçao": {
+      "group": "Group E",
+      "finish_first_probability": 0.14558,
+      "finish_second_probability": 0.22922,
+      "finish_third_probability": 0.2876,
+      "finish_fourth_probability": 0.3376,
+      "qualification_probability": 0.55406,
+      "best_third_qualification_probability": 0.17926,
+      "group_elimination_probability": 0.44594
+    },
+    "Ecuador": {
+      "group": "Group E",
+      "finish_first_probability": 0.1323,
+      "finish_second_probability": 0.21944,
+      "finish_third_probability": 0.29258,
+      "finish_fourth_probability": 0.35568,
+      "qualification_probability": 0.53352,
+      "best_third_qualification_probability": 0.18178,
+      "group_elimination_probability": 0.46648
+    },
+    "Germany": {
+      "group": "Group E",
+      "finish_first_probability": 0.49074,
+      "finish_second_probability": 0.2598,
+      "finish_third_probability": 0.15602,
+      "finish_fourth_probability": 0.09344,
+      "qualification_probability": 0.8701,
+      "best_third_qualification_probability": 0.11956,
+      "group_elimination_probability": 0.1299
+    },
+    "Ivory Coast": {
+      "group": "Group E",
+      "finish_first_probability": 0.23138,
+      "finish_second_probability": 0.29154,
+      "finish_third_probability": 0.2638,
+      "finish_fourth_probability": 0.21328,
+      "qualification_probability": 0.7015,
+      "best_third_qualification_probability": 0.17858,
+      "group_elimination_probability": 0.2985
+    },
+    "Japan": {
+      "group": "Group F",
+      "finish_first_probability": 0.28484,
+      "finish_second_probability": 0.31946,
+      "finish_third_probability": 0.2424,
+      "finish_fourth_probability": 0.1533,
+      "qualification_probability": 0.77692,
+      "best_third_qualification_probability": 0.17262,
+      "group_elimination_probability": 0.22308
+    },
+    "Netherlands": {
+      "group": "Group F",
+      "finish_first_probability": 0.48588,
+      "finish_second_probability": 0.27746,
+      "finish_third_probability": 0.1556,
+      "finish_fourth_probability": 0.08106,
+      "qualification_probability": 0.88424,
+      "best_third_qualification_probability": 0.1209,
+      "group_elimination_probability": 0.11576
+    },
+    "Sweden": {
+      "group": "Group F",
+      "finish_first_probability": 0.08694,
+      "finish_second_probability": 0.17054,
+      "finish_third_probability": 0.2966,
+      "finish_fourth_probability": 0.44592,
+      "qualification_probability": 0.43386,
+      "best_third_qualification_probability": 0.17638,
+      "group_elimination_probability": 0.56614
+    },
+    "Tunisia": {
+      "group": "Group F",
+      "finish_first_probability": 0.14234,
+      "finish_second_probability": 0.23254,
+      "finish_third_probability": 0.3054,
+      "finish_fourth_probability": 0.31972,
+      "qualification_probability": 0.56822,
+      "best_third_qualification_probability": 0.19334,
+      "group_elimination_probability": 0.43178
+    },
+    "Cape Verde Islands": {
+      "group": "Group H",
+      "finish_first_probability": 0.12532,
+      "finish_second_probability": 0.26128,
+      "finish_third_probability": 0.30628,
+      "finish_fourth_probability": 0.30712,
+      "qualification_probability": 0.56868,
+      "best_third_qualification_probability": 0.18208,
+      "group_elimination_probability": 0.43132
+    },
+    "Saudi Arabia": {
+      "group": "Group H",
+      "finish_first_probability": 0.09714,
+      "finish_second_probability": 0.22378,
+      "finish_third_probability": 0.2994,
+      "finish_fourth_probability": 0.37968,
+      "qualification_probability": 0.49046,
+      "best_third_qualification_probability": 0.16954,
+      "group_elimination_probability": 0.50954
+    },
+    "Spain": {
+      "group": "Group H",
+      "finish_first_probability": 0.61624,
+      "finish_second_probability": 0.22578,
+      "finish_third_probability": 0.10756,
+      "finish_fourth_probability": 0.05042,
+      "qualification_probability": 0.92628,
+      "best_third_qualification_probability": 0.08426,
+      "group_elimination_probability": 0.07372
+    },
+    "Uruguay": {
+      "group": "Group H",
+      "finish_first_probability": 0.1613,
+      "finish_second_probability": 0.28916,
+      "finish_third_probability": 0.28676,
+      "finish_fourth_probability": 0.26278,
+      "qualification_probability": 0.62292,
+      "best_third_qualification_probability": 0.17246,
+      "group_elimination_probability": 0.37708
+    },
+    "Belgium": {
+      "group": "Group G",
+      "finish_first_probability": 0.44046,
+      "finish_second_probability": 0.26624,
+      "finish_third_probability": 0.18014,
+      "finish_fourth_probability": 0.11316,
+      "qualification_probability": 0.84352,
+      "best_third_qualification_probability": 0.13682,
+      "group_elimination_probability": 0.15648
+    },
+    "Egypt": {
+      "group": "Group G",
+      "finish_first_probability": 0.19988,
+      "finish_second_probability": 0.26028,
+      "finish_third_probability": 0.27722,
+      "finish_fourth_probability": 0.26262,
+      "qualification_probability": 0.64376,
+      "best_third_qualification_probability": 0.1836,
+      "group_elimination_probability": 0.35624
+    },
+    "Iran": {
+      "group": "Group G",
+      "finish_first_probability": 0.22044,
+      "finish_second_probability": 0.26812,
+      "finish_third_probability": 0.27252,
+      "finish_fourth_probability": 0.23892,
+      "qualification_probability": 0.67466,
+      "best_third_qualification_probability": 0.1861,
+      "group_elimination_probability": 0.32534
+    },
+    "New Zealand": {
+      "group": "Group G",
+      "finish_first_probability": 0.13922,
+      "finish_second_probability": 0.20536,
+      "finish_third_probability": 0.27012,
+      "finish_fourth_probability": 0.3853,
+      "qualification_probability": 0.5146,
+      "best_third_qualification_probability": 0.17002,
+      "group_elimination_probability": 0.4854
+    },
+    "France": {
+      "group": "Group I",
+      "finish_first_probability": 0.34624,
+      "finish_second_probability": 0.28408,
+      "finish_third_probability": 0.22382,
+      "finish_fourth_probability": 0.14586,
+      "qualification_probability": 0.79464,
+      "best_third_qualification_probability": 0.16432,
+      "group_elimination_probability": 0.20536
+    },
+    "Iraq": {
+      "group": "Group I",
+      "finish_first_probability": 0.09642,
+      "finish_second_probability": 0.16856,
+      "finish_third_probability": 0.26974,
+      "finish_fourth_probability": 0.46528,
+      "qualification_probability": 0.43208,
+      "best_third_qualification_probability": 0.1671,
+      "group_elimination_probability": 0.56792
+    },
+    "Norway": {
+      "group": "Group I",
+      "finish_first_probability": 0.32538,
+      "finish_second_probability": 0.2745,
+      "finish_third_probability": 0.22964,
+      "finish_fourth_probability": 0.17048,
+      "qualification_probability": 0.76498,
+      "best_third_qualification_probability": 0.1651,
+      "group_elimination_probability": 0.23502
+    },
+    "Senegal": {
+      "group": "Group I",
+      "finish_first_probability": 0.23196,
+      "finish_second_probability": 0.27286,
+      "finish_third_probability": 0.2768,
+      "finish_fourth_probability": 0.21838,
+      "qualification_probability": 0.69742,
+      "best_third_qualification_probability": 0.1926,
+      "group_elimination_probability": 0.30258
+    },
+    "Algeria": {
+      "group": "Group J",
+      "finish_first_probability": 0.19768,
+      "finish_second_probability": 0.27032,
+      "finish_third_probability": 0.27462,
+      "finish_fourth_probability": 0.25738,
+      "qualification_probability": 0.65064,
+      "best_third_qualification_probability": 0.18264,
+      "group_elimination_probability": 0.34936
+    },
+    "Argentina": {
+      "group": "Group J",
+      "finish_first_probability": 0.48538,
+      "finish_second_probability": 0.2648,
+      "finish_third_probability": 0.1613,
+      "finish_fourth_probability": 0.08852,
+      "qualification_probability": 0.87286,
+      "best_third_qualification_probability": 0.12268,
+      "group_elimination_probability": 0.12714
+    },
+    "Austria": {
+      "group": "Group J",
+      "finish_first_probability": 0.20078,
+      "finish_second_probability": 0.26808,
+      "finish_third_probability": 0.28356,
+      "finish_fourth_probability": 0.24758,
+      "qualification_probability": 0.65846,
+      "best_third_qualification_probability": 0.1896,
+      "group_elimination_probability": 0.34154
+    },
+    "Jordan": {
+      "group": "Group J",
+      "finish_first_probability": 0.11616,
+      "finish_second_probability": 0.1968,
+      "finish_third_probability": 0.28052,
+      "finish_fourth_probability": 0.40652,
+      "qualification_probability": 0.48792,
+      "best_third_qualification_probability": 0.17496,
+      "group_elimination_probability": 0.51208
+    },
+    "Colombia": {
+      "group": "Group K",
+      "finish_first_probability": 0.37516,
+      "finish_second_probability": 0.27804,
+      "finish_third_probability": 0.20374,
+      "finish_fourth_probability": 0.14306,
+      "qualification_probability": 0.80316,
+      "best_third_qualification_probability": 0.14996,
+      "group_elimination_probability": 0.19684
+    },
+    "Congo DR": {
+      "group": "Group K",
+      "finish_first_probability": 0.14418,
+      "finish_second_probability": 0.20942,
+      "finish_third_probability": 0.27684,
+      "finish_fourth_probability": 0.36956,
+      "qualification_probability": 0.529,
+      "best_third_qualification_probability": 0.1754,
+      "group_elimination_probability": 0.471
+    },
+    "Portugal": {
+      "group": "Group K",
+      "finish_first_probability": 0.27894,
+      "finish_second_probability": 0.27016,
+      "finish_third_probability": 0.24392,
+      "finish_fourth_probability": 0.20698,
+      "qualification_probability": 0.72028,
+      "best_third_qualification_probability": 0.17118,
+      "group_elimination_probability": 0.27972
+    },
+    "Uzbekistan": {
+      "group": "Group K",
+      "finish_first_probability": 0.20172,
+      "finish_second_probability": 0.24238,
+      "finish_third_probability": 0.2755,
+      "finish_fourth_probability": 0.2804,
+      "qualification_probability": 0.62544,
+      "best_third_qualification_probability": 0.18134,
+      "group_elimination_probability": 0.37456
+    },
+    "Croatia": {
+      "group": "Group L",
+      "finish_first_probability": 0.20086,
+      "finish_second_probability": 0.33654,
+      "finish_third_probability": 0.2679,
+      "finish_fourth_probability": 0.1947,
+      "qualification_probability": 0.71676,
+      "best_third_qualification_probability": 0.17936,
+      "group_elimination_probability": 0.28324
+    },
+    "England": {
+      "group": "Group L",
+      "finish_first_probability": 0.60884,
+      "finish_second_probability": 0.23552,
+      "finish_third_probability": 0.1081,
+      "finish_fourth_probability": 0.04754,
+      "qualification_probability": 0.93134,
+      "best_third_qualification_probability": 0.08698,
+      "group_elimination_probability": 0.06866
+    },
+    "Ghana": {
+      "group": "Group L",
+      "finish_first_probability": 0.09486,
+      "finish_second_probability": 0.2238,
+      "finish_third_probability": 0.32948,
+      "finish_fourth_probability": 0.35186,
+      "qualification_probability": 0.51794,
+      "best_third_qualification_probability": 0.19928,
+      "group_elimination_probability": 0.48206
+    },
+    "Panama": {
+      "group": "Group L",
+      "finish_first_probability": 0.09544,
+      "finish_second_probability": 0.20414,
+      "finish_third_probability": 0.29452,
+      "finish_fourth_probability": 0.4059,
+      "qualification_probability": 0.47254,
+      "best_third_qualification_probability": 0.17296,
+      "group_elimination_probability": 0.52746
+    }
+  },
+  "groups": {
+    "Group A": [
+      "Czech Republic",
+      "Mexico",
+      "South Africa",
+      "South Korea"
+    ],
+    "Group B": [
+      "Bosnia & Herzegovina",
+      "Canada",
+      "Qatar",
+      "Switzerland"
+    ],
+    "Group C": [
+      "Brazil",
+      "Haiti",
+      "Morocco",
+      "Scotland"
+    ],
+    "Group D": [
+      "Australia",
+      "Paraguay",
+      "Türkiye",
+      "USA"
+    ],
+    "Group E": [
+      "Curaçao",
+      "Ecuador",
+      "Germany",
+      "Ivory Coast"
+    ],
+    "Group F": [
+      "Japan",
+      "Netherlands",
+      "Sweden",
+      "Tunisia"
+    ],
+    "Group G": [
+      "Belgium",
+      "Egypt",
+      "Iran",
+      "New Zealand"
+    ],
+    "Group H": [
+      "Cape Verde Islands",
+      "Saudi Arabia",
+      "Spain",
+      "Uruguay"
+    ],
+    "Group I": [
+      "France",
+      "Iraq",
+      "Norway",
+      "Senegal"
+    ],
+    "Group J": [
+      "Algeria",
+      "Argentina",
+      "Austria",
+      "Jordan"
+    ],
+    "Group K": [
+      "Colombia",
+      "Congo DR",
+      "Portugal",
+      "Uzbekistan"
+    ],
+    "Group L": [
+      "Croatia",
+      "England",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "qualification_probabilities": {
+    "Czech Republic": 0.63354,
+    "Mexico": 0.93064,
+    "South Africa": 0.40884,
+    "South Korea": 0.7354,
+    "Bosnia & Herzegovina": 0.49342,
+    "Canada": 0.77802,
+    "Qatar": 0.57568,
+    "Switzerland": 0.8389,
+    "Australia": 0.73392,
+    "Paraguay": 0.42744,
+    "Türkiye": 0.69554,
+    "USA": 0.82194,
+    "Brazil": 0.86446,
+    "Haiti": 0.42838,
+    "Morocco": 0.89614,
+    "Scotland": 0.45498,
+    "Curaçao": 0.55406,
+    "Ecuador": 0.53352,
+    "Germany": 0.8701,
+    "Ivory Coast": 0.7015,
+    "Japan": 0.77692,
+    "Netherlands": 0.88424,
+    "Sweden": 0.43386,
+    "Tunisia": 0.56822,
+    "Cape Verde Islands": 0.56868,
+    "Saudi Arabia": 0.49046,
+    "Spain": 0.92628,
+    "Uruguay": 0.62292,
+    "Belgium": 0.84352,
+    "Egypt": 0.64376,
+    "Iran": 0.67466,
+    "New Zealand": 0.5146,
+    "France": 0.79464,
+    "Iraq": 0.43208,
+    "Norway": 0.76498,
+    "Senegal": 0.69742,
+    "Algeria": 0.65064,
+    "Argentina": 0.87286,
+    "Austria": 0.65846,
+    "Jordan": 0.48792,
+    "Colombia": 0.80316,
+    "Congo DR": 0.529,
+    "Portugal": 0.72028,
+    "Uzbekistan": 0.62544,
+    "Croatia": 0.71676,
+    "England": 0.93134,
+    "Ghana": 0.51794,
+    "Panama": 0.47254
+  },
+  "group_rank_probabilities": {
+    "Czech Republic": {
+      "finish_first_probability": 0.20072,
+      "finish_second_probability": 0.24696,
+      "finish_third_probability": 0.27438,
+      "finish_fourth_probability": 0.27794
+    },
+    "Mexico": {
+      "finish_first_probability": 0.4683,
+      "finish_second_probability": 0.31276,
+      "finish_third_probability": 0.17758,
+      "finish_fourth_probability": 0.04136
+    },
+    "South Africa": {
+      "finish_first_probability": 0.04832,
+      "finish_second_probability": 0.15896,
+      "finish_third_probability": 0.3022,
+      "finish_fourth_probability": 0.49052
+    },
+    "South Korea": {
+      "finish_first_probability": 0.28266,
+      "finish_second_probability": 0.28132,
+      "finish_third_probability": 0.24584,
+      "finish_fourth_probability": 0.19018
+    },
+    "Bosnia & Herzegovina": {
+      "finish_first_probability": 0.1205,
+      "finish_second_probability": 0.19038,
+      "finish_third_probability": 0.28694,
+      "finish_fourth_probability": 0.40218
+    },
+    "Canada": {
+      "finish_first_probability": 0.3061,
+      "finish_second_probability": 0.30368,
+      "finish_third_probability": 0.23294,
+      "finish_fourth_probability": 0.15728
+    },
+    "Qatar": {
+      "finish_first_probability": 0.1591,
+      "finish_second_probability": 0.2269,
+      "finish_third_probability": 0.29004,
+      "finish_fourth_probability": 0.32396
+    },
+    "Switzerland": {
+      "finish_first_probability": 0.4143,
+      "finish_second_probability": 0.27904,
+      "finish_third_probability": 0.19008,
+      "finish_fourth_probability": 0.11658
+    },
+    "Australia": {
+      "finish_first_probability": 0.27614,
+      "finish_second_probability": 0.282,
+      "finish_third_probability": 0.2523,
+      "finish_fourth_probability": 0.18956
+    },
+    "Paraguay": {
+      "finish_first_probability": 0.09596,
+      "finish_second_probability": 0.16822,
+      "finish_third_probability": 0.26942,
+      "finish_fourth_probability": 0.4664
+    },
+    "Türkiye": {
+      "finish_first_probability": 0.23848,
+      "finish_second_probability": 0.26922,
+      "finish_third_probability": 0.2737,
+      "finish_fourth_probability": 0.2186
+    },
+    "USA": {
+      "finish_first_probability": 0.38942,
+      "finish_second_probability": 0.28056,
+      "finish_third_probability": 0.20458,
+      "finish_fourth_probability": 0.12544
+    },
+    "Brazil": {
+      "finish_first_probability": 0.38544,
+      "finish_second_probability": 0.33818,
+      "finish_third_probability": 0.18744,
+      "finish_fourth_probability": 0.08894
+    },
+    "Haiti": {
+      "finish_first_probability": 0.0725,
+      "finish_second_probability": 0.16342,
+      "finish_third_probability": 0.3353,
+      "finish_fourth_probability": 0.42878
+    },
+    "Morocco": {
+      "finish_first_probability": 0.44992,
+      "finish_second_probability": 0.32356,
+      "finish_third_probability": 0.15928,
+      "finish_fourth_probability": 0.06724
+    },
+    "Scotland": {
+      "finish_first_probability": 0.09214,
+      "finish_second_probability": 0.17484,
+      "finish_third_probability": 0.31798,
+      "finish_fourth_probability": 0.41504
+    },
+    "Curaçao": {
+      "finish_first_probability": 0.14558,
+      "finish_second_probability": 0.22922,
+      "finish_third_probability": 0.2876,
+      "finish_fourth_probability": 0.3376
+    },
+    "Ecuador": {
+      "finish_first_probability": 0.1323,
+      "finish_second_probability": 0.21944,
+      "finish_third_probability": 0.29258,
+      "finish_fourth_probability": 0.35568
+    },
+    "Germany": {
+      "finish_first_probability": 0.49074,
+      "finish_second_probability": 0.2598,
+      "finish_third_probability": 0.15602,
+      "finish_fourth_probability": 0.09344
+    },
+    "Ivory Coast": {
+      "finish_first_probability": 0.23138,
+      "finish_second_probability": 0.29154,
+      "finish_third_probability": 0.2638,
+      "finish_fourth_probability": 0.21328
+    },
+    "Japan": {
+      "finish_first_probability": 0.28484,
+      "finish_second_probability": 0.31946,
+      "finish_third_probability": 0.2424,
+      "finish_fourth_probability": 0.1533
+    },
+    "Netherlands": {
+      "finish_first_probability": 0.48588,
+      "finish_second_probability": 0.27746,
+      "finish_third_probability": 0.1556,
+      "finish_fourth_probability": 0.08106
+    },
+    "Sweden": {
+      "finish_first_probability": 0.08694,
+      "finish_second_probability": 0.17054,
+      "finish_third_probability": 0.2966,
+      "finish_fourth_probability": 0.44592
+    },
+    "Tunisia": {
+      "finish_first_probability": 0.14234,
+      "finish_second_probability": 0.23254,
+      "finish_third_probability": 0.3054,
+      "finish_fourth_probability": 0.31972
+    },
+    "Cape Verde Islands": {
+      "finish_first_probability": 0.12532,
+      "finish_second_probability": 0.26128,
+      "finish_third_probability": 0.30628,
+      "finish_fourth_probability": 0.30712
+    },
+    "Saudi Arabia": {
+      "finish_first_probability": 0.09714,
+      "finish_second_probability": 0.22378,
+      "finish_third_probability": 0.2994,
+      "finish_fourth_probability": 0.37968
+    },
+    "Spain": {
+      "finish_first_probability": 0.61624,
+      "finish_second_probability": 0.22578,
+      "finish_third_probability": 0.10756,
+      "finish_fourth_probability": 0.05042
+    },
+    "Uruguay": {
+      "finish_first_probability": 0.1613,
+      "finish_second_probability": 0.28916,
+      "finish_third_probability": 0.28676,
+      "finish_fourth_probability": 0.26278
+    },
+    "Belgium": {
+      "finish_first_probability": 0.44046,
+      "finish_second_probability": 0.26624,
+      "finish_third_probability": 0.18014,
+      "finish_fourth_probability": 0.11316
+    },
+    "Egypt": {
+      "finish_first_probability": 0.19988,
+      "finish_second_probability": 0.26028,
+      "finish_third_probability": 0.27722,
+      "finish_fourth_probability": 0.26262
+    },
+    "Iran": {
+      "finish_first_probability": 0.22044,
+      "finish_second_probability": 0.26812,
+      "finish_third_probability": 0.27252,
+      "finish_fourth_probability": 0.23892
+    },
+    "New Zealand": {
+      "finish_first_probability": 0.13922,
+      "finish_second_probability": 0.20536,
+      "finish_third_probability": 0.27012,
+      "finish_fourth_probability": 0.3853
+    },
+    "France": {
+      "finish_first_probability": 0.34624,
+      "finish_second_probability": 0.28408,
+      "finish_third_probability": 0.22382,
+      "finish_fourth_probability": 0.14586
+    },
+    "Iraq": {
+      "finish_first_probability": 0.09642,
+      "finish_second_probability": 0.16856,
+      "finish_third_probability": 0.26974,
+      "finish_fourth_probability": 0.46528
+    },
+    "Norway": {
+      "finish_first_probability": 0.32538,
+      "finish_second_probability": 0.2745,
+      "finish_third_probability": 0.22964,
+      "finish_fourth_probability": 0.17048
+    },
+    "Senegal": {
+      "finish_first_probability": 0.23196,
+      "finish_second_probability": 0.27286,
+      "finish_third_probability": 0.2768,
+      "finish_fourth_probability": 0.21838
+    },
+    "Algeria": {
+      "finish_first_probability": 0.19768,
+      "finish_second_probability": 0.27032,
+      "finish_third_probability": 0.27462,
+      "finish_fourth_probability": 0.25738
+    },
+    "Argentina": {
+      "finish_first_probability": 0.48538,
+      "finish_second_probability": 0.2648,
+      "finish_third_probability": 0.1613,
+      "finish_fourth_probability": 0.08852
+    },
+    "Austria": {
+      "finish_first_probability": 0.20078,
+      "finish_second_probability": 0.26808,
+      "finish_third_probability": 0.28356,
+      "finish_fourth_probability": 0.24758
+    },
+    "Jordan": {
+      "finish_first_probability": 0.11616,
+      "finish_second_probability": 0.1968,
+      "finish_third_probability": 0.28052,
+      "finish_fourth_probability": 0.40652
+    },
+    "Colombia": {
+      "finish_first_probability": 0.37516,
+      "finish_second_probability": 0.27804,
+      "finish_third_probability": 0.20374,
+      "finish_fourth_probability": 0.14306
+    },
+    "Congo DR": {
+      "finish_first_probability": 0.14418,
+      "finish_second_probability": 0.20942,
+      "finish_third_probability": 0.27684,
+      "finish_fourth_probability": 0.36956
+    },
+    "Portugal": {
+      "finish_first_probability": 0.27894,
+      "finish_second_probability": 0.27016,
+      "finish_third_probability": 0.24392,
+      "finish_fourth_probability": 0.20698
+    },
+    "Uzbekistan": {
+      "finish_first_probability": 0.20172,
+      "finish_second_probability": 0.24238,
+      "finish_third_probability": 0.2755,
+      "finish_fourth_probability": 0.2804
+    },
+    "Croatia": {
+      "finish_first_probability": 0.20086,
+      "finish_second_probability": 0.33654,
+      "finish_third_probability": 0.2679,
+      "finish_fourth_probability": 0.1947
+    },
+    "England": {
+      "finish_first_probability": 0.60884,
+      "finish_second_probability": 0.23552,
+      "finish_third_probability": 0.1081,
+      "finish_fourth_probability": 0.04754
+    },
+    "Ghana": {
+      "finish_first_probability": 0.09486,
+      "finish_second_probability": 0.2238,
+      "finish_third_probability": 0.32948,
+      "finish_fourth_probability": 0.35186
+    },
+    "Panama": {
+      "finish_first_probability": 0.09544,
+      "finish_second_probability": 0.20414,
+      "finish_third_probability": 0.29452,
+      "finish_fourth_probability": 0.4059
+    }
+  },
+  "changes_vs_v2_4": {
+    "Czech Republic": 0.000140000000000029,
+    "Mexico": 0.28058000000000005,
+    "South Africa": -0.26644,
+    "South Korea": 0.0013800000000000479,
+    "Bosnia & Herzegovina": -0.003119999999999956,
+    "Canada": -0.00012000000000000899,
+    "Qatar": -0.0009400000000000519,
+    "Switzerland": -0.0027200000000000557,
+    "Australia": 7.999999999996898e-05,
+    "Paraguay": 0.0010399999999999854,
+    "Türkiye": -0.0024999999999999467,
+    "USA": -0.0015800000000000258,
+    "Brazil": 0.0040799999999999725,
+    "Haiti": -0.0005200000000000204,
+    "Morocco": -3.999999999992898e-05,
+    "Scotland": 0.00019999999999997797,
+    "Curaçao": -0.0019400000000000528,
+    "Ecuador": 0.0029000000000000137,
+    "Germany": -0.0015800000000000258,
+    "Ivory Coast": -0.0005600000000000049,
+    "Japan": 0.0035200000000000786,
+    "Netherlands": -0.00017999999999995797,
+    "Sweden": 0.0010600000000000054,
+    "Tunisia": -0.001080000000000081,
+    "Cape Verde Islands": -0.0021200000000000108,
+    "Saudi Arabia": 0.0014799999999999813,
+    "Spain": -0.0025199999999999667,
+    "Uruguay": 0.0013000000000000789,
+    "Belgium": 0.0015600000000000058,
+    "Egypt": -0.0012199999999999989,
+    "Iran": -0.0019599999999999618,
+    "New Zealand": -0.0031600000000000517,
+    "France": -0.0019200000000000328,
+    "Iraq": -0.0012800000000000034,
+    "Norway": 0.0049000000000000155,
+    "Senegal": 0.0028000000000000247,
+    "Algeria": 0.0006800000000000139,
+    "Argentina": -0.0016599999999999948,
+    "Austria": -0.0020799999999999708,
+    "Jordan": -0.0011999999999999789,
+    "Colombia": 0.0010799999999999699,
+    "Congo DR": -0.0014799999999999258,
+    "Portugal": 0.0012199999999999989,
+    "Uzbekistan": -0.005519999999999969,
+    "Croatia": 0.0032799999999999496,
+    "England": -0.0017600000000000948,
+    "Ghana": 0.0038399999999999546,
+    "Panama": -0.005919999999999981
+  },
+  "largest_rises": [
+    [
+      "Mexico",
+      0.28058000000000005
+    ],
+    [
+      "Norway",
+      0.0049000000000000155
+    ],
+    [
+      "Brazil",
+      0.0040799999999999725
+    ],
+    [
+      "Ghana",
+      0.0038399999999999546
+    ],
+    [
+      "Japan",
+      0.0035200000000000786
+    ]
+  ],
+  "largest_falls": [
+    [
+      "South Africa",
+      -0.26644
+    ],
+    [
+      "Panama",
+      -0.005919999999999981
+    ],
+    [
+      "Uzbekistan",
+      -0.005519999999999969
+    ],
+    [
+      "New Zealand",
+      -0.0031600000000000517
+    ],
+    [
+      "Bosnia & Herzegovina",
+      -0.003119999999999956
+    ]
+  ],
+  "qualification_rule": "Top two in each of 12 groups plus the eight best third-placed teams.",
+  "limitations": [
+    "Live matches are not locked.",
+    "No knockout bracket is invented.",
+    "Ties use points, goal difference, goals scored, then a seeded random tie-break because complete official tie-break inputs are unavailable."
+  ]
+}

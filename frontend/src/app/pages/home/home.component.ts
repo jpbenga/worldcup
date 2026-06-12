@@ -2,7 +2,7 @@ import { AsyncPipe, DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { combineLatest } from 'rxjs';
-import { DataSourceInfo, DataSourcesSnapshot, Match, MatchPrediction, ModelComparison, ReleaseCandidatePrediction } from '../../models/worldcup.models';
+import { DataSourceInfo, DataSourcesSnapshot, Match, MatchPrediction, ModelComparison, PredictionEvaluation, ReleaseCandidatePrediction, WorldCupResult } from '../../models/worldcup.models';
 import { BacktestingService } from '../../services/backtesting.service';
 import { MatchService } from '../../services/match.service';
 import { PredictionService } from '../../services/prediction.service';
@@ -51,6 +51,8 @@ export class HomeComponent {
     modelComparisons: this.modelComparisonService.getComparisons(),
     groups: this.worldCupService.getGroups(),
     groupStrengths: this.worldCupService.getStrengths(),
+    results: this.worldCupService.getResults(),
+    predictionEvaluations: this.worldCupService.getPredictionEvaluations(),
   });
 
   matchFor(matches: Match[], matchId: string): Match | undefined {
@@ -67,6 +69,14 @@ export class HomeComponent {
 
   releasePredictionFor(predictions: ReleaseCandidatePrediction[], matchId: string): ReleaseCandidatePrediction | undefined {
     return predictions.find((prediction) => prediction.matchId === matchId);
+  }
+
+  resultFor(results: WorldCupResult[], matchId: string): WorldCupResult | undefined {
+    return results.find((result) => result.matchId === matchId);
+  }
+
+  evaluationFor(evaluations: PredictionEvaluation[], matchId: string): PredictionEvaluation | undefined {
+    return evaluations.find((evaluation) => evaluation.matchId === matchId);
   }
 
   primarySource(snapshot: DataSourcesSnapshot): DataSourceInfo | undefined {

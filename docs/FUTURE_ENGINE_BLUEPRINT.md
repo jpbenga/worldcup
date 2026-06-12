@@ -305,3 +305,15 @@ Angular copies remain consistent.
 
 This is a product-consumption iteration only. It does not retrain a model,
 rerun Optuna, alter active probabilities or invent a knockout bracket.
+
+## V2.6 live results and creative tournament path
+
+V2.6 adds official results as a separate immutable evaluation layer. Frozen
+pre-match predictions are compared with finished scores, and the group
+simulation locks only finished official results while future fixtures continue
+to use their original matrices.
+
+The available fixture source still contains no official knockout mapping.
+Instead of inventing one, V2.6 publishes a clearly labelled Projected Campaign
+proxy combining conditioned group outlook and rating context. A full official
+path remains blocked until a trustworthy bracket contract exists.

@@ -172,6 +172,8 @@
           [groups]="vm.groups"
           [strengths]="vm.groupStrengths"
           [predictions]="vm.releasePredictions"
+          [results]="vm.results"
+          [evaluations]="vm.predictionEvaluations"
           (matchSelected)="selectedMatchId.set($event)"
         />
 
@@ -182,6 +184,8 @@
             [elo]="predictionFor(vm.eloPredictions, matchId)"
             [comparison]="comparisonFor(vm.modelComparisons, matchId)"
             [activePrediction]="releasePredictionFor(vm.releasePredictions, matchId)"
+            [result]="resultFor(vm.results, matchId)"
+            [evaluation]="evaluationFor(vm.predictionEvaluations, matchId)"
             (closed)="selectedMatchId.set(null)"
           />
         }

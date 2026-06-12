@@ -1,0 +1,930 @@
+{
+  "version": "v2.6",
+  "engine_version": "quant_hybrid_v2.2",
+  "generated_at": "2026-06-12T00:02:16Z",
+  "path_type": "projected_campaign_proxy",
+  "is_official_champion_simulation": false,
+  "champion_proxy": "Spain",
+  "champion_proxy_score": 0.8518694985568711,
+  "top_contenders": [
+    {
+      "team": "Spain",
+      "group": "Group H",
+      "qualification_probability": 0.92628,
+      "group_winner_probability": 0.61624,
+      "elo_rating": 2157,
+      "elo_rank": 1,
+      "contender_proxy_score": 0.8518694985568711,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 92.6%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "England",
+      "group": "Group L",
+      "qualification_probability": 0.93134,
+      "group_winner_probability": 0.60884,
+      "elo_rating": 2021,
+      "elo_rank": 4,
+      "contender_proxy_score": 0.8402242409238585,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 93.1%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Argentina",
+      "group": "Group J",
+      "qualification_probability": 0.87286,
+      "group_winner_probability": 0.48538,
+      "elo_rating": 2114,
+      "elo_rank": 2,
+      "contender_proxy_score": 0.7852771894305673,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 87.3%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Mexico",
+      "group": "Group A",
+      "qualification_probability": 0.93064,
+      "group_winner_probability": 0.4683,
+      "elo_rating": 1875,
+      "elo_rank": 18,
+      "contender_proxy_score": 0.7847490327760337,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 93.1%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Netherlands",
+      "group": "Group F",
+      "qualification_probability": 0.88424,
+      "group_winner_probability": 0.48588,
+      "elo_rating": 1948,
+      "elo_rank": 8,
+      "contender_proxy_score": 0.7725202158392676,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 88.4%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Germany",
+      "group": "Group E",
+      "qualification_probability": 0.8701,
+      "group_winner_probability": 0.49074,
+      "elo_rating": 1932,
+      "elo_rank": 10,
+      "contender_proxy_score": 0.7623178308747764,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 87.0%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Morocco",
+      "group": "Group C",
+      "qualification_probability": 0.89614,
+      "group_winner_probability": 0.44992,
+      "elo_rating": 1827,
+      "elo_rank": 24,
+      "contender_proxy_score": 0.7498898346438662,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 89.6%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Brazil",
+      "group": "Group C",
+      "qualification_probability": 0.86446,
+      "group_winner_probability": 0.38544,
+      "elo_rating": 1991,
+      "elo_rank": 5,
+      "contender_proxy_score": 0.743462474036239,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 86.4%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Belgium",
+      "group": "Group G",
+      "qualification_probability": 0.84352,
+      "group_winner_probability": 0.44046,
+      "elo_rating": 1894,
+      "elo_rank": 15,
+      "contender_proxy_score": 0.7277843721691419,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 84.4%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    },
+    {
+      "team": "Switzerland",
+      "group": "Group B",
+      "qualification_probability": 0.8389,
+      "group_winner_probability": 0.4143,
+      "elo_rating": 1891,
+      "elo_rank": 17,
+      "contender_proxy_score": 0.718366711782789,
+      "most_probable_group_finish": 1,
+      "campaign_steps": [
+        {
+          "label": "Phase de groupes",
+          "detail": "Rang le plus probable : 1"
+        },
+        {
+          "label": "Qualification",
+          "detail": "Probabilité : 83.9%"
+        },
+        {
+          "label": "Après les groupes",
+          "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+        }
+      ]
+    }
+  ],
+  "team_paths": {
+    "Spain": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 92.6%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "England": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 93.1%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Argentina": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 87.3%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Mexico": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 93.1%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Netherlands": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 88.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Germany": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 87.0%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Morocco": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 89.6%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Brazil": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 86.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Belgium": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 84.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Switzerland": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 83.9%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Colombia": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 80.3%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "France": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 79.5%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Norway": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 76.5%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Japan": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 2"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 77.7%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Canada": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 77.8%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "USA": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 82.2%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Portugal": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 72.0%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Australia": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 2"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 73.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "South Korea": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 73.5%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Croatia": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 2"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 71.7%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Senegal": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 3"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 69.7%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Ivory Coast": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 2"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 70.2%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Iran": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 3"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 67.5%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Austria": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 3"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 65.8%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Uruguay": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 2"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 62.3%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Algeria": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 3"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 65.1%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Türkiye": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 3"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 69.6%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Egypt": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 3"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 64.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 62.5%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Ecuador": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 53.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Czech Republic": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 63.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Tunisia": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 56.8%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Qatar": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 57.6%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Cape Verde Islands": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 56.9%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Curaçao": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 55.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Congo DR": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 52.9%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "New Zealand": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 51.5%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Jordan": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 48.8%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Panama": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 47.3%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Scotland": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 45.5%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Paraguay": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 42.7%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Ghana": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 51.8%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Saudi Arabia": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 49.0%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Bosnia & Herzegovina": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 49.3%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Sweden": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 43.4%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Iraq": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 43.2%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "Haiti": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 42.8%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "South Africa": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 4"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 40.9%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ]
+  },
+  "limitations": [
+    "Knockout bracket unavailable; champion proxy is not an official champion probability.",
+    "Proxy combines conditioned group qualification, group-win probability and current Elo context.",
+    "No knockout opponent, final pairing or trophy path is invented."
+  ]
+}

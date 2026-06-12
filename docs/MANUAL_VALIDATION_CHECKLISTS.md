@@ -287,6 +287,29 @@ Notes :
 - [ ] Validé avec réserves
 - [ ] Non validé
 
+## Checklist V2.6 — Live Results Overlay, Prediction Scoring & Creative Tournament Path
+
+- [ ] V2.5 human validation recorded
+- [ ] World Cup 2026 results fetched or status file generated
+- [ ] Results layer separated from pre-match predictions
+- [ ] Prediction-vs-result evaluation generated
+- [ ] Match cards show result status without clutter
+- [ ] Match modal shows prediction vs actual result when available
+- [ ] DNB win/loss/push evaluated for played matches
+- [ ] Secondary markets evaluated for played matches
+- [ ] Conditional tournament simulation generated
+- [ ] Finished matches locked in simulation
+- [ ] Knockout structure discovered or limitation documented
+- [ ] Most probable path generated if bracket available
+- [ ] Projected campaign proxy generated if bracket unavailable
+- [ ] Simulation UX enriched creatively
+- [ ] Angular build passed
+- [ ] Angular tests passed
+- [ ] No model retrained
+- [ ] No Optuna rerun
+- [ ] Pre-match probabilities not modified
+- [ ] No secret committed
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.
