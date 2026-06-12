@@ -317,3 +317,15 @@ The available fixture source still contains no official knockout mapping.
 Instead of inventing one, V2.6 publishes a clearly labelled Projected Campaign
 proxy combining conditioned group outlook and rating context. A full official
 path remains blocked until a trustworthy bracket contract exists.
+
+## V2.7 result consistency and prediction presentation
+
+V2.7 consolidates the product state after live results arrive. A unified match
+view model joins frozen prediction, official result, evaluation, normalized
+status and display labels for both cards and the existing modal. Separate live
+standings are calculated only from finished official scores and are shown
+beside conditioned projections.
+
+The presentation now explains why a single modal score can differ from the
+aggregate 1X2 favorite and supplies the most probable score compatible with
+that favorite. No probability is changed to manufacture visual agreement.

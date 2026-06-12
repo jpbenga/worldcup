@@ -171,21 +171,17 @@
         <app-group-tabs
           [groups]="vm.groups"
           [strengths]="vm.groupStrengths"
-          [predictions]="vm.releasePredictions"
-          [results]="vm.results"
-          [evaluations]="vm.predictionEvaluations"
+          [matchStates]="vm.matchStates"
+          [liveStandings]="vm.liveStandings.groups"
           (matchSelected)="selectedMatchId.set($event)"
         />
 
         @if (selectedMatchId(); as matchId) {
           <app-match-modal
-            [match]="matchFor(vm.matches, matchId)"
             [baseline]="predictionFor(vm.predictions, matchId)"
             [elo]="predictionFor(vm.eloPredictions, matchId)"
             [comparison]="comparisonFor(vm.modelComparisons, matchId)"
-            [activePrediction]="releasePredictionFor(vm.releasePredictions, matchId)"
-            [result]="resultFor(vm.results, matchId)"
-            [evaluation]="evaluationFor(vm.predictionEvaluations, matchId)"
+            [state]="matchStateFor(vm.matchStates, matchId)"
             (closed)="selectedMatchId.set(null)"
           />
         }

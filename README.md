@@ -438,6 +438,22 @@ The existing cards and modal display official results only when available.
 `/simulation` locks finished scores and shows a clearly labelled Projected
 Campaign proxy because no official knockout bracket is currently available.
 
+## Result consistency and live standings V2.7
+
+V2.7 publishes a unified frontend match state and live group standings built
+only from finished official results.
+
+```bash
+python3 backend/scripts/build_live_group_standings_v2_7.py
+python3 backend/scripts/build_match_state_view_model_v2_7.py
+python3 backend/scripts/validate_result_consistency_v2_7.py
+```
+
+Cards and the existing modal consume the same match-state artifact.
+`/simulation` distinguishes the real current table from conditioned
+qualification projections. Modal score and 1X2 favorite divergence is
+explained without changing frozen probabilities.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

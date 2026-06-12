@@ -2,10 +2,10 @@
   <div class="overflow-x-auto rounded-xl border border-slate-800">
     <table class="w-full min-w-[520px] text-left text-sm">
       <thead class="bg-slate-950/70 text-xs uppercase text-slate-500">
-        <tr><th class="px-3 py-2">#</th><th class="px-3 py-2">Équipe</th><th class="px-3 py-2">J</th><th class="px-3 py-2">G</th><th class="px-3 py-2">N</th><th class="px-3 py-2">P</th><th class="px-3 py-2">Pts</th></tr>
+        <tr><th class="px-3 py-2">#</th><th class="px-3 py-2">Équipe</th><th class="px-3 py-2">J</th><th class="px-3 py-2">G</th><th class="px-3 py-2">N</th><th class="px-3 py-2">P</th><th class="px-3 py-2">Diff.</th><th class="px-3 py-2">Pts</th></tr>
       </thead>
       <tbody class="divide-y divide-slate-800">
-        @for (row of standings; track row.teamId) {
+        @for (row of standings; track row.teamName) {
           <tr>
             <td class="px-3 py-2 text-slate-500">{{ row.rank }}</td>
             <td class="px-3 py-2">
@@ -16,6 +16,7 @@
             </td>
             <td class="px-3 py-2">{{ row.played }}</td><td class="px-3 py-2">{{ row.won }}</td>
             <td class="px-3 py-2">{{ row.drawn }}</td><td class="px-3 py-2">{{ row.lost }}</td>
+            <td class="px-3 py-2">{{ row.goalDifference > 0 ? '+' : '' }}{{ row.goalDifference }}</td>
             <td class="px-3 py-2 font-bold text-cyan-300">{{ row.points }}</td>
           </tr>
         }

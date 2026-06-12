@@ -2,12 +2,13 @@ import { AsyncPipe, DatePipe, DecimalPipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { combineLatest, map } from 'rxjs';
-import { TournamentGroupSimulation, TournamentTeamSimulation } from '../../models/worldcup.models';
+import { GroupStanding, TournamentGroupSimulation, TournamentTeamSimulation } from '../../models/worldcup.models';
 import { WorldCupService } from '../../services/worldcup.service';
+import { GroupStandingsComponent } from '../../components/group-standings/group-standings.component';
 
 @Component({
   selector: 'app-simulation',
-  imports: [AsyncPipe, DatePipe, DecimalPipe, PercentPipe, RouterLink],
+  imports: [AsyncPipe, DatePipe, DecimalPipe, GroupStandingsComponent, PercentPipe, RouterLink],
   templateUrl: './simulation.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -17,10 +18,12 @@ export class SimulationComponent {
   readonly simulation$ = combineLatest({
     simulation: this.worldCupService.getConditionedTournamentSimulation(),
     campaign: this.worldCupService.getProjectedCampaign(),
+    liveStandings: this.worldCupService.getLiveGroupStandings(),
   }).pipe(
-    map(({ simulation, campaign }) => ({
+    map(({ simulation, campaign, liveStandings }) => ({
       ...simulation,
       campaign,
+      liveStandings,
       topQualification: [...simulation.teams]
         .sort((a, b) => b.qualificationProbability - a.qualificationProbability)
         .slice(0, 8),
@@ -41,5 +44,9 @@ export class SimulationComponent {
 
   orderedTeams(group: TournamentGroupSimulation): TournamentTeamSimulation[] {
     return [...group.teams].sort((a, b) => b.qualificationProbability - a.qualificationProbability);
+  }
+
+  standingsFor(groups: Record<string, GroupStanding[]>, group: string): GroupStanding[] {
+    return groups[group.replace('Group ', '')] ?? [];
   }
 }

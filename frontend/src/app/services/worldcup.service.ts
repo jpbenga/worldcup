@@ -5,7 +5,9 @@ import {
   GroupStanding,
   GroupStrength,
   ConditionedTournamentSimulation,
+  LiveGroupStandings,
   Match,
+  MatchState,
   PredictionEvaluation,
   PredictionDiversityAudit,
   ProjectedCampaign,
@@ -110,6 +112,36 @@ export class WorldCupService {
         winner: item.winner,
         confidence: item.confidence,
       }))),
+    );
+  }
+
+  getMatchStates(): Observable<MatchState[]> {
+    return this.http.get<any>('assets/data/worldcup_match_state_view_model_v2_7.json').pipe(
+      map((payload) => payload.matches.map((item: any) => this.matchState(item))),
+    );
+  }
+
+  getLiveGroupStandings(): Observable<LiveGroupStandings> {
+    return this.http.get<any>('assets/data/worldcup_live_group_standings_v2_7.json').pipe(
+      map((payload) => ({
+        finishedMatchesCount: payload.finished_matches_count,
+        groups: Object.fromEntries(Object.entries(payload.groups).map(([group, item]: [string, any]) => [
+          group,
+          item.standings.map((row: any) => ({
+            rank: row.rank,
+            teamId: 0,
+            teamName: row.team,
+            points: row.points,
+            played: row.played,
+            won: row.wins,
+            drawn: row.draws,
+            lost: row.losses,
+            goalsFor: row.goals_for,
+            goalsAgainst: row.goals_against,
+            goalDifference: row.goal_difference,
+          })),
+        ])),
+      })),
     );
   }
 
@@ -260,6 +292,107 @@ export class WorldCupService {
         group,
         teams: (groupTeams as string[]).map((team) => teams.find((item) => item.team === team)!),
       })),
+    };
+  }
+
+  private matchState(item: any): MatchState {
+    const probabilities = item.prediction.probabilities_1x2;
+    const matrix = item.prediction.score_matrix;
+    return {
+      fixtureId: item.fixture_id,
+      matchId: item.match_id,
+      group: item.group,
+      matchdayLabel: item.matchday_label,
+      homeTeam: item.home_team,
+      awayTeam: item.away_team,
+      kickoffAt: item.kickoff_at,
+      venue: item.venue,
+      city: item.city,
+      homeTeamLogoUrl: item.home_team_logo_url,
+      awayTeamLogoUrl: item.away_team_logo_url,
+      status: item.status,
+      result: {
+        available: item.result.available,
+        homeGoals: item.result.home_goals,
+        awayGoals: item.result.away_goals,
+        winner: item.result.winner,
+        source: item.result.source,
+      },
+      prediction: {
+        engineVersion: item.prediction.engine_version,
+        scoreModal: item.prediction.score_modal,
+        scoreModalProbability: item.prediction.score_modal_probability,
+        topScores: item.prediction.top_scores.map((score: any) => {
+          const [homeGoals, awayGoals] = score.score.split('-').map(Number);
+          return { score: score.score, probability: score.probability, homeGoals, awayGoals };
+        }),
+        scoreMatrix: {
+          matchId: matrix.match_id,
+          maxGoals: matrix.max_goals,
+          probabilities: matrix.probabilities.map((score: any) => ({
+            score: score.score, probability: score.probability, homeGoals: score.home_goals, awayGoals: score.away_goals,
+          })),
+        },
+        probabilities1x2: { homeWin: probabilities.home_win, draw: probabilities.draw, awayWin: probabilities.away_win },
+        favorite1x2: item.prediction.favorite_1x2,
+        favoriteLabel: item.prediction.favorite_label,
+        favoriteProbability: item.prediction.favorite_probability,
+        scoreConsistentWithFavorite: item.prediction.score_consistent_with_favorite,
+        scoreConsistentWithFavoriteProbability: item.prediction.score_consistent_with_favorite_probability,
+        coherenceStatus: item.prediction.coherence_status,
+        coherenceExplanation: item.prediction.coherence_explanation,
+        confidence: {
+          level: item.prediction.confidence.level,
+          favoriteProbability: item.prediction.confidence.favorite_probability,
+          outcomeGap: item.prediction.confidence.outcome_gap,
+        },
+        markets: {
+          doubleChance: {
+            homeOrDraw: item.prediction.markets.double_chance.double_chance_1X,
+            awayOrDraw: item.prediction.markets.double_chance.double_chance_X2,
+            noDraw: item.prediction.markets.double_chance.double_chance_12,
+          },
+          drawNoBet: item.prediction.markets.draw_no_bet,
+          overUnder: {
+            over05: item.prediction.markets.over_under.over_0_5,
+            over15: item.prediction.markets.over_under.over_1_5,
+            over25: item.prediction.markets.over_under.over_2_5,
+            over35: item.prediction.markets.over_under.over_3_5,
+            under15: item.prediction.markets.over_under.under_1_5,
+            under25: item.prediction.markets.over_under.under_2_5,
+            under35: item.prediction.markets.over_under.under_3_5,
+          },
+          bothTeamsToScore: item.prediction.markets.both_teams_to_score,
+          teamGoals: {
+            homeOver05: item.prediction.markets.team_goals.team_home_over_0_5,
+            awayOver05: item.prediction.markets.team_goals.team_away_over_0_5,
+            homeOver15: item.prediction.markets.team_goals.team_home_over_1_5,
+            awayOver15: item.prediction.markets.team_goals.team_away_over_1_5,
+          },
+        },
+      },
+      evaluation: {
+        available: item.evaluation.available,
+        summaryLabel: item.evaluation.summary_label,
+        exactScoreHit: item.evaluation.exact_score_hit,
+        top3Hit: item.evaluation.top_3_hit,
+        top5Hit: item.evaluation.top_5_hit,
+        oneXTwoHit: item.evaluation.one_x_two_hit,
+        dnbOutcome: item.evaluation.dnb_outcome,
+        marketHits: {
+          overUnder: item.evaluation.market_hits.over_under,
+          btts: item.evaluation.market_hits.btts,
+          teamGoals: item.evaluation.market_hits.team_goals,
+        },
+      },
+      display: {
+        cardPrimaryScore: item.display.card_primary_score,
+        cardSecondaryLabel: item.display.card_secondary_label,
+        modalStatusLabel: item.display.modal_status_label,
+        resultVsPredictionLabel: item.display.result_vs_prediction_label,
+        showResultBlock: item.display.show_result_block,
+        showCoherenceWarning: item.display.show_coherence_warning,
+      },
     };
   }
 }

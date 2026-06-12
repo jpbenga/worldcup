@@ -101,6 +101,17 @@
           }
         </div>
         @if (groupFor(simulation.groups, selectedGroup()); as group) {
+          <div class="mt-5 grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
+            <article class="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">Classement réel actuel</p>
+              <p class="mt-2 mb-4 text-sm text-slate-400">{{ simulation.liveStandings.finishedMatchesCount }} résultat officiel verrouillé au total.</p>
+              <app-group-standings [standings]="standingsFor(simulation.liveStandings.groups, group.group)" />
+            </article>
+            <article class="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">Projection conditionnée</p>
+              <p class="mt-2 text-sm leading-6 text-slate-400">Le classement à gauche décrit uniquement le réel. Les probabilités ci-dessous combinent ce réel verrouillé et les matchs futurs simulés.</p>
+            </article>
+          </div>
           <div class="mt-5 overflow-x-auto rounded-2xl border border-slate-800">
             <table class="w-full min-w-[720px] text-left text-sm">
               <thead class="bg-slate-950/60 text-xs uppercase tracking-wider text-slate-500"><tr><th class="px-4 py-3">Équipe</th><th class="px-4 py-3">Qualification</th><th class="px-4 py-3">1re</th><th class="px-4 py-3">2e</th><th class="px-4 py-3">3e</th><th class="px-4 py-3">4e</th><th class="px-4 py-3">Élimination</th></tr></thead>

@@ -310,6 +310,26 @@ Notes :
 - [ ] Pre-match probabilities not modified
 - [ ] No secret committed
 
+## Checklist V2.7 — Result Consistency, Live Group Standings & Coherent Prediction Presentation
+
+- [ ] V2.6 human validation recorded
+- [ ] Unified match state view model generated
+- [ ] Results propagated to cards
+- [ ] Results propagated to modal
+- [ ] Live group standings generated from official results
+- [ ] Mexico 2-0 South Africa reflected in Group A if available
+- [ ] Matchday/status normalized
+- [ ] Score modal vs 1X2 favorite explanation added
+- [ ] Score consistent with favorite computed
+- [ ] Simulation page uses live standings
+- [ ] Result consistency validation passed
+- [ ] Angular build passed
+- [ ] Angular tests passed
+- [ ] No model retrained
+- [ ] No Optuna rerun
+- [ ] Pre-match probabilities not modified
+- [ ] No secret committed
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.

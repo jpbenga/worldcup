@@ -1242,7 +1242,7 @@ Model retrained / Optuna rerun / active probabilities changed: no / no / no
 
 ## V2.6 — Live Results Overlay, Prediction Scoring & Creative Tournament Path
 
-Commit: TBD
+Commit: cd6d502 Add live results overlay and creative tournament path
 
 ### Technical validation
 
@@ -1269,11 +1269,17 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Live results overlay accepted as useful
+- [x] Post-match evaluation accepted as useful
+- [x] Conditional simulation accepted as useful
+- [x] Projected campaign concept accepted
+- [x] Next issue identified: result propagation and UI consistency
+- [x] Next issue identified: favorite-vs-score-modal explanation
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
@@ -1291,6 +1297,55 @@ Conditioned simulations: 50,000
 Finished matches locked / future simulated: 1 / 71
 Knockout structure available: no
 Projected campaign proxy leader: Spain
+Angular build and tests: passed
+Model retrained / Optuna rerun / pre-match probabilities modified: no / no / no
+```
+
+## V2.7 — Result Consistency, Live Group Standings & Coherent Prediction Presentation
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.6 human validation recorded
+- [x] Unified match state view model generated
+- [x] Results propagated to cards
+- [x] Results propagated to modal
+- [x] Live group standings generated from official results
+- [x] Mexico 2-0 South Africa reflected in Group A
+- [x] Matchday/status normalized
+- [x] Score modal vs 1X2 favorite explanation added
+- [x] Score consistent with favorite computed
+- [x] Simulation page uses live standings
+- [x] Result consistency validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] Pre-match probabilities not modified
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.7 result
+
+```text
+Unified match states: 72
+Finished official results reflected: 1
+Live standings groups: 12
+Mexico: played 1, wins 1, goals 2-0, difference +2, points 3
+South Africa: played 1, losses 1, goals 0-2, difference -2, points 0
+Normalized matchdays: 72
+Modal-score / 1X2-favorite divergences explained: 25
+Result consistency validation: PASS
 Angular build and tests: passed
 Model retrained / Optuna rerun / pre-match probabilities modified: no / no / no
 ```

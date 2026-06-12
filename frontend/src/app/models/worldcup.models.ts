@@ -363,6 +363,64 @@ export interface ProjectedCampaign {
   limitations: string[];
 }
 
+export interface MatchStatePrediction {
+  engineVersion: string;
+  scoreModal: string;
+  scoreModalProbability: number;
+  topScores: ScoreProbability[];
+  scoreMatrix: ScoreMatrix;
+  probabilities1x2: { homeWin: number; draw: number; awayWin: number };
+  favorite1x2: 'home' | 'draw' | 'away';
+  favoriteLabel: string;
+  favoriteProbability: number;
+  scoreConsistentWithFavorite: string;
+  scoreConsistentWithFavoriteProbability: number;
+  coherenceStatus: 'modal_differs_from_1x2_favorite' | 'modal_aligned_with_1x2_favorite';
+  coherenceExplanation: string;
+  confidence: ReleaseCandidatePrediction['confidence'];
+  markets: ReleaseCandidateMarkets;
+}
+
+export interface MatchState {
+  fixtureId: number;
+  matchId: string;
+  group: string;
+  matchdayLabel: string;
+  homeTeam: string;
+  awayTeam: string;
+  kickoffAt: string;
+  venue?: string;
+  city?: string;
+  homeTeamLogoUrl?: string;
+  awayTeamLogoUrl?: string;
+  status: ResultStatus;
+  result: { available: boolean; homeGoals?: number; awayGoals?: number; winner?: string; source: string };
+  prediction: MatchStatePrediction;
+  evaluation: {
+    available: boolean;
+    summaryLabel: string;
+    exactScoreHit?: boolean;
+    top3Hit?: boolean;
+    top5Hit?: boolean;
+    oneXTwoHit?: boolean;
+    dnbOutcome?: string;
+    marketHits: { overUnder?: Record<string, boolean>; btts?: boolean; teamGoals?: Record<string, boolean> };
+  };
+  display: {
+    cardPrimaryScore: string;
+    cardSecondaryLabel: string;
+    modalStatusLabel: string;
+    resultVsPredictionLabel: string;
+    showResultBlock: boolean;
+    showCoherenceWarning: boolean;
+  };
+}
+
+export interface LiveGroupStandings {
+  finishedMatchesCount: number;
+  groups: Record<string, GroupStanding[]>;
+}
+
 export interface BacktestResult {
   matchId: string;
   marketName: string;

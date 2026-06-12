@@ -1,0 +1,15 @@
+{
+  "version": "v2.7",
+  "generated_at": "2026-06-12T17:13:34Z",
+  "passed": true,
+  "issues": [],
+  "checks": {
+    "match_count": 72,
+    "finished_with_results": 1,
+    "finished_with_evaluations": 1,
+    "modal_favorite_divergences_explained": 25,
+    "mexico_standing_correct": true,
+    "south_africa_standing_correct": true,
+    "groups": 12
+  }
+}
