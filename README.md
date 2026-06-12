@@ -454,6 +454,21 @@ Cards and the existing modal consume the same match-state artifact.
 qualification projections. Modal score and 1X2 favorite divergence is
 explained without changing frozen probabilities.
 
+## Score matrix realism V2.8
+
+V2.8 audits whether the active V2.2 Poisson score projection is too
+conservative, using the frozen 460-match historical test as the decision set.
+
+```bash
+python3 backend/scripts/audit_score_matrix_realism_v2_8.py
+python3 backend/scripts/evaluate_score_matrix_challengers_v2_8.py
+```
+
+The audit confirms severe modal-score compression and publishes a bounded
+favorite-gap challenger as a non-active World Cup candidate. Active hybrid
+1X2 probabilities and `predictions.json` remain unchanged pending explicit
+human validation.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

@@ -1303,7 +1303,7 @@ Model retrained / Optuna rerun / pre-match probabilities modified: no / no / no
 
 ## V2.7 — Result Consistency, Live Group Standings & Coherent Prediction Presentation
 
-Commit: TBD
+Commit: b43ac9e Fix result consistency and prediction coherence
 
 ### Technical validation
 
@@ -1327,11 +1327,17 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Result propagation accepted
+- [x] Live group standings accepted
+- [x] Cards and modal consistency accepted
+- [x] Score modal vs 1X2 favorite explanation accepted
+- [x] Next issue identified: score matrix appears too conservative
+- [x] Next roadmap iteration accepted: score matrix realism and favorite strength calibration
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
@@ -1348,4 +1354,54 @@ Modal-score / 1X2-favorite divergences explained: 25
 Result consistency validation: PASS
 Angular build and tests: passed
 Model retrained / Optuna rerun / pre-match probabilities modified: no / no / no
+```
+
+## V2.8 — Score Matrix Realism & Favorite Strength Calibration
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.7 human validation recorded
+- [x] Score matrix realism strategy created
+- [x] World Cup 2026 modal score distribution audited
+- [x] Historical test modal score distribution audited
+- [x] Strong favorite buckets audited
+- [x] Spain vs Cape Verde case audited
+- [x] Conservatism diagnosis produced
+- [x] Causes classified
+- [x] Matrix challengers evaluated
+- [x] 1X2 guardrails checked
+- [x] DNB guardrails checked
+- [x] Over/under guardrails checked
+- [x] Candidate generated if objectively better
+- [x] No active prediction replacement without validation
+- [x] Angular build passed if frontend changed
+- [x] Angular tests passed if frontend changed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] Active prediction probabilities not modified
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+### Automated V2.8 result
+
+```text
+Conservatism detected: yes
+World Cup modal 0-0/1-0/0-1/1-1: 71/72
+World Cup modal 3+ goals: 0/72
+Historical actual/modal 3+ goals: 226/460 versus 10/460
+Best challenger: A_gap_alpha_1.5_beta_0.75
+Candidate status: generated, not active
+Active hybrid probabilities modified: no
+Model retrained / Optuna rerun: no / no
 ```

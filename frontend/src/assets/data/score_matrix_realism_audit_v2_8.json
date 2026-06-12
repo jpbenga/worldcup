@@ -1,0 +1,2763 @@
+{
+  "generated_at": "2026-06-12T20:35:59Z",
+  "version": "v2.8",
+  "engine_version": "quant_hybrid_v2.2",
+  "worldcup_2026": {
+    "fixture_count": 72,
+    "modal_score_distribution": {
+      "1-0": 34,
+      "1-1": 21,
+      "0-1": 10,
+      "0-0": 6,
+      "2-0": 1
+    },
+    "modal_total_goals_distribution": {
+      "0": 6,
+      "1": 44,
+      "2": 22,
+      "3+": 0
+    },
+    "favorite_probability_buckets": {
+      ">=0.55": {
+        "count": 24,
+        "modal_score_distribution": {
+          "1-0": 22,
+          "2-0": 1,
+          "1-1": 1
+        },
+        "modal_favorite_aligned_count": 23,
+        "average_favorite_win_by_2_plus_mass": 0.3071220522694255
+      },
+      ">=0.60": {
+        "count": 17,
+        "modal_score_distribution": {
+          "1-0": 16,
+          "2-0": 1
+        },
+        "modal_favorite_aligned_count": 17,
+        "average_favorite_win_by_2_plus_mass": 0.33103877548219224
+      },
+      ">=0.65": {
+        "count": 8,
+        "modal_score_distribution": {
+          "1-0": 7,
+          "2-0": 1
+        },
+        "modal_favorite_aligned_count": 8,
+        "average_favorite_win_by_2_plus_mass": 0.3752170701374327
+      },
+      ">=0.70": {
+        "count": 2,
+        "modal_score_distribution": {
+          "1-0": 2
+        },
+        "modal_favorite_aligned_count": 2,
+        "average_favorite_win_by_2_plus_mass": 0.39423549953224774
+      }
+    },
+    "match_table": [
+      {
+        "match_id": "api_football_1489369",
+        "match": "Mexico vs South Africa",
+        "favorite": "Mexico",
+        "favorite_side": "home",
+        "favorite_probability": 0.43985808381027697,
+        "modal_score": "0-0",
+        "modal_probability": 0.15327238979723534,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14744689750303108
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.9619369418800195,
+          "away": 0.9135205890209249,
+          "total": 1.8754575309009445
+        },
+        "favorite_win_mass": 0.3527061141271455,
+        "favorite_win_by_2_plus_mass": 0.1302517265672086,
+        "three_plus_total_goals_mass": 0.2896745990191822,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1538999",
+        "match": "South Korea vs Czech Republic",
+        "favorite": "South Korea",
+        "favorite_side": "home",
+        "favorite_probability": 0.6182579593251196,
+        "modal_score": "1-0",
+        "modal_probability": 0.13248358605805513,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13248358605805513
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.458997332082048,
+          "away": 0.9398499568959917,
+          "total": 2.3988472889780397
+        },
+        "favorite_win_mass": 0.49204132000322776,
+        "favorite_win_by_2_plus_mass": 0.2453245276440634,
+        "three_plus_total_goals_mass": 0.43016661471720075,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539000",
+        "match": "Canada vs Bosnia & Herzegovina",
+        "favorite": "Canada",
+        "favorite_side": "home",
+        "favorite_probability": 0.6475360147379063,
+        "modal_score": "1-0",
+        "modal_probability": 0.13086157717054897,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13086157717054897
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.5692791538507957,
+          "away": 0.9145942497935826,
+          "total": 2.4838734036443784
+        },
+        "favorite_win_mass": 0.5270295717098097,
+        "favorite_win_by_2_plus_mass": 0.27675472860918054,
+        "three_plus_total_goals_mass": 0.4523177740640379,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489370",
+        "match": "USA vs Paraguay",
+        "favorite": "USA",
+        "favorite_side": "home",
+        "favorite_probability": 0.6584375895087922,
+        "modal_score": "1-0",
+        "modal_probability": 0.16699124027368029,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.16699124027368029
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.5183865898009943,
+          "away": 0.6888343772075829,
+          "total": 2.207220967008577
+        },
+        "favorite_win_mass": 0.5727464065736261,
+        "favorite_win_by_2_plus_mass": 0.30170358264836566,
+        "three_plus_total_goals_mass": 0.37943886281550077,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489373",
+        "match": "Qatar vs Switzerland",
+        "favorite": "Switzerland",
+        "favorite_side": "away",
+        "favorite_probability": 0.4321567356337459,
+        "modal_score": "1-1",
+        "modal_probability": 0.12469241875307012,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.10928851773372196
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.1407650596437453,
+          "away": 1.4312911832740762,
+          "total": 2.5720562429178218
+        },
+        "favorite_win_mass": 0.4371438919786473,
+        "favorite_win_by_2_plus_mass": 0.21065490624535804,
+        "three_plus_total_goals_mass": 0.4747117952503403,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489371",
+        "match": "Brazil vs Morocco",
+        "favorite": "Morocco",
+        "favorite_side": "away",
+        "favorite_probability": 0.3611365713703498,
+        "modal_score": "0-0",
+        "modal_probability": 0.1573775538134574,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.15253835702855562
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.8798392509440233,
+          "away": 0.9691924052956233,
+          "total": 1.8490316562396467
+        },
+        "favorite_win_mass": 0.3626212330170657,
+        "favorite_win_by_2_plus_mass": 0.13510863648243185,
+        "three_plus_total_goals_mass": 0.2825563407152277,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489372",
+        "match": "Haiti vs Scotland",
+        "favorite": "Haiti",
+        "favorite_side": "home",
+        "favorite_probability": 0.43945033251930343,
+        "modal_score": "1-1",
+        "modal_probability": 0.12391723127336544,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.10449505345025732
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4310920289690445,
+          "away": 1.1856299000311497,
+          "total": 2.616721929000194
+        },
+        "favorite_win_mass": 0.42701788032875354,
+        "favorite_win_by_2_plus_mass": 0.20482088551830788,
+        "three_plus_total_goals_mass": 0.48594767219150004,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539001",
+        "match": "Australia vs Türkiye",
+        "favorite": "Australia",
+        "favorite_side": "home",
+        "favorite_probability": 0.5325998472430107,
+        "modal_score": "1-0",
+        "modal_probability": 0.13589462461682647,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13589462461682647
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.3360971815313958,
+          "away": 0.9494315701978596,
+          "total": 2.2855287517292555
+        },
+        "favorite_win_mass": 0.45624650866014516,
+        "favorite_win_by_2_plus_mass": 0.2138232448963029,
+        "three_plus_total_goals_mass": 0.40022374995965576,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489374",
+        "match": "Germany vs Curaçao",
+        "favorite": "Germany",
+        "favorite_side": "home",
+        "favorite_probability": 0.6413717141268567,
+        "modal_score": "1-0",
+        "modal_probability": 0.13249857419986266,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13249857419986266
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.7215408953761915,
+          "away": 0.842108502918569,
+          "total": 2.5636493982947606
+        },
+        "favorite_win_mass": 0.5828899884558619,
+        "favorite_win_by_2_plus_mass": 0.32787753639382666,
+        "three_plus_total_goals_mass": 0.47288657123232714,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489376",
+        "match": "Netherlands vs Japan",
+        "favorite": "Netherlands",
+        "favorite_side": "home",
+        "favorite_probability": 0.4882252783208014,
+        "modal_score": "1-1",
+        "modal_probability": 0.11891991835301904,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.10798120112300773
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.584311980051129,
+          "away": 1.1011593135239226,
+          "total": 2.6854712935750515
+        },
+        "favorite_win_mass": 0.48564343810902366,
+        "favorite_win_by_2_plus_mass": 0.2515462652208019,
+        "three_plus_total_goals_mass": 0.5031125448724127,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489375",
+        "match": "Ivory Coast vs Ecuador",
+        "favorite": "Ivory Coast",
+        "favorite_side": "home",
+        "favorite_probability": 0.540262150931353,
+        "modal_score": "1-0",
+        "modal_probability": 0.17717474109597287,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.17717474109597287
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.2227045591457606,
+          "away": 0.708963020668482,
+          "total": 1.9316675798142426
+        },
+        "favorite_win_mass": 0.4844956487927967,
+        "favorite_win_by_2_plus_mass": 0.21857178765253799,
+        "three_plus_total_goals_mass": 0.30488612958962136,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539002",
+        "match": "Sweden vs Tunisia",
+        "favorite": "Sweden",
+        "favorite_side": "home",
+        "favorite_probability": 0.37246818651139557,
+        "modal_score": "1-1",
+        "modal_probability": 0.1335515924548233,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1246363581596745
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.1545809677506083,
+          "away": 1.0714118641639911,
+          "total": 2.225992831914599
+        },
+        "favorite_win_mass": 0.3763685810957585,
+        "favorite_win_by_2_plus_mass": 0.15697273717380403,
+        "three_plus_total_goals_mass": 0.3843042656353809,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489380",
+        "match": "Spain vs Cape Verde Islands",
+        "favorite": "Spain",
+        "favorite_side": "home",
+        "favorite_probability": 0.6400977573651252,
+        "modal_score": "1-0",
+        "modal_probability": 0.14825446021647004,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14825446021647004
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.7560947823849498,
+          "away": 0.714949888072237,
+          "total": 2.4710446704571867
+        },
+        "favorite_win_mass": 0.6239532464623956,
+        "favorite_win_by_2_plus_mass": 0.360735759736806,
+        "three_plus_total_goals_mass": 0.44928133359947436,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489377",
+        "match": "Belgium vs Egypt",
+        "favorite": "Belgium",
+        "favorite_side": "home",
+        "favorite_probability": 0.45587529557327106,
+        "modal_score": "1-0",
+        "modal_probability": 0.15617038174209624,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.15617038174209624
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.3205962463332221,
+          "away": 0.814232555681402,
+          "total": 2.134828802014624
+        },
+        "favorite_win_mass": 0.48561779139665406,
+        "favorite_win_by_2_plus_mass": 0.22896740546836028,
+        "three_plus_total_goals_mass": 0.3598538812162662,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489379",
+        "match": "Saudi Arabia vs Uruguay",
+        "favorite": "Saudi Arabia",
+        "favorite_side": "home",
+        "favorite_probability": 0.33973386482009527,
+        "modal_score": "0-0",
+        "modal_probability": 0.17129269035448272,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.15418196858291244
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.900073523177937,
+          "away": 0.8642556555797668,
+          "total": 1.7643291787577038
+        },
+        "favorite_win_mass": 0.34345888795197677,
+        "favorite_win_by_2_plus_mass": 0.12100404785975366,
+        "three_plus_total_goals_mass": 0.25985697199528474,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489378",
+        "match": "Iran vs New Zealand",
+        "favorite": "Iran",
+        "favorite_side": "home",
+        "favorite_probability": 0.6294963479293798,
+        "modal_score": "1-0",
+        "modal_probability": 0.13757098155882103,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13757098155882103
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4670846688710653,
+          "away": 0.8996105230034757,
+          "total": 2.366695191874541
+        },
+        "favorite_win_mass": 0.5042026639703951,
+        "favorite_win_by_2_plus_mass": 0.253432984885367,
+        "three_plus_total_goals_mass": 0.4217466580507555,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489383",
+        "match": "France vs Senegal",
+        "favorite": "France",
+        "favorite_side": "home",
+        "favorite_probability": 0.4916869371222654,
+        "modal_score": "1-0",
+        "modal_probability": 0.14619652442172656,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14619652442172656
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.1931308282333535,
+          "away": 0.9062175699125904,
+          "total": 2.0993483981459438
+        },
+        "favorite_win_mass": 0.4256804497716538,
+        "favorite_win_by_2_plus_mass": 0.1848216698056756,
+        "three_plus_total_goals_mass": 0.35024296460733045,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539016",
+        "match": "Iraq vs Norway",
+        "favorite": "Norway",
+        "favorite_side": "away",
+        "favorite_probability": 0.47492333330418834,
+        "modal_score": "1-1",
+        "modal_probability": 0.12447062170866029,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.11451696682781903
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.0867882539449585,
+          "away": 1.4549507656136378,
+          "total": 2.5417390195585963
+        },
+        "favorite_win_mass": 0.4557572000851565,
+        "favorite_win_by_2_plus_mass": 0.22332195846221967,
+        "three_plus_total_goals_mass": 0.46703488065511695,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489381",
+        "match": "Argentina vs Algeria",
+        "favorite": "Argentina",
+        "favorite_side": "home",
+        "favorite_probability": 0.6026700891126675,
+        "modal_score": "1-0",
+        "modal_probability": 0.1547531697470953,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1547531697470953
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4437561604604494,
+          "away": 0.7892628451983495,
+          "total": 2.233019005658799
+        },
+        "favorite_win_mass": 0.5262171901604908,
+        "favorite_win_by_2_plus_mass": 0.2647836044492658,
+        "three_plus_total_goals_mass": 0.3862850760829763,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489382",
+        "match": "Austria vs Jordan",
+        "favorite": "Austria",
+        "favorite_side": "home",
+        "favorite_probability": 0.5538928401691395,
+        "modal_score": "1-0",
+        "modal_probability": 0.13465116849466732,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13465116849466732
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.5103809989779808,
+          "away": 0.9067922709569325,
+          "total": 2.4171732699349135
+        },
+        "favorite_win_mass": 0.5138018761994381,
+        "favorite_win_by_2_plus_mass": 0.26320046513455675,
+        "three_plus_total_goals_mass": 0.4349881274954357,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539003",
+        "match": "Portugal vs Congo DR",
+        "favorite": "Portugal",
+        "favorite_side": "home",
+        "favorite_probability": 0.5113577143909244,
+        "modal_score": "1-0",
+        "modal_probability": 0.13261682253654056,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13261682253654056
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4165091243171084,
+          "away": 0.9518186837383666,
+          "total": 2.368327808055475
+        },
+        "favorite_win_mass": 0.47771458584970183,
+        "favorite_win_by_2_plus_mass": 0.23310798338845864,
+        "three_plus_total_goals_mass": 0.4221430361937081,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489384",
+        "match": "England vs Croatia",
+        "favorite": "England",
+        "favorite_side": "home",
+        "favorite_probability": 0.6139271430176084,
+        "modal_score": "1-0",
+        "modal_probability": 0.13040229059240727,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13040229059240727
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.719961624326597,
+          "away": 0.85872051980862,
+          "total": 2.578682144135217
+        },
+        "favorite_win_mass": 0.5782872500878247,
+        "favorite_win_by_2_plus_mass": 0.32448592517233965,
+        "three_plus_total_goals_mass": 0.47668232213241685,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489385",
+        "match": "Ghana vs Panama",
+        "favorite": "Ghana",
+        "favorite_side": "home",
+        "favorite_probability": 0.480043613771809,
+        "modal_score": "1-1",
+        "modal_probability": 0.1265591613365243,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.11792871691196885
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4030635924962334,
+          "away": 1.0730642003736257,
+          "total": 2.476127792869859
+        },
+        "favorite_win_mass": 0.4451886113490741,
+        "favorite_win_by_2_plus_mass": 0.21310127834663278,
+        "three_plus_total_goals_mass": 0.45020008947260065,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489386",
+        "match": "Uzbekistan vs Colombia",
+        "favorite": "Colombia",
+        "favorite_side": "away",
+        "favorite_probability": 0.40741680055361496,
+        "modal_score": "0-1",
+        "modal_probability": 0.14109149435020812,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.14109149435020812
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.9581951539355589,
+          "away": 1.0152558936772993,
+          "total": 1.9734510476128582
+        },
+        "favorite_win_mass": 0.3596149623252523,
+        "favorite_win_by_2_plus_mass": 0.13780844812305917,
+        "three_plus_total_goals_mass": 0.3161616232641378,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539004",
+        "match": "Czech Republic vs South Africa",
+        "favorite": "Czech Republic",
+        "favorite_side": "home",
+        "favorite_probability": 0.3658880153317191,
+        "modal_score": "1-1",
+        "modal_probability": 0.13495357522995766,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13010354182658818
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.067313052272816,
+          "away": 1.0371840141422364,
+          "total": 2.1044970664150524
+        },
+        "favorite_win_mass": 0.3581679446410388,
+        "favorite_win_by_2_plus_mass": 0.14144938095494394,
+        "three_plus_total_goals_mass": 0.3516201098135114,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539005",
+        "match": "Switzerland vs Bosnia & Herzegovina",
+        "favorite": "Switzerland",
+        "favorite_side": "home",
+        "favorite_probability": 0.6746273133123095,
+        "modal_score": "1-0",
+        "modal_probability": 0.1170012943300282,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1170012943300282
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8334269991322498,
+          "away": 0.9170670997669521,
+          "total": 2.750494098899202
+        },
+        "favorite_win_mass": 0.5900919445821714,
+        "favorite_win_by_2_plus_mass": 0.34257911536062635,
+        "three_plus_total_goals_mass": 0.5193540062093949,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489387",
+        "match": "Canada vs Qatar",
+        "favorite": "Canada",
+        "favorite_side": "home",
+        "favorite_probability": 0.5692645126938817,
+        "modal_score": "1-0",
+        "modal_probability": 0.1306466661657585,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1306466661657585
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4617178218475244,
+          "away": 0.9529473643857767,
+          "total": 2.414665186233301
+        },
+        "favorite_win_mass": 0.4895397578988747,
+        "favorite_win_by_2_plus_mass": 0.2440454344711509,
+        "three_plus_total_goals_mass": 0.43429744797626074,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489388",
+        "match": "Mexico vs South Korea",
+        "favorite": "Mexico",
+        "favorite_side": "home",
+        "favorite_probability": 0.37363558203036595,
+        "modal_score": "1-1",
+        "modal_probability": 0.13512389464337582,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.12800862053578657
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.014107662818743,
+          "away": 1.0554779003340775,
+          "total": 2.0695855631528204
+        },
+        "favorite_win_mass": 0.33825937169094916,
+        "favorite_win_by_2_plus_mass": 0.1283530818390408,
+        "three_plus_total_goals_mass": 0.34218408033018066,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489391",
+        "match": "USA vs Australia",
+        "favorite": "USA",
+        "favorite_side": "home",
+        "favorite_probability": 0.45800035197539296,
+        "modal_score": "1-0",
+        "modal_probability": 0.13475001111787446,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13475001111787446
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.2778359052477444,
+          "away": 0.9715862709921192,
+          "total": 2.2494221762398636
+        },
+        "favorite_win_mass": 0.4345553829273487,
+        "favorite_win_by_2_plus_mass": 0.19689635560848273,
+        "three_plus_total_goals_mass": 0.39058760342292637,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489390",
+        "match": "Scotland vs Morocco",
+        "favorite": "Morocco",
+        "favorite_side": "away",
+        "favorite_probability": 0.5016003867489811,
+        "modal_score": "0-1",
+        "modal_probability": 0.15756654794128647,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.15756654794128647
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.7349509569305207,
+          "away": 1.5525630053964856,
+          "total": 2.287513962327006
+        },
+        "favorite_win_mass": 0.5691653931432439,
+        "favorite_win_by_2_plus_mass": 0.30276411811228765,
+        "three_plus_total_goals_mass": 0.4008992264142373,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489389",
+        "match": "Brazil vs Haiti",
+        "favorite": "Brazil",
+        "favorite_side": "home",
+        "favorite_probability": 0.743765954024074,
+        "modal_score": "1-0",
+        "modal_probability": 0.1277349275497878,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1277349275497878
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.9105268972678018,
+          "away": 0.792942255141402,
+          "total": 2.7034691524092036
+        },
+        "favorite_win_mass": 0.6383019284023486,
+        "favorite_win_by_2_plus_mass": 0.3856162431506351,
+        "three_plus_total_goals_mass": 0.5081137198280301,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539006",
+        "match": "Türkiye vs Paraguay",
+        "favorite": "Türkiye",
+        "favorite_side": "home",
+        "favorite_probability": 0.5771650087471616,
+        "modal_score": "1-0",
+        "modal_probability": 0.16343246519585647,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.16343246519585647
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.329230508282872,
+          "away": 0.7666635070310741,
+          "total": 2.095894015313946
+        },
+        "favorite_win_mass": 0.5004154221318482,
+        "favorite_win_by_2_plus_mass": 0.23825366863554567,
+        "three_plus_total_goals_mass": 0.3493516069704684,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539007",
+        "match": "Netherlands vs Sweden",
+        "favorite": "Netherlands",
+        "favorite_side": "home",
+        "favorite_probability": 0.6843197563615195,
+        "modal_score": "2-0",
+        "modal_probability": 0.11509759928217102,
+        "top_compatible_score": {
+          "score": "2-0",
+          "probability": 0.11509759928217102
+        },
+        "reconstructed_expected_goals": {
+          "home": 2.072706526135008,
+          "away": 0.8548943834960363,
+          "total": 2.9276009096310442
+        },
+        "favorite_win_mass": 0.6568888537448793,
+        "favorite_win_by_2_plus_mass": 0.41397633813733237,
+        "three_plus_total_goals_mass": 0.5617833626023776,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489393",
+        "match": "Germany vs Ivory Coast",
+        "favorite": "Germany",
+        "favorite_side": "home",
+        "favorite_probability": 0.5215695039124555,
+        "modal_score": "1-0",
+        "modal_probability": 0.13370822728601728,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13370822728601728
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4556348905740784,
+          "away": 0.9317100734123889,
+          "total": 2.3873449639864672
+        },
+        "favorite_win_mass": 0.4931581660938452,
+        "favorite_win_by_2_plus_mass": 0.24570861655900883,
+        "three_plus_total_goals_mass": 0.4271550468153399,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489392",
+        "match": "Ecuador vs Curaçao",
+        "favorite": "Ecuador",
+        "favorite_side": "home",
+        "favorite_probability": 0.47492258611252913,
+        "modal_score": "0-0",
+        "modal_probability": 0.15340187830311686,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14685858334455562
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.957291658469696,
+          "away": 0.9173220119266485,
+          "total": 1.8746136703963445
+        },
+        "favorite_win_mass": 0.35037195009648836,
+        "favorite_win_by_2_plus_mass": 0.12886411325333863,
+        "three_plus_total_goals_mass": 0.2894469960451149,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489394",
+        "match": "Tunisia vs Japan",
+        "favorite": "Japan",
+        "favorite_side": "away",
+        "favorite_probability": 0.45612291341642297,
+        "modal_score": "0-1",
+        "modal_probability": 0.13337082656077162,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.13337082656077162
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.9881731474855576,
+          "away": 1.2475729513981713,
+          "total": 2.235746098883729
+        },
+        "favorite_win_mass": 0.42202619415293874,
+        "favorite_win_by_2_plus_mass": 0.18766469499977045,
+        "three_plus_total_goals_mass": 0.3869269112563791,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489397",
+        "match": "Spain vs Saudi Arabia",
+        "favorite": "Spain",
+        "favorite_side": "home",
+        "favorite_probability": 0.6610377805063593,
+        "modal_score": "1-0",
+        "modal_probability": 0.14463321557702918,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14463321557702918
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.9005088828036325,
+          "away": 0.6735349285104352,
+          "total": 2.5740438113140676
+        },
+        "favorite_win_mass": 0.6667437004559005,
+        "favorite_win_by_2_plus_mass": 0.40716782199646484,
+        "three_plus_total_goals_mass": 0.4759082496369669,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489395",
+        "match": "Belgium vs Iran",
+        "favorite": "Belgium",
+        "favorite_side": "home",
+        "favorite_probability": 0.500350987139547,
+        "modal_score": "1-0",
+        "modal_probability": 0.14128406914600944,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14128406914600944
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4119739469577897,
+          "away": 0.8898593481443897,
+          "total": 2.3018332951021794
+        },
+        "favorite_win_mass": 0.4918354472183163,
+        "favorite_win_by_2_plus_mass": 0.24105538922153388,
+        "three_plus_total_goals_mass": 0.40458890949351833,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489398",
+        "match": "Uruguay vs Cape Verde Islands",
+        "favorite": "Uruguay",
+        "favorite_side": "home",
+        "favorite_probability": 0.456796577584634,
+        "modal_score": "0-0",
+        "modal_probability": 0.17314366759287794,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.16533716076995011
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.9548603331952139,
+          "away": 0.7987150668685902,
+          "total": 1.753575400063804
+        },
+        "favorite_win_mass": 0.37675995915245375,
+        "favorite_win_by_2_plus_mass": 0.1398253921120981,
+        "three_plus_total_goals_mass": 0.25699293741364415,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489396",
+        "match": "New Zealand vs Egypt",
+        "favorite": "Egypt",
+        "favorite_side": "away",
+        "favorite_probability": 0.4762910405228761,
+        "modal_score": "1-1",
+        "modal_probability": 0.13434068111625397,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.13286630738340102
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.0110178211889234,
+          "away": 1.1260259661719454,
+          "total": 2.1370437873608688
+        },
+        "favorite_win_mass": 0.3814194229189064,
+        "favorite_win_by_2_plus_mass": 0.15710715867139044,
+        "three_plus_total_goals_mass": 0.36040506748275475,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489399",
+        "match": "Argentina vs Austria",
+        "favorite": "Argentina",
+        "favorite_side": "home",
+        "favorite_probability": 0.6152641589904219,
+        "modal_score": "1-0",
+        "modal_probability": 0.14743889174301056,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14743889174301056
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4759721359309361,
+          "away": 0.8274914776065142,
+          "total": 2.3034636135374504
+        },
+        "favorite_win_mass": 0.5249084306513667,
+        "favorite_win_by_2_plus_mass": 0.267024525377838,
+        "three_plus_total_goals_mass": 0.40506398603897886,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539017",
+        "match": "France vs Iraq",
+        "favorite": "France",
+        "favorite_side": "home",
+        "favorite_probability": 0.634875641007691,
+        "modal_score": "1-0",
+        "modal_probability": 0.14899054373756254,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14899054373756254
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.590750570191293,
+          "away": 0.7769492875094456,
+          "total": 2.3676998577007384
+        },
+        "favorite_win_mass": 0.5677547731270941,
+        "favorite_win_by_2_plus_mass": 0.30550302982912103,
+        "three_plus_total_goals_mass": 0.422124779182722,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489401",
+        "match": "Norway vs Senegal",
+        "favorite": "Norway",
+        "favorite_side": "home",
+        "favorite_probability": 0.3509811564605107,
+        "modal_score": "1-1",
+        "modal_probability": 0.12919227082927806,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.11920722644107394
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.3230042153864012,
+          "away": 1.0836343181300796,
+          "total": 2.406638533516481
+        },
+        "favorite_win_mass": 0.42106657775262146,
+        "favorite_win_by_2_plus_mass": 0.1933014617906661,
+        "three_plus_total_goals_mass": 0.4321362797136985,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489400",
+        "match": "Jordan vs Algeria",
+        "favorite": "Algeria",
+        "favorite_side": "away",
+        "favorite_probability": 0.3801658306487198,
+        "modal_score": "1-1",
+        "modal_probability": 0.13169736754656838,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.1245178581100272
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.0575505762265307,
+          "away": 1.2438878628700831,
+          "total": 2.301438439096614
+        },
+        "favorite_win_mass": 0.4049857993829238,
+        "favorite_win_by_2_plus_mass": 0.1784624590730159,
+        "three_plus_total_goals_mass": 0.4044208767997596,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489404",
+        "match": "Portugal vs Uzbekistan",
+        "favorite": "Portugal",
+        "favorite_side": "home",
+        "favorite_probability": 0.4639641363500776,
+        "modal_score": "1-1",
+        "modal_probability": 0.13095759588524303,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.12880113132744295
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.2781030949725098,
+          "away": 1.0166606122679547,
+          "total": 2.2947637072404645
+        },
+        "favorite_win_mass": 0.4240255111964606,
+        "favorite_win_by_2_plus_mass": 0.191275048378385,
+        "three_plus_total_goals_mass": 0.40265740529119615,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489402",
+        "match": "England vs Ghana",
+        "favorite": "England",
+        "favorite_side": "home",
+        "favorite_probability": 0.6822618861658247,
+        "modal_score": "1-0",
+        "modal_probability": 0.1443387457698524,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1443387457698524
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8801270356235646,
+          "away": 0.6853026781296189,
+          "total": 2.5654297137531836
+        },
+        "favorite_win_mass": 0.6593363170575167,
+        "favorite_win_by_2_plus_mass": 0.39939517476185493,
+        "three_plus_total_goals_mass": 0.4736763678821976,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489403",
+        "match": "Panama vs Croatia",
+        "favorite": "Croatia",
+        "favorite_side": "away",
+        "favorite_probability": 0.4312682946586121,
+        "modal_score": "1-1",
+        "modal_probability": 0.12063638964255463,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.10273951162770552
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.1739750464009,
+          "away": 1.519605910852971,
+          "total": 2.6935809572538707
+        },
+        "favorite_win_mass": 0.45247958105618297,
+        "favorite_win_by_2_plus_mass": 0.22625403364319274,
+        "three_plus_total_goals_mass": 0.5050528605644975,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539008",
+        "match": "Colombia vs Congo DR",
+        "favorite": "Colombia",
+        "favorite_side": "home",
+        "favorite_probability": 0.5980135757466627,
+        "modal_score": "1-0",
+        "modal_probability": 0.16599742019639688,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.16599742019639688
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.3293581158669117,
+          "away": 0.7510607393616562,
+          "total": 2.080418855228568
+        },
+        "favorite_win_mass": 0.5045561077312269,
+        "favorite_win_by_2_plus_mass": 0.24064862397396827,
+        "three_plus_total_goals_mass": 0.345170410527609,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489408",
+        "match": "Switzerland vs Canada",
+        "favorite": "Switzerland",
+        "favorite_side": "home",
+        "favorite_probability": 0.5020845408437926,
+        "modal_score": "1-0",
+        "modal_probability": 0.1361771282579419,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1361771282579419
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.3175632495704972,
+          "away": 0.951929119327853,
+          "total": 2.26949236889835
+        },
+        "favorite_win_mass": 0.4504649795799818,
+        "favorite_win_by_2_plus_mass": 0.2089963559047662,
+        "three_plus_total_goals_mass": 0.39595087208493684,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539009",
+        "match": "Bosnia & Herzegovina vs Qatar",
+        "favorite": "Bosnia & Herzegovina",
+        "favorite_side": "home",
+        "favorite_probability": 0.3731418798453582,
+        "modal_score": "1-1",
+        "modal_probability": 0.12194254484341831,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.09133562028594973
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.380675400070322,
+          "away": 1.3345768190568705,
+          "total": 2.7152522191271924
+        },
+        "favorite_win_mass": 0.381997141124797,
+        "favorite_win_by_2_plus_mass": 0.17618340077553837,
+        "three_plus_total_goals_mass": 0.5103087348788808,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489405",
+        "match": "Morocco vs Haiti",
+        "favorite": "Morocco",
+        "favorite_side": "home",
+        "favorite_probability": 0.7895212310395727,
+        "modal_score": "1-0",
+        "modal_probability": 0.15607812696000728,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.15607812696000728
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8450351861925833,
+          "away": 0.6235677101087433,
+          "total": 2.4686028963013267
+        },
+        "favorite_win_mass": 0.6679834092918151,
+        "favorite_win_by_2_plus_mass": 0.4028547559138604,
+        "three_plus_total_goals_mass": 0.4488430059753646,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489406",
+        "match": "Scotland vs Brazil",
+        "favorite": "Brazil",
+        "favorite_side": "away",
+        "favorite_probability": 0.4933255817685551,
+        "modal_score": "0-1",
+        "modal_probability": 0.1266715798054021,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.1266715798054021
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.9332008065257937,
+          "away": 1.6066930954643424,
+          "total": 2.539893901990136
+        },
+        "favorite_win_mass": 0.5318393355874863,
+        "favorite_win_by_2_plus_mass": 0.2830982671495696,
+        "three_plus_total_goals_mass": 0.46669577791179323,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539010",
+        "match": "Czech Republic vs Mexico",
+        "favorite": "Czech Republic",
+        "favorite_side": "home",
+        "favorite_probability": 0.3352357467909204,
+        "modal_score": "1-1",
+        "modal_probability": 0.13344628660289565,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.129183649712305
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.173676788264763,
+          "away": 1.0329051537333944,
+          "total": 2.2065819419981576
+        },
+        "favorite_win_mass": 0.3904613230624502,
+        "favorite_win_by_2_plus_mass": 0.16542065865858513,
+        "three_plus_total_goals_mass": 0.3791067241889023,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489407",
+        "match": "South Africa vs South Korea",
+        "favorite": "South Africa",
+        "favorite_side": "home",
+        "favorite_probability": 0.3520122809517839,
+        "modal_score": "1-0",
+        "modal_probability": 0.14208414130123642,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14208414130123642
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.0343973254172512,
+          "away": 0.9507233980312595,
+          "total": 1.9851207234485106
+        },
+        "favorite_win_mass": 0.3672221894231462,
+        "favorite_win_by_2_plus_mass": 0.14282248143005027,
+        "three_plus_total_goals_mass": 0.3193214260279662,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489410",
+        "match": "Ecuador vs Germany",
+        "favorite": "Germany",
+        "favorite_side": "away",
+        "favorite_probability": 0.5002352921826607,
+        "modal_score": "0-1",
+        "modal_probability": 0.1601008616682008,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.1601008616682008
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.7921134991001195,
+          "away": 1.3092004377373205,
+          "total": 2.10131393683744
+        },
+        "favorite_win_mass": 0.4880658384342891,
+        "favorite_win_by_2_plus_mass": 0.2292520331006461,
+        "three_plus_total_goals_mass": 0.35080720089289835,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489409",
+        "match": "Curaçao vs Ivory Coast",
+        "favorite": "Ivory Coast",
+        "favorite_side": "away",
+        "favorite_probability": 0.4197566769329608,
+        "modal_score": "1-1",
+        "modal_probability": 0.13412689953214268,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.12843942401343852
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.0441826224263007,
+          "away": 1.1321791930671155,
+          "total": 2.176361815493416
+        },
+        "favorite_win_mass": 0.3758454980759111,
+        "favorite_win_by_2_plus_mass": 0.15493478727305485,
+        "three_plus_total_goals_mass": 0.3709899434887261,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539011",
+        "match": "Japan vs Sweden",
+        "favorite": "Japan",
+        "favorite_side": "home",
+        "favorite_probability": 0.6585385114654142,
+        "modal_score": "1-0",
+        "modal_probability": 0.11500116682679719,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.11500116682679719
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8604271472416112,
+          "away": 0.9217772186728643,
+          "total": 2.7822043659144757
+        },
+        "favorite_win_mass": 0.5950452176458036,
+        "favorite_win_by_2_plus_mass": 0.34844352913032184,
+        "three_plus_total_goals_mass": 0.5270448866304137,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489412",
+        "match": "Tunisia vs Netherlands",
+        "favorite": "Netherlands",
+        "favorite_side": "away",
+        "favorite_probability": 0.48978691341865066,
+        "modal_score": "0-1",
+        "modal_probability": 0.13846649466618763,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.13846649466618763
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.913912021480838,
+          "away": 1.398439682028633,
+          "total": 2.3123517035094707
+        },
+        "favorite_win_mass": 0.48214865418808805,
+        "favorite_win_by_2_plus_mass": 0.23413560566183797,
+        "three_plus_total_goals_mass": 0.40736858725475733,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539012",
+        "match": "Türkiye vs USA",
+        "favorite": "USA",
+        "favorite_side": "away",
+        "favorite_probability": 0.35575061598357666,
+        "modal_score": "1-1",
+        "modal_probability": 0.1311047397862477,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.11651647858116007
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.125037931654297,
+          "away": 1.2381284418080156,
+          "total": 2.3631663734623127
+        },
+        "favorite_win_mass": 0.3883302214298109,
+        "favorite_win_by_2_plus_mass": 0.16942638709219957,
+        "three_plus_total_goals_mass": 0.4207257845196927,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489411",
+        "match": "Paraguay vs Australia",
+        "favorite": "Australia",
+        "favorite_side": "away",
+        "favorite_probability": 0.43266932895087834,
+        "modal_score": "0-1",
+        "modal_probability": 0.1577022285219528,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.1577022285219528
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.8362443731893966,
+          "away": 1.1541541465218006,
+          "total": 1.990398519711197
+        },
+        "favorite_win_mass": 0.4310640715503589,
+        "favorite_win_by_2_plus_mass": 0.183962378666288,
+        "three_plus_total_goals_mass": 0.3207626212701966,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539074",
+        "match": "Senegal vs Iraq",
+        "favorite": "Senegal",
+        "favorite_side": "home",
+        "favorite_probability": 0.5992755126136771,
+        "modal_score": "1-0",
+        "modal_probability": 0.1721447391124202,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1721447391124202
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.310100087405589,
+          "away": 0.7193747616849289,
+          "total": 2.029474849090518
+        },
+        "favorite_win_mass": 0.507451980221337,
+        "favorite_win_by_2_plus_mass": 0.24035677575874131,
+        "three_plus_total_goals_mass": 0.3313828248352389,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489416",
+        "match": "Norway vs France",
+        "favorite": "France",
+        "favorite_side": "away",
+        "favorite_probability": 0.3984043490723926,
+        "modal_score": "1-1",
+        "modal_probability": 0.12087072419779972,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.08444260676891899
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4305592856211389,
+          "away": 1.3116701053833546,
+          "total": 2.7422293910044937
+        },
+        "favorite_win_mass": 0.3450878466413582,
+        "favorite_win_by_2_plus_mass": 0.15224835285460142,
+        "three_plus_total_goals_mass": 0.5168861454057607,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489417",
+        "match": "Uruguay vs Spain",
+        "favorite": "Spain",
+        "favorite_side": "away",
+        "favorite_probability": 0.5183882646970739,
+        "modal_score": "0-1",
+        "modal_probability": 0.14782067876563776,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.14782067876563776
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.8376087605638549,
+          "away": 1.4355298070149682,
+          "total": 2.2731385675788234
+        },
+        "favorite_win_mass": 0.5114759442956079,
+        "favorite_win_by_2_plus_mass": 0.2549975555734721,
+        "three_plus_total_goals_mass": 0.3969806458347802,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489413",
+        "match": "Cape Verde Islands vs Saudi Arabia",
+        "favorite": "Cape Verde Islands",
+        "favorite_side": "home",
+        "favorite_probability": 0.4361551822215315,
+        "modal_score": "1-0",
+        "modal_probability": 0.17080000292968822,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.17080000292968822
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.0276266259163214,
+          "away": 0.7668877998447008,
+          "total": 1.7945144257610222
+        },
+        "favorite_win_mass": 0.4084287075740939,
+        "favorite_win_by_2_plus_mass": 0.16087465283767105,
+        "three_plus_total_goals_mass": 0.26792679719161694,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489414",
+        "match": "Egypt vs Iran",
+        "favorite": "Egypt",
+        "favorite_side": "home",
+        "favorite_probability": 0.4523323808088884,
+        "modal_score": "1-0",
+        "modal_probability": 0.15095252199264597,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.15095252199264597
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.0276787165567753,
+          "away": 0.8903961276189934,
+          "total": 1.9180748441757687
+        },
+        "favorite_win_mass": 0.3788729661915942,
+        "favorite_win_by_2_plus_mass": 0.14747147363459598,
+        "three_plus_total_goals_mass": 0.30118227205112935,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489415",
+        "match": "New Zealand vs Belgium",
+        "favorite": "Belgium",
+        "favorite_side": "away",
+        "favorite_probability": 0.5564662123762415,
+        "modal_score": "1-1",
+        "modal_probability": 0.12190401185920796,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.12046713385645802
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.01184824798993,
+          "away": 1.5284885863969935,
+          "total": 2.5403368343869235
+        },
+        "favorite_win_mass": 0.49266507655179115,
+        "favorite_win_by_2_plus_mass": 0.2515413729544651,
+        "three_plus_total_goals_mass": 0.4667304173552169,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489420",
+        "match": "Croatia vs Ghana",
+        "favorite": "Croatia",
+        "favorite_side": "home",
+        "favorite_probability": 0.585932210430879,
+        "modal_score": "1-0",
+        "modal_probability": 0.13141405951420143,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13141405951420143
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.529577976751929,
+          "away": 0.9245254177897689,
+          "total": 2.454103394541698
+        },
+        "favorite_win_mass": 0.514357942471557,
+        "favorite_win_by_2_plus_mass": 0.26522373034051366,
+        "three_plus_total_goals_mass": 0.4445956877808209,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489422",
+        "match": "Panama vs England",
+        "favorite": "England",
+        "favorite_side": "away",
+        "favorite_probability": 0.5316860431205224,
+        "modal_score": "0-1",
+        "modal_probability": 0.12053507434531828,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.12053507434531828
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.8666847188001466,
+          "away": 1.8776403466910365,
+          "total": 2.744325065491183
+        },
+        "favorite_win_mass": 0.6125673634015352,
+        "favorite_win_by_2_plus_mass": 0.363020630839712,
+        "three_plus_total_goals_mass": 0.517967515261767,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489419",
+        "match": "Colombia vs Portugal",
+        "favorite": "Colombia",
+        "favorite_side": "home",
+        "favorite_probability": 0.5227869342664407,
+        "modal_score": "1-1",
+        "modal_probability": 0.12360303201161028,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.11975824175565343
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4862598673277463,
+          "away": 1.0320135803691037,
+          "total": 2.51827344769685
+        },
+        "favorite_win_mass": 0.4768663079680506,
+        "favorite_win_by_2_plus_mass": 0.23841964656803014,
+        "three_plus_total_goals_mass": 0.46107009752509437,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539013",
+        "match": "Congo DR vs Uzbekistan",
+        "favorite": "Congo DR",
+        "favorite_side": "home",
+        "favorite_probability": 0.3592919756115013,
+        "modal_score": "0-0",
+        "modal_probability": 0.16031541906438812,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1478975238321042
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.9224994742287986,
+          "away": 0.9080450741391697,
+          "total": 1.8305445483679683
+        },
+        "favorite_win_mass": 0.34117154255950255,
+        "favorite_win_by_2_plus_mass": 0.12204440814049654,
+        "three_plus_total_goals_mass": 0.27758456112552227,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489418",
+        "match": "Algeria vs Austria",
+        "favorite": "Algeria",
+        "favorite_side": "home",
+        "favorite_probability": 0.496865176432596,
+        "modal_score": "1-1",
+        "modal_probability": 0.12979446370471548,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1181580615244255
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.2982527638588537,
+          "away": 1.098341426284969,
+          "total": 2.396594190143823
+        },
+        "favorite_win_mass": 0.4109318746648128,
+        "favorite_win_by_2_plus_mass": 0.1858926306444007,
+        "three_plus_total_goals_mass": 0.4295045824415396,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489421",
+        "match": "Jordan vs Argentina",
+        "favorite": "Argentina",
+        "favorite_side": "away",
+        "favorite_probability": 0.46397501283630715,
+        "modal_score": "0-1",
+        "modal_probability": 0.15474085057347042,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.15474085057347042
+        },
+        "reconstructed_expected_goals": {
+          "home": 0.7975697113285639,
+          "away": 1.4164850715283848,
+          "total": 2.2140547828569486
+        },
+        "favorite_win_mass": 0.5166520704469507,
+        "favorite_win_by_2_plus_mass": 0.25633204778179225,
+        "three_plus_total_goals_mass": 0.3811931869959979,
+        "favorite_score_modal_realism_flag": false
+      }
+    ],
+    "strong_favorite_cases": [
+      {
+        "match_id": "api_football_1489405",
+        "match": "Morocco vs Haiti",
+        "favorite": "Morocco",
+        "favorite_side": "home",
+        "favorite_probability": 0.7895212310395727,
+        "modal_score": "1-0",
+        "modal_probability": 0.15607812696000728,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.15607812696000728
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8450351861925833,
+          "away": 0.6235677101087433,
+          "total": 2.4686028963013267
+        },
+        "favorite_win_mass": 0.6679834092918151,
+        "favorite_win_by_2_plus_mass": 0.4028547559138604,
+        "three_plus_total_goals_mass": 0.4488430059753646,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489389",
+        "match": "Brazil vs Haiti",
+        "favorite": "Brazil",
+        "favorite_side": "home",
+        "favorite_probability": 0.743765954024074,
+        "modal_score": "1-0",
+        "modal_probability": 0.1277349275497878,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1277349275497878
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.9105268972678018,
+          "away": 0.792942255141402,
+          "total": 2.7034691524092036
+        },
+        "favorite_win_mass": 0.6383019284023486,
+        "favorite_win_by_2_plus_mass": 0.3856162431506351,
+        "three_plus_total_goals_mass": 0.5081137198280301,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539007",
+        "match": "Netherlands vs Sweden",
+        "favorite": "Netherlands",
+        "favorite_side": "home",
+        "favorite_probability": 0.6843197563615195,
+        "modal_score": "2-0",
+        "modal_probability": 0.11509759928217102,
+        "top_compatible_score": {
+          "score": "2-0",
+          "probability": 0.11509759928217102
+        },
+        "reconstructed_expected_goals": {
+          "home": 2.072706526135008,
+          "away": 0.8548943834960363,
+          "total": 2.9276009096310442
+        },
+        "favorite_win_mass": 0.6568888537448793,
+        "favorite_win_by_2_plus_mass": 0.41397633813733237,
+        "three_plus_total_goals_mass": 0.5617833626023776,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489402",
+        "match": "England vs Ghana",
+        "favorite": "England",
+        "favorite_side": "home",
+        "favorite_probability": 0.6822618861658247,
+        "modal_score": "1-0",
+        "modal_probability": 0.1443387457698524,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1443387457698524
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8801270356235646,
+          "away": 0.6853026781296189,
+          "total": 2.5654297137531836
+        },
+        "favorite_win_mass": 0.6593363170575167,
+        "favorite_win_by_2_plus_mass": 0.39939517476185493,
+        "three_plus_total_goals_mass": 0.4736763678821976,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539005",
+        "match": "Switzerland vs Bosnia & Herzegovina",
+        "favorite": "Switzerland",
+        "favorite_side": "home",
+        "favorite_probability": 0.6746273133123095,
+        "modal_score": "1-0",
+        "modal_probability": 0.1170012943300282,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1170012943300282
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8334269991322498,
+          "away": 0.9170670997669521,
+          "total": 2.750494098899202
+        },
+        "favorite_win_mass": 0.5900919445821714,
+        "favorite_win_by_2_plus_mass": 0.34257911536062635,
+        "three_plus_total_goals_mass": 0.5193540062093949,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489397",
+        "match": "Spain vs Saudi Arabia",
+        "favorite": "Spain",
+        "favorite_side": "home",
+        "favorite_probability": 0.6610377805063593,
+        "modal_score": "1-0",
+        "modal_probability": 0.14463321557702918,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14463321557702918
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.9005088828036325,
+          "away": 0.6735349285104352,
+          "total": 2.5740438113140676
+        },
+        "favorite_win_mass": 0.6667437004559005,
+        "favorite_win_by_2_plus_mass": 0.40716782199646484,
+        "three_plus_total_goals_mass": 0.4759082496369669,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539011",
+        "match": "Japan vs Sweden",
+        "favorite": "Japan",
+        "favorite_side": "home",
+        "favorite_probability": 0.6585385114654142,
+        "modal_score": "1-0",
+        "modal_probability": 0.11500116682679719,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.11500116682679719
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.8604271472416112,
+          "away": 0.9217772186728643,
+          "total": 2.7822043659144757
+        },
+        "favorite_win_mass": 0.5950452176458036,
+        "favorite_win_by_2_plus_mass": 0.34844352913032184,
+        "three_plus_total_goals_mass": 0.5270448866304137,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489370",
+        "match": "USA vs Paraguay",
+        "favorite": "USA",
+        "favorite_side": "home",
+        "favorite_probability": 0.6584375895087922,
+        "modal_score": "1-0",
+        "modal_probability": 0.16699124027368029,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.16699124027368029
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.5183865898009943,
+          "away": 0.6888343772075829,
+          "total": 2.207220967008577
+        },
+        "favorite_win_mass": 0.5727464065736261,
+        "favorite_win_by_2_plus_mass": 0.30170358264836566,
+        "three_plus_total_goals_mass": 0.37943886281550077,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539000",
+        "match": "Canada vs Bosnia & Herzegovina",
+        "favorite": "Canada",
+        "favorite_side": "home",
+        "favorite_probability": 0.6475360147379063,
+        "modal_score": "1-0",
+        "modal_probability": 0.13086157717054897,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13086157717054897
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.5692791538507957,
+          "away": 0.9145942497935826,
+          "total": 2.4838734036443784
+        },
+        "favorite_win_mass": 0.5270295717098097,
+        "favorite_win_by_2_plus_mass": 0.27675472860918054,
+        "three_plus_total_goals_mass": 0.4523177740640379,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489374",
+        "match": "Germany vs Curaçao",
+        "favorite": "Germany",
+        "favorite_side": "home",
+        "favorite_probability": 0.6413717141268567,
+        "modal_score": "1-0",
+        "modal_probability": 0.13249857419986266,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13249857419986266
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.7215408953761915,
+          "away": 0.842108502918569,
+          "total": 2.5636493982947606
+        },
+        "favorite_win_mass": 0.5828899884558619,
+        "favorite_win_by_2_plus_mass": 0.32787753639382666,
+        "three_plus_total_goals_mass": 0.47288657123232714,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489380",
+        "match": "Spain vs Cape Verde Islands",
+        "favorite": "Spain",
+        "favorite_side": "home",
+        "favorite_probability": 0.6400977573651252,
+        "modal_score": "1-0",
+        "modal_probability": 0.14825446021647004,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14825446021647004
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.7560947823849498,
+          "away": 0.714949888072237,
+          "total": 2.4710446704571867
+        },
+        "favorite_win_mass": 0.6239532464623956,
+        "favorite_win_by_2_plus_mass": 0.360735759736806,
+        "three_plus_total_goals_mass": 0.44928133359947436,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539017",
+        "match": "France vs Iraq",
+        "favorite": "France",
+        "favorite_side": "home",
+        "favorite_probability": 0.634875641007691,
+        "modal_score": "1-0",
+        "modal_probability": 0.14899054373756254,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14899054373756254
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.590750570191293,
+          "away": 0.7769492875094456,
+          "total": 2.3676998577007384
+        },
+        "favorite_win_mass": 0.5677547731270941,
+        "favorite_win_by_2_plus_mass": 0.30550302982912103,
+        "three_plus_total_goals_mass": 0.422124779182722,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489378",
+        "match": "Iran vs New Zealand",
+        "favorite": "Iran",
+        "favorite_side": "home",
+        "favorite_probability": 0.6294963479293798,
+        "modal_score": "1-0",
+        "modal_probability": 0.13757098155882103,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13757098155882103
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4670846688710653,
+          "away": 0.8996105230034757,
+          "total": 2.366695191874541
+        },
+        "favorite_win_mass": 0.5042026639703951,
+        "favorite_win_by_2_plus_mass": 0.253432984885367,
+        "three_plus_total_goals_mass": 0.4217466580507555,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1538999",
+        "match": "South Korea vs Czech Republic",
+        "favorite": "South Korea",
+        "favorite_side": "home",
+        "favorite_probability": 0.6182579593251196,
+        "modal_score": "1-0",
+        "modal_probability": 0.13248358605805513,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13248358605805513
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.458997332082048,
+          "away": 0.9398499568959917,
+          "total": 2.3988472889780397
+        },
+        "favorite_win_mass": 0.49204132000322776,
+        "favorite_win_by_2_plus_mass": 0.2453245276440634,
+        "three_plus_total_goals_mass": 0.43016661471720075,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489399",
+        "match": "Argentina vs Austria",
+        "favorite": "Argentina",
+        "favorite_side": "home",
+        "favorite_probability": 0.6152641589904219,
+        "modal_score": "1-0",
+        "modal_probability": 0.14743889174301056,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.14743889174301056
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4759721359309361,
+          "away": 0.8274914776065142,
+          "total": 2.3034636135374504
+        },
+        "favorite_win_mass": 0.5249084306513667,
+        "favorite_win_by_2_plus_mass": 0.267024525377838,
+        "three_plus_total_goals_mass": 0.40506398603897886,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489384",
+        "match": "England vs Croatia",
+        "favorite": "England",
+        "favorite_side": "home",
+        "favorite_probability": 0.6139271430176084,
+        "modal_score": "1-0",
+        "modal_probability": 0.13040229059240727,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13040229059240727
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.719961624326597,
+          "away": 0.85872051980862,
+          "total": 2.578682144135217
+        },
+        "favorite_win_mass": 0.5782872500878247,
+        "favorite_win_by_2_plus_mass": 0.32448592517233965,
+        "three_plus_total_goals_mass": 0.47668232213241685,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1489381",
+        "match": "Argentina vs Algeria",
+        "favorite": "Argentina",
+        "favorite_side": "home",
+        "favorite_probability": 0.6026700891126675,
+        "modal_score": "1-0",
+        "modal_probability": 0.1547531697470953,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1547531697470953
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4437561604604494,
+          "away": 0.7892628451983495,
+          "total": 2.233019005658799
+        },
+        "favorite_win_mass": 0.5262171901604908,
+        "favorite_win_by_2_plus_mass": 0.2647836044492658,
+        "three_plus_total_goals_mass": 0.3862850760829763,
+        "favorite_score_modal_realism_flag": true
+      },
+      {
+        "match_id": "api_football_1539074",
+        "match": "Senegal vs Iraq",
+        "favorite": "Senegal",
+        "favorite_side": "home",
+        "favorite_probability": 0.5992755126136771,
+        "modal_score": "1-0",
+        "modal_probability": 0.1721447391124202,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1721447391124202
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.310100087405589,
+          "away": 0.7193747616849289,
+          "total": 2.029474849090518
+        },
+        "favorite_win_mass": 0.507451980221337,
+        "favorite_win_by_2_plus_mass": 0.24035677575874131,
+        "three_plus_total_goals_mass": 0.3313828248352389,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539008",
+        "match": "Colombia vs Congo DR",
+        "favorite": "Colombia",
+        "favorite_side": "home",
+        "favorite_probability": 0.5980135757466627,
+        "modal_score": "1-0",
+        "modal_probability": 0.16599742019639688,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.16599742019639688
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.3293581158669117,
+          "away": 0.7510607393616562,
+          "total": 2.080418855228568
+        },
+        "favorite_win_mass": 0.5045561077312269,
+        "favorite_win_by_2_plus_mass": 0.24064862397396827,
+        "three_plus_total_goals_mass": 0.345170410527609,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489420",
+        "match": "Croatia vs Ghana",
+        "favorite": "Croatia",
+        "favorite_side": "home",
+        "favorite_probability": 0.585932210430879,
+        "modal_score": "1-0",
+        "modal_probability": 0.13141405951420143,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13141405951420143
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.529577976751929,
+          "away": 0.9245254177897689,
+          "total": 2.454103394541698
+        },
+        "favorite_win_mass": 0.514357942471557,
+        "favorite_win_by_2_plus_mass": 0.26522373034051366,
+        "three_plus_total_goals_mass": 0.4445956877808209,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1539006",
+        "match": "Türkiye vs Paraguay",
+        "favorite": "Türkiye",
+        "favorite_side": "home",
+        "favorite_probability": 0.5771650087471616,
+        "modal_score": "1-0",
+        "modal_probability": 0.16343246519585647,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.16343246519585647
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.329230508282872,
+          "away": 0.7666635070310741,
+          "total": 2.095894015313946
+        },
+        "favorite_win_mass": 0.5004154221318482,
+        "favorite_win_by_2_plus_mass": 0.23825366863554567,
+        "three_plus_total_goals_mass": 0.3493516069704684,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489387",
+        "match": "Canada vs Qatar",
+        "favorite": "Canada",
+        "favorite_side": "home",
+        "favorite_probability": 0.5692645126938817,
+        "modal_score": "1-0",
+        "modal_probability": 0.1306466661657585,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.1306466661657585
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.4617178218475244,
+          "away": 0.9529473643857767,
+          "total": 2.414665186233301
+        },
+        "favorite_win_mass": 0.4895397578988747,
+        "favorite_win_by_2_plus_mass": 0.2440454344711509,
+        "three_plus_total_goals_mass": 0.43429744797626074,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489415",
+        "match": "New Zealand vs Belgium",
+        "favorite": "Belgium",
+        "favorite_side": "away",
+        "favorite_probability": 0.5564662123762415,
+        "modal_score": "1-1",
+        "modal_probability": 0.12190401185920796,
+        "top_compatible_score": {
+          "score": "0-1",
+          "probability": 0.12046713385645802
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.01184824798993,
+          "away": 1.5284885863969935,
+          "total": 2.5403368343869235
+        },
+        "favorite_win_mass": 0.49266507655179115,
+        "favorite_win_by_2_plus_mass": 0.2515413729544651,
+        "three_plus_total_goals_mass": 0.4667304173552169,
+        "favorite_score_modal_realism_flag": false
+      },
+      {
+        "match_id": "api_football_1489382",
+        "match": "Austria vs Jordan",
+        "favorite": "Austria",
+        "favorite_side": "home",
+        "favorite_probability": 0.5538928401691395,
+        "modal_score": "1-0",
+        "modal_probability": 0.13465116849466732,
+        "top_compatible_score": {
+          "score": "1-0",
+          "probability": 0.13465116849466732
+        },
+        "reconstructed_expected_goals": {
+          "home": 1.5103809989779808,
+          "away": 0.9067922709569325,
+          "total": 2.4171732699349135
+        },
+        "favorite_win_mass": 0.5138018761994381,
+        "favorite_win_by_2_plus_mass": 0.26320046513455675,
+        "three_plus_total_goals_mass": 0.4349881274954357,
+        "favorite_score_modal_realism_flag": false
+      }
+    ],
+    "conservatism_flags": [
+      "At least 75% of 2026 modal scores are 0-0, 1-0, 0-1 or 1-1.",
+      "Fewer than 10% of 2026 modal scores contain three or more goals."
+    ]
+  },
+  "historical_test": {
+    "match_count": 460,
+    "matches": 460,
+    "exact_score_accuracy": 0.14565217391304347,
+    "top_3_accuracy": 0.358695652173913,
+    "top_5_accuracy": 0.5130434782608696,
+    "score_log_loss": 3.1647043930411107,
+    "total_goals_accuracy": 0.22826086956521738,
+    "over_2_5_brier": 0.24549973215425785,
+    "one_x_two_accuracy": 0.6217391304347826,
+    "one_x_two_brier": 0.5211514878135842,
+    "dnb_win_excluding_pushes": 0.7994428969359332,
+    "dnb_non_loss_including_pushes": 0.8434782608695652,
+    "actual_average_favorite_margin": 1.4565217391304348,
+    "modal_average_favorite_margin": 0.8521739130434782,
+    "average_favorite_probability": 0.5195748587164589,
+    "actual_favorite_win_rate": 0.6065217391304348,
+    "favorite_calibration_gap": 0.08694688041397591,
+    "actual_favorite_2_plus_rate": 0.3717391304347826,
+    "predicted_favorite_2_plus_probability": 0.2665898145578775,
+    "actual_score_distribution": {
+      "1-0": 52,
+      "2-0": 43,
+      "1-1": 42,
+      "0-0": 38,
+      "0-1": 36,
+      "2-1": 30,
+      "3-0": 25,
+      "0-2": 23,
+      "2-2": 19,
+      "3-1": 18,
+      "4-0": 18,
+      "1-2": 14,
+      "2-3": 12,
+      "3-2": 11,
+      "0-3": 9,
+      "4-1": 9,
+      "1-3": 7,
+      "0-5": 6,
+      "0-6": 5,
+      "0-4": 5,
+      "5-0": 4,
+      "6-0": 4,
+      "1-4": 3,
+      "7-0": 3,
+      "0-7": 3,
+      "3-3": 2,
+      "3-4": 2,
+      "2-4": 2,
+      "4-2": 2,
+      "7-1": 2,
+      "4-5": 1,
+      "11-1": 1,
+      "3-6": 1,
+      "10-0": 1,
+      "3-5": 1,
+      "1-6": 1,
+      "6-1": 1,
+      "4-3": 1,
+      "9-1": 1,
+      "8-0": 1,
+      "5-1": 1
+    },
+    "modal_score_distribution": {
+      "1-0": 195,
+      "1-1": 109,
+      "0-1": 76,
+      "2-0": 33,
+      "0-0": 21,
+      "0-2": 16,
+      "3-0": 10
+    },
+    "modal_total_goals_distribution": {
+      "0": 21,
+      "1": 271,
+      "2": 158,
+      "3+": 10
+    },
+    "actual_total_goals_distribution": {
+      "0": 38,
+      "1": 88,
+      "2": 108,
+      "3+": 226
+    },
+    "favorite_bucket_performance": {
+      "0.00-0.55": {
+        "matches": 289,
+        "exact_score_accuracy": 0.12802768166089964,
+        "top_3_accuracy": 0.34256055363321797,
+        "top_5_accuracy": 0.49480968858131485,
+        "score_log_loss": 2.9811409946930647,
+        "total_goals_accuracy": 0.23529411764705882,
+        "over_2_5_brier": 0.24799181750644367,
+        "one_x_two_accuracy": 0.5017301038062284,
+        "one_x_two_brier": 0.6193562581027269,
+        "dnb_win_excluding_pushes": 0.6919431279620853,
+        "dnb_non_loss_including_pushes": 0.7750865051903114,
+        "actual_average_favorite_margin": 0.9826989619377162,
+        "modal_average_favorite_margin": 0.5743944636678201,
+        "average_favorite_probability": 0.43198864504795437,
+        "actual_favorite_win_rate": 0.47750865051903113,
+        "favorite_calibration_gap": 0.04552000547107676,
+        "actual_favorite_2_plus_rate": 0.2560553633217993,
+        "predicted_favorite_2_plus_probability": 0.19744094462249706,
+        "actual_score_distribution": {
+          "0-1": 33,
+          "0-0": 33,
+          "1-1": 31,
+          "1-0": 29,
+          "2-0": 19,
+          "2-1": 18,
+          "0-2": 16,
+          "2-2": 13,
+          "3-0": 12,
+          "1-2": 11,
+          "2-3": 10,
+          "3-1": 8,
+          "0-3": 7,
+          "3-2": 7,
+          "4-0": 6,
+          "1-3": 5,
+          "0-6": 4,
+          "0-5": 4,
+          "4-1": 4,
+          "1-4": 3,
+          "3-4": 2,
+          "0-4": 2,
+          "4-2": 2,
+          "4-5": 1,
+          "3-6": 1,
+          "5-0": 1,
+          "3-3": 1,
+          "3-5": 1,
+          "1-6": 1,
+          "2-4": 1,
+          "4-3": 1,
+          "7-1": 1,
+          "5-1": 1
+        },
+        "modal_score_distribution": {
+          "1-0": 102,
+          "1-1": 98,
+          "0-1": 65,
+          "0-0": 21,
+          "0-2": 3
+        },
+        "modal_total_goals_distribution": {
+          "0": 21,
+          "1": 167,
+          "2": 101,
+          "3+": 0
+        },
+        "actual_total_goals_distribution": {
+          "0": 33,
+          "1": 62,
+          "2": 66,
+          "3+": 128
+        },
+        "bucket": "0.00-0.55"
+      },
+      "0.55-0.60": {
+        "matches": 40,
+        "exact_score_accuracy": 0.15,
+        "top_3_accuracy": 0.4,
+        "top_5_accuracy": 0.475,
+        "score_log_loss": 3.9510303259863555,
+        "total_goals_accuracy": 0.2,
+        "over_2_5_brier": 0.2741685947318193,
+        "one_x_two_accuracy": 0.75,
+        "one_x_two_brier": 0.47534006386633865,
+        "dnb_win_excluding_pushes": 0.9375,
+        "dnb_non_loss_including_pushes": 0.95,
+        "actual_average_favorite_margin": 2.2,
+        "modal_average_favorite_margin": 0.975,
+        "average_favorite_probability": 0.5766161526393954,
+        "actual_favorite_win_rate": 0.75,
+        "favorite_calibration_gap": 0.17338384736060464,
+        "actual_favorite_2_plus_rate": 0.5,
+        "predicted_favorite_2_plus_probability": 0.29212259300189236,
+        "actual_score_distribution": {
+          "2-0": 5,
+          "0-2": 4,
+          "1-1": 4,
+          "1-0": 3,
+          "0-0": 2,
+          "3-2": 2,
+          "4-0": 2,
+          "0-1": 2,
+          "2-1": 2,
+          "0-5": 1,
+          "3-3": 1,
+          "0-4": 1,
+          "4-1": 1,
+          "3-0": 1,
+          "0-6": 1,
+          "6-1": 1,
+          "0-7": 1,
+          "6-0": 1,
+          "7-0": 1,
+          "2-3": 1,
+          "8-0": 1,
+          "2-2": 1,
+          "1-2": 1
+        },
+        "modal_score_distribution": {
+          "1-0": 23,
+          "0-1": 6,
+          "1-1": 6,
+          "0-2": 5
+        },
+        "modal_total_goals_distribution": {
+          "0": 0,
+          "1": 29,
+          "2": 11,
+          "3+": 0
+        },
+        "actual_total_goals_distribution": {
+          "0": 2,
+          "1": 5,
+          "2": 13,
+          "3+": 20
+        },
+        "bucket": "0.55-0.60"
+      },
+      "0.70-1.00": {
+        "matches": 55,
+        "exact_score_accuracy": 0.2,
+        "top_3_accuracy": 0.41818181818181815,
+        "top_5_accuracy": 0.5454545454545454,
+        "score_log_loss": 4.119812954039205,
+        "total_goals_accuracy": 0.23636363636363636,
+        "over_2_5_brier": 0.20200218050729135,
+        "one_x_two_accuracy": 0.8727272727272727,
+        "one_x_two_brier": 0.24620498844532349,
+        "dnb_win_excluding_pushes": 0.9795918367346939,
+        "dnb_non_loss_including_pushes": 0.9818181818181818,
+        "actual_average_favorite_margin": 2.981818181818182,
+        "modal_average_favorite_margin": 1.8909090909090909,
+        "average_favorite_probability": 0.7717767331621016,
+        "actual_favorite_win_rate": 0.8727272727272727,
+        "favorite_calibration_gap": 0.10095053956517108,
+        "actual_favorite_2_plus_rate": 0.6545454545454545,
+        "predicted_favorite_2_plus_probability": 0.5140279172309175,
+        "actual_score_distribution": {
+          "1-0": 9,
+          "3-0": 7,
+          "2-0": 5,
+          "4-0": 5,
+          "3-1": 4,
+          "2-1": 3,
+          "1-1": 3,
+          "5-0": 2,
+          "6-0": 2,
+          "7-0": 2,
+          "0-3": 2,
+          "0-7": 2,
+          "2-2": 2,
+          "11-1": 1,
+          "10-0": 1,
+          "4-1": 1,
+          "0-0": 1,
+          "0-2": 1,
+          "9-1": 1,
+          "7-1": 1
+        },
+        "modal_score_distribution": {
+          "2-0": 27,
+          "1-0": 13,
+          "3-0": 10,
+          "0-2": 3,
+          "0-1": 1,
+          "1-1": 1
+        },
+        "modal_total_goals_distribution": {
+          "0": 0,
+          "1": 14,
+          "2": 31,
+          "3+": 10
+        },
+        "actual_total_goals_distribution": {
+          "0": 1,
+          "1": 9,
+          "2": 9,
+          "3+": 36
+        },
+        "bucket": "0.70-1.00"
+      },
+      "0.60-0.65": {
+        "matches": 52,
+        "exact_score_accuracy": 0.09615384615384616,
+        "top_3_accuracy": 0.2692307692307692,
+        "top_5_accuracy": 0.5384615384615384,
+        "score_log_loss": 2.8650341712940675,
+        "total_goals_accuracy": 0.15384615384615385,
+        "over_2_5_brier": 0.26345042764360665,
+        "one_x_two_accuracy": 0.75,
+        "one_x_two_brier": 0.4334264731507827,
+        "dnb_win_excluding_pushes": 0.9069767441860465,
+        "dnb_non_loss_including_pushes": 0.9230769230769231,
+        "actual_average_favorite_margin": 1.6923076923076923,
+        "modal_average_favorite_margin": 1.0384615384615385,
+        "average_favorite_probability": 0.6255220646671523,
+        "actual_favorite_win_rate": 0.75,
+        "favorite_calibration_gap": 0.12447793533284768,
+        "actual_favorite_2_plus_rate": 0.5576923076923077,
+        "predicted_favorite_2_plus_probability": 0.3270950272917948,
+        "actual_score_distribution": {
+          "2-0": 9,
+          "3-1": 5,
+          "2-1": 5,
+          "1-0": 4,
+          "1-1": 4,
+          "3-0": 3,
+          "2-2": 3,
+          "4-0": 3,
+          "0-4": 2,
+          "0-0": 2,
+          "1-3": 2,
+          "0-2": 2,
+          "4-1": 2,
+          "0-5": 1,
+          "0-1": 1,
+          "3-2": 1,
+          "1-2": 1,
+          "6-0": 1,
+          "2-4": 1
+        },
+        "modal_score_distribution": {
+          "1-0": 39,
+          "0-2": 4,
+          "1-1": 4,
+          "0-1": 3,
+          "2-0": 2
+        },
+        "modal_total_goals_distribution": {
+          "0": 0,
+          "1": 42,
+          "2": 10,
+          "3+": 0
+        },
+        "actual_total_goals_distribution": {
+          "0": 2,
+          "1": 5,
+          "2": 15,
+          "3+": 30
+        },
+        "bucket": "0.60-0.65"
+      },
+      "0.65-0.70": {
+        "matches": 24,
+        "exact_score_accuracy": 0.3333333333333333,
+        "top_3_accuracy": 0.5416666666666666,
+        "top_5_accuracy": 0.6666666666666666,
+        "score_log_loss": 2.52506545473813,
+        "total_goals_accuracy": 0.3333333333333333,
+        "over_2_5_brier": 0.2284981490397873,
+        "one_x_two_accuracy": 1.0,
+        "one_x_two_brier": 0.2351113449822447,
+        "dnb_win_excluding_pushes": 1.0,
+        "dnb_non_loss_including_pushes": 1.0,
+        "actual_average_favorite_margin": 1.9166666666666667,
+        "modal_average_favorite_margin": 1.2083333333333333,
+        "average_favorite_probability": 0.6716751166053774,
+        "actual_favorite_win_rate": 1.0,
+        "favorite_calibration_gap": 0.3283248833946226,
+        "actual_favorite_2_plus_rate": 0.5,
+        "predicted_favorite_2_plus_probability": 0.3585625464071867,
+        "actual_score_distribution": {
+          "1-0": 7,
+          "2-0": 5,
+          "2-1": 2,
+          "3-0": 2,
+          "4-0": 2,
+          "2-3": 1,
+          "5-0": 1,
+          "3-1": 1,
+          "1-2": 1,
+          "4-1": 1,
+          "3-2": 1
+        },
+        "modal_score_distribution": {
+          "1-0": 18,
+          "2-0": 4,
+          "0-2": 1,
+          "0-1": 1
+        },
+        "modal_total_goals_distribution": {
+          "0": 0,
+          "1": 19,
+          "2": 5,
+          "3+": 0
+        },
+        "actual_total_goals_distribution": {
+          "0": 0,
+          "1": 7,
+          "2": 5,
+          "3+": 12
+        },
+        "bucket": "0.65-0.70"
+      }
+    },
+    "actual_vs_modal_total_goals": {
+      "actual": {
+        "0": 38,
+        "1": 88,
+        "2": 108,
+        "3+": 226
+      },
+      "modal": {
+        "0": 21,
+        "1": 271,
+        "2": 158,
+        "3+": 10
+      }
+    },
+    "conservatism_flags": [
+      "Historical modal scores materially underrepresent 3+ goal outcomes.",
+      "Historical modal favorite margins are narrower than realized favorite margins."
+    ]
+  },
+  "spain_vs_cape_verde": {
+    "match_id": "api_football_1489380",
+    "match": "Spain vs Cape Verde Islands",
+    "score_modal": "1-0",
+    "score_modal_probability": 0.14825446021647004,
+    "top_10_scores": [
+      {
+        "score": "1-0",
+        "probability": 0.14825446021647004
+      },
+      {
+        "score": "2-0",
+        "probability": 0.1304068845125781
+      },
+      {
+        "score": "1-1",
+        "probability": 0.10599549219367416
+      },
+      {
+        "score": "2-1",
+        "probability": 0.09323525166913493
+      },
+      {
+        "score": "0-0",
+        "probability": 0.08427233368939553
+      },
+      {
+        "score": "3-0",
+        "probability": 0.07647192313110877
+      },
+      {
+        "score": "0-1",
+        "probability": 0.06025105399644962
+      },
+      {
+        "score": "3-1",
+        "probability": 0.054674099648964254
+      },
+      {
+        "score": "1-2",
+        "probability": 0.03789108384656579
+      },
+      {
+        "score": "4-0",
+        "probability": 0.033632935001254624
+      }
+    ],
+    "one_x_two": {
+      "home": 0.6400977573651252,
+      "draw": 0.23402991719518423,
+      "away": 0.12587235449695497
+    },
+    "favorite": {
+      "team": "Spain",
+      "side": "home",
+      "probability": 0.6400977573651252
+    },
+    "dnb": {
+      "home": 0.8089007495720402,
+      "away": 0.19109925042795986
+    },
+    "over_under": {
+      "over_2_5": 0.44928133359947436,
+      "under_2_5": 0.5507186664005259
+    },
+    "team_goals": {
+      "spain_scores": 0.8277392636299906,
+      "spain_scores_2_plus": 0.5246929212662558,
+      "cape_verde_scores": 0.5107861752757075
+    },
+    "reconstructed_expected_goals": {
+      "spain": 1.7560947823849498,
+      "cape_verde": 0.714949888072237,
+      "total": 2.4710446704571867
+    },
+    "probability_spain_wins_by_1": 0.26321748672558964,
+    "probability_spain_wins_by_2_plus": 0.360735759736806,
+    "matrix_explanation": "The modal 1-0 is mathematically logical for independent low lambdas: it is the largest individual cell. It is footballistically cautious because Spain's aggregate favorite probability is much stronger than the modal margin suggests.",
+    "diagnosis": {
+      "is_1_0_mathematically_logical": true,
+      "is_1_0_footballistically_too_prudent": false,
+      "implicit_lambda_spain": 1.7560947823849498,
+      "implicit_lambda_cape_verde": 0.714949888072237,
+      "wide_wins_underestimated_flag": false
+    }
+  },
+  "diagnosis": {
+    "conservatism_detected": true,
+    "primary_evidence": "Historical modal totals and favorite margins are compressed relative to actual outcomes.",
+    "causes": [
+      {
+        "cause": "A. Compression des ratings / Elo gap trop faible",
+        "evidence_for": "Strong-favorite modal margins remain narrow.",
+        "evidence_against": "Hybrid 1X2 still creates strong-favorite buckets.",
+        "severity": "medium",
+        "recommended_test": "Compare rating gap with lambda gap by favorite bucket."
+      },
+      {
+        "cause": "B. Lambdas attaque/défense trop proches de la moyenne",
+        "evidence_for": "Historical modal favorite margin trails actual by 0.604.",
+        "evidence_against": "Published lambda audit reports meaningful pairwise differences.",
+        "severity": "high",
+        "recommended_test": "Post-model favorite lambda-gap scaling."
+      },
+      {
+        "cause": "C. Cap implicite sur favorite xG",
+        "evidence_for": "Very few 3+ modal scores appear for strong favorites.",
+        "evidence_against": "V2.2 metadata reports no explicit lambda clipping.",
+        "severity": "medium",
+        "recommended_test": "Inspect upper-tail favorite lambdas and clipping flags."
+      },
+      {
+        "cause": "D. Trop forte probabilité de nul",
+        "evidence_for": "Low-score draw cells are frequently modal.",
+        "evidence_against": "A draw correction can damage calibrated 1X2.",
+        "severity": "medium",
+        "recommended_test": "Bounded strong-favorite draw-mass correction."
+      },
+      {
+        "cause": "E. Distribution Poisson trop concentrée sur petits scores",
+        "evidence_for": "Actual 3+ total rate is 49.1% versus 2.2% modal.",
+        "evidence_against": "A modal distribution is inherently narrower than realized scores.",
+        "severity": "high",
+        "recommended_test": "Total-goals temperature challenger with score-likelihood guardrail."
+      },
+      {
+        "cause": "F. Calibration optimisée pour log loss 1X2 plutôt que score likelihood",
+        "evidence_for": "The hybrid objective can aggregate outcome cells without rewarding realistic modal margins.",
+        "evidence_against": "Poisson score likelihood remains indirectly represented.",
+        "severity": "high",
+        "recommended_test": "Use historical score log likelihood as a challenger criterion."
+      },
+      {
+        "cause": "G. Manque de feature mismatch / mismatch boost",
+        "evidence_for": "Strong favorites lack an explicit post-model mismatch term.",
+        "evidence_against": "Ratings and attack/defence features already encode mismatch.",
+        "severity": "medium",
+        "recommended_test": "Targeted mismatch boost benchmark, no full retrain."
+      },
+      {
+        "cause": "H. Données historiques internationales trop prudentes",
+        "evidence_for": "International group and qualification games include cautious regimes.",
+        "evidence_against": "The same corpus also contains large mismatches.",
+        "severity": "low",
+        "recommended_test": "Segment totals and margins by competition tier."
+      },
+      {
+        "cause": "I. Effet compétition/groupe conservateur",
+        "evidence_for": "World Cup group-stage priors may suppress totals.",
+        "evidence_against": "The historical issue also appears across competitions.",
+        "severity": "low",
+        "recommended_test": "Compare group-stage and qualification matrix realism."
+      }
+    ],
+    "selection_rule": "Historical test is the arbiter; World Cup 2026 is descriptive and cannot select a challenger."
+  },
+  "source_integrity": {
+    "worldcup_match_states": 72,
+    "secondary_test_available": true,
+    "active_matrix_audit_test_matches": 460,
+    "no_model_retrained": true,
+    "no_optuna_rerun": true,
+    "active_predictions_modified": false
+  }
+}

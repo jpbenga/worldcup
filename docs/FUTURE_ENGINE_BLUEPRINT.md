@@ -329,3 +329,18 @@ beside conditioned projections.
 The presentation now explains why a single modal score can differ from the
 aggregate 1X2 favorite and supplies the most probable score compatible with
 that favorite. No probability is changed to manufacture visual agreement.
+
+## V2.8 score matrix realism and favorite strength calibration
+
+V2.8 establishes that the active score projection is materially conservative
+as a modal-score and simulation source even though aggregate 1X2 and broad
+markets remain useful. On the frozen historical test, actual matches contain
+far more three-plus-goal outcomes and wider favorite margins than modal scores
+represent.
+
+Bounded post-model challengers are evaluated without retraining or Optuna.
+The strongest favorite-gap scaling variant improves score log likelihood,
+top-3, top-5, 1X2 Brier, over-2.5 Brier and favorite-margin realism while
+preserving DNB decisions. It also lowers exact-score accuracy, so its World Cup
+output is published only as a candidate for explicit human and simulation
+review. The active `quant_hybrid_v2.2` probabilities remain frozen.

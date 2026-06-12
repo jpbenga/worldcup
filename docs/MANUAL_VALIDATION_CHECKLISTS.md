@@ -330,6 +330,29 @@ Notes :
 - [ ] Pre-match probabilities not modified
 - [ ] No secret committed
 
+## Checklist V2.8 — Score Matrix Realism & Favorite Strength Calibration
+
+- [x] V2.7 human validation recorded
+- [x] Score matrix realism strategy created
+- [x] World Cup 2026 modal score distribution audited
+- [x] Historical test modal score distribution audited
+- [x] Strong favorite buckets audited
+- [x] Spain vs Cape Verde case audited
+- [x] Conservatism diagnosis produced
+- [x] Causes classified
+- [x] Matrix challengers evaluated
+- [x] 1X2 guardrails checked
+- [x] DNB guardrails checked
+- [x] Over/under guardrails checked
+- [x] Candidate generated if objectively better
+- [x] No active prediction replacement without validation
+- [x] Angular build passed if frontend changed
+- [x] Angular tests passed if frontend changed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] Active prediction probabilities not modified
+- [x] No secret committed
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.
