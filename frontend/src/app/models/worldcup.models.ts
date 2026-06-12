@@ -474,6 +474,95 @@ export interface ActiveCandidateSimulationComparison {
   };
 }
 
+export interface CreativeTournamentContender {
+  rank: number;
+  team: string;
+  group: string;
+  activeScore?: number;
+  candidateScore?: number;
+  qualificationProbability: number;
+  candidateQualificationProbability: number;
+  groupWinnerProbability: number;
+  activeVsCandidateDelta: number;
+  status: 'stable' | 'rising' | 'falling' | 'volatile';
+  reason: string;
+}
+
+export interface CreativeGroupStoryline {
+  group: string;
+  title: string;
+  summary: string;
+  mostLikelyWinner: string;
+  qualificationFavorites: string[];
+  mostOpenRank: string;
+  chaosScore: number;
+  activeCandidateDifference: string;
+  lockedResults: { match: string; summary: string }[];
+  storyType: 'favorite_control' | 'open_group' | 'upset_watch' | 'volatile' | 'low_change';
+  label: string;
+}
+
+export interface CreativeTournamentExperience {
+  version: string;
+  engineVersion: string;
+  candidateVersion: string;
+  generatedAt: string;
+  refresh: {
+    sourceManifest: string;
+    simulationCount: number;
+    finishedMatches: number;
+    liveMatches: number;
+    notStartedMatches: number;
+  };
+  tournamentLeader: {
+    team: string;
+    label: string;
+    activeProxyRank: number;
+    candidateProxyRank: number;
+    activeQualificationProbability: number;
+    candidateQualificationProbability: number;
+    activeGroupWinnerProbability: number;
+    candidateGroupWinnerProbability: number;
+    confidenceLabel: 'stable' | 'contested' | 'open';
+    isOfficialChampionSimulation: boolean;
+    explanation: string;
+  };
+  topContenders: CreativeTournamentContender[];
+  projectedCampaign: {
+    bracketAvailable: boolean;
+    isOfficialChampionSimulation: boolean;
+    leader: string;
+    groupExitProbability: number;
+    groupWinnerProbability: number;
+    contenderStatus: string;
+    estimatedAdversity: string;
+    steps: { label: string; detail: string }[];
+    proxyLimit: string;
+  };
+  activeVsAlternative: {
+    summary: string;
+    activeLeader: string;
+    alternativeLeader: string;
+    modalScoresChanged: number;
+    favoriteMarginsIncreased: number;
+    mostAffectedGroups: string[];
+    teamsRising: string[];
+    teamsFalling: string[];
+    leaderChanged: boolean;
+    interpretation: string;
+  };
+  groupStorylines: CreativeGroupStoryline[];
+  openGroups: { group: string; title: string; chaosScore: number; label: string }[];
+  lockedResultImpact: {
+    match: string;
+    group: string;
+    winner: string;
+    qualificationDelta: Record<string, string>;
+    summary: string;
+  }[];
+  limitations: string[];
+}
+
 export interface BacktestResult {
   matchId: string;
   marketName: string;

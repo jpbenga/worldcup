@@ -397,6 +397,32 @@ Notes :
 - [x] Angular tests passed if frontend changed
 - [x] No secret committed
 
+## Checklist V2.11 — Creative Tournament Experience Upgrade
+
+- [x] V2.10 human validation recorded
+- [x] Creative tournament strategy created
+- [x] Creative tournament aggregate generated
+- [x] Tournament leader computed
+- [x] Top contenders computed
+- [x] Group storylines generated
+- [x] Locked result impact integrated
+- [x] Active vs alternative interpretation generated
+- [x] /simulation hero upgraded
+- [x] Projected Campaign displayed honestly
+- [x] Top contenders displayed
+- [x] Open groups displayed
+- [x] Active vs alternative comparison improved
+- [x] Proxy champion clearly labelled non-official
+- [x] Bracket not invented
+- [x] Creative experience validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
+- [x] No secret committed
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.

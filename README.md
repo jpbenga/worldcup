@@ -500,6 +500,22 @@ Use `--no-fetch` for cached data and `--dry-run` to inspect the ordered plan.
 The workflow protects frozen pre-match predictions and model artifacts with
 before/after hashes; it never retrains, reruns Optuna or promotes the candidate.
 
+## Creative tournament experience V2.11
+
+V2.11 turns `/simulation` into a narrative tournament feature using the
+existing result-aware projections:
+
+```bash
+python3 backend/scripts/build_creative_tournament_experience_v2_11.py
+python3 backend/scripts/validate_creative_tournament_experience_v2_11.py
+```
+
+The route presents a projected tournament leader, top contenders, a
+non-official projected campaign, open-group storylines, locked-result impact
+and a clearly labelled active-versus-alternative comparison. The official
+knockout bracket is unavailable, so no opponent or trophy path is invented and
+the campaign leader is never presented as a fully simulated champion.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

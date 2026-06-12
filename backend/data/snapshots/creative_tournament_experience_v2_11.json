@@ -1,0 +1,1958 @@
+{
+  "version": "v2.11",
+  "engine_version": "quant_hybrid_v2.2",
+  "candidate_version": "score_matrix_candidate_v2.8",
+  "candidate_status": "alternative_non_active",
+  "generated_at": "2026-06-12T23:45:51Z",
+  "refresh": {
+    "source_manifest": "matchday_refresh_manifest_v2_10",
+    "simulation_count": 50000,
+    "finished_matches": 3,
+    "live_matches": 0,
+    "not_started_matches": 69
+  },
+  "tournament_leader": {
+    "team": "Spain",
+    "label": "Projected tournament leader",
+    "active_proxy_rank": 1,
+    "candidate_proxy_rank": 1,
+    "active_qualification_probability": 0.9266,
+    "candidate_qualification_probability": 0.95248,
+    "active_group_winner_probability": 0.61592,
+    "candidate_group_winner_probability": 0.68358,
+    "confidence_label": "stable",
+    "is_official_champion_simulation": false,
+    "explanation": "Favori projeté et leader de campagne. Il s’agit d’un proxy non officiel tant que le bracket officiel est indisponible."
+  },
+  "top_contenders": [
+    {
+      "rank": 1,
+      "team": "Spain",
+      "group": "Group H",
+      "active_score": 0.8519942985568711,
+      "candidate_score": 0.8836016985568712,
+      "qualification_probability": 0.9266,
+      "candidate_qualification_probability": 0.95248,
+      "group_winner_probability": 0.61592,
+      "active_vs_candidate_delta": 0.025880000000000014,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 2,
+      "team": "England",
+      "group": "Group L",
+      "active_score": 0.8399018409238586,
+      "candidate_score": 0.8705658409238587,
+      "qualification_probability": 0.93082,
+      "candidate_qualification_probability": 0.95526,
+      "group_winner_probability": 0.60884,
+      "active_vs_candidate_delta": 0.024440000000000017,
+      "status": "stable",
+      "reason": "Son statut reste cohérent entre prédiction active et scénario alternatif."
+    },
+    {
+      "rank": 3,
+      "team": "Mexico",
+      "group": "Group A",
+      "active_score": 0.7870286327760337,
+      "candidate_score": 0.7886908327760338,
+      "qualification_probability": 0.93264,
+      "candidate_qualification_probability": 0.93518,
+      "group_winner_probability": 0.47282,
+      "active_vs_candidate_delta": 0.0025399999999999867,
+      "status": "stable",
+      "reason": "Son statut reste cohérent entre prédiction active et scénario alternatif."
+    },
+    {
+      "rank": 4,
+      "team": "Argentina",
+      "group": "Group J",
+      "active_score": 0.7850161894305674,
+      "candidate_score": 0.8090787894305673,
+      "qualification_probability": 0.87258,
+      "candidate_qualification_probability": 0.8965,
+      "group_winner_probability": 0.485,
+      "active_vs_candidate_delta": 0.02391999999999994,
+      "status": "stable",
+      "reason": "Son statut reste cohérent entre prédiction active et scénario alternatif."
+    },
+    {
+      "rank": 5,
+      "team": "Netherlands",
+      "group": "Group F",
+      "active_score": 0.7727388158392676,
+      "candidate_score": 0.8017330158392676,
+      "qualification_probability": 0.8846,
+      "candidate_qualification_probability": 0.91824,
+      "group_winner_probability": 0.48586,
+      "active_vs_candidate_delta": 0.03363999999999989,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 6,
+      "team": "Germany",
+      "group": "Group E",
+      "active_score": 0.7622732308747764,
+      "candidate_score": 0.7836034308747764,
+      "qualification_probability": 0.87008,
+      "candidate_qualification_probability": 0.89216,
+      "group_winner_probability": 0.4906,
+      "active_vs_candidate_delta": 0.02207999999999999,
+      "status": "stable",
+      "reason": "Son statut reste cohérent entre prédiction active et scénario alternatif."
+    },
+    {
+      "rank": 7,
+      "team": "Morocco",
+      "group": "Group C",
+      "active_score": 0.7494938346438661,
+      "candidate_score": 0.788757434643866,
+      "qualification_probability": 0.89562,
+      "candidate_qualification_probability": 0.94362,
+      "group_winner_probability": 0.4496,
+      "active_vs_candidate_delta": 0.04800000000000004,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 8,
+      "team": "Brazil",
+      "group": "Group C",
+      "active_score": 0.7430664740362389,
+      "candidate_score": 0.7788842740362388,
+      "qualification_probability": 0.86394,
+      "candidate_qualification_probability": 0.91418,
+      "group_winner_probability": 0.38512,
+      "active_vs_candidate_delta": 0.05023999999999995,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 9,
+      "team": "South Korea",
+      "group": "Group A",
+      "active_score": 0.7388877923724255,
+      "candidate_score": 0.7405897923724256,
+      "qualification_probability": 0.91598,
+      "candidate_qualification_probability": 0.91874,
+      "group_winner_probability": 0.41006,
+      "active_vs_candidate_delta": 0.0027599999999999847,
+      "status": "stable",
+      "reason": "Son statut reste cohérent entre prédiction active et scénario alternatif."
+    },
+    {
+      "rank": 10,
+      "team": "Switzerland",
+      "group": "Group B",
+      "active_score": 0.728772911782789,
+      "candidate_score": 0.7617045117827891,
+      "qualification_probability": 0.83514,
+      "candidate_qualification_probability": 0.87266,
+      "group_winner_probability": 0.46968,
+      "active_vs_candidate_delta": 0.03752,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "USA",
+      "group": "Group D",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.82108,
+      "candidate_qualification_probability": 0.85044,
+      "group_winner_probability": 0.3895,
+      "active_vs_candidate_delta": 0.02935999999999994,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "France",
+      "group": "Group I",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.79466,
+      "candidate_qualification_probability": 0.82408,
+      "group_winner_probability": 0.34718,
+      "active_vs_candidate_delta": 0.02942,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Japan",
+      "group": "Group F",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.77576,
+      "candidate_qualification_probability": 0.82268,
+      "group_winner_probability": 0.28466,
+      "active_vs_candidate_delta": 0.04691999999999996,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Iran",
+      "group": "Group G",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.67484,
+      "candidate_qualification_probability": 0.71062,
+      "group_winner_probability": 0.2201,
+      "active_vs_candidate_delta": 0.035780000000000034,
+      "status": "rising",
+      "reason": "Le scénario alternatif renforce nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Curaçao",
+      "group": "Group E",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.55382,
+      "candidate_qualification_probability": 0.52586,
+      "group_winner_probability": 0.14554,
+      "active_vs_candidate_delta": -0.027959999999999985,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Bosnia & Herzegovina",
+      "group": "Group B",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.5532,
+      "candidate_qualification_probability": 0.50952,
+      "group_winner_probability": 0.1255,
+      "active_vs_candidate_delta": -0.04368000000000005,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Ghana",
+      "group": "Group L",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.51826,
+      "candidate_qualification_probability": 0.46518,
+      "group_winner_probability": 0.09478,
+      "active_vs_candidate_delta": -0.05308000000000007,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "New Zealand",
+      "group": "Group G",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.51476,
+      "candidate_qualification_probability": 0.48654,
+      "group_winner_probability": 0.13904,
+      "active_vs_candidate_delta": -0.028220000000000023,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Sweden",
+      "group": "Group F",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.43352,
+      "candidate_qualification_probability": 0.3405,
+      "group_winner_probability": 0.08686,
+      "active_vs_candidate_delta": -0.09301999999999999,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Iraq",
+      "group": "Group I",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.43258,
+      "candidate_qualification_probability": 0.3878,
+      "group_winner_probability": 0.0965,
+      "active_vs_candidate_delta": -0.04478000000000004,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Haiti",
+      "group": "Group C",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.4296,
+      "candidate_qualification_probability": 0.28762,
+      "group_winner_probability": 0.07278,
+      "active_vs_candidate_delta": -0.14198,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    },
+    {
+      "rank": 22,
+      "team": "Paraguay",
+      "group": "Group D",
+      "active_score": null,
+      "candidate_score": null,
+      "qualification_probability": 0.42782,
+      "candidate_qualification_probability": 0.38744,
+      "group_winner_probability": 0.09562,
+      "active_vs_candidate_delta": -0.04037999999999997,
+      "status": "falling",
+      "reason": "Le scénario alternatif réduit nettement ses chances de qualification."
+    }
+  ],
+  "projected_campaign": {
+    "path_type": "projected_campaign_proxy",
+    "bracket_available": false,
+    "is_official_champion_simulation": false,
+    "leader": "Spain",
+    "group_exit_probability": 0.9266,
+    "group_winner_probability": 0.61592,
+    "contender_status": "stable",
+    "estimated_adversity": "Bracket officiel indisponible : adversaires à élimination directe non estimés.",
+    "steps": [
+      {
+        "label": "Phase de groupes",
+        "detail": "Rang le plus probable : 1"
+      },
+      {
+        "label": "Qualification",
+        "detail": "Probabilité : 92.7%"
+      },
+      {
+        "label": "Après les groupes",
+        "detail": "Bracket officiel indisponible; aucun adversaire inventé."
+      }
+    ],
+    "proxy_limit": "La projection s’arrête au potentiel de campagne et n’invente aucun parcours officiel."
+  },
+  "active_vs_alternative": {
+    "summary": "La projection alternative non active explore un scénario moins conservateur sans remplacer la prédiction active.",
+    "active_leader": "Spain",
+    "alternative_leader": "Spain",
+    "modal_scores_changed": 7,
+    "favorite_margins_increased": 20,
+    "most_affected_groups": [
+      "C",
+      "F",
+      "I",
+      "B",
+      "L"
+    ],
+    "teams_rising": [
+      "Brazil",
+      "Morocco",
+      "Japan",
+      "Switzerland",
+      "Iran"
+    ],
+    "teams_falling": [
+      "Haiti",
+      "Sweden",
+      "Ghana",
+      "Iraq",
+      "Bosnia & Herzegovina"
+    ],
+    "leader_changed": false,
+    "interpretation": "La projection alternative ne remplace pas la prédiction active. Elle montre un scénario moins conservateur."
+  },
+  "group_storylines": [
+    {
+      "group": "B",
+      "title": "Groupe B · Impact résultat réel",
+      "summary": "Switzerland mène la projection active. Un résultat réel change déjà le contexte. L’écart moyen avec le scénario alternatif est de 2.4%.",
+      "current_standings": [
+        {
+          "team": "Bosnia & Herzegovina",
+          "played": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "goals_for": 1,
+          "goals_against": 1,
+          "goal_difference": 0,
+          "points": 1,
+          "rank": 1
+        },
+        {
+          "team": "Canada",
+          "played": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "goals_for": 1,
+          "goals_against": 1,
+          "goal_difference": 0,
+          "points": 1,
+          "rank": 2
+        },
+        {
+          "team": "Qatar",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Switzerland",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Switzerland",
+          "qualification_probability": 0.83514,
+          "group_winner_probability": 0.46968
+        },
+        {
+          "team": "Canada",
+          "qualification_probability": 0.69248,
+          "group_winner_probability": 0.21582
+        },
+        {
+          "team": "Qatar",
+          "qualification_probability": 0.57106,
+          "group_winner_probability": 0.189
+        },
+        {
+          "team": "Bosnia & Herzegovina",
+          "qualification_probability": 0.5532,
+          "group_winner_probability": 0.1255
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Switzerland",
+          "qualification_probability": 0.87266,
+          "group_winner_probability": 0.51172
+        },
+        {
+          "team": "Canada",
+          "qualification_probability": 0.70282,
+          "group_winner_probability": 0.21856
+        },
+        {
+          "team": "Qatar",
+          "qualification_probability": 0.56826,
+          "group_winner_probability": 0.17824
+        },
+        {
+          "team": "Bosnia & Herzegovina",
+          "qualification_probability": 0.50952,
+          "group_winner_probability": 0.09148
+        }
+      ],
+      "most_likely_winner": "Switzerland",
+      "qualification_favorites": [
+        "Switzerland",
+        "Canada"
+      ],
+      "most_open_rank": "Bosnia & Herzegovina · qualification 55.3%",
+      "chaos_score": 63.9,
+      "active_candidate_difference": "Écart moyen de qualification : 2.4%",
+      "locked_results": [
+        {
+          "match": "Canada 1-1 Bosnia & Herzegovina",
+          "group": "B",
+          "winner": "Draw",
+          "qualification_delta": {
+            "Canada": "-8.6",
+            "Bosnia & Herzegovina": "+5.7"
+          },
+          "summary": "Résultat officiel verrouillé : Canada évolue de -8.6 points et Bosnia & Herzegovina de +5.7 points face à la projection pré-tournoi."
+        }
+      ],
+      "story_type": "upset_watch",
+      "label": "Impact résultat réel"
+    },
+    {
+      "group": "K",
+      "title": "Groupe K · Groupe instable",
+      "summary": "Colombia mène la projection active. L’écart moyen avec le scénario alternatif est de 0.9%.",
+      "current_standings": [
+        {
+          "team": "Colombia",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Congo DR",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Portugal",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Uzbekistan",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Colombia",
+          "qualification_probability": 0.80256,
+          "group_winner_probability": 0.3747
+        },
+        {
+          "team": "Portugal",
+          "qualification_probability": 0.72098,
+          "group_winner_probability": 0.2793
+        },
+        {
+          "team": "Uzbekistan",
+          "qualification_probability": 0.6252,
+          "group_winner_probability": 0.20162
+        },
+        {
+          "team": "Congo DR",
+          "qualification_probability": 0.52928,
+          "group_winner_probability": 0.14438
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Colombia",
+          "qualification_probability": 0.819,
+          "group_winner_probability": 0.38978
+        },
+        {
+          "team": "Portugal",
+          "qualification_probability": 0.725,
+          "group_winner_probability": 0.27766
+        },
+        {
+          "team": "Uzbekistan",
+          "qualification_probability": 0.62936,
+          "group_winner_probability": 0.19948
+        },
+        {
+          "team": "Congo DR",
+          "qualification_probability": 0.5168,
+          "group_winner_probability": 0.13308
+        }
+      ],
+      "most_likely_winner": "Colombia",
+      "qualification_favorites": [
+        "Colombia",
+        "Portugal"
+      ],
+      "most_open_rank": "Congo DR · qualification 52.9%",
+      "chaos_score": 56.1,
+      "active_candidate_difference": "Écart moyen de qualification : 0.9%",
+      "locked_results": [],
+      "story_type": "low_change",
+      "label": "Groupe instable"
+    },
+    {
+      "group": "G",
+      "title": "Groupe G · Groupe instable",
+      "summary": "Belgium mène la projection active. L’écart moyen avec le scénario alternatif est de 1.8%.",
+      "current_standings": [
+        {
+          "team": "Belgium",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Egypt",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Iran",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "New Zealand",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Belgium",
+          "qualification_probability": 0.84292,
+          "group_winner_probability": 0.44108
+        },
+        {
+          "team": "Iran",
+          "qualification_probability": 0.67484,
+          "group_winner_probability": 0.2201
+        },
+        {
+          "team": "Egypt",
+          "qualification_probability": 0.6433,
+          "group_winner_probability": 0.19978
+        },
+        {
+          "team": "New Zealand",
+          "qualification_probability": 0.51476,
+          "group_winner_probability": 0.13904
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Belgium",
+          "qualification_probability": 0.84684,
+          "group_winner_probability": 0.44198
+        },
+        {
+          "team": "Iran",
+          "qualification_probability": 0.71062,
+          "group_winner_probability": 0.2376
+        },
+        {
+          "team": "Egypt",
+          "qualification_probability": 0.6467,
+          "group_winner_probability": 0.19782
+        },
+        {
+          "team": "New Zealand",
+          "qualification_probability": 0.48654,
+          "group_winner_probability": 0.1226
+        }
+      ],
+      "most_likely_winner": "Belgium",
+      "qualification_favorites": [
+        "Belgium",
+        "Iran"
+      ],
+      "most_open_rank": "New Zealand · qualification 51.5%",
+      "chaos_score": 54.8,
+      "active_candidate_difference": "Écart moyen de qualification : 1.8%",
+      "locked_results": [],
+      "story_type": "low_change",
+      "label": "Groupe instable"
+    },
+    {
+      "group": "I",
+      "title": "Groupe I · Groupe instable",
+      "summary": "France mène la projection active. L’écart moyen avec le scénario alternatif est de 2.5%.",
+      "current_standings": [
+        {
+          "team": "France",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Iraq",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Norway",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Senegal",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "France",
+          "qualification_probability": 0.79466,
+          "group_winner_probability": 0.34718
+        },
+        {
+          "team": "Norway",
+          "qualification_probability": 0.76478,
+          "group_winner_probability": 0.3251
+        },
+        {
+          "team": "Senegal",
+          "qualification_probability": 0.6978,
+          "group_winner_probability": 0.23122
+        },
+        {
+          "team": "Iraq",
+          "qualification_probability": 0.43258,
+          "group_winner_probability": 0.0965
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "France",
+          "qualification_probability": 0.82408,
+          "group_winner_probability": 0.36834
+        },
+        {
+          "team": "Norway",
+          "qualification_probability": 0.76792,
+          "group_winner_probability": 0.317
+        },
+        {
+          "team": "Senegal",
+          "qualification_probability": 0.7188,
+          "group_winner_probability": 0.23658
+        },
+        {
+          "team": "Iraq",
+          "qualification_probability": 0.3878,
+          "group_winner_probability": 0.07808
+        }
+      ],
+      "most_likely_winner": "France",
+      "qualification_favorites": [
+        "France",
+        "Norway"
+      ],
+      "most_open_rank": "Iraq · qualification 43.3%",
+      "chaos_score": 52.9,
+      "active_candidate_difference": "Écart moyen de qualification : 2.5%",
+      "locked_results": [],
+      "story_type": "low_change",
+      "label": "Groupe instable"
+    },
+    {
+      "group": "C",
+      "title": "Groupe C · Projection alternative change le groupe",
+      "summary": "Morocco mène la projection active. L’écart moyen avec le scénario alternatif est de 6.3%.",
+      "current_standings": [
+        {
+          "team": "Brazil",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Haiti",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Morocco",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Scotland",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Morocco",
+          "qualification_probability": 0.89562,
+          "group_winner_probability": 0.4496
+        },
+        {
+          "team": "Brazil",
+          "qualification_probability": 0.86394,
+          "group_winner_probability": 0.38512
+        },
+        {
+          "team": "Scotland",
+          "qualification_probability": 0.45544,
+          "group_winner_probability": 0.0925
+        },
+        {
+          "team": "Haiti",
+          "qualification_probability": 0.4296,
+          "group_winner_probability": 0.07278
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Morocco",
+          "qualification_probability": 0.94362,
+          "group_winner_probability": 0.49092
+        },
+        {
+          "team": "Brazil",
+          "qualification_probability": 0.91418,
+          "group_winner_probability": 0.40542
+        },
+        {
+          "team": "Scotland",
+          "qualification_probability": 0.4671,
+          "group_winner_probability": 0.0771
+        },
+        {
+          "team": "Haiti",
+          "qualification_probability": 0.28762,
+          "group_winner_probability": 0.02656
+        }
+      ],
+      "most_likely_winner": "Morocco",
+      "qualification_favorites": [
+        "Morocco",
+        "Brazil"
+      ],
+      "most_open_rank": "Scotland · qualification 45.5%",
+      "chaos_score": 52.3,
+      "active_candidate_difference": "Écart moyen de qualification : 6.3%",
+      "locked_results": [],
+      "story_type": "volatile",
+      "label": "Projection alternative change le groupe"
+    },
+    {
+      "group": "E",
+      "title": "Groupe E · Groupe instable",
+      "summary": "Germany mène la projection active. L’écart moyen avec le scénario alternatif est de 1.5%.",
+      "current_standings": [
+        {
+          "team": "Curaçao",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Ecuador",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Germany",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Ivory Coast",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Germany",
+          "qualification_probability": 0.87008,
+          "group_winner_probability": 0.4906
+        },
+        {
+          "team": "Ivory Coast",
+          "qualification_probability": 0.70102,
+          "group_winner_probability": 0.2318
+        },
+        {
+          "team": "Curaçao",
+          "qualification_probability": 0.55382,
+          "group_winner_probability": 0.14554
+        },
+        {
+          "team": "Ecuador",
+          "qualification_probability": 0.53392,
+          "group_winner_probability": 0.13206
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Germany",
+          "qualification_probability": 0.89216,
+          "group_winner_probability": 0.52382
+        },
+        {
+          "team": "Ivory Coast",
+          "qualification_probability": 0.706,
+          "group_winner_probability": 0.2252
+        },
+        {
+          "team": "Ecuador",
+          "qualification_probability": 0.53878,
+          "group_winner_probability": 0.12786
+        },
+        {
+          "team": "Curaçao",
+          "qualification_probability": 0.52586,
+          "group_winner_probability": 0.12312
+        }
+      ],
+      "most_likely_winner": "Germany",
+      "qualification_favorites": [
+        "Germany",
+        "Ivory Coast"
+      ],
+      "most_open_rank": "Ecuador · qualification 53.4%",
+      "chaos_score": 52.0,
+      "active_candidate_difference": "Écart moyen de qualification : 1.5%",
+      "locked_results": [],
+      "story_type": "low_change",
+      "label": "Groupe instable"
+    },
+    {
+      "group": "F",
+      "title": "Groupe F · Projection alternative change le groupe",
+      "summary": "Netherlands mène la projection active. L’écart moyen avec le scénario alternatif est de 4.5%.",
+      "current_standings": [
+        {
+          "team": "Japan",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Netherlands",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Sweden",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Tunisia",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Netherlands",
+          "qualification_probability": 0.8846,
+          "group_winner_probability": 0.48586
+        },
+        {
+          "team": "Japan",
+          "qualification_probability": 0.77576,
+          "group_winner_probability": 0.28466
+        },
+        {
+          "team": "Tunisia",
+          "qualification_probability": 0.56776,
+          "group_winner_probability": 0.14262
+        },
+        {
+          "team": "Sweden",
+          "qualification_probability": 0.43352,
+          "group_winner_probability": 0.08686
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Netherlands",
+          "qualification_probability": 0.91824,
+          "group_winner_probability": 0.52124
+        },
+        {
+          "team": "Japan",
+          "qualification_probability": 0.82268,
+          "group_winner_probability": 0.29894
+        },
+        {
+          "team": "Tunisia",
+          "qualification_probability": 0.5756,
+          "group_winner_probability": 0.12826
+        },
+        {
+          "team": "Sweden",
+          "qualification_probability": 0.3405,
+          "group_winner_probability": 0.05156
+        }
+      ],
+      "most_likely_winner": "Netherlands",
+      "qualification_favorites": [
+        "Netherlands",
+        "Japan"
+      ],
+      "most_open_rank": "Sweden · qualification 43.4%",
+      "chaos_score": 51.8,
+      "active_candidate_difference": "Écart moyen de qualification : 4.5%",
+      "locked_results": [],
+      "story_type": "volatile",
+      "label": "Projection alternative change le groupe"
+    },
+    {
+      "group": "D",
+      "title": "Groupe D · Groupe instable",
+      "summary": "USA mène la projection active. L’écart moyen avec le scénario alternatif est de 2.2%.",
+      "current_standings": [
+        {
+          "team": "Australia",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Paraguay",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Türkiye",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "USA",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "USA",
+          "qualification_probability": 0.82108,
+          "group_winner_probability": 0.3895
+        },
+        {
+          "team": "Australia",
+          "qualification_probability": 0.73432,
+          "group_winner_probability": 0.27634
+        },
+        {
+          "team": "Türkiye",
+          "qualification_probability": 0.69548,
+          "group_winner_probability": 0.23854
+        },
+        {
+          "team": "Paraguay",
+          "qualification_probability": 0.42782,
+          "group_winner_probability": 0.09562
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "USA",
+          "qualification_probability": 0.85044,
+          "group_winner_probability": 0.41848
+        },
+        {
+          "team": "Australia",
+          "qualification_probability": 0.737,
+          "group_winner_probability": 0.26728
+        },
+        {
+          "team": "Türkiye",
+          "qualification_probability": 0.7091,
+          "group_winner_probability": 0.2384
+        },
+        {
+          "team": "Paraguay",
+          "qualification_probability": 0.38744,
+          "group_winner_probability": 0.07584
+        }
+      ],
+      "most_likely_winner": "USA",
+      "qualification_favorites": [
+        "USA",
+        "Australia"
+      ],
+      "most_open_rank": "Paraguay · qualification 42.8%",
+      "chaos_score": 50.2,
+      "active_candidate_difference": "Écart moyen de qualification : 2.2%",
+      "locked_results": [],
+      "story_type": "low_change",
+      "label": "Groupe instable"
+    },
+    {
+      "group": "J",
+      "title": "Groupe J · Groupe instable",
+      "summary": "Argentina mène la projection active. L’écart moyen avec le scénario alternatif est de 1.2%.",
+      "current_standings": [
+        {
+          "team": "Algeria",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Argentina",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Austria",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Jordan",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Argentina",
+          "qualification_probability": 0.87258,
+          "group_winner_probability": 0.485
+        },
+        {
+          "team": "Austria",
+          "qualification_probability": 0.65844,
+          "group_winner_probability": 0.20078
+        },
+        {
+          "team": "Algeria",
+          "qualification_probability": 0.65136,
+          "group_winner_probability": 0.19774
+        },
+        {
+          "team": "Jordan",
+          "qualification_probability": 0.48768,
+          "group_winner_probability": 0.11648
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Argentina",
+          "qualification_probability": 0.8965,
+          "group_winner_probability": 0.52514
+        },
+        {
+          "team": "Austria",
+          "qualification_probability": 0.64576,
+          "group_winner_probability": 0.18142
+        },
+        {
+          "team": "Algeria",
+          "qualification_probability": 0.64122,
+          "group_winner_probability": 0.18016
+        },
+        {
+          "team": "Jordan",
+          "qualification_probability": 0.49052,
+          "group_winner_probability": 0.11328
+        }
+      ],
+      "most_likely_winner": "Argentina",
+      "qualification_favorites": [
+        "Argentina",
+        "Austria"
+      ],
+      "most_open_rank": "Jordan · qualification 48.8%",
+      "chaos_score": 48.9,
+      "active_candidate_difference": "Écart moyen de qualification : 1.2%",
+      "locked_results": [],
+      "story_type": "low_change",
+      "label": "Groupe instable"
+    },
+    {
+      "group": "H",
+      "title": "Groupe H · Projection stable",
+      "summary": "Spain mène la projection active. L’écart moyen avec le scénario alternatif est de 2.0%.",
+      "current_standings": [
+        {
+          "team": "Cape Verde Islands",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "Saudi Arabia",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Spain",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Uruguay",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Spain",
+          "qualification_probability": 0.9266,
+          "group_winner_probability": 0.61592
+        },
+        {
+          "team": "Uruguay",
+          "qualification_probability": 0.62196,
+          "group_winner_probability": 0.16088
+        },
+        {
+          "team": "Cape Verde Islands",
+          "qualification_probability": 0.56852,
+          "group_winner_probability": 0.1256
+        },
+        {
+          "team": "Saudi Arabia",
+          "qualification_probability": 0.49002,
+          "group_winner_probability": 0.0976
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Spain",
+          "qualification_probability": 0.95248,
+          "group_winner_probability": 0.68358
+        },
+        {
+          "team": "Uruguay",
+          "qualification_probability": 0.62948,
+          "group_winner_probability": 0.1468
+        },
+        {
+          "team": "Cape Verde Islands",
+          "qualification_probability": 0.54882,
+          "group_winner_probability": 0.09758
+        },
+        {
+          "team": "Saudi Arabia",
+          "qualification_probability": 0.46416,
+          "group_winner_probability": 0.07204
+        }
+      ],
+      "most_likely_winner": "Spain",
+      "qualification_favorites": [
+        "Spain",
+        "Uruguay"
+      ],
+      "most_open_rank": "Saudi Arabia · qualification 49.0%",
+      "chaos_score": 46.1,
+      "active_candidate_difference": "Écart moyen de qualification : 2.0%",
+      "locked_results": [],
+      "story_type": "low_change",
+      "label": "Projection stable"
+    },
+    {
+      "group": "L",
+      "title": "Groupe L · Favori solide",
+      "summary": "England mène la projection active. L’écart moyen avec le scénario alternatif est de 2.3%.",
+      "current_standings": [
+        {
+          "team": "Croatia",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 1
+        },
+        {
+          "team": "England",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 2
+        },
+        {
+          "team": "Ghana",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "Panama",
+          "played": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "England",
+          "qualification_probability": 0.93082,
+          "group_winner_probability": 0.60884
+        },
+        {
+          "team": "Croatia",
+          "qualification_probability": 0.71616,
+          "group_winner_probability": 0.20102
+        },
+        {
+          "team": "Ghana",
+          "qualification_probability": 0.51826,
+          "group_winner_probability": 0.09478
+        },
+        {
+          "team": "Panama",
+          "qualification_probability": 0.47324,
+          "group_winner_probability": 0.09536
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "England",
+          "qualification_probability": 0.95526,
+          "group_winner_probability": 0.67628
+        },
+        {
+          "team": "Croatia",
+          "qualification_probability": 0.72248,
+          "group_winner_probability": 0.1732
+        },
+        {
+          "team": "Panama",
+          "qualification_probability": 0.4814,
+          "group_winner_probability": 0.08616
+        },
+        {
+          "team": "Ghana",
+          "qualification_probability": 0.46518,
+          "group_winner_probability": 0.06436
+        }
+      ],
+      "most_likely_winner": "England",
+      "qualification_favorites": [
+        "England",
+        "Croatia"
+      ],
+      "most_open_rank": "Ghana · qualification 51.8%",
+      "chaos_score": 44.7,
+      "active_candidate_difference": "Écart moyen de qualification : 2.3%",
+      "locked_results": [],
+      "story_type": "favorite_control",
+      "label": "Favori solide"
+    },
+    {
+      "group": "A",
+      "title": "Groupe A · Favori solide",
+      "summary": "Mexico mène la projection active. Un résultat réel change déjà le contexte. L’écart moyen avec le scénario alternatif est de 0.3%.",
+      "current_standings": [
+        {
+          "team": "Mexico",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 2,
+          "goals_against": 0,
+          "goal_difference": 2,
+          "points": 3,
+          "rank": 1
+        },
+        {
+          "team": "South Korea",
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goals_for": 2,
+          "goals_against": 1,
+          "goal_difference": 1,
+          "points": 3,
+          "rank": 2
+        },
+        {
+          "team": "Czech Republic",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "goals_for": 1,
+          "goals_against": 2,
+          "goal_difference": -1,
+          "points": 0,
+          "rank": 3
+        },
+        {
+          "team": "South Africa",
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "goals_for": 0,
+          "goals_against": 2,
+          "goal_difference": -2,
+          "points": 0,
+          "rank": 4
+        }
+      ],
+      "active_projection": [
+        {
+          "team": "Mexico",
+          "qualification_probability": 0.93264,
+          "group_winner_probability": 0.47282
+        },
+        {
+          "team": "South Korea",
+          "qualification_probability": 0.91598,
+          "group_winner_probability": 0.41006
+        },
+        {
+          "team": "Czech Republic",
+          "qualification_probability": 0.50114,
+          "group_winner_probability": 0.07194
+        },
+        {
+          "team": "South Africa",
+          "qualification_probability": 0.39528,
+          "group_winner_probability": 0.04518
+        }
+      ],
+      "candidate_projection": [
+        {
+          "team": "Mexico",
+          "qualification_probability": 0.93518,
+          "group_winner_probability": 0.4732
+        },
+        {
+          "team": "South Korea",
+          "qualification_probability": 0.91874,
+          "group_winner_probability": 0.41002
+        },
+        {
+          "team": "Czech Republic",
+          "qualification_probability": 0.50436,
+          "group_winner_probability": 0.07184
+        },
+        {
+          "team": "South Africa",
+          "qualification_probability": 0.39942,
+          "group_winner_probability": 0.04494
+        }
+      ],
+      "most_likely_winner": "Mexico",
+      "qualification_favorites": [
+        "Mexico",
+        "South Korea"
+      ],
+      "most_open_rank": "Czech Republic · qualification 50.1%",
+      "chaos_score": 35.0,
+      "active_candidate_difference": "Écart moyen de qualification : 0.3%",
+      "locked_results": [
+        {
+          "match": "Mexico 2-0 South Africa",
+          "group": "A",
+          "winner": "Mexico",
+          "qualification_delta": {
+            "Mexico": "+28.3",
+            "South Africa": "-28.0"
+          },
+          "summary": "Résultat officiel verrouillé : Mexico évolue de +28.3 points et South Africa de -28.0 points face à la projection pré-tournoi."
+        },
+        {
+          "match": "South Korea 2-1 Czechia",
+          "group": "A",
+          "winner": "South Korea",
+          "qualification_delta": {
+            "South Korea": "+18.2",
+            "Czechia": "-13.2"
+          },
+          "summary": "Résultat officiel verrouillé : South Korea évolue de +18.2 points et Czechia de -13.2 points face à la projection pré-tournoi."
+        }
+      ],
+      "story_type": "favorite_control",
+      "label": "Favori solide"
+    }
+  ],
+  "rising_teams": [
+    {
+      "team": "Brazil",
+      "group": "Group C",
+      "active_qualification_probability": 0.86394,
+      "candidate_qualification_probability": 0.91418,
+      "qualification_delta": 0.05023999999999995,
+      "group_winner_delta": 0.020299999999999985,
+      "group_second_delta": 0.04505999999999999,
+      "group_third_delta": -0.027480000000000004
+    },
+    {
+      "team": "Morocco",
+      "group": "Group C",
+      "active_qualification_probability": 0.89562,
+      "candidate_qualification_probability": 0.94362,
+      "qualification_delta": 0.04800000000000004,
+      "group_winner_delta": 0.04132000000000002,
+      "group_second_delta": 0.025459999999999983,
+      "group_third_delta": -0.03259999999999999
+    },
+    {
+      "team": "Japan",
+      "group": "Group F",
+      "active_qualification_probability": 0.77576,
+      "candidate_qualification_probability": 0.82268,
+      "qualification_delta": 0.04691999999999996,
+      "group_winner_delta": 0.01427999999999996,
+      "group_second_delta": 0.03118000000000004,
+      "group_third_delta": -0.006100000000000022
+    },
+    {
+      "team": "Switzerland",
+      "group": "Group B",
+      "active_qualification_probability": 0.83514,
+      "candidate_qualification_probability": 0.87266,
+      "qualification_delta": 0.03752,
+      "group_winner_delta": 0.042039999999999966,
+      "group_second_delta": 0.0025199999999999945,
+      "group_third_delta": -0.015699999999999992
+    },
+    {
+      "team": "Iran",
+      "group": "Group G",
+      "active_qualification_probability": 0.67484,
+      "candidate_qualification_probability": 0.71062,
+      "qualification_delta": 0.035780000000000034,
+      "group_winner_delta": 0.017500000000000016,
+      "group_second_delta": 0.012720000000000009,
+      "group_third_delta": -0.0022400000000000198
+    },
+    {
+      "team": "Netherlands",
+      "group": "Group F",
+      "active_qualification_probability": 0.8846,
+      "candidate_qualification_probability": 0.91824,
+      "qualification_delta": 0.03363999999999989,
+      "group_winner_delta": 0.03538000000000002,
+      "group_second_delta": 0.0029799999999999827,
+      "group_third_delta": -0.01197999999999999
+    },
+    {
+      "team": "France",
+      "group": "Group I",
+      "active_qualification_probability": 0.79466,
+      "candidate_qualification_probability": 0.82408,
+      "qualification_delta": 0.02942,
+      "group_winner_delta": 0.021160000000000012,
+      "group_second_delta": 0.008539999999999992,
+      "group_third_delta": -0.00792000000000001
+    },
+    {
+      "team": "USA",
+      "group": "Group D",
+      "active_qualification_probability": 0.82108,
+      "candidate_qualification_probability": 0.85044,
+      "qualification_delta": 0.02935999999999994,
+      "group_winner_delta": 0.028980000000000006,
+      "group_second_delta": 0.004799999999999971,
+      "group_third_delta": -0.012279999999999985
+    }
+  ],
+  "falling_teams": [
+    {
+      "team": "Haiti",
+      "group": "Group C",
+      "active_qualification_probability": 0.4296,
+      "candidate_qualification_probability": 0.28762,
+      "qualification_delta": -0.14198,
+      "group_winner_delta": -0.04622,
+      "group_second_delta": -0.06983999999999999,
+      "group_third_delta": 0.004599999999999993
+    },
+    {
+      "team": "Sweden",
+      "group": "Group F",
+      "active_qualification_probability": 0.43352,
+      "candidate_qualification_probability": 0.3405,
+      "qualification_delta": -0.09301999999999999,
+      "group_winner_delta": -0.035300000000000005,
+      "group_second_delta": -0.04261999999999999,
+      "group_third_delta": -0.007279999999999953
+    },
+    {
+      "team": "Ghana",
+      "group": "Group L",
+      "active_qualification_probability": 0.51826,
+      "candidate_qualification_probability": 0.46518,
+      "qualification_delta": -0.05308000000000007,
+      "group_winner_delta": -0.030420000000000003,
+      "group_second_delta": -0.017600000000000005,
+      "group_third_delta": 0.008099999999999996
+    },
+    {
+      "team": "Iraq",
+      "group": "Group I",
+      "active_qualification_probability": 0.43258,
+      "candidate_qualification_probability": 0.3878,
+      "qualification_delta": -0.04478000000000004,
+      "group_winner_delta": -0.018420000000000006,
+      "group_second_delta": -0.020339999999999997,
+      "group_third_delta": -0.007360000000000033
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "group": "Group B",
+      "active_qualification_probability": 0.5532,
+      "candidate_qualification_probability": 0.50952,
+      "qualification_delta": -0.04368000000000005,
+      "group_winner_delta": -0.034019999999999995,
+      "group_second_delta": -0.021840000000000026,
+      "group_third_delta": 0.014759999999999995
+    },
+    {
+      "team": "Paraguay",
+      "group": "Group D",
+      "active_qualification_probability": 0.42782,
+      "candidate_qualification_probability": 0.38744,
+      "qualification_delta": -0.04037999999999997,
+      "group_winner_delta": -0.019779999999999992,
+      "group_second_delta": -0.01952000000000001,
+      "group_third_delta": -9.999999999998899e-05
+    },
+    {
+      "team": "New Zealand",
+      "group": "Group G",
+      "active_qualification_probability": 0.51476,
+      "candidate_qualification_probability": 0.48654,
+      "qualification_delta": -0.028220000000000023,
+      "group_winner_delta": -0.016439999999999996,
+      "group_second_delta": -0.012539999999999996,
+      "group_third_delta": -0.0008600000000000274
+    },
+    {
+      "team": "Curaçao",
+      "group": "Group E",
+      "active_qualification_probability": 0.55382,
+      "candidate_qualification_probability": 0.52586,
+      "qualification_delta": -0.027959999999999985,
+      "group_winner_delta": -0.02242000000000001,
+      "group_second_delta": -0.008739999999999998,
+      "group_third_delta": 0.0042400000000000215
+    }
+  ],
+  "open_groups": [
+    {
+      "group": "B",
+      "title": "Groupe B · Impact résultat réel",
+      "chaos_score": 63.9,
+      "label": "Impact résultat réel"
+    },
+    {
+      "group": "K",
+      "title": "Groupe K · Groupe instable",
+      "chaos_score": 56.1,
+      "label": "Groupe instable"
+    },
+    {
+      "group": "G",
+      "title": "Groupe G · Groupe instable",
+      "chaos_score": 54.8,
+      "label": "Groupe instable"
+    },
+    {
+      "group": "I",
+      "title": "Groupe I · Groupe instable",
+      "chaos_score": 52.9,
+      "label": "Groupe instable"
+    },
+    {
+      "group": "C",
+      "title": "Groupe C · Projection alternative change le groupe",
+      "chaos_score": 52.3,
+      "label": "Projection alternative change le groupe"
+    }
+  ],
+  "locked_result_impact": [
+    {
+      "match": "Mexico 2-0 South Africa",
+      "group": "A",
+      "winner": "Mexico",
+      "qualification_delta": {
+        "Mexico": "+28.3",
+        "South Africa": "-28.0"
+      },
+      "summary": "Résultat officiel verrouillé : Mexico évolue de +28.3 points et South Africa de -28.0 points face à la projection pré-tournoi."
+    },
+    {
+      "match": "South Korea 2-1 Czechia",
+      "group": "A",
+      "winner": "South Korea",
+      "qualification_delta": {
+        "South Korea": "+18.2",
+        "Czechia": "-13.2"
+      },
+      "summary": "Résultat officiel verrouillé : South Korea évolue de +18.2 points et Czechia de -13.2 points face à la projection pré-tournoi."
+    },
+    {
+      "match": "Canada 1-1 Bosnia & Herzegovina",
+      "group": "B",
+      "winner": "Draw",
+      "qualification_delta": {
+        "Canada": "-8.6",
+        "Bosnia & Herzegovina": "+5.7"
+      },
+      "summary": "Résultat officiel verrouillé : Canada évolue de -8.6 points et Bosnia & Herzegovina de +5.7 points face à la projection pré-tournoi."
+    }
+  ],
+  "limitations": [
+    "The projected champion is a campaign proxy while the official knockout bracket is unavailable. It must not be labelled as a fully simulated World Cup champion.",
+    "Bracket officiel indisponible : aucun adversaire, pairing ou parcours à élimination directe n’est inventé.",
+    "La projection alternative est non active et ne remplace aucune prédiction active.",
+    "Les deltas entre simulations incluent une part de variation Monte Carlo."
+  ]
+}

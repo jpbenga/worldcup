@@ -23,14 +23,16 @@ export class SimulationComponent {
     candidateCampaign: this.worldCupService.getCandidateProjectedCampaign(),
     candidateComparison: this.worldCupService.getActiveCandidateSimulationComparison(),
     liveStandings: this.worldCupService.getLiveGroupStandings(),
+    creative: this.worldCupService.getCreativeTournamentExperience(),
   }).pipe(
-    map(({ simulation, campaign, candidateSimulation, candidateCampaign, candidateComparison, liveStandings }) => ({
+    map(({ simulation, campaign, candidateSimulation, candidateCampaign, candidateComparison, liveStandings, creative }) => ({
       ...simulation,
       campaign,
       candidateSimulation,
       candidateCampaign,
       candidateComparison,
       liveStandings,
+      creative,
       topQualification: [...simulation.teams]
         .sort((a, b) => b.qualificationProbability - a.qualificationProbability)
         .slice(0, 8),

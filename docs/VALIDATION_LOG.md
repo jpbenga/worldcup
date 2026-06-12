@@ -1453,7 +1453,7 @@ Commit: 4858457 Compare active and alternative score matrices
 
 ## V2.10 — Operational Matchday Refresh Pipeline
 
-Commit: TBD
+Commit: e5bd67e Add operational matchday refresh pipeline
 
 ### Technical validation
 
@@ -1477,6 +1477,52 @@ Commit: TBD
 - [x] No Optuna rerun
 - [x] Angular build passed if frontend changed
 - [x] Angular tests passed if frontend changed
+- [x] No secret committed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Matchday refresh pipeline accepted
+- [x] 11-step refresh accepted
+- [x] Fetch/no-fetch/dry-run workflow accepted
+- [x] Artifact hygiene accepted
+- [x] Active predictions remained unchanged
+- [x] Next roadmap iteration accepted: creative tournament simulation experience
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.11 — Creative Tournament Experience Upgrade
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.10 human validation recorded
+- [x] Creative tournament strategy created
+- [x] Creative tournament aggregate generated
+- [x] Tournament leader computed
+- [x] Top contenders computed
+- [x] Group storylines generated
+- [x] Locked result impact integrated
+- [x] Active vs alternative interpretation generated
+- [x] /simulation hero upgraded
+- [x] Projected Campaign displayed honestly
+- [x] Top contenders displayed
+- [x] Open groups displayed
+- [x] Active vs alternative comparison improved
+- [x] Proxy champion clearly labelled non-official
+- [x] Bracket not invented
+- [x] Creative experience validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
 - [x] No secret committed
 
 ### Human validation

@@ -372,3 +372,16 @@ versioned manifest. Cached-only, online fetch, dry-run and frontend-copy
 control modes support routine matchday operations without changing frozen
 pre-match probabilities, retraining the model, rerunning Optuna or promoting
 the candidate.
+
+## V2.11 creative tournament experience
+
+V2.11 composes the result-aware V2.10 layers into a dedicated product
+aggregate and turns `/simulation` into a narrative tournament feature. The
+experience leads with a projected campaign leader, then explains contender
+movement, open groups, locked-result impact and the contrast between the
+active forecast and the non-active alternative.
+
+The official knockout bracket remains unavailable. The tournament leader is
+therefore a non-official campaign proxy, not a fully simulated champion. V2.11
+does not invent knockout opponents, change active probabilities, promote the
+candidate, retrain the model or rerun Optuna.

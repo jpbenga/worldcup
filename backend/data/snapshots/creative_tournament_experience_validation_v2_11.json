@@ -1,0 +1,31 @@
+{
+  "version": "v2.11",
+  "generated_at": "2026-06-12T23:47:41Z",
+  "engine_version": "quant_hybrid_v2.2",
+  "candidate_version": "score_matrix_candidate_v2.8",
+  "passed": true,
+  "checks": {
+    "creative_aggregate_exists": true,
+    "tournament_leader_present": true,
+    "top_contenders_present": true,
+    "group_storylines_cover_12_groups": true,
+    "active_vs_alternative_present": true,
+    "locked_result_impact_present_when_results_available": true,
+    "proxy_non_official_when_bracket_absent": true,
+    "candidate_not_promoted": true,
+    "active_predictions_unchanged": true,
+    "no_nan_or_infinity": true,
+    "no_secret": true,
+    "no_retrain": true,
+    "no_optuna_rerun": true
+  },
+  "leader": "Spain",
+  "group_storyline_count": 12,
+  "locked_result_impact_count": 3,
+  "candidate_status": "alternative_non_active",
+  "active_predictions_modified": false,
+  "notes": [
+    "The official knockout bracket is unavailable; the displayed leader is a campaign proxy.",
+    "Repository-level security and large-file checks remain separate release checks."
+  ]
+}
