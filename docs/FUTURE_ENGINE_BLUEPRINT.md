@@ -344,3 +344,17 @@ top-3, top-5, 1X2 Brier, over-2.5 Brier and favorite-margin realism while
 preserving DNB decisions. It also lowers exact-score accuracy, so its World Cup
 output is published only as a candidate for explicit human and simulation
 review. The active `quant_hybrid_v2.2` probabilities remain frozen.
+
+## V2.9 dual matrix display and candidate simulation comparison
+
+V2.9 connects the non-active V2.8 candidate to product transparency and
+tournament simulation without promoting it. Every World Cup match receives an
+active-versus-alternative matrix comparison, and the candidate runs through a
+separate 50,000-scenario conditioned group simulation with finished official
+results locked.
+
+The active forecast remains the default in the match experience and
+simulation page. The alternative appears only through explicit labels,
+secondary disclosure and a user-controlled toggle. Its qualification deltas
+and projected-campaign proxy are comparative evidence, not official
+predictions. No model, Optuna study or active probability is changed.

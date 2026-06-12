@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-06-12T22:40:05Z",
+  "version": "v2.9",
+  "engine_version": "quant_hybrid_v2.2",
+  "passed": true,
+  "checks": {
+    "72_matches_compared": true,
+    "active_and_candidate_present": true,
+    "no_nan_or_infinity": true,
+    "probabilities_between_zero_and_one": true,
+    "active_predictions_not_replaced": true,
+    "candidate_labels_present": true,
+    "candidate_simulation_50000": true,
+    "simulation_comparison_exists": true,
+    "candidate_projected_campaign_exists": true,
+    "spain_cape_verde_present": true,
+    "active_fixture_count_unchanged": true
+  },
+  "match_count": 72,
+  "candidate_status": "alternative_non_active",
+  "no_model_retrained": true,
+  "no_optuna_rerun": true,
+  "active_probabilities_modified": false,
+  "notes": [
+    "Secret scanning is performed separately before commit.",
+    "Candidate simulation and campaign remain comparative, not official."
+  ]
+}

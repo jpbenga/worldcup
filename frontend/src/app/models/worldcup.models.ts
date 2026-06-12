@@ -421,6 +421,59 @@ export interface LiveGroupStandings {
   groups: Record<string, GroupStanding[]>;
 }
 
+export interface DualMatrixProjection {
+  scoreModal: string;
+  scoreModalProbability: number;
+  topScores: { score: string; probability: number }[];
+  expectedGoals: { home: number; away: number; total: number };
+  markets: {
+    over15: number;
+    over25: number;
+    bttsYes: number;
+    homeScores2Plus: number;
+    awayScores2Plus: number;
+    favoriteWinBy2Plus: number;
+  };
+}
+
+export interface DualMatrixComparison {
+  matchId: string;
+  homeTeam: string;
+  awayTeam: string;
+  favorite: string;
+  favoriteProbability: number;
+  active: DualMatrixProjection;
+  candidate: DualMatrixProjection;
+  comparison: {
+    modalChanged: boolean;
+    modalChange: string;
+    totalXgDelta: number;
+    favoriteMarginDelta: number;
+    over25Delta: number;
+    label: string;
+  };
+}
+
+export interface SimulationTeamDelta {
+  team: string;
+  group: string;
+  qualificationDelta: number;
+  groupWinnerDelta: number;
+  groupSecondDelta: number;
+  groupThirdDelta: number;
+}
+
+export interface ActiveCandidateSimulationComparison {
+  teamsRisingMost: SimulationTeamDelta[];
+  teamsFallingMost: SimulationTeamDelta[];
+  groupsMostAffected: { group: string; averageAbsoluteQualificationDelta: number; maximumAbsoluteQualificationDelta: number }[];
+  diagnosis: {
+    maximumAbsoluteQualificationDelta: number;
+    changesQualificationsStrongly: boolean;
+    changesScoresMoreThanQualifications: boolean;
+  };
+}
+
 export interface BacktestResult {
   matchId: string;
   marketName: string;

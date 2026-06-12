@@ -469,6 +469,23 @@ favorite-gap challenger as a non-active World Cup candidate. Active hybrid
 1X2 probabilities and `predictions.json` remain unchanged pending explicit
 human validation.
 
+## Dual matrix comparison V2.9
+
+V2.9 exposes the accepted V2.8 candidate as a clearly labelled alternative,
+without promoting it or replacing active predictions.
+
+```bash
+python3 backend/scripts/build_dual_matrix_comparison_v2_9.py
+python3 backend/scripts/run_candidate_tournament_simulation_v2_9.py
+python3 backend/scripts/compare_active_vs_candidate_simulation_v2_9.py
+python3 backend/scripts/build_candidate_projected_campaign_v2_9.py
+python3 backend/scripts/validate_dual_matrix_v2_9.py
+```
+
+The match modal offers a secondary active/alternative comparison and
+`/simulation` compares both conditioned group scenarios. The active forecast
+remains the official default; the alternative is always marked non-active.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

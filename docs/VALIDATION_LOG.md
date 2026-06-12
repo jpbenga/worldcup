@@ -1358,7 +1358,7 @@ Model retrained / Optuna rerun / pre-match probabilities modified: no / no / no
 
 ## V2.8 — Score Matrix Realism & Favorite Strength Calibration
 
-Commit: TBD
+Commit: 449b2a6 Audit and calibrate score matrix realism
 
 ### Technical validation
 
@@ -1385,11 +1385,17 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
+- [x] Score matrix conservatism diagnosis accepted
+- [x] Historical evidence accepted
+- [x] Spain vs Cape Verde case accepted as representative
+- [x] Candidate A_gap_alpha_1.5_beta_0.75 accepted as useful non-active candidate
+- [x] Decision accepted: do not promote automatically
+- [x] Next roadmap iteration accepted: compare active matrix vs candidate projection in product and simulation
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
 
@@ -1405,3 +1411,37 @@ Candidate status: generated, not active
 Active hybrid probabilities modified: no
 Model retrained / Optuna rerun: no / no
 ```
+
+## V2.9 — Dual Matrix Display & Candidate Simulation Comparison
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.8 human validation recorded
+- [x] Dual matrix strategy created
+- [x] Active vs candidate comparison generated
+- [x] Spain vs Cape Verde comparison documented
+- [x] Candidate group simulation generated
+- [x] Active vs candidate simulation comparison generated
+- [x] Candidate projected campaign generated
+- [x] Simulation UI enriched with active/alternative comparison
+- [x] Match modal enriched with non-active alternative projection
+- [x] Candidate clearly labelled as non-active
+- [x] Active predictions not replaced
+- [x] Dual matrix validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated

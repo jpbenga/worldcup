@@ -1,0 +1,756 @@
+{
+  "generated_at": "2026-06-12T22:33:30Z",
+  "version": "v2.9",
+  "engine_version": "quant_hybrid_v2.2",
+  "candidate_version": "score_matrix_candidate_v2.8",
+  "candidate_status": "alternative_non_active",
+  "active_predictions_replaced": false,
+  "team_deltas": [
+    {
+      "team": "Czech Republic",
+      "group": "Group A",
+      "active_qualification_probability": 0.63346,
+      "candidate_qualification_probability": 0.61478,
+      "qualification_delta": -0.01868000000000003,
+      "group_winner_delta": -0.019320000000000004,
+      "group_second_delta": -0.005299999999999999,
+      "group_third_delta": 0.0043999999999999595
+    },
+    {
+      "team": "Mexico",
+      "group": "Group A",
+      "active_qualification_probability": 0.93082,
+      "candidate_qualification_probability": 0.93434,
+      "qualification_delta": 0.0035199999999999676,
+      "group_winner_delta": -0.0024200000000000332,
+      "group_second_delta": 0.0024799999999999822,
+      "group_third_delta": 0.0008599999999999997
+    },
+    {
+      "team": "South Africa",
+      "group": "Group A",
+      "active_qualification_probability": 0.40882,
+      "candidate_qualification_probability": 0.4111,
+      "qualification_delta": 0.0022800000000000042,
+      "group_winner_delta": 3.999999999999837e-05,
+      "group_second_delta": -0.0017399999999999916,
+      "group_third_delta": 0.0008400000000000074
+    },
+    {
+      "team": "South Korea",
+      "group": "Group A",
+      "active_qualification_probability": 0.73532,
+      "candidate_qualification_probability": 0.76468,
+      "qualification_delta": 0.029360000000000053,
+      "group_winner_delta": 0.021699999999999997,
+      "group_second_delta": 0.0045600000000000085,
+      "group_third_delta": -0.006099999999999994
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "group": "Group B",
+      "active_qualification_probability": 0.49328,
+      "candidate_qualification_probability": 0.41574,
+      "qualification_delta": -0.07754,
+      "group_winner_delta": -0.03984,
+      "group_second_delta": -0.035759999999999986,
+      "group_third_delta": 0.006640000000000035
+    },
+    {
+      "team": "Canada",
+      "group": "Group B",
+      "active_qualification_probability": 0.7781,
+      "candidate_qualification_probability": 0.81944,
+      "qualification_delta": 0.04133999999999993,
+      "group_winner_delta": 0.022799999999999987,
+      "group_second_delta": 0.020919999999999994,
+      "group_third_delta": -0.01200000000000001
+    },
+    {
+      "team": "Qatar",
+      "group": "Group B",
+      "active_qualification_probability": 0.57578,
+      "candidate_qualification_probability": 0.57774,
+      "qualification_delta": 0.001960000000000073,
+      "group_winner_delta": -0.013819999999999999,
+      "group_second_delta": 0.001700000000000007,
+      "group_third_delta": 0.019399999999999973
+    },
+    {
+      "team": "Switzerland",
+      "group": "Group B",
+      "active_qualification_probability": 0.83886,
+      "candidate_qualification_probability": 0.87696,
+      "qualification_delta": 0.03809999999999991,
+      "group_winner_delta": 0.03086,
+      "group_second_delta": 0.01314000000000004,
+      "group_third_delta": -0.014039999999999997
+    },
+    {
+      "team": "Australia",
+      "group": "Group D",
+      "active_qualification_probability": 0.73394,
+      "candidate_qualification_probability": 0.7369,
+      "qualification_delta": 0.0029599999999999627,
+      "group_winner_delta": -0.008340000000000014,
+      "group_second_delta": 0.005979999999999985,
+      "group_third_delta": 0.00713999999999998
+    },
+    {
+      "team": "Paraguay",
+      "group": "Group D",
+      "active_qualification_probability": 0.42734,
+      "candidate_qualification_probability": 0.38766,
+      "qualification_delta": -0.03967999999999999,
+      "group_winner_delta": -0.020559999999999995,
+      "group_second_delta": -0.01863999999999999,
+      "group_third_delta": -0.00029999999999996696
+    },
+    {
+      "team": "Türkiye",
+      "group": "Group D",
+      "active_qualification_probability": 0.6956,
+      "candidate_qualification_probability": 0.70874,
+      "qualification_delta": 0.01314000000000004,
+      "group_winner_delta": 0.00015999999999999348,
+      "group_second_delta": 0.008520000000000028,
+      "group_third_delta": 0.0040999999999999925
+    },
+    {
+      "team": "USA",
+      "group": "Group D",
+      "active_qualification_probability": 0.82196,
+      "candidate_qualification_probability": 0.85006,
+      "qualification_delta": 0.028100000000000014,
+      "group_winner_delta": 0.028740000000000043,
+      "group_second_delta": 0.0041400000000000325,
+      "group_third_delta": -0.010940000000000005
+    },
+    {
+      "team": "Brazil",
+      "group": "Group C",
+      "active_qualification_probability": 0.8642,
+      "candidate_qualification_probability": 0.91416,
+      "qualification_delta": 0.049960000000000004,
+      "group_winner_delta": 0.019679999999999975,
+      "group_second_delta": 0.046020000000000005,
+      "group_third_delta": -0.027900000000000008
+    },
+    {
+      "team": "Haiti",
+      "group": "Group C",
+      "active_qualification_probability": 0.42834,
+      "candidate_qualification_probability": 0.28602,
+      "qualification_delta": -0.14232,
+      "group_winner_delta": -0.04614,
+      "group_second_delta": -0.06992000000000001,
+      "group_third_delta": 0.00494
+    },
+    {
+      "team": "Morocco",
+      "group": "Group C",
+      "active_qualification_probability": 0.89644,
+      "candidate_qualification_probability": 0.94392,
+      "qualification_delta": 0.04747999999999997,
+      "group_winner_delta": 0.04116000000000003,
+      "group_second_delta": 0.025660000000000016,
+      "group_third_delta": -0.03254000000000001
+    },
+    {
+      "team": "Scotland",
+      "group": "Group C",
+      "active_qualification_probability": 0.45498,
+      "candidate_qualification_probability": 0.46626,
+      "qualification_delta": 0.011280000000000012,
+      "group_winner_delta": -0.01469999999999999,
+      "group_second_delta": -0.0017599999999999838,
+      "group_third_delta": 0.055499999999999994
+    },
+    {
+      "team": "Curaçao",
+      "group": "Group E",
+      "active_qualification_probability": 0.5542,
+      "candidate_qualification_probability": 0.52592,
+      "qualification_delta": -0.028279999999999972,
+      "group_winner_delta": -0.022540000000000004,
+      "group_second_delta": -0.008639999999999981,
+      "group_third_delta": 0.0045399999999999885
+    },
+    {
+      "team": "Ecuador",
+      "group": "Group E",
+      "active_qualification_probability": 0.5333,
+      "candidate_qualification_probability": 0.53882,
+      "qualification_delta": 0.005519999999999969,
+      "group_winner_delta": -0.003720000000000001,
+      "group_second_delta": 0.0033199999999999896,
+      "group_third_delta": 0.006240000000000023
+    },
+    {
+      "team": "Germany",
+      "group": "Group E",
+      "active_qualification_probability": 0.8702,
+      "candidate_qualification_probability": 0.89234,
+      "qualification_delta": 0.02214000000000005,
+      "group_winner_delta": 0.03243999999999997,
+      "group_second_delta": -0.00272,
+      "group_third_delta": -0.013819999999999999
+    },
+    {
+      "team": "Ivory Coast",
+      "group": "Group E",
+      "active_qualification_probability": 0.70148,
+      "candidate_qualification_probability": 0.70562,
+      "qualification_delta": 0.0041400000000000325,
+      "group_winner_delta": -0.006180000000000019,
+      "group_second_delta": 0.008039999999999992,
+      "group_third_delta": 0.003039999999999987
+    },
+    {
+      "team": "Japan",
+      "group": "Group F",
+      "active_qualification_probability": 0.77694,
+      "candidate_qualification_probability": 0.82278,
+      "qualification_delta": 0.04583999999999999,
+      "group_winner_delta": 0.013880000000000003,
+      "group_second_delta": 0.03158,
+      "group_third_delta": -0.006080000000000002
+    },
+    {
+      "team": "Netherlands",
+      "group": "Group F",
+      "active_qualification_probability": 0.88444,
+      "candidate_qualification_probability": 0.91834,
+      "qualification_delta": 0.03390000000000004,
+      "group_winner_delta": 0.03584000000000004,
+      "group_second_delta": 0.00269999999999998,
+      "group_third_delta": -0.012300000000000005
+    },
+    {
+      "team": "Sweden",
+      "group": "Group F",
+      "active_qualification_probability": 0.43392,
+      "candidate_qualification_probability": 0.33974,
+      "qualification_delta": -0.09417999999999999,
+      "group_winner_delta": -0.03506000000000001,
+      "group_second_delta": -0.04285999999999998,
+      "group_third_delta": -0.007519999999999971
+    },
+    {
+      "team": "Tunisia",
+      "group": "Group F",
+      "active_qualification_probability": 0.56794,
+      "candidate_qualification_probability": 0.57636,
+      "qualification_delta": 0.008419999999999983,
+      "group_winner_delta": -0.014660000000000006,
+      "group_second_delta": 0.008579999999999977,
+      "group_third_delta": 0.025900000000000034
+    },
+    {
+      "team": "Cape Verde Islands",
+      "group": "Group H",
+      "active_qualification_probability": 0.56874,
+      "candidate_qualification_probability": 0.5483,
+      "qualification_delta": -0.020440000000000014,
+      "group_winner_delta": -0.027439999999999992,
+      "group_second_delta": 0.005819999999999992,
+      "group_third_delta": 0.011859999999999982
+    },
+    {
+      "team": "Saudi Arabia",
+      "group": "Group H",
+      "active_qualification_probability": 0.49048,
+      "candidate_qualification_probability": 0.46424,
+      "qualification_delta": -0.02624000000000004,
+      "group_winner_delta": -0.026040000000000008,
+      "group_second_delta": -0.003280000000000005,
+      "group_third_delta": 0.011380000000000001
+    },
+    {
+      "team": "Spain",
+      "group": "Group H",
+      "active_qualification_probability": 0.9264,
+      "candidate_qualification_probability": 0.95274,
+      "qualification_delta": 0.02634000000000003,
+      "group_winner_delta": 0.06785999999999992,
+      "group_second_delta": -0.023979999999999974,
+      "group_third_delta": -0.026459999999999997
+    },
+    {
+      "team": "Uruguay",
+      "group": "Group H",
+      "active_qualification_probability": 0.62272,
+      "candidate_qualification_probability": 0.63014,
+      "qualification_delta": 0.007419999999999982,
+      "group_winner_delta": -0.014379999999999976,
+      "group_second_delta": 0.021440000000000015,
+      "group_third_delta": 0.0032200000000000006
+    },
+    {
+      "team": "Belgium",
+      "group": "Group G",
+      "active_qualification_probability": 0.84358,
+      "candidate_qualification_probability": 0.84686,
+      "qualification_delta": 0.0032799999999999496,
+      "group_winner_delta": 0.0007800000000000029,
+      "group_second_delta": 0.0010000000000000009,
+      "group_third_delta": -0.0002600000000000102
+    },
+    {
+      "team": "Egypt",
+      "group": "Group G",
+      "active_qualification_probability": 0.64356,
+      "candidate_qualification_probability": 0.64768,
+      "qualification_delta": 0.0041200000000000125,
+      "group_winner_delta": -0.0022199999999999998,
+      "group_second_delta": -0.0007400000000000184,
+      "group_third_delta": 0.003579999999999972
+    },
+    {
+      "team": "Iran",
+      "group": "Group G",
+      "active_qualification_probability": 0.67456,
+      "candidate_qualification_probability": 0.71016,
+      "qualification_delta": 0.035599999999999965,
+      "group_winner_delta": 0.017780000000000018,
+      "group_second_delta": 0.012619999999999965,
+      "group_third_delta": -0.0025200000000000222
+    },
+    {
+      "team": "New Zealand",
+      "group": "Group G",
+      "active_qualification_probability": 0.51484,
+      "candidate_qualification_probability": 0.48626,
+      "qualification_delta": -0.02857999999999994,
+      "group_winner_delta": -0.016340000000000007,
+      "group_second_delta": -0.012879999999999975,
+      "group_third_delta": -0.0007999999999999674
+    },
+    {
+      "team": "France",
+      "group": "Group I",
+      "active_qualification_probability": 0.79452,
+      "candidate_qualification_probability": 0.82374,
+      "qualification_delta": 0.029220000000000024,
+      "group_winner_delta": 0.021799999999999986,
+      "group_second_delta": 0.006940000000000002,
+      "group_third_delta": -0.0061199999999999866
+    },
+    {
+      "team": "Iraq",
+      "group": "Group I",
+      "active_qualification_probability": 0.43216,
+      "candidate_qualification_probability": 0.38724,
+      "qualification_delta": -0.044920000000000015,
+      "group_winner_delta": -0.018299999999999997,
+      "group_second_delta": -0.020440000000000014,
+      "group_third_delta": -0.007520000000000027
+    },
+    {
+      "team": "Norway",
+      "group": "Group I",
+      "active_qualification_probability": 0.76482,
+      "candidate_qualification_probability": 0.7679,
+      "qualification_delta": 0.0030799999999999716,
+      "group_winner_delta": -0.008679999999999966,
+      "group_second_delta": 0.006040000000000045,
+      "group_third_delta": 0.005859999999999976
+    },
+    {
+      "team": "Senegal",
+      "group": "Group I",
+      "active_qualification_probability": 0.69762,
+      "candidate_qualification_probability": 0.719,
+      "qualification_delta": 0.021379999999999955,
+      "group_winner_delta": 0.00517999999999999,
+      "group_second_delta": 0.007460000000000022,
+      "group_third_delta": 0.007780000000000009
+    },
+    {
+      "team": "Algeria",
+      "group": "Group J",
+      "active_qualification_probability": 0.65066,
+      "candidate_qualification_probability": 0.64058,
+      "qualification_delta": -0.010079999999999978,
+      "group_winner_delta": -0.017699999999999994,
+      "group_second_delta": 0.0036399999999999766,
+      "group_third_delta": 0.006319999999999992
+    },
+    {
+      "team": "Argentina",
+      "group": "Group J",
+      "active_qualification_probability": 0.8729,
+      "candidate_qualification_probability": 0.89644,
+      "qualification_delta": 0.023540000000000005,
+      "group_winner_delta": 0.040159999999999973,
+      "group_second_delta": -0.006759999999999988,
+      "group_third_delta": -0.018719999999999987
+    },
+    {
+      "team": "Austria",
+      "group": "Group J",
+      "active_qualification_probability": 0.6585,
+      "candidate_qualification_probability": 0.6454,
+      "qualification_delta": -0.0131,
+      "group_winner_delta": -0.01913999999999999,
+      "group_second_delta": 0.00018000000000001348,
+      "group_third_delta": 0.008720000000000006
+    },
+    {
+      "team": "Jordan",
+      "group": "Group J",
+      "active_qualification_probability": 0.48782,
+      "candidate_qualification_probability": 0.49102,
+      "qualification_delta": 0.003200000000000036,
+      "group_winner_delta": -0.0033200000000000035,
+      "group_second_delta": 0.002939999999999998,
+      "group_third_delta": 0.0036800000000000166
+    },
+    {
+      "team": "Colombia",
+      "group": "Group K",
+      "active_qualification_probability": 0.80314,
+      "candidate_qualification_probability": 0.81942,
+      "qualification_delta": 0.016280000000000072,
+      "group_winner_delta": 0.015039999999999998,
+      "group_second_delta": -3.999999999998449e-05,
+      "group_third_delta": -0.0038600000000000023
+    },
+    {
+      "team": "Congo DR",
+      "group": "Group K",
+      "active_qualification_probability": 0.52906,
+      "candidate_qualification_probability": 0.51638,
+      "qualification_delta": -0.012680000000000025,
+      "group_winner_delta": -0.010779999999999984,
+      "group_second_delta": -0.006200000000000011,
+      "group_third_delta": 0.0018000000000000238
+    },
+    {
+      "team": "Portugal",
+      "group": "Group K",
+      "active_qualification_probability": 0.72004,
+      "candidate_qualification_probability": 0.72464,
+      "qualification_delta": 0.0045999999999999375,
+      "group_winner_delta": -0.0019200000000000328,
+      "group_second_delta": 0.00272,
+      "group_third_delta": 0.001459999999999989
+    },
+    {
+      "team": "Uzbekistan",
+      "group": "Group K",
+      "active_qualification_probability": 0.62564,
+      "candidate_qualification_probability": 0.62988,
+      "qualification_delta": 0.0042400000000000215,
+      "group_winner_delta": -0.002339999999999981,
+      "group_second_delta": 0.0035199999999999954,
+      "group_third_delta": 0.0005999999999999894
+    },
+    {
+      "team": "Croatia",
+      "group": "Group L",
+      "active_qualification_probability": 0.7169,
+      "candidate_qualification_probability": 0.72224,
+      "qualification_delta": 0.005340000000000011,
+      "group_winner_delta": -0.028100000000000014,
+      "group_second_delta": 0.032179999999999986,
+      "group_third_delta": 0.0047599999999999865
+    },
+    {
+      "team": "England",
+      "group": "Group L",
+      "active_qualification_probability": 0.93128,
+      "candidate_qualification_probability": 0.95534,
+      "qualification_delta": 0.02405999999999997,
+      "group_winner_delta": 0.06723999999999997,
+      "group_second_delta": -0.025499999999999995,
+      "group_third_delta": -0.02482000000000001
+    },
+    {
+      "team": "Ghana",
+      "group": "Group L",
+      "active_qualification_probability": 0.51788,
+      "candidate_qualification_probability": 0.46514,
+      "qualification_delta": -0.05274000000000001,
+      "group_winner_delta": -0.03032,
+      "group_second_delta": -0.017360000000000014,
+      "group_third_delta": 0.00813999999999998
+    },
+    {
+      "team": "Panama",
+      "group": "Group L",
+      "active_qualification_probability": 0.47252,
+      "candidate_qualification_probability": 0.48084,
+      "qualification_delta": 0.008319999999999994,
+      "group_winner_delta": -0.008819999999999995,
+      "group_second_delta": 0.010680000000000023,
+      "group_third_delta": 0.011920000000000042
+    }
+  ],
+  "teams_rising_most": [
+    {
+      "team": "Brazil",
+      "group": "Group C",
+      "active_qualification_probability": 0.8642,
+      "candidate_qualification_probability": 0.91416,
+      "qualification_delta": 0.049960000000000004,
+      "group_winner_delta": 0.019679999999999975,
+      "group_second_delta": 0.046020000000000005,
+      "group_third_delta": -0.027900000000000008
+    },
+    {
+      "team": "Morocco",
+      "group": "Group C",
+      "active_qualification_probability": 0.89644,
+      "candidate_qualification_probability": 0.94392,
+      "qualification_delta": 0.04747999999999997,
+      "group_winner_delta": 0.04116000000000003,
+      "group_second_delta": 0.025660000000000016,
+      "group_third_delta": -0.03254000000000001
+    },
+    {
+      "team": "Japan",
+      "group": "Group F",
+      "active_qualification_probability": 0.77694,
+      "candidate_qualification_probability": 0.82278,
+      "qualification_delta": 0.04583999999999999,
+      "group_winner_delta": 0.013880000000000003,
+      "group_second_delta": 0.03158,
+      "group_third_delta": -0.006080000000000002
+    },
+    {
+      "team": "Canada",
+      "group": "Group B",
+      "active_qualification_probability": 0.7781,
+      "candidate_qualification_probability": 0.81944,
+      "qualification_delta": 0.04133999999999993,
+      "group_winner_delta": 0.022799999999999987,
+      "group_second_delta": 0.020919999999999994,
+      "group_third_delta": -0.01200000000000001
+    },
+    {
+      "team": "Switzerland",
+      "group": "Group B",
+      "active_qualification_probability": 0.83886,
+      "candidate_qualification_probability": 0.87696,
+      "qualification_delta": 0.03809999999999991,
+      "group_winner_delta": 0.03086,
+      "group_second_delta": 0.01314000000000004,
+      "group_third_delta": -0.014039999999999997
+    },
+    {
+      "team": "Iran",
+      "group": "Group G",
+      "active_qualification_probability": 0.67456,
+      "candidate_qualification_probability": 0.71016,
+      "qualification_delta": 0.035599999999999965,
+      "group_winner_delta": 0.017780000000000018,
+      "group_second_delta": 0.012619999999999965,
+      "group_third_delta": -0.0025200000000000222
+    },
+    {
+      "team": "Netherlands",
+      "group": "Group F",
+      "active_qualification_probability": 0.88444,
+      "candidate_qualification_probability": 0.91834,
+      "qualification_delta": 0.03390000000000004,
+      "group_winner_delta": 0.03584000000000004,
+      "group_second_delta": 0.00269999999999998,
+      "group_third_delta": -0.012300000000000005
+    },
+    {
+      "team": "South Korea",
+      "group": "Group A",
+      "active_qualification_probability": 0.73532,
+      "candidate_qualification_probability": 0.76468,
+      "qualification_delta": 0.029360000000000053,
+      "group_winner_delta": 0.021699999999999997,
+      "group_second_delta": 0.0045600000000000085,
+      "group_third_delta": -0.006099999999999994
+    }
+  ],
+  "teams_falling_most": [
+    {
+      "team": "Haiti",
+      "group": "Group C",
+      "active_qualification_probability": 0.42834,
+      "candidate_qualification_probability": 0.28602,
+      "qualification_delta": -0.14232,
+      "group_winner_delta": -0.04614,
+      "group_second_delta": -0.06992000000000001,
+      "group_third_delta": 0.00494
+    },
+    {
+      "team": "Sweden",
+      "group": "Group F",
+      "active_qualification_probability": 0.43392,
+      "candidate_qualification_probability": 0.33974,
+      "qualification_delta": -0.09417999999999999,
+      "group_winner_delta": -0.03506000000000001,
+      "group_second_delta": -0.04285999999999998,
+      "group_third_delta": -0.007519999999999971
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "group": "Group B",
+      "active_qualification_probability": 0.49328,
+      "candidate_qualification_probability": 0.41574,
+      "qualification_delta": -0.07754,
+      "group_winner_delta": -0.03984,
+      "group_second_delta": -0.035759999999999986,
+      "group_third_delta": 0.006640000000000035
+    },
+    {
+      "team": "Ghana",
+      "group": "Group L",
+      "active_qualification_probability": 0.51788,
+      "candidate_qualification_probability": 0.46514,
+      "qualification_delta": -0.05274000000000001,
+      "group_winner_delta": -0.03032,
+      "group_second_delta": -0.017360000000000014,
+      "group_third_delta": 0.00813999999999998
+    },
+    {
+      "team": "Iraq",
+      "group": "Group I",
+      "active_qualification_probability": 0.43216,
+      "candidate_qualification_probability": 0.38724,
+      "qualification_delta": -0.044920000000000015,
+      "group_winner_delta": -0.018299999999999997,
+      "group_second_delta": -0.020440000000000014,
+      "group_third_delta": -0.007520000000000027
+    },
+    {
+      "team": "Paraguay",
+      "group": "Group D",
+      "active_qualification_probability": 0.42734,
+      "candidate_qualification_probability": 0.38766,
+      "qualification_delta": -0.03967999999999999,
+      "group_winner_delta": -0.020559999999999995,
+      "group_second_delta": -0.01863999999999999,
+      "group_third_delta": -0.00029999999999996696
+    },
+    {
+      "team": "New Zealand",
+      "group": "Group G",
+      "active_qualification_probability": 0.51484,
+      "candidate_qualification_probability": 0.48626,
+      "qualification_delta": -0.02857999999999994,
+      "group_winner_delta": -0.016340000000000007,
+      "group_second_delta": -0.012879999999999975,
+      "group_third_delta": -0.0007999999999999674
+    },
+    {
+      "team": "Curaçao",
+      "group": "Group E",
+      "active_qualification_probability": 0.5542,
+      "candidate_qualification_probability": 0.52592,
+      "qualification_delta": -0.028279999999999972,
+      "group_winner_delta": -0.022540000000000004,
+      "group_second_delta": -0.008639999999999981,
+      "group_third_delta": 0.0045399999999999885
+    }
+  ],
+  "groups_most_affected": [
+    {
+      "group": "Group C",
+      "average_absolute_qualification_delta": 0.06276,
+      "maximum_absolute_qualification_delta": 0.14232
+    },
+    {
+      "group": "Group F",
+      "average_absolute_qualification_delta": 0.045585,
+      "maximum_absolute_qualification_delta": 0.09417999999999999
+    },
+    {
+      "group": "Group B",
+      "average_absolute_qualification_delta": 0.03973499999999998,
+      "maximum_absolute_qualification_delta": 0.07754
+    },
+    {
+      "group": "Group I",
+      "average_absolute_qualification_delta": 0.02464999999999999,
+      "maximum_absolute_qualification_delta": 0.044920000000000015
+    },
+    {
+      "group": "Group L",
+      "average_absolute_qualification_delta": 0.022614999999999996,
+      "maximum_absolute_qualification_delta": 0.05274000000000001
+    },
+    {
+      "group": "Group D",
+      "average_absolute_qualification_delta": 0.020970000000000003,
+      "maximum_absolute_qualification_delta": 0.03967999999999999
+    },
+    {
+      "group": "Group H",
+      "average_absolute_qualification_delta": 0.020110000000000017,
+      "maximum_absolute_qualification_delta": 0.02634000000000003
+    },
+    {
+      "group": "Group G",
+      "average_absolute_qualification_delta": 0.017894999999999966,
+      "maximum_absolute_qualification_delta": 0.035599999999999965
+    },
+    {
+      "group": "Group E",
+      "average_absolute_qualification_delta": 0.015020000000000006,
+      "maximum_absolute_qualification_delta": 0.028279999999999972
+    },
+    {
+      "group": "Group A",
+      "average_absolute_qualification_delta": 0.013460000000000014,
+      "maximum_absolute_qualification_delta": 0.029360000000000053
+    },
+    {
+      "group": "Group J",
+      "average_absolute_qualification_delta": 0.012480000000000005,
+      "maximum_absolute_qualification_delta": 0.023540000000000005
+    },
+    {
+      "group": "Group K",
+      "average_absolute_qualification_delta": 0.009450000000000014,
+      "maximum_absolute_qualification_delta": 0.016280000000000072
+    }
+  ],
+  "candidate_impact_on_favorites": {
+    "team_count": 12,
+    "average_qualification_delta": 0.026391666666666664
+  },
+  "candidate_impact_on_underdogs": {
+    "team_count": 10,
+    "average_qualification_delta": -0.03998
+  },
+  "candidate_impact_on_projected_campaign_proxy": {
+    "active_proxy_leader": "Spain",
+    "candidate_proxy_leader": "Spain",
+    "leader_changed": false,
+    "active_top_5": [
+      "Spain",
+      "England",
+      "Argentina",
+      "Mexico",
+      "Netherlands"
+    ],
+    "candidate_top_5": [
+      "Spain",
+      "England",
+      "Argentina",
+      "Netherlands",
+      "Morocco"
+    ]
+  },
+  "diagnosis": {
+    "maximum_absolute_qualification_delta": 0.14232,
+    "changes_qualifications_strongly": true,
+    "changes_scores_more_than_qualifications": false,
+    "increases_strong_favorites": true,
+    "reduces_draws": true,
+    "increases_goal_margins": true
+  },
+  "limitations": [
+    "Qualification deltas include Monte Carlo sampling variation.",
+    "Candidate remains non-active.",
+    "Projected campaign is a proxy, not an official champion simulation."
+  ]
+}

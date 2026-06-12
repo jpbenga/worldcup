@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import {
+  ActiveCandidateSimulationComparison,
+  DualMatrixComparison,
   GroupStanding,
   GroupStrength,
   ConditionedTournamentSimulation,
@@ -11,6 +13,7 @@ import {
   PredictionEvaluation,
   PredictionDiversityAudit,
   ProjectedCampaign,
+  SimulationTeamDelta,
   TournamentSimulation,
   TournamentTeamSimulation,
   WorldCupResult,
@@ -206,6 +209,66 @@ export class WorldCupService {
     );
   }
 
+  getDualMatrixComparisons(): Observable<DualMatrixComparison[]> {
+    return this.http.get<any>('assets/data/dual_matrix_comparison_v2_9.json').pipe(
+      map((payload) => payload.matches.map((item: any) => ({
+        matchId: item.match_id,
+        homeTeam: item.home_team,
+        awayTeam: item.away_team,
+        favorite: item.favorite,
+        favoriteProbability: item.favorite_probability,
+        active: this.dualProjection(item.active),
+        candidate: this.dualProjection(item.candidate),
+        comparison: {
+          modalChanged: item.comparison.modal_changed,
+          modalChange: item.comparison.modal_change,
+          totalXgDelta: item.comparison.total_xg_delta,
+          favoriteMarginDelta: item.comparison.favorite_margin_delta,
+          over25Delta: item.comparison.over_2_5_delta,
+          label: item.comparison.label,
+        },
+      }))),
+    );
+  }
+
+  getCandidateTournamentSimulation(): Observable<ConditionedTournamentSimulation> {
+    return this.http.get<any>('assets/data/worldcup_tournament_simulation_candidate_v2_9.json').pipe(
+      map((simulation) => ({
+        ...this.tournamentSimulation(simulation),
+        finishedMatchesLocked: simulation.finished_matches_locked,
+        futureMatchesSimulated: simulation.future_matches_simulated,
+        changesVsV24: {},
+        largestRises: [],
+        largestFalls: [],
+      })),
+    );
+  }
+
+  getCandidateProjectedCampaign(): Observable<ProjectedCampaign> {
+    return this.http.get<any>('assets/data/worldcup_projected_campaign_candidate_v2_9.json').pipe(
+      map((campaign) => this.projectedCampaign(campaign)),
+    );
+  }
+
+  getActiveCandidateSimulationComparison(): Observable<ActiveCandidateSimulationComparison> {
+    return this.http.get<any>('assets/data/active_vs_candidate_simulation_comparison_v2_9.json').pipe(
+      map((payload) => ({
+        teamsRisingMost: payload.teams_rising_most.map((item: any) => this.simulationDelta(item)),
+        teamsFallingMost: payload.teams_falling_most.map((item: any) => this.simulationDelta(item)),
+        groupsMostAffected: payload.groups_most_affected.map((item: any) => ({
+          group: item.group,
+          averageAbsoluteQualificationDelta: item.average_absolute_qualification_delta,
+          maximumAbsoluteQualificationDelta: item.maximum_absolute_qualification_delta,
+        })),
+        diagnosis: {
+          maximumAbsoluteQualificationDelta: payload.diagnosis.maximum_absolute_qualification_delta,
+          changesQualificationsStrongly: payload.diagnosis.changes_qualifications_strongly,
+          changesScoresMoreThanQualifications: payload.diagnosis.changes_scores_more_than_qualifications,
+        },
+      })),
+    );
+  }
+
   private team(team: any): WorldCupTeam {
     return {
       teamId: team.team_id,
@@ -292,6 +355,55 @@ export class WorldCupService {
         group,
         teams: (groupTeams as string[]).map((team) => teams.find((item) => item.team === team)!),
       })),
+    };
+  }
+
+  private projectedCampaign(campaign: any): ProjectedCampaign {
+    return {
+      pathType: campaign.path_type,
+      isOfficialChampionSimulation: campaign.is_official_champion_simulation,
+      championProxy: campaign.champion_proxy,
+      championProxyScore: campaign.champion_proxy_score,
+      topContenders: campaign.top_contenders.map((item: any) => ({
+        team: item.team,
+        group: item.group,
+        qualificationProbability: item.qualification_probability,
+        groupWinnerProbability: item.group_winner_probability,
+        eloRating: item.elo_rating,
+        eloRank: item.elo_rank,
+        contenderProxyScore: item.contender_proxy_score,
+        mostProbableGroupFinish: item.most_probable_group_finish,
+        campaignSteps: item.campaign_steps,
+      })),
+      limitations: campaign.limitations,
+    };
+  }
+
+  private dualProjection(item: any) {
+    return {
+      scoreModal: item.score_modal,
+      scoreModalProbability: item.score_modal_probability,
+      topScores: item.top_scores,
+      expectedGoals: item.expected_goals,
+      markets: {
+        over15: item.markets.over_1_5,
+        over25: item.markets.over_2_5,
+        bttsYes: item.markets.btts_yes,
+        homeScores2Plus: item.markets.home_scores_2_plus,
+        awayScores2Plus: item.markets.away_scores_2_plus,
+        favoriteWinBy2Plus: item.markets.favorite_win_by_2_plus,
+      },
+    };
+  }
+
+  private simulationDelta(item: any): SimulationTeamDelta {
+    return {
+      team: item.team,
+      group: item.group,
+      qualificationDelta: item.qualification_delta,
+      groupWinnerDelta: item.group_winner_delta,
+      groupSecondDelta: item.group_second_delta,
+      groupThirdDelta: item.group_third_delta,
     };
   }
 

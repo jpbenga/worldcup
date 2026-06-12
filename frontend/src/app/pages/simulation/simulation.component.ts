@@ -2,7 +2,7 @@ import { AsyncPipe, DatePipe, DecimalPipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { combineLatest, map } from 'rxjs';
-import { GroupStanding, TournamentGroupSimulation, TournamentTeamSimulation } from '../../models/worldcup.models';
+import { ConditionedTournamentSimulation, GroupStanding, TournamentGroupSimulation, TournamentTeamSimulation } from '../../models/worldcup.models';
 import { WorldCupService } from '../../services/worldcup.service';
 import { GroupStandingsComponent } from '../../components/group-standings/group-standings.component';
 
@@ -15,14 +15,21 @@ import { GroupStandingsComponent } from '../../components/group-standings/group-
 export class SimulationComponent {
   private readonly worldCupService = inject(WorldCupService);
   readonly selectedGroup = signal('Group A');
+  readonly selectedProjection = signal<'active' | 'alternative'>('active');
   readonly simulation$ = combineLatest({
     simulation: this.worldCupService.getConditionedTournamentSimulation(),
     campaign: this.worldCupService.getProjectedCampaign(),
+    candidateSimulation: this.worldCupService.getCandidateTournamentSimulation(),
+    candidateCampaign: this.worldCupService.getCandidateProjectedCampaign(),
+    candidateComparison: this.worldCupService.getActiveCandidateSimulationComparison(),
     liveStandings: this.worldCupService.getLiveGroupStandings(),
   }).pipe(
-    map(({ simulation, campaign, liveStandings }) => ({
+    map(({ simulation, campaign, candidateSimulation, candidateCampaign, candidateComparison, liveStandings }) => ({
       ...simulation,
       campaign,
+      candidateSimulation,
+      candidateCampaign,
+      candidateComparison,
       liveStandings,
       topQualification: [...simulation.teams]
         .sort((a, b) => b.qualificationProbability - a.qualificationProbability)
@@ -48,5 +55,13 @@ export class SimulationComponent {
 
   standingsFor(groups: Record<string, GroupStanding[]>, group: string): GroupStanding[] {
     return groups[group.replace('Group ', '')] ?? [];
+  }
+
+  displayedGroups(simulation: ConditionedTournamentSimulation): TournamentGroupSimulation[] {
+    return this.selectedProjection() === 'active' ? simulation.groups : (simulation as any).candidateSimulation.groups;
+  }
+
+  displayedCampaign(simulation: ConditionedTournamentSimulation): any {
+    return this.selectedProjection() === 'active' ? (simulation as any).campaign : (simulation as any).candidateCampaign;
   }
 }

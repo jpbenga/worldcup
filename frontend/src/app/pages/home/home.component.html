@@ -182,6 +182,7 @@
             [elo]="predictionFor(vm.eloPredictions, matchId)"
             [comparison]="comparisonFor(vm.modelComparisons, matchId)"
             [state]="matchStateFor(vm.matchStates, matchId)"
+            [dualMatrix]="dualMatrixFor(vm.dualMatrixComparisons, matchId)"
             (closed)="selectedMatchId.set(null)"
           />
         }

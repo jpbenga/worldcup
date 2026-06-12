@@ -2,7 +2,7 @@ import { AsyncPipe, DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { combineLatest } from 'rxjs';
-import { DataSourceInfo, DataSourcesSnapshot, MatchPrediction, MatchState, ModelComparison } from '../../models/worldcup.models';
+import { DataSourceInfo, DataSourcesSnapshot, DualMatrixComparison, MatchPrediction, MatchState, ModelComparison } from '../../models/worldcup.models';
 import { BacktestingService } from '../../services/backtesting.service';
 import { MatchService } from '../../services/match.service';
 import { PredictionService } from '../../services/prediction.service';
@@ -52,6 +52,7 @@ export class HomeComponent {
     groupStrengths: this.worldCupService.getStrengths(),
     matchStates: this.worldCupService.getMatchStates(),
     liveStandings: this.worldCupService.getLiveGroupStandings(),
+    dualMatrixComparisons: this.worldCupService.getDualMatrixComparisons(),
   });
 
   predictionFor(predictions: MatchPrediction[], matchId: string): MatchPrediction | undefined {
@@ -64,6 +65,10 @@ export class HomeComponent {
 
   matchStateFor(states: MatchState[], matchId: string): MatchState | undefined {
     return states.find((state) => state.matchId === matchId);
+  }
+
+  dualMatrixFor(comparisons: DualMatrixComparison[], matchId: string): DualMatrixComparison | undefined {
+    return comparisons.find((comparison) => comparison.matchId === matchId);
   }
 
   primarySource(snapshot: DataSourcesSnapshot): DataSourceInfo | undefined {

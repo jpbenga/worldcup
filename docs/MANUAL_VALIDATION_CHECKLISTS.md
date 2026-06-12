@@ -353,6 +353,26 @@ Notes :
 - [x] Active prediction probabilities not modified
 - [x] No secret committed
 
+## Checklist V2.9 — Dual Matrix Display & Candidate Simulation Comparison
+
+- [x] V2.8 human validation recorded
+- [x] Dual matrix strategy created
+- [x] Active vs candidate comparison generated
+- [x] Spain vs Cape Verde comparison documented
+- [x] Candidate group simulation generated
+- [x] Active vs candidate simulation comparison generated
+- [x] Candidate projected campaign generated
+- [x] Simulation UI enriched with active/alternative comparison
+- [x] Match modal enriched with non-active alternative projection
+- [x] Candidate clearly labelled as non-active
+- [x] Active predictions not replaced
+- [x] Dual matrix validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] No model retrained
+- [x] No Optuna rerun
+- [x] No secret committed
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.
