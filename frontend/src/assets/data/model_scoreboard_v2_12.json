@@ -1,0 +1,147 @@
+{
+  "version": "v2.12",
+  "engine_version": "quant_hybrid_v2.2",
+  "generated_at": "2026-06-13T00:07:07Z",
+  "sample": {
+    "total_matches": 72,
+    "finished_matches": 3,
+    "evaluated_matches": 3,
+    "pending_matches": 69,
+    "sample_size_too_small": true
+  },
+  "score_metrics": {
+    "exact_score": {
+      "hits": 0,
+      "total": 3,
+      "rate": 0.0
+    },
+    "top_3": {
+      "hits": 1,
+      "total": 3,
+      "rate": 0.3333333333333333
+    },
+    "top_5": {
+      "hits": 3,
+      "total": 3,
+      "rate": 1.0
+    }
+  },
+  "outcome_metrics": {
+    "one_x_two": {
+      "hits": 2,
+      "total": 3,
+      "rate": 0.6666666666666666
+    },
+    "favorite": {
+      "hits": 2,
+      "total": 3,
+      "rate": 0.6666666666666666
+    },
+    "draw_no_bet": {
+      "wins": 2,
+      "losses": 0,
+      "pushes": 1,
+      "total": 3,
+      "win_rate_excluding_pushes": 1.0,
+      "non_loss_including_pushes": 1.0
+    }
+  },
+  "market_metrics": {
+    "over_under": {
+      "over_0_5": {
+        "hits": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "over_1_5": {
+        "hits": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "over_2_5": {
+        "hits": 2,
+        "total": 3,
+        "rate": 0.6666666666666666
+      },
+      "under_2_5": {
+        "hits": 2,
+        "total": 3,
+        "rate": 0.6666666666666666
+      },
+      "under_3_5": {
+        "hits": 3,
+        "total": 3,
+        "rate": 1.0
+      }
+    },
+    "btts": {
+      "hits": 1,
+      "total": 3,
+      "rate": 0.3333333333333333
+    },
+    "team_goals": {
+      "hits": 5,
+      "total": 6,
+      "rate": 0.8333333333333334
+    }
+  },
+  "alternative_projection_metrics": {
+    "available": true,
+    "candidate_status": "alternative_non_active",
+    "compared_matches": 3,
+    "active_vs_alternative": {
+      "active_exact_hits": 0,
+      "alternative_exact_hits": 0,
+      "active_top_5_hits": 3,
+      "alternative_top_5_hits": 3,
+      "interpretation": "La projection alternative reste un scénario comparatif non actif."
+    }
+  },
+  "streaks_and_highlights": {
+    "best_hits": [
+      {
+        "headline": "Bonne tendance et score dans le Top-5",
+        "short_explanation": "Bon résultat 1X2, score différent",
+        "result_badge": "Évalué",
+        "confidence_context": "Confiance pré-match : low.",
+        "match": "Mexico 2-0 South Africa"
+      },
+      {
+        "headline": "Bonne tendance et score dans le Top-5",
+        "short_explanation": "Bon résultat 1X2, score différent",
+        "result_badge": "Évalué",
+        "confidence_context": "Confiance pré-match : medium.",
+        "match": "South Korea 2-1 Czech Republic"
+      },
+      {
+        "headline": "Score dans le Top-5, tendance 1X2 ratée",
+        "short_explanation": "Le score réel était dans le Top-3",
+        "result_badge": "Évalué",
+        "confidence_context": "Confiance pré-match : medium.",
+        "match": "Canada 1-1 Bosnia & Herzegovina"
+      }
+    ],
+    "misses_to_review": [],
+    "notable_partial_hits": [
+      {
+        "headline": "Bonne tendance et score dans le Top-5",
+        "short_explanation": "Bon résultat 1X2, score différent",
+        "result_badge": "Évalué",
+        "confidence_context": "Confiance pré-match : low.",
+        "match": "Mexico 2-0 South Africa"
+      },
+      {
+        "headline": "Bonne tendance et score dans le Top-5",
+        "short_explanation": "Bon résultat 1X2, score différent",
+        "result_badge": "Évalué",
+        "confidence_context": "Confiance pré-match : medium.",
+        "match": "South Korea 2-1 Czech Republic"
+      }
+    ]
+  },
+  "public_interpretation": {
+    "headline": "3 matchs évalués : le moteur commence à rendre des comptes.",
+    "summary": "Le 1X2 est réussi sur 2/3 matchs et le score réel apparaît dans le Top-5 sur 3/3 matchs.",
+    "caution": "Échantillon trop petit pour conclure sur la performance globale."
+  }
+}

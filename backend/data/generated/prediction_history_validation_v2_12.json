@@ -1,0 +1,33 @@
+{
+  "version": "v2.12",
+  "engine_version": "quant_hybrid_v2.2",
+  "generated_at": "2026-06-13T00:10:17Z",
+  "passed": true,
+  "checks": {
+    "prediction_history_exists": true,
+    "history_contains_72_matches": true,
+    "finished_results_have_evaluation": true,
+    "unfinished_matches_have_no_final_evaluation": true,
+    "scoreboard_exists": true,
+    "timeline_exists": true,
+    "public_transparency_copy_exists": true,
+    "small_sample_rule_correct": true,
+    "pre_match_history_matches_frozen_source": true,
+    "active_predictions_unchanged": true,
+    "candidate_not_promoted": true,
+    "no_nan_or_infinity": true,
+    "no_secret": true,
+    "no_retrain": true,
+    "no_optuna_rerun": true
+  },
+  "total_matches": 72,
+  "finished_matches": 3,
+  "evaluated_matches": 3,
+  "pending_matches": 69,
+  "active_predictions_modified": false,
+  "candidate_status": "alternative_non_active",
+  "notes": [
+    "Pre-match history fields are compared directly with the frozen V2.4 release-candidate source.",
+    "Repository-level secret and large-file scans remain separate release checks."
+  ]
+}

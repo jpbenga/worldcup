@@ -516,6 +516,24 @@ and a clearly labelled active-versus-alternative comparison. The official
 knockout bracket is unavailable, so no opponent or trophy path is invented and
 the campaign leader is never presented as a fully simulated champion.
 
+## Prediction history and public transparency V2.12
+
+V2.12 preserves every frozen pre-match forecast and appends real outcomes and
+evaluation labels after finished matches:
+
+```bash
+python3 backend/scripts/build_prediction_history_v2_12.py
+python3 backend/scripts/build_model_scoreboard_v2_12.py
+python3 backend/scripts/build_prediction_timeline_v2_12.py
+python3 backend/scripts/build_public_transparency_copy_v2_12.py
+python3 backend/scripts/validate_prediction_history_v2_12.py
+```
+
+`/transparence` presents the public scoreboard, small-sample warning,
+chronological performance, notable hits, misses and an expandable match
+history. The active forecast remains frozen and official; the alternative is a
+clearly labelled non-active comparison.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

@@ -26,6 +26,22 @@ import {
 export class WorldCupService {
   private readonly http = inject(HttpClient);
 
+  getPredictionHistoryV212(): Observable<any> {
+    return this.http.get<any>('assets/data/prediction_history_v2_12.json');
+  }
+
+  getModelScoreboardV212(): Observable<any> {
+    return this.http.get<any>('assets/data/model_scoreboard_v2_12.json');
+  }
+
+  getPredictionTimelineV212(): Observable<any> {
+    return this.http.get<any>('assets/data/prediction_performance_timeline_v2_12.json');
+  }
+
+  getPublicTransparencyCopyV212(): Observable<any> {
+    return this.http.get<any>('assets/data/public_transparency_copy_v2_12.json');
+  }
+
   getGroups(): Observable<WorldCupGroup[]> {
     return this.http.get<any[]>('assets/data/worldcup_groups.json').pipe(
       map((groups) =>

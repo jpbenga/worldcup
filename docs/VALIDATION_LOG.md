@@ -1497,7 +1497,7 @@ Commit: e5bd67e Add operational matchday refresh pipeline
 
 ## V2.11 — Creative Tournament Experience Upgrade
 
-Commit: TBD
+Commit: 92aac5a Upgrade creative tournament simulation experience
 
 ### Technical validation
 
@@ -1517,6 +1517,48 @@ Commit: TBD
 - [x] Proxy champion clearly labelled non-official
 - [x] Bracket not invented
 - [x] Creative experience validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
+- [x] No secret committed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Creative simulation experience accepted
+- [x] Projected campaign accepted as non-official proxy
+- [x] Active vs alternative simulation comparison accepted
+- [x] Group storylines accepted
+- [x] V2.11 accepted as roadmap progress
+- [x] Next roadmap iteration accepted: prediction history, transparency and model scoreboard
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.12 — Prediction History, Public Transparency & Model Scoreboard
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.11 human validation recorded
+- [x] Prediction history strategy created
+- [x] Prediction history generated
+- [x] Model scoreboard generated
+- [x] Performance timeline generated
+- [x] Public transparency copy generated
+- [x] Transparency UI section added
+- [x] Match modal history summary added if appropriate
+- [x] DNB wins/losses/pushes separated
+- [x] Small sample warning implemented
+- [x] Active vs alternative explanation implemented
+- [x] Prediction history validation passed
 - [x] Angular build passed
 - [x] Angular tests passed
 - [x] Active predictions unchanged

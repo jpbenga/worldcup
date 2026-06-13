@@ -423,6 +423,28 @@ Notes :
 - [x] No Optuna rerun
 - [x] No secret committed
 
+## Checklist V2.12 — Prediction History, Public Transparency & Model Scoreboard
+
+- [x] V2.11 human validation recorded
+- [x] Prediction history strategy created
+- [x] Prediction history generated
+- [x] Model scoreboard generated
+- [x] Performance timeline generated
+- [x] Public transparency copy generated
+- [x] Transparency UI section added
+- [x] Match modal history summary added if appropriate
+- [x] DNB wins/losses/pushes separated
+- [x] Small sample warning implemented
+- [x] Active vs alternative explanation implemented
+- [x] Prediction history validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
+- [x] No secret committed
+
 ## Checklist V0.4 — Elo Model Experiment
 
 - [ ] Le mapping équipe est validé.

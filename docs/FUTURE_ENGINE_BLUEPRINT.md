@@ -385,3 +385,16 @@ The official knockout bracket remains unavailable. The tournament leader is
 therefore a non-official campaign proxy, not a fully simulated champion. V2.11
 does not invent knockout opponents, change active probabilities, promote the
 candidate, retrain the model or rerun Optuna.
+
+## V2.12 prediction history and public transparency
+
+V2.12 creates an append-only memory of all active World Cup forecasts. Frozen
+pre-match predictions remain separate from actual results and post-match
+evaluation labels. A public scoreboard, chronological performance timeline and
+plain-language glossary make model successes, partial hits and misses visible.
+
+The dedicated `/transparence` route emphasizes counts, sample size and Draw No
+Bet pushes instead of presenting flattering rates without context. The
+alternative projection remains a non-active comparison on finished matches.
+No prediction is rewritten, no candidate is promoted, no model is retrained
+and Optuna is not rerun.

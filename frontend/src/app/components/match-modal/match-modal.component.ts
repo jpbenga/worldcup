@@ -1,11 +1,12 @@
 import { DatePipe, KeyValuePipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { DualMatrixComparison, MatchPrediction, MatchState, ModelComparison } from '../../models/worldcup.models';
 import { ScoreMatrixComponent } from '../score-matrix/score-matrix.component';
 
 @Component({
   selector: 'app-match-modal',
-  imports: [DatePipe, KeyValuePipe, PercentPipe, ScoreMatrixComponent],
+  imports: [DatePipe, KeyValuePipe, PercentPipe, RouterLink, ScoreMatrixComponent],
   templateUrl: './match-modal.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -1,0 +1,268 @@
+{
+  "version": "v2.12",
+  "engine_version": "quant_hybrid_v2.2",
+  "generated_at": "2026-06-13T00:07:10Z",
+  "evaluated_matches": 3,
+  "by_date": [
+    {
+      "date": "2026-06-11",
+      "matchday": "Group Stage - Matchday 1",
+      "groups": [
+        "A"
+      ],
+      "matches_played": 1,
+      "exact_hits": 0,
+      "top_3_hits": 0,
+      "top_5_hits": 1,
+      "one_x_two_hits": 1,
+      "dnb_summary": {
+        "wins": 1,
+        "losses": 0,
+        "pushes": 0,
+        "total": 1,
+        "win_rate_excluding_pushes": 1.0,
+        "non_loss_including_pushes": 1.0
+      },
+      "market_summary": {
+        "btts": {
+          "hits": 1,
+          "total": 1,
+          "rate": 1.0
+        },
+        "team_goals": {
+          "hits": 1,
+          "total": 2,
+          "rate": 0.5
+        }
+      },
+      "headline": "1/1 tendances 1X2 et 1/1 scores dans le Top-5."
+    },
+    {
+      "date": "2026-06-12",
+      "matchday": "Group Stage - Matchday 1",
+      "groups": [
+        "A",
+        "B"
+      ],
+      "matches_played": 2,
+      "exact_hits": 0,
+      "top_3_hits": 1,
+      "top_5_hits": 2,
+      "one_x_two_hits": 1,
+      "dnb_summary": {
+        "wins": 1,
+        "losses": 0,
+        "pushes": 1,
+        "total": 2,
+        "win_rate_excluding_pushes": 1.0,
+        "non_loss_including_pushes": 1.0
+      },
+      "market_summary": {
+        "btts": {
+          "hits": 0,
+          "total": 2,
+          "rate": 0.0
+        },
+        "team_goals": {
+          "hits": 4,
+          "total": 4,
+          "rate": 1.0
+        }
+      },
+      "headline": "1/2 tendances 1X2 et 2/2 scores dans le Top-5."
+    }
+  ],
+  "by_matchday": [
+    {
+      "date": "2026-06-11",
+      "matchday": "Group Stage - Matchday 1",
+      "groups": [
+        "A",
+        "B"
+      ],
+      "matches_played": 3,
+      "exact_hits": 0,
+      "top_3_hits": 1,
+      "top_5_hits": 3,
+      "one_x_two_hits": 2,
+      "dnb_summary": {
+        "wins": 2,
+        "losses": 0,
+        "pushes": 1,
+        "total": 3,
+        "win_rate_excluding_pushes": 1.0,
+        "non_loss_including_pushes": 1.0
+      },
+      "market_summary": {
+        "btts": {
+          "hits": 1,
+          "total": 3,
+          "rate": 0.3333333333333333
+        },
+        "team_goals": {
+          "hits": 5,
+          "total": 6,
+          "rate": 0.8333333333333334
+        }
+      },
+      "headline": "2/3 tendances 1X2 et 3/3 scores dans le Top-5."
+    }
+  ],
+  "by_group": [
+    {
+      "date": "2026-06-11",
+      "matchday": "A",
+      "groups": [
+        "A"
+      ],
+      "matches_played": 2,
+      "exact_hits": 0,
+      "top_3_hits": 0,
+      "top_5_hits": 2,
+      "one_x_two_hits": 2,
+      "dnb_summary": {
+        "wins": 2,
+        "losses": 0,
+        "pushes": 0,
+        "total": 2,
+        "win_rate_excluding_pushes": 1.0,
+        "non_loss_including_pushes": 1.0
+      },
+      "market_summary": {
+        "btts": {
+          "hits": 1,
+          "total": 2,
+          "rate": 0.5
+        },
+        "team_goals": {
+          "hits": 3,
+          "total": 4,
+          "rate": 0.75
+        }
+      },
+      "headline": "2/2 tendances 1X2 et 2/2 scores dans le Top-5."
+    },
+    {
+      "date": "2026-06-12",
+      "matchday": "B",
+      "groups": [
+        "B"
+      ],
+      "matches_played": 1,
+      "exact_hits": 0,
+      "top_3_hits": 1,
+      "top_5_hits": 1,
+      "one_x_two_hits": 0,
+      "dnb_summary": {
+        "wins": 0,
+        "losses": 0,
+        "pushes": 1,
+        "total": 1,
+        "win_rate_excluding_pushes": 0.0,
+        "non_loss_including_pushes": 1.0
+      },
+      "market_summary": {
+        "btts": {
+          "hits": 0,
+          "total": 1,
+          "rate": 0.0
+        },
+        "team_goals": {
+          "hits": 2,
+          "total": 2,
+          "rate": 1.0
+        }
+      },
+      "headline": "0/1 tendances 1X2 et 1/1 scores dans le Top-5."
+    }
+  ],
+  "chronological_matches": [
+    {
+      "kickoff_at": "2026-06-11T19:00:00+00:00",
+      "matchday": "Group Stage - Matchday 1",
+      "group": "A",
+      "match": "Mexico 2-0 South Africa",
+      "headline": "Bonne tendance et score dans le Top-5",
+      "evaluation": {
+        "available": true,
+        "exact_score_hit": false,
+        "top_3_hit": false,
+        "top_5_hit": true,
+        "one_x_two_hit": true,
+        "favorite_hit": true,
+        "dnb_outcome": "win",
+        "over_under_hits": {
+          "over_0_5_hit": true,
+          "over_1_5_hit": true,
+          "over_2_5_hit": true,
+          "under_2_5_hit": true,
+          "under_3_5_hit": true
+        },
+        "btts_hit": true,
+        "team_goals_hits": {
+          "home_over_0_5": true,
+          "away_over_0_5": false
+        },
+        "summary_label": "Bon résultat 1X2, score différent"
+      }
+    },
+    {
+      "kickoff_at": "2026-06-12T02:00:00+00:00",
+      "matchday": "Group Stage - Matchday 1",
+      "group": "A",
+      "match": "South Korea 2-1 Czech Republic",
+      "headline": "Bonne tendance et score dans le Top-5",
+      "evaluation": {
+        "available": true,
+        "exact_score_hit": false,
+        "top_3_hit": false,
+        "top_5_hit": true,
+        "one_x_two_hit": true,
+        "favorite_hit": true,
+        "dnb_outcome": "win",
+        "over_under_hits": {
+          "over_0_5_hit": true,
+          "over_1_5_hit": true,
+          "over_2_5_hit": false,
+          "under_2_5_hit": false,
+          "under_3_5_hit": true
+        },
+        "btts_hit": false,
+        "team_goals_hits": {
+          "home_over_0_5": true,
+          "away_over_0_5": true
+        },
+        "summary_label": "Bon résultat 1X2, score différent"
+      }
+    },
+    {
+      "kickoff_at": "2026-06-12T19:00:00+00:00",
+      "matchday": "Group Stage - Matchday 1",
+      "group": "B",
+      "match": "Canada 1-1 Bosnia & Herzegovina",
+      "headline": "Score dans le Top-5, tendance 1X2 ratée",
+      "evaluation": {
+        "available": true,
+        "exact_score_hit": false,
+        "top_3_hit": true,
+        "top_5_hit": true,
+        "one_x_two_hit": false,
+        "favorite_hit": false,
+        "dnb_outcome": "push",
+        "over_under_hits": {
+          "over_0_5_hit": true,
+          "over_1_5_hit": true,
+          "over_2_5_hit": true,
+          "under_2_5_hit": true,
+          "under_3_5_hit": true
+        },
+        "btts_hit": false,
+        "team_goals_hits": {
+          "home_over_0_5": true,
+          "away_over_0_5": true
+        },
+        "summary_label": "Le score réel était dans le Top-3"
+      }
+    }
+  ]
+}
