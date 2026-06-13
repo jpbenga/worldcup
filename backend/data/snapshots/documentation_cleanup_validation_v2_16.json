@@ -1,0 +1,23 @@
+{
+  "version": "v2.16",
+  "passed": true,
+  "docs_before": 169,
+  "docs_visible_after": 23,
+  "docs_archived": 158,
+  "docs_deleted": 0,
+  "required_docs_present": true,
+  "checks": {
+    "required_docs_present": true,
+    "required_docs_non_empty": true,
+    "road_to_the_trophy_v3_official": true,
+    "quant_hybrid_v2_2_active_prematch": true,
+    "root_readme_links_docs_index": true,
+    "archive_index_present": true,
+    "no_secret_in_docs": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Eight pre-existing locally modified refresh documents remain visible and were not archived."
+  ],
+  "generated_at": "2026-06-13T21:42:57Z"
+}

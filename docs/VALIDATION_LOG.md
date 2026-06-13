@@ -1747,7 +1747,7 @@ Commit: `d01dd9c Build tournament simulation engine V3 candidate`
 
 ## V2.15 — Promote Tournament Simulation V3 as Road to the Trophy Engine
 
-Commit: TBD
+Commit: `f35d058 Promote V3 as Road to the Trophy engine`
 
 ### Technical validation
 
@@ -1765,6 +1765,39 @@ Commit: TBD
 - [x] Active predictions unchanged
 - [x] No retrain or Optuna rerun
 - [x] No secret committed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] V3 accepted as the official Road to the Trophy engine
+- [x] Single public scenario accepted
+- [x] Candidate/comparator removal accepted
+- [x] Road to the Trophy V3 promotion accepted
+- [x] Next iteration accepted: documentation cleanup and product readiness
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.16 — Documentation Cleanup, Archive & Product Readiness
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.15 human validation recorded
+- [x] Documentation audit and cleanup strategy created
+- [x] Active documentation architecture created
+- [x] Historical iteration, audit and release note documents archived
+- [x] Product, Road to the Trophy, model, data and operations guides consolidated
+- [x] README, blueprint and manual checklists simplified
+- [x] No historical decision or validation deleted
+- [x] Pre-existing modified refresh documents left untouched
+- [x] Documentation cleanup validation passed
+- [x] Active predictions and Road to the Trophy engine unchanged
+- [x] No retrain or Optuna rerun
 
 ### Human validation
 
