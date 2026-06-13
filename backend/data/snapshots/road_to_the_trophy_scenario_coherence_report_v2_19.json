@@ -1,0 +1,80 @@
+{
+  "version": "v2.19",
+  "scenario_source": {
+    "source_file": "tournament_simulation_engine_v3_results_v2_14.json#representative_paths_sample",
+    "is_full_simulation_path": true,
+    "is_reconstructed": false,
+    "full_paths_available": true,
+    "limitations": [
+      "Official 2026 knockout mapping is unavailable; projected dynamic seeding is explicitly non-official.",
+      "Only 100 complete paths are persisted; all 50,000 were generated and aggregated."
+    ]
+  },
+  "current_scenario_audit": {
+    "groups_checked": 12,
+    "groups_with_score_table_mismatch": [],
+    "groups_with_probability_scenario_contradiction": [
+      {
+        "group": "F",
+        "team": "Netherlands",
+        "qualification_probability": 0.87854,
+        "points": 1,
+        "rank": 3
+      },
+      {
+        "group": "G",
+        "team": "Belgium",
+        "qualification_probability": 0.88774,
+        "points": 2,
+        "rank": 3
+      },
+      {
+        "group": "I",
+        "team": "Norway",
+        "qualification_probability": 0.76774,
+        "points": 2,
+        "rank": 3
+      }
+    ],
+    "belgium_case": {
+      "qualification_probability": 0.88774,
+      "displayed_points_before": 2,
+      "displayed_rank_before": 3,
+      "central_points_after": 6,
+      "central_rank_after": 1,
+      "failure_frequency_if_available": 0.08,
+      "diagnosis": "The previous complete path was selected with a champion-first knockout score that ignored group-stage representativeness.",
+      "verdict": "pass"
+    }
+  },
+  "belgium_case": {
+    "qualification_probability": 0.88774,
+    "displayed_points_before": 2,
+    "displayed_rank_before": 3,
+    "central_points_after": 6,
+    "central_rank_after": 1,
+    "failure_frequency_if_available": 0.08,
+    "diagnosis": "The previous complete path was selected with a champion-first knockout score that ignored group-stage representativeness.",
+    "verdict": "pass"
+  },
+  "repair_method": {
+    "method": "central persisted full-path selection by global marginal surprise score",
+    "uses_full_simulation_path": true,
+    "uses_reconstruction_under_constraints": false,
+    "arbitrary_choices": false,
+    "description": "Scores every persisted complete path across all group ranks, qualification outcomes, knockout winners and champion probability; no team or champion is forced."
+  },
+  "coherence_checks_after": {
+    "scores_to_points": true,
+    "points_to_table": true,
+    "table_to_qualifiers": true,
+    "qualifiers_to_bracket": true,
+    "bracket_to_paths": true,
+    "belgium_case_passed": true
+  },
+  "verdict": "PASS",
+  "warnings": [
+    "Official 2026 knockout mapping is unavailable; projected dynamic seeding is explicitly non-official.",
+    "Only 100 complete paths are persisted; all 50,000 were generated and aggregated."
+  ]
+}

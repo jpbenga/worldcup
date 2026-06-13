@@ -10,7 +10,7 @@
         <div>
           <p class="text-xs font-bold uppercase tracking-[0.22em] text-violet-300">Road to the Trophy · Scénario SimuAI</p>
           <h1 class="mt-2 text-4xl font-black tracking-tight sm:text-6xl">Arpentez les 104 matchs</h1>
-          <p class="mt-3 max-w-3xl text-slate-400">SimuAI Tournament Engine V3 · 50 000 tournois simulés. Déplacez-vous dans le tournoi, zoomez sur un groupe et suivez le chemin projeté de chaque équipe.</p>
+          <p class="mt-3 max-w-3xl text-slate-400">SimuAI Tournament Engine V3 · 50 000 tournois simulés. Le parcours affiché est un scénario central complet; les chances restent des fréquences marginales sur toutes les simulations.</p>
         </div>
         <div class="grid grid-cols-3 gap-2 text-center text-xs">
           <div class="rounded-2xl border border-emerald-500/20 bg-emerald-500/10 p-3"><strong class="block text-2xl text-emerald-300">{{ data.result_summary.finished_matches }}</strong>réels verrouillés</div>
@@ -21,7 +21,7 @@
 
       <section class="mb-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 px-4 py-3 text-sm text-cyan-50">
         <strong>Projection du tournoi.</strong>
-        Les groupes varient à chaque simulation et les matchs à élimination sont simulés en tête-à-tête à partir des forces mesurables disponibles.
+        <strong>Classement du scénario central.</strong> Les chances indiquent la fréquence observée sur 50 000 tournois simulés.
       </section>
 
       <section class="rounded-3xl border border-slate-700 bg-slate-900/80 p-3">
@@ -56,7 +56,9 @@
             @for (group of data.groups; track group.group; let groupIndex = $index) {
               <article class="group-node atlas-node" [class.node-focus]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [style.left.px]="groupPosition(groupIndex).x" [style.top.px]="groupPosition(groupIndex).y">
                 <button class="node-heading" (click)="focusGroup(group.group)"><span>Groupe {{ group.group }}</span><small>{{ group.state === 'volatile' ? 'Très ouvert' : group.state === 'open' ? 'Ouvert' : 'Avantage établi' }}</small></button>
-                <table><thead><tr><th>#</th><th>Équipe</th><th>J</th><th>Pts</th><th>Qualif.</th></tr></thead><tbody>@for (team of group.teams; track team.name) { <tr [class.team-focus]="isTeamHighlighted(team.name)" (click)="selectTeam(team.name)"><td>{{ team.current_rank }}</td><td><img [src]="team.logo_url" [alt]="team.name" />{{ team.name }}</td><td>{{ team.played }}</td><td>{{ team.points }}</td><td>{{ team.qualification_probability | percent: '1.0-0' }}</td></tr> }</tbody></table>
+                <p class="group-section-label">Classement du scénario central</p>
+                <table><thead><tr><th>#</th><th>Équipe</th><th>J</th><th>Pts</th><th>Diff</th><th>BP</th><th>Statut</th></tr></thead><tbody>@for (team of group.teams; track team.name) { <tr [class.team-focus]="isTeamHighlighted(team.name)" (click)="selectTeam(team.name)"><td>{{ team.current_rank }}</td><td><img [src]="team.logo_url" [alt]="team.name" />{{ team.name }}</td><td>{{ team.played }}</td><td>{{ team.points }}</td><td>{{ team.goal_difference }}</td><td>{{ team.goals_for }}</td><td><span class="central-status" [class.out]="team.central_status === 'Éliminé'">{{ team.central_status }}</span></td></tr> }</tbody></table>
+                <div class="group-probabilities"><p class="group-section-label">Chances sur 50 000 simulations</p>@for (team of group.teams; track team.name) { <button (click)="selectTeam(team.name)"><span>{{ team.name }}</span><strong>{{ team.simulation_probabilities.qualification | percent: '1.0-0' }} qualif.</strong><small>{{ team.simulation_probabilities.elimination | percent: '1.0-0' }} élimination</small></button> }</div>
                 <div class="group-matches">@for (match of group.matches; track match.match_id) { <button [class.match-focus]="isMatchHighlighted(match)" [class.match-real]="match.status === 'real'" [class.match-muted]="!isMatchVisible(match)" (click)="selectMatch(match)"><span>{{ match.home_team }} <strong>{{ match.score }}</strong> {{ match.away_team }}</span><small>{{ match.status === 'real' ? 'Réel' : 'Prono' }}</small></button> }</div>
               </article>
             }

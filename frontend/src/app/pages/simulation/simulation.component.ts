@@ -100,7 +100,7 @@ export class SimulationComponent {
   groupPath(groupIndex: number, targetIndex: number): string {
     const source = this.groupPosition(groupIndex);
     const target = this.matchPosition(0, targetIndex, 16);
-    return this.curve(source.x + 360, source.y + 215, target.x, target.y);
+    return this.curve(source.x + 400, source.y + 235, target.x, target.y);
   }
 
   private curve(x1: number, y1: number, x2: number, y2: number): string {

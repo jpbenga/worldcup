@@ -1848,7 +1848,7 @@ Commit: `8148741 Add production readiness operator workflow`
 
 ## V2.18 — Unified Local Refresh & App Launch Orchestrator
 
-Commit: TBD
+Commit: `7b127d5 Add unified local refresh and app launch workflow`
 
 ### Technical validation
 
@@ -1863,6 +1863,38 @@ Commit: TBD
 - [x] Angular build and tests passed
 - [x] Active predictions protected
 - [x] No retrain or Optuna rerun
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Unified local refresh accepted
+- [x] Single local command accepted
+- [x] Road to the Trophy regeneration on result changes accepted
+- [x] Transparency regeneration accepted
+- [x] Issue identified: Road to the Trophy scenario coherence is not trusted
+- [x] Issue identified: Belgium case suggests central scenario inconsistency
+- [x] Next iteration accepted: coherent Road to the Trophy simulation scenario
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.19 — Coherent Road to the Trophy Simulation Scenario
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Previous complete-path selection diagnosed
+- [x] Belgium case audited
+- [x] Central complete path selected without team-specific choices
+- [x] Scores, points, tables, qualifiers, bracket and paths validated
+- [x] Marginal probabilities separated from the central scenario
+- [x] Unified refresh integration updated
+- [x] Active predictions, quant_hybrid_v2.2 and Optuna unchanged
+- [x] Scenario coherence validation passed
 
 ### Human validation
 

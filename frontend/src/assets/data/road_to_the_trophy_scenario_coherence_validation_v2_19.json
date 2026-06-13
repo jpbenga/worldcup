@@ -1,0 +1,37 @@
+{
+  "version": "v2.19",
+  "passed": true,
+  "groups_validated": 12,
+  "belgium_case_passed": true,
+  "scores_to_points": true,
+  "points_to_table": true,
+  "table_to_qualifiers": true,
+  "qualifiers_to_bracket": true,
+  "marginal_probabilities_separated": true,
+  "arbitrary_choices": false,
+  "active_predictions_unchanged": true,
+  "checks": {
+    "report_present_and_passed": true,
+    "central_scenario_present": true,
+    "coherent_view_model_present": true,
+    "groups_and_matches_complete": true,
+    "scores_to_points": true,
+    "points_to_table": true,
+    "table_to_qualifiers": true,
+    "qualifiers_to_bracket": true,
+    "bracket_to_paths": true,
+    "belgium_case_audited": true,
+    "no_arbitrary_choice": true,
+    "marginal_probabilities_separated": true,
+    "active_predictions_unchanged": true,
+    "quant_hybrid_v2_2_unchanged": true,
+    "optuna_unchanged": true,
+    "road_to_the_trophy_v3_unchanged": true,
+    "browser_has_no_api_football_secret": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Official 2026 knockout mapping is unavailable; projected dynamic seeding is explicitly non-official.",
+    "Only 100 complete paths are persisted; all 50,000 were generated and aggregated."
+  ]
+}

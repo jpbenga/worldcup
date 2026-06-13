@@ -11,7 +11,7 @@ SimuMondial 2026 est une application de pronostics probabilistes et d’explorat
 - 50 000 simulations complètes du tournoi avec groupes et qualifiés variables;
 - parcours d’équipe, tableau projeté et explications contextuelles.
 
-Road to the Trophy présente un scénario probabiliste cohérent, pas une certitude ni un tableau officiel FIFA. Les prédictions doivent être interprétées comme des estimations.
+Road to the Trophy présente un scénario central complet et cohérent, distinct des probabilités marginales calculées sur 50 000 simulations. Ce n’est ni une certitude ni un tableau officiel FIFA.
 
 ## Lancer l’application
 

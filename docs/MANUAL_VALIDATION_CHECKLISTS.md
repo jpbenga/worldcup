@@ -22,6 +22,13 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Le parcours affiché est cohérent de bout en bout.
 - [ ] Les explications de favoris et d’upsets sont compréhensibles.
 
+### Cohérence V2.19
+
+- [ ] Le classement du scénario central est séparé des chances sur 50 000 simulations.
+- [ ] Les scores, points, classement, qualifiés, bracket et parcours sont cohérents.
+- [ ] Le cas Belgique paraît central et ses probabilités restent visibles.
+- [ ] Aucun choix manuel par équipe n’est introduit.
+
 ## Simulation
 
 - [ ] 50 000 tournois complets sont déclarés.

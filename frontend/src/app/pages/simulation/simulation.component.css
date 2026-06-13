@@ -11,18 +11,24 @@
 .atlas-node { position: absolute; z-index: 2; border: 2px solid rgb(51 65 85); background: rgb(15 23 42 / .96); box-shadow: 0 14px 35px rgb(0 0 0 / .35); transition: opacity .2s, border-color .2s, box-shadow .2s; }
 .atlas-node.node-focus { border-color: rgb(34 211 238); box-shadow: 0 0 0 5px rgb(34 211 238 / .13), 0 18px 45px rgb(0 0 0 / .5); z-index: 4; }
 .atlas-node.node-muted { opacity: .08; }
-.group-node { width: 360px; height: 440px; border-radius: 20px; overflow: hidden; }
+.group-node { width: 400px; height: 470px; border-radius: 20px; overflow: hidden; }
 .node-heading { width: 100%; display: flex; justify-content: space-between; padding: 14px 16px; background: rgb(8 47 73); color: white; font-weight: 900; text-align: left; }
 .node-heading small { color: rgb(103 232 249); font-weight: 600; }
-.group-node table { width: 100%; font-size: 12px; }
-.group-node th { padding: 5px 8px; color: rgb(100 116 139); text-align: left; }
-.group-node td { padding: 6px 8px; border-top: 1px solid rgb(30 41 59); }
+.group-section-label { padding: 4px 6px; color: rgb(103 232 249); font-size: 8px; font-weight: 900; text-transform: uppercase; }
+.group-node table { width: 100%; font-size: 10px; }
+.group-node th { padding: 3px 5px; color: rgb(100 116 139); text-align: left; }
+.group-node td { padding: 4px 5px; border-top: 1px solid rgb(30 41 59); }
 .group-node td:nth-child(n+3) { text-align: right; }
 .group-node td:nth-child(2) { display: flex; align-items: center; gap: 6px; font-weight: 700; }
 .group-node td img { width: 18px; height: 18px; object-fit: contain; }
 .group-node tr { cursor: pointer; }
 .group-node tr:hover, .team-focus { background: rgb(8 145 178 / .22) !important; color: rgb(165 243 252); }
-.group-matches { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; padding: 8px; }
+.central-status { color: rgb(110 231 183); font-size: 7px; font-weight: 800; }
+.central-status.out { color: rgb(148 163 184); }
+.group-probabilities { border-top: 1px solid rgb(51 65 85); padding: 2px 7px 5px; }
+.group-probabilities button { width: 50%; padding: 2px; color: rgb(203 213 225); text-align: left; font-size: 8px; }
+.group-probabilities button small { display: block; color: rgb(100 116 139); font-size: 7px; }
+.group-matches { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 5px 8px; }
 .group-matches button { min-width: 0; border: 1px solid rgb(51 65 85); border-radius: 8px; background: rgb(2 6 23); padding: 6px; color: rgb(203 213 225); text-align: left; }
 .group-matches button span { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 10px; }
 .group-matches button small { color: rgb(100 116 139); font-size: 8px; text-transform: uppercase; }

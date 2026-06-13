@@ -68,9 +68,9 @@ def table_from_matches(teams: list[str], matches: list[dict[str, Any]]) -> list[
     return order
 
 
-def build_official_view_model() -> dict[str, Any]:
+def build_official_view_model(representative_override: dict[str, Any] | None = None) -> dict[str, Any]:
     visual = load_json(DATA_DIR / "generated" / "road_to_the_trophy_view_model_v2_13_1B.json")
-    representative = load_json(DATA_DIR / "generated" / "representative_tournament_scenario_v3_v2_14.json")
+    representative = representative_override or load_json(DATA_DIR / "generated" / "representative_tournament_scenario_v3_v2_14.json")
     simulation = load_json(DATA_DIR / "generated" / "tournament_simulation_engine_v3_results_v2_14.json")
     elos, team_profiles = current_elos(), profiles(historical_matches())
     assets = {team["name"]: team for group in load_json(FRONTEND_DATA_DIR / "worldcup_groups.json") for team in group["teams"]}

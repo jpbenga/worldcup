@@ -7,3 +7,5 @@ V3 combine Elo courant, attaque et défense dérivées des scores historiques av
 Le backtest chronologique V2.14 porte sur 394 matchs de test. V3 obtient une log loss de `1.020`, contre `1.048` pour la baseline Elo. Dans le cas France–Suisse, l’ancien calcul favorisait la Suisse à `51.3 %`; V3 favorise la France à `68.7 %` tout en laissant une chance d’upset crédible à la Suisse.
 
 Les garde-fous interdisent les inversions fortes non expliquées, les ajustements manuels par équipe et les signaux inventés. Blessures, lineups futures, qualité subjective d’effectif, odds et ranking FIFA absent ne sont pas utilisés.
+
+V2.19 ne remplace pas V3 et ne modifie pas ses probabilités. Il sélectionne parmi les parcours complets persistés celui qui minimise la surprise globale des rangs, qualifications et tours. Les probabilités marginales sur 50 000 simulations restent séparées du scénario central affiché.
