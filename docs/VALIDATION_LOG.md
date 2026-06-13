@@ -1783,7 +1783,7 @@ Commit: `f35d058 Promote V3 as Road to the Trophy engine`
 
 ## V2.16 — Documentation Cleanup, Archive & Product Readiness
 
-Commit: TBD
+Commit: `d2a1dbd Clean up and archive project documentation`
 
 ### Technical validation
 
@@ -1798,6 +1798,37 @@ Commit: TBD
 - [x] Documentation cleanup validation passed
 - [x] Active predictions and Road to the Trophy engine unchanged
 - [x] No retrain or Optuna rerun
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Documentation cleanup accepted
+- [x] Active documentation consolidation accepted
+- [x] Archive strategy accepted
+- [x] No decision or validation deleted
+- [x] Next iteration accepted: production readiness and local operator experience
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.17 — Production Readiness & Local Operator Experience
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.16 human validation recorded
+- [x] Operator experience audit, doctor and refresh wrapper created
+- [x] Dry-run is non-destructive
+- [x] Data freshness status and preflight created
+- [x] Operations runbook updated
+- [x] No active prediction or Road to the Trophy engine change
+- [x] No retrain or Optuna rerun
+- [x] Production readiness validation passed
+- [x] Angular build and tests passed
 
 ### Human validation
 

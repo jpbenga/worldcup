@@ -1,0 +1,27 @@
+{
+  "version": "v2.17",
+  "generated_at": "2026-06-13T21:55:02Z",
+  "mode": "dry-run",
+  "simulations": 50000,
+  "steps": [
+    {
+      "name": "matchday_refresh_v2_10",
+      "status": "planned"
+    },
+    {
+      "name": "validate_matchday_refresh_v2_10",
+      "status": "optional"
+    }
+  ],
+  "validation": {
+    "requested": false,
+    "status": "not_run"
+  },
+  "critical_outputs": {},
+  "active_predictions_changed": false,
+  "road_to_the_trophy_engine_changed": false,
+  "warnings": [
+    "Initial operator plan; no refresh command executed."
+  ],
+  "errors": []
+}

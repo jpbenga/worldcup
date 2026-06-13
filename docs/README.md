@@ -9,6 +9,7 @@ Cet index est le point d’entrée de la documentation active. Les documents dé
 - [Model and simulation](MODEL_AND_SIMULATION.md) : responsabilités des moteurs et crédibilité.
 - [Data pipeline](DATA_PIPELINE.md) : acquisition, transformations et artefacts.
 - [Operations runbook](OPERATIONS_RUNBOOK.md) : commandes quotidiennes et validations locales.
+- Production readiness V2.17 ajoute un doctor, un wrapper de refresh, un statut de fraîcheur et un preflight avant push.
 
 ## Gouvernance
 

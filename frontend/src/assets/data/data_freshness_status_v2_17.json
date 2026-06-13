@@ -1,0 +1,15 @@
+{
+  "version": "v2.17",
+  "generated_at": "2026-06-13T21:55:03Z",
+  "last_matchday_refresh_at": "2026-06-12T23:34:00Z",
+  "refresh_age_hours": 22.4,
+  "real_results_locked": 3,
+  "live_matches": 0,
+  "upcoming_matches": 69,
+  "finished_matches": 3,
+  "road_to_the_trophy_engine": "SimuAI Tournament Engine V3",
+  "pre_match_engine": "quant_hybrid_v2.2",
+  "data_status": "stale",
+  "operator_message": "Run the operator refresh before publishing.",
+  "public_message": "Données mises à jour : 2026-06-12T23:34:00Z. Résultats officiels intégrés : 3."
+}

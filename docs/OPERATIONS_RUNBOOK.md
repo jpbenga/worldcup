@@ -1,5 +1,17 @@
 # Operations Runbook
 
+## Daily operator workflow
+
+```bash
+python3 backend/scripts/operator_doctor_v2_17.py
+python3 backend/scripts/run_operator_refresh_v2_17.py --dry-run
+python3 backend/scripts/run_operator_refresh_v2_17.py --fetch --simulations 50000 --validate
+python3 backend/scripts/build_data_freshness_status_v2_17.py
+python3 backend/scripts/preflight_v2_17.py
+```
+
+Le doctor et le dry-run doivent précéder tout refresh. Le refresh réel peut modifier de nombreux artefacts Matchday; vérifier le scope avant de les indexer.
+
 ## Matchday refresh
 
 Depuis la racine du dépôt :
@@ -26,6 +38,34 @@ L’application est disponible sur `http://localhost:4200`.
 npm run build
 npm test -- --watch=false
 ```
+
+## Local frontend
+
+```bash
+cd frontend
+nvm use
+npm start
+```
+
+## Before commit
+
+```bash
+python3 backend/scripts/preflight_v2_17.py
+cd frontend
+nvm use
+npm run build
+npm test -- --watch=false
+cd ..
+```
+
+## What must not change
+
+- artefacts `quant_hybrid_v2.2`;
+- `predictions.json`;
+- résumé d’étude Optuna;
+- `road_to_the_trophy_engine.json`;
+- secrets et fichier `.env`;
+- artefacts locaux de refresh hors scope.
 
 ## Contrôles avant push
 

@@ -36,6 +36,9 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 
 ## Sécurité et avant push
 
+- [ ] `operator_doctor_v2_17.py` ne signale aucun blocage.
+- [ ] `preflight_v2_17.py` passe.
+- [ ] Le statut de fraîcheur correspond au dernier manifest disponible.
 - [ ] Build et tests passent.
 - [ ] Les prédictions actives n’ont pas changé involontairement.
 - [ ] Aucun secret, `.env`, build ou dépendance n’est indexé.

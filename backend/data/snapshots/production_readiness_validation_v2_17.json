@@ -1,0 +1,27 @@
+{
+  "version": "v2.17",
+  "passed": true,
+  "operator_doctor": "warning",
+  "refresh_wrapper": "pass",
+  "data_freshness_status": "warning",
+  "preflight": "pass",
+  "active_predictions_unchanged": true,
+  "road_to_the_trophy_engine_unchanged": true,
+  "checks": {
+    "operator_audit_exists": true,
+    "operator_doctor_acceptable": true,
+    "refresh_wrapper_safe": true,
+    "freshness_status_available": true,
+    "preflight_pass": true,
+    "operations_runbook_updated": true,
+    "v2_16_human_validation_recorded": true,
+    "active_predictions_unchanged": true,
+    "road_to_the_trophy_engine_unchanged": true,
+    "api_key_not_printed": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Git worktree is dirty; review scope before commit.",
+    "Run the operator refresh before publishing."
+  ]
+}

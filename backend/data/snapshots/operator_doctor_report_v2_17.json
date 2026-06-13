@@ -1,0 +1,151 @@
+{
+  "version": "v2.17",
+  "generated_at": "2026-06-13T21:55:03Z",
+  "environment": {
+    "python_available": true,
+    "python_version": "3.10.8",
+    "node_available": true,
+    "node_version": "v22.22.3",
+    "npm_available": true,
+    "npm_version": "10.9.8",
+    "frontend_package_json": true
+  },
+  "critical_scripts": {
+    "backend/scripts/run_matchday_refresh_v2_10.py": true,
+    "backend/scripts/validate_matchday_refresh_v2_10.py": true
+  },
+  "critical_data": {
+    "backend/data/generated/predictions.json": true,
+    "backend/data/generated/quant_engine_v2_2_results.json": true,
+    "backend/data/generated/road_to_the_trophy_engine.json": true
+  },
+  "frontend_assets": {
+    "frontend/src/assets/data/predictions.json": true,
+    "frontend/src/assets/data/road_to_the_trophy_engine.json": true
+  },
+  "documentation": {
+    "operations_runbook": true
+  },
+  "api_key": {
+    "env_file_present": true,
+    "api_key_present": true,
+    "value_printed": false
+  },
+  "last_refresh": {
+    "available": true,
+    "generated_at": "2026-06-12T23:34:00Z",
+    "status": "pass",
+    "simulation_count": 50000,
+    "result_summary": {
+      "finished_matches": 3,
+      "live_matches": 0,
+      "not_started_matches": 69
+    }
+  },
+  "git_status": {
+    "dirty": true,
+    "modified_count": 60,
+    "untracked_count": 19,
+    "files": [
+      "backend/data/data_sources.json",
+      "backend/data/generated/active_vs_candidate_simulation_comparison_v2_9.json",
+      "backend/data/generated/dual_matrix_validation_v2_9.json",
+      "backend/data/generated/matchday_refresh_manifest_v2_10.json",
+      "backend/data/generated/prediction_diversity_audit.json",
+      "backend/data/generated/predictions_baseline.json",
+      "backend/data/generated/predictions_elo.json",
+      "backend/data/generated/result_consistency_validation_v2_7.json",
+      "backend/data/generated/worldcup_2026_prediction_evaluation_v2_6.json",
+      "backend/data/generated/worldcup_2026_results_v2_6.json",
+      "backend/data/generated/worldcup_knockout_structure_v2_6.json",
+      "backend/data/generated/worldcup_live_group_standings_v2_7.json",
+      "backend/data/generated/worldcup_match_state_view_model_v2_7.json",
+      "backend/data/generated/worldcup_projected_campaign_candidate_v2_9.json",
+      "backend/data/generated/worldcup_projected_campaign_v2_6.json",
+      "backend/data/generated/worldcup_tournament_simulation_candidate_v2_9.json",
+      "backend/data/generated/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "backend/data/raw/api_football/v2_6/worldcup_results/fixtures.json",
+      "backend/data/snapshots/active_vs_candidate_simulation_comparison_v2_9.json",
+      "backend/data/snapshots/data_sources.json",
+      "backend/data/snapshots/dual_matrix_validation_v2_9.json",
+      "backend/data/snapshots/matchday_refresh_manifest_v2_10.json",
+      "backend/data/snapshots/prediction_diversity_audit.json",
+      "backend/data/snapshots/predictions_baseline.json",
+      "backend/data/snapshots/predictions_elo.json",
+      "backend/data/snapshots/result_consistency_validation_v2_7.json",
+      "backend/data/snapshots/worldcup_2026_prediction_evaluation_v2_6.json",
+      "backend/data/snapshots/worldcup_2026_results_v2_6.json",
+      "backend/data/snapshots/worldcup_knockout_structure_v2_6.json",
+      "backend/data/snapshots/worldcup_live_group_standings_v2_7.json",
+      "backend/data/snapshots/worldcup_match_state_view_model_v2_7.json",
+      "backend/data/snapshots/worldcup_projected_campaign_candidate_v2_9.json",
+      "backend/data/snapshots/worldcup_projected_campaign_v2_6.json",
+      "backend/data/snapshots/worldcup_tournament_simulation_candidate_v2_9.json",
+      "backend/data/snapshots/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "docs/ACTIVE_VS_CANDIDATE_SIMULATION_COMPARISON_V2_9.md",
+      "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+      "docs/MATCHDAY_REFRESH_MANIFEST_V2_10.md",
+      "docs/OPERATIONS_RUNBOOK.md",
+      "docs/README.md",
+      "docs/VALIDATION_LOG.md",
+      "docs/WORLDCUP_2026_PREDICTION_EVALUATION_V2_6.md",
+      "docs/WORLDCUP_2026_RESULTS_FETCH_V2_6.md",
+      "docs/WORLDCUP_LIVE_GROUP_STANDINGS_V2_7.md",
+      "docs/WORLDCUP_PROJECTED_CAMPAIGN_CANDIDATE_V2_9.md",
+      "docs/WORLDCUP_TOURNAMENT_SIMULATION_CANDIDATE_V2_9.md",
+      "docs/WORLDCUP_TOURNAMENT_SIMULATION_CONDITIONED_V2_6.md",
+      "frontend/src/assets/data/active_vs_candidate_simulation_comparison_v2_9.json",
+      "frontend/src/assets/data/dual_matrix_validation_v2_9.json",
+      "frontend/src/assets/data/matchday_refresh_manifest_v2_10.json",
+      "frontend/src/assets/data/result_consistency_validation_v2_7.json",
+      "frontend/src/assets/data/worldcup_2026_prediction_evaluation_v2_6.json",
+      "frontend/src/assets/data/worldcup_2026_results_v2_6.json",
+      "frontend/src/assets/data/worldcup_knockout_structure_v2_6.json",
+      "frontend/src/assets/data/worldcup_live_group_standings_v2_7.json",
+      "frontend/src/assets/data/worldcup_match_state_view_model_v2_7.json",
+      "frontend/src/assets/data/worldcup_projected_campaign_candidate_v2_9.json",
+      "frontend/src/assets/data/worldcup_projected_campaign_v2_6.json",
+      "frontend/src/assets/data/worldcup_tournament_simulation_candidate_v2_9.json",
+      "frontend/src/assets/data/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "backend/data/generated/operator_experience_audit_v2_17.json",
+      "backend/data/generated/operator_refresh_manifest_v2_17.json",
+      "backend/data/snapshots/operator_experience_audit_v2_17.json",
+      "backend/data/snapshots/operator_refresh_manifest_v2_17.json",
+      "backend/scripts/audit_operator_experience_v2_17.py",
+      "backend/scripts/build_data_freshness_status_v2_17.py",
+      "backend/scripts/operator_doctor_v2_17.py",
+      "backend/scripts/operator_utils_v2_17.py",
+      "backend/scripts/preflight_v2_17.py",
+      "backend/scripts/run_operator_refresh_v2_17.py",
+      "backend/scripts/validate_production_readiness_v2_17.py",
+      "docs/DATA_FRESHNESS_STATUS_V2_17.md",
+      "docs/OPERATOR_DOCTOR_V2_17.md",
+      "docs/OPERATOR_EXPERIENCE_AUDIT_V2_17.md",
+      "docs/OPERATOR_REFRESH_V2_17.md",
+      "docs/PREFLIGHT_V2_17.md",
+      "docs/PRODUCTION_READINESS_STRATEGY_V2_17.md",
+      "docs/PRODUCTION_READINESS_VALIDATION_V2_17.md",
+      "frontend/src/assets/data/operator_refresh_manifest_v2_17.json"
+    ],
+    "notes": [
+      "Pre-existing Matchday refresh files are intentionally outside V2.17 scope."
+    ]
+  },
+  "operator_readiness": "warning",
+  "blocking_issues": [],
+  "warnings": [
+    "Git worktree is dirty; review scope before commit."
+  ],
+  "checks": {
+    "environment": "pass",
+    "data": "pass",
+    "road_to_the_trophy": "pass",
+    "refresh_status": "pass",
+    "git_status": "warning"
+  },
+  "engines": {
+    "pre_match": "quant_hybrid_v2.2",
+    "road_to_the_trophy": "SimuAI Tournament Engine V3"
+  },
+  "next_command": "python3 backend/scripts/run_operator_refresh_v2_17.py --dry-run"
+}
