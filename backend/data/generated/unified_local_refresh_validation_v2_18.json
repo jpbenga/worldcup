@@ -1,0 +1,27 @@
+{
+  "version": "v2.18",
+  "passed": true,
+  "dry_run_non_destructive": true,
+  "single_local_command_available": true,
+  "refresh_dependencies_documented": true,
+  "active_predictions_unchanged": true,
+  "road_to_the_trophy_engine_official": true,
+  "checks": {
+    "manifest_exists": true,
+    "single_local_command_available": true,
+    "refresh_dependencies_documented": true,
+    "data_freshness_exists": true,
+    "operator_doctor_exists": true,
+    "road_to_the_trophy_engine_official": true,
+    "road_to_the_trophy_view_model_exists": true,
+    "transparency_updated_or_documented": true,
+    "active_predictions_unchanged": true,
+    "dry_run_non_destructive": true,
+    "api_key_not_exposed": true,
+    "optuna_not_run": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Matchday-generated outputs remain local and outside the V2.18 commit."
+  ]
+}

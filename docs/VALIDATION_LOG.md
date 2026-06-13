@@ -1816,7 +1816,7 @@ Commit: `d2a1dbd Clean up and archive project documentation`
 
 ## V2.17 — Production Readiness & Local Operator Experience
 
-Commit: TBD
+Commit: `8148741 Add production readiness operator workflow`
 
 ### Technical validation
 
@@ -1829,6 +1829,40 @@ Commit: TBD
 - [x] No retrain or Optuna rerun
 - [x] Production readiness validation passed
 - [x] Angular build and tests passed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Operator workflow accepted
+- [x] Operator doctor accepted
+- [x] Preflight accepted
+- [x] Data freshness status accepted
+- [x] Local refresh warning understood
+- [x] Next iteration accepted: unified local refresh and app launch orchestrator
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.18 — Unified Local Refresh & App Launch Orchestrator
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.17 human validation recorded
+- [x] Unified dependency graph and refresh detector created
+- [x] Single local launch command created
+- [x] Dry-run is non-destructive
+- [x] Transparency and Road to the Trophy rebuilds orchestrated
+- [x] Workspace hygiene audit and policy created
+- [x] Unified local refresh validation passed
+- [x] Second auto-refresh safely skipped heavy simulation
+- [x] Angular build and tests passed
+- [x] Active predictions protected
+- [x] No retrain or Optuna rerun
 
 ### Human validation
 

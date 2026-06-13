@@ -13,3 +13,5 @@ Les responsabilités de stockage sont séparées :
 Le matchday refresh récupère les nouveaux états, reconstruit les vues dépendantes et valide leur cohérence. Les artefacts générés ne doivent être commités que lorsqu’ils font partie d’une livraison explicitement validée. Les caches temporaires, builds, dépendances, environnements virtuels, secrets et fichiers `.env` ne doivent jamais être commités.
 
 Les données futures 2026 restent séparées des données historiques utilisées pour les backtests. Une donnée indisponible ou trop sparse doit être documentée comme limite, jamais inventée.
+
+Le refresh local V2.18 orchestre toutes les couches dépendantes des résultats. Si de nouveaux scores officiels sont détectés, il reconstruit transparence, standings, état des matchs, simulation V3, scénario Road to the Trophy, fraîcheur et assets frontend. Le navigateur n’appelle jamais directement l’API.

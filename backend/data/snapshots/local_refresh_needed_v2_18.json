@@ -1,0 +1,14 @@
+{
+  "version": "v2.18",
+  "generated_at": "2026-06-13T22:20:13Z",
+  "refresh_needed": false,
+  "reasons": [],
+  "transparency_rebuild_needed": false,
+  "road_to_the_trophy_rebuild_needed": false,
+  "frontend_copy_needed": false,
+  "safe_to_skip_heavy_simulation": true,
+  "finished_results": 5,
+  "v3_locked_results": 5,
+  "requested_simulations": 50000,
+  "frontend_assets_missing": []
+}

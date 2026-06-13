@@ -1,0 +1,119 @@
+{
+  "version": "v2.18",
+  "generated_at": "2026-06-13T22:17:29Z",
+  "mode": "no-fetch",
+  "simulations": 50000,
+  "force": false,
+  "data_changed": true,
+  "new_results_detected": 2,
+  "steps": [
+    {
+      "name": "operator_doctor",
+      "script": "operator_doctor_v2_17.py",
+      "arguments": [],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "SimuMondial Operator Doctor\nEnvironment: PASS\nData: PASS\nRoad To The Trophy: PASS\nRefresh Status: PASS\nGit Status: WARNING\nNext command: python3 backend/scripts/run_operator_refresh_v2_17.py --dry-run",
+      "stderr": ""
+    },
+    {
+      "name": "matchday_results_and_views",
+      "script": "run_matchday_refresh_v2_10.py",
+      "arguments": [
+        "--simulations",
+        "50000",
+        "--no-fetch"
+      ],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "[PASS] results: V2.6 results: requests=0, finished=5, live=0, available=True\n[PASS] prediction_evaluation: V2.6 evaluation: finished=5, sample_size_too_small=True\n[PASS] live_standings: V2.7 live standings: 5 finished result(s), 12 groups\n[PASS] match_state: V2.7 match state: 72 matches, 25 modal/favorite divergences\n[PASS] active_conditioned_simulation: V2.6 conditioned simulation: locked=5, simulated=67\n[PASS] candidate_simulation: {\"simulations\": 50000, \"locked\": 5, \"future\": 67}\n[PASS] active_candidate_comparison: {\"max_qualification_delta\": 0.14167999999999997, \"proxy_leader\": \"Spain\"}\n[PASS] active_projected_campaign: V2.6 projected campaign: proxy leader=Spain\n[PASS] candidate_projected_campaign: {\"active_proxy\": \"Spain\", \"candidate_proxy\": \"Spain\"}\n[PASS] result_consistency_validation: V2.7 result consistency validation: PASS\n[PASS] dual_matrix_validation: V2.9 dual matrix validation: PASS\nV2.10 matchday refresh: PASS; finished=5; simulations=50000",
+      "stderr": ""
+    },
+    {
+      "name": "matchday_validation",
+      "script": "validate_matchday_refresh_v2_10.py",
+      "arguments": [],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "V2.10 matchday refresh validation: PASS",
+      "stderr": ""
+    },
+    {
+      "name": "prediction_history",
+      "script": "build_prediction_history_v2_12.py",
+      "arguments": [],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "V2.12 prediction history built: 72 matches, 5 evaluated",
+      "stderr": ""
+    },
+    {
+      "name": "model_scoreboard",
+      "script": "build_model_scoreboard_v2_12.py",
+      "arguments": [],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "V2.12 scoreboard built: 5 evaluated, small_sample=True",
+      "stderr": ""
+    },
+    {
+      "name": "performance_timeline",
+      "script": "build_prediction_timeline_v2_12.py",
+      "arguments": [],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "V2.12 timeline built: 3 dates, 5 matches",
+      "stderr": ""
+    },
+    {
+      "name": "tournament_engine_v3_and_road_to_the_trophy",
+      "script": "internal_v3_rebuild",
+      "arguments": [],
+      "status": "pass",
+      "reason": "official_results_changed",
+      "outputs": [
+        "tournament_simulation_engine_v3_results_v2_14.json",
+        "road_to_the_trophy_engine.json"
+      ]
+    },
+    {
+      "name": "data_freshness",
+      "script": "build_data_freshness_status_v2_17.py",
+      "arguments": [],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "Data freshness: FRESH; last refresh=2026-06-13T22:18:54Z",
+      "stderr": ""
+    },
+    {
+      "name": "road_to_the_trophy_validation",
+      "script": "validate_road_to_the_trophy_v3_promotion_v2_15.py",
+      "arguments": [],
+      "status": "pass",
+      "reason": "refresh_required",
+      "outputs": [],
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "outputs": {
+    "results": [],
+    "transparency": [],
+    "road_to_the_trophy": [],
+    "frontend_assets": []
+  },
+  "active_predictions_changed": false,
+  "road_to_the_trophy_regenerated": true,
+  "validations": {
+    "passed": true
+  },
+  "warnings": [],
+  "errors": []
+}

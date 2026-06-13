@@ -1,0 +1,1146 @@
+{
+  "version": "v2.18",
+  "generated_at": "2026-06-13T22:21:05Z",
+  "dirty": true,
+  "files": [
+    {
+      "path": "README.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/data_sources.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/active_vs_candidate_simulation_comparison_v2_9.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/data_freshness_status_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/dual_matrix_validation_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/matchday_refresh_manifest_v2_10.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/matchday_refresh_validation_v2_10.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/model_scoreboard_v2_12.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/operator_doctor_report_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/operator_refresh_manifest_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/prediction_diversity_audit.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/prediction_history_v2_12.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/prediction_performance_timeline_v2_12.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/predictions_baseline.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/predictions_elo.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/representative_tournament_scenario_v3_v2_14.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/result_consistency_validation_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/road_to_the_trophy_engine.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/road_to_the_trophy_official_view_model_v2_15.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/tournament_simulation_engine_v3_results_v2_14.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/worldcup_2026_prediction_evaluation_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_2026_results_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_knockout_structure_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_live_group_standings_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_match_state_view_model_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_projected_campaign_candidate_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_projected_campaign_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_tournament_simulation_candidate_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/raw/api_football/v2_6/worldcup_results/fixtures.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/active_vs_candidate_simulation_comparison_v2_9.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/data_freshness_status_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/data_sources.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/dual_matrix_validation_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/matchday_refresh_manifest_v2_10.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/matchday_refresh_validation_v2_10.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/model_scoreboard_v2_12.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/operator_doctor_report_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/operator_refresh_manifest_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/prediction_diversity_audit.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/prediction_history_v2_12.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/prediction_performance_timeline_v2_12.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/predictions_baseline.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/predictions_elo.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/representative_tournament_scenario_v3_v2_14.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/result_consistency_validation_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/road_to_the_trophy_engine.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/road_to_the_trophy_official_view_model_v2_15.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/tournament_simulation_engine_v3_results_v2_14.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_2026_prediction_evaluation_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_2026_results_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_knockout_structure_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_live_group_standings_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_match_state_view_model_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_projected_campaign_candidate_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_projected_campaign_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_tournament_simulation_candidate_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "docs/ACTIVE_VS_CANDIDATE_SIMULATION_COMPARISON_V2_9.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/DATA_PIPELINE.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/MATCHDAY_REFRESH_MANIFEST_V2_10.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/OPERATIONS_RUNBOOK.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/ROAD_TO_THE_TROPHY.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/VALIDATION_LOG.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_2026_PREDICTION_EVALUATION_V2_6.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_2026_RESULTS_FETCH_V2_6.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_LIVE_GROUP_STANDINGS_V2_7.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_PROJECTED_CAMPAIGN_CANDIDATE_V2_9.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_TOURNAMENT_SIMULATION_CANDIDATE_V2_9.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_TOURNAMENT_SIMULATION_CONDITIONED_V2_6.md",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/active_vs_candidate_simulation_comparison_v2_9.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/data_freshness_status_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/dual_matrix_validation_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/matchday_refresh_manifest_v2_10.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/matchday_refresh_validation_v2_10.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/model_scoreboard_v2_12.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/operator_refresh_manifest_v2_17.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/prediction_history_v2_12.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/prediction_performance_timeline_v2_12.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/representative_tournament_scenario_v3_v2_14.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/result_consistency_validation_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/road_to_the_trophy_engine.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/road_to_the_trophy_official_view_model_v2_15.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/tournament_simulation_engine_v3_results_v2_14.json",
+      "git_status": " M",
+      "refresh_related": false,
+      "tracked": true,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_2026_prediction_evaluation_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_2026_results_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_knockout_structure_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_live_group_standings_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_match_state_view_model_v2_7.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_projected_campaign_candidate_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_projected_campaign_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_tournament_simulation_candidate_v2_9.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "frontend/src/assets/data/worldcup_tournament_simulation_conditioned_v2_6.json",
+      "git_status": " M",
+      "refresh_related": true,
+      "tracked": true,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/local_refresh_needed_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/matchday_workspace_hygiene_audit_v2_18.json",
+      "git_status": "??",
+      "refresh_related": true,
+      "tracked": false,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/generated/unified_local_refresh_manifest_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/generated/unified_local_refresh_validation_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/local_refresh_needed_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/matchday_workspace_hygiene_audit_v2_18.json",
+      "git_status": "??",
+      "refresh_related": true,
+      "tracked": false,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/data/snapshots/unified_local_refresh_manifest_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/data/snapshots/unified_local_refresh_validation_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/scripts/audit_matchday_workspace_hygiene_v2_18.py",
+      "git_status": "??",
+      "refresh_related": true,
+      "tracked": false,
+      "classification": "expected_local_refresh",
+      "recommendation": "review_before_commit"
+    },
+    {
+      "path": "backend/scripts/check_local_refresh_needed_v2_18.py",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/scripts/run_unified_local_refresh_v2_18.py",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/scripts/start_local_app_v2_18.py",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/scripts/unified_local_refresh_utils_v2_18.py",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "backend/scripts/validate_unified_local_refresh_v2_18.py",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/DUAL_MATRIX_VALIDATION_V2_9.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/LOCAL_REFRESH_DEPENDENCY_GRAPH_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/LOCAL_REFRESH_NEEDED_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/MATCHDAY_REFRESH_VALIDATION_V2_10.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/MATCHDAY_WORKSPACE_HYGIENE_AUDIT_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/MATCHDAY_WORKSPACE_POLICY_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/MODEL_SCOREBOARD_V2_12.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/PREDICTION_HISTORY_V2_12.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/PREDICTION_PERFORMANCE_TIMELINE_V2_12.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/RESULT_CONSISTENCY_VALIDATION_V2_7.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/START_LOCAL_APP_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/UNIFIED_LOCAL_REFRESH_STRATEGY_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/UNIFIED_LOCAL_REFRESH_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/UNIFIED_LOCAL_REFRESH_VALIDATION_V2_18.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_MATCH_STATE_VIEW_MODEL_V2_7.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "docs/WORLDCUP_PROJECTED_CAMPAIGN_V2_6.md",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/unified_local_refresh_manifest_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    },
+    {
+      "path": "frontend/src/assets/data/unified_local_refresh_validation_v2_18.json",
+      "git_status": "??",
+      "refresh_related": false,
+      "tracked": false,
+      "classification": "iteration_or_unrelated",
+      "recommendation": "keep_out_of_scope"
+    }
+  ],
+  "expected_refresh_files": [
+    "backend/data/data_sources.json",
+    "backend/data/generated/dual_matrix_validation_v2_9.json",
+    "backend/data/generated/matchday_refresh_manifest_v2_10.json",
+    "backend/data/generated/matchday_refresh_validation_v2_10.json",
+    "backend/data/generated/prediction_diversity_audit.json",
+    "backend/data/generated/prediction_history_v2_12.json",
+    "backend/data/generated/prediction_performance_timeline_v2_12.json",
+    "backend/data/generated/predictions_baseline.json",
+    "backend/data/generated/predictions_elo.json",
+    "backend/data/generated/result_consistency_validation_v2_7.json",
+    "backend/data/generated/worldcup_2026_prediction_evaluation_v2_6.json",
+    "backend/data/generated/worldcup_2026_results_v2_6.json",
+    "backend/data/generated/worldcup_knockout_structure_v2_6.json",
+    "backend/data/generated/worldcup_live_group_standings_v2_7.json",
+    "backend/data/generated/worldcup_match_state_view_model_v2_7.json",
+    "backend/data/generated/worldcup_projected_campaign_candidate_v2_9.json",
+    "backend/data/generated/worldcup_projected_campaign_v2_6.json",
+    "backend/data/generated/worldcup_tournament_simulation_candidate_v2_9.json",
+    "backend/data/generated/worldcup_tournament_simulation_conditioned_v2_6.json",
+    "backend/data/raw/api_football/v2_6/worldcup_results/fixtures.json",
+    "backend/data/snapshots/data_sources.json",
+    "backend/data/snapshots/dual_matrix_validation_v2_9.json",
+    "backend/data/snapshots/matchday_refresh_manifest_v2_10.json",
+    "backend/data/snapshots/matchday_refresh_validation_v2_10.json",
+    "backend/data/snapshots/prediction_diversity_audit.json",
+    "backend/data/snapshots/prediction_history_v2_12.json",
+    "backend/data/snapshots/prediction_performance_timeline_v2_12.json",
+    "backend/data/snapshots/predictions_baseline.json",
+    "backend/data/snapshots/predictions_elo.json",
+    "backend/data/snapshots/result_consistency_validation_v2_7.json",
+    "backend/data/snapshots/worldcup_2026_prediction_evaluation_v2_6.json",
+    "backend/data/snapshots/worldcup_2026_results_v2_6.json",
+    "backend/data/snapshots/worldcup_knockout_structure_v2_6.json",
+    "backend/data/snapshots/worldcup_live_group_standings_v2_7.json",
+    "backend/data/snapshots/worldcup_match_state_view_model_v2_7.json",
+    "backend/data/snapshots/worldcup_projected_campaign_candidate_v2_9.json",
+    "backend/data/snapshots/worldcup_projected_campaign_v2_6.json",
+    "backend/data/snapshots/worldcup_tournament_simulation_candidate_v2_9.json",
+    "backend/data/snapshots/worldcup_tournament_simulation_conditioned_v2_6.json",
+    "frontend/src/assets/data/dual_matrix_validation_v2_9.json",
+    "frontend/src/assets/data/matchday_refresh_manifest_v2_10.json",
+    "frontend/src/assets/data/matchday_refresh_validation_v2_10.json",
+    "frontend/src/assets/data/prediction_history_v2_12.json",
+    "frontend/src/assets/data/prediction_performance_timeline_v2_12.json",
+    "frontend/src/assets/data/result_consistency_validation_v2_7.json",
+    "frontend/src/assets/data/worldcup_2026_prediction_evaluation_v2_6.json",
+    "frontend/src/assets/data/worldcup_2026_results_v2_6.json",
+    "frontend/src/assets/data/worldcup_knockout_structure_v2_6.json",
+    "frontend/src/assets/data/worldcup_live_group_standings_v2_7.json",
+    "frontend/src/assets/data/worldcup_match_state_view_model_v2_7.json",
+    "frontend/src/assets/data/worldcup_projected_campaign_candidate_v2_9.json",
+    "frontend/src/assets/data/worldcup_projected_campaign_v2_6.json",
+    "frontend/src/assets/data/worldcup_tournament_simulation_candidate_v2_9.json",
+    "frontend/src/assets/data/worldcup_tournament_simulation_conditioned_v2_6.json",
+    "backend/data/generated/matchday_workspace_hygiene_audit_v2_18.json",
+    "backend/data/snapshots/matchday_workspace_hygiene_audit_v2_18.json",
+    "backend/scripts/audit_matchday_workspace_hygiene_v2_18.py"
+  ],
+  "unexpected_dirty_files": [
+    "README.md",
+    "backend/data/generated/active_vs_candidate_simulation_comparison_v2_9.json",
+    "backend/data/generated/data_freshness_status_v2_17.json",
+    "backend/data/generated/model_scoreboard_v2_12.json",
+    "backend/data/generated/operator_doctor_report_v2_17.json",
+    "backend/data/generated/operator_refresh_manifest_v2_17.json",
+    "backend/data/generated/representative_tournament_scenario_v3_v2_14.json",
+    "backend/data/generated/road_to_the_trophy_engine.json",
+    "backend/data/generated/road_to_the_trophy_official_view_model_v2_15.json",
+    "backend/data/generated/tournament_simulation_engine_v3_results_v2_14.json",
+    "backend/data/snapshots/active_vs_candidate_simulation_comparison_v2_9.json",
+    "backend/data/snapshots/data_freshness_status_v2_17.json",
+    "backend/data/snapshots/model_scoreboard_v2_12.json",
+    "backend/data/snapshots/operator_doctor_report_v2_17.json",
+    "backend/data/snapshots/operator_refresh_manifest_v2_17.json",
+    "backend/data/snapshots/representative_tournament_scenario_v3_v2_14.json",
+    "backend/data/snapshots/road_to_the_trophy_engine.json",
+    "backend/data/snapshots/road_to_the_trophy_official_view_model_v2_15.json",
+    "backend/data/snapshots/tournament_simulation_engine_v3_results_v2_14.json",
+    "docs/ACTIVE_VS_CANDIDATE_SIMULATION_COMPARISON_V2_9.md",
+    "docs/DATA_PIPELINE.md",
+    "docs/MANUAL_VALIDATION_CHECKLISTS.md",
+    "docs/MATCHDAY_REFRESH_MANIFEST_V2_10.md",
+    "docs/OPERATIONS_RUNBOOK.md",
+    "docs/ROAD_TO_THE_TROPHY.md",
+    "docs/VALIDATION_LOG.md",
+    "docs/WORLDCUP_2026_PREDICTION_EVALUATION_V2_6.md",
+    "docs/WORLDCUP_2026_RESULTS_FETCH_V2_6.md",
+    "docs/WORLDCUP_LIVE_GROUP_STANDINGS_V2_7.md",
+    "docs/WORLDCUP_PROJECTED_CAMPAIGN_CANDIDATE_V2_9.md",
+    "docs/WORLDCUP_TOURNAMENT_SIMULATION_CANDIDATE_V2_9.md",
+    "docs/WORLDCUP_TOURNAMENT_SIMULATION_CONDITIONED_V2_6.md",
+    "frontend/src/assets/data/active_vs_candidate_simulation_comparison_v2_9.json",
+    "frontend/src/assets/data/data_freshness_status_v2_17.json",
+    "frontend/src/assets/data/model_scoreboard_v2_12.json",
+    "frontend/src/assets/data/operator_refresh_manifest_v2_17.json",
+    "frontend/src/assets/data/representative_tournament_scenario_v3_v2_14.json",
+    "frontend/src/assets/data/road_to_the_trophy_engine.json",
+    "frontend/src/assets/data/road_to_the_trophy_official_view_model_v2_15.json",
+    "frontend/src/assets/data/tournament_simulation_engine_v3_results_v2_14.json",
+    "backend/data/generated/local_refresh_needed_v2_18.json",
+    "backend/data/generated/unified_local_refresh_manifest_v2_18.json",
+    "backend/data/generated/unified_local_refresh_validation_v2_18.json",
+    "backend/data/snapshots/local_refresh_needed_v2_18.json",
+    "backend/data/snapshots/unified_local_refresh_manifest_v2_18.json",
+    "backend/data/snapshots/unified_local_refresh_validation_v2_18.json",
+    "backend/scripts/check_local_refresh_needed_v2_18.py",
+    "backend/scripts/run_unified_local_refresh_v2_18.py",
+    "backend/scripts/start_local_app_v2_18.py",
+    "backend/scripts/unified_local_refresh_utils_v2_18.py",
+    "backend/scripts/validate_unified_local_refresh_v2_18.py",
+    "docs/DUAL_MATRIX_VALIDATION_V2_9.md",
+    "docs/LOCAL_REFRESH_DEPENDENCY_GRAPH_V2_18.md",
+    "docs/LOCAL_REFRESH_NEEDED_V2_18.md",
+    "docs/MATCHDAY_REFRESH_VALIDATION_V2_10.md",
+    "docs/MATCHDAY_WORKSPACE_HYGIENE_AUDIT_V2_18.md",
+    "docs/MATCHDAY_WORKSPACE_POLICY_V2_18.md",
+    "docs/MODEL_SCOREBOARD_V2_12.md",
+    "docs/PREDICTION_HISTORY_V2_12.md",
+    "docs/PREDICTION_PERFORMANCE_TIMELINE_V2_12.md",
+    "docs/RESULT_CONSISTENCY_VALIDATION_V2_7.md",
+    "docs/START_LOCAL_APP_V2_18.md",
+    "docs/UNIFIED_LOCAL_REFRESH_STRATEGY_V2_18.md",
+    "docs/UNIFIED_LOCAL_REFRESH_V2_18.md",
+    "docs/UNIFIED_LOCAL_REFRESH_VALIDATION_V2_18.md",
+    "docs/WORLDCUP_MATCH_STATE_VIEW_MODEL_V2_7.md",
+    "docs/WORLDCUP_PROJECTED_CAMPAIGN_V2_6.md",
+    "frontend/src/assets/data/unified_local_refresh_manifest_v2_18.json",
+    "frontend/src/assets/data/unified_local_refresh_validation_v2_18.json"
+  ],
+  "automatic_deletion": false
+}

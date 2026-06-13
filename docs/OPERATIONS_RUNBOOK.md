@@ -1,5 +1,22 @@
 # Operations Runbook
 
+## Main local command
+
+```bash
+python3 backend/scripts/start_local_app_v2_18.py --auto-refresh --fetch --simulations 50000
+```
+
+Alternatives :
+
+```bash
+python3 backend/scripts/start_local_app_v2_18.py --auto-refresh --no-fetch --simulations 50000
+python3 backend/scripts/start_local_app_v2_18.py --force-refresh --fetch --simulations 50000
+python3 backend/scripts/start_local_app_v2_18.py --no-refresh
+python3 backend/scripts/start_local_app_v2_18.py --auto-refresh --no-start
+```
+
+Cette commande est locale uniquement. La clé API reste côté Python; Angular lit seulement les assets générés. La transparence et Road to the Trophy V3 sont reconstruits lorsque les résultats officiels changent. La simulation lourde n’est sautée que lorsque le détecteur confirme que cela est sûr.
+
 ## Daily operator workflow
 
 ```bash

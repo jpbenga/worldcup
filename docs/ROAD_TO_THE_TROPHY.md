@@ -7,3 +7,5 @@ SimuAI Tournament Engine V3 est l’unique moteur public de cette fonctionnalit�
 Le scénario affiché est un parcours complet cohérent choisi parmi les simulations. Il contient un vainqueur projeté, une finale projetée, les résultats de groupe, le tableau, les parcours d’équipe et les explications contextuelles des matchs. Les explications utilisent les facteurs mesurables disponibles et indiquent les données manquantes.
 
 Limites connues : le mapping officiel du tableau 2026 n’est pas encore disponible; seules cent trajectoires complètes sont persistées pour l’exploration, même si les 50 000 ont été générées et agrégées; les blessures, compositions futures et valeurs d’effectif ne sont pas utilisées faute de données fiables.
+
+Lorsqu’un nouveau résultat officiel est intégré par le refresh local V2.18, SimuAI Tournament Engine V3 et le scénario Road to the Trophy sont régénérés afin que le parcours public ne reste jamais basé sur un état plus ancien.

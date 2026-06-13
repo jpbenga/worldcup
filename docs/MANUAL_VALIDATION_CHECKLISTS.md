@@ -4,6 +4,9 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 
 ## Matchday Refresh
 
+- [ ] La commande unique V2.18 détecte correctement si un refresh est nécessaire.
+- [ ] Le dry-run V2.18 ne modifie aucun fichier.
+- [ ] Transparence et Road to the Trophy sont reconstruits après un nouveau résultat.
 - [ ] Le refresh termine sans erreur.
 - [ ] Les résultats réels et statuts sont cohérents avec la source.
 - [ ] Les matchs terminés sont verrouillés.

@@ -16,10 +16,8 @@ Road to the Trophy présente un scénario probabiliste cohérent, pas une certit
 ## Lancer l’application
 
 ```bash
-cd "/Users/chloe/Desktop/dossier sans titre/worldcup/frontend"
-nvm use
-npm install
-npm start
+cd "/Users/chloe/Desktop/dossier sans titre/worldcup"
+python3 backend/scripts/start_local_app_v2_18.py --auto-refresh --fetch --simulations 50000
 ```
 
 L’application est disponible sur `http://localhost:4200`.
