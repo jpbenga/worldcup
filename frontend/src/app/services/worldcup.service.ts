@@ -38,6 +38,10 @@ export class WorldCupService {
     return this.http.get<any>('assets/data/road_to_the_trophy_view_model_v2_13_1B.json');
   }
 
+  getRoadToTheTrophyV3CandidateViewModelV214(): Observable<any> {
+    return this.http.get<any>('assets/data/road_to_the_trophy_v3_candidate_view_model_v2_14.json');
+  }
+
   getPredictionHistoryV212(): Observable<any> {
     return this.http.get<any>('assets/data/prediction_history_v2_12.json');
   }

@@ -1,69 +1,123 @@
 <main class="min-h-screen bg-slate-950 text-slate-100">
-  <div class="mx-auto max-w-[1600px] px-4 py-8 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-[1800px] px-3 py-5 sm:px-6">
     <nav class="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-900/80 px-4 py-3">
       <a class="font-black" routerLink="/">SimuMondial <span class="text-cyan-300">2026</span></a>
       <div class="flex gap-4 text-sm text-slate-400"><a routerLink="/">Matchs</a><a routerLink="/transparence">Transparence</a></div>
     </nav>
 
     @if (vm(); as data) {
-      <header class="py-10 sm:py-14">
-        <p class="text-xs font-bold uppercase tracking-[0.2em] text-violet-300">Road to the Trophy · Scénario interactif</p>
-        <div class="mt-4 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
-          <div><h1 class="text-5xl font-black tracking-tight sm:text-7xl">{{ data.projected_winner.team }}</h1><p class="mt-3 max-w-3xl text-slate-400">Explorez comment chaque équipe peut traverser les groupes puis rejoindre le trophée. Le tableau éliminatoire est projeté et évoluera avec les résultats officiels.</p></div>
-          <div class="grid grid-cols-2 gap-3 text-sm"><div class="rounded-2xl border border-violet-500/30 bg-violet-500/10 p-4"><p class="text-slate-400">Chance de titre</p><strong class="text-3xl text-violet-300">{{ data.projected_winner.probability | percent: '1.0-0' }}</strong></div><div class="rounded-2xl border border-slate-800 bg-slate-900 p-4"><p class="text-slate-400">Format complet</p><strong class="text-3xl">{{ data.target_match_count }} matchs</strong></div></div>
+      <header class="grid gap-5 py-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-violet-300">Road to the Trophy · Tournament Atlas</p>
+          <h1 class="mt-2 text-4xl font-black tracking-tight sm:text-6xl">Arpentez les 104 matchs</h1>
+          <p class="mt-3 max-w-3xl text-slate-400">Déplacez-vous dans le tournoi, zoomez sur un groupe, suivez une équipe et inspectez chaque embranchement du scénario projeté.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="rounded-2xl border border-emerald-500/20 bg-emerald-500/10 p-3"><strong class="block text-2xl text-emerald-300">{{ data.result_summary.finished_matches }}</strong>réels verrouillés</div>
+          <div class="rounded-2xl border border-cyan-500/20 bg-cyan-500/10 p-3"><strong class="block text-2xl text-cyan-300">72</strong>matchs de groupes</div>
+          <div class="rounded-2xl border border-violet-500/20 bg-violet-500/10 p-3"><strong class="block text-2xl text-violet-300">32</strong>matchs knockout</div>
         </div>
       </header>
 
-      <section class="sticky top-2 z-20 rounded-2xl border border-slate-700 bg-slate-900/95 p-3 shadow-xl backdrop-blur">
+      <section class="mb-4 rounded-2xl border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
+        <strong>Calibration knockout en audit.</strong>
+        Les 50 000 tirages existent, mais les probabilités du tableau utilisent une force synthétique non validée qui peut surestimer les équipes issues de groupes plus faciles. {{ data.credibility_audit.calibration.lower_elo_projected_winner_count }} affiches sur {{ data.credibility_audit.calibration.projected_match_count }} projettent actuellement une équipe moins bien classée Elo.
+      </section>
+
+      @if (candidateVm(); as candidate) {
+        <section class="mb-4 grid gap-3 rounded-2xl border border-violet-400/30 bg-violet-500/10 p-4 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-violet-300">Moteur tournoi V3 · candidat en validation</p>
+            <h2 class="mt-1 text-xl font-black">Comparer sans remplacer le scénario actuel</h2>
+            <p class="mt-1 text-sm text-slate-300">Méthode : moteur de match tête-à-tête fondé sur Elo, attaque/défense mesurées et 50 000 parcours complets. Le bracket projeté reste non officiel.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button class="control" [class.control-primary]="simulationMode() === 'current'" (click)="simulationMode.set('current')">Scénario actuel</button>
+            <button class="control" [class.control-primary]="simulationMode() === 'v3_candidate'" (click)="simulationMode.set('v3_candidate')">Simulation V3 candidat</button>
+          </div>
+          @if (simulationMode() === 'v3_candidate') {
+            <div class="lg:col-span-2 grid gap-2 sm:grid-cols-3">
+              <div class="metric"><small>Champion du parcours représentatif</small><strong>{{ candidate.champion_projected.team }}</strong><span>{{ candidate.champion_projected.probability | percent: '1.1-1' }} de chances de titre</span></div>
+              <div class="metric"><small>Crédibilité</small><strong>Garde-fous passés</strong><span>Candidat non promu, en revue humaine</span></div>
+              <div class="metric"><small>Parcours complets</small><strong>50 000 générés</strong><span>100 parcours cohérents persistés et explorables</span></div>
+            </div>
+          }
+        </section>
+      }
+
+      <section class="rounded-3xl border border-slate-700 bg-slate-900/80 p-3">
         <div class="flex flex-wrap items-center gap-2">
-          <span class="mr-2 text-xs font-bold uppercase tracking-wider text-slate-500">Explorer</span>
-          <select class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm" [value]="selectedGroup()" (change)="selectedGroup.set($any($event.target).value)"><option disabled>Groupe</option>@for (group of data.groups; track group.group) { <option [value]="group.group">Groupe {{ group.group }}</option> }</select>
-          <select class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm" [value]="selectedRound()" (change)="selectedRound.set($any($event.target).value)">@for (round of data.rounds; track round.key) { <option [value]="round.key">{{ round.label }}</option> }</select>
-          <select class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm" [value]="selectedStatus()" (change)="selectedStatus.set($any($event.target).value)"><option value="all">Tous les statuts</option><option value="real">Réel</option><option value="projected">Projeté</option><option value="to_confirm">À confirmer</option></select>
-          <button class="ml-auto rounded-lg border border-slate-700 px-3 py-2 text-sm hover:bg-slate-800" (click)="reset()">Réinitialiser</button>
+          <button class="control control-primary" (click)="fitOverview()">Vue globale</button>
+          <select class="control" [value]="selectedGroup() || ''" (change)="focusGroup($any($event.target).value)"><option value="" disabled>Choisir un groupe</option>@for (group of data.groups; track group.group) { <option [value]="group.group">Focus groupe {{ group.group }}</option> }</select>
+          <select class="control" [value]="selectedRound()" (change)="$any($event.target).value === 'all' ? fitOverview() : focusRound($any($event.target).value)"><option value="all">Tous les tours</option>@for (round of data.rounds; track round.key) { <option [value]="round.key">{{ round.label }}</option> }</select>
+          <select class="control" [value]="selectedStatus()" (change)="selectedStatus.set($any($event.target).value)"><option value="all">Tous les statuts</option><option value="real">Réel</option><option value="projected">Projeté</option><option value="to_confirm">À confirmer</option></select>
+          <div class="ml-auto flex gap-1"><button class="control" aria-label="Dézoomer" (click)="zoomBy(0.75)">−</button><span class="control min-w-16 text-center">{{ zoomLevel() | percent: '1.0-0' }}</span><button class="control" aria-label="Zoomer" (click)="zoomBy(1.3)">+</button><button class="control" (click)="reset()">Reset</button></div>
         </div>
       </section>
 
-      <section class="mt-8 grid gap-6 xl:grid-cols-[0.85fr_1.8fr]">
-        <article class="rounded-3xl border border-cyan-500/20 bg-slate-900/70 p-5">
-          <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-300">Phase de groupes</p>
-          <div class="mt-4 flex flex-wrap gap-2">@for (group of data.groups; track group.group) { <button class="h-9 w-9 rounded-full border text-sm font-bold" [class.border-cyan-400]="selectedGroup() === group.group" [class.bg-cyan-400]="selectedGroup() === group.group" [class.text-slate-950]="selectedGroup() === group.group" [class.border-slate-700]="selectedGroup() !== group.group" (click)="selectedGroup.set(group.group)">{{ group.group }}</button> }</div>
-          @if (activeGroup(); as group) {
-            <h2 class="mt-6 text-2xl font-black">{{ group.label }}</h2>
-            <div class="mt-4 space-y-2">@for (team of group.teams; track team.name) { <button class="flex w-full items-center gap-3 rounded-xl border px-3 py-3 text-left transition hover:bg-cyan-400/10" [class.border-cyan-400]="isHighlighted(team.name)" [class.border-slate-800]="!isHighlighted(team.name)" (click)="selectTeam(team.name)">@if (team.logo_url) { <img class="h-7 w-7 object-contain" [src]="team.logo_url" [alt]="team.name" /> }<strong class="flex-1">{{ team.name }}</strong><span class="text-xs text-slate-500">Voir le parcours</span></button> }</div>
-            <h3 class="mt-6 text-xs font-bold uppercase tracking-wider text-amber-300">Qualifiés projetés</h3>
-            <div class="mt-2 space-y-2">@for (team of group.projected_qualifiers; track team.team) { <button class="flex w-full justify-between rounded-lg bg-slate-950/70 px-3 py-2 text-left text-sm" (click)="selectTeam(team.team)"><span>{{ team.team }} · {{ team.slot }}</span><strong class="text-amber-300">{{ team.qualification_probability | percent: '1.0-0' }}</strong></button> }</div>
-          }
-        </article>
+      <section class="mt-4 grid gap-4 xl:grid-cols-[1fr_340px]">
+        <div #atlasViewport class="atlas-viewport" aria-label="Carte interactive des 104 matchs">
+          <div #atlasWorld class="atlas-world" [style.width.px]="worldWidth" [style.height.px]="worldHeight">
+            <div class="atlas-stage-label" style="left: 50px">PHASE DE GROUPES · 72 MATCHS</div>
+            @for (round of data.rounds; track round.key; let roundIndex = $index) { <div class="atlas-stage-label" [style.left.px]="roundX[roundIndex]">{{ round.label }}</div> }
 
-        <article class="rounded-3xl border border-violet-500/20 bg-slate-900/70 p-5">
-          <div class="flex flex-wrap items-end justify-between gap-3"><div><p class="text-xs font-bold uppercase tracking-[0.2em] text-violet-300">Tableau éliminatoire</p><h2 class="mt-2 text-2xl font-black">{{ activeRound()?.label }}</h2></div><div class="flex gap-2 text-xs"><span class="rounded-full bg-emerald-400/10 px-2 py-1 text-emerald-300">Réel</span><span class="rounded-full bg-violet-400/10 px-2 py-1 text-violet-300">Projeté</span><span class="rounded-full bg-slate-800 px-2 py-1">À confirmer</span></div></div>
-          <p class="mt-3 text-sm text-slate-400">Les appariements restent un scénario dérivé des simulations tant que le tableau officiel n’est pas disponible.</p>
-          <div class="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-            @if (selectedStatus() === 'all' || selectedStatus() === 'projected' || selectedStatus() === 'to_confirm') {
-              @for (match of activeRound()?.matches; track match.match_id) {
-                <button class="rounded-2xl border p-3 text-left transition hover:border-violet-400" [class.border-violet-400]="selectedMatchId() === match.match_id" [class.border-slate-800]="selectedMatchId() !== match.match_id" [class.ring-2]="isHighlighted(match.team_a) || isHighlighted(match.team_b)" [class.ring-cyan-400]="isHighlighted(match.team_a) || isHighlighted(match.team_b)" (click)="selectMatch(match)">
-                  <p class="mb-2 text-[10px] font-bold uppercase tracking-wider text-violet-300">Projeté · à confirmer</p>
-                  <div class="space-y-2">@for (team of [{ name: match.team_a, probability: match.team_a_win_probability, logo: match.team_a_logo_url }, { name: match.team_b, probability: match.team_b_win_probability, logo: match.team_b_logo_url }]; track team.name) { <div class="flex items-center gap-2 rounded-lg bg-slate-950 px-2 py-2">@if (team.logo) { <img class="h-5 w-5 object-contain" [src]="team.logo" [alt]="team.name" /> }<span class="min-w-0 flex-1 truncate font-semibold">{{ team.name }}</span><span>{{ team.probability | percent: '1.0-0' }}</span></div> }</div>
+            <svg class="atlas-connections" [attr.viewBox]="'0 0 ' + worldWidth + ' ' + worldHeight" aria-hidden="true">
+              @for (group of data.groups; track group.group; let groupIndex = $index) {
+                @for (link of group.knockout_links; track link) {
+                  <path [attr.d]="groupPath(groupIndex, roundMatchIndex(data.rounds[0], link))" [class.path-active]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group"></path>
+                }
+              }
+              @for (round of data.rounds.slice(0, -1); track round.key; let roundIndex = $index) {
+                @for (match of round.matches; track match.match_id; let matchIndex = $index) {
+                  <path [attr.d]="knockoutPath(roundIndex, matchIndex, round.matches.length, roundMatchIndex(data.rounds[roundIndex + 1], match.next_match_id), data.rounds[roundIndex + 1].matches.length)" [class.path-active]="isMatchHighlighted(match)"></path>
+                }
+              }
+            </svg>
+
+            @for (group of data.groups; track group.group; let groupIndex = $index) {
+              <article class="group-node atlas-node" [class.node-focus]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [style.left.px]="groupPosition(groupIndex).x" [style.top.px]="groupPosition(groupIndex).y">
+                <button class="node-heading" (click)="focusGroup(group.group)"><span>Groupe {{ group.group }}</span><small>{{ group.state === 'volatile' ? 'Très ouvert' : group.state === 'open' ? 'Ouvert' : 'Avantage établi' }}</small></button>
+                <table><thead><tr><th>#</th><th>Équipe</th><th>J</th><th>Pts</th><th>Qualif.</th></tr></thead><tbody>@for (team of group.teams; track team.name) { <tr [class.team-focus]="isTeamHighlighted(team.name)" (click)="selectTeam(team.name)"><td>{{ team.current_rank }}</td><td><img [src]="team.logo_url" [alt]="team.name" />{{ team.name }}</td><td>{{ team.played }}</td><td>{{ team.points }}</td><td>{{ team.qualification_probability | percent: '1.0-0' }}</td></tr> }</tbody></table>
+                <div class="group-matches">@for (match of group.matches; track match.match_id) { <button [class.match-focus]="isMatchHighlighted(match)" [class.match-real]="match.status === 'real'" [class.match-muted]="!isMatchVisible(match)" (click)="selectMatch(match)"><span>{{ match.home_team }} <strong>{{ match.score }}</strong> {{ match.away_team }}</span><small>{{ match.status === 'real' ? 'Réel' : 'Prono' }}</small></button> }</div>
+              </article>
+            }
+
+            @for (round of data.rounds; track round.key; let roundIndex = $index) {
+              @for (match of round.matches; track match.match_id; let matchIndex = $index) {
+                <button class="knockout-node atlas-node" [class.node-muted]="!isMatchVisible(match, round.key)" [class.node-focus]="selectedMatchId() === match.match_id || isMatchHighlighted(match)" [style.left.px]="matchPosition(roundIndex, matchIndex, round.matches.length).x" [style.top.px]="matchPosition(roundIndex, matchIndex, round.matches.length).y - 52" (click)="selectMatch(match)">
+                  <small>Projeté · à confirmer</small>
+                  <span [class.team-focus]="isTeamHighlighted(match.team_a)">{{ match.team_a }} <strong>{{ match.team_a_win_probability | percent: '1.0-0' }}</strong></span>
+                  <span [class.team-focus]="isTeamHighlighted(match.team_b)">{{ match.team_b }} <strong>{{ match.team_b_win_probability | percent: '1.0-0' }}</strong></span>
                 </button>
               }
-              @if (selectedRound() === 'final') {
-                <article class="rounded-2xl border border-dashed border-slate-700 p-4"><p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Petite finale · à confirmer</p><p class="mt-3 text-sm text-slate-500">Les deux perdants des demi-finales seront connus après confirmation du tableau.</p></article>
-              }
-            } @else { <p class="col-span-full rounded-2xl border border-dashed border-slate-700 p-8 text-center text-sm text-slate-400">Aucun match réel n’est encore disponible dans ce tour.</p> }
+            }
+            <article class="trophy-node atlas-node"><small>Vainqueur projeté</small><strong>{{ data.projected_winner.team }}</strong><span>{{ data.projected_winner.probability | percent: '1.0-0' }} de chances de titre</span></article>
           </div>
-        </article>
-      </section>
+          <div class="atlas-hint">Glisser pour se déplacer · Molette ou pincement pour zoomer · Cliquer pour inspecter</div>
+        </div>
 
-      <section class="mt-6 rounded-3xl border border-slate-800 bg-slate-900/70 p-5">
-        @if (selectedMatch(); as match) {
-          <p class="text-xs font-bold uppercase tracking-[0.2em] text-violet-300">Détail du match projeté</p><h2 class="mt-2 text-2xl font-black">{{ match.team_a }} vs {{ match.team_b }}</h2><p class="mt-2 text-sm text-slate-400">{{ match.projected_winner }} est projeté qualifié. Cet appariement reste à confirmer officiellement.</p><div class="mt-4 flex gap-3"><button class="rounded-xl bg-slate-950 px-4 py-2" (click)="selectTeam(match.team_a)">Parcours {{ match.team_a }}</button><button class="rounded-xl bg-slate-950 px-4 py-2" (click)="selectTeam(match.team_b)">Parcours {{ match.team_b }}</button></div>
-        } @else if (selectedTeam(); as team) {
-          <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-300">Parcours sélectionné</p><h2 class="mt-2 text-2xl font-black">{{ team }} vers le trophée</h2><div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">@for (step of selectedTeamPath(); track step.match_id) { <button class="rounded-xl border border-slate-800 bg-slate-950/60 p-3 text-left" (click)="selectedRound.set(step.round); selectedMatchId.set(step.match_id)"><p class="text-xs text-slate-500">{{ step.round }}</p><p class="mt-1 font-bold">vs {{ step.opponent }}</p><p class="mt-2 text-cyan-300">{{ step.advance_probability | percent: '1.0-0' }} de passer</p></button> } @empty { <p class="text-sm text-slate-400">Cette équipe n’apparaît pas dans le scénario de tableau le plus probable.</p> }</div>
-        } @else { <p class="text-center text-sm text-slate-400">Sélectionnez une équipe ou un match pour suivre son histoire dans le tournoi.</p> }
+        <aside class="inspector">
+          @if (selectedMatch(); as match) {
+            <p class="eyebrow">Match inspecté</p>
+            <h2>{{ match.home_team || match.team_a }} <span>vs</span> {{ match.away_team || match.team_b }}</h2>
+            @if (match.matchday) { <p class="meta">{{ match.matchday }} · {{ match.kickoff_at | date: 'd MMM, HH:mm' }}</p> }
+            @if (match.score) { <div class="score-block"><small>{{ match.score_label }}</small><strong>{{ match.score }}</strong><span>{{ match.detail_label }}</span></div> }
+            @if (match.projected_winner) { <div class="score-block projected"><small>Projection issue des simulations</small><strong>{{ match.projected_winner }}</strong><span>qualifié dans ce scénario représentatif</span></div> }
+            <div class="mt-4 flex flex-wrap gap-2"><button class="control" (click)="selectTeam(match.home_team || match.team_a)">Suivre {{ match.home_team || match.team_a }}</button><button class="control" (click)="selectTeam(match.away_team || match.team_b)">Suivre {{ match.away_team || match.team_b }}</button></div>
+          } @else if (selectedTeamPath(); as path) {
+            <p class="eyebrow">Parcours d’équipe</p><div class="flex items-center gap-3">@if (path.logo_url) { <img class="h-12 w-12 object-contain" [src]="path.logo_url" [alt]="path.team" /> }<h2>{{ path.team }}</h2></div>
+            <div class="mt-4 grid grid-cols-2 gap-2 text-sm"><div class="metric"><small>Classement actuel</small><strong>{{ path.current_rank }}e · {{ path.points }} pts</strong></div><div class="metric"><small>Chance de qualification</small><strong>{{ path.qualification_probability | percent: '1.0-0' }}</strong></div></div>
+            <h3>Ses matchs de groupe</h3>@for (match of path.group_matches; track match.match_id) { <button class="journey-step" (click)="selectMatch(match)"><span>{{ match.home_team }} <strong>{{ match.score }}</strong> {{ match.away_team }}</span><small>{{ match.status === 'real' ? 'Réel' : 'Projeté' }}</small></button> }
+            <h3>Son chemin projeté</h3>@for (step of path.knockout_path; track step.match_id) { <button class="journey-step" (click)="selectedMatchId.set(step.match_id)"><span>{{ step.round }} · vs {{ step.opponent }}</span><strong>{{ step.advance_probability | percent: '1.0-0' }}</strong></button> } @empty { <p class="meta">Cette équipe ne rejoint pas le tableau dans le scénario représentatif actuel.</p> }
+          } @else {
+            <p class="eyebrow">Point de départ</p><h2>{{ data.projected_winner.team }} mène le scénario</h2><p class="meta">Sélectionnez une équipe dans un classement, une rencontre de groupe ou un match du tableau pour exploiter la simulation.</p>
+            <div class="score-block projected"><small>Finale projetée</small><strong>{{ data.projected_final.teams[0].team }}</strong><span>vs {{ data.projected_final.teams[1].team }}</span></div>
+            <div class="score-block warning"><small>Crédibilité du scénario</small><strong>Calibration à revoir</strong><span>Deux blocs de 50 000 tirages existent, mais pas 50 000 Coupes du monde complètes.</span></div>
+          }
+          <div class="legend"><span><i class="real"></i>Réel</span><span><i class="projected"></i>Projeté</span><span><i class="confirm"></i>À confirmer</span></div>
+        </aside>
       </section>
-
-      <details class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"><summary class="cursor-pointer font-semibold">Méthode et limites</summary><div class="mt-3 space-y-2 text-sm text-slate-400">@for (limitation of data.limitations; track limitation) { <p>{{ limitation }}</p> }</div></details>
+      <p class="mt-4 text-xs leading-5 text-slate-500">Le tableau éliminatoire est un scénario cohérent dérivé de 50 000 simulations sur un bracket projeté fixe. Il ne constitue pas le bracket officiel FIFA.</p>
     }
   </div>
 </main>

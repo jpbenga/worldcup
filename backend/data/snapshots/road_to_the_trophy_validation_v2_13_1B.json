@@ -1,12 +1,16 @@
 {
   "version": "v2.13.1B",
+  "passed": true,
   "status": "PASS",
   "checks": {
     "groups": 12,
+    "group_matches": 72,
+    "group_standings": 12,
     "projected_knockout_matches": 31,
     "third_place_placeholder": true,
     "simulation_count": 50000,
     "official_bracket_claimed": false,
+    "credibility_warning_present": true,
     "copies_match": true
   }
 }

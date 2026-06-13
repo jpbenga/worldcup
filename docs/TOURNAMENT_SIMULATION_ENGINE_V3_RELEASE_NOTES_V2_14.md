@@ -1,0 +1,3 @@
+# Tournament Simulation Engine V3 Release Notes V2.14
+
+V2.14 introduces a non-promoted tournament simulation candidate based on audited data. It replaces the conceptual flaw of using group reaching probability as direct matchup strength with an explainable Elo plus time-decayed attack/defense Poisson model. It adds a chronological backtest, football credibility guardrails, contextual explanations, 50,000 end-to-end tournament simulations with varying qualifiers, coherent representative-path extraction and a candidate Road to the Trophy data contract. The active quant_hybrid_v2.2 predictions remain unchanged.

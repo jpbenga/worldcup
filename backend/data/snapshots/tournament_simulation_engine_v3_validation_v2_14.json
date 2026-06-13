@@ -1,0 +1,14 @@
+{
+  "version": "v2.14",
+  "passed": true,
+  "candidate_promotable": false,
+  "promotion_reason": "Technical candidate complete, but broader calibration and official bracket mapping remain required.",
+  "blocking_issues": [
+    "Official knockout mapping unavailable",
+    "Candidate not yet human-validated"
+  ],
+  "warnings": [
+    "Official 2026 knockout mapping is unavailable; projected dynamic seeding is explicitly non-official.",
+    "Only 100 complete paths are persisted; all 50,000 were generated and aggregated."
+  ]
+}

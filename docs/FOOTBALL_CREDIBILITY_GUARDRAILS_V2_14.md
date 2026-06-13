@@ -1,0 +1,3 @@
+# Football Credibility Guardrails V2.14
+
+A strong measured rating advantage cannot become an unexplained underdog. Outsiders can win individual draws but should not become favorites without measurable evidence. Probabilities must sum to one, balanced matches may remain close, and large gaps must remain visible without making favorites certain. Ease of group affects who reaches the bracket, never direct matchup strength. Mandatory cases include France-Switzerland, Brazil-Mexico, France and Spain against lower-rated teams, a high-gap case and a balanced case. Any unjustified inversion is a credibility warning.

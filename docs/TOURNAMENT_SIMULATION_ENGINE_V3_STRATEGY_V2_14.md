@@ -1,0 +1,3 @@
+# Tournament Simulation Engine V3 Strategy V2.14
+
+A tournament simulation is only as credible as its underlying match model. Repeating a weak assumption 50,000 times only estimates that weak assumption precisely. V3 separates the direct match model, tournament rules, Monte Carlo execution and user explanation. Reaching probability is never reused as head-to-head strength. An upset is acceptable; an unjustified favorite inversion is not. Only audited repository data is used. Injuries, future lineups, squad value, odds and FIFA ranking are declared missing rather than invented. This is a candidate under review and does not replace quant_hybrid_v2.2.

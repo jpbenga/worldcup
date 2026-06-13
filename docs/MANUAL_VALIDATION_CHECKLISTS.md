@@ -258,6 +258,23 @@ Notes :
 À compléter par la personne qui effectue la validation humaine.
 ```
 
+## Checklist V2.13.1B — Road to the Trophy Tournament Atlas
+
+- [x] Technology research corrected and expanded
+- [x] D3 dependency scope documented
+- [x] 104-match target represented
+- [x] 72 group matches visible in the atlas
+- [x] 12 live group standings visible
+- [x] Group-to-knockout connections visible
+- [x] Round-to-round connections visible
+- [x] Pan, wheel zoom and touch zoom implemented
+- [x] Animated overview, group and round focus implemented
+- [x] Team journey inspector implemented
+- [x] Match inspector implemented
+- [x] Real, projected and to-confirm filters implemented
+- [x] Official bracket not invented
+- [ ] Human visual validation completed
+
 ## Checklist V2.13 — Living World Cup Bracket & Scenario Engine
 
 - [x] V2.12 human validation recorded
@@ -864,3 +881,21 @@ Notes :
 ```text
 À compléter par la personne qui effectue la validation humaine.
 ```
+## Checklist V2.14 — Tournament Simulation Engine V3 Research, Backtest & Candidate Build
+
+- [x] V2.13.1B validation with reservations recorded
+- [x] Strategy, method research, data audit and allowlist created
+- [x] Current simulator audited
+- [x] Match probability engine V3 candidate and explanation layer built
+- [x] Backtest and football credibility guardrails completed
+- [x] 50,000 full tournament simulations generated
+- [x] Full paths generated; persisted sample limitation documented
+- [x] Coherent representative scenario extracted
+- [x] France vs Switzerland credibility case evaluated
+- [x] Road to the Trophy V3 candidate view model generated
+- [x] Frontend candidate comparison integrated without replacing active view
+- [x] No invented data or direct group qualification strength used
+- [x] Active predictions unchanged; candidate not promoted
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] No secret committed

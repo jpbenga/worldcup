@@ -1,0 +1,42 @@
+{
+  "version": "v2.14",
+  "rules": [
+    "strong Elo advantage cannot become outsider without two measured factors",
+    "upsets remain possible",
+    "group ease is never direct match strength",
+    "probabilities must sum to one"
+  ],
+  "cases": [
+    {
+      "case": "France vs Switzerland",
+      "favorite": "France",
+      "warning": "",
+      "pass": true
+    },
+    {
+      "case": "Brazil vs Mexico",
+      "favorite": "Brazil",
+      "warning": "",
+      "pass": true
+    },
+    {
+      "case": "France vs Haiti",
+      "favorite": "France",
+      "warning": "",
+      "pass": true
+    },
+    {
+      "case": "Spain vs Cape Verde Islands",
+      "favorite": "Spain",
+      "warning": "",
+      "pass": true
+    },
+    {
+      "case": "Germany vs Netherlands",
+      "favorite": "Netherlands",
+      "warning": "",
+      "pass": true
+    }
+  ],
+  "passed": true
+}

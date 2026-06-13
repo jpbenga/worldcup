@@ -1,16 +1,23 @@
 # Road to the Trophy UX Review V2.13.1B
 
-## Review
+## Corrective review
 
-- Users can access all 12 groups without scrolling through the full tournament.
-- Team buttons reveal and highlight the selected projected path.
-- Match cards open contextual details and link back to team paths.
-- Round, group, and status selectors remain visible near the top.
-- Reset clears the exploration state.
-- Mobile presents one round at a time and uses responsive grids.
-- Real, projected, and to-confirm language is visible before interaction.
-- Empty real-status results explain why no cards appear.
+The original V2.13.1B interface was rejected because it looked like filtered lists rather than an interactive tournament. It exposed teams but hid group matches and standings, showed only one knockout round at a time, and did not provide spatial navigation or a complete route.
 
-## Boundary check
+## Tournament Atlas review
 
-No match modal, home match card, active prediction, candidate model, or experimental scenario behavior was changed.
+- Road to the Trophy and Tournament Atlas are visible product concepts.
+- The overview represents 12 group nodes containing 72 match entries and 32 knockout target nodes.
+- Every group displays its live ranking, points, qualification probabilities, and all six fixtures.
+- Real group results and upcoming SimuAI scores are visually distinct.
+- Connections show how projected group qualifiers feed the round of 32 and how winners move between rounds.
+- Mouse drag, wheel zoom, touch pinch, zoom buttons, animated group focus, animated round focus, overview, and reset are available.
+- Clicking a team highlights its group and projected path and opens the team journey inspector.
+- Clicking a group or knockout match opens a contextual match inspector.
+- The inspector displays group history, projected opponents, probabilities, and the absence of an official bracket.
+- Status filters affect group match entries and knockout nodes.
+- Mobile keeps the atlas touch-navigable and places the inspector below it.
+
+## Product boundary
+
+The alternative model is not central. Match cards outside `/simulation`, active predictions, retraining, and Optuna remain untouched. The knockout scenario is always labeled projected and to confirm.

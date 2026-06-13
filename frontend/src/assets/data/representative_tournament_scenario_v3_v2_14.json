@@ -1,0 +1,759 @@
+{
+  "version": "v2.14",
+  "method": "highest marginal-coherence persisted complete path among paths containing the most frequent champion",
+  "coherence_score": 22.606319999999993,
+  "champion": "Spain",
+  "final": {
+    "team_a": "Spain",
+    "team_b": "Germany",
+    "winner": "Spain",
+    "team_a_advance_probability": 0.7456681859529193
+  },
+  "semi_finals": [
+    {
+      "team_a": "Spain",
+      "team_b": "Netherlands",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.7421167260832217
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Mexico",
+      "winner": "Germany",
+      "team_a_advance_probability": 0.5534432371764667
+    }
+  ],
+  "quarter_finals": [
+    {
+      "team_a": "Spain",
+      "team_b": "France",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.6432164280011143
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Netherlands",
+      "winner": "Netherlands",
+      "team_a_advance_probability": 0.5684213531813289
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Croatia",
+      "winner": "Germany",
+      "team_a_advance_probability": 0.5880199569794166
+    },
+    {
+      "team_a": "Uruguay",
+      "team_b": "Mexico",
+      "winner": "Mexico",
+      "team_a_advance_probability": 0.511587302726141
+    }
+  ],
+  "round_of_16": [
+    {
+      "team_a": "Spain",
+      "team_b": "Argentina",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.5547252818054507
+    },
+    {
+      "team_a": "France",
+      "team_b": "England",
+      "winner": "France",
+      "team_a_advance_probability": 0.527714111559815
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Portugal",
+      "winner": "Brazil",
+      "team_a_advance_probability": 0.5333908231763838
+    },
+    {
+      "team_a": "Netherlands",
+      "team_b": "Ecuador",
+      "winner": "Netherlands",
+      "team_a_advance_probability": 0.5550710462912062
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Norway",
+      "winner": "Germany",
+      "team_a_advance_probability": 0.5445656553541209
+    },
+    {
+      "team_a": "Croatia",
+      "team_b": "Japan",
+      "winner": "Croatia",
+      "team_a_advance_probability": 0.46633609943476517
+    },
+    {
+      "team_a": "Belgium",
+      "team_b": "Uruguay",
+      "winner": "Uruguay",
+      "team_a_advance_probability": 0.48993600683029703
+    },
+    {
+      "team_a": "Switzerland",
+      "team_b": "Mexico",
+      "winner": "Mexico",
+      "team_a_advance_probability": 0.4758900672639371
+    }
+  ],
+  "round_of_32": [
+    {
+      "team_a": "Spain",
+      "team_b": "Qatar",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.9682254558988023
+    },
+    {
+      "team_a": "Argentina",
+      "team_b": "Türkiye",
+      "winner": "Argentina",
+      "team_a_advance_probability": 0.9472623408123887
+    },
+    {
+      "team_a": "France",
+      "team_b": "Congo DR",
+      "winner": "France",
+      "team_a_advance_probability": 0.9140006139483897
+    },
+    {
+      "team_a": "England",
+      "team_b": "Cape Verde Islands",
+      "winner": "England",
+      "team_a_advance_probability": 0.8945166586309093
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Ghana",
+      "winner": "Brazil",
+      "team_a_advance_probability": 0.9118219085545873
+    },
+    {
+      "team_a": "Portugal",
+      "team_b": "New Zealand",
+      "winner": "Portugal",
+      "team_a_advance_probability": 0.8707970433198539
+    },
+    {
+      "team_a": "Netherlands",
+      "team_b": "Uzbekistan",
+      "winner": "Netherlands",
+      "team_a_advance_probability": 0.717229645478065
+    },
+    {
+      "team_a": "Ecuador",
+      "team_b": "South Korea",
+      "winner": "Ecuador",
+      "team_a_advance_probability": 0.6767044675344849
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Algeria",
+      "winner": "Germany",
+      "team_a_advance_probability": 0.7331256800192469
+    },
+    {
+      "team_a": "Norway",
+      "team_b": "Iran",
+      "winner": "Norway",
+      "team_a_advance_probability": 0.652046176210202
+    },
+    {
+      "team_a": "Croatia",
+      "team_b": "Australia",
+      "winner": "Croatia",
+      "team_a_advance_probability": 0.5953117216064766
+    },
+    {
+      "team_a": "Japan",
+      "team_b": "Scotland",
+      "winner": "Japan",
+      "team_a_advance_probability": 0.7200990616322083
+    },
+    {
+      "team_a": "Belgium",
+      "team_b": "Morocco",
+      "winner": "Belgium",
+      "team_a_advance_probability": 0.5876362378670515
+    },
+    {
+      "team_a": "Uruguay",
+      "team_b": "Austria",
+      "winner": "Uruguay",
+      "team_a_advance_probability": 0.6008783156665045
+    },
+    {
+      "team_a": "Switzerland",
+      "team_b": "Paraguay",
+      "winner": "Switzerland",
+      "team_a_advance_probability": 0.6238188513291624
+    },
+    {
+      "team_a": "Mexico",
+      "team_b": "Senegal",
+      "winner": "Mexico",
+      "team_a_advance_probability": 0.5203069548238944
+    }
+  ],
+  "group_stage": {
+    "A": {
+      "order": [
+        "South Korea",
+        "Mexico",
+        "Czech Republic",
+        "South Africa"
+      ],
+      "matches": [
+        {
+          "team_a": "Mexico",
+          "team_b": "South Africa",
+          "score": "2-0",
+          "locked": true
+        },
+        {
+          "team_a": "South Korea",
+          "team_b": "Czech Republic",
+          "score": "2-1",
+          "locked": true
+        },
+        {
+          "team_a": "Czech Republic",
+          "team_b": "South Africa",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Mexico",
+          "team_b": "South Korea",
+          "score": "0-2",
+          "locked": false
+        },
+        {
+          "team_a": "Czech Republic",
+          "team_b": "Mexico",
+          "score": "1-2",
+          "locked": false
+        },
+        {
+          "team_a": "South Africa",
+          "team_b": "South Korea",
+          "score": "1-2",
+          "locked": false
+        }
+      ]
+    },
+    "B": {
+      "order": [
+        "Qatar",
+        "Switzerland",
+        "Canada",
+        "Bosnia & Herzegovina"
+      ],
+      "matches": [
+        {
+          "team_a": "Canada",
+          "team_b": "Bosnia & Herzegovina",
+          "score": "1-1",
+          "locked": true
+        },
+        {
+          "team_a": "Qatar",
+          "team_b": "Switzerland",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Switzerland",
+          "team_b": "Bosnia & Herzegovina",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Canada",
+          "team_b": "Qatar",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Switzerland",
+          "team_b": "Canada",
+          "score": "3-1",
+          "locked": false
+        },
+        {
+          "team_a": "Bosnia & Herzegovina",
+          "team_b": "Qatar",
+          "score": "0-2",
+          "locked": false
+        }
+      ]
+    },
+    "C": {
+      "order": [
+        "Morocco",
+        "Brazil",
+        "Scotland",
+        "Haiti"
+      ],
+      "matches": [
+        {
+          "team_a": "Brazil",
+          "team_b": "Morocco",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Haiti",
+          "team_b": "Scotland",
+          "score": "0-1",
+          "locked": false
+        },
+        {
+          "team_a": "Scotland",
+          "team_b": "Morocco",
+          "score": "0-1",
+          "locked": false
+        },
+        {
+          "team_a": "Brazil",
+          "team_b": "Haiti",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Morocco",
+          "team_b": "Haiti",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Scotland",
+          "team_b": "Brazil",
+          "score": "0-1",
+          "locked": false
+        }
+      ]
+    },
+    "D": {
+      "order": [
+        "Australia",
+        "Paraguay",
+        "Türkiye",
+        "USA"
+      ],
+      "matches": [
+        {
+          "team_a": "USA",
+          "team_b": "Paraguay",
+          "score": "2-2",
+          "locked": false
+        },
+        {
+          "team_a": "Australia",
+          "team_b": "Türkiye",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "USA",
+          "team_b": "Australia",
+          "score": "0-3",
+          "locked": false
+        },
+        {
+          "team_a": "Türkiye",
+          "team_b": "Paraguay",
+          "score": "0-1",
+          "locked": false
+        },
+        {
+          "team_a": "Türkiye",
+          "team_b": "USA",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Paraguay",
+          "team_b": "Australia",
+          "score": "1-2",
+          "locked": false
+        }
+      ]
+    },
+    "E": {
+      "order": [
+        "Ecuador",
+        "Germany",
+        "Curaçao",
+        "Ivory Coast"
+      ],
+      "matches": [
+        {
+          "team_a": "Germany",
+          "team_b": "Curaçao",
+          "score": "7-0",
+          "locked": false
+        },
+        {
+          "team_a": "Ivory Coast",
+          "team_b": "Ecuador",
+          "score": "2-2",
+          "locked": false
+        },
+        {
+          "team_a": "Germany",
+          "team_b": "Ivory Coast",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Ecuador",
+          "team_b": "Curaçao",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Ecuador",
+          "team_b": "Germany",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Curaçao",
+          "team_b": "Ivory Coast",
+          "score": "1-0",
+          "locked": false
+        }
+      ]
+    },
+    "F": {
+      "order": [
+        "Netherlands",
+        "Japan",
+        "Tunisia",
+        "Sweden"
+      ],
+      "matches": [
+        {
+          "team_a": "Netherlands",
+          "team_b": "Japan",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Sweden",
+          "team_b": "Tunisia",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Netherlands",
+          "team_b": "Sweden",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Tunisia",
+          "team_b": "Japan",
+          "score": "0-4",
+          "locked": false
+        },
+        {
+          "team_a": "Japan",
+          "team_b": "Sweden",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Tunisia",
+          "team_b": "Netherlands",
+          "score": "1-1",
+          "locked": false
+        }
+      ]
+    },
+    "G": {
+      "order": [
+        "Belgium",
+        "New Zealand",
+        "Iran",
+        "Egypt"
+      ],
+      "matches": [
+        {
+          "team_a": "Belgium",
+          "team_b": "Egypt",
+          "score": "4-0",
+          "locked": false
+        },
+        {
+          "team_a": "Iran",
+          "team_b": "New Zealand",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Belgium",
+          "team_b": "Iran",
+          "score": "4-2",
+          "locked": false
+        },
+        {
+          "team_a": "New Zealand",
+          "team_b": "Egypt",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Egypt",
+          "team_b": "Iran",
+          "score": "1-2",
+          "locked": false
+        },
+        {
+          "team_a": "New Zealand",
+          "team_b": "Belgium",
+          "score": "1-0",
+          "locked": false
+        }
+      ]
+    },
+    "H": {
+      "order": [
+        "Spain",
+        "Cape Verde Islands",
+        "Uruguay",
+        "Saudi Arabia"
+      ],
+      "matches": [
+        {
+          "team_a": "Spain",
+          "team_b": "Cape Verde Islands",
+          "score": "3-3",
+          "locked": false
+        },
+        {
+          "team_a": "Saudi Arabia",
+          "team_b": "Uruguay",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Spain",
+          "team_b": "Saudi Arabia",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Uruguay",
+          "team_b": "Cape Verde Islands",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Uruguay",
+          "team_b": "Spain",
+          "score": "0-1",
+          "locked": false
+        },
+        {
+          "team_a": "Cape Verde Islands",
+          "team_b": "Saudi Arabia",
+          "score": "1-0",
+          "locked": false
+        }
+      ]
+    },
+    "I": {
+      "order": [
+        "Norway",
+        "Senegal",
+        "France",
+        "Iraq"
+      ],
+      "matches": [
+        {
+          "team_a": "France",
+          "team_b": "Senegal",
+          "score": "0-1",
+          "locked": false
+        },
+        {
+          "team_a": "Iraq",
+          "team_b": "Norway",
+          "score": "0-4",
+          "locked": false
+        },
+        {
+          "team_a": "France",
+          "team_b": "Iraq",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Norway",
+          "team_b": "Senegal",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Senegal",
+          "team_b": "Iraq",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Norway",
+          "team_b": "France",
+          "score": "0-2",
+          "locked": false
+        }
+      ]
+    },
+    "J": {
+      "order": [
+        "Argentina",
+        "Austria",
+        "Algeria",
+        "Jordan"
+      ],
+      "matches": [
+        {
+          "team_a": "Argentina",
+          "team_b": "Algeria",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Austria",
+          "team_b": "Jordan",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Argentina",
+          "team_b": "Austria",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Jordan",
+          "team_b": "Algeria",
+          "score": "1-2",
+          "locked": false
+        },
+        {
+          "team_a": "Algeria",
+          "team_b": "Austria",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Jordan",
+          "team_b": "Argentina",
+          "score": "0-2",
+          "locked": false
+        }
+      ]
+    },
+    "K": {
+      "order": [
+        "Portugal",
+        "Congo DR",
+        "Uzbekistan",
+        "Colombia"
+      ],
+      "matches": [
+        {
+          "team_a": "Portugal",
+          "team_b": "Congo DR",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Uzbekistan",
+          "team_b": "Colombia",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Portugal",
+          "team_b": "Uzbekistan",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Colombia",
+          "team_b": "Congo DR",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Colombia",
+          "team_b": "Portugal",
+          "score": "1-3",
+          "locked": false
+        },
+        {
+          "team_a": "Congo DR",
+          "team_b": "Uzbekistan",
+          "score": "1-0",
+          "locked": false
+        }
+      ]
+    },
+    "L": {
+      "order": [
+        "Croatia",
+        "England",
+        "Ghana",
+        "Panama"
+      ],
+      "matches": [
+        {
+          "team_a": "England",
+          "team_b": "Croatia",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Ghana",
+          "team_b": "Panama",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "England",
+          "team_b": "Ghana",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Panama",
+          "team_b": "Croatia",
+          "score": "1-3",
+          "locked": false
+        },
+        {
+          "team_a": "Croatia",
+          "team_b": "Ghana",
+          "score": "3-1",
+          "locked": false
+        },
+        {
+          "team_a": "Panama",
+          "team_b": "England",
+          "score": "3-1",
+          "locked": false
+        }
+      ]
+    }
+  },
+  "why_this_scenario": "It is one actually generated complete path, so every round and group result is mutually coherent.",
+  "limitations": [
+    "Official 2026 knockout mapping is unavailable; projected dynamic seeding is explicitly non-official.",
+    "Only 100 complete paths are persisted; all 50,000 were generated and aggregated."
+  ]
+}

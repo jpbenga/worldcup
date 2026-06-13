@@ -1,0 +1,3 @@
+# Current Tournament Simulator Audit V2.14
+
+The existing experience runs a real 50,000-draw group block and a separate 50,000-draw knockout block over one fixed projected bracket. It does not generate 50,000 complete end-to-end World Cups or retain coherent full paths. More seriously, knockout strength blends group qualification and first-place probabilities with Elo. That violates the separation between reaching a slot and beating the opponent in that slot. France versus Switzerland exposes the calibration error: the old model favors Switzerland despite France's large Elo advantage. The current knockout logic must be replaced, not patched per team.

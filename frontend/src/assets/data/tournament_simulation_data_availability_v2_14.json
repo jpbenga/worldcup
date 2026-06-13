@@ -1,0 +1,171 @@
+{
+  "version": "v2.14",
+  "generated_at": "2026-06-13T20:33:55Z",
+  "datasets": [
+    {
+      "name": "fixtures_2026",
+      "available": true,
+      "source": "worldcup_groups.json / official results",
+      "coverage": "72 fixtures",
+      "freshness": "repository snapshot",
+      "usable_for_model": true,
+      "usable_for_explanation": true,
+      "limitations": []
+    },
+    {
+      "name": "historical_scores",
+      "available": true,
+      "source": "historical_matches_expanded.json",
+      "coverage": "1311 matches, 2014-2024",
+      "freshness": "repository snapshot",
+      "usable_for_model": true,
+      "usable_for_explanation": true,
+      "limitations": [
+        "major tournaments only"
+      ]
+    },
+    {
+      "name": "dates_competitions_stages",
+      "available": true,
+      "source": "historical_matches_expanded.json",
+      "coverage": "1311 matches",
+      "freshness": "repository snapshot",
+      "usable_for_model": true,
+      "usable_for_explanation": true,
+      "limitations": []
+    },
+    {
+      "name": "elo_ratings",
+      "available": true,
+      "source": "team_ratings.json / eloratings.net",
+      "coverage": "244 teams",
+      "freshness": "repository snapshot",
+      "usable_for_model": true,
+      "usable_for_explanation": true,
+      "limitations": [
+        "current ratings for forecasts"
+      ]
+    },
+    {
+      "name": "recent_form_attack_defense",
+      "available": true,
+      "source": "derived from dated scores",
+      "coverage": "teams with historical matches",
+      "freshness": "repository snapshot",
+      "usable_for_model": true,
+      "usable_for_explanation": true,
+      "limitations": [
+        "coverage varies by team"
+      ]
+    },
+    {
+      "name": "live_standings",
+      "available": true,
+      "source": "worldcup_live_group_standings_v2_7.json",
+      "coverage": "12 groups",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": true,
+      "limitations": []
+    },
+    {
+      "name": "score_matrices",
+      "available": true,
+      "source": "candidate Poisson calculation",
+      "coverage": "all candidate matchups",
+      "freshness": "repository snapshot",
+      "usable_for_model": true,
+      "usable_for_explanation": true,
+      "limitations": [
+        "independent Poisson"
+      ]
+    },
+    {
+      "name": "quant_hybrid_v2.2",
+      "available": true,
+      "source": "existing active pipeline",
+      "coverage": "active predictions",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": true,
+      "limitations": [
+        "kept unchanged"
+      ]
+    },
+    {
+      "name": "xg_shots",
+      "available": false,
+      "source": "sparse API-Football cache",
+      "coverage": "insufficient",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": false,
+      "limitations": [
+        "not reliable enough"
+      ]
+    },
+    {
+      "name": "lineups",
+      "available": false,
+      "source": "sparse API-Football cache",
+      "coverage": "no future coverage",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": false,
+      "limitations": []
+    },
+    {
+      "name": "injuries",
+      "available": false,
+      "source": "not integrated",
+      "coverage": "none",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": false,
+      "limitations": []
+    },
+    {
+      "name": "squad_value",
+      "available": false,
+      "source": "not integrated",
+      "coverage": "none",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": false,
+      "limitations": []
+    },
+    {
+      "name": "betting_odds",
+      "available": false,
+      "source": "not integrated",
+      "coverage": "none",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": false,
+      "limitations": []
+    },
+    {
+      "name": "fifa_ranking",
+      "available": false,
+      "source": "not integrated as usable pipeline data",
+      "coverage": "none",
+      "freshness": "repository snapshot",
+      "usable_for_model": false,
+      "usable_for_explanation": false,
+      "limitations": []
+    }
+  ],
+  "verdict": {
+    "can_build_credible_match_model": true,
+    "can_build_player_quality_model": false,
+    "can_use_injuries": false,
+    "can_use_lineups_pre_match": false,
+    "can_backtest_knockout": true,
+    "main_data_gaps": [
+      "player availability",
+      "future lineups",
+      "odds benchmark",
+      "broad xG coverage"
+    ]
+  }
+}

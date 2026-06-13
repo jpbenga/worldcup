@@ -1,0 +1,181 @@
+{
+  "version": "v2.14",
+  "rule": "A strong Elo inversion requires two measurable strong factors or a credibility warning.",
+  "matches": [
+    {
+      "match": "France vs Switzerland",
+      "headline": "France favori selon les forces tête-à-tête mesurables",
+      "key_factors": [
+        {
+          "factor": "Elo",
+          "team_a": 2063.0,
+          "team_b": 1891.0,
+          "advantage": "France"
+        },
+        {
+          "factor": "Attaque récente pondérée",
+          "team_a": 1.3938054130201176,
+          "team_b": 1.5777059300014364,
+          "advantage": "Switzerland"
+        },
+        {
+          "factor": "Défense récente pondérée",
+          "team_a": 0.7808353413171586,
+          "team_b": 1.2265012615012127,
+          "advantage": "France"
+        }
+      ],
+      "upset_context": [
+        "Un match à élimination directe reste fortement aléatoire."
+      ],
+      "missing_context": [
+        "injuries",
+        "future_lineups",
+        "squad_value",
+        "betting_odds",
+        "fifa_ranking"
+      ],
+      "warning": ""
+    },
+    {
+      "match": "Brazil vs Mexico",
+      "headline": "Brazil favori selon les forces tête-à-tête mesurables",
+      "key_factors": [
+        {
+          "factor": "Elo",
+          "team_a": 1991.0,
+          "team_b": 1875.0,
+          "advantage": "Brazil"
+        },
+        {
+          "factor": "Attaque récente pondérée",
+          "team_a": 1.492344966286892,
+          "team_b": 1.3226448275187492,
+          "advantage": "Brazil"
+        },
+        {
+          "factor": "Défense récente pondérée",
+          "team_a": 0.5088290232870188,
+          "team_b": 0.4741864417439734,
+          "advantage": "Mexico"
+        }
+      ],
+      "upset_context": [
+        "Un match à élimination directe reste fortement aléatoire."
+      ],
+      "missing_context": [
+        "injuries",
+        "future_lineups",
+        "squad_value",
+        "betting_odds",
+        "fifa_ranking"
+      ],
+      "warning": ""
+    },
+    {
+      "match": "France vs Haiti",
+      "headline": "France favori selon les forces tête-à-tête mesurables",
+      "key_factors": [
+        {
+          "factor": "Elo",
+          "team_a": 2063.0,
+          "team_b": 1548.0,
+          "advantage": "France"
+        },
+        {
+          "factor": "Attaque récente pondérée",
+          "team_a": 1.3938054130201176,
+          "team_b": 1.3018358932789902,
+          "advantage": "France"
+        },
+        {
+          "factor": "Défense récente pondérée",
+          "team_a": 0.7808353413171586,
+          "team_b": 1.9002293431853783,
+          "advantage": "France"
+        }
+      ],
+      "upset_context": [
+        "Un match à élimination directe reste fortement aléatoire."
+      ],
+      "missing_context": [
+        "injuries",
+        "future_lineups",
+        "squad_value",
+        "betting_odds",
+        "fifa_ranking"
+      ],
+      "warning": ""
+    },
+    {
+      "match": "Spain vs Cape Verde Islands",
+      "headline": "Spain favori selon les forces tête-à-tête mesurables",
+      "key_factors": [
+        {
+          "factor": "Elo",
+          "team_a": 2157.0,
+          "team_b": 1500.0,
+          "advantage": "Spain"
+        },
+        {
+          "factor": "Attaque récente pondérée",
+          "team_a": 2.226329624874308,
+          "team_b": 1.3054064082875756,
+          "advantage": "Spain"
+        },
+        {
+          "factor": "Défense récente pondérée",
+          "team_a": 0.6706487299194017,
+          "team_b": 0.6944613924642361,
+          "advantage": "Spain"
+        }
+      ],
+      "upset_context": [
+        "Un match à élimination directe reste fortement aléatoire."
+      ],
+      "missing_context": [
+        "injuries",
+        "future_lineups",
+        "squad_value",
+        "betting_odds",
+        "fifa_ranking"
+      ],
+      "warning": ""
+    },
+    {
+      "match": "Germany vs Netherlands",
+      "headline": "Netherlands favori selon les forces tête-à-tête mesurables",
+      "key_factors": [
+        {
+          "factor": "Elo",
+          "team_a": 1932.0,
+          "team_b": 1948.0,
+          "advantage": "Netherlands"
+        },
+        {
+          "factor": "Attaque récente pondérée",
+          "team_a": 2.182991145425258,
+          "team_b": 1.8700620224570255,
+          "advantage": "Germany"
+        },
+        {
+          "factor": "Défense récente pondérée",
+          "team_a": 1.0585920975309167,
+          "team_b": 1.0426516716580005,
+          "advantage": "Netherlands"
+        }
+      ],
+      "upset_context": [
+        "Un match à élimination directe reste fortement aléatoire."
+      ],
+      "missing_context": [
+        "injuries",
+        "future_lineups",
+        "squad_value",
+        "betting_odds",
+        "fifa_ranking"
+      ],
+      "warning": ""
+    }
+  ]
+}

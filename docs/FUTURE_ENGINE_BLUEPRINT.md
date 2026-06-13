@@ -421,3 +421,16 @@ partial success, failure, refunded Draw No Bet and pending results.
 
 The 104-match scenario, active predictions, model artifacts and experimental
 variant remain unchanged.
+
+## V2.13.1B interactive tournament atlas
+
+Road to the Trophy is no longer treated as a bracket summary. Its public
+contract is a navigable atlas joining live group standings, 72 group-match
+states, qualification probabilities and a coherent projected knockout route.
+The selected architecture keeps Angular responsible for semantic HTML and
+state, uses SVG for route connections, and limits D3 to zoom, pan and animated
+focus. Future complete-path persistence can replace the representative fixed
+bracket without changing the atlas interaction model.
+# V2.14 tournament candidate
+
+The next tournament-engine track starts from the V2.14 candidate: direct Elo plus score-derived Poisson match probabilities, chronological calibration, complete Monte Carlo paths, and measured explanations. Promotion remains blocked until official bracket mapping, broader calibration, and human validation are available. Player availability, odds and richer xG may be evaluated only after they are integrated as reliable pipeline data.

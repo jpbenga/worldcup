@@ -34,7 +34,9 @@ def simulate_groups(matches: list[dict[str, Any]], simulations: int, seed: int =
         all_rankings: dict[str, list[str]] = {}
         tables: dict[str, dict[str, dict[str, int]]] = {}
         for group, fixtures in groups.items():
-            table = {team: {"points": 0, "gf": 0, "ga": 0, "gd": 0} for team in group_teams[group]}
+            # Set iteration varies across Python processes and used to change
+            # which team received each seeded tie-break draw.
+            table = {team: {"points": 0, "gf": 0, "ga": 0, "gd": 0} for team in sorted(group_teams[group])}
             for fixture in fixtures:
                 entries = fixture["score_matrix"]["probabilities"] if isinstance(fixture["score_matrix"], dict) else fixture["score_matrix"]
                 hg, ag = sample_score(entries, rng); home, away = fixture["home_team"], fixture["away_team"]

@@ -1664,3 +1664,76 @@ Commit: `93423dd Improve match UX clarity and product language`
 - [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+
+## V2.13.1B — Road to the Trophy Interactive Scenario Experience
+
+Commit: `e4ca60e Build interactive Road to the Trophy experience`
+
+### Technical validation
+
+- [x] Initial simplistic interaction acknowledged and replaced
+- [x] Technology research expanded before corrective implementation
+- [x] D3 Zoom architecture justified
+- [x] 72 group matches included
+- [x] 12 live group standings included
+- [x] 32 knockout target matches represented
+- [x] Continuous zoomable tournament atlas implemented
+- [x] Team path exploration implemented
+- [x] Match detail exploration implemented
+- [x] Real/projected/to-confirm filters implemented
+- [x] Official bracket remains explicitly unavailable
+- [x] Simulation credibility audit published
+- [x] Independent 50,000-knockout rerun verified
+- [x] Cross-process group simulation reproducibility bug fixed
+- [x] Knockout calibration marked as requiring review
+- [x] Active predictions unchanged
+- [x] No retrain
+- [x] No Optuna rerun
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Road to the Trophy visual direction accepted
+- [x] Tournament Atlas interaction accepted
+- [x] Group / team / round / match exploration accepted
+- [x] Zoom and spatial navigation accepted when available
+- [ ] Tournament simulation credibility accepted
+- [x] Issue identified: the 50,000 simulations are not trusted enough
+- [x] Issue identified: knockout algorithm appears too simplistic
+- [x] Issue identified: group qualification context appears to distort direct knockout match strength
+- [x] Issue identified: surprising favorites require contextual explanations
+- [x] Next major iteration accepted: Tournament Simulation Engine V3 research, backtest and candidate build
+
+### Result
+
+- [ ] Validated
+- [x] Validated with reservations
+- [ ] Not validated
+
+## V2.14 — Tournament Simulation Engine V3 Research, Backtest & Candidate Build
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Strategy, method research, data audit and allowlist created
+- [x] Current simulator audited
+- [x] Match probability engine V3 candidate and explanation layer built
+- [x] Chronological backtest and football credibility guardrails completed
+- [x] 50,000 full tournament simulations generated
+- [x] Coherent representative scenario and France vs Switzerland case evaluated
+- [x] Road to the Trophy V3 candidate comparison integrated
+- [x] No invented data or direct group qualification strength used
+- [x] Active predictions unchanged and candidate not promoted
+- [x] Angular build and tests passed
+- [x] Secret scan passed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated

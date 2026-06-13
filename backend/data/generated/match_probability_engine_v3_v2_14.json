@@ -1,0 +1,2529 @@
+{
+  "version": "v2.14",
+  "engine_name": "match_probability_engine_v3",
+  "candidate_status": "under_review",
+  "method": "current Elo plus time-decayed attack/defense feeding an independent Poisson score model",
+  "group_qualification_used_as_match_strength": false,
+  "matches": [
+    {
+      "version": "v2.14",
+      "engine_name": "match_probability_engine_v3",
+      "team_a": "France",
+      "team_b": "Switzerland",
+      "stage": "knockout",
+      "neutral_site": true,
+      "inputs": {
+        "rating": {
+          "France": 2063.0,
+          "Switzerland": 1891.0
+        },
+        "elo": {
+          "France": 2063.0,
+          "Switzerland": 1891.0
+        },
+        "attack_strength": {
+          "France": 1.3938054130201176,
+          "Switzerland": 1.5777059300014364
+        },
+        "defense_strength": {
+          "France": 0.7808353413171586,
+          "Switzerland": 1.2265012615012127
+        },
+        "recent_form": "exponential_time_decay_730_days",
+        "competition_context": "knockout",
+        "rest_days": null,
+        "host_context": "neutral",
+        "data_missing": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ]
+      },
+      "probabilities_90": {
+        "team_a_win": 0.5028916013839886,
+        "draw": 0.2525040865357855,
+        "team_b_win": 0.24460431208022593
+      },
+      "advance_probabilities": {
+        "team_a": 0.6869948465496261,
+        "team_b": 0.31300515345037394
+      },
+      "expected_goals": {
+        "team_a": 1.5734678955582941,
+        "team_b": 1.0155700197984567
+      },
+      "score_matrix": [
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.07511062218767978
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.07628009606221636
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.03873388933406662
+        },
+        {
+          "score": "0-3",
+          "home_goals": 0,
+          "away_goals": 3,
+          "probability": 0.013112325585956425
+        },
+        {
+          "score": "0-4",
+          "home_goals": 0,
+          "away_goals": 4,
+          "probability": 0.003329121188733395
+        },
+        {
+          "score": "0-5",
+          "home_goals": 0,
+          "away_goals": 5,
+          "probability": 0.0006761911343106871
+        },
+        {
+          "score": "0-6",
+          "home_goals": 0,
+          "away_goals": 6,
+          "probability": 0.00011445324060990755
+        },
+        {
+          "score": "0-7",
+          "home_goals": 0,
+          "away_goals": 7,
+          "probability": 1.6605039976028765e-05
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.11818415262772262
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12002428222400009
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.06094653133726167
+        },
+        {
+          "score": "1-3",
+          "home_goals": 1,
+          "away_goals": 3,
+          "probability": 0.020631823345610034
+        },
+        {
+          "score": "1-4",
+          "home_goals": 1,
+          "away_goals": 4,
+          "probability": 0.005238265310894862
+        },
+        {
+          "score": "1-5",
+          "home_goals": 1,
+          "away_goals": 5,
+          "probability": 0.0010639650410990125
+        },
+        {
+          "score": "1-6",
+          "home_goals": 1,
+          "away_goals": 6,
+          "probability": 0.00018008849964229833
+        },
+        {
+          "score": "1-7",
+          "home_goals": 1,
+          "away_goals": 7,
+          "probability": 2.612749730674333e-05
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.09297948496174148
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.0944271773834461
+        },
+        {
+          "score": "2-2",
+          "home_goals": 2,
+          "away_goals": 2,
+          "probability": 0.04794870520240937
+        },
+        {
+          "score": "2-3",
+          "home_goals": 2,
+          "away_goals": 3,
+          "probability": 0.01623175583057375
+        },
+        {
+          "score": "2-4",
+          "home_goals": 2,
+          "away_goals": 4,
+          "probability": 0.004121121147554875
+        },
+        {
+          "score": "2-5",
+          "home_goals": 2,
+          "away_goals": 5,
+          "probability": 0.0008370574170828286
+        },
+        {
+          "score": "2-6",
+          "home_goals": 2,
+          "away_goals": 6,
+          "probability": 0.00014168173627320888
+        },
+        {
+          "score": "2-7",
+          "home_goals": 2,
+          "away_goals": 7,
+          "probability": 2.055538910172321e-05
+        },
+        {
+          "score": "3-0",
+          "home_goals": 3,
+          "away_goals": 0,
+          "probability": 0.048766744844281805
+        },
+        {
+          "score": "3-1",
+          "home_goals": 3,
+          "away_goals": 1,
+          "probability": 0.049526044027013556
+        },
+        {
+          "score": "3-2",
+          "home_goals": 3,
+          "away_goals": 2,
+          "probability": 0.025148582756526698
+        },
+        {
+          "score": "3-3",
+          "home_goals": 3,
+          "away_goals": 3,
+          "probability": 0.008513382229316316
+        },
+        {
+          "score": "3-4",
+          "home_goals": 3,
+          "away_goals": 4,
+          "probability": 0.0021614839397946506
+        },
+        {
+          "score": "3-5",
+          "home_goals": 3,
+          "away_goals": 5,
+          "probability": 0.0004390276575062599
+        },
+        {
+          "score": "3-6",
+          "home_goals": 3,
+          "away_goals": 6,
+          "probability": 7.43105544709504e-05
+        },
+        {
+          "score": "3-7",
+          "home_goals": 3,
+          "away_goals": 7,
+          "probability": 1.0781081610756771e-05
+        },
+        {
+          "score": "4-0",
+          "home_goals": 4,
+          "away_goals": 0,
+          "probability": 0.019183226845840094
+        },
+        {
+          "score": "4-1",
+          "home_goals": 4,
+          "away_goals": 1,
+          "probability": 0.01948191006762811
+        },
+        {
+          "score": "4-2",
+          "home_goals": 4,
+          "away_goals": 2,
+          "probability": 0.009892621896546418
+        },
+        {
+          "score": "4-3",
+          "home_goals": 4,
+          "away_goals": 3,
+          "probability": 0.0033488834051114305
+        },
+        {
+          "score": "4-4",
+          "home_goals": 4,
+          "away_goals": 4,
+          "probability": 0.0008502563965079347
+        },
+        {
+          "score": "4-5",
+          "home_goals": 4,
+          "away_goals": 5,
+          "probability": 0.00017269898108706556
+        },
+        {
+          "score": "4-6",
+          "home_goals": 4,
+          "away_goals": 6,
+          "probability": 2.9231317940294076e-05
+        },
+        {
+          "score": "4-7",
+          "home_goals": 4,
+          "away_goals": 7,
+          "probability": 4.24092144847992e-06
+        },
+        {
+          "score": "5-0",
+          "home_goals": 5,
+          "away_goals": 0,
+          "probability": 0.006036838315028279
+        },
+        {
+          "score": "5-1",
+          "home_goals": 5,
+          "away_goals": 1,
+          "probability": 0.00613083200711335
+        },
+        {
+          "score": "5-2",
+          "home_goals": 5,
+          "away_goals": 2,
+          "probability": 0.003113144591422559
+        },
+        {
+          "score": "5-3",
+          "home_goals": 5,
+          "away_goals": 3,
+          "probability": 0.0010538721047821556
+        },
+        {
+          "score": "5-4",
+          "home_goals": 5,
+          "away_goals": 4,
+          "probability": 0.00026757022857966373
+        },
+        {
+          "score": "5-5",
+          "home_goals": 5,
+          "away_goals": 5,
+          "probability": 5.434726046722534e-05
+        },
+        {
+          "score": "5-6",
+          "home_goals": 5,
+          "away_goals": 6,
+          "probability": 9.198908064781987e-06
+        },
+        {
+          "score": "5-7",
+          "home_goals": 5,
+          "away_goals": 7,
+          "probability": 1.3345907493535468e-06
+        },
+        {
+          "score": "6-0",
+          "home_goals": 6,
+          "away_goals": 0,
+          "probability": 0.001583128546562204
+        },
+        {
+          "score": "6-1",
+          "home_goals": 6,
+          "away_goals": 1,
+          "probability": 0.0016077778893756793
+        },
+        {
+          "score": "6-2",
+          "home_goals": 6,
+          "away_goals": 2,
+          "probability": 0.0008164055114723899
+        },
+        {
+          "score": "6-3",
+          "home_goals": 6,
+          "away_goals": 3,
+          "probability": 0.0002763723204831947
+        },
+        {
+          "score": "6-4",
+          "home_goals": 6,
+          "away_goals": 4,
+          "probability": 7.016886074621589e-05
+        },
+        {
+          "score": "6-5",
+          "home_goals": 6,
+          "away_goals": 5,
+          "probability": 1.4252278259453924e-05
+        },
+        {
+          "score": "6-6",
+          "home_goals": 6,
+          "away_goals": 6,
+          "probability": 2.4123644190211222e-06
+        },
+        {
+          "score": "6-7",
+          "home_goals": 6,
+          "away_goals": 7,
+          "probability": 3.49989282969482e-07
+        },
+        {
+          "score": "7-0",
+          "home_goals": 7,
+          "away_goals": 0,
+          "probability": 0.0003558574203653559
+        },
+        {
+          "score": "7-1",
+          "home_goals": 7,
+          "away_goals": 1,
+          "probability": 0.00036139812744587224
+        },
+        {
+          "score": "7-2",
+          "home_goals": 7,
+          "away_goals": 2,
+          "probability": 0.00018351255172266483
+        },
+        {
+          "score": "7-3",
+          "home_goals": 7,
+          "away_goals": 3,
+          "probability": 6.212328192875068e-05
+        },
+        {
+          "score": "7-4",
+          "home_goals": 7,
+          "away_goals": 4,
+          "probability": 1.577263566458161e-05
+        },
+        {
+          "score": "7-5",
+          "home_goals": 7,
+          "away_goals": 5,
+          "probability": 3.2036431828305987e-06
+        },
+        {
+          "score": "7-6",
+          "home_goals": 7,
+          "away_goals": 6,
+          "probability": 5.422539951024103e-07
+        },
+        {
+          "score": "7-7",
+          "home_goals": 7,
+          "away_goals": 7,
+          "probability": 7.867098579170673e-08
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12002428222400009
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.11818415262772262
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.0944271773834461
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.09297948496174148
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.07628009606221636
+        }
+      ],
+      "favorite": "France",
+      "confidence": "high",
+      "explanation": {
+        "headline": "France favori selon les forces tête-à-tête mesurables",
+        "key_factors": [
+          {
+            "factor": "Elo",
+            "team_a": 2063.0,
+            "team_b": 1891.0,
+            "advantage": "France"
+          },
+          {
+            "factor": "Attaque récente pondérée",
+            "team_a": 1.3938054130201176,
+            "team_b": 1.5777059300014364,
+            "advantage": "Switzerland"
+          },
+          {
+            "factor": "Défense récente pondérée",
+            "team_a": 0.7808353413171586,
+            "team_b": 1.2265012615012127,
+            "advantage": "France"
+          }
+        ],
+        "upset_context": [
+          "Un match à élimination directe reste fortement aléatoire."
+        ],
+        "missing_context": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ],
+        "warning": ""
+      }
+    },
+    {
+      "version": "v2.14",
+      "engine_name": "match_probability_engine_v3",
+      "team_a": "Brazil",
+      "team_b": "Mexico",
+      "stage": "knockout",
+      "neutral_site": true,
+      "inputs": {
+        "rating": {
+          "Brazil": 1991.0,
+          "Mexico": 1875.0
+        },
+        "elo": {
+          "Brazil": 1991.0,
+          "Mexico": 1875.0
+        },
+        "attack_strength": {
+          "Brazil": 1.492344966286892,
+          "Mexico": 1.3226448275187492
+        },
+        "defense_strength": {
+          "Brazil": 0.5088290232870188,
+          "Mexico": 0.4741864417439734
+        },
+        "recent_form": "exponential_time_decay_730_days",
+        "competition_context": "knockout",
+        "rest_days": null,
+        "host_context": "neutral",
+        "data_missing": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ]
+      },
+      "probabilities_90": {
+        "team_a_win": 0.43195782243283215,
+        "draw": 0.2876928391591555,
+        "team_b_win": 0.28034933840801224
+      },
+      "advance_probabilities": {
+        "team_a": 0.6221225276751187,
+        "team_b": 0.37787747232488134
+      },
+      "expected_goals": {
+        "team_a": 1.2462297854834785,
+        "team_b": 0.944260738827095
+      },
+      "score_matrix": [
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.11186800060957368
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.10563256090670596
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.04987234000298214
+        },
+        {
+          "score": "0-3",
+          "home_goals": 0,
+          "away_goals": 3,
+          "probability": 0.015697497539417335
+        },
+        {
+          "score": "0-4",
+          "home_goals": 0,
+          "away_goals": 4,
+          "probability": 0.00370563265607668
+        },
+        {
+          "score": "0-5",
+          "home_goals": 0,
+          "away_goals": 5,
+          "probability": 0.0006998166859297552
+        },
+        {
+          "score": "0-6",
+          "home_goals": 0,
+          "away_goals": 6,
+          "probability": 0.00011013490348325998
+        },
+        {
+          "score": "0-7",
+          "home_goals": 0,
+          "away_goals": 7,
+          "probability": 1.4856580761964837e-05
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.13941323440213463
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.13164244371883466
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.062152395583475545
+        },
+        {
+          "score": "1-3",
+          "home_goals": 1,
+          "away_goals": 3,
+          "probability": 0.019562688991175498
+        },
+        {
+          "score": "1-4",
+          "home_goals": 1,
+          "away_goals": 4,
+          "probability": 0.004618069790063014
+        },
+        {
+          "score": "1-5",
+          "home_goals": 1,
+          "away_goals": 5,
+          "probability": 0.0008721323983839977
+        },
+        {
+          "score": "1-6",
+          "home_goals": 1,
+          "away_goals": 6,
+          "probability": 0.0001372533971421867
+        },
+        {
+          "score": "1-7",
+          "home_goals": 1,
+          "away_goals": 7,
+          "probability": 1.8514713456001413e-05
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.08687046260126507
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.08202836719812209
+        },
+        {
+          "score": "2-2",
+          "home_goals": 2,
+          "away_goals": 2,
+          "probability": 0.03872808330763951
+        },
+        {
+          "score": "2-3",
+          "home_goals": 2,
+          "away_goals": 3,
+          "probability": 0.012189802852476322
+        },
+        {
+          "score": "2-4",
+          "home_goals": 2,
+          "away_goals": 4,
+          "probability": 0.002877588061908981
+        },
+        {
+          "score": "2-5",
+          "home_goals": 2,
+          "away_goals": 5,
+          "probability": 0.0005434386858756405
+        },
+        {
+          "score": "2-6",
+          "home_goals": 2,
+          "away_goals": 6,
+          "probability": 8.5524635838693e-05
+        },
+        {
+          "score": "2-7",
+          "home_goals": 2,
+          "away_goals": 7,
+          "probability": 1.1536793689280356e-05
+        },
+        {
+          "score": "3-0",
+          "home_goals": 3,
+          "away_goals": 0,
+          "probability": 0.03608685265747504
+        },
+        {
+          "score": "3-1",
+          "home_goals": 3,
+          "away_goals": 1,
+          "probability": 0.0340753981522919
+        },
+        {
+          "score": "3-2",
+          "home_goals": 3,
+          "away_goals": 2,
+          "probability": 0.01608803031755529
+        },
+        {
+          "score": "3-3",
+          "home_goals": 3,
+          "away_goals": 3,
+          "probability": 0.005063765131309153
+        },
+        {
+          "score": "3-4",
+          "home_goals": 3,
+          "away_goals": 4,
+          "probability": 0.0011953786510342159
+        },
+        {
+          "score": "3-5",
+          "home_goals": 3,
+          "away_goals": 5,
+          "probability": 0.00022574982564074097
+        },
+        {
+          "score": "3-6",
+          "home_goals": 3,
+          "away_goals": 6,
+          "probability": 3.5527782858269e-05
+        },
+        {
+          "score": "3-7",
+          "home_goals": 3,
+          "away_goals": 7,
+          "probability": 4.792498641519669e-06
+        },
+        {
+          "score": "4-0",
+          "home_goals": 4,
+          "away_goals": 0,
+          "probability": 0.011243127661524755
+        },
+        {
+          "score": "4-1",
+          "home_goals": 4,
+          "away_goals": 1,
+          "probability": 0.010616444032398715
+        },
+        {
+          "score": "4-2",
+          "home_goals": 4,
+          "away_goals": 2,
+          "probability": 0.005012345642874658
+        },
+        {
+          "score": "4-3",
+          "home_goals": 4,
+          "away_goals": 3,
+          "probability": 0.0015776537333325312
+        },
+        {
+          "score": "4-4",
+          "home_goals": 4,
+          "away_goals": 4,
+          "probability": 0.00037242911996247525
+        },
+        {
+          "score": "4-5",
+          "home_goals": 4,
+          "away_goals": 5,
+          "probability": 7.033403919529833e-05
+        },
+        {
+          "score": "4-6",
+          "home_goals": 4,
+          "away_goals": 6,
+          "probability": 1.1068945302541044e-05
+        },
+        {
+          "score": "4-7",
+          "home_goals": 4,
+          "away_goals": 7,
+          "probability": 1.4931386384877297e-06
+        },
+        {
+          "score": "5-0",
+          "home_goals": 5,
+          "away_goals": 0,
+          "probability": 0.0028023041147570713
+        },
+        {
+          "score": "5-1",
+          "home_goals": 5,
+          "away_goals": 1,
+          "probability": 0.002646105753818721
+        },
+        {
+          "score": "5-2",
+          "home_goals": 5,
+          "away_goals": 2,
+          "probability": 0.0012493068870577464
+        },
+        {
+          "score": "5-3",
+          "home_goals": 5,
+          "away_goals": 3,
+          "probability": 0.00039322381473164185
+        },
+        {
+          "score": "5-4",
+          "home_goals": 5,
+          "away_goals": 4,
+          "probability": 9.282645245572723e-05
+        },
+        {
+          "score": "5-5",
+          "home_goals": 5,
+          "away_goals": 5,
+          "probability": 1.753047491570864e-05
+        },
+        {
+          "score": "5-6",
+          "home_goals": 5,
+          "away_goals": 6,
+          "probability": 2.7588898659828165e-06
+        },
+        {
+          "score": "5-7",
+          "home_goals": 5,
+          "away_goals": 7,
+          "probability": 3.7215876902793133e-07
+        },
+        {
+          "score": "6-0",
+          "home_goals": 6,
+          "away_goals": 0,
+          "probability": 0.000582052475965529
+        },
+        {
+          "score": "6-1",
+          "home_goals": 6,
+          "away_goals": 1,
+          "probability": 0.0005496093009913505
+        },
+        {
+          "score": "6-2",
+          "home_goals": 6,
+          "away_goals": 2,
+          "probability": 0.00025948724231016795
+        },
+        {
+          "score": "6-3",
+          "home_goals": 6,
+          "away_goals": 3,
+          "probability": 8.167453838000153e-05
+        },
+        {
+          "score": "6-4",
+          "home_goals": 6,
+          "away_goals": 4,
+          "probability": 1.9280514988515545e-05
+        },
+        {
+          "score": "6-5",
+          "home_goals": 6,
+          "away_goals": 5,
+          "probability": 3.6411666656045135e-06
+        },
+        {
+          "score": "6-6",
+          "home_goals": 6,
+          "away_goals": 6,
+          "probability": 5.730351209760514e-07
+        },
+        {
+          "score": "6-7",
+          "home_goals": 6,
+          "away_goals": 7,
+          "probability": 7.729922381524572e-08
+        },
+        {
+          "score": "7-0",
+          "home_goals": 7,
+          "away_goals": 0,
+          "probability": 0.00010362444746609269
+        },
+        {
+          "score": "7-1",
+          "home_goals": 7,
+          "away_goals": 1,
+          "probability": 9.784849732488218e-05
+        },
+        {
+          "score": "7-2",
+          "home_goals": 7,
+          "away_goals": 2,
+          "probability": 4.619724718855714e-05
+        },
+        {
+          "score": "7-3",
+          "home_goals": 7,
+          "away_goals": 3,
+          "probability": 1.4540748920681631e-05
+        },
+        {
+          "score": "7-4",
+          "home_goals": 7,
+          "away_goals": 4,
+          "probability": 3.432564579735531e-06
+        },
+        {
+          "score": "7-5",
+          "home_goals": 7,
+          "away_goals": 5,
+          "probability": 6.482471932265579e-07
+        },
+        {
+          "score": "7-6",
+          "home_goals": 7,
+          "away_goals": 6,
+          "probability": 1.0201906226978338e-07
+        },
+        {
+          "score": "7-7",
+          "home_goals": 7,
+          "away_goals": 7,
+          "probability": 1.3761799301901865e-08
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.13941323440213463
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.13164244371883466
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.11186800060957368
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.10563256090670596
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.08687046260126507
+        }
+      ],
+      "favorite": "Brazil",
+      "confidence": "medium",
+      "explanation": {
+        "headline": "Brazil favori selon les forces tête-à-tête mesurables",
+        "key_factors": [
+          {
+            "factor": "Elo",
+            "team_a": 1991.0,
+            "team_b": 1875.0,
+            "advantage": "Brazil"
+          },
+          {
+            "factor": "Attaque récente pondérée",
+            "team_a": 1.492344966286892,
+            "team_b": 1.3226448275187492,
+            "advantage": "Brazil"
+          },
+          {
+            "factor": "Défense récente pondérée",
+            "team_a": 0.5088290232870188,
+            "team_b": 0.4741864417439734,
+            "advantage": "Mexico"
+          }
+        ],
+        "upset_context": [
+          "Un match à élimination directe reste fortement aléatoire."
+        ],
+        "missing_context": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ],
+        "warning": ""
+      }
+    },
+    {
+      "version": "v2.14",
+      "engine_name": "match_probability_engine_v3",
+      "team_a": "France",
+      "team_b": "Haiti",
+      "stage": "knockout",
+      "neutral_site": true,
+      "inputs": {
+        "rating": {
+          "France": 2063.0,
+          "Haiti": 1548.0
+        },
+        "elo": {
+          "France": 2063.0,
+          "Haiti": 1548.0
+        },
+        "attack_strength": {
+          "France": 1.3938054130201176,
+          "Haiti": 1.3018358932789902
+        },
+        "defense_strength": {
+          "France": 0.7808353413171586,
+          "Haiti": 1.9002293431853783
+        },
+        "recent_form": "exponential_time_decay_730_days",
+        "competition_context": "knockout",
+        "rest_days": null,
+        "host_context": "neutral",
+        "data_missing": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ]
+      },
+      "probabilities_90": {
+        "team_a_win": 0.7770462449612578,
+        "draw": 0.1463744173796175,
+        "team_b_win": 0.07657933765912467
+      },
+      "advance_probabilities": {
+        "team_a": 0.9162407036368635,
+        "team_b": 0.0837592963631365
+      },
+      "expected_goals": {
+        "team_a": 2.514200699544576,
+        "team_b": 0.6573911763917605
+      },
+      "score_matrix": [
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.042121707387663854
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.027690438771205847
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.009101725059303513
+        },
+        {
+          "score": "0-3",
+          "home_goals": 0,
+          "away_goals": 3,
+          "probability": 0.0019944645813099672
+        },
+        {
+          "score": "0-4",
+          "home_goals": 0,
+          "away_goals": 4,
+          "probability": 0.00032778585434476483
+        },
+        {
+          "score": "0-5",
+          "home_goals": 0,
+          "away_goals": 5,
+          "probability": 4.3096705678456644e-05
+        },
+        {
+          "score": "0-6",
+          "home_goals": 0,
+          "away_goals": 6,
+          "probability": 4.721899007428346e-06
+        },
+        {
+          "score": "0-7",
+          "home_goals": 0,
+          "away_goals": 7,
+          "probability": 4.434478204709152e-07
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.10590242618007638
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.06961932052926198
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.022883563511163288
+        },
+        {
+          "score": "1-3",
+          "home_goals": 1,
+          "away_goals": 3,
+          "probability": 0.0050144842455464
+        },
+        {
+          "score": "1-4",
+          "home_goals": 1,
+          "away_goals": 4,
+          "probability": 0.0008241194242944242
+        },
+        {
+          "score": "1-5",
+          "home_goals": 1,
+          "away_goals": 5,
+          "probability": 0.0001083537675648424
+        },
+        {
+          "score": "1-6",
+          "home_goals": 1,
+          "away_goals": 6,
+          "probability": 1.1871801787655189e-05
+        },
+        {
+          "score": "1-7",
+          "home_goals": 1,
+          "away_goals": 7,
+          "probability": 1.1149168204394925e-06
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.1331299769927079
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.08751847218824427
+        },
+        {
+          "score": "2-2",
+          "home_goals": 2,
+          "away_goals": 2,
+          "probability": 0.02876693569391973
+        },
+        {
+          "score": "2-3",
+          "home_goals": 2,
+          "away_goals": 3,
+          "probability": 0.006303709899004006
+        },
+        {
+          "score": "2-4",
+          "home_goals": 2,
+          "away_goals": 4,
+          "probability": 0.0010360008165346572
+        },
+        {
+          "score": "2-5",
+          "home_goals": 2,
+          "away_goals": 5,
+          "probability": 0.00013621155910490854
+        },
+        {
+          "score": "2-6",
+          "home_goals": 2,
+          "away_goals": 6,
+          "probability": 1.492404617968861e-05
+        },
+        {
+          "score": "2-7",
+          "home_goals": 2,
+          "away_goals": 7,
+          "probability": 1.401562324941493e-06
+        },
+        {
+          "score": "3-0",
+          "home_goals": 3,
+          "away_goals": 0,
+          "probability": 0.11157182709513984
+        },
+        {
+          "score": "3-1",
+          "home_goals": 3,
+          "away_goals": 1,
+          "probability": 0.07334633466625208
+        },
+        {
+          "score": "3-2",
+          "home_goals": 3,
+          "away_goals": 2,
+          "probability": 0.02410861661513561
+        },
+        {
+          "score": "3-3",
+          "home_goals": 3,
+          "away_goals": 3,
+          "probability": 0.0052829306126006455
+        },
+        {
+          "score": "3-4",
+          "home_goals": 3,
+          "away_goals": 4,
+          "probability": 0.0008682379925533957
+        },
+        {
+          "score": "3-5",
+          "home_goals": 3,
+          "away_goals": 5,
+          "probability": 0.00011415439906253946
+        },
+        {
+          "score": "3-6",
+          "home_goals": 3,
+          "away_goals": 6,
+          "probability": 1.2507349115002887e-05
+        },
+        {
+          "score": "3-7",
+          "home_goals": 3,
+          "away_goals": 7,
+          "probability": 1.1746029926077413e-06
+        },
+        {
+          "score": "4-0",
+          "home_goals": 4,
+          "away_goals": 0,
+          "probability": 0.07012849143301675
+        },
+        {
+          "score": "4-1",
+          "home_goals": 4,
+          "away_goals": 1,
+          "probability": 0.046101851481730384
+        },
+        {
+          "score": "4-2",
+          "home_goals": 4,
+          "away_goals": 2,
+          "probability": 0.01515347518970648
+        },
+        {
+          "score": "4-3",
+          "home_goals": 4,
+          "away_goals": 3,
+          "probability": 0.0033205869604614993
+        },
+        {
+          "score": "4-4",
+          "home_goals": 4,
+          "away_goals": 4,
+          "probability": 0.0005457311420622313
+        },
+        {
+          "score": "4-5",
+          "home_goals": 4,
+          "away_goals": 5,
+          "probability": 7.175176749478185e-05
+        },
+        {
+          "score": "4-6",
+          "home_goals": 4,
+          "away_goals": 6,
+          "probability": 7.86149647359712e-06
+        },
+        {
+          "score": "4-7",
+          "home_goals": 4,
+          "away_goals": 7,
+          "probability": 7.382969164253838e-07
+        },
+        {
+          "score": "5-0",
+          "home_goals": 5,
+          "away_goals": 0,
+          "probability": 0.0352634204437793
+        },
+        {
+          "score": "5-1",
+          "home_goals": 5,
+          "away_goals": 1,
+          "probability": 0.02318186144913333
+        },
+        {
+          "score": "5-2",
+          "home_goals": 5,
+          "away_goals": 2,
+          "probability": 0.007619775584498281
+        },
+        {
+          "score": "5-3",
+          "home_goals": 5,
+          "away_goals": 3,
+          "probability": 0.0016697244117781795
+        },
+        {
+          "score": "5-4",
+          "home_goals": 5,
+          "away_goals": 4,
+          "probability": 0.0002744155238272244
+        },
+        {
+          "score": "5-5",
+          "home_goals": 5,
+          "away_goals": 5,
+          "probability": 3.607966880578805e-05
+        },
+        {
+          "score": "5-6",
+          "home_goals": 5,
+          "away_goals": 6,
+          "probability": 3.953075986677019e-06
+        },
+        {
+          "score": "5-7",
+          "home_goals": 5,
+          "away_goals": 7,
+          "probability": 3.7124532474966055e-07
+        },
+        {
+          "score": "6-0",
+          "home_goals": 6,
+          "away_goals": 0,
+          "probability": 0.014776552724680737
+        },
+        {
+          "score": "6-1",
+          "home_goals": 6,
+          "away_goals": 1,
+          "probability": 0.009713975378692744
+        },
+        {
+          "score": "6-2",
+          "home_goals": 6,
+          "away_goals": 2,
+          "probability": 0.00319294085081971
+        },
+        {
+          "score": "6-3",
+          "home_goals": 6,
+          "away_goals": 3,
+          "probability": 0.0006996703806898925
+        },
+        {
+          "score": "6-4",
+          "home_goals": 6,
+          "away_goals": 4,
+          "probability": 0.00011498928366204984
+        },
+        {
+          "score": "6-5",
+          "home_goals": 6,
+          "away_goals": 5,
+          "probability": 1.5118588091808156e-05
+        },
+        {
+          "score": "6-6",
+          "home_goals": 6,
+          "away_goals": 6,
+          "probability": 1.6564710685093711e-06
+        },
+        {
+          "score": "6-7",
+          "home_goals": 6,
+          "away_goals": 7,
+          "probability": 1.5556420919804167e-07
+        },
+        {
+          "score": "7-0",
+          "home_goals": 7,
+          "away_goals": 0,
+          "probability": 0.005307317028178517
+        },
+        {
+          "score": "7-1",
+          "home_goals": 7,
+          "away_goals": 1,
+          "probability": 0.0034889833846382975
+        },
+        {
+          "score": "7-2",
+          "home_goals": 7,
+          "away_goals": 2,
+          "probability": 0.0011468134458193383
+        },
+        {
+          "score": "7-3",
+          "home_goals": 7,
+          "away_goals": 3,
+          "probability": 0.00025130168008302104
+        },
+        {
+          "score": "7-4",
+          "home_goals": 7,
+          "away_goals": 4,
+          "probability": 4.130087677475076e-05
+        },
+        {
+          "score": "7-5",
+          "home_goals": 7,
+          "away_goals": 5,
+          "probability": 5.430166393792908e-06
+        },
+        {
+          "score": "7-6",
+          "home_goals": 7,
+          "away_goals": 6,
+          "probability": 5.949572456030874e-07
+        },
+        {
+          "score": "7-7",
+          "home_goals": 7,
+          "away_goals": 7,
+          "probability": 5.587423479854501e-08
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.1331299769927079
+        },
+        {
+          "score": "3-0",
+          "home_goals": 3,
+          "away_goals": 0,
+          "probability": 0.11157182709513984
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.10590242618007638
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.08751847218824427
+        },
+        {
+          "score": "3-1",
+          "home_goals": 3,
+          "away_goals": 1,
+          "probability": 0.07334633466625208
+        }
+      ],
+      "favorite": "France",
+      "confidence": "high",
+      "explanation": {
+        "headline": "France favori selon les forces tête-à-tête mesurables",
+        "key_factors": [
+          {
+            "factor": "Elo",
+            "team_a": 2063.0,
+            "team_b": 1548.0,
+            "advantage": "France"
+          },
+          {
+            "factor": "Attaque récente pondérée",
+            "team_a": 1.3938054130201176,
+            "team_b": 1.3018358932789902,
+            "advantage": "France"
+          },
+          {
+            "factor": "Défense récente pondérée",
+            "team_a": 0.7808353413171586,
+            "team_b": 1.9002293431853783,
+            "advantage": "France"
+          }
+        ],
+        "upset_context": [
+          "Un match à élimination directe reste fortement aléatoire."
+        ],
+        "missing_context": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ],
+        "warning": ""
+      }
+    },
+    {
+      "version": "v2.14",
+      "engine_name": "match_probability_engine_v3",
+      "team_a": "Spain",
+      "team_b": "Cape Verde Islands",
+      "stage": "knockout",
+      "neutral_site": true,
+      "inputs": {
+        "rating": {
+          "Spain": 2157.0,
+          "Cape Verde Islands": 1500.0
+        },
+        "elo": {
+          "Spain": 2157.0,
+          "Cape Verde Islands": 1500.0
+        },
+        "attack_strength": {
+          "Spain": 2.226329624874308,
+          "Cape Verde Islands": 1.3054064082875756
+        },
+        "defense_strength": {
+          "Spain": 0.6706487299194017,
+          "Cape Verde Islands": 0.6944613924642361
+        },
+        "recent_form": "exponential_time_decay_730_days",
+        "competition_context": "knockout",
+        "rest_days": null,
+        "host_context": "neutral",
+        "data_missing": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ]
+      },
+      "probabilities_90": {
+        "team_a_win": 0.830752333263009,
+        "draw": 0.11855449608807342,
+        "team_b_win": 0.05069317064891753
+      },
+      "advance_probabilities": {
+        "team_a": 0.9466666283079241,
+        "team_b": 0.05333337169207586
+      },
+      "expected_goals": {
+        "team_a": 2.7443457627394214,
+        "team_b": 0.5450320497272403
+      },
+      "score_matrix": [
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.03754972157869343
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.020465801718722462
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.005577258930033292
+        },
+        {
+          "score": "0-3",
+          "home_goals": 0,
+          "away_goals": 3,
+          "probability": 0.0010132616221652
+        },
+        {
+          "score": "0-4",
+          "home_goals": 0,
+          "away_goals": 4,
+          "probability": 0.00013806501470966183
+        },
+        {
+          "score": "0-5",
+          "home_goals": 0,
+          "away_goals": 5,
+          "probability": 1.5049971592565712e-05
+        },
+        {
+          "score": "0-6",
+          "home_goals": 0,
+          "away_goals": 6,
+          "probability": 1.3671194775721386e-06
+        },
+        {
+          "score": "0-7",
+          "home_goals": 0,
+          "away_goals": 7,
+          "probability": 1.0644627586902521e-07
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.10304941930653232
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.05616523622784116
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.015305926912337462
+        },
+        {
+          "score": "1-3",
+          "home_goals": 1,
+          "away_goals": 3,
+          "probability": 0.0027807402393355387
+        },
+        {
+          "score": "1-4",
+          "home_goals": 1,
+          "away_goals": 4,
+          "probability": 0.0003788981381010163
+        },
+        {
+          "score": "1-5",
+          "home_goals": 1,
+          "away_goals": 5,
+          "probability": 4.130232576940637e-05
+        },
+        {
+          "score": "1-6",
+          "home_goals": 1,
+          "away_goals": 6,
+          "probability": 3.7518485454336292e-06
+        },
+        {
+          "score": "1-7",
+          "home_goals": 1,
+          "away_goals": 7,
+          "probability": 2.921253861405509e-07
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.14140161861331996
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.07706841402756726
+        },
+        {
+          "score": "2-2",
+          "home_goals": 2,
+          "away_goals": 2,
+          "probability": 0.021002377833336295
+        },
+        {
+          "score": "2-3",
+          "home_goals": 2,
+          "away_goals": 3,
+          "probability": 0.0038156563465497452
+        },
+        {
+          "score": "2-4",
+          "home_goals": 2,
+          "away_goals": 4,
+          "probability": 0.0005199137499036902
+        },
+        {
+          "score": "2-5",
+          "home_goals": 2,
+          "away_goals": 5,
+          "probability": 5.66739313582768e-05
+        },
+        {
+          "score": "2-6",
+          "home_goals": 2,
+          "away_goals": 6,
+          "probability": 5.148184829050422e-06
+        },
+        {
+          "score": "2-7",
+          "home_goals": 2,
+          "away_goals": 7,
+          "probability": 4.00846532821719e-07
+        },
+        {
+          "score": "3-0",
+          "home_goals": 3,
+          "away_goals": 0,
+          "probability": 0.1293516442953201
+        },
+        {
+          "score": "3-1",
+          "home_goals": 3,
+          "away_goals": 1,
+          "probability": 0.0705007918258672
+        },
+        {
+          "score": "3-2",
+          "home_goals": 3,
+          "away_goals": 2,
+          "probability": 0.019212595538122938
+        },
+        {
+          "score": "3-3",
+          "home_goals": 3,
+          "away_goals": 3,
+          "probability": 0.0034904934422411915
+        },
+        {
+          "score": "3-4",
+          "home_goals": 3,
+          "away_goals": 4,
+          "probability": 0.00047560769884605184
+        },
+        {
+          "score": "3-5",
+          "home_goals": 3,
+          "away_goals": 5,
+          "probability": 5.184428779362392e-05
+        },
+        {
+          "score": "3-6",
+          "home_goals": 3,
+          "away_goals": 6,
+          "probability": 4.709466407134632e-06
+        },
+        {
+          "score": "3-7",
+          "home_goals": 3,
+          "away_goals": 7,
+          "probability": 3.666871612860243e-07
+        },
+        {
+          "score": "4-0",
+          "home_goals": 4,
+          "away_goals": 0,
+          "probability": 0.08874640923130964
+        },
+        {
+          "score": "4-1",
+          "home_goals": 4,
+          "away_goals": 1,
+          "probability": 0.04836963732927318
+        },
+        {
+          "score": "4-2",
+          "home_goals": 4,
+          "away_goals": 2,
+          "probability": 0.0131815012890685
+        },
+        {
+          "score": "4-3",
+          "home_goals": 4,
+          "away_goals": 3,
+          "probability": 0.0023947802220210877
+        },
+        {
+          "score": "4-4",
+          "home_goals": 4,
+          "away_goals": 4,
+          "probability": 0.00032630799326360224
+        },
+        {
+          "score": "4-5",
+          "home_goals": 4,
+          "away_goals": 5,
+          "probability": 3.556966288216873e-05
+        },
+        {
+          "score": "4-6",
+          "home_goals": 4,
+          "away_goals": 6,
+          "probability": 3.2311010447958936e-06
+        },
+        {
+          "score": "4-7",
+          "home_goals": 4,
+          "away_goals": 7,
+          "probability": 2.515790893315619e-07
+        },
+        {
+          "score": "5-0",
+          "home_goals": 5,
+          "away_goals": 0,
+          "probability": 0.048710166426456654
+        },
+        {
+          "score": "5-1",
+          "home_goals": 5,
+          "away_goals": 1,
+          "probability": 0.02654860184996667
+        },
+        {
+          "score": "5-2",
+          "home_goals": 5,
+          "away_goals": 2,
+          "probability": 0.0072349194418398705
+        },
+        {
+          "score": "5-3",
+          "home_goals": 5,
+          "away_goals": 3,
+          "probability": 0.0013144209909991486
+        },
+        {
+          "score": "5-4",
+          "home_goals": 5,
+          "away_goals": 4,
+          "probability": 0.0001791003917321941
+        },
+        {
+          "score": "5-5",
+          "home_goals": 5,
+          "away_goals": 5,
+          "probability": 1.952309072254988e-05
+        },
+        {
+          "score": "5-6",
+          "home_goals": 5,
+          "away_goals": 6,
+          "probability": 1.7734516922537056e-06
+        },
+        {
+          "score": "5-7",
+          "home_goals": 5,
+          "away_goals": 7,
+          "probability": 1.3808400156018284e-07
+        },
+        {
+          "score": "6-0",
+          "home_goals": 6,
+          "away_goals": 0,
+          "probability": 0.02227958980579639
+        },
+        {
+          "score": "6-1",
+          "home_goals": 6,
+          "away_goals": 1,
+          "probability": 0.012143090498935335
+        },
+        {
+          "score": "6-2",
+          "home_goals": 6,
+          "away_goals": 2,
+          "probability": 0.003309186752329052
+        },
+        {
+          "score": "6-3",
+          "home_goals": 6,
+          "away_goals": 3,
+          "probability": 0.0006012042795173775
+        },
+        {
+          "score": "6-4",
+          "home_goals": 6,
+          "away_goals": 4,
+          "probability": 8.191890019253625e-05
+        },
+        {
+          "score": "6-5",
+          "home_goals": 6,
+          "away_goals": 5,
+          "probability": 8.929685216667847e-06
+        },
+        {
+          "score": "6-6",
+          "home_goals": 6,
+          "away_goals": 6,
+          "probability": 8.111607728432523e-07
+        },
+        {
+          "score": "6-7",
+          "home_goals": 6,
+          "away_goals": 7,
+          "probability": 6.315837409729858e-08
+        },
+        {
+          "score": "7-0",
+          "home_goals": 7,
+          "away_goals": 0,
+          "probability": 0.008734699697015678
+        },
+        {
+          "score": "7-1",
+          "home_goals": 7,
+          "away_goals": 1,
+          "probability": 0.00476069127961636
+        },
+        {
+          "score": "7-2",
+          "home_goals": 7,
+          "away_goals": 2,
+          "probability": 0.0012973646631239517
+        },
+        {
+          "score": "7-3",
+          "home_goals": 7,
+          "away_goals": 3,
+          "probability": 0.00023570177386204595
+        },
+        {
+          "score": "7-4",
+          "home_goals": 7,
+          "away_goals": 4,
+          "probability": 3.2116255233094346e-05
+        },
+        {
+          "score": "7-5",
+          "home_goals": 7,
+          "away_goals": 5,
+          "probability": 3.500877683851323e-06
+        },
+        {
+          "score": "7-6",
+          "home_goals": 7,
+          "away_goals": 6,
+          "probability": 3.1801508997897343e-07
+        },
+        {
+          "score": "7-7",
+          "home_goals": 7,
+          "away_goals": 7,
+          "probability": 2.4761202333633232e-08
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.14140161861331996
+        },
+        {
+          "score": "3-0",
+          "home_goals": 3,
+          "away_goals": 0,
+          "probability": 0.1293516442953201
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.10304941930653232
+        },
+        {
+          "score": "4-0",
+          "home_goals": 4,
+          "away_goals": 0,
+          "probability": 0.08874640923130964
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.07706841402756726
+        }
+      ],
+      "favorite": "Spain",
+      "confidence": "high",
+      "explanation": {
+        "headline": "Spain favori selon les forces tête-à-tête mesurables",
+        "key_factors": [
+          {
+            "factor": "Elo",
+            "team_a": 2157.0,
+            "team_b": 1500.0,
+            "advantage": "Spain"
+          },
+          {
+            "factor": "Attaque récente pondérée",
+            "team_a": 2.226329624874308,
+            "team_b": 1.3054064082875756,
+            "advantage": "Spain"
+          },
+          {
+            "factor": "Défense récente pondérée",
+            "team_a": 0.6706487299194017,
+            "team_b": 0.6944613924642361,
+            "advantage": "Spain"
+          }
+        ],
+        "upset_context": [
+          "Un match à élimination directe reste fortement aléatoire."
+        ],
+        "missing_context": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ],
+        "warning": ""
+      }
+    },
+    {
+      "version": "v2.14",
+      "engine_name": "match_probability_engine_v3",
+      "team_a": "Germany",
+      "team_b": "Netherlands",
+      "stage": "knockout",
+      "neutral_site": true,
+      "inputs": {
+        "rating": {
+          "Germany": 1932.0,
+          "Netherlands": 1948.0
+        },
+        "elo": {
+          "Germany": 1932.0,
+          "Netherlands": 1948.0
+        },
+        "attack_strength": {
+          "Germany": 2.182991145425258,
+          "Netherlands": 1.8700620224570255
+        },
+        "defense_strength": {
+          "Germany": 1.0585920975309167,
+          "Netherlands": 1.0426516716580005
+        },
+        "recent_form": "exponential_time_decay_730_days",
+        "competition_context": "knockout",
+        "rest_days": null,
+        "host_context": "neutral",
+        "data_missing": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ]
+      },
+      "probabilities_90": {
+        "team_a_win": 0.3749767144778595,
+        "draw": 0.2530467397438667,
+        "team_b_win": 0.37197654577827377
+      },
+      "advance_probabilities": {
+        "team_a": 0.49567758330129286,
+        "team_b": 0.5043224166987071
+      },
+      "expected_goals": {
+        "team_a": 1.4014925547199866,
+        "team_b": 1.3948753112399572
+      },
+      "score_matrix": [
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.06104422955642901
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.08514908870192733
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.0593861808024498
+        },
+        {
+          "score": "0-3",
+          "home_goals": 0,
+          "away_goals": 3,
+          "probability": 0.027612105810056513
+        },
+        {
+          "score": "0-4",
+          "home_goals": 0,
+          "away_goals": 4,
+          "probability": 0.009628861171448302
+        },
+        {
+          "score": "0-5",
+          "home_goals": 0,
+          "away_goals": 5,
+          "probability": 0.002686212144682058
+        },
+        {
+          "score": "0-6",
+          "home_goals": 0,
+          "away_goals": 6,
+          "probability": 0.0006244885002283231
+        },
+        {
+          "score": "0-7",
+          "home_goals": 0,
+          "away_goals": 7,
+          "probability": 0.00012444051301739378
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.08555303323195303
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.11933581385694289
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.08322929024788839
+        },
+        {
+          "score": "1-3",
+          "home_goals": 1,
+          "away_goals": 3,
+          "probability": 0.03869816071293469
+        },
+        {
+          "score": "1-4",
+          "home_goals": 1,
+          "away_goals": 4,
+          "probability": 0.013494777242217164
+        },
+        {
+          "score": "1-5",
+          "home_goals": 1,
+          "away_goals": 5,
+          "probability": 0.0037647063211703113
+        },
+        {
+          "score": "1-6",
+          "home_goals": 1,
+          "away_goals": 6,
+          "probability": 0.0008752159835782457
+        },
+        {
+          "score": "1-7",
+          "home_goals": 1,
+          "away_goals": 7,
+          "probability": 0.00017440245249941295
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.059950969554146874
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.08362412731597783
+        },
+        {
+          "score": "2-2",
+          "home_goals": 2,
+          "away_goals": 2,
+          "probability": 0.05832261530852219
+        },
+        {
+          "score": "2-3",
+          "home_goals": 2,
+          "away_goals": 3,
+          "probability": 0.027117592060267724
+        },
+        {
+          "score": "2-4",
+          "home_goals": 2,
+          "away_goals": 4,
+          "probability": 0.009456414916286035
+        },
+        {
+          "score": "2-5",
+          "home_goals": 2,
+          "away_goals": 5,
+          "probability": 0.002638103939913731
+        },
+        {
+          "score": "2-6",
+          "home_goals": 2,
+          "away_goals": 6,
+          "probability": 0.0006133043423784205
+        },
+        {
+          "score": "2-7",
+          "home_goals": 2,
+          "away_goals": 7,
+          "probability": 0.00012221186935141665
+        },
+        {
+          "score": "3-0",
+          "home_goals": 3,
+          "away_goals": 0,
+          "probability": 0.028006945826127144
+        },
+        {
+          "score": "3-1",
+          "home_goals": 3,
+          "away_goals": 1,
+          "probability": 0.03906619727609972
+        },
+        {
+          "score": "3-2",
+          "home_goals": 3,
+          "away_goals": 2,
+          "probability": 0.027246237042230583
+        },
+        {
+          "score": "3-3",
+          "home_goals": 3,
+          "away_goals": 3,
+          "probability": 0.012668367791466345
+        },
+        {
+          "score": "3-4",
+          "home_goals": 3,
+          "away_goals": 4,
+          "probability": 0.0044176983665059665
+        },
+        {
+          "score": "3-5",
+          "home_goals": 3,
+          "away_goals": 5,
+          "probability": 0.0012324276767888523
+        },
+        {
+          "score": "3-6",
+          "home_goals": 3,
+          "away_goals": 6,
+          "probability": 0.00028651382320693135
+        },
+        {
+          "score": "3-7",
+          "home_goals": 3,
+          "away_goals": 7,
+          "probability": 5.709300833147406e-05
+        },
+        {
+          "score": "4-0",
+          "home_goals": 4,
+          "away_goals": 0,
+          "probability": 0.0098128815139408
+        },
+        {
+          "score": "4-1",
+          "home_goals": 4,
+          "away_goals": 1,
+          "probability": 0.013687746155918995
+        },
+        {
+          "score": "4-2",
+          "home_goals": 4,
+          "away_goals": 2,
+          "probability": 0.009546349589705518
+        },
+        {
+          "score": "4-3",
+          "home_goals": 4,
+          "away_goals": 3,
+          "probability": 0.00443865578504864
+        },
+        {
+          "score": "4-4",
+          "home_goals": 4,
+          "away_goals": 4,
+          "probability": 0.0015478428424141898
+        },
+        {
+          "score": "4-5",
+          "home_goals": 4,
+          "away_goals": 5,
+          "probability": 0.00043180955331260663
+        },
+        {
+          "score": "4-6",
+          "home_goals": 4,
+          "away_goals": 6,
+          "probability": 0.00010038674751221819
+        },
+        {
+          "score": "4-7",
+          "home_goals": 4,
+          "away_goals": 7,
+          "probability": 2.0003856525781766e-05
+        },
+        {
+          "score": "5-0",
+          "home_goals": 5,
+          "away_goals": 0,
+          "probability": 0.0027505360764274837
+        },
+        {
+          "score": "5-1",
+          "home_goals": 5,
+          "away_goals": 1,
+          "probability": 0.0038366548656835176
+        },
+        {
+          "score": "5-2",
+          "home_goals": 5,
+          "away_goals": 2,
+          "probability": 0.0026758275749452966
+        },
+        {
+          "score": "5-3",
+          "home_goals": 5,
+          "away_goals": 3,
+          "probability": 0.0012441486071420934
+        },
+        {
+          "score": "5-4",
+          "home_goals": 5,
+          "away_goals": 4,
+          "probability": 0.00043385804390402166
+        },
+        {
+          "score": "5-5",
+          "home_goals": 5,
+          "away_goals": 5,
+          "probability": 0.00012103557480491625
+        },
+        {
+          "score": "5-6",
+          "home_goals": 5,
+          "away_goals": 6,
+          "probability": 2.8138255846185784e-05
+        },
+        {
+          "score": "5-7",
+          "home_goals": 5,
+          "away_goals": 7,
+          "probability": 5.607051197313992e-06
+        },
+        {
+          "score": "6-0",
+          "home_goals": 6,
+          "away_goals": 0,
+          "probability": 0.0006424759721003071
+        },
+        {
+          "score": "6-1",
+          "home_goals": 6,
+          "away_goals": 1,
+          "probability": 0.00089617387154761
+        },
+        {
+          "score": "6-2",
+          "home_goals": 6,
+          "away_goals": 2,
+          "probability": 0.0006250254040000449
+        },
+        {
+          "score": "6-3",
+          "home_goals": 6,
+          "away_goals": 3,
+          "probability": 0.0002906108349791475
+        },
+        {
+          "score": "6-4",
+          "home_goals": 6,
+          "away_goals": 4,
+          "probability": 0.00010134146972281057
+        },
+        {
+          "score": "6-5",
+          "home_goals": 6,
+          "away_goals": 5,
+          "probability": 2.827174282422402e-05
+        },
+        {
+          "score": "6-6",
+          "home_goals": 6,
+          "away_goals": 6,
+          "probability": 6.572592678539252e-06
+        },
+        {
+          "score": "6-7",
+          "home_goals": 6,
+          "away_goals": 7,
+          "probability": 1.3097067511615575e-06
+        },
+        {
+          "score": "7-0",
+          "home_goals": 7,
+          "away_goals": 0,
+          "probability": 0.0001286321844978666
+        },
+        {
+          "score": "7-1",
+          "home_goals": 7,
+          "away_goals": 1,
+          "probability": 0.00017942585838693728
+        },
+        {
+          "score": "7-2",
+          "home_goals": 7,
+          "away_goals": 2,
+          "probability": 0.00012513835003098782
+        },
+        {
+          "score": "7-3",
+          "home_goals": 7,
+          "away_goals": 3,
+          "probability": 5.818413164917628e-05
+        },
+        {
+          "score": "7-4",
+          "home_goals": 7,
+          "away_goals": 4,
+          "probability": 2.0289902185842853e-05
+        },
+        {
+          "score": "7-5",
+          "home_goals": 7,
+          "away_goals": 5,
+          "probability": 5.660376725301167e-06
+        },
+        {
+          "score": "7-6",
+          "home_goals": 7,
+          "away_goals": 6,
+          "probability": 1.3159199577399795e-06
+        },
+        {
+          "score": "7-7",
+          "home_goals": 7,
+          "away_goals": 7,
+          "probability": 2.6222060865991787e-07
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.11933581385694289
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.08555303323195303
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.08514908870192733
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.08362412731597783
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.08322929024788839
+        }
+      ],
+      "favorite": "Netherlands",
+      "confidence": "low",
+      "explanation": {
+        "headline": "Netherlands favori selon les forces tête-à-tête mesurables",
+        "key_factors": [
+          {
+            "factor": "Elo",
+            "team_a": 1932.0,
+            "team_b": 1948.0,
+            "advantage": "Netherlands"
+          },
+          {
+            "factor": "Attaque récente pondérée",
+            "team_a": 2.182991145425258,
+            "team_b": 1.8700620224570255,
+            "advantage": "Germany"
+          },
+          {
+            "factor": "Défense récente pondérée",
+            "team_a": 1.0585920975309167,
+            "team_b": 1.0426516716580005,
+            "advantage": "Netherlands"
+          }
+        ],
+        "upset_context": [
+          "Un match à élimination directe reste fortement aléatoire."
+        ],
+        "missing_context": [
+          "injuries",
+          "future_lineups",
+          "squad_value",
+          "betting_odds",
+          "fifa_ranking"
+        ],
+        "warning": ""
+      }
+    }
+  ]
+}

@@ -559,6 +559,15 @@ visual priority, and post-match evaluation badges combine color, symbol and
 plain-language text. The experimental variant remains inside a collapsed Mode
 labo.
 
+## Road to the Trophy Tournament Atlas V2.13.1B
+
+V2.13.1B turns `/simulation` into a zoomable Tournament Atlas. Angular renders
+rich semantic group, match and inspector content while targeted D3 modules
+provide pan, touch zoom and animated focus. The atlas exposes all 72 group
+fixtures, live standings and qualification probabilities before connecting
+them to the 32 projected knockout target slots. The knockout route remains
+explicitly non-official until the official mapping is available.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.
@@ -575,3 +584,6 @@ La structure et les règles de provenance sont détaillées dans
 `docs/DATA_FOUNDATION.md`. Les fixtures actives sont réelles et les prédictions
 proviennent désormais du moteur release-candidate historiquement validé
 `quant_hybrid_v2.2`.
+# Tournament Simulation Engine V3 candidate
+
+V2.14 adds an explainable, backtested candidate for complete World Cup simulations. It uses audited Elo and score-derived attack/defense data, generates 50,000 end-to-end paths, and remains explicitly under review without changing active `quant_hybrid_v2.2` predictions. See `docs/TOURNAMENT_SIMULATION_ENGINE_V3_RELEASE_NOTES_V2_14.md`.

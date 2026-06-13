@@ -1,0 +1,25 @@
+{
+  "version": "v2.14",
+  "simulation_count": 50000,
+  "what_is_simulated": [
+    "50000 group-stage simulations",
+    "50000 knockout draws over one fixed projected bracket"
+  ],
+  "full_end_to_end_tournaments": false,
+  "fixed_knockout_bracket": true,
+  "complete_paths_retained": false,
+  "knockout_formula": "50% group qualification probability + 25% finish-first probability + 25% logistic Elo signal",
+  "diagnosis": "Reaching probability is incorrectly reused as head-to-head strength; the knockout block is not 50,000 complete World Cups.",
+  "france_switzerland": {
+    "case": "France vs Switzerland",
+    "old_model_favorite": "Switzerland",
+    "old_model_probability": 0.5127736848669896,
+    "elo_france": 2063.0,
+    "elo_switzerland": 1891.0,
+    "elo_expected_france": 0.7291099628977525,
+    "elo_expected_switzerland": 0.27089003710224746,
+    "diagnosis": "Switzerland becomes favorite because group context overwhelms direct strength.",
+    "verdict": "fail"
+  },
+  "verdict": "fail_calibration_review_required"
+}

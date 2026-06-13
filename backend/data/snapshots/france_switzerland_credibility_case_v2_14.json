@@ -1,0 +1,41 @@
+{
+  "case": "France vs Switzerland",
+  "old_model": {
+    "favorite": "Switzerland",
+    "probability": 0.5127736848669896,
+    "verdict": "fail"
+  },
+  "elo_baseline": {
+    "france_elo": 2063.0,
+    "switzerland_elo": 1891.0,
+    "france_probability": 0.7291099628977525,
+    "switzerland_probability": 0.27089003710224746
+  },
+  "v3_model": {
+    "favorite": "France",
+    "favorite_probability": 0.6869948465496261,
+    "france_advance_probability": 0.6869948465496261,
+    "switzerland_advance_probability": 0.31300515345037394,
+    "explanation": [
+      {
+        "factor": "Elo",
+        "team_a": 2063.0,
+        "team_b": 1891.0,
+        "advantage": "France"
+      },
+      {
+        "factor": "Attaque récente pondérée",
+        "team_a": 1.3938054130201176,
+        "team_b": 1.5777059300014364,
+        "advantage": "Switzerland"
+      },
+      {
+        "factor": "Défense récente pondérée",
+        "team_a": 0.7808353413171586,
+        "team_b": 1.2265012615012127,
+        "advantage": "France"
+      }
+    ]
+  },
+  "verdict": "pass"
+}

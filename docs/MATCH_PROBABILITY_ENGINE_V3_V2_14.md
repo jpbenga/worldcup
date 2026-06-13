@@ -1,0 +1,3 @@
+# Match Probability Engine V3 V2.14
+
+The candidate direct-match engine combines current Elo with exponentially time-decayed historical goals scored and conceded. These signals parameterize an independent Poisson score matrix, normalized over scores from 0 to 7. It returns expected goals, 90-minute 1X2 probabilities, likely scores and knockout advancement. A draw is allocated after 90 minutes using Elo expected score as a transparent extra-time/penalty approximation. Group qualification probability is absent from every direct-match input. The candidate is explainable and backtestable, but remains under review.

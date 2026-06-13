@@ -1,0 +1,3 @@
+# Match Explanation Layer V3 V2.14
+
+Every candidate match names its favorite, confidence, Elo comparison, measured attack comparison, measured defense comparison, uncertainty and missing context. The layer never claims injuries, absences, squad quality, lineups, motivation or market information. If a team with a strong Elo disadvantage becomes favorite, at least two strong measured factors must explain the inversion; otherwise the output receives credibility_warning. This lets an outsider win probabilistically without falsely labeling it favorite and gives the interface an honest answer to “why?”.

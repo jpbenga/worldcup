@@ -1,0 +1,61 @@
+.control { border: 1px solid rgb(51 65 85); border-radius: .65rem; background: rgb(2 6 23); padding: .55rem .8rem; font-size: .78rem; color: rgb(203 213 225); }
+.control:hover { border-color: rgb(103 232 249); color: white; }
+.control-primary { background: rgb(34 211 238); border-color: rgb(34 211 238); color: rgb(2 6 23); font-weight: 800; }
+.atlas-viewport { position: relative; height: min(76vh, 900px); min-height: 620px; overflow: hidden; border: 1px solid rgb(51 65 85); border-radius: 1.5rem; background-color: rgb(2 6 23); background-image: radial-gradient(circle at center, rgb(51 65 85 / .48) 1px, transparent 1px); background-size: 22px 22px; cursor: grab; touch-action: none; }
+.atlas-viewport:active { cursor: grabbing; }
+.atlas-world { position: absolute; transform-origin: 0 0; }
+.atlas-stage-label { position: absolute; top: 22px; width: 340px; color: rgb(100 116 139); font-size: 18px; font-weight: 900; letter-spacing: .18em; }
+.atlas-connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.atlas-connections path { fill: none; stroke: rgb(71 85 105 / .48); stroke-width: 3; transition: .2s; }
+.atlas-connections path.path-active { stroke: rgb(34 211 238); stroke-width: 8; filter: drop-shadow(0 0 8px rgb(34 211 238 / .6)); }
+.atlas-node { position: absolute; z-index: 2; border: 2px solid rgb(51 65 85); background: rgb(15 23 42 / .96); box-shadow: 0 14px 35px rgb(0 0 0 / .35); transition: opacity .2s, border-color .2s, box-shadow .2s; }
+.atlas-node.node-focus { border-color: rgb(34 211 238); box-shadow: 0 0 0 5px rgb(34 211 238 / .13), 0 18px 45px rgb(0 0 0 / .5); z-index: 4; }
+.atlas-node.node-muted { opacity: .08; }
+.group-node { width: 360px; height: 440px; border-radius: 20px; overflow: hidden; }
+.node-heading { width: 100%; display: flex; justify-content: space-between; padding: 14px 16px; background: rgb(8 47 73); color: white; font-weight: 900; text-align: left; }
+.node-heading small { color: rgb(103 232 249); font-weight: 600; }
+.group-node table { width: 100%; font-size: 12px; }
+.group-node th { padding: 5px 8px; color: rgb(100 116 139); text-align: left; }
+.group-node td { padding: 6px 8px; border-top: 1px solid rgb(30 41 59); }
+.group-node td:nth-child(n+3) { text-align: right; }
+.group-node td:nth-child(2) { display: flex; align-items: center; gap: 6px; font-weight: 700; }
+.group-node td img { width: 18px; height: 18px; object-fit: contain; }
+.group-node tr { cursor: pointer; }
+.group-node tr:hover, .team-focus { background: rgb(8 145 178 / .22) !important; color: rgb(165 243 252); }
+.group-matches { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; padding: 8px; }
+.group-matches button { min-width: 0; border: 1px solid rgb(51 65 85); border-radius: 8px; background: rgb(2 6 23); padding: 6px; color: rgb(203 213 225); text-align: left; }
+.group-matches button span { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 10px; }
+.group-matches button small { color: rgb(100 116 139); font-size: 8px; text-transform: uppercase; }
+.group-matches button.match-real { border-color: rgb(16 185 129 / .6); }
+.group-matches button.match-focus { border-color: rgb(34 211 238); background: rgb(8 145 178 / .25); }
+.group-matches button.match-muted { opacity: .1; }
+.knockout-node { width: 330px; min-height: 104px; border-radius: 16px; padding: 10px; color: rgb(226 232 240); text-align: left; }
+.knockout-node small { display: block; margin-bottom: 6px; color: rgb(196 181 253); font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
+.knockout-node span { display: flex; justify-content: space-between; border-radius: 8px; background: rgb(2 6 23); padding: 6px 8px; font-size: 12px; font-weight: 700; }
+.knockout-node span + span { margin-top: 4px; }
+.trophy-node { left: 4010px; top: 1435px; width: 240px; border-color: rgb(250 204 21); border-radius: 28px; background: rgb(66 32 6); padding: 24px; text-align: center; }
+.trophy-node small, .trophy-node span { display: block; color: rgb(253 224 71); }
+.trophy-node strong { display: block; margin: 8px 0; font-size: 28px; }
+.atlas-hint { position: absolute; right: 14px; bottom: 12px; z-index: 10; border: 1px solid rgb(71 85 105); border-radius: 999px; background: rgb(2 6 23 / .88); padding: 7px 12px; color: rgb(148 163 184); font-size: 11px; pointer-events: none; }
+.inspector { min-height: 620px; border: 1px solid rgb(51 65 85); border-radius: 1.5rem; background: rgb(15 23 42 / .88); padding: 20px; }
+.inspector .eyebrow { color: rgb(103 232 249); font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .2em; }
+.inspector h2 { margin-top: 8px; font-size: 25px; font-weight: 900; line-height: 1.15; }
+.inspector h2 span { color: rgb(100 116 139); }
+.inspector h3 { margin: 22px 0 8px; color: rgb(148 163 184); font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .14em; }
+.meta { margin-top: 8px; color: rgb(148 163 184); font-size: 12px; line-height: 1.6; }
+.metric, .score-block { border: 1px solid rgb(51 65 85); border-radius: 14px; background: rgb(2 6 23); padding: 12px; }
+.metric small, .score-block small, .score-block span { display: block; color: rgb(148 163 184); font-size: 10px; }
+.metric strong { display: block; margin-top: 4px; color: rgb(103 232 249); }
+.score-block { margin-top: 18px; }
+.score-block strong { display: block; margin: 5px 0; font-size: 28px; }
+.score-block.projected { border-color: rgb(139 92 246 / .5); background: rgb(76 29 149 / .15); }
+.score-block.warning { border-color: rgb(245 158 11 / .55); background: rgb(120 53 15 / .18); }
+.journey-step { width: 100%; display: flex; justify-content: space-between; gap: 8px; margin-top: 6px; border: 1px solid rgb(51 65 85); border-radius: 10px; background: rgb(2 6 23); padding: 9px; color: rgb(203 213 225); text-align: left; font-size: 11px; }
+.journey-step:hover { border-color: rgb(34 211 238); }
+.journey-step small { color: rgb(100 116 139); text-transform: uppercase; }
+.legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; border-top: 1px solid rgb(51 65 85); padding-top: 15px; color: rgb(148 163 184); font-size: 10px; }
+.legend span { display: flex; align-items: center; gap: 5px; }
+.legend i { width: 8px; height: 8px; border-radius: 999px; }
+.legend .real { background: rgb(52 211 153); }.legend .projected { background: rgb(167 139 250); }.legend .confirm { background: rgb(100 116 139); }
+@media (max-width: 1279px) { .inspector { min-height: auto; } }
+@media (max-width: 640px) { .atlas-viewport { min-height: 520px; height: 68vh; }.atlas-hint { left: 10px; right: auto; max-width: calc(100% - 20px); }.control { padding: .48rem .65rem; } }

@@ -1,0 +1,43 @@
+{
+  "version": "v2.14",
+  "split": "chronological last 30% test",
+  "all_matches": {
+    "v3_candidate": {
+      "matches": 394,
+      "log_loss": 1.0203743434601833,
+      "brier": 0.612948342669278,
+      "accuracy": 0.49746192893401014
+    },
+    "elo_baseline": {
+      "matches": 394,
+      "log_loss": 1.0480208700068723,
+      "brier": 0.629326091233057,
+      "accuracy": 0.5025380710659898
+    }
+  },
+  "segments": {
+    "group": {
+      "matches": 271,
+      "log_loss": 1.020063178990597,
+      "brier": 0.613372960680824,
+      "accuracy": 0.4907749077490775
+    },
+    "knockout": {
+      "matches": 123,
+      "log_loss": 1.021059917210247,
+      "brier": 0.6120128021722951,
+      "accuracy": 0.5121951219512195
+    }
+  },
+  "comparisons": {
+    "old_road_to_trophy": "not historically backtestable as a direct match model",
+    "quant_hybrid_v2.2": "active model kept unchanged; existing evaluation remains authoritative"
+  },
+  "verdict": {
+    "candidate_promotable_to_simulation": false,
+    "reason": "Candidate is credible enough for review but needs broader calibration and official bracket mapping before promotion.",
+    "passes_credibility_guards": true,
+    "passes_backtest_thresholds": true,
+    "sample_size_too_small": false
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "version": "v2.13.1B",
+  "generated_at": "2026-06-13T12:25:13Z",
+  "verdict": "FAIL_CALIBRATION_REVIEW_REQUIRED",
+  "execution_evidence": {
+    "group_stage_declared_simulations": 50000,
+    "knockout_declared_simulations": 50000,
+    "group_probabilities_are_exact_empirical_count_multiples": true,
+    "knockout_probabilities_are_exact_empirical_count_multiples": true,
+    "independent_knockout_rerun_matches_published_top_counts": true,
+    "independent_knockout_rerun_champion_count": 50000,
+    "full_end_to_end_world_cup_paths_simulated": false,
+    "run_manifest_with_input_hashes_available": false,
+    "interpretation": "Two real 50,000-draw blocks exist: group stage, then knockout on one fixed projected bracket."
+  },
+  "reproducibility": {
+    "seeded": true,
+    "cross_process_reproducibility_bug_found": true,
+    "cause": "Unsorted Python set iteration affected seeded tie-break allocation.",
+    "fix": "Group table construction is now sorted before tie-break draws.",
+    "existing_artifacts_generated_before_fix": true
+  },
+  "calibration": {
+    "knockout_formula": "50% group qualification + 25% group first place + 25% logistic Elo signal",
+    "problem": "Group difficulty is incorrectly treated as head-to-head strength.",
+    "lower_elo_projected_winner_count": 10,
+    "projected_match_count": 31,
+    "lower_elo_projected_winners": [
+      {
+        "round": "round_of_32",
+        "projected_winner": "Morocco",
+        "projected_winner_elo": 1827,
+        "higher_elo_opponent": "Uruguay",
+        "higher_elo_opponent_elo": 1892,
+        "elo_gap": 65
+      },
+      {
+        "round": "round_of_32",
+        "projected_winner": "South Korea",
+        "projected_winner_elo": 1758,
+        "higher_elo_opponent": "Australia",
+        "higher_elo_opponent_elo": 1777,
+        "elo_gap": 19
+      },
+      {
+        "round": "round_of_32",
+        "projected_winner": "Japan",
+        "projected_winner_elo": 1906,
+        "higher_elo_opponent": "Croatia",
+        "higher_elo_opponent_elo": 1912,
+        "elo_gap": 6
+      },
+      {
+        "round": "round_of_16",
+        "projected_winner": "Mexico",
+        "projected_winner_elo": 1875,
+        "higher_elo_opponent": "Germany",
+        "higher_elo_opponent_elo": 1932,
+        "elo_gap": 57
+      },
+      {
+        "round": "round_of_16",
+        "projected_winner": "Switzerland",
+        "projected_winner_elo": 1891,
+        "higher_elo_opponent": "Belgium",
+        "higher_elo_opponent_elo": 1894,
+        "elo_gap": 3
+      },
+      {
+        "round": "round_of_16",
+        "projected_winner": "South Korea",
+        "projected_winner_elo": 1758,
+        "higher_elo_opponent": "Norway",
+        "higher_elo_opponent_elo": 1914,
+        "elo_gap": 156
+      },
+      {
+        "round": "round_of_16",
+        "projected_winner": "Japan",
+        "projected_winner_elo": 1906,
+        "higher_elo_opponent": "Portugal",
+        "higher_elo_opponent_elo": 1986,
+        "elo_gap": 80
+      },
+      {
+        "round": "quarter_finals",
+        "projected_winner": "Mexico",
+        "projected_winner_elo": 1875,
+        "higher_elo_opponent": "Brazil",
+        "higher_elo_opponent_elo": 1991,
+        "elo_gap": 116
+      },
+      {
+        "round": "quarter_finals",
+        "projected_winner": "Switzerland",
+        "projected_winner_elo": 1891,
+        "higher_elo_opponent": "France",
+        "higher_elo_opponent_elo": 2063,
+        "elo_gap": 172
+      },
+      {
+        "round": "quarter_finals",
+        "projected_winner": "South Korea",
+        "projected_winner_elo": 1758,
+        "higher_elo_opponent": "Japan",
+        "higher_elo_opponent_elo": 1906,
+        "elo_gap": 148
+      }
+    ],
+    "france_vs_switzerland": {
+      "round": "quarter_finals",
+      "scenario_france_advance_probability": 0.4872263151330104,
+      "scenario_switzerland_advance_probability": 0.5127736848669896,
+      "france_elo": 2063,
+      "switzerland_elo": 1891,
+      "standard_elo_france_expected_score": 0.7291099628977525,
+      "diagnosis": "Group qualification and first-place probabilities overwhelm the Elo advantage."
+    },
+    "fifa_ranking_used": false,
+    "squad_quality_used": false,
+    "offensive_strength_directly_used_in_knockout": false
+  },
+  "recommendations": [
+    "Do not present current knockout probabilities as calibrated.",
+    "Build and backtest a dedicated neutral-site knockout advancement model.",
+    "Use Elo and active engine team-strength signals directly; do not use group difficulty as matchup strength.",
+    "Persist complete end-to-end paths and simulation run manifests before claiming full World Cup simulations."
+  ]
+}
