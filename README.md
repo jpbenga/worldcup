@@ -587,3 +587,5 @@ proviennent désormais du moteur release-candidate historiquement validé
 # Tournament Simulation Engine V3 candidate
 
 V2.14 adds an explainable, backtested candidate for complete World Cup simulations. It uses audited Elo and score-derived attack/defense data, generates 50,000 end-to-end paths, and remains explicitly under review without changing active `quant_hybrid_v2.2` predictions. See `docs/TOURNAMENT_SIMULATION_ENGINE_V3_RELEASE_NOTES_V2_14.md`.
+
+V2.15 promotes V3 as the single official Road to the Trophy engine. The public Atlas now loads `road_to_the_trophy_engine.json` and no longer presents competing scenarios. This promotion does not change active pre-match predictions.

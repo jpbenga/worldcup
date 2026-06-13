@@ -1712,7 +1712,7 @@ Commit: `e4ca60e Build interactive Road to the Trophy experience`
 
 ## V2.14 — Tournament Simulation Engine V3 Research, Backtest & Candidate Build
 
-Commit: TBD
+Commit: `d01dd9c Build tournament simulation engine V3 candidate`
 
 ### Technical validation
 
@@ -1727,6 +1727,44 @@ Commit: TBD
 - [x] Active predictions unchanged and candidate not promoted
 - [x] Angular build and tests passed
 - [x] Secret scan passed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] V3 simulation engine accepted as the correct direction
+- [x] France vs Switzerland credibility repair accepted
+- [x] 50,000 full tournament simulation requirement accepted
+- [x] Head-to-head knockout simulation accepted
+- [x] User rejected keeping V3 as a visible candidate/comparator
+- [x] User requested direct integration of V3 into Road to the Trophy
+- [x] Next iteration accepted: promote Tournament Simulation V3 as the official Road to the Trophy engine
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.15 — Promote Tournament Simulation V3 as Road to the Trophy Engine
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.14 human validation recorded
+- [x] V3 promotion strategy and canonical engine created
+- [x] V3 promoted as official Road to the Trophy engine
+- [x] Candidate labels and visible legacy comparison removed
+- [x] Legacy engine kept for audit only
+- [x] Public language simplified and V3 explanations preserved
+- [x] Official Road to the Trophy view model generated
+- [x] Atlas visual experience preserved
+- [x] UX review passed
+- [x] Technical validation passed
+- [x] Angular build and tests passed
+- [x] Active predictions unchanged
+- [x] No retrain or Optuna rerun
+- [x] No secret committed
 
 ### Human validation
 

@@ -34,12 +34,10 @@ export class WorldCupService {
     return this.http.get<any>('assets/data/representative_tournament_paths_v2_13.json');
   }
 
-  getRoadToTheTrophyViewModelV2131B(): Observable<any> {
-    return this.http.get<any>('assets/data/road_to_the_trophy_view_model_v2_13_1B.json');
-  }
-
-  getRoadToTheTrophyV3CandidateViewModelV214(): Observable<any> {
-    return this.http.get<any>('assets/data/road_to_the_trophy_v3_candidate_view_model_v2_14.json');
+  getRoadToTheTrophyEngine(): Observable<any> {
+    return this.http.get<any>('assets/data/road_to_the_trophy_engine.json').pipe(
+      map((engine) => engine.road_to_the_trophy_view_model),
+    );
   }
 
   getPredictionHistoryV212(): Observable<any> {

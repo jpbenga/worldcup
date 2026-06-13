@@ -434,3 +434,5 @@ bracket without changing the atlas interaction model.
 # V2.14 tournament candidate
 
 The next tournament-engine track starts from the V2.14 candidate: direct Elo plus score-derived Poisson match probabilities, chronological calibration, complete Monte Carlo paths, and measured explanations. Promotion remains blocked until official bracket mapping, broader calibration, and human validation are available. Player availability, odds and richer xG may be evaluated only after they are integrated as reliable pipeline data.
+
+V2.15 records the product decision to promote V3 specifically for Road to the Trophy. Future work should improve the one canonical tournament engine behind the public Atlas instead of adding visible competing scenarios. The active pre-match engine remains a separate concern.

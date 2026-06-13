@@ -1,0 +1,24 @@
+{
+  "version": "v2.15",
+  "passed": true,
+  "v3_promoted_to_road_to_the_trophy": true,
+  "legacy_visible_in_ui": false,
+  "active_predictions_unchanged": true,
+  "checks": {
+    "canonical_engine_exists": true,
+    "engine_official": true,
+    "public_engine_name": true,
+    "simulation_count": true,
+    "legacy_hidden": true,
+    "official_view_model": true,
+    "candidate_labels_removed": true,
+    "active_predictions_unchanged": true,
+    "no_retrain_or_optuna": true,
+    "no_secret": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Official 2026 knockout mapping is unavailable; projected dynamic seeding is explicitly non-official.",
+    "Only 100 complete paths are persisted; all 50,000 were generated and aggregated."
+  ]
+}

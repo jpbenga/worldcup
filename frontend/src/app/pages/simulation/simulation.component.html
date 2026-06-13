@@ -8,9 +8,9 @@
     @if (vm(); as data) {
       <header class="grid gap-5 py-8 lg:grid-cols-[1fr_auto] lg:items-end">
         <div>
-          <p class="text-xs font-bold uppercase tracking-[0.22em] text-violet-300">Road to the Trophy · Tournament Atlas</p>
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-violet-300">Road to the Trophy · Scénario SimuAI</p>
           <h1 class="mt-2 text-4xl font-black tracking-tight sm:text-6xl">Arpentez les 104 matchs</h1>
-          <p class="mt-3 max-w-3xl text-slate-400">Déplacez-vous dans le tournoi, zoomez sur un groupe, suivez une équipe et inspectez chaque embranchement du scénario projeté.</p>
+          <p class="mt-3 max-w-3xl text-slate-400">SimuAI Tournament Engine V3 · 50 000 tournois simulés. Déplacez-vous dans le tournoi, zoomez sur un groupe et suivez le chemin projeté de chaque équipe.</p>
         </div>
         <div class="grid grid-cols-3 gap-2 text-center text-xs">
           <div class="rounded-2xl border border-emerald-500/20 bg-emerald-500/10 p-3"><strong class="block text-2xl text-emerald-300">{{ data.result_summary.finished_matches }}</strong>réels verrouillés</div>
@@ -19,31 +19,10 @@
         </div>
       </header>
 
-      <section class="mb-4 rounded-2xl border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
-        <strong>Calibration knockout en audit.</strong>
-        Les 50 000 tirages existent, mais les probabilités du tableau utilisent une force synthétique non validée qui peut surestimer les équipes issues de groupes plus faciles. {{ data.credibility_audit.calibration.lower_elo_projected_winner_count }} affiches sur {{ data.credibility_audit.calibration.projected_match_count }} projettent actuellement une équipe moins bien classée Elo.
+      <section class="mb-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 px-4 py-3 text-sm text-cyan-50">
+        <strong>Projection du tournoi.</strong>
+        Les groupes varient à chaque simulation et les matchs à élimination sont simulés en tête-à-tête à partir des forces mesurables disponibles.
       </section>
-
-      @if (candidateVm(); as candidate) {
-        <section class="mb-4 grid gap-3 rounded-2xl border border-violet-400/30 bg-violet-500/10 p-4 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div>
-            <p class="text-xs font-bold uppercase tracking-[0.18em] text-violet-300">Moteur tournoi V3 · candidat en validation</p>
-            <h2 class="mt-1 text-xl font-black">Comparer sans remplacer le scénario actuel</h2>
-            <p class="mt-1 text-sm text-slate-300">Méthode : moteur de match tête-à-tête fondé sur Elo, attaque/défense mesurées et 50 000 parcours complets. Le bracket projeté reste non officiel.</p>
-          </div>
-          <div class="flex flex-wrap items-center gap-2">
-            <button class="control" [class.control-primary]="simulationMode() === 'current'" (click)="simulationMode.set('current')">Scénario actuel</button>
-            <button class="control" [class.control-primary]="simulationMode() === 'v3_candidate'" (click)="simulationMode.set('v3_candidate')">Simulation V3 candidat</button>
-          </div>
-          @if (simulationMode() === 'v3_candidate') {
-            <div class="lg:col-span-2 grid gap-2 sm:grid-cols-3">
-              <div class="metric"><small>Champion du parcours représentatif</small><strong>{{ candidate.champion_projected.team }}</strong><span>{{ candidate.champion_projected.probability | percent: '1.1-1' }} de chances de titre</span></div>
-              <div class="metric"><small>Crédibilité</small><strong>Garde-fous passés</strong><span>Candidat non promu, en revue humaine</span></div>
-              <div class="metric"><small>Parcours complets</small><strong>50 000 générés</strong><span>100 parcours cohérents persistés et explorables</span></div>
-            </div>
-          }
-        </section>
-      }
 
       <section class="rounded-3xl border border-slate-700 bg-slate-900/80 p-3">
         <div class="flex flex-wrap items-center gap-2">
@@ -103,6 +82,11 @@
             @if (match.matchday) { <p class="meta">{{ match.matchday }} · {{ match.kickoff_at | date: 'd MMM, HH:mm' }}</p> }
             @if (match.score) { <div class="score-block"><small>{{ match.score_label }}</small><strong>{{ match.score }}</strong><span>{{ match.detail_label }}</span></div> }
             @if (match.projected_winner) { <div class="score-block projected"><small>Projection issue des simulations</small><strong>{{ match.projected_winner }}</strong><span>qualifié dans ce scénario représentatif</span></div> }
+            @if (match.explanation; as explanation) {
+              <h3>Pourquoi ?</h3>
+              <p class="meta">{{ explanation.headline }} {{ explanation.upset_context }}</p>
+              <p class="meta">Données non disponibles : {{ explanation.missing_context.join(', ') }}.</p>
+            }
             <div class="mt-4 flex flex-wrap gap-2"><button class="control" (click)="selectTeam(match.home_team || match.team_a)">Suivre {{ match.home_team || match.team_a }}</button><button class="control" (click)="selectTeam(match.away_team || match.team_b)">Suivre {{ match.away_team || match.team_b }}</button></div>
           } @else if (selectedTeamPath(); as path) {
             <p class="eyebrow">Parcours d’équipe</p><div class="flex items-center gap-3">@if (path.logo_url) { <img class="h-12 w-12 object-contain" [src]="path.logo_url" [alt]="path.team" /> }<h2>{{ path.team }}</h2></div>
@@ -112,12 +96,12 @@
           } @else {
             <p class="eyebrow">Point de départ</p><h2>{{ data.projected_winner.team }} mène le scénario</h2><p class="meta">Sélectionnez une équipe dans un classement, une rencontre de groupe ou un match du tableau pour exploiter la simulation.</p>
             <div class="score-block projected"><small>Finale projetée</small><strong>{{ data.projected_final.teams[0].team }}</strong><span>vs {{ data.projected_final.teams[1].team }}</span></div>
-            <div class="score-block warning"><small>Crédibilité du scénario</small><strong>Calibration à revoir</strong><span>Deux blocs de 50 000 tirages existent, mais pas 50 000 Coupes du monde complètes.</span></div>
+            <div class="score-block projected"><small>Méthode SimuAI</small><strong>50 000 tournois complets</strong><span>Groupes variables et matchs knockout simulés en tête-à-tête.</span></div>
           }
           <div class="legend"><span><i class="real"></i>Réel</span><span><i class="projected"></i>Projeté</span><span><i class="confirm"></i>À confirmer</span></div>
         </aside>
       </section>
-      <p class="mt-4 text-xs leading-5 text-slate-500">Le tableau éliminatoire est un scénario cohérent dérivé de 50 000 simulations sur un bracket projeté fixe. Il ne constitue pas le bracket officiel FIFA.</p>
+      <p class="mt-4 text-xs leading-5 text-slate-500">Le chemin affiché est un tournoi complet cohérent sélectionné parmi 50 000 simulations. Le mapping éliminatoire reste projeté tant que le tableau officiel FIFA n’est pas disponible.</p>
     }
   </div>
 </main>

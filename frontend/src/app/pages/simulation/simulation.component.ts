@@ -38,9 +38,7 @@ export class SimulationComponent {
     queueMicrotask(() => this.initializeAtlas());
   }
 
-  readonly vm = toSignal(this.worldCupService.getRoadToTheTrophyViewModelV2131B());
-  readonly candidateVm = toSignal(this.worldCupService.getRoadToTheTrophyV3CandidateViewModelV214());
-  readonly simulationMode = signal<'current' | 'v3_candidate'>('current');
+  readonly vm = toSignal(this.worldCupService.getRoadToTheTrophyEngine());
   readonly selectedGroup = signal<string | null>(null);
   readonly selectedRound = signal('all');
   readonly selectedStatus = signal('all');

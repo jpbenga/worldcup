@@ -899,3 +899,20 @@ Notes :
 - [x] Angular build passed
 - [x] Angular tests passed
 - [x] No secret committed
+## Checklist V2.15 — Promote Tournament Simulation V3 as Road to the Trophy Engine
+
+- [x] V2.14 human validation recorded
+- [x] V3 promotion strategy and canonical engine created
+- [x] V3 promoted as official Road to the Trophy engine
+- [x] Candidate labels and visible comparison removed
+- [x] Legacy engine kept for audit only
+- [x] Public language simplified and V3 explanations preserved
+- [x] Official Road to the Trophy view model generated
+- [x] Atlas visual experience preserved
+- [x] UX review passed
+- [x] Technical validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] No retrain or Optuna rerun
+- [x] No secret committed
