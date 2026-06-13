@@ -1580,7 +1580,7 @@ Commit: 9376e4a Add prediction history and model transparency scoreboard
 
 ## V2.13 — Living World Cup Bracket & Scenario Engine
 
-Commit: TBD
+Commit: 0cf8813 Build living World Cup scenario experience
 
 ### Technical validation
 
@@ -1600,6 +1600,52 @@ Commit: TBD
 - [x] 104-match target documented
 - [x] Official vs projected status clear
 - [x] UX review passed
+- [x] Technical validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
+- [x] No secret committed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] Living bracket concept accepted
+- [x] Feature name requested: Road to the Trophy
+- [x] SimuAI product language accepted
+- [x] Main issue identified: match modal lacks final/live score prominence
+- [x] Main issue identified: result evaluation colors are not intuitive enough
+- [x] Main issue identified: product language still contains technical terms
+- [x] Next focused iteration accepted: match UX clarity and product language cleanup
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.13.1A — Match UX Clarity & Product Language Cleanup
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.13 human validation recorded
+- [x] Road to the Trophy naming applied
+- [x] Provenance removed from main UI
+- [x] SimuAI product naming applied
+- [x] Product language simplified
+- [x] Score modal removed from UI language
+- [x] Score recommandé used instead
+- [x] Match cards status UX improved
+- [x] Match modal shows final score when finished
+- [x] Match modal shows live score when live
+- [x] Match modal shows Prono SimuAI when upcoming
+- [x] Evaluation badges use success/fail/partial/push/pending colors
+- [x] Experimental variant moved to advanced/lab
+- [x] UX clarity review passed
 - [x] Technical validation passed
 - [x] Angular build passed
 - [x] Angular tests passed

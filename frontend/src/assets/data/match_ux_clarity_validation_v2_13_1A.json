@@ -1,0 +1,38 @@
+{
+  "version": "v2.13.1A",
+  "generated_at": "2026-06-13T11:26:19Z",
+  "passed": true,
+  "feature_name": "Road to the Trophy",
+  "product_engine_name": "SimuAI",
+  "evaluation_states": [
+    "success",
+    "partial",
+    "fail",
+    "push",
+    "pending"
+  ],
+  "match_count": 72,
+  "checks": {
+    "road_to_the_trophy_name_present": true,
+    "simuai_name_present": true,
+    "no_major_score_modal_label": true,
+    "score_recommended_present": true,
+    "all_evaluation_states_defined": true,
+    "match_count_is_72": true,
+    "cards_read_status_result_evaluation": true,
+    "modal_reads_status_result_evaluation": true,
+    "official_score_prominent": true,
+    "live_score_prominent": true,
+    "experimental_variant_not_central": true,
+    "active_predictions_unchanged": true,
+    "candidate_not_promoted": true,
+    "no_retrain": true,
+    "no_optuna_rerun": true,
+    "no_secret": true
+  },
+  "active_predictions_modified": false,
+  "notes": [
+    "The UI must speak to football users, not to model developers.",
+    "Internal JSON field names remain technical and unchanged."
+  ]
+}

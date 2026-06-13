@@ -6,7 +6,7 @@
       <a class="font-black tracking-tight" href="#">SimuMondial <span class="text-cyan-300">2026</span></a>
       <div class="flex gap-4 text-sm text-slate-400">
         <a class="transition hover:text-slate-100" href="#groups">Groupes</a>
-        <a class="transition hover:text-slate-100" routerLink="/simulation">Simulation</a>
+        <a class="transition hover:text-slate-100" routerLink="/simulation">Road to the Trophy</a>
         <a class="transition hover:text-slate-100" routerLink="/transparence">Transparence</a>
       </div>
     </nav>
@@ -17,7 +17,7 @@
         Le Mondial vivant, match après match.
       </h1>
       <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-        Résultats officiels, Pronos IA et scénario le plus probable jusqu’au trophée.
+        Résultats officiels, Pronos SimuAI et scénario le plus probable jusqu’au trophée.
       </p>
       <a
         href="#groups"
@@ -29,7 +29,7 @@
         routerLink="/simulation"
         class="ml-3 mt-8 inline-flex rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-300"
       >
-        Voir le chemin vers le trophée
+        Road to the Trophy
       </a>
       <a
         routerLink="/transparence"
@@ -42,7 +42,7 @@
     <section class="mb-16 grid gap-4 md:grid-cols-3">
       @for (
         item of [
-          ['Prono IA', 'Le score recommandé et le favori de chaque match, avant le coup d’envoi.'],
+          ['Prono SimuAI', 'Le score recommandé et le favori de chaque match, avant le coup d’envoi.'],
           ['Tournoi vivant', 'Les résultats réels mettent à jour les groupes et le scénario dominant.'],
           ['Bilan transparent', 'Les bons pronos comme les ratés restent visibles.']
         ];

@@ -550,6 +550,15 @@ every knockout pairing is labelled as a simulation-derived projection. SimuAI
 is the public product name; technical provenance remains in transparency and
 documentation rather than the home screen.
 
+## Match UX clarity and product language V2.13.1A
+
+V2.13.1A names the public feature **Road to the Trophy** while preserving the
+technical `/simulation` route. Match cards and the existing modal now adapt to
+upcoming, live and finished states. Official or live scores receive immediate
+visual priority, and post-match evaluation badges combine color, symbol and
+plain-language text. The experimental variant remains inside a collapsed Mode
+labo.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

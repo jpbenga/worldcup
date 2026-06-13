@@ -285,6 +285,31 @@ Notes :
 - [x] No Optuna rerun
 - [x] No secret committed
 
+## Checklist V2.13.1A — Match UX Clarity & Product Language Cleanup
+
+- [x] V2.13 human validation recorded
+- [x] Road to the Trophy naming applied
+- [x] Provenance removed from main UI
+- [x] SimuAI product naming applied
+- [x] Product language simplified
+- [x] Score modal removed from UI language
+- [x] Score recommandé used instead
+- [x] Match cards status UX improved
+- [x] Match modal shows final score when finished
+- [x] Match modal shows live score when live
+- [x] Match modal shows Prono SimuAI when upcoming
+- [x] Evaluation badges use success/fail/partial/push/pending colors
+- [x] Experimental variant moved to advanced/lab
+- [x] UX clarity review passed
+- [x] Technical validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
+- [x] No secret committed
+
 ## Checklist V2.5 — Existing UI Enrichment & Tournament Simulation Experience
 
 - [ ] Existing UI structure audited

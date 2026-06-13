@@ -410,3 +410,14 @@ The product language is simplified around SimuAI, Prono IA, Score recommandé,
 Résultat officiel and Bilan du prono. Technical provenance leaves the main
 screen, matchdays reduce group-view density, and the experimental variant moves
 to a collapsed lab section. Active predictions remain frozen.
+
+## V2.13.1A match UX clarity and product language
+
+V2.13.1A is a focused product correction rather than a new tournament engine.
+Road to the Trophy becomes the public feature name, SimuAI becomes the
+consistent prediction label, and match status controls the visual hierarchy of
+cards and the modal. A reusable evaluation badge system distinguishes success,
+partial success, failure, refunded Draw No Bet and pending results.
+
+The 104-match scenario, active predictions, model artifacts and experimental
+variant remain unchanged.
