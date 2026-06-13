@@ -34,6 +34,10 @@ export class WorldCupService {
     return this.http.get<any>('assets/data/representative_tournament_paths_v2_13.json');
   }
 
+  getRoadToTheTrophyViewModelV2131B(): Observable<any> {
+    return this.http.get<any>('assets/data/road_to_the_trophy_view_model_v2_13_1B.json');
+  }
+
   getPredictionHistoryV212(): Observable<any> {
     return this.http.get<any>('assets/data/prediction_history_v2_12.json');
   }

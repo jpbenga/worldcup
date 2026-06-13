@@ -1628,7 +1628,7 @@ Commit: 0cf8813 Build living World Cup scenario experience
 
 ## V2.13.1A — Match UX Clarity & Product Language Cleanup
 
-Commit: TBD
+Commit: `93423dd Improve match UX clarity and product language`
 
 ### Technical validation
 
@@ -1657,10 +1657,10 @@ Commit: TBD
 
 ### Human validation
 
-- [ ] Reviewed by Jeanpaul Benga
+- [x] Reviewed by Jeanpaul Benga
 
 ### Result
 
-- [ ] Validated
+- [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated

@@ -1,0 +1,25 @@
+{
+  "version": "v2.13.1B",
+  "generated_at": "2026-06-13T11:35:08Z",
+  "official_bracket_available": false,
+  "expected_knockout_matches": 32,
+  "discovered_official_knockout_matches": 0,
+  "expected_match_numbers": {
+    "from": 73,
+    "to": 104
+  },
+  "required_rounds": {
+    "round_of_32": 16,
+    "round_of_16": 8,
+    "quarter_finals": 4,
+    "semi_finals": 2,
+    "third_place": 1,
+    "final": 1
+  },
+  "fallback": "simulation_derived_projection",
+  "missing_official_components": [
+    "Official fixtures for matches 73 to 104",
+    "Official group-position to round-of-32 slot mapping",
+    "Confirmed best-third assignment combinations"
+  ]
+}
