@@ -1,0 +1,135 @@
+{
+  "version": "v2.13",
+  "generated_at": "2026-06-13T10:22:53Z",
+  "scenario_type": "simulation_derived_bracket_projection",
+  "representative_path": {
+    "leader": "Spain",
+    "rounds": [
+      {
+        "round": "round_of_32",
+        "opponent": "Haiti",
+        "advance_probability": 0.9456428572556221,
+        "status": "projected"
+      },
+      {
+        "round": "round_of_16",
+        "opponent": "England",
+        "advance_probability": 0.5278700738386525,
+        "status": "projected"
+      },
+      {
+        "round": "quarter_finals",
+        "opponent": "Argentina",
+        "advance_probability": 0.5841638701695104,
+        "status": "projected"
+      },
+      {
+        "round": "semi_finals",
+        "opponent": "Mexico",
+        "advance_probability": 0.617882629015556,
+        "status": "projected"
+      },
+      {
+        "round": "final",
+        "opponent": "Switzerland",
+        "advance_probability": 0.6710364608148724,
+        "status": "projected"
+      }
+    ],
+    "description": "Chemin le plus probable du vainqueur projeté dans le tableau dérivé des simulations."
+  },
+  "most_common_final": {
+    "teams": [
+      "Spain",
+      "Switzerland"
+    ],
+    "probability": 0.02958
+  },
+  "most_common_champion": {
+    "team": "Spain",
+    "probability": 0.15376,
+    "group": "Group H",
+    "qualification_probability": 0.9266,
+    "logo_url": "https://media.api-sports.io/football/teams/9.png",
+    "country_code": "ESP"
+  },
+  "most_common_semi_finalists": [
+    "Mexico",
+    "South Korea",
+    "Spain",
+    "Switzerland"
+  ],
+  "most_common_quarter_finalists": [
+    "Argentina",
+    "Brazil",
+    "Colombia",
+    "Japan",
+    "Mexico",
+    "South Korea",
+    "Spain",
+    "Switzerland"
+  ],
+  "path_stability": {
+    "label": "open",
+    "representative_semi_final_set_probability": 0.00518,
+    "representative_quarter_final_set_probability": 0.00116,
+    "winner_probability": 0.15376
+  },
+  "result_impact": [
+    {
+      "team": "Mexico",
+      "qualification_delta": 0.28258000000000005,
+      "direction": "up",
+      "label": "+28.3 pts de qualification"
+    },
+    {
+      "team": "South Africa",
+      "qualification_delta": -0.27999999999999997,
+      "direction": "down",
+      "label": "-28.0 pts de qualification"
+    },
+    {
+      "team": "South Korea",
+      "qualification_delta": 0.18196,
+      "direction": "up",
+      "label": "+18.2 pts de qualification"
+    },
+    {
+      "team": "Czech Republic",
+      "qualification_delta": -0.13225999999999993,
+      "direction": "down",
+      "label": "-13.2 pts de qualification"
+    },
+    {
+      "team": "Canada",
+      "qualification_delta": -0.08566000000000007,
+      "direction": "down",
+      "label": "-8.6 pts de qualification"
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "qualification_delta": 0.056660000000000044,
+      "direction": "up",
+      "label": "+5.7 pts de qualification"
+    },
+    {
+      "team": "Switzerland",
+      "qualification_delta": -0.006480000000000041,
+      "direction": "down",
+      "label": "-0.6 pts de qualification"
+    },
+    {
+      "team": "Uzbekistan",
+      "qualification_delta": -0.005759999999999987,
+      "direction": "down",
+      "label": "-0.6 pts de qualification"
+    }
+  ],
+  "limitations": [
+    "Le bracket officiel à élimination directe est absent des données disponibles.",
+    "Les appariements sont un scénario projeté dérivé des probabilités de groupes et ne sont jamais présentés comme officiels.",
+    "Les 50 000 parcours à élimination directe utilisent un tableau projeté fixe; ils ne remplacent pas une simulation FIFA officielle.",
+    "La petite finale est comptée dans la cible de 104 matchs mais reste un slot projeté.",
+    "Les probabilités du Prono IA restent inchangées et aucun modèle n'est réentraîné."
+  ]
+}

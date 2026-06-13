@@ -26,6 +26,14 @@ import {
 export class WorldCupService {
   private readonly http = inject(HttpClient);
 
+  getLivingWorldCupScenarioV213(): Observable<any> {
+    return this.http.get<any>('assets/data/living_worldcup_scenario_v2_13.json');
+  }
+
+  getRepresentativeTournamentPathsV213(): Observable<any> {
+    return this.http.get<any>('assets/data/representative_tournament_paths_v2_13.json');
+  }
+
   getPredictionHistoryV212(): Observable<any> {
     return this.http.get<any>('assets/data/prediction_history_v2_12.json');
   }

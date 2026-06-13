@@ -1,15 +1,10 @@
-import { AsyncPipe, DatePipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { combineLatest } from 'rxjs';
-import { DataSourceInfo, DataSourcesSnapshot, DualMatrixComparison, MatchPrediction, MatchState, ModelComparison } from '../../models/worldcup.models';
-import { BacktestingService } from '../../services/backtesting.service';
-import { MatchService } from '../../services/match.service';
+import { DualMatrixComparison, MatchPrediction, MatchState, ModelComparison } from '../../models/worldcup.models';
 import { PredictionService } from '../../services/prediction.service';
-import { PredictionHistoryComponent } from '../../components/prediction-history/prediction-history.component';
 import { ResponsibleNoticeComponent } from '../../components/responsible-notice/responsible-notice.component';
-import { DataSourceBadgeComponent } from '../../components/data-source-badge/data-source-badge.component';
-import { DataSourceService } from '../../services/data-source.service';
 import { ModelComparisonService } from '../../services/model-comparison.service';
 import { WorldCupService } from '../../services/worldcup.service';
 import { GroupTabsComponent } from '../../components/group-tabs/group-tabs.component';
@@ -19,11 +14,8 @@ import { MatchModalComponent } from '../../components/match-modal/match-modal.co
   selector: 'app-home',
   imports: [
     AsyncPipe,
-    DatePipe,
-    DataSourceBadgeComponent,
     GroupTabsComponent,
     MatchModalComponent,
-    PredictionHistoryComponent,
     ResponsibleNoticeComponent,
     RouterLink,
   ],
@@ -31,22 +23,14 @@ import { MatchModalComponent } from '../../components/match-modal/match-modal.co
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
-  private readonly matchService = inject(MatchService);
   private readonly predictionService = inject(PredictionService);
-  private readonly backtestingService = inject(BacktestingService);
-  private readonly dataSourceService = inject(DataSourceService);
   private readonly modelComparisonService = inject(ModelComparisonService);
   private readonly worldCupService = inject(WorldCupService);
 
   readonly selectedMatchId = signal<string | null>(null);
   readonly viewModel$ = combineLatest({
-    matches: this.matchService.getMatches(),
     predictions: this.predictionService.getPredictions(),
     eloPredictions: this.predictionService.getEloPredictions(),
-    backtests: this.backtestingService.getResults(),
-    dataSources: this.dataSourceService.getSnapshot(),
-    acquisitionStatus: this.dataSourceService.getAcquisitionStatus(),
-    teamMappingStatus: this.dataSourceService.getTeamMappingStatus(),
     modelComparisons: this.modelComparisonService.getComparisons(),
     groups: this.worldCupService.getGroups(),
     groupStrengths: this.worldCupService.getStrengths(),
@@ -71,7 +55,4 @@ export class HomeComponent {
     return comparisons.find((comparison) => comparison.matchId === matchId);
   }
 
-  primarySource(snapshot: DataSourcesSnapshot): DataSourceInfo | undefined {
-    return snapshot.sources.find((source) => source.id === 'active_matches');
-  }
 }

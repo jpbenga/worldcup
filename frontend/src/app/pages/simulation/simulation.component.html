@@ -1,170 +1,108 @@
 <main class="min-h-screen bg-slate-950 text-slate-100">
-  <div class="pointer-events-none fixed inset-x-0 top-0 h-96 bg-gradient-to-b from-violet-500/10 to-transparent"></div>
-  <div class="relative mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+  <div class="pointer-events-none fixed inset-x-0 top-0 h-96 bg-gradient-to-b from-violet-500/15 to-transparent"></div>
+  <div class="relative mx-auto max-w-[1600px] px-4 py-8 sm:px-6 lg:px-8">
     <nav class="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-3 shadow">
       <a class="font-black tracking-tight" routerLink="/">SimuMondial <span class="text-cyan-300">2026</span></a>
-      <a class="text-sm text-slate-400 transition hover:text-slate-100" routerLink="/">Retour aux matchs</a>
+      <div class="flex gap-4 text-sm text-slate-400"><a routerLink="/" class="transition hover:text-white">Matchs</a><a routerLink="/transparence" class="transition hover:text-white">Transparence</a></div>
     </nav>
 
-    @if (simulation$ | async; as simulation) {
+    @if (simulation$ | async; as vm) {
       <header class="py-12 sm:py-16">
-        <div class="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em]">
-          <span class="rounded-full bg-violet-400/10 px-3 py-1 text-violet-300">Creative Tournament Experience V2.11</span>
-          <span class="rounded-full bg-amber-400/10 px-3 py-1 text-amber-300">Proxy non officiel</span>
+        <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.2em]">
+          <span class="rounded-full bg-violet-400/10 px-3 py-1 text-violet-300">Living World Cup V2.13</span>
+          <span class="rounded-full bg-amber-400/10 px-3 py-1 text-amber-300">{{ vm.scenario.scenario_status_label }}</span>
         </div>
-        <div class="mt-7 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+        <div class="mt-8 grid gap-6 lg:grid-cols-[1fr_0.7fr] lg:items-end">
           <div>
-            <p class="text-sm font-semibold text-slate-400">Favori projeté · Leader de campagne</p>
-            <h1 class="mt-2 text-5xl font-black tracking-tight sm:text-7xl">{{ simulation.creative.tournamentLeader.team }}</h1>
-            <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-400">{{ simulation.creative.tournamentLeader.explanation }}</p>
+            <p class="text-sm font-semibold text-cyan-300">Vainqueur projeté · SimuAI</p>
+            <h1 class="mt-2 text-6xl font-black tracking-tight sm:text-8xl">{{ vm.scenario.tournament_winner_projected.team }}</h1>
+            <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-400">Le scénario le plus probable mène {{ vm.scenario.tournament_winner_projected.team }} jusqu’au trophée. Le tableau évolue après chaque résultat officiel.</p>
           </div>
           <div class="grid grid-cols-2 gap-3">
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4"><p class="text-xs text-slate-500">Scénarios</p><p class="mt-1 text-2xl font-black text-cyan-300">{{ simulation.creative.refresh.simulationCount | number }}</p></div>
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4"><p class="text-xs text-slate-500">Résultats verrouillés</p><p class="mt-1 text-2xl font-black text-emerald-300">{{ simulation.creative.refresh.finishedMatches }}</p></div>
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4"><p class="text-xs text-slate-500">Qualification active</p><p class="mt-1 text-2xl font-black">{{ simulation.creative.tournamentLeader.activeQualificationProbability | percent: '1.0-0' }}</p></div>
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4"><p class="text-xs text-slate-500">Mise à jour</p><p class="mt-1 text-sm font-bold">{{ simulation.creative.generatedAt | date: 'd MMM, HH:mm' }}</p></div>
+            <article class="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-4"><p class="text-xs text-slate-500">Chance de titre</p><p class="mt-1 text-3xl font-black text-violet-300">{{ vm.scenario.tournament_winner_projected.probability | percent: '1.0-0' }}</p></article>
+            <article class="rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-4"><p class="text-xs text-slate-500">Finale projetée</p><p class="mt-1 font-black">{{ vm.scenario.final_projected.teams[0].team }}<br><span class="text-slate-500">vs</span> {{ vm.scenario.final_projected.teams[1].team }}</p></article>
+            <article class="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4"><p class="text-xs text-slate-500">Matchs terminés</p><p class="mt-1 text-3xl font-black text-emerald-300">{{ vm.scenario.result_summary.finished_matches }}</p></article>
+            <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4"><p class="text-xs text-slate-500">Scénarios joués</p><p class="mt-1 text-3xl font-black">{{ vm.scenario.simulations }}</p></article>
           </div>
-        </div>
-        <div class="mt-7 inline-flex rounded-2xl border border-slate-700 bg-slate-900 p-1">
-          <button type="button" class="rounded-xl px-4 py-2 text-sm font-semibold transition" [class.bg-cyan-300]="selectedProjection() === 'active'" [class.text-slate-950]="selectedProjection() === 'active'" (click)="selectedProjection.set('active')">Prédiction active</button>
-          <button type="button" class="rounded-xl px-4 py-2 text-sm font-semibold transition" [class.bg-violet-300]="selectedProjection() === 'alternative'" [class.text-slate-950]="selectedProjection() === 'alternative'" (click)="selectedProjection.set('alternative')">Scénario alternatif · Non actif</button>
         </div>
       </header>
 
-      <section class="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
-        <article class="relative overflow-hidden rounded-3xl border border-violet-500/30 bg-gradient-to-br from-violet-500/15 via-slate-900 to-slate-900 p-6">
-          <div class="absolute -right-16 -top-20 h-52 w-52 rounded-full bg-violet-400/10 blur-3xl"></div>
-          <p class="relative text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Projection de campagne</p>
-          <h2 class="relative mt-3 text-3xl font-black">Un chemin vers le trophée, sans inventer le bracket.</h2>
-          <p class="relative mt-4 text-sm leading-6 text-slate-400">{{ simulation.creative.projectedCampaign.proxyLimit }}</p>
-          <div class="relative mt-6 space-y-4">
-            @for (step of simulation.creative.projectedCampaign.steps; track step.label) {
-              <div class="grid grid-cols-[1.5rem_1fr] gap-3">
-                <span class="flex h-6 w-6 items-center justify-center rounded-full border border-violet-300/30 bg-violet-300/10 text-xs text-violet-200">{{ $index + 1 }}</span>
-                <div><p class="text-sm font-semibold">{{ step.label }}</p><p class="mt-1 text-xs leading-5 text-slate-500">{{ step.detail }}</p></div>
-              </div>
-            }
-          </div>
-          <p class="relative mt-6 rounded-xl border border-amber-500/20 bg-amber-500/5 p-3 text-xs leading-5 text-amber-200">{{ simulation.creative.projectedCampaign.estimatedAdversity }}</p>
-        </article>
+      <section class="rounded-3xl border border-violet-500/25 bg-slate-900/70 p-5 sm:p-6">
+        <div class="flex flex-wrap items-end justify-between gap-3">
+          <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Chemin vers le trophée</p><h2 class="mt-2 text-3xl font-black">Le tableau vivant du tournoi</h2></div>
+          <div class="flex gap-2 text-xs"><span class="rounded-full bg-emerald-400/10 px-3 py-1 text-emerald-300">Réel</span><span class="rounded-full bg-violet-400/10 px-3 py-1 text-violet-300">Projeté</span><span class="rounded-full bg-slate-800 px-3 py-1 text-slate-300">À confirmer</span></div>
+        </div>
+        <p class="mt-3 max-w-4xl text-sm leading-6 text-slate-400">Les données officielles ne contiennent pas encore le bracket final. Ces appariements forment donc un scénario projeté à partir des simulations, clairement séparé du tableau officiel.</p>
 
-        <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
-          <div class="flex flex-wrap items-end justify-between gap-3">
-            <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Top contenders</p><h2 class="mt-2 text-2xl font-bold">La course, en un regard</h2></div>
-            <p class="text-xs text-slate-500">Actif + scénario alternatif</p>
-          </div>
-          <div class="mt-5 space-y-3">
-            @for (team of simulation.creative.topContenders.slice(0, 6); track team.team) {
-              <div class="rounded-2xl border border-slate-800 bg-slate-950/50 p-4">
-                <div class="flex items-center gap-3">
-                  <span class="text-sm font-black text-slate-600">#{{ $index + 1 }}</span>
-                  <div class="min-w-0 flex-1"><p class="truncate font-bold">{{ team.team }}</p><p class="text-xs text-slate-500">{{ team.group }}</p></div>
-                  <span class="rounded-full px-2.5 py-1 text-xs font-semibold"
-                    [class.bg-emerald-400/10]="team.status === 'rising'" [class.text-emerald-300]="team.status === 'rising'"
-                    [class.bg-rose-400/10]="team.status === 'falling'" [class.text-rose-300]="team.status === 'falling'"
-                    [class.bg-violet-400/10]="team.status === 'volatile'" [class.text-violet-300]="team.status === 'volatile'"
-                    [class.bg-slate-800]="team.status === 'stable'" [class.text-slate-300]="team.status === 'stable'">{{ team.status }}</span>
+        <div class="mt-7 overflow-x-auto pb-4">
+          <div class="grid min-w-[1450px] grid-cols-5 gap-4">
+            @for (round of rounds; track round.key) {
+              <div>
+                <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{{ round.label }}</p>
+                <div class="flex min-h-[760px] flex-col justify-around gap-3">
+                  @for (match of vm.scenario.knockout_path.rounds[round.key]; track match.match_id) {
+                    <article class="rounded-2xl border border-violet-500/20 bg-slate-950/75 p-3">
+                      <p class="mb-2 text-[10px] font-semibold uppercase tracking-wider text-violet-300">Projeté · à confirmer</p>
+                      <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2 rounded-lg bg-slate-900 px-2 py-2" [class.text-white]="match.projected_winner === match.team_a" [class.text-slate-500]="match.projected_winner !== match.team_a">
+                          @if (match.team_a_logo_url) { <img class="h-5 w-5 object-contain" [src]="match.team_a_logo_url" [alt]="match.team_a" /> }
+                          <span class="min-w-0 flex-1 truncate font-semibold">{{ match.team_a }}</span><span>{{ match.team_a_win_probability | percent: '1.0-0' }}</span>
+                        </div>
+                        <div class="flex items-center gap-2 rounded-lg bg-slate-900 px-2 py-2" [class.text-white]="match.projected_winner === match.team_b" [class.text-slate-500]="match.projected_winner !== match.team_b">
+                          @if (match.team_b_logo_url) { <img class="h-5 w-5 object-contain" [src]="match.team_b_logo_url" [alt]="match.team_b" /> }
+                          <span class="min-w-0 flex-1 truncate font-semibold">{{ match.team_b }}</span><span>{{ match.team_b_win_probability | percent: '1.0-0' }}</span>
+                        </div>
+                      </div>
+                    </article>
+                  }
                 </div>
-                <div class="mt-3 flex items-center gap-3 text-xs"><span class="text-cyan-300">Actif {{ team.qualificationProbability | percent: '1.0-0' }}</span><span class="text-slate-600">→</span><span class="text-violet-300">Alternatif {{ team.candidateQualificationProbability | percent: '1.0-0' }}</span></div>
               </div>
+            }
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8 grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
+        <article class="rounded-3xl border border-cyan-500/20 bg-cyan-500/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Parcours du leader</p>
+          <h2 class="mt-2 text-2xl font-black">{{ vm.paths.representative_path.leader }} vers le trophée</h2>
+          <div class="mt-5 space-y-3">
+            @for (step of vm.paths.representative_path.rounds; track step.round) {
+              <div class="flex items-center gap-3 rounded-xl bg-slate-950/60 p-3"><span class="flex h-8 w-8 items-center justify-center rounded-full bg-cyan-400/10 text-xs font-black text-cyan-300">{{ $index + 1 }}</span><p class="min-w-0 flex-1 text-sm">Face à <strong>{{ step.opponent }}</strong></p><span class="text-sm font-black text-cyan-300">{{ step.advance_probability | percent: '1.0-0' }}</span></div>
+            }
+          </div>
+        </article>
+        <article class="rounded-3xl border border-emerald-500/20 bg-emerald-500/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">Depuis les résultats réels</p>
+          <h2 class="mt-2 text-2xl font-black">Le tournoi a déjà bougé</h2>
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            @for (impact of vm.scenario.result_impact.slice(0, 6); track impact.team) {
+              <div class="rounded-xl bg-slate-950/60 p-4"><p class="font-bold">{{ impact.team }}</p><p class="mt-1 text-sm" [class.text-emerald-300]="impact.direction === 'up'" [class.text-rose-300]="impact.direction === 'down'">{{ impact.label }}</p></div>
             }
           </div>
         </article>
       </section>
 
-      <section class="mt-8">
-        <div class="flex flex-wrap items-end justify-between gap-3"><div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">Groupes à surveiller</p><h2 class="mt-2 text-3xl font-black">Là où le tournoi peut basculer</h2></div><p class="max-w-md text-sm text-slate-500">Le chaos score combine proximité des chances, mouvement alternatif et impact des résultats réels.</p></div>
-        <div class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          @for (story of simulation.creative.groupStorylines.slice(0, 6); track story.group) {
-            <article class="rounded-3xl border border-slate-800 bg-slate-900/70 p-5">
-              <div class="flex items-start justify-between gap-4"><div><p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300">Groupe {{ story.group }}</p><h3 class="mt-2 text-lg font-bold">{{ story.label }}</h3></div><span class="rounded-full bg-slate-950 px-3 py-1 text-sm font-black text-amber-300">{{ story.chaosScore | number: '1.0-0' }}</span></div>
-              <p class="mt-4 text-sm leading-6 text-slate-400">{{ story.summary }}</p>
-              <div class="mt-4 flex flex-wrap gap-2">@for (team of story.qualificationFavorites; track team) { <span class="rounded-full bg-slate-800 px-2.5 py-1 text-xs">{{ team }}</span> }</div>
-            </article>
+      <section class="mt-8 rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">32 qualifiés projetés</p>
+        <h2 class="mt-2 text-2xl font-black">Qui entre dans le tableau ?</h2>
+        <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          @for (team of vm.scenario.group_stage.projected_qualifiers; track team.team) {
+            <article class="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-950/50 p-3">@if (team.logo_url) { <img class="h-8 w-8 object-contain" [src]="team.logo_url" [alt]="team.team" /> }<div class="min-w-0 flex-1"><p class="truncate font-semibold">{{ team.team }}</p><p class="text-xs text-slate-500">{{ team.slot }}</p></div><span class="text-xs font-bold text-amber-300">{{ team.qualification_probability | percent: '1.0-0' }}</span></article>
           }
         </div>
       </section>
 
-      @if (simulation.creative.lockedResultImpact.length) {
-        <section class="mt-8 rounded-3xl border border-emerald-500/25 bg-emerald-500/5 p-5 sm:p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">Le réel est entré dans la simulation</p>
-          <h2 class="mt-2 text-2xl font-bold">Impact des résultats verrouillés</h2>
-          <div class="mt-5 grid gap-3 md:grid-cols-3">
-            @for (impact of simulation.creative.lockedResultImpact; track impact.match) {
-              <article class="rounded-2xl bg-slate-950/50 p-4"><p class="font-bold">{{ impact.match }}</p><p class="mt-1 text-xs text-emerald-300">Groupe {{ impact.group }} · résultat officiel</p><p class="mt-3 text-xs leading-5 text-slate-400">{{ impact.summary }}</p></article>
-            }
-          </div>
-        </section>
-      }
-
-      <section class="mt-8 rounded-3xl border border-violet-500/25 bg-violet-500/5 p-5 sm:p-6">
-        <div class="flex flex-wrap items-start justify-between gap-4">
-          <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Prédiction active vs projection alternative</p><h2 class="mt-2 text-2xl font-bold">Même leader, scénario plus tranché</h2></div>
-          <span class="rounded-full bg-slate-950 px-3 py-1 text-xs font-semibold text-violet-300">Projection alternative non active</span>
-        </div>
-        <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-400">{{ simulation.creative.activeVsAlternative.interpretation }}</p>
-        <div class="mt-5 grid gap-4 md:grid-cols-4">
-          <article class="rounded-xl bg-slate-950/60 p-4"><p class="text-xs text-slate-500">Leader actif</p><p class="mt-2 text-xl font-black text-cyan-300">{{ simulation.creative.activeVsAlternative.activeLeader }}</p></article>
-          <article class="rounded-xl bg-slate-950/60 p-4"><p class="text-xs text-slate-500">Leader alternatif</p><p class="mt-2 text-xl font-black text-violet-300">{{ simulation.creative.activeVsAlternative.alternativeLeader }}</p></article>
-          <article class="rounded-xl bg-slate-950/60 p-4"><p class="text-xs text-slate-500">Scores modaux changés</p><p class="mt-2 text-2xl font-black">{{ simulation.creative.activeVsAlternative.modalScoresChanged }}</p></article>
-          <article class="rounded-xl bg-slate-950/60 p-4"><p class="text-xs text-slate-500">Marges favorites renforcées</p><p class="mt-2 text-2xl font-black">{{ simulation.creative.activeVsAlternative.favoriteMarginsIncreased }}</p></article>
-        </div>
-        <div class="mt-5 grid gap-3 md:grid-cols-2">
-          <div class="rounded-xl border border-emerald-500/15 bg-emerald-500/5 p-4"><p class="text-xs font-semibold uppercase tracking-wider text-emerald-300">Montent dans l’alternative</p><p class="mt-2 text-sm text-slate-300">{{ simulation.creative.activeVsAlternative.teamsRising.join(' · ') }}</p></div>
-          <div class="rounded-xl border border-rose-500/15 bg-rose-500/5 p-4"><p class="text-xs font-semibold uppercase tracking-wider text-rose-300">Baissent dans l’alternative</p><p class="mt-2 text-sm text-slate-300">{{ simulation.creative.activeVsAlternative.teamsFalling.join(' · ') }}</p></div>
-        </div>
-      </section>
-
-      <aside class="mt-8 rounded-2xl border border-amber-500/25 bg-amber-500/5 p-5">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-300">Périmètre honnête</p>
-        <p class="mt-2 text-sm leading-6 text-slate-300">Bracket officiel indisponible. Le favori projeté est un proxy de campagne, pas un champion officiellement simulé. Aucun parcours à élimination directe n’est inventé.</p>
-      </aside>
-
-      <section class="mt-8 rounded-3xl border border-violet-500/20 bg-slate-900/70 p-5 sm:p-6">
-        <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Explorer</p><h2 class="mt-2 text-2xl font-bold">Probabilités par groupe</h2></div>
-        <div class="mt-5 flex gap-2 overflow-x-auto pb-2">
-          @for (group of displayedGroups(simulation); track group.group) {
-            <button type="button" class="min-w-12 rounded-xl border px-4 py-2 font-semibold transition"
-              [class.border-violet-300]="selectedGroup() === group.group" [class.bg-violet-300]="selectedGroup() === group.group"
-              [class.text-slate-950]="selectedGroup() === group.group" [class.border-slate-700]="selectedGroup() !== group.group"
-              (click)="selectedGroup.set(group.group)">{{ group.group.replace('Group ', '') }}</button>
-          }
-        </div>
-        @if (groupFor(displayedGroups(simulation), selectedGroup()); as group) {
-          <div class="mt-5 grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
-            <article class="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">Classement réel actuel</p>
-              <p class="mt-2 mb-4 text-sm text-slate-400">{{ simulation.liveStandings.finishedMatchesCount }} résultat officiel verrouillé au total.</p>
-              <app-group-standings [standings]="standingsFor(simulation.liveStandings.groups, group.group)" />
-            </article>
-            <article class="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-violet-300">{{ selectedProjection() === 'active' ? 'Prédiction active conditionnée' : 'Projection alternative · Non active' }}</p>
-              <p class="mt-2 text-sm leading-6 text-slate-400">Le classement à gauche décrit uniquement le réel. Les probabilités ci-dessous utilisent la projection sélectionnée tout en verrouillant les résultats officiels.</p>
-            </article>
-          </div>
-          <div class="mt-5 overflow-x-auto rounded-2xl border border-slate-800">
-            <table class="w-full min-w-[720px] text-left text-sm">
-              <thead class="bg-slate-950/60 text-xs uppercase tracking-wider text-slate-500"><tr><th class="px-4 py-3">Équipe</th><th class="px-4 py-3">Qualification</th><th class="px-4 py-3">1re</th><th class="px-4 py-3">2e</th><th class="px-4 py-3">3e</th><th class="px-4 py-3">4e</th><th class="px-4 py-3">Élimination</th></tr></thead>
-              <tbody class="divide-y divide-slate-800">
-                @for (team of orderedTeams(group); track team.team) {
-                  <tr><td class="px-4 py-4 font-semibold">{{ team.team }}</td><td class="px-4 py-4 font-bold text-cyan-300">{{ team.qualificationProbability | percent: '1.1-1' }}</td><td class="px-4 py-4">{{ team.finishFirstProbability | percent: '1.0-0' }}</td><td class="px-4 py-4">{{ team.finishSecondProbability | percent: '1.0-0' }}</td><td class="px-4 py-4">{{ team.finishThirdProbability | percent: '1.0-0' }}</td><td class="px-4 py-4">{{ team.finishFourthProbability | percent: '1.0-0' }}</td><td class="px-4 py-4 text-slate-400">{{ team.groupEliminationProbability | percent: '1.0-0' }}</td></tr>
-                }
-              </tbody>
-            </table>
-          </div>
-        }
-      </section>
-
-      <details class="mt-8 rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
-        <summary class="cursor-pointer font-semibold">Méthode et limites</summary>
-        <div class="mt-4 space-y-2 text-sm leading-6 text-slate-400">
-          <p>{{ simulation.qualificationRule }}</p>
-          @for (limitation of simulation.limitations; track limitation) { <p>{{ limitation }}</p> }
-          <p>Snapshot généré le {{ simulation.generatedAt | date: 'd MMM y, HH:mm' }} · moteur {{ simulation.engineVersion }}</p>
-        </div>
+      <details class="mt-8 rounded-2xl border border-violet-500/20 bg-violet-500/5 p-5">
+        <summary class="cursor-pointer font-semibold text-violet-300">Mode labo · Variante expérimentale</summary>
+        <p class="mt-3 text-sm leading-6 text-slate-400">{{ vm.creative.activeVsAlternative.interpretation }}</p>
+        <p class="mt-3 text-xs text-slate-500">Cette variante reste expérimentale et ne remplace jamais le Prono IA.</p>
       </details>
-    } @else {
-      <p class="mt-16 rounded-2xl border border-slate-800 bg-slate-900/70 p-8 text-center text-slate-400">Chargement de la simulation…</p>
+
+      <details class="mt-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+        <summary class="cursor-pointer font-semibold">Méthode et limites</summary>
+        <div class="mt-4 space-y-2 text-sm leading-6 text-slate-400">@for (limitation of vm.scenario.limitations; track limitation) { <p>{{ limitation }}</p> }<p>Généré le {{ vm.scenario.generated_at | date: 'd MMM y, HH:mm' }}</p></div>
+      </details>
     }
   </div>
 </main>

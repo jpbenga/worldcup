@@ -1,0 +1,37 @@
+{
+  "version": "v2.13",
+  "generated_at": "2026-06-13T10:22:54Z",
+  "passed": true,
+  "checks": {
+    "living_scenario_exists": true,
+    "representative_paths_exist": true,
+    "projected_champion_present": true,
+    "projected_final_present": true,
+    "official_bracket_flag_present": true,
+    "limitations_present_when_official_bracket_absent": true,
+    "known_matches_at_least_72": true,
+    "target_matches_is_104": true,
+    "projected_knockout_matches_is_32": true,
+    "all_projected_rounds_present": true,
+    "alternative_not_promoted": true,
+    "active_predictions_unchanged": true,
+    "no_retrain": true,
+    "no_optuna_rerun": true,
+    "no_secret": true,
+    "finite_values": true
+  },
+  "projected_winner": "Spain",
+  "projected_final": [
+    "Spain",
+    "Switzerland"
+  ],
+  "matches_known": 72,
+  "matches_total_target": 104,
+  "official_bracket_available": false,
+  "scenario_type": "simulation_derived_bracket_projection",
+  "active_predictions_modified": false,
+  "notes": [
+    "Le tableau à élimination directe est explicitement projeté tant que le bracket officiel est absent.",
+    "La validation Angular, la sécurité Git et les gros fichiers sont vérifiés séparément avant commit."
+  ]
+}

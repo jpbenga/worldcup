@@ -398,3 +398,15 @@ Bet pushes instead of presenting flattering rates without context. The
 alternative projection remains a non-active comparison on finished matches.
 No prediction is rewritten, no candidate is promoted, no model is retrained
 and Optuna is not rerun.
+
+## V2.13 living World Cup bracket and scenario engine
+
+V2.13 adds a simulation-derived knockout scenario while preserving the absence
+of an official bracket contract. It combines the conditioned 50,000-scenario
+group outlook with a reproducible 50,000-path knockout projection, exposes a
+representative route to the trophy and documents the full 104-match target.
+
+The product language is simplified around SimuAI, Prono IA, Score recommandé,
+Résultat officiel and Bilan du prono. Technical provenance leaves the main
+screen, matchdays reduce group-view density, and the experimental variant moves
+to a collapsed lab section. Active predictions remain frozen.

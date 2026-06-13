@@ -1543,7 +1543,7 @@ Commit: 92aac5a Upgrade creative tournament simulation experience
 
 ## V2.12 — Prediction History, Public Transparency & Model Scoreboard
 
-Commit: TBD
+Commit: 9376e4a Add prediction history and model transparency scoreboard
 
 ### Technical validation
 
@@ -1559,6 +1559,48 @@ Commit: TBD
 - [x] Small sample warning implemented
 - [x] Active vs alternative explanation implemented
 - [x] Prediction history validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
+- [x] No secret committed
+
+### Human validation
+
+- [x] Reviewed by Jeanpaul Benga
+- [x] V2.12 accepted as completed baseline for V2.13
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.13 — Living World Cup Bracket & Scenario Engine
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.12 human validation recorded
+- [x] Provenance removed from main UI
+- [x] Product language simplified
+- [x] Score modal renamed in UI
+- [x] Match status cards improved
+- [x] Matchday navigation added
+- [x] Modal status language improved
+- [x] Alternative scenario moved to advanced/lab
+- [x] Living World Cup scenario generated
+- [x] Representative paths generated
+- [x] Projected winner displayed
+- [x] Projected final displayed
+- [x] Knockout bracket visualized
+- [x] 104-match target documented
+- [x] Official vs projected status clear
+- [x] UX review passed
+- [x] Technical validation passed
 - [x] Angular build passed
 - [x] Angular tests passed
 - [x] Active predictions unchanged

@@ -9,7 +9,7 @@
         <button type="button" class="min-w-12 rounded-xl border px-4 py-2 font-semibold transition"
           [class.border-cyan-300]="selectedGroup() === group.group" [class.bg-cyan-300]="selectedGroup() === group.group"
           [class.text-slate-950]="selectedGroup() === group.group" [class.border-slate-700]="selectedGroup() !== group.group"
-          (click)="selectedGroup.set(group.group)">{{ group.group }}</button>
+          (click)="selectGroup(group.group)">{{ group.group }}</button>
       }
     </div>
     @if (currentGroup; as group) {
@@ -25,14 +25,31 @@
             <app-group-standings [standings]="standingsFor(group.group)" />
           </div>
         </div>
-        <div class="grid content-start gap-3 sm:grid-cols-2">
-          @for (match of group.matches; track match.id) {
-            <button type="button" class="rounded-2xl border border-slate-800 bg-slate-950/40 p-4 text-left transition hover:border-cyan-500/40 hover:bg-cyan-500/5" (click)="matchSelected.emit(match.id)">
+        <div>
+          <div class="mb-4 flex items-center justify-between gap-3">
+            <button type="button" class="rounded-xl border border-slate-700 px-3 py-2 text-sm disabled:opacity-30" [disabled]="selectedMatchday() === 1" (click)="changeMatchday(-1)">Précédente</button>
+            <div class="flex gap-2">
+              @for (day of [1, 2, 3]; track day) {
+                <button type="button" class="rounded-xl px-3 py-2 text-sm font-semibold" [class.bg-cyan-300]="selectedMatchday() === day" [class.text-slate-950]="selectedMatchday() === day" [class.bg-slate-800]="selectedMatchday() !== day" (click)="selectedMatchday.set(day)">Journée {{ day }}</button>
+              }
+            </div>
+            <button type="button" class="rounded-xl border border-slate-700 px-3 py-2 text-sm disabled:opacity-30" [disabled]="selectedMatchday() === 3" (click)="changeMatchday(1)">Suivante</button>
+          </div>
+          <div class="grid content-start gap-3 sm:grid-cols-2">
+          @for (match of matchesForMatchday(group); track match.id) {
+            <button type="button" class="rounded-2xl border p-4 text-left transition"
+              [class.border-cyan-500/30]="stateFor(match.id)?.status === 'not_started'"
+              [class.bg-cyan-500/5]="stateFor(match.id)?.status === 'not_started'"
+              [class.border-rose-500/40]="stateFor(match.id)?.status === 'live'"
+              [class.bg-rose-500/10]="stateFor(match.id)?.status === 'live'"
+              [class.border-emerald-500/30]="stateFor(match.id)?.status === 'finished'"
+              [class.bg-emerald-500/5]="stateFor(match.id)?.status === 'finished'"
+              (click)="matchSelected.emit(match.id)">
               @if (stateFor(match.id); as state) {
                 <p class="flex items-center justify-between gap-2 text-xs text-slate-500">
-                  <span>{{ state.matchdayLabel }} · {{ state.kickoffAt | date: 'd MMM, HH:mm' }}</span>
+                  <span>{{ state.kickoffAt | date: 'd MMM, HH:mm' }}</span>
                   <span [class.text-emerald-300]="state.status === 'finished'" [class.text-rose-300]="state.status === 'live'">
-                    {{ state.display.modalStatusLabel }}
+                    {{ state.status === 'finished' ? 'Terminé' : state.status === 'live' ? 'En direct' : 'À venir' }}
                   </span>
                 </p>
               }
@@ -43,12 +60,13 @@
                   <span class="flex items-center gap-2 text-right font-semibold">{{ state.awayTeam }} @if (state.awayTeamLogoUrl) { <img class="h-7 w-7 object-contain" [src]="state.awayTeamLogoUrl" [alt]="state.awayTeam" /> }</span>
                 </div>
                 <div class="mt-4 flex items-center justify-between rounded-xl bg-slate-900 px-3 py-2 text-xs">
-                  <span>{{ state.status === 'finished' ? 'Résultat officiel' : state.status === 'live' ? 'Score live' : 'Score modal' }} <strong class="ml-1 text-slate-100">{{ state.display.cardPrimaryScore }}</strong></span>
-                  <span [class.text-emerald-300]="state.status === 'finished'" [class.text-cyan-300]="state.status === 'not_started'">{{ state.display.cardSecondaryLabel }}</span>
+                  <span>{{ state.status === 'finished' ? 'Résultat officiel' : state.status === 'live' ? 'Score live' : 'Prono IA' }} <strong class="ml-1 text-slate-100">{{ state.display.cardPrimaryScore }}</strong></span>
+                  <span [class.text-emerald-300]="state.status === 'finished'" [class.text-cyan-300]="state.status === 'not_started'">{{ state.status === 'finished' ? state.evaluation.summaryLabel : state.status === 'live' ? 'Prono initial ' + state.prediction.scoreModal : state.prediction.favoriteLabel + ' · confiance ' + state.prediction.confidence.level }}</span>
                 </div>
               }
             </button>
           }
+          </div>
         </div>
       </div>
     }

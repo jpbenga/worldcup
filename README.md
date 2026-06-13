@@ -534,6 +534,22 @@ chronological performance, notable hits, misses and an expandable match
 history. The active forecast remains frozen and official; the alternative is a
 clearly labelled non-active comparison.
 
+## Living World Cup bracket and scenario engine V2.13
+
+V2.13 turns `/simulation` into a living projected bracket:
+
+```bash
+python3 backend/scripts/build_living_worldcup_scenario_v2_13.py
+python3 backend/scripts/extract_representative_tournament_paths_v2_13.py
+python3 backend/scripts/validate_living_worldcup_scenario_v2_13.py
+```
+
+The scenario documents the 104-match target using 72 known group fixtures and
+32 projected knockout slots. Because the official knockout mapping is absent,
+every knockout pairing is labelled as a simulation-derived projection. SimuAI
+is the public product name; technical provenance remains in transparency and
+documentation rather than the home screen.
+
 ## Structure
 
 - `backend/` : pipeline simple de génération et de backtesting.

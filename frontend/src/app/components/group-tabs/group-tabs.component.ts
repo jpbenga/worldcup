@@ -18,6 +18,7 @@ export class GroupTabsComponent {
   @Input({ required: true }) liveStandings: Record<string, GroupStanding[]> = {};
   @Output() matchSelected = new EventEmitter<string>();
   readonly selectedGroup = signal('A');
+  readonly selectedMatchday = signal(1);
 
   get currentGroup(): WorldCupGroup | undefined {
     return this.groups.find((group) => group.group === this.selectedGroup()) ?? this.groups[0];
@@ -37,5 +38,23 @@ export class GroupTabsComponent {
 
   standingsFor(group: string): GroupStanding[] {
     return this.liveStandings[group] ?? [];
+  }
+
+  matchdayFor(round?: string): number {
+    const match = round?.match(/(\d+)$/);
+    return match ? Number(match[1]) : 1;
+  }
+
+  matchesForMatchday(group: WorldCupGroup): WorldCupGroup['matches'] {
+    return group.matches.filter((match) => this.matchdayFor(match.round) === this.selectedMatchday());
+  }
+
+  selectGroup(group: string): void {
+    this.selectedGroup.set(group);
+    this.selectedMatchday.set(1);
+  }
+
+  changeMatchday(delta: number): void {
+    this.selectedMatchday.set(Math.min(3, Math.max(1, this.selectedMatchday() + delta)));
   }
 }

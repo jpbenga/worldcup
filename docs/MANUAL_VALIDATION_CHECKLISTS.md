@@ -258,6 +258,33 @@ Notes :
 À compléter par la personne qui effectue la validation humaine.
 ```
 
+## Checklist V2.13 — Living World Cup Bracket & Scenario Engine
+
+- [x] V2.12 human validation recorded
+- [x] Provenance removed from main UI
+- [x] Product language simplified
+- [x] Score modal renamed in UI
+- [x] Match status cards improved
+- [x] Matchday navigation added
+- [x] Modal status language improved
+- [x] Alternative scenario moved to advanced/lab
+- [x] Living World Cup scenario generated
+- [x] Representative paths generated
+- [x] Projected winner displayed
+- [x] Projected final displayed
+- [x] Knockout bracket visualized
+- [x] 104-match target documented
+- [x] Official vs projected status clear
+- [x] UX review passed
+- [x] Technical validation passed
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Candidate not promoted
+- [x] No retrain
+- [x] No Optuna rerun
+- [x] No secret committed
+
 ## Checklist V2.5 — Existing UI Enrichment & Tournament Simulation Experience
 
 - [ ] Existing UI structure audited

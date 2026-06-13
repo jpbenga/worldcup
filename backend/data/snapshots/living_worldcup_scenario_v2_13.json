@@ -1,0 +1,1388 @@
+{
+  "version": "v2.13",
+  "engine_version": "quant_hybrid_v2.2",
+  "generated_at": "2026-06-13T10:22:53Z",
+  "simulations": 50000,
+  "matches_total_target": 104,
+  "matches_known": 72,
+  "matches_projected": 32,
+  "official_bracket_available": false,
+  "scenario_type": "simulation_derived_bracket_projection",
+  "scenario_status_label": "Scénario projeté à partir des simulations",
+  "tournament_winner_projected": {
+    "team": "Spain",
+    "probability": 0.15376,
+    "group": "Group H",
+    "qualification_probability": 0.9266,
+    "logo_url": "https://media.api-sports.io/football/teams/9.png",
+    "country_code": "ESP"
+  },
+  "final_projected": {
+    "teams": [
+      {
+        "team": "Spain",
+        "probability": 0.21374,
+        "group": "Group H",
+        "qualification_probability": 0.9266,
+        "logo_url": "https://media.api-sports.io/football/teams/9.png",
+        "country_code": "ESP"
+      },
+      {
+        "team": "Switzerland",
+        "probability": 0.13692,
+        "group": "Group B",
+        "qualification_probability": 0.83514,
+        "logo_url": "https://media.api-sports.io/football/teams/15.png",
+        "country_code": "SUI"
+      }
+    ],
+    "most_common_pairing": [
+      "Spain",
+      "Switzerland"
+    ],
+    "most_common_pairing_probability": 0.02958,
+    "status": "projected"
+  },
+  "semi_finalists_projected": [
+    {
+      "team": "Spain",
+      "probability": 0.32428,
+      "group": "Group H",
+      "qualification_probability": 0.9266,
+      "logo_url": "https://media.api-sports.io/football/teams/9.png",
+      "country_code": "ESP"
+    },
+    {
+      "team": "Mexico",
+      "probability": 0.28476,
+      "group": "Group A",
+      "qualification_probability": 0.93264,
+      "logo_url": "https://media.api-sports.io/football/teams/16.png",
+      "country_code": "MEX"
+    },
+    {
+      "team": "Switzerland",
+      "probability": 0.22858,
+      "group": "Group B",
+      "qualification_probability": 0.83514,
+      "logo_url": "https://media.api-sports.io/football/teams/15.png",
+      "country_code": "SUI"
+    },
+    {
+      "team": "South Korea",
+      "probability": 0.22548,
+      "group": "Group A",
+      "qualification_probability": 0.91598,
+      "logo_url": "https://media.api-sports.io/football/teams/17.png",
+      "country_code": "KOR"
+    }
+  ],
+  "quarter_finalists_projected": [
+    {
+      "team": "Spain",
+      "probability": 0.53594,
+      "group": "Group H",
+      "qualification_probability": 0.9266,
+      "logo_url": "https://media.api-sports.io/football/teams/9.png",
+      "country_code": "ESP"
+    },
+    {
+      "team": "Argentina",
+      "probability": 0.53344,
+      "group": "Group J",
+      "qualification_probability": 0.87258,
+      "logo_url": "https://media.api-sports.io/football/teams/26.png",
+      "country_code": "ARG"
+    },
+    {
+      "team": "Mexico",
+      "probability": 0.49198,
+      "group": "Group A",
+      "qualification_probability": 0.93264,
+      "logo_url": "https://media.api-sports.io/football/teams/16.png",
+      "country_code": "MEX"
+    },
+    {
+      "team": "Brazil",
+      "probability": 0.43214,
+      "group": "Group C",
+      "qualification_probability": 0.86394,
+      "logo_url": "https://media.api-sports.io/football/teams/6.png",
+      "country_code": "BRA"
+    },
+    {
+      "team": "Switzerland",
+      "probability": 0.40668,
+      "group": "Group B",
+      "qualification_probability": 0.83514,
+      "logo_url": "https://media.api-sports.io/football/teams/15.png",
+      "country_code": "SUI"
+    },
+    {
+      "team": "France",
+      "probability": 0.38634,
+      "group": "Group I",
+      "qualification_probability": 0.79466,
+      "logo_url": "https://media.api-sports.io/football/teams/2.png",
+      "country_code": "FRA"
+    },
+    {
+      "team": "South Korea",
+      "probability": 0.382,
+      "group": "Group A",
+      "qualification_probability": 0.91598,
+      "logo_url": "https://media.api-sports.io/football/teams/17.png",
+      "country_code": "KOR"
+    },
+    {
+      "team": "Japan",
+      "probability": 0.2857,
+      "group": "Group F",
+      "qualification_probability": 0.77576,
+      "logo_url": "https://media.api-sports.io/football/teams/12.png",
+      "country_code": "JPN"
+    }
+  ],
+  "round_of_16_projected": [
+    {
+      "team": "Spain",
+      "probability": 0.94768,
+      "group": "Group H",
+      "qualification_probability": 0.9266,
+      "logo_url": "https://media.api-sports.io/football/teams/9.png",
+      "country_code": "ESP"
+    },
+    {
+      "team": "England",
+      "probability": 0.91016,
+      "group": "Group L",
+      "qualification_probability": 0.93082,
+      "logo_url": "https://media.api-sports.io/football/teams/10.png",
+      "country_code": "ENG"
+    },
+    {
+      "team": "Argentina",
+      "probability": 0.90948,
+      "group": "Group J",
+      "qualification_probability": 0.87258,
+      "logo_url": "https://media.api-sports.io/football/teams/26.png",
+      "country_code": "ARG"
+    },
+    {
+      "team": "Netherlands",
+      "probability": 0.8697,
+      "group": "Group F",
+      "qualification_probability": 0.8846,
+      "logo_url": "https://media.api-sports.io/football/teams/1118.png",
+      "country_code": "NED"
+    },
+    {
+      "team": "Mexico",
+      "probability": 0.86012,
+      "group": "Group A",
+      "qualification_probability": 0.93264,
+      "logo_url": "https://media.api-sports.io/football/teams/16.png",
+      "country_code": "MEX"
+    },
+    {
+      "team": "Germany",
+      "probability": 0.77506,
+      "group": "Group E",
+      "qualification_probability": 0.87008,
+      "logo_url": "https://media.api-sports.io/football/teams/25.png",
+      "country_code": "GER"
+    },
+    {
+      "team": "Brazil",
+      "probability": 0.75064,
+      "group": "Group C",
+      "qualification_probability": 0.86394,
+      "logo_url": "https://media.api-sports.io/football/teams/6.png",
+      "country_code": "BRA"
+    },
+    {
+      "team": "Morocco",
+      "probability": 0.72888,
+      "group": "Group C",
+      "qualification_probability": 0.89562,
+      "logo_url": "https://media.api-sports.io/football/teams/31.png",
+      "country_code": "MAR"
+    },
+    {
+      "team": "Switzerland",
+      "probability": 0.7186,
+      "group": "Group B",
+      "qualification_probability": 0.83514,
+      "logo_url": "https://media.api-sports.io/football/teams/15.png",
+      "country_code": "SUI"
+    },
+    {
+      "team": "Belgium",
+      "probability": 0.71054,
+      "group": "Group G",
+      "qualification_probability": 0.84292,
+      "logo_url": "https://media.api-sports.io/football/teams/1.png",
+      "country_code": "BEL"
+    },
+    {
+      "team": "France",
+      "probability": 0.6924,
+      "group": "Group I",
+      "qualification_probability": 0.79466,
+      "logo_url": "https://media.api-sports.io/football/teams/2.png",
+      "country_code": "FRA"
+    },
+    {
+      "team": "Colombia",
+      "probability": 0.65686,
+      "group": "Group K",
+      "qualification_probability": 0.80256,
+      "logo_url": "https://media.api-sports.io/football/teams/8.png",
+      "country_code": "COL"
+    },
+    {
+      "team": "South Korea",
+      "probability": 0.64844,
+      "group": "Group A",
+      "qualification_probability": 0.91598,
+      "logo_url": "https://media.api-sports.io/football/teams/17.png",
+      "country_code": "KOR"
+    },
+    {
+      "team": "Norway",
+      "probability": 0.57586,
+      "group": "Group I",
+      "qualification_probability": 0.76478,
+      "logo_url": "https://media.api-sports.io/football/teams/1090.png",
+      "country_code": "NOR"
+    },
+    {
+      "team": "Japan",
+      "probability": 0.56164,
+      "group": "Group F",
+      "qualification_probability": 0.77576,
+      "logo_url": "https://media.api-sports.io/football/teams/12.png",
+      "country_code": "JPN"
+    },
+    {
+      "team": "Portugal",
+      "probability": 0.50196,
+      "group": "Group K",
+      "qualification_probability": 0.72098,
+      "logo_url": "https://media.api-sports.io/football/teams/27.png",
+      "country_code": "POR"
+    }
+  ],
+  "round_of_32_projected": [
+    {
+      "team": "Spain",
+      "probability": 1.0,
+      "group": "Group H",
+      "qualification_probability": 0.9266,
+      "logo_url": "https://media.api-sports.io/football/teams/9.png",
+      "country_code": "ESP"
+    },
+    {
+      "team": "Haiti",
+      "probability": 1.0,
+      "group": "Group C",
+      "qualification_probability": 0.4296,
+      "logo_url": "https://media.api-sports.io/football/teams/2386.png",
+      "country_code": "HAI"
+    },
+    {
+      "team": "England",
+      "probability": 1.0,
+      "group": "Group L",
+      "qualification_probability": 0.93082,
+      "logo_url": "https://media.api-sports.io/football/teams/10.png",
+      "country_code": "ENG"
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "probability": 1.0,
+      "group": "Group B",
+      "qualification_probability": 0.5532,
+      "logo_url": "https://media.api-sports.io/football/teams/1113.png",
+      "country_code": "BIH"
+    },
+    {
+      "team": "Argentina",
+      "probability": 1.0,
+      "group": "Group J",
+      "qualification_probability": 0.87258,
+      "logo_url": "https://media.api-sports.io/football/teams/26.png",
+      "country_code": "ARG"
+    },
+    {
+      "team": "Ghana",
+      "probability": 1.0,
+      "group": "Group L",
+      "qualification_probability": 0.51826,
+      "logo_url": "https://media.api-sports.io/football/teams/1504.png",
+      "country_code": "GHA"
+    },
+    {
+      "team": "Netherlands",
+      "probability": 1.0,
+      "group": "Group F",
+      "qualification_probability": 0.8846,
+      "logo_url": "https://media.api-sports.io/football/teams/1118.png",
+      "country_code": "NED"
+    },
+    {
+      "team": "Czech Republic",
+      "probability": 1.0,
+      "group": "Group A",
+      "qualification_probability": 0.50114,
+      "logo_url": "https://media.api-sports.io/football/teams/770.png",
+      "country_code": "CZE"
+    },
+    {
+      "team": "Mexico",
+      "probability": 1.0,
+      "group": "Group A",
+      "qualification_probability": 0.93264,
+      "logo_url": "https://media.api-sports.io/football/teams/16.png",
+      "country_code": "MEX"
+    },
+    {
+      "team": "Tunisia",
+      "probability": 1.0,
+      "group": "Group F",
+      "qualification_probability": 0.56776,
+      "logo_url": "https://media.api-sports.io/football/teams/28.png",
+      "country_code": "TUN"
+    },
+    {
+      "team": "Germany",
+      "probability": 1.0,
+      "group": "Group E",
+      "qualification_probability": 0.87008,
+      "logo_url": "https://media.api-sports.io/football/teams/25.png",
+      "country_code": "GER"
+    },
+    {
+      "team": "Algeria",
+      "probability": 1.0,
+      "group": "Group J",
+      "qualification_probability": 0.65136,
+      "logo_url": "https://media.api-sports.io/football/teams/1532.png",
+      "country_code": "ALG"
+    },
+    {
+      "team": "Brazil",
+      "probability": 1.0,
+      "group": "Group C",
+      "qualification_probability": 0.86394,
+      "logo_url": "https://media.api-sports.io/football/teams/6.png",
+      "country_code": "BRA"
+    },
+    {
+      "team": "Ivory Coast",
+      "probability": 1.0,
+      "group": "Group E",
+      "qualification_probability": 0.70102,
+      "logo_url": "https://media.api-sports.io/football/teams/1501.png",
+      "country_code": "CIV"
+    },
+    {
+      "team": "Morocco",
+      "probability": 1.0,
+      "group": "Group C",
+      "qualification_probability": 0.89562,
+      "logo_url": "https://media.api-sports.io/football/teams/31.png",
+      "country_code": "MAR"
+    },
+    {
+      "team": "Uruguay",
+      "probability": 1.0,
+      "group": "Group H",
+      "qualification_probability": 0.62196,
+      "logo_url": "https://media.api-sports.io/football/teams/7.png",
+      "country_code": "URU"
+    },
+    {
+      "team": "Switzerland",
+      "probability": 1.0,
+      "group": "Group B",
+      "qualification_probability": 0.83514,
+      "logo_url": "https://media.api-sports.io/football/teams/15.png",
+      "country_code": "SUI"
+    },
+    {
+      "team": "Iran",
+      "probability": 1.0,
+      "group": "Group G",
+      "qualification_probability": 0.67484,
+      "logo_url": "https://media.api-sports.io/football/teams/22.png",
+      "country_code": "IRN"
+    },
+    {
+      "team": "Belgium",
+      "probability": 1.0,
+      "group": "Group G",
+      "qualification_probability": 0.84292,
+      "logo_url": "https://media.api-sports.io/football/teams/1.png",
+      "country_code": "BEL"
+    },
+    {
+      "team": "Austria",
+      "probability": 1.0,
+      "group": "Group J",
+      "qualification_probability": 0.65844,
+      "logo_url": "https://media.api-sports.io/football/teams/775.png",
+      "country_code": "AUT"
+    },
+    {
+      "team": "France",
+      "probability": 1.0,
+      "group": "Group I",
+      "qualification_probability": 0.79466,
+      "logo_url": "https://media.api-sports.io/football/teams/2.png",
+      "country_code": "FRA"
+    },
+    {
+      "team": "Canada",
+      "probability": 1.0,
+      "group": "Group B",
+      "qualification_probability": 0.69248,
+      "logo_url": "https://media.api-sports.io/football/teams/5529.png",
+      "country_code": "CAN"
+    },
+    {
+      "team": "Colombia",
+      "probability": 1.0,
+      "group": "Group K",
+      "qualification_probability": 0.80256,
+      "logo_url": "https://media.api-sports.io/football/teams/8.png",
+      "country_code": "COL"
+    },
+    {
+      "team": "Senegal",
+      "probability": 1.0,
+      "group": "Group I",
+      "qualification_probability": 0.6978,
+      "logo_url": "https://media.api-sports.io/football/teams/13.png",
+      "country_code": "SEN"
+    },
+    {
+      "team": "South Korea",
+      "probability": 1.0,
+      "group": "Group A",
+      "qualification_probability": 0.91598,
+      "logo_url": "https://media.api-sports.io/football/teams/17.png",
+      "country_code": "KOR"
+    },
+    {
+      "team": "Australia",
+      "probability": 1.0,
+      "group": "Group D",
+      "qualification_probability": 0.73432,
+      "logo_url": "https://media.api-sports.io/football/teams/20.png",
+      "country_code": "AUS"
+    },
+    {
+      "team": "Norway",
+      "probability": 1.0,
+      "group": "Group I",
+      "qualification_probability": 0.76478,
+      "logo_url": "https://media.api-sports.io/football/teams/1090.png",
+      "country_code": "NOR"
+    },
+    {
+      "team": "Türkiye",
+      "probability": 1.0,
+      "group": "Group D",
+      "qualification_probability": 0.69548,
+      "logo_url": "https://media.api-sports.io/football/teams/777.png",
+      "country_code": "TUR"
+    },
+    {
+      "team": "Japan",
+      "probability": 1.0,
+      "group": "Group F",
+      "qualification_probability": 0.77576,
+      "logo_url": "https://media.api-sports.io/football/teams/12.png",
+      "country_code": "JPN"
+    },
+    {
+      "team": "Croatia",
+      "probability": 1.0,
+      "group": "Group L",
+      "qualification_probability": 0.71616,
+      "logo_url": "https://media.api-sports.io/football/teams/3.png",
+      "country_code": "CRO"
+    },
+    {
+      "team": "Portugal",
+      "probability": 1.0,
+      "group": "Group K",
+      "qualification_probability": 0.72098,
+      "logo_url": "https://media.api-sports.io/football/teams/27.png",
+      "country_code": "POR"
+    },
+    {
+      "team": "USA",
+      "probability": 1.0,
+      "group": "Group D",
+      "qualification_probability": 0.82108,
+      "logo_url": "https://media.api-sports.io/football/teams/2384.png",
+      "country_code": "USA"
+    }
+  ],
+  "group_stage": {
+    "matches_known": 72,
+    "finished_matches_locked": 3,
+    "future_matches_simulated": 69,
+    "projected_qualifiers": [
+      {
+        "team": "Mexico",
+        "group": "Group A",
+        "slot": "1er Group A",
+        "status": "projected",
+        "qualification_probability": 0.93264,
+        "logo_url": "https://media.api-sports.io/football/teams/16.png"
+      },
+      {
+        "team": "South Korea",
+        "group": "Group A",
+        "slot": "2e Group A",
+        "status": "projected",
+        "qualification_probability": 0.91598,
+        "logo_url": "https://media.api-sports.io/football/teams/17.png"
+      },
+      {
+        "team": "Switzerland",
+        "group": "Group B",
+        "slot": "1er Group B",
+        "status": "projected",
+        "qualification_probability": 0.83514,
+        "logo_url": "https://media.api-sports.io/football/teams/15.png"
+      },
+      {
+        "team": "Canada",
+        "group": "Group B",
+        "slot": "2e Group B",
+        "status": "projected",
+        "qualification_probability": 0.69248,
+        "logo_url": "https://media.api-sports.io/football/teams/5529.png"
+      },
+      {
+        "team": "Morocco",
+        "group": "Group C",
+        "slot": "1er Group C",
+        "status": "projected",
+        "qualification_probability": 0.89562,
+        "logo_url": "https://media.api-sports.io/football/teams/31.png"
+      },
+      {
+        "team": "Brazil",
+        "group": "Group C",
+        "slot": "2e Group C",
+        "status": "projected",
+        "qualification_probability": 0.86394,
+        "logo_url": "https://media.api-sports.io/football/teams/6.png"
+      },
+      {
+        "team": "USA",
+        "group": "Group D",
+        "slot": "1er Group D",
+        "status": "projected",
+        "qualification_probability": 0.82108,
+        "logo_url": "https://media.api-sports.io/football/teams/2384.png"
+      },
+      {
+        "team": "Australia",
+        "group": "Group D",
+        "slot": "2e Group D",
+        "status": "projected",
+        "qualification_probability": 0.73432,
+        "logo_url": "https://media.api-sports.io/football/teams/20.png"
+      },
+      {
+        "team": "Germany",
+        "group": "Group E",
+        "slot": "1er Group E",
+        "status": "projected",
+        "qualification_probability": 0.87008,
+        "logo_url": "https://media.api-sports.io/football/teams/25.png"
+      },
+      {
+        "team": "Ivory Coast",
+        "group": "Group E",
+        "slot": "2e Group E",
+        "status": "projected",
+        "qualification_probability": 0.70102,
+        "logo_url": "https://media.api-sports.io/football/teams/1501.png"
+      },
+      {
+        "team": "Netherlands",
+        "group": "Group F",
+        "slot": "1er Group F",
+        "status": "projected",
+        "qualification_probability": 0.8846,
+        "logo_url": "https://media.api-sports.io/football/teams/1118.png"
+      },
+      {
+        "team": "Japan",
+        "group": "Group F",
+        "slot": "2e Group F",
+        "status": "projected",
+        "qualification_probability": 0.77576,
+        "logo_url": "https://media.api-sports.io/football/teams/12.png"
+      },
+      {
+        "team": "Belgium",
+        "group": "Group G",
+        "slot": "1er Group G",
+        "status": "projected",
+        "qualification_probability": 0.84292,
+        "logo_url": "https://media.api-sports.io/football/teams/1.png"
+      },
+      {
+        "team": "Iran",
+        "group": "Group G",
+        "slot": "2e Group G",
+        "status": "projected",
+        "qualification_probability": 0.67484,
+        "logo_url": "https://media.api-sports.io/football/teams/22.png"
+      },
+      {
+        "team": "Spain",
+        "group": "Group H",
+        "slot": "1er Group H",
+        "status": "projected",
+        "qualification_probability": 0.9266,
+        "logo_url": "https://media.api-sports.io/football/teams/9.png"
+      },
+      {
+        "team": "Uruguay",
+        "group": "Group H",
+        "slot": "2e Group H",
+        "status": "projected",
+        "qualification_probability": 0.62196,
+        "logo_url": "https://media.api-sports.io/football/teams/7.png"
+      },
+      {
+        "team": "France",
+        "group": "Group I",
+        "slot": "1er Group I",
+        "status": "projected",
+        "qualification_probability": 0.79466,
+        "logo_url": "https://media.api-sports.io/football/teams/2.png"
+      },
+      {
+        "team": "Norway",
+        "group": "Group I",
+        "slot": "2e Group I",
+        "status": "projected",
+        "qualification_probability": 0.76478,
+        "logo_url": "https://media.api-sports.io/football/teams/1090.png"
+      },
+      {
+        "team": "Argentina",
+        "group": "Group J",
+        "slot": "1er Group J",
+        "status": "projected",
+        "qualification_probability": 0.87258,
+        "logo_url": "https://media.api-sports.io/football/teams/26.png"
+      },
+      {
+        "team": "Algeria",
+        "group": "Group J",
+        "slot": "2e Group J",
+        "status": "projected",
+        "qualification_probability": 0.65136,
+        "logo_url": "https://media.api-sports.io/football/teams/1532.png"
+      },
+      {
+        "team": "Colombia",
+        "group": "Group K",
+        "slot": "1er Group K",
+        "status": "projected",
+        "qualification_probability": 0.80256,
+        "logo_url": "https://media.api-sports.io/football/teams/8.png"
+      },
+      {
+        "team": "Portugal",
+        "group": "Group K",
+        "slot": "2e Group K",
+        "status": "projected",
+        "qualification_probability": 0.72098,
+        "logo_url": "https://media.api-sports.io/football/teams/27.png"
+      },
+      {
+        "team": "England",
+        "group": "Group L",
+        "slot": "1er Group L",
+        "status": "projected",
+        "qualification_probability": 0.93082,
+        "logo_url": "https://media.api-sports.io/football/teams/10.png"
+      },
+      {
+        "team": "Croatia",
+        "group": "Group L",
+        "slot": "2e Group L",
+        "status": "projected",
+        "qualification_probability": 0.71616,
+        "logo_url": "https://media.api-sports.io/football/teams/3.png"
+      },
+      {
+        "team": "Czech Republic",
+        "group": "Group A",
+        "slot": "Meilleur 3e Group A",
+        "status": "projected",
+        "qualification_probability": 0.50114,
+        "logo_url": "https://media.api-sports.io/football/teams/770.png"
+      },
+      {
+        "team": "Ghana",
+        "group": "Group L",
+        "slot": "Meilleur 3e Group L",
+        "status": "projected",
+        "qualification_probability": 0.51826,
+        "logo_url": "https://media.api-sports.io/football/teams/1504.png"
+      },
+      {
+        "team": "Haiti",
+        "group": "Group C",
+        "slot": "Meilleur 3e Group C",
+        "status": "projected",
+        "qualification_probability": 0.4296,
+        "logo_url": "https://media.api-sports.io/football/teams/2386.png"
+      },
+      {
+        "team": "Tunisia",
+        "group": "Group F",
+        "slot": "Meilleur 3e Group F",
+        "status": "projected",
+        "qualification_probability": 0.56776,
+        "logo_url": "https://media.api-sports.io/football/teams/28.png"
+      },
+      {
+        "team": "Senegal",
+        "group": "Group I",
+        "slot": "Meilleur 3e Group I",
+        "status": "projected",
+        "qualification_probability": 0.6978,
+        "logo_url": "https://media.api-sports.io/football/teams/13.png"
+      },
+      {
+        "team": "Austria",
+        "group": "Group J",
+        "slot": "Meilleur 3e Group J",
+        "status": "projected",
+        "qualification_probability": 0.65844,
+        "logo_url": "https://media.api-sports.io/football/teams/775.png"
+      },
+      {
+        "team": "Bosnia & Herzegovina",
+        "group": "Group B",
+        "slot": "Meilleur 3e Group B",
+        "status": "projected",
+        "qualification_probability": 0.5532,
+        "logo_url": "https://media.api-sports.io/football/teams/1113.png"
+      },
+      {
+        "team": "Türkiye",
+        "group": "Group D",
+        "slot": "Meilleur 3e Group D",
+        "status": "projected",
+        "qualification_probability": 0.69548,
+        "logo_url": "https://media.api-sports.io/football/teams/777.png"
+      }
+    ],
+    "qualification_rule": "Top two in each of 12 groups plus the eight best third-placed teams."
+  },
+  "knockout_path": {
+    "status": "projected",
+    "rounds": {
+      "round_of_32": [
+        {
+          "match_id": "projected_round_of_32_1",
+          "status": "projected",
+          "official": false,
+          "team_a": "Spain",
+          "team_b": "Haiti",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/9.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/2386.png",
+          "team_a_win_probability": 0.9456428572556221,
+          "team_b_win_probability": 0.05435714274437786,
+          "projected_winner": "Spain"
+        },
+        {
+          "match_id": "projected_round_of_32_2",
+          "status": "projected",
+          "official": false,
+          "team_a": "England",
+          "team_b": "Bosnia & Herzegovina",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/10.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/1113.png",
+          "team_a_win_probability": 0.9078646537192692,
+          "team_b_win_probability": 0.09213534628073083,
+          "projected_winner": "England"
+        },
+        {
+          "match_id": "projected_round_of_32_3",
+          "status": "projected",
+          "official": false,
+          "team_a": "Argentina",
+          "team_b": "Ghana",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/26.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/1504.png",
+          "team_a_win_probability": 0.9093208614878127,
+          "team_b_win_probability": 0.09067913851218734,
+          "projected_winner": "Argentina"
+        },
+        {
+          "match_id": "projected_round_of_32_4",
+          "status": "projected",
+          "official": false,
+          "team_a": "Netherlands",
+          "team_b": "Czech Republic",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/1118.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/770.png",
+          "team_a_win_probability": 0.86743655933008,
+          "team_b_win_probability": 0.13256344066991999,
+          "projected_winner": "Netherlands"
+        },
+        {
+          "match_id": "projected_round_of_32_5",
+          "status": "projected",
+          "official": false,
+          "team_a": "Mexico",
+          "team_b": "Tunisia",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/16.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/28.png",
+          "team_a_win_probability": 0.8590236917861207,
+          "team_b_win_probability": 0.1409763082138793,
+          "projected_winner": "Mexico"
+        },
+        {
+          "match_id": "projected_round_of_32_6",
+          "status": "projected",
+          "official": false,
+          "team_a": "Germany",
+          "team_b": "Algeria",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/25.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/1532.png",
+          "team_a_win_probability": 0.7746135696351277,
+          "team_b_win_probability": 0.22538643036487227,
+          "projected_winner": "Germany"
+        },
+        {
+          "match_id": "projected_round_of_32_7",
+          "status": "projected",
+          "official": false,
+          "team_a": "Brazil",
+          "team_b": "Ivory Coast",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/6.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/1501.png",
+          "team_a_win_probability": 0.7505312023951012,
+          "team_b_win_probability": 0.24946879760489882,
+          "projected_winner": "Brazil"
+        },
+        {
+          "match_id": "projected_round_of_32_8",
+          "status": "projected",
+          "official": false,
+          "team_a": "Morocco",
+          "team_b": "Uruguay",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/31.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/7.png",
+          "team_a_win_probability": 0.7270937813287647,
+          "team_b_win_probability": 0.2729062186712353,
+          "projected_winner": "Morocco"
+        },
+        {
+          "match_id": "projected_round_of_32_9",
+          "status": "projected",
+          "official": false,
+          "team_a": "Switzerland",
+          "team_b": "Iran",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/15.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/22.png",
+          "team_a_win_probability": 0.7198824613509646,
+          "team_b_win_probability": 0.28011753864903544,
+          "projected_winner": "Switzerland"
+        },
+        {
+          "match_id": "projected_round_of_32_10",
+          "status": "projected",
+          "official": false,
+          "team_a": "Belgium",
+          "team_b": "Austria",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/1.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/775.png",
+          "team_a_win_probability": 0.7103103934970325,
+          "team_b_win_probability": 0.2896896065029675,
+          "projected_winner": "Belgium"
+        },
+        {
+          "match_id": "projected_round_of_32_11",
+          "status": "projected",
+          "official": false,
+          "team_a": "France",
+          "team_b": "Canada",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/2.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/5529.png",
+          "team_a_win_probability": 0.6950398822208149,
+          "team_b_win_probability": 0.3049601177791851,
+          "projected_winner": "France"
+        },
+        {
+          "match_id": "projected_round_of_32_12",
+          "status": "projected",
+          "official": false,
+          "team_a": "Colombia",
+          "team_b": "Senegal",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/8.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/13.png",
+          "team_a_win_probability": 0.6537115941112143,
+          "team_b_win_probability": 0.34628840588878573,
+          "projected_winner": "Colombia"
+        },
+        {
+          "match_id": "projected_round_of_32_13",
+          "status": "projected",
+          "official": false,
+          "team_a": "South Korea",
+          "team_b": "Australia",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/17.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/20.png",
+          "team_a_win_probability": 0.6483821364445098,
+          "team_b_win_probability": 0.3516178635554902,
+          "projected_winner": "South Korea"
+        },
+        {
+          "match_id": "projected_round_of_32_14",
+          "status": "projected",
+          "official": false,
+          "team_a": "Norway",
+          "team_b": "Türkiye",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/1090.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/777.png",
+          "team_a_win_probability": 0.573746952741589,
+          "team_b_win_probability": 0.42625304725841096,
+          "projected_winner": "Norway"
+        },
+        {
+          "match_id": "projected_round_of_32_15",
+          "status": "projected",
+          "official": false,
+          "team_a": "Japan",
+          "team_b": "Croatia",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/12.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/3.png",
+          "team_a_win_probability": 0.5633390822740482,
+          "team_b_win_probability": 0.43666091772595184,
+          "projected_winner": "Japan"
+        },
+        {
+          "match_id": "projected_round_of_32_16",
+          "status": "projected",
+          "official": false,
+          "team_a": "Portugal",
+          "team_b": "USA",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/27.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/2384.png",
+          "team_a_win_probability": 0.5034394414916851,
+          "team_b_win_probability": 0.49656055850831493,
+          "projected_winner": "Portugal"
+        }
+      ],
+      "round_of_16": [
+        {
+          "match_id": "projected_round_of_16_1",
+          "status": "projected",
+          "official": false,
+          "team_a": "Spain",
+          "team_b": "England",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/9.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/10.png",
+          "team_a_win_probability": 0.5278700738386525,
+          "team_b_win_probability": 0.4721299261613475,
+          "projected_winner": "Spain"
+        },
+        {
+          "match_id": "projected_round_of_16_2",
+          "status": "projected",
+          "official": false,
+          "team_a": "Argentina",
+          "team_b": "Netherlands",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/26.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/1118.png",
+          "team_a_win_probability": 0.5350264438090564,
+          "team_b_win_probability": 0.4649735561909436,
+          "projected_winner": "Argentina"
+        },
+        {
+          "match_id": "projected_round_of_16_3",
+          "status": "projected",
+          "official": false,
+          "team_a": "Mexico",
+          "team_b": "Germany",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/16.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/25.png",
+          "team_a_win_probability": 0.513340470528063,
+          "team_b_win_probability": 0.486659529471937,
+          "projected_winner": "Mexico"
+        },
+        {
+          "match_id": "projected_round_of_16_4",
+          "status": "projected",
+          "official": false,
+          "team_a": "Brazil",
+          "team_b": "Morocco",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/6.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/31.png",
+          "team_a_win_probability": 0.5192059310466116,
+          "team_b_win_probability": 0.4807940689533884,
+          "projected_winner": "Brazil"
+        },
+        {
+          "match_id": "projected_round_of_16_5",
+          "status": "projected",
+          "official": false,
+          "team_a": "Switzerland",
+          "team_b": "Belgium",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/15.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/1.png",
+          "team_a_win_probability": 0.5030756303701118,
+          "team_b_win_probability": 0.4969243696298882,
+          "projected_winner": "Switzerland"
+        },
+        {
+          "match_id": "projected_round_of_16_6",
+          "status": "projected",
+          "official": false,
+          "team_a": "France",
+          "team_b": "Colombia",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/2.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/8.png",
+          "team_a_win_probability": 0.5075611387501335,
+          "team_b_win_probability": 0.49243886124986647,
+          "projected_winner": "France"
+        },
+        {
+          "match_id": "projected_round_of_16_7",
+          "status": "projected",
+          "official": false,
+          "team_a": "South Korea",
+          "team_b": "Norway",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/17.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/1090.png",
+          "team_a_win_probability": 0.5599143226638815,
+          "team_b_win_probability": 0.4400856773361185,
+          "projected_winner": "South Korea"
+        },
+        {
+          "match_id": "projected_round_of_16_8",
+          "status": "projected",
+          "official": false,
+          "team_a": "Japan",
+          "team_b": "Portugal",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/12.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/27.png",
+          "team_a_win_probability": 0.5101621960469707,
+          "team_b_win_probability": 0.48983780395302934,
+          "projected_winner": "Japan"
+        }
+      ],
+      "quarter_finals": [
+        {
+          "match_id": "projected_quarter_finals_1",
+          "status": "projected",
+          "official": false,
+          "team_a": "Spain",
+          "team_b": "Argentina",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/9.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/26.png",
+          "team_a_win_probability": 0.5841638701695104,
+          "team_b_win_probability": 0.41583612983048956,
+          "projected_winner": "Spain"
+        },
+        {
+          "match_id": "projected_quarter_finals_2",
+          "status": "projected",
+          "official": false,
+          "team_a": "Mexico",
+          "team_b": "Brazil",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/16.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/6.png",
+          "team_a_win_probability": 0.5323726615537672,
+          "team_b_win_probability": 0.46762733844623283,
+          "projected_winner": "Mexico"
+        },
+        {
+          "match_id": "projected_quarter_finals_3",
+          "status": "projected",
+          "official": false,
+          "team_a": "Switzerland",
+          "team_b": "France",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/15.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/2.png",
+          "team_a_win_probability": 0.5127736848669896,
+          "team_b_win_probability": 0.4872263151330104,
+          "projected_winner": "Switzerland"
+        },
+        {
+          "match_id": "projected_quarter_finals_4",
+          "status": "projected",
+          "official": false,
+          "team_a": "South Korea",
+          "team_b": "Japan",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/17.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/12.png",
+          "team_a_win_probability": 0.5687534214154271,
+          "team_b_win_probability": 0.43124657858457294,
+          "projected_winner": "South Korea"
+        }
+      ],
+      "semi_finals": [
+        {
+          "match_id": "projected_semi_finals_1",
+          "status": "projected",
+          "official": false,
+          "team_a": "Spain",
+          "team_b": "Mexico",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/9.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/16.png",
+          "team_a_win_probability": 0.617882629015556,
+          "team_b_win_probability": 0.382117370984444,
+          "projected_winner": "Spain"
+        },
+        {
+          "match_id": "projected_semi_finals_2",
+          "status": "projected",
+          "official": false,
+          "team_a": "Switzerland",
+          "team_b": "South Korea",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/15.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/17.png",
+          "team_a_win_probability": 0.5237814014197854,
+          "team_b_win_probability": 0.47621859858021465,
+          "projected_winner": "Switzerland"
+        }
+      ],
+      "final": [
+        {
+          "match_id": "projected_final_1",
+          "status": "projected",
+          "official": false,
+          "team_a": "Spain",
+          "team_b": "Switzerland",
+          "team_a_logo_url": "https://media.api-sports.io/football/teams/9.png",
+          "team_b_logo_url": "https://media.api-sports.io/football/teams/15.png",
+          "team_a_win_probability": 0.6710364608148724,
+          "team_b_win_probability": 0.32896353918512755,
+          "projected_winner": "Spain"
+        }
+      ]
+    },
+    "third_place_match": {
+      "match_id": "projected_third_place",
+      "status": "projected",
+      "official": false,
+      "slots": [
+        "Perdant demi-finale 1",
+        "Perdant demi-finale 2"
+      ]
+    },
+    "projected_match_count": 32
+  },
+  "scenario_confidence": {
+    "label": "open",
+    "winner_probability": 0.15376,
+    "most_common_final_probability": 0.02958,
+    "path_stability": 0.00518,
+    "interpretation": "Le scénario montre le parcours dominant, pas une certitude ni un bracket officiel."
+  },
+  "simulation_evidence": {
+    "champion_frequencies": [
+      {
+        "team": "Spain",
+        "probability": 0.15376,
+        "group": "Group H",
+        "qualification_probability": 0.9266,
+        "logo_url": "https://media.api-sports.io/football/teams/9.png",
+        "country_code": "ESP"
+      },
+      {
+        "team": "England",
+        "probability": 0.1153,
+        "group": "Group L",
+        "qualification_probability": 0.93082,
+        "logo_url": "https://media.api-sports.io/football/teams/10.png",
+        "country_code": "ENG"
+      },
+      {
+        "team": "Argentina",
+        "probability": 0.08504,
+        "group": "Group J",
+        "qualification_probability": 0.87258,
+        "logo_url": "https://media.api-sports.io/football/teams/26.png",
+        "country_code": "ARG"
+      },
+      {
+        "team": "Mexico",
+        "probability": 0.07462,
+        "group": "Group A",
+        "qualification_probability": 0.93264,
+        "logo_url": "https://media.api-sports.io/football/teams/16.png",
+        "country_code": "MEX"
+      },
+      {
+        "team": "Germany",
+        "probability": 0.05802,
+        "group": "Group E",
+        "qualification_probability": 0.87008,
+        "logo_url": "https://media.api-sports.io/football/teams/25.png",
+        "country_code": "GER"
+      },
+      {
+        "team": "Netherlands",
+        "probability": 0.05784,
+        "group": "Group F",
+        "qualification_probability": 0.8846,
+        "logo_url": "https://media.api-sports.io/football/teams/1118.png",
+        "country_code": "NED"
+      },
+      {
+        "team": "Switzerland",
+        "probability": 0.0567,
+        "group": "Group B",
+        "qualification_probability": 0.83514,
+        "logo_url": "https://media.api-sports.io/football/teams/15.png",
+        "country_code": "SUI"
+      },
+      {
+        "team": "Belgium",
+        "probability": 0.052,
+        "group": "Group G",
+        "qualification_probability": 0.84292,
+        "logo_url": "https://media.api-sports.io/football/teams/1.png",
+        "country_code": "BEL"
+      },
+      {
+        "team": "Brazil",
+        "probability": 0.05086,
+        "group": "Group C",
+        "qualification_probability": 0.86394,
+        "logo_url": "https://media.api-sports.io/football/teams/6.png",
+        "country_code": "BRA"
+      },
+      {
+        "team": "France",
+        "probability": 0.04604,
+        "group": "Group I",
+        "qualification_probability": 0.79466,
+        "logo_url": "https://media.api-sports.io/football/teams/2.png",
+        "country_code": "FRA"
+      },
+      {
+        "team": "South Korea",
+        "probability": 0.04374,
+        "group": "Group A",
+        "qualification_probability": 0.91598,
+        "logo_url": "https://media.api-sports.io/football/teams/17.png",
+        "country_code": "KOR"
+      },
+      {
+        "team": "Colombia",
+        "probability": 0.0431,
+        "group": "Group K",
+        "qualification_probability": 0.80256,
+        "logo_url": "https://media.api-sports.io/football/teams/8.png",
+        "country_code": "COL"
+      }
+    ],
+    "most_common_semi_final_set": [
+      "Mexico",
+      "South Korea",
+      "Spain",
+      "Switzerland"
+    ],
+    "most_common_semi_final_set_probability": 0.00518,
+    "most_common_quarter_final_set": [
+      "Argentina",
+      "Brazil",
+      "Colombia",
+      "Japan",
+      "Mexico",
+      "South Korea",
+      "Spain",
+      "Switzerland"
+    ],
+    "most_common_quarter_final_set_probability": 0.00116,
+    "rng_seed": 202613
+  },
+  "result_impact": [
+    {
+      "team": "Mexico",
+      "qualification_delta": 0.28258000000000005,
+      "direction": "up",
+      "label": "+28.3 pts de qualification"
+    },
+    {
+      "team": "South Africa",
+      "qualification_delta": -0.27999999999999997,
+      "direction": "down",
+      "label": "-28.0 pts de qualification"
+    },
+    {
+      "team": "South Korea",
+      "qualification_delta": 0.18196,
+      "direction": "up",
+      "label": "+18.2 pts de qualification"
+    },
+    {
+      "team": "Czech Republic",
+      "qualification_delta": -0.13225999999999993,
+      "direction": "down",
+      "label": "-13.2 pts de qualification"
+    },
+    {
+      "team": "Canada",
+      "qualification_delta": -0.08566000000000007,
+      "direction": "down",
+      "label": "-8.6 pts de qualification"
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "qualification_delta": 0.056660000000000044,
+      "direction": "up",
+      "label": "+5.7 pts de qualification"
+    },
+    {
+      "team": "Switzerland",
+      "qualification_delta": -0.006480000000000041,
+      "direction": "down",
+      "label": "-0.6 pts de qualification"
+    },
+    {
+      "team": "Uzbekistan",
+      "qualification_delta": -0.005759999999999987,
+      "direction": "down",
+      "label": "-0.6 pts de qualification"
+    }
+  ],
+  "result_summary": {
+    "finished_matches": 3,
+    "live_matches": 0,
+    "not_started_matches": 69
+  },
+  "alternative_scenario_status": "experimental_lab_only_not_promoted",
+  "limitations": [
+    "Le bracket officiel à élimination directe est absent des données disponibles.",
+    "Les appariements sont un scénario projeté dérivé des probabilités de groupes et ne sont jamais présentés comme officiels.",
+    "Les 50 000 parcours à élimination directe utilisent un tableau projeté fixe; ils ne remplacent pas une simulation FIFA officielle.",
+    "La petite finale est comptée dans la cible de 104 matchs mais reste un slot projeté.",
+    "Les probabilités du Prono IA restent inchangées et aucun modèle n'est réentraîné."
+  ],
+  "prior_context": {
+    "pre_result_simulations": 50000,
+    "current_result_locks": 3
+  }
+}
