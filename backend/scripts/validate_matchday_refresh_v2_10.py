@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 import math
+import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -30,6 +32,29 @@ def finite(value: Any) -> bool:
     return True
 
 
+def secret_scan_lines() -> list[str]:
+    pattern = re.compile(r"AKIA[0-9A-Z]{16}|-----BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY-----")
+    if shutil.which("rg"):
+        scan = subprocess.run(
+            ["rg", "-n", "--hidden", "--glob", "!.git/**", "--glob", "!node_modules/**", pattern.pattern],
+            cwd=ROOT, text=True, capture_output=True,
+        )
+        return scan.stdout.splitlines()
+
+    lines = []
+    excluded = {".git", "node_modules", "dist", "__pycache__", ".angular"}
+    for path in ROOT.rglob("*"):
+        if not path.is_file() or any(part in excluded for part in path.parts) or path.stat().st_size > 2 * 1024 * 1024:
+            continue
+        try:
+            for number, line in enumerate(path.read_text(errors="ignore").splitlines(), 1):
+                if pattern.search(line):
+                    lines.append(f"{path.relative_to(ROOT)}:{number}:{line.strip()}")
+        except OSError:
+            continue
+    return lines
+
+
 def main() -> None:
     required = {
         "manifest": "matchday_refresh_manifest_v2_10.json",
@@ -51,11 +76,7 @@ def main() -> None:
     manifest = artifacts.get("manifest", {})
     protected_unchanged = manifest.get("model_integrity", {}).get("protected_hashes_before") == manifest.get("model_integrity", {}).get("protected_hashes_after")
     large_files = [str(path.relative_to(ROOT)) for path in DATA_DIR.rglob("*") if path.is_file() and path.stat().st_size > 10 * 1024 * 1024]
-    secret_scan = subprocess.run(
-        ["rg", "-n", "--hidden", "--glob", "!.git/**", "--glob", "!node_modules/**", r"AKIA[0-9A-Z]{16}|-----BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY-----"],
-        cwd=ROOT, text=True, capture_output=True,
-    )
-    secret_lines = secret_scan.stdout.splitlines()
+    secret_lines = secret_scan_lines()
     checks = {
         **{f"{key}_exists": value for key, value in exists.items()},
         "manifest_pass": manifest.get("status") == "pass",
