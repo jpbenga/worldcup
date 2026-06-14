@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
 from backend.scripts.pipeline_utils import DATA_DIR, FRONTEND_DATA_DIR, load_json, utc_now, write_json
-from backend.scripts.road_to_the_trophy_v3_promotion_pipeline_v2_15 import build_official_view_model
+from backend.scripts.road_to_the_trophy_v3_promotion_pipeline_v2_15 import build_official_view_model, table_from_matches
 from backend.simulation.tournament_engine_v3 import current_elos, historical_matches, profiles
 from backend.simulation.tournament_engine_v4 import knockout_result, prediction_cache, rank_group, sample_score
 
@@ -292,6 +292,57 @@ def representative_payload(path: dict[str, Any], diagnostics: dict[str, Any], si
     }
 
 
+def enrich_view_model(view_model: dict[str, Any], path: dict[str, Any], simulation: dict[str, Any]) -> None:
+    qualified = {
+        team
+        for match in path["knockout"]["round_of_32"]
+        for team in (match["team_a"], match["team_b"])
+    }
+    group_contract = {}
+    for group in view_model["groups"]:
+        code = group["group"]
+        standings = table_from_matches([team["name"] for team in group["teams"]], group["matches"])
+        standings_by_team = {row["team"]: row for row in standings}
+        group["central_table"] = standings
+        group["central_matches"] = group["matches"]
+        group["central_qualified"] = [row["team"] for row in standings if row["team"] in qualified]
+        group["qualification_probabilities"] = {}
+        group["display_note"] = "Classement du scénario central. Les chances de qualification sont calculées sur 50 000 simulations."
+        for team in group["teams"]:
+            name = team["name"]
+            row = standings_by_team[name]
+            ranks = simulation["group_rank_probabilities"][code][name]
+            qualification = simulation["round_of_32_probabilities"].get(name, 0)
+            probabilities = {
+                "qualification": qualification,
+                "first": ranks.get("1", 0),
+                "second": ranks.get("2", 0),
+                "best_third": max(0, qualification - ranks.get("1", 0) - ranks.get("2", 0)),
+                "elimination": 1 - qualification,
+            }
+            team.update({
+                "current_rank": row["rank"],
+                "played": row["played"],
+                "points": row["points"],
+                "goal_difference": row["goal_difference"],
+                "goals_for": row["goals_for"],
+                "central_status": "Qualifié" if name in qualified else "Éliminé",
+                "simulation_probabilities": probabilities,
+            })
+            group["qualification_probabilities"][name] = probabilities
+        group["teams"].sort(key=lambda team: team["current_rank"])
+        group_contract[code] = group
+
+    for name, team_path in view_model["team_paths"].items():
+        group = group_contract[team_path["group"]]
+        team = next(row for row in group["teams"] if row["name"] == name)
+        team_path.update({
+            "current_rank": team["current_rank"],
+            "points": team["points"],
+            "qualification_probability": team["simulation_probabilities"]["qualification"],
+        })
+
+
 def main() -> None:
     current = run_simulation(lock_results=True, seed=SEED)
     baseline = run_simulation(lock_results=False, seed=SEED)
@@ -315,6 +366,7 @@ def main() -> None:
     }
     representative = representative_payload(current_path, current_diagnostics, current)
     view_model = build_official_view_model(representative_override=representative, simulation_override=current)
+    enrich_view_model(view_model, current_path, current)
     view_model.update({
         "version": VERSION,
         "engine_name": "SimuAI Tournament Engine V4",

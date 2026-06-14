@@ -29,6 +29,24 @@ def main() -> None:
         "penalties_observed": simulation["knockout_resolution_counts"].get("penalties", 0) > 0,
         "living_scenario_exposed": view["scenario_evolution"]["scenario_changed"],
         "limitations_exposed": len(view["limitations"]) >= 3,
+        "atlas_group_count": len(view["groups"]) == 12,
+        "atlas_team_count": sum(len(group["teams"]) for group in view["groups"]) == 48,
+        "atlas_group_match_count": sum(len(group["matches"]) for group in view["groups"]) == 72,
+        "atlas_knockout_match_count": sum(len(round_row["matches"]) for round_row in view["rounds"]) == 31,
+        "atlas_team_contract_complete": all(
+            all(
+                key in team and team[key] is not None
+                for key in ("current_rank", "played", "points", "goal_difference", "goals_for", "central_status", "simulation_probabilities")
+            )
+            for group in view["groups"]
+            for team in group["teams"]
+        ),
+        "atlas_probability_contract_complete": all(
+            all(key in team["simulation_probabilities"] for key in ("qualification", "first", "second", "best_third", "elimination"))
+            for group in view["groups"]
+            for team in group["teams"]
+        ),
+        "atlas_final_complete": len(view["projected_final"]["teams"]) == 2 and all(row.get("team") for row in view["projected_final"]["teams"]),
     }
     failed = [name for name, passed in checks.items() if not passed]
     if failed:

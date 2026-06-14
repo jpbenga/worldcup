@@ -57,15 +57,15 @@
       "continuity_reference_used": false,
       "distance_from_previous_scenario": null,
       "pure_best_simulation_id": 34319,
-      "pure_best_average_surprise": 0.8027277496317075,
+      "pure_best_average_surprise": 0.802724790661915,
       "selected_vs_pure_best_surprise_delta": 0.0,
       "selected_simulation_id": 34319,
       "selected_champion": "Spain",
-      "selected_average_surprise": 0.8027277496317075,
+      "selected_average_surprise": 0.802724790661915,
       "most_likely_champion": "Spain",
-      "most_likely_champion_probability": 0.18614,
+      "most_likely_champion_probability": 0.18612,
       "champion_first_candidate_simulation_id": 34319,
-      "champion_first_average_surprise": 0.8027277496317075,
+      "champion_first_average_surprise": 0.802724790661915,
       "champion_forced": false,
       "interpretation": "The selected path is within 5% of minimum average surprise; when a previous scenario exists, continuity breaks statistically close ties. The champion is never forced."
     }
@@ -82,15 +82,15 @@
       "continuity_reference_used": true,
       "distance_from_previous_scenario": 3,
       "pure_best_simulation_id": 43772,
-      "pure_best_average_surprise": 0.7936597016757239,
-      "selected_vs_pure_best_surprise_delta": 0.016351036484626547,
+      "pure_best_average_surprise": 0.793669265976188,
+      "selected_vs_pure_best_surprise_delta": 0.016339864613354682,
       "selected_simulation_id": 34319,
       "selected_champion": "Spain",
-      "selected_average_surprise": 0.8100107381603504,
+      "selected_average_surprise": 0.8100091305895427,
       "most_likely_champion": "Spain",
-      "most_likely_champion_probability": 0.18558,
+      "most_likely_champion_probability": 0.18554,
       "champion_first_candidate_simulation_id": 43772,
-      "champion_first_average_surprise": 0.7936597016757239,
+      "champion_first_average_surprise": 0.793669265976188,
       "champion_forced": false,
       "interpretation": "The selected path is within 5% of minimum average surprise; when a previous scenario exists, continuity breaks statistically close ties. The champion is never forced."
     }
@@ -98,9 +98,9 @@
   "largest_probability_movements": [
     {
       "team": "USA",
-      "qualification_delta": 0.37054,
+      "qualification_delta": 0.37051999999999996,
       "champion_delta": 7.999999999999999e-05,
-      "impact": 0.37062
+      "impact": 0.3706
     },
     {
       "team": "Paraguay",
@@ -110,9 +110,9 @@
     },
     {
       "team": "South Africa",
-      "qualification_delta": -0.14160000000000006,
+      "qualification_delta": -0.14158000000000004,
       "champion_delta": -1.9999999999999998e-05,
-      "impact": 0.14162000000000005
+      "impact": 0.14160000000000003
     },
     {
       "team": "South Korea",
@@ -134,9 +134,9 @@
     },
     {
       "team": "Switzerland",
-      "qualification_delta": -0.06676000000000004,
-      "champion_delta": -0.0012400000000000015,
-      "impact": 0.06800000000000005
+      "qualification_delta": -0.06674000000000002,
+      "champion_delta": -0.001239999999999998,
+      "impact": 0.06798000000000001
     },
     {
       "team": "Mexico",
@@ -159,8 +159,8 @@
     {
       "team": "Netherlands",
       "qualification_delta": -0.00031999999999998696,
-      "champion_delta": -0.0025000000000000022,
-      "impact": 0.002819999999999989
+      "champion_delta": -0.002460000000000004,
+      "impact": 0.002779999999999991
     },
     {
       "team": "Colombia",

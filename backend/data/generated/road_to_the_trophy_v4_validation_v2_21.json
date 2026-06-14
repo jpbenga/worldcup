@@ -6,9 +6,9 @@
   "reservoir_size": 2000,
   "known_results_change_scenario": true,
   "explicit_knockout_resolutions": {
-    "90m": 1185625,
-    "extra_time": 184256,
-    "penalties": 180119
+    "90m": 1185629,
+    "extra_time": 184257,
+    "penalties": 180114
   },
   "scenario_selection": {
     "method": "minimum_global_surprise_complete_path_with_continuity_tie_break",
@@ -19,15 +19,15 @@
     "continuity_reference_used": true,
     "distance_from_previous_scenario": 3,
     "pure_best_simulation_id": 43772,
-    "pure_best_average_surprise": 0.7936597016757239,
-    "selected_vs_pure_best_surprise_delta": 0.016351036484626547,
+    "pure_best_average_surprise": 0.793669265976188,
+    "selected_vs_pure_best_surprise_delta": 0.016339864613354682,
     "selected_simulation_id": 34319,
     "selected_champion": "Spain",
-    "selected_average_surprise": 0.8100107381603504,
+    "selected_average_surprise": 0.8100091305895427,
     "most_likely_champion": "Spain",
-    "most_likely_champion_probability": 0.18558,
+    "most_likely_champion_probability": 0.18554,
     "champion_first_candidate_simulation_id": 43772,
-    "champion_first_average_surprise": 0.7936597016757239,
+    "champion_first_average_surprise": 0.793669265976188,
     "champion_forced": false,
     "interpretation": "The selected path is within 5% of minimum average surprise; when a previous scenario exists, continuity breaks statistically close ties. The champion is never forced."
   },

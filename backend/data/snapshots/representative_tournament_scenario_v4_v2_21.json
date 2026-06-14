@@ -1,7 +1,7 @@
 {
   "version": "v2.21",
   "method": "minimum_global_surprise_complete_path_with_continuity_tie_break",
-  "coherence_score": 0.5524829101380774,
+  "coherence_score": 0.5524834008291922,
   "simulation_id": 34319,
   "champion": "Spain",
   "final": {
@@ -18,7 +18,7 @@
       "team_a": "Spain",
       "team_b": "Colombia",
       "winner": "Spain",
-      "team_a_advance_probability": 0.6855743894047075,
+      "team_a_advance_probability": 0.6855730357337417,
       "resolution": "penalties",
       "score_90": "0-0",
       "score_et": "0-0"
@@ -27,7 +27,7 @@
       "team_a": "Ecuador",
       "team_b": "Uruguay",
       "winner": "Ecuador",
-      "team_a_advance_probability": 0.49387738994617303,
+      "team_a_advance_probability": 0.4938775879816073,
       "resolution": "90m",
       "score_90": "1-0",
       "score_et": null
@@ -38,7 +38,7 @@
       "team_a": "Spain",
       "team_b": "England",
       "winner": "Spain",
-      "team_a_advance_probability": 0.668759281828043,
+      "team_a_advance_probability": 0.6687602257014731,
       "resolution": "90m",
       "score_90": "2-0",
       "score_et": null
@@ -47,7 +47,7 @@
       "team_a": "Brazil",
       "team_b": "Colombia",
       "winner": "Colombia",
-      "team_a_advance_probability": 0.5050103462218101,
+      "team_a_advance_probability": 0.5050083116316377,
       "resolution": "90m",
       "score_90": "0-1",
       "score_et": null
@@ -56,7 +56,7 @@
       "team_a": "Ecuador",
       "team_b": "Australia",
       "winner": "Ecuador",
-      "team_a_advance_probability": 0.6284618884880709,
+      "team_a_advance_probability": 0.6284615365885938,
       "resolution": "90m",
       "score_90": "2-0",
       "score_et": null
@@ -65,7 +65,7 @@
       "team_a": "Japan",
       "team_b": "Uruguay",
       "winner": "Uruguay",
-      "team_a_advance_probability": 0.48832307515034445,
+      "team_a_advance_probability": 0.488323100296992,
       "resolution": "90m",
       "score_90": "2-4",
       "score_et": null
@@ -85,7 +85,7 @@
       "team_a": "France",
       "team_b": "England",
       "winner": "England",
-      "team_a_advance_probability": 0.5277139070403801,
+      "team_a_advance_probability": 0.5277149949640063,
       "resolution": "extra_time",
       "score_90": "2-2",
       "score_et": "2-3"
@@ -94,7 +94,7 @@
       "team_a": "Brazil",
       "team_b": "Sweden",
       "winner": "Brazil",
-      "team_a_advance_probability": 0.7759945121656459,
+      "team_a_advance_probability": 0.7759948735894557,
       "resolution": "90m",
       "score_90": "2-1",
       "score_et": null
@@ -103,7 +103,7 @@
       "team_a": "Colombia",
       "team_b": "Netherlands",
       "winner": "Colombia",
-      "team_a_advance_probability": 0.5643555521586303,
+      "team_a_advance_probability": 0.5643569715865913,
       "resolution": "90m",
       "score_90": "3-1",
       "score_et": null
@@ -121,7 +121,7 @@
       "team_a": "Australia",
       "team_b": "Canada",
       "winner": "Australia",
-      "team_a_advance_probability": 0.5336952983764522,
+      "team_a_advance_probability": 0.533695678952501,
       "resolution": "90m",
       "score_90": "2-0",
       "score_et": null
@@ -130,7 +130,7 @@
       "team_a": "Japan",
       "team_b": "Paraguay",
       "winner": "Japan",
-      "team_a_advance_probability": 0.6506205696838981,
+      "team_a_advance_probability": 0.6506203947495373,
       "resolution": "90m",
       "score_90": "3-2",
       "score_et": null
@@ -139,7 +139,7 @@
       "team_a": "Uruguay",
       "team_b": "Switzerland",
       "winner": "Uruguay",
-      "team_a_advance_probability": 0.5364934765982968,
+      "team_a_advance_probability": 0.5364932696411223,
       "resolution": "penalties",
       "score_90": "1-1",
       "score_et": "1-1"
@@ -177,7 +177,7 @@
       "team_a": "England",
       "team_b": "Jordan",
       "winner": "England",
-      "team_a_advance_probability": 0.8138652386771623,
+      "team_a_advance_probability": 0.8138643410568693,
       "resolution": "90m",
       "score_90": "3-2",
       "score_et": null
@@ -186,7 +186,7 @@
       "team_a": "Brazil",
       "team_b": "Ivory Coast",
       "winner": "Brazil",
-      "team_a_advance_probability": 0.8090593603171405,
+      "team_a_advance_probability": 0.8090589156761517,
       "resolution": "90m",
       "score_90": "3-1",
       "score_et": null
@@ -195,7 +195,7 @@
       "team_a": "Portugal",
       "team_b": "Sweden",
       "winner": "Sweden",
-      "team_a_advance_probability": 0.7520080778598813,
+      "team_a_advance_probability": 0.7520088258681419,
       "resolution": "90m",
       "score_90": "0-1",
       "score_et": null
@@ -204,7 +204,7 @@
       "team_a": "Colombia",
       "team_b": "Panama",
       "winner": "Colombia",
-      "team_a_advance_probability": 0.7970272772016536,
+      "team_a_advance_probability": 0.7970272370273179,
       "resolution": "90m",
       "score_90": "2-1",
       "score_et": null
@@ -222,7 +222,7 @@
       "team_a": "Ecuador",
       "team_b": "South Korea",
       "winner": "Ecuador",
-      "team_a_advance_probability": 0.6767256360864752,
+      "team_a_advance_probability": 0.6767251583770146,
       "resolution": "90m",
       "score_90": "2-0",
       "score_et": null
@@ -240,7 +240,7 @@
       "team_a": "Norway",
       "team_b": "Australia",
       "winner": "Australia",
-      "team_a_advance_probability": 0.6370055304580142,
+      "team_a_advance_probability": 0.6370051772445418,
       "resolution": "90m",
       "score_90": "1-2",
       "score_et": null
@@ -258,7 +258,7 @@
       "team_a": "Japan",
       "team_b": "Morocco",
       "winner": "Japan",
-      "team_a_advance_probability": 0.5904796305396363,
+      "team_a_advance_probability": 0.590478359878905,
       "resolution": "extra_time",
       "score_90": "2-2",
       "score_et": "3-2"
@@ -267,7 +267,7 @@
       "team_a": "Belgium",
       "team_b": "Paraguay",
       "winner": "Paraguay",
-      "team_a_advance_probability": 0.6423739268290372,
+      "team_a_advance_probability": 0.6423726601513311,
       "resolution": "extra_time",
       "score_90": "0-0",
       "score_et": "0-2"
@@ -276,7 +276,7 @@
       "team_a": "Uruguay",
       "team_b": "Senegal",
       "winner": "Uruguay",
-      "team_a_advance_probability": 0.531950753281638,
+      "team_a_advance_probability": 0.5319505341080562,
       "resolution": "90m",
       "score_90": "2-1",
       "score_et": null
