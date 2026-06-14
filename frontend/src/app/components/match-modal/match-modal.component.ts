@@ -17,7 +17,8 @@ export class MatchModalComponent {
   @Input() comparison?: ModelComparison;
   @Input() state?: MatchState;
   @Input() dualMatrix?: DualMatrixComparison;
-  @Input() oddsValue?: any;
+  @Input() referenceOdds?: any;
+  @Input() referenceBookmaker?: any;
   @Output() closed = new EventEmitter<void>();
 
   @HostListener('document:keydown.escape')

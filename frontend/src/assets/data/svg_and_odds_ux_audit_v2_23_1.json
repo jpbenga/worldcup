@@ -1,0 +1,52 @@
+{
+  "version": "v2.23.1",
+  "generated_at": "2026-06-14T21:53:21Z",
+  "svg": {
+    "arrow_markers_detected": false,
+    "gold_borders_detected": false,
+    "unexplained_colors_detected": false,
+    "clickable_paths_detected": true,
+    "team_path_mapping_detected": true,
+    "legend_detected": true
+  },
+  "odds": {
+    "odds_snapshot_available": true,
+    "selected_bookmaker": {
+      "id": 1,
+      "name": "10Bet",
+      "coverage_matches": 10,
+      "coverage_markets": [
+        "Both Teams Score",
+        "Double Chance",
+        "Goals Over/Under",
+        "Home/Away",
+        "Match Winner"
+      ],
+      "selection_reason": "Plus grande couverture de matchs, puis de marchés utiles, avec un nom API-Football stable."
+    },
+    "single_bookmaker_mode": true,
+    "markets_available": [
+      "Both Teams Score",
+      "Double Chance",
+      "Goals Over/Under",
+      "Home/Away",
+      "Match Winner"
+    ],
+    "markets_displayed": [
+      "1X2",
+      "Double chance",
+      "Draw no bet",
+      "Over/Under 2.5",
+      "Both teams to score"
+    ],
+    "odds_visible_in_match_ui": true,
+    "value_signals_visible": true
+  },
+  "blocking_ux_issues": [],
+  "recommendations": [
+    "Remove arrows and gold.",
+    "Make team path overlays clickable.",
+    "Always show the selected bookmaker odds."
+  ],
+  "verdict": "PASS"
+}

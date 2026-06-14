@@ -1,4 +1,4 @@
-import { DatePipe, PercentPipe, UpperCasePipe } from '@angular/common';
+import { DatePipe, KeyValuePipe, PercentPipe, UpperCasePipe } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -17,7 +17,7 @@ import { WorldCupService } from '../../services/worldcup.service';
 
 @Component({
   selector: 'app-simulation',
-  imports: [DatePipe, PercentPipe, UpperCasePipe, RouterLink],
+  imports: [DatePipe, KeyValuePipe, PercentPipe, UpperCasePipe, RouterLink],
   templateUrl: './simulation.component.html',
   styleUrl: './simulation.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -40,7 +40,7 @@ export class SimulationComponent {
 
   readonly vm = toSignal(this.worldCupService.getRoadToTheTrophyEngine());
   readonly timeline = toSignal(this.worldCupService.getRoadToTheTrophyTimeline());
-  readonly oddsValueSignals = toSignal(this.worldCupService.getMatchOddsValueSignalsV223());
+  readonly referenceOdds = toSignal(this.worldCupService.getMatchReferenceOddsV2231());
   readonly selectedStateId = signal('current');
   readonly comparisonSide = signal<'before' | 'after'>('after');
   readonly comparisonEnabled = signal(false);
@@ -85,7 +85,7 @@ export class SimulationComponent {
       data.third_place,
     ].find((match: any) => match.match_id === this.selectedMatchId());
   });
-  readonly selectedOddsValue = computed(() => this.oddsValueSignals()?.fixtures?.find((row: any) => row.match_id === this.selectedMatchId()) ?? null);
+  readonly selectedReferenceOdds = computed(() => this.referenceOdds()?.fixtures?.find((row: any) => row.match_id === this.selectedMatchId()) ?? null);
 
   private initializeAtlas(): void {
     const viewport = this.atlasViewport?.nativeElement;
@@ -202,8 +202,32 @@ export class SimulationComponent {
     return this.selectedTeamPath()?.knockout_path?.some((step: any) => step.match_id === matchId) ?? false;
   }
 
+  teamPathSegments(path: any): string[] {
+    const data = this.activeData();
+    if (!data || !path?.knockout_path?.length) return [];
+    const segments: string[] = [];
+    const groupIndex = data.groups.findIndex((group: any) => group.group === path.group);
+    const firstId = path.knockout_path[0].match_id;
+    const firstIndex = this.roundMatchIndex(data.rounds[0], firstId);
+    if (groupIndex >= 0 && firstIndex >= 0) segments.push(this.groupPath(groupIndex, firstIndex));
+    for (let index = 0; index < path.knockout_path.length - 1; index++) {
+      const currentId = path.knockout_path[index].match_id;
+      const nextId = path.knockout_path[index + 1].match_id;
+      const roundIndex = data.rounds.findIndex((round: any) => round.matches.some((match: any) => match.match_id === currentId));
+      if (roundIndex < 0 || roundIndex >= data.rounds.length - 1) continue;
+      const currentIndex = this.roundMatchIndex(data.rounds[roundIndex], currentId);
+      const nextIndex = this.roundMatchIndex(data.rounds[roundIndex + 1], nextId);
+      if (currentIndex >= 0 && nextIndex >= 0) segments.push(this.knockoutPath(roundIndex, currentIndex, data.rounds[roundIndex].matches.length, nextIndex, data.rounds[roundIndex + 1].matches.length));
+    }
+    return segments;
+  }
+
   stableId(value: string): string {
     return value.replace(/[^a-zA-Z0-9_-]/g, '-');
+  }
+
+  teamKey(value: string | number | symbol): string {
+    return String(value);
   }
 
   isTeamImpacted(team: string): boolean {

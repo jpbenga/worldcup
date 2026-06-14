@@ -54,6 +54,10 @@ export class WorldCupService {
     return this.http.get<any>('assets/data/match_odds_value_signals_v2_23.json');
   }
 
+  getMatchReferenceOddsV2231(): Observable<any> {
+    return this.http.get<any>('assets/data/match_reference_odds_view_model_v2_23_1.json');
+  }
+
   getPredictionHistoryV212(): Observable<any> {
     return this.http.get<any>('assets/data/prediction_history_v2_12.json');
   }

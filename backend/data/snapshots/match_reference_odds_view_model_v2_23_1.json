@@ -1,0 +1,1483 @@
+{
+  "version": "v2.23.1",
+  "generated_at": "2026-06-14T21:53:20Z",
+  "bookmaker": {
+    "id": 1,
+    "name": "10Bet",
+    "coverage_matches": 10,
+    "coverage_markets": [
+      "Both Teams Score",
+      "Double Chance",
+      "Goals Over/Under",
+      "Home/Away",
+      "Match Winner"
+    ],
+    "selection_reason": "Plus grande couverture de matchs, puis de marchés utiles, avec un nom API-Football stable."
+  },
+  "fixtures": [
+    {
+      "fixture_id": 1489369,
+      "match_id": "api_football_1489369",
+      "match_label": "Mexico vs South Africa",
+      "status": "finished",
+      "odds_freshness": "stale",
+      "odds_updated_at": "2026-06-11T18:00:25+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Mexico",
+              "odds": 1.4,
+              "simuai_probability": 0.43985808381027697,
+              "market_probability": 0.6743612334801763,
+              "edge": -0.23450314966989932,
+              "expected_value": -0.3841986826656123,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 4.3,
+              "simuai_probability": 0.30444656213044397,
+              "market_probability": 0.21955947136563878,
+              "edge": 0.08488709076480519,
+              "expected_value": 0.3091202171609091,
+              "is_interesting": false
+            },
+            {
+              "label": "South Africa",
+              "odds": 8.9,
+              "simuai_probability": 0.25569536374503377,
+              "market_probability": 0.10607929515418503,
+              "edge": 0.14961606859084875,
+              "expected_value": 1.2756887373308006,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Mexico",
+              "odds": 1.08,
+              "simuai_probability": 0.519161413485516,
+              "market_probability": 0.8526603001364257,
+              "edge": -0.33349888665090965,
+              "expected_value": -0.43930567343564264,
+              "is_interesting": false
+            },
+            {
+              "label": "South Africa",
+              "odds": 6.25,
+              "simuai_probability": 0.4808385865144839,
+              "market_probability": 0.14733969986357437,
+              "edge": 0.33349888665090954,
+              "expected_value": 2.0052411657155242,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 2.15,
+              "simuai_probability": 0.2896745990191822,
+              "market_probability": 0.43717277486910994,
+              "edge": -0.14749817584992775,
+              "expected_value": -0.3771996121087583,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 1.67,
+              "simuai_probability": 0.7103254009808178,
+              "market_probability": 0.5628272251308901,
+              "edge": 0.14749817584992764,
+              "expected_value": 0.18624341963796565,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 2.4,
+              "simuai_probability": 0.370042450057411,
+              "market_probability": 0.38461538461538464,
+              "edge": -0.014572934557973649,
+              "expected_value": -0.11189811986221365,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.5,
+              "simuai_probability": 0.629957549942589,
+              "market_probability": 0.6153846153846154,
+              "edge": 0.014572934557973594,
+              "expected_value": -0.055063675086116426,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Mexico ou nul",
+              "odds": 1.05,
+              "simuai_probability": 0.6733295176286355,
+              "market_probability": 0.4457478005865102,
+              "edge": 0.22758171704212526,
+              "expected_value": -0.29300400648993274,
+              "is_interesting": false
+            },
+            {
+              "label": "Mexico ou South Africa",
+              "odds": 1.2,
+              "simuai_probability": 0.6793765964985099,
+              "market_probability": 0.39002932551319647,
+              "edge": 0.28934727098531343,
+              "expected_value": -0.18474808420178812,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou South Africa",
+              "odds": 2.85,
+              "simuai_probability": 0.6472938858728543,
+              "market_probability": 0.16422287390029325,
+              "edge": 0.4830710119725611,
+              "expected_value": 0.8447875747376348,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": null
+    },
+    {
+      "fixture_id": 1489370,
+      "match_id": "api_football_1489370",
+      "match_label": "USA vs Paraguay",
+      "status": "finished",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-13T00:18:28+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "USA",
+              "odds": 2.08,
+              "simuai_probability": 0.6584375895087922,
+              "market_probability": 0.4535833081342606,
+              "edge": 0.20485428137453154,
+              "expected_value": 0.3695501861782877,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 3.2,
+              "simuai_probability": 0.21532874926350393,
+              "market_probability": 0.2948291502872694,
+              "edge": -0.07950040102376549,
+              "expected_value": -0.31094800235678743,
+              "is_interesting": false
+            },
+            {
+              "label": "Paraguay",
+              "odds": 3.75,
+              "simuai_probability": 0.12623368544209074,
+              "market_probability": 0.2515875415784699,
+              "edge": -0.12535385613637917,
+              "expected_value": -0.5266236795921597,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "USA",
+              "odds": 1.48,
+              "simuai_probability": 0.7726899722720285,
+              "market_probability": 0.6281407035175879,
+              "edge": 0.14454926875444063,
+              "expected_value": 0.14358115896260215,
+              "is_interesting": false
+            },
+            {
+              "label": "Paraguay",
+              "odds": 2.5,
+              "simuai_probability": 0.22731002772797151,
+              "market_probability": 0.37185929648241206,
+              "edge": -0.14454926875444055,
+              "expected_value": -0.43172493068007123,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 2.38,
+              "simuai_probability": 0.37943886281550077,
+              "market_probability": 0.39746835443037976,
+              "edge": -0.01802949161487899,
+              "expected_value": -0.0969355064991082,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 1.57,
+              "simuai_probability": 0.6205611371844992,
+              "market_probability": 0.6025316455696202,
+              "edge": 0.01802949161487899,
+              "expected_value": -0.02571901462033621,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 2.0,
+              "simuai_probability": 0.38889597052169445,
+              "market_probability": 0.4638069705093834,
+              "edge": -0.07491099998768896,
+              "expected_value": -0.2222080589566111,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.73,
+              "simuai_probability": 0.6111040294783056,
+              "market_probability": 0.5361930294906166,
+              "edge": 0.07491099998768891,
+              "expected_value": 0.057209970997468496,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "USA ou nul",
+              "odds": 1.25,
+              "simuai_probability": 0.8315093941538653,
+              "market_probability": 0.3708053691275168,
+              "edge": 0.46070402502634844,
+              "expected_value": 0.039386742692331556,
+              "is_interesting": false
+            },
+            {
+              "label": "USA ou Paraguay",
+              "odds": 1.3,
+              "simuai_probability": 0.7412370124197606,
+              "market_probability": 0.3565436241610738,
+              "edge": 0.38469338825868676,
+              "expected_value": -0.03639188385431125,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou Paraguay",
+              "odds": 1.7,
+              "simuai_probability": 0.4272535934263737,
+              "market_probability": 0.2726510067114094,
+              "edge": 0.1546025867149643,
+              "expected_value": -0.2736688911751647,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": null
+    },
+    {
+      "fixture_id": 1489373,
+      "match_id": "api_football_1489373",
+      "match_label": "Qatar vs Switzerland",
+      "status": "finished",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-13T18:00:20+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Qatar",
+              "odds": 12.0,
+              "simuai_probability": 0.3198039200755193,
+              "market_probability": 0.07839407803423636,
+              "edge": 0.2414098420412829,
+              "expected_value": 2.8376470409062313,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 6.25,
+              "simuai_probability": 0.24803937334799897,
+              "market_probability": 0.1505166298257338,
+              "edge": 0.09752274352226517,
+              "expected_value": 0.5502460834249936,
+              "is_interesting": false
+            },
+            {
+              "label": "Switzerland",
+              "odds": 1.22,
+              "simuai_probability": 0.4321567356337459,
+              "market_probability": 0.7710892921400297,
+              "edge": -0.33893255650628384,
+              "expected_value": -0.47276878252682997,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Qatar",
+              "odds": 9.0,
+              "simuai_probability": 0.4075056316124682,
+              "market_probability": 0.10358565737051792,
+              "edge": 0.3039199742419503,
+              "expected_value": 2.667550684512214,
+              "is_interesting": false
+            },
+            {
+              "label": "Switzerland",
+              "odds": 1.04,
+              "simuai_probability": 0.5924943683875319,
+              "market_probability": 0.896414342629482,
+              "edge": -0.30391997424195016,
+              "expected_value": -0.3838058568769668,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 1.62,
+              "simuai_probability": 0.4747117952503403,
+              "market_probability": 0.5813953488372093,
+              "edge": -0.10668355358686904,
+              "expected_value": -0.23096689169444862,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 2.25,
+              "simuai_probability": 0.5252882047496596,
+              "market_probability": 0.4186046511627907,
+              "edge": 0.10668355358686893,
+              "expected_value": 0.1818984606867342,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 2.35,
+              "simuai_probability": 0.5179578406270037,
+              "market_probability": 0.3943298969072165,
+              "edge": 0.12362794371978719,
+              "expected_value": 0.2172009254734586,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.53,
+              "simuai_probability": 0.4820421593729963,
+              "market_probability": 0.6056701030927835,
+              "edge": -0.12362794371978714,
+              "expected_value": -0.26247549615931565,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Qatar ou nul",
+              "odds": 4.2,
+              "simuai_probability": 0.5628561080213521,
+              "market_probability": 0.11334982915046542,
+              "edge": 0.4495062788708867,
+              "expected_value": 1.363995653689679,
+              "is_interesting": false
+            },
+            {
+              "label": "Qatar ou Switzerland",
+              "odds": 1.11,
+              "simuai_probability": 0.7378026109654519,
+              "market_probability": 0.42889124543419344,
+              "edge": 0.3089113655312584,
+              "expected_value": -0.18103910182834837,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou Switzerland",
+              "odds": 1.04,
+              "simuai_probability": 0.6993412810131947,
+              "market_probability": 0.4577589254153411,
+              "edge": 0.24158235559785363,
+              "expected_value": -0.27268506774627743,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": null
+    },
+    {
+      "fixture_id": 1489371,
+      "match_id": "api_football_1489371",
+      "match_label": "Brazil vs Morocco",
+      "status": "finished",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-13T20:13:24+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Brazil",
+              "odds": 1.68,
+              "simuai_probability": 0.3327785942441376,
+              "market_probability": 0.5606488011283498,
+              "edge": -0.22787020688421222,
+              "expected_value": -0.44093196166984894,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 3.6,
+              "simuai_probability": 0.3060848343855127,
+              "market_probability": 0.26163610719322994,
+              "edge": 0.044448727192282766,
+              "expected_value": 0.10190540378784574,
+              "is_interesting": false
+            },
+            {
+              "label": "Morocco",
+              "odds": 5.3,
+              "simuai_probability": 0.3611365713703498,
+              "market_probability": 0.17771509167842034,
+              "edge": 0.18342147969192948,
+              "expected_value": 0.9140238282628541,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Brazil",
+              "odds": 1.25,
+              "simuai_probability": 0.4643172685750233,
+              "market_probability": 0.7395833333333333,
+              "edge": -0.27526606475830995,
+              "expected_value": -0.41960341428122083,
+              "is_interesting": false
+            },
+            {
+              "label": "Morocco",
+              "odds": 3.55,
+              "simuai_probability": 0.5356827314249767,
+              "market_probability": 0.26041666666666663,
+              "edge": 0.27526606475831006,
+              "expected_value": 0.9016736965586671,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 2.1,
+              "simuai_probability": 0.2825563407152277,
+              "market_probability": 0.4473684210526316,
+              "edge": -0.16481208033740385,
+              "expected_value": -0.4066316844980218,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 1.7,
+              "simuai_probability": 0.7174436592847723,
+              "market_probability": 0.5526315789473685,
+              "edge": 0.1648120803374038,
+              "expected_value": 0.21965422078411279,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 1.95,
+              "simuai_probability": 0.36316835307704454,
+              "market_probability": 0.47297297297297297,
+              "edge": -0.10980461989592843,
+              "expected_value": -0.2918217114997632,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.75,
+              "simuai_probability": 0.6368316469229555,
+              "market_probability": 0.527027027027027,
+              "edge": 0.10980461989592849,
+              "expected_value": 0.11445538211517214,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Brazil ou nul",
+              "odds": 1.15,
+              "simuai_probability": 0.6373787669829345,
+              "market_probability": 0.4030672434132914,
+              "edge": 0.23431152356964308,
+              "expected_value": -0.26701441796962544,
+              "is_interesting": false
+            },
+            {
+              "label": "Brazil ou Morocco",
+              "odds": 1.25,
+              "simuai_probability": 0.6769328405499505,
+              "market_probability": 0.3708218639402281,
+              "edge": 0.3061109766097224,
+              "expected_value": -0.1538339493125619,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou Morocco",
+              "odds": 2.05,
+              "simuai_probability": 0.6856883924671154,
+              "market_probability": 0.22611089264648054,
+              "edge": 0.4595774998206349,
+              "expected_value": 0.4056612045575865,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": null
+    },
+    {
+      "fixture_id": 1489372,
+      "match_id": "api_football_1489372",
+      "match_label": "Haiti vs Scotland",
+      "status": "finished",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-14T00:13:30+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Haiti",
+              "odds": 5.7,
+              "simuai_probability": 0.43945033251930343,
+              "market_probability": 0.16541353383458646,
+              "edge": 0.274036798684717,
+              "expected_value": 1.5048668953600295,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 4.4,
+              "simuai_probability": 0.2648983056359485,
+              "market_probability": 0.2142857142857143,
+              "edge": 0.050612591350234215,
+              "expected_value": 0.1655525447981736,
+              "is_interesting": false
+            },
+            {
+              "label": "Scotland",
+              "odds": 1.52,
+              "simuai_probability": 0.29565134247323865,
+              "market_probability": 0.6203007518796994,
+              "edge": -0.3246494094064607,
+              "expected_value": -0.5506099594406773,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Haiti",
+              "odds": 4.2,
+              "simuai_probability": 0.5774813651381006,
+              "market_probability": 0.21933085501858735,
+              "edge": 0.3581505101195132,
+              "expected_value": 1.4254217335800226,
+              "is_interesting": false
+            },
+            {
+              "label": "Scotland",
+              "odds": 1.18,
+              "simuai_probability": 0.42251863486189944,
+              "market_probability": 0.7806691449814127,
+              "edge": -0.35815051011951327,
+              "expected_value": -0.5014280108629587,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 1.62,
+              "simuai_probability": 0.48594767219150004,
+              "market_probability": 0.5813953488372093,
+              "edge": -0.0954476766457093,
+              "expected_value": -0.21276477104976987,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 2.25,
+              "simuai_probability": 0.5140523278085,
+              "market_probability": 0.4186046511627907,
+              "edge": 0.09544767664570925,
+              "expected_value": 0.1566177375691249,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 1.7,
+              "simuai_probability": 0.5286061579291094,
+              "market_probability": 0.5466666666666666,
+              "edge": -0.018060508737557268,
+              "expected_value": -0.10136953152051409,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 2.05,
+              "simuai_probability": 0.47139384207089063,
+              "market_probability": 0.4533333333333333,
+              "edge": 0.018060508737557324,
+              "expected_value": -0.033642623754674306,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Haiti ou nul",
+              "odds": 2.4,
+              "simuai_probability": 0.6875691186762714,
+              "market_probability": 0.19323014863857585,
+              "edge": 0.4943389700376955,
+              "expected_value": 0.6501658848230512,
+              "is_interesting": false
+            },
+            {
+              "label": "Haiti ou Scotland",
+              "odds": 1.17,
+              "simuai_probability": 0.7394487616524825,
+              "market_probability": 0.39636953566887356,
+              "edge": 0.34307922598360896,
+              "expected_value": -0.13484494886659548,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou Scotland",
+              "odds": 1.13,
+              "simuai_probability": 0.5729821196712468,
+              "market_probability": 0.4104003156925505,
+              "edge": 0.16258180397869632,
+              "expected_value": -0.3525302047714912,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": null
+    },
+    {
+      "fixture_id": 1489374,
+      "match_id": "api_football_1489374",
+      "match_label": "Germany vs Curaçao",
+      "status": "finished",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-14T16:05:34+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Germany",
+              "odds": 1.02,
+              "simuai_probability": 0.6413717141268567,
+              "market_probability": 0.9235084990556606,
+              "edge": -0.2821367849288039,
+              "expected_value": -0.34580085159060614,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 19.0,
+              "simuai_probability": 0.20807289142478494,
+              "market_probability": 0.04957782468614599,
+              "edge": 0.15849506673863895,
+              "expected_value": 2.953384937070914,
+              "is_interesting": false
+            },
+            {
+              "label": "Curaçao",
+              "odds": 35.0,
+              "simuai_probability": 0.1505554041341131,
+              "market_probability": 0.026913676258193537,
+              "edge": 0.12364172787591958,
+              "expected_value": 4.269439144693959,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 1.18,
+              "simuai_probability": 0.47288657123232714,
+              "market_probability": 0.8010118043844856,
+              "edge": -0.32812523315215847,
+              "expected_value": -0.441993845945854,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 4.75,
+              "simuai_probability": 0.5271134287676729,
+              "market_probability": 0.19898819561551429,
+              "edge": 0.3281252331521586,
+              "expected_value": 1.5037887866464459,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 3.35,
+              "simuai_probability": 0.4676759753419064,
+              "market_probability": 0.2764578833693304,
+              "edge": 0.191218091972576,
+              "expected_value": 0.5667145173953865,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.28,
+              "simuai_probability": 0.5323240246580936,
+              "market_probability": 0.7235421166306696,
+              "edge": -0.191218091972576,
+              "expected_value": -0.3186252484376402,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": null
+    },
+    {
+      "fixture_id": 1489378,
+      "match_id": "api_football_1489378",
+      "match_label": "Iran vs New Zealand",
+      "status": "not_started",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-14T16:05:34+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Iran",
+              "odds": 1.84,
+              "simuai_probability": 0.6294963479293798,
+              "market_probability": 0.512803324842472,
+              "edge": 0.11669302308690777,
+              "expected_value": 0.15827328019005882,
+              "is_interesting": true
+            },
+            {
+              "label": "Nul",
+              "odds": 3.4,
+              "simuai_probability": 0.2263480460435069,
+              "market_probability": 0.27751709344416137,
+              "edge": -0.05116904740065448,
+              "expected_value": -0.23041664345207657,
+              "is_interesting": false
+            },
+            {
+              "label": "New Zealand",
+              "odds": 4.5,
+              "simuai_probability": 0.144155625398623,
+              "market_probability": 0.20967958171336637,
+              "edge": -0.06552395631474336,
+              "expected_value": -0.3512996857061965,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Iran",
+              "odds": 1.33,
+              "simuai_probability": 0.6858578275161186,
+              "market_probability": 0.6928406466512702,
+              "edge": -0.006982819135151641,
+              "expected_value": -0.08780908940356225,
+              "is_interesting": false
+            },
+            {
+              "label": "New Zealand",
+              "odds": 3.0,
+              "simuai_probability": 0.31414217248388154,
+              "market_probability": 0.3071593533487298,
+              "edge": 0.006982819135151752,
+              "expected_value": -0.05757348254835537,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 2.35,
+              "simuai_probability": 0.4217466580507555,
+              "market_probability": 0.4005102040816326,
+              "edge": 0.02123645396912288,
+              "expected_value": -0.008895353580724574,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 1.57,
+              "simuai_probability": 0.5782533419492445,
+              "market_probability": 0.5994897959183673,
+              "edge": -0.02123645396912277,
+              "expected_value": -0.09214225313968616,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 2.1,
+              "simuai_probability": 0.4565895057675172,
+              "market_probability": 0.44297082228116713,
+              "edge": 0.013618683486350092,
+              "expected_value": -0.04116203788821382,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.67,
+              "simuai_probability": 0.5434104942324828,
+              "market_probability": 0.557029177718833,
+              "edge": -0.013618683486350203,
+              "expected_value": -0.09250447463175382,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Iran ou nul",
+              "odds": 1.2,
+              "simuai_probability": 0.7690610008703331,
+              "market_probability": 0.3858651502843217,
+              "edge": 0.3831958505860114,
+              "expected_value": -0.07712679895560026,
+              "is_interesting": false
+            },
+            {
+              "label": "Iran ou New Zealand",
+              "odds": 1.25,
+              "simuai_probability": 0.7351416631000625,
+              "market_probability": 0.37043054427294886,
+              "edge": 0.3647111188271136,
+              "expected_value": -0.08107292112492193,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou New Zealand",
+              "odds": 1.9,
+              "simuai_probability": 0.4957973360296053,
+              "market_probability": 0.2437043054427295,
+              "edge": 0.2520930305868758,
+              "expected_value": -0.05798506154374994,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": {
+        "market": "1X2",
+        "label": "Iran",
+        "odds": 1.84,
+        "simuai_probability": 0.6294963479293798,
+        "market_probability": 0.512803324842472,
+        "edge": 0.11669302308690777,
+        "expected_value": 0.15827328019005882,
+        "is_interesting": true
+      }
+    },
+    {
+      "fixture_id": 1489377,
+      "match_id": "api_football_1489377",
+      "match_label": "Belgium vs Egypt",
+      "status": "not_started",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-14T16:15:16+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Belgium",
+              "odds": 1.63,
+              "simuai_probability": 0.45587529557327106,
+              "market_probability": 0.5796056463018942,
+              "edge": -0.1237303507286231,
+              "expected_value": -0.2569232682155682,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 3.8,
+              "simuai_probability": 0.29393740917993394,
+              "market_probability": 0.24862031670318088,
+              "edge": 0.04531709247675306,
+              "expected_value": 0.11696215488374895,
+              "is_interesting": true
+            },
+            {
+              "label": "Egypt",
+              "odds": 5.5,
+              "simuai_probability": 0.25018729524679495,
+              "market_probability": 0.171774036994925,
+              "edge": 0.07841325825186996,
+              "expected_value": 0.3760301238573722,
+              "is_interesting": true
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Belgium",
+              "odds": 1.22,
+              "simuai_probability": 0.6781861638282437,
+              "market_probability": 0.756972111553785,
+              "edge": -0.07878594772554126,
+              "expected_value": -0.17261288012954268,
+              "is_interesting": false
+            },
+            {
+              "label": "Egypt",
+              "odds": 3.8,
+              "simuai_probability": 0.3218138361717564,
+              "market_probability": 0.24302788844621515,
+              "edge": 0.07878594772554126,
+              "expected_value": 0.2228925774526742,
+              "is_interesting": true
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 1.95,
+              "simuai_probability": 0.3598538812162662,
+              "market_probability": 0.48412698412698413,
+              "edge": -0.12427310291071791,
+              "expected_value": -0.29828493162828085,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 1.83,
+              "simuai_probability": 0.6401461187837338,
+              "market_probability": 0.5158730158730157,
+              "edge": 0.12427310291071814,
+              "expected_value": 0.1714673973742329,
+              "is_interesting": true
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 1.93,
+              "simuai_probability": 0.40837673352828063,
+              "market_probability": 0.4783783783783784,
+              "edge": -0.07000164485009774,
+              "expected_value": -0.21183290429041846,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.77,
+              "simuai_probability": 0.5916232664717194,
+              "market_probability": 0.5216216216216215,
+              "edge": 0.07000164485009785,
+              "expected_value": 0.04717318165494322,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Belgium ou nul",
+              "odds": 1.14,
+              "simuai_probability": 0.769563974174218,
+              "market_probability": 0.40772923376070974,
+              "edge": 0.3618347404135082,
+              "expected_value": -0.12269706944139158,
+              "is_interesting": false
+            },
+            {
+              "label": "Belgium ou Egypt",
+              "odds": 1.22,
+              "simuai_probability": 0.7160538172224358,
+              "market_probability": 0.3809928905632861,
+              "edge": 0.33506092665914966,
+              "expected_value": -0.12641434298862841,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou Egypt",
+              "odds": 2.2,
+              "simuai_probability": 0.5143822086033457,
+              "market_probability": 0.21127787567600412,
+              "edge": 0.3031043329273416,
+              "expected_value": 0.13164085892736077,
+              "is_interesting": true
+            }
+          ]
+        }
+      ],
+      "best_value_signal": {
+        "market": "1X2",
+        "label": "Egypt",
+        "odds": 5.5,
+        "simuai_probability": 0.25018729524679495,
+        "market_probability": 0.171774036994925,
+        "edge": 0.07841325825186996,
+        "expected_value": 0.3760301238573722,
+        "is_interesting": true
+      }
+    },
+    {
+      "fixture_id": 1489375,
+      "match_id": "api_football_1489375",
+      "match_label": "Ivory Coast vs Ecuador",
+      "status": "not_started",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-14T18:00:26+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Ivory Coast",
+              "odds": 3.05,
+              "simuai_probability": 0.540262150931353,
+              "market_probability": 0.3093959176927527,
+              "edge": 0.23086623323860028,
+              "expected_value": 0.6477995603406266,
+              "is_interesting": true
+            },
+            {
+              "label": "Nul",
+              "odds": 2.88,
+              "simuai_probability": 0.30741189446207595,
+              "market_probability": 0.32765887116767206,
+              "edge": -0.02024697670559611,
+              "expected_value": -0.11465374394922134,
+              "is_interesting": false
+            },
+            {
+              "label": "Ecuador",
+              "odds": 2.6,
+              "simuai_probability": 0.15232598850671267,
+              "market_probability": 0.36294521113957523,
+              "edge": -0.21061922263286256,
+              "expected_value": -0.603952429882547,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Ivory Coast",
+              "odds": 2.05,
+              "simuai_probability": 0.6926111578060069,
+              "market_probability": 0.4533333333333333,
+              "edge": 0.2392778244726736,
+              "expected_value": 0.41985287350231393,
+              "is_interesting": true
+            },
+            {
+              "label": "Ecuador",
+              "odds": 1.7,
+              "simuai_probability": 0.3073888421939931,
+              "market_probability": 0.5466666666666666,
+              "edge": -0.23927782447267354,
+              "expected_value": -0.4774389682702117,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 2.9,
+              "simuai_probability": 0.30488612958962136,
+              "market_probability": 0.32558139534883723,
+              "edge": -0.020695265759215875,
+              "expected_value": -0.11583022419009814,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 1.4,
+              "simuai_probability": 0.6951138704103786,
+              "market_probability": 0.6744186046511629,
+              "edge": 0.020695265759215764,
+              "expected_value": -0.026840581425469967,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 2.25,
+              "simuai_probability": 0.35835855611776646,
+              "market_probability": 0.4109947643979057,
+              "edge": -0.05263620828013926,
+              "expected_value": -0.19369324873502547,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.57,
+              "simuai_probability": 0.6416414438822335,
+              "market_probability": 0.5890052356020942,
+              "edge": 0.052636208280139374,
+              "expected_value": 0.007377066895106754,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Ivory Coast ou nul",
+              "odds": 1.5,
+              "simuai_probability": 0.7849752276555749,
+              "market_probability": 0.3111337061514997,
+              "edge": 0.4738415215040752,
+              "expected_value": 0.17746284148336233,
+              "is_interesting": true
+            },
+            {
+              "label": "Ivory Coast ou Ecuador",
+              "odds": 1.36,
+              "simuai_probability": 0.6995204211372218,
+              "market_probability": 0.3431621759023894,
+              "edge": 0.3563582452348324,
+              "expected_value": -0.048652227253378255,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou Ecuador",
+              "odds": 1.35,
+              "simuai_probability": 0.5155043512072033,
+              "market_probability": 0.3457041179461108,
+              "edge": 0.1698002332610925,
+              "expected_value": -0.30406912587027557,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": {
+        "market": "1X2",
+        "label": "Ivory Coast",
+        "odds": 3.05,
+        "simuai_probability": 0.540262150931353,
+        "market_probability": 0.3093959176927527,
+        "edge": 0.23086623323860028,
+        "expected_value": 0.6477995603406266,
+        "is_interesting": true
+      }
+    },
+    {
+      "fixture_id": 1489376,
+      "match_id": "api_football_1489376",
+      "match_label": "Netherlands vs Japan",
+      "status": "live",
+      "odds_freshness": "fresh",
+      "odds_updated_at": "2026-06-14T18:00:26+00:00",
+      "markets": [
+        {
+          "market_key": "1x2",
+          "market_label": "1X2",
+          "outcomes": [
+            {
+              "label": "Netherlands",
+              "odds": 2.05,
+              "simuai_probability": 0.4882252783208014,
+              "market_probability": 0.4605263157894737,
+              "edge": 0.027698962531327753,
+              "expected_value": 0.000861820557642945,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul",
+              "odds": 3.5,
+              "simuai_probability": 0.24937236344583136,
+              "market_probability": 0.2697368421052631,
+              "edge": -0.02036447865943175,
+              "expected_value": -0.12719672793959025,
+              "is_interesting": false
+            },
+            {
+              "label": "Japan",
+              "odds": 3.5,
+              "simuai_probability": 0.2624023485476124,
+              "market_probability": 0.2697368421052631,
+              "edge": -0.007334493557650701,
+              "expected_value": -0.08159178008335655,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "draw_no_bet",
+          "market_label": "Draw no bet",
+          "outcomes": [
+            {
+              "label": "Netherlands",
+              "odds": 1.5,
+              "simuai_probability": 0.647689317478417,
+              "market_probability": 0.6153846153846154,
+              "edge": 0.03230470209380154,
+              "expected_value": -0.028466023782374617,
+              "is_interesting": false
+            },
+            {
+              "label": "Japan",
+              "odds": 2.4,
+              "simuai_probability": 0.3523106825215831,
+              "market_probability": 0.38461538461538464,
+              "edge": -0.03230470209380154,
+              "expected_value": -0.1544543619482006,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "over/under_2.5",
+          "market_label": "Over/Under 2.5",
+          "outcomes": [
+            {
+              "label": "Plus de 2,5 buts",
+              "odds": 2.0,
+              "simuai_probability": 0.5031125448724127,
+              "market_probability": 0.47368421052631576,
+              "edge": 0.029428334346096985,
+              "expected_value": 0.006225089744825496,
+              "is_interesting": false
+            },
+            {
+              "label": "Moins de 2,5 buts",
+              "odds": 1.8,
+              "simuai_probability": 0.49688745512758725,
+              "market_probability": 0.5263157894736842,
+              "edge": -0.02942833434609693,
+              "expected_value": -0.1056025807703429,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "both_teams_to_score",
+          "market_label": "Both teams to score",
+          "outcomes": [
+            {
+              "label": "Les deux marquent",
+              "odds": 1.77,
+              "simuai_probability": 0.5308360394536585,
+              "market_probability": 0.5241935483870968,
+              "edge": 0.006642491066561784,
+              "expected_value": -0.06042021016702437,
+              "is_interesting": false
+            },
+            {
+              "label": "Au moins une équipe ne marque pas",
+              "odds": 1.95,
+              "simuai_probability": 0.46916396054634146,
+              "market_probability": 0.47580645161290325,
+              "edge": -0.006642491066561784,
+              "expected_value": -0.08513027693463415,
+              "is_interesting": false
+            }
+          ]
+        },
+        {
+          "market_key": "double_chance",
+          "market_label": "Double chance",
+          "outcomes": [
+            {
+              "label": "Netherlands ou nul",
+              "odds": 1.3,
+              "simuai_probability": 0.7358341931461299,
+              "market_probability": 0.3565436241610738,
+              "edge": 0.37929056898505603,
+              "expected_value": -0.04341554891003119,
+              "is_interesting": false
+            },
+            {
+              "label": "Netherlands ou Japan",
+              "odds": 1.25,
+              "simuai_probability": 0.7498092449628936,
+              "market_probability": 0.3708053691275168,
+              "edge": 0.37900387583537676,
+              "expected_value": -0.06273844379638305,
+              "is_interesting": false
+            },
+            {
+              "label": "Nul ou Japan",
+              "odds": 1.7,
+              "simuai_probability": 0.5143565618909762,
+              "market_probability": 0.2726510067114094,
+              "edge": 0.24170555517956682,
+              "expected_value": -0.1255938447853404,
+              "is_interesting": false
+            }
+          ]
+        }
+      ],
+      "best_value_signal": null
+    }
+  ],
+  "responsible_display": {
+    "disclaimer": "Signal statistique, sans garantie de résultat."
+  },
+  "warnings": []
+}

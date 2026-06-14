@@ -27,6 +27,10 @@ STEPS = [
     ("odds_snapshot", "fetch_api_football_odds_v2_23.py", []),
     ("odds_value_signals", "build_match_odds_value_signals_v2_23.py", []),
     ("svg_atlas_and_odds_validation", "validate_svg_atlas_and_odds_experience_v2_23.py", []),
+    ("reference_bookmaker", "select_reference_bookmaker_v2_23_1.py", []),
+    ("reference_odds_view_model", "build_match_reference_odds_view_model_v2_23_1.py", []),
+    ("svg_and_odds_ux_audit", "audit_svg_and_odds_ux_v2_23_1.py", []),
+    ("svg_and_odds_ux_validation", "validate_svg_and_odds_ux_v2_23_1.py", []),
 ]
 
 

@@ -1,0 +1,35 @@
+{
+  "version": "v2.23.1",
+  "generated_at": "2026-06-14T21:53:20Z",
+  "selected_bookmaker": {
+    "id": 1,
+    "name": "10Bet",
+    "coverage_matches": 10,
+    "coverage_markets": [
+      "Both Teams Score",
+      "Double Chance",
+      "Goals Over/Under",
+      "Home/Away",
+      "Match Winner"
+    ],
+    "selection_reason": "Plus grande couverture de matchs, puis de marchés utiles, avec un nom API-Football stable."
+  },
+  "fallbacks": [
+    {
+      "id": 21,
+      "name": "888Sport",
+      "coverage_matches": 10
+    },
+    {
+      "id": 8,
+      "name": "Bet365",
+      "coverage_matches": 10
+    },
+    {
+      "id": 32,
+      "name": "Betano",
+      "coverage_matches": 10
+    }
+  ],
+  "warnings": []
+}

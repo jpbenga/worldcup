@@ -2037,3 +2037,35 @@ Commit: TBD
 - [ ] Validated
 - [x] Validated with reservations
 - [ ] Not validated
+
+## V2.23.1 — Road to the Trophy SVG & Odds UX Clarification
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.23 SVG and odds UX regression audited
+- [x] SVG arrows removed
+- [x] Unexplained gold removed
+- [x] Semantic color legend added
+- [x] Team paths made clickable
+- [x] Team journey selection available
+- [x] Single reference bookmaker selected
+- [x] Useful market odds visible
+- [x] “Cote intéressante” displayed as a badge, not a filter
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Road to the Trophy engine unchanged
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [x] Validated with reservations
+- [ ] Not validated

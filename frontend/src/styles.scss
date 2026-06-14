@@ -41,3 +41,13 @@ app-simulation .timeline-summary { display: flex; align-items: center; gap: 10px
 app-simulation .timeline-summary span { color: rgb(148 163 184); }
 app-simulation .timeline-summary em { margin-left: auto; border-radius: 999px; background: rgb(139 92 246 / .25); padding: 4px 8px; color: rgb(221 214 254); font-style: normal; font-weight: 800; text-transform: uppercase; }
 @media (max-width: 900px) { app-simulation .timeline-heading { align-items: flex-start; flex-direction: column; } app-simulation .timeline-track { display: flex; overflow-x: auto; } app-simulation .timeline-track button { min-width: 120px; } app-simulation .timeline-summary { align-items: flex-start; flex-direction: column; } app-simulation .timeline-summary em { margin-left: 0; } }
+app-simulation .atlas-connections .atlas-path--interactive { pointer-events: stroke; cursor: pointer; stroke: transparent; stroke-width: 22; }
+app-simulation .atlas-connections .atlas-path--interactive:hover,app-simulation .atlas-connections .atlas-path--interactive:focus { outline: none; stroke: rgb(34 211 238 / .65); stroke-width: 8; filter: drop-shadow(0 0 6px rgb(34 211 238 / .45)); }
+app-simulation .atlas-connections.has-team-selection .atlas-layer--group-connections,app-simulation .atlas-connections.has-team-selection .atlas-layer--bracket-connections { opacity: .22; }
+app-simulation .atlas-semantic-legend { position: absolute; left: 14px; bottom: 12px; z-index: 10; display: flex; gap: 10px; border: 1px solid rgb(51 65 85); border-radius: 999px; background: rgb(2 6 23 / .88); padding: 7px 10px; color: rgb(148 163 184); font-size: 9px; pointer-events: none; }
+app-simulation .atlas-semantic-legend span { display: flex; align-items: center; gap: 4px; }
+app-simulation .atlas-semantic-legend i { width: 14px; height: 3px; border-radius: 99px; background: rgb(71 85 105); }
+app-simulation .atlas-semantic-legend .selected { background: rgb(34 211 238); }
+app-simulation .atlas-semantic-legend .changed { background: rgb(167 139 250); }
+app-simulation .atlas-semantic-legend .old { background: repeating-linear-gradient(90deg,rgb(148 163 184) 0 4px,transparent 4px 7px); }
+@media (max-width: 640px) { app-simulation .atlas-semantic-legend { left: 10px; max-width: calc(100% - 20px); flex-wrap: wrap; } }

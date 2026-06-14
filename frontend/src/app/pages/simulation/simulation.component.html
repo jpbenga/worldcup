@@ -57,12 +57,7 @@
             <div class="atlas-stage-label" style="left: 50px">PHASE DE GROUPES · 72 MATCHS</div>
             @for (round of data.rounds; track round.key; let roundIndex = $index) { <div class="atlas-stage-label" [style.left.px]="roundX[roundIndex]">{{ round.label }}</div> }
 
-            <svg class="atlas-connections" [attr.viewBox]="'0 0 ' + worldWidth + ' ' + worldHeight" aria-hidden="true">
-              <defs>
-                <linearGradient id="atlas-active-gradient"><stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
-                <linearGradient id="atlas-changed-gradient"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#fb7185"/></linearGradient>
-                <marker id="atlas-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z"></path></marker>
-              </defs>
+            <svg class="atlas-connections" [class.has-team-selection]="selectedTeam()" [attr.viewBox]="'0 0 ' + worldWidth + ' ' + worldHeight" role="img" aria-label="Connexions interactives des parcours projetés">
               @if (comparisonEnabled()) {
                 @if (selectedTimelineDiff(); as diff) {
                   <g class="atlas-layer atlas-layer--ghost">
@@ -79,22 +74,29 @@
               <g class="atlas-layer atlas-layer--group-connections">
               @for (group of data.groups; track group.group; let groupIndex = $index) {
                 @for (link of group.knockout_links; track link) {
-                  <path class="atlas-path atlas-path--stable" [id]="'group-' + group.group + '-to-' + stableId(link)" [attr.d]="groupPath(groupIndex, roundMatchIndex(data.rounds[0], link))" [class.atlas-path--selected]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [class.atlas-path--changed]="isGroupChanged(group.group)"></path>
+                  <path class="atlas-path atlas-path--stable" [id]="'group-' + group.group + '-to-' + stableId(link)" [attr.d]="groupPath(groupIndex, roundMatchIndex(data.rounds[0], link))"></path>
                 }
               }
               </g>
               <g class="atlas-layer atlas-layer--bracket-connections">
               @for (round of data.rounds.slice(0, -1); track round.key; let roundIndex = $index) {
                 @for (match of round.matches; track match.match_id; let matchIndex = $index) {
-                  <path class="atlas-path atlas-path--stable" [id]="'match-' + stableId(match.match_id) + '-connection'" [attr.d]="knockoutPath(roundIndex, matchIndex, round.matches.length, roundMatchIndex(data.rounds[roundIndex + 1], match.next_match_id), data.rounds[roundIndex + 1].matches.length)" [class.atlas-path--selected]="isMatchHighlighted(match) || isSelectedTeamMatch(match.match_id)" [class.atlas-path--changed]="isKnockoutChanged(match.match_id)" marker-end="url(#atlas-arrow)"></path>
+                  <path class="atlas-path atlas-path--stable" [id]="'match-' + stableId(match.match_id) + '-connection'" [attr.d]="knockoutPath(roundIndex, matchIndex, round.matches.length, roundMatchIndex(data.rounds[roundIndex + 1], match.next_match_id), data.rounds[roundIndex + 1].matches.length)"></path>
                 }
               }
+              </g>
+              <g class="atlas-layer atlas-layer--team-paths">
+                @for (path of data.team_paths | keyvalue; track path.key) {
+                  @for (segment of teamPathSegments(path.value); track $index) {
+                    <path class="atlas-path atlas-path--interactive" [class.atlas-path--selected]="selectedTeam() === teamKey(path.key)" [class.atlas-path--muted]="selectedTeam() && selectedTeam() !== teamKey(path.key)" [id]="'path-team-' + stableId(teamKey(path.key)) + '-' + $index" [attr.d]="segment" tabindex="0" [attr.aria-label]="'Afficher le parcours projeté de ' + teamKey(path.key)" (click)="selectTeam(teamKey(path.key))" (keydown.enter)="selectTeam(teamKey(path.key))"><title>Parcours projeté de {{ path.key }}</title></path>
+                  }
+                }
               </g>
             </svg>
 
             @for (group of data.groups; track group.group; let groupIndex = $index) {
               @if (group.teams.length && group.matches.length) {
-              <article class="group-node atlas-node" [class.node-focus]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [class.node-changed]="isGroupChanged(group.group)" [style.left.px]="groupPosition(groupIndex).x" [style.top.px]="groupPosition(groupIndex).y">
+              <article class="group-node atlas-node" [class.node-focus]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [class.node-changed]="comparisonEnabled() && isGroupChanged(group.group)" [style.left.px]="groupPosition(groupIndex).x" [style.top.px]="groupPosition(groupIndex).y">
                 <button class="node-heading" (click)="focusGroup(group.group)"><span>Groupe {{ group.group }}</span><small>{{ group.state === 'volatile' ? 'Très ouvert' : group.state === 'open' ? 'Ouvert' : 'Avantage établi' }}</small></button>
                 <p class="group-section-label">Classement du scénario central</p>
                 <table><thead><tr><th>#</th><th>Équipe</th><th>J</th><th>Pts</th><th>Diff</th><th>BP</th><th>Statut</th></tr></thead><tbody>@for (team of group.teams; track team.name) { <tr [class.team-focus]="isTeamHighlighted(team.name)" [class.team-impacted]="isTeamImpacted(team.name)" (click)="selectTeam(team.name)"><td>{{ team.current_rank }}</td><td><img [src]="team.logo_url" [alt]="team.name" />{{ team.name }}</td><td>{{ team.played }}</td><td>{{ team.points }}</td><td>{{ team.goal_difference }}</td><td>{{ team.goals_for }}</td><td><span class="central-status" [class.out]="team.central_status === 'Éliminé'">{{ team.central_status || 'À confirmer' }}</span></td></tr> }</tbody></table>
@@ -106,7 +108,7 @@
 
             @for (round of data.rounds; track round.key; let roundIndex = $index) {
               @for (match of round.matches; track match.match_id; let matchIndex = $index) {
-                <button class="knockout-node atlas-node" [class.node-muted]="!isMatchVisible(match, round.key)" [class.node-focus]="selectedMatchId() === match.match_id || isMatchHighlighted(match)" [class.node-changed]="isKnockoutChanged(match.match_id)" [style.left.px]="matchPosition(roundIndex, matchIndex, round.matches.length).x" [style.top.px]="matchPosition(roundIndex, matchIndex, round.matches.length).y - 52" (click)="selectMatch(match)">
+                <button class="knockout-node atlas-node" [class.node-muted]="!isMatchVisible(match, round.key)" [class.node-focus]="selectedMatchId() === match.match_id || isMatchHighlighted(match)" [class.node-changed]="comparisonEnabled() && isKnockoutChanged(match.match_id)" [style.left.px]="matchPosition(roundIndex, matchIndex, round.matches.length).x" [style.top.px]="matchPosition(roundIndex, matchIndex, round.matches.length).y - 52" (click)="selectMatch(match)">
                   <small>{{ match.is_upset ? 'Surprise du scénario · à expliquer' : 'Projeté · à confirmer' }}</small>
                   <span [class.team-focus]="isTeamHighlighted(match.team_a)" [class.projected-advance]="match.projected_winner === match.team_a">{{ match.team_a }} <strong>{{ match.team_a_win_probability | percent: '1.0-0' }} {{ match.projected_winner === match.team_a ? '✓' : '' }}</strong></span>
                   <span [class.team-focus]="isTeamHighlighted(match.team_b)" [class.projected-advance]="match.projected_winner === match.team_b">{{ match.team_b }} <strong>{{ match.team_b_win_probability | percent: '1.0-0' }} {{ match.projected_winner === match.team_b ? '✓' : '' }}</strong></span>
@@ -115,7 +117,8 @@
             }
             <article class="trophy-node atlas-node"><small>Vainqueur projeté</small><strong>{{ data.projected_winner.team }}</strong><span>{{ data.projected_winner.probability | percent: '1.0-0' }} de chances de titre</span></article>
           </div>
-          <div class="atlas-hint">Glisser pour se déplacer · Molette ou pincement pour zoomer · Cliquer pour inspecter</div>
+          <div class="atlas-semantic-legend"><span><i class="selected"></i>Parcours sélectionné</span><span><i class="changed"></i>Modifié en comparaison</span><span><i class="old"></i>Ancien parcours</span></div>
+          <div class="atlas-hint">Survolez ou cliquez une courbe pour suivre une équipe · Glissez pour vous déplacer</div>
         </div>
 
         <aside class="inspector">
@@ -137,10 +140,10 @@
               <div class="score-block" [class.warning]="explanation.scenario_outcome.is_upset"><small>Résultat retenu dans le scénario central</small><strong>{{ explanation.scenario_outcome.winner }}</strong><span>{{ explanation.scenario_outcome.note }}</span></div>
               <p class="meta">Données non disponibles : {{ explanation.missing_context.join(', ') }}.</p>
             }
-            @if (selectedOddsValue()?.best_value_signal; as value) {
-              <div class="odds-value-card"><p class="eyebrow">Cote intéressante</p><strong>{{ value.selection }} · {{ value.market }} &#64; {{ value.decimal_odds }}</strong><div><span>SimuAI {{ value.model_probability | percent: '1.0-0' }}</span><span>Marché {{ value.market_probability | percent: '1.0-0' }}</span><span>Edge +{{ value.edge | percent: '1.1-1' }}</span></div><small>{{ value.bookmaker }} · Signal statistique, sans garantie de résultat.</small></div>
-            } @else if (selectedOddsValue()) {
-              <p class="odds-empty">Aucune cote intéressante détectée. Marché aligné ou données insuffisantes.</p>
+            @if (selectedReferenceOdds(); as odds) {
+              <div class="odds-value-card"><p class="eyebrow">Cotes du marché · {{ referenceOdds()?.bookmaker?.name }}</p>@for (market of odds.markets.slice(0, 2); track market.market_key) { <strong>{{ market.market_label }}</strong><div>@for (outcome of market.outcomes; track outcome.label) { <span>{{ outcome.label }} {{ outcome.odds }} @if (outcome.is_interesting) { · Cote intéressante }</span> }</div> }<small>Signal statistique, sans garantie de résultat.</small></div>
+            } @else {
+              <p class="odds-empty">Cotes indisponibles pour ce match.</p>
             }
             <div class="mt-4 flex flex-wrap gap-2"><button class="control" (click)="selectTeam(match.home_team || match.team_a)">Suivre {{ match.home_team || match.team_a }}</button><button class="control" (click)="selectTeam(match.away_team || match.team_b)">Suivre {{ match.away_team || match.team_b }}</button></div>
           } @else if (selectedTeamPath(); as path) {
@@ -153,7 +156,7 @@
             <div class="score-block projected"><small>Finale projetée</small><strong>{{ data.projected_final.teams[0].team }}</strong><span>vs {{ data.projected_final.teams[1].team }}</span></div>
             <div class="score-block projected"><small>Méthode SimuAI</small><strong>50 000 tournois complets</strong><span>Groupes variables et matchs knockout simulés en tête-à-tête.</span></div>
           }
-          <div class="legend"><span><i class="real"></i>Réel</span><span><i class="projected"></i>Projeté</span><span><i class="confirm"></i>À confirmer</span></div>
+          <div class="legend"><span><i class="real"></i>Résultat réel</span><span><i class="projected"></i>Projection</span><span><i class="confirm"></i>À confirmer</span></div>
         </aside>
       </section>
       <p class="mt-4 text-xs leading-5 text-slate-500">Le chemin affiché est un tournoi complet cohérent sélectionné dans un réservoir uniforme couvrant les 50 000 simulations. Le mapping éliminatoire reste projeté tant que sa structure officielle n’est pas intégrée aux données du projet.</p>

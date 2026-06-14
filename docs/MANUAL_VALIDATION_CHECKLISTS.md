@@ -86,3 +86,14 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Le détail affiche SimuAI, marché, edge, source et disclaimer.
 - [ ] Un match sans signal affiche un état sobre sans badge promotionnel.
 - [ ] L'application reste utilisable si les cotes sont indisponibles.
+
+## SVG & Odds UX Clarification V2.23.1
+
+- [ ] Aucune flèche SVG ni contour doré inexpliqué n'est visible.
+- [ ] La légende distingue clairement sélection, modification et ancien parcours.
+- [ ] Survoler une courbe révèle un parcours d'équipe.
+- [ ] Cliquer une courbe sélectionne l'équipe et renseigne l'inspecteur.
+- [ ] Reset désélectionne le parcours sans casser le zoom/pan.
+- [ ] La modal affiche le bookmaker unique et toutes les cotes utiles disponibles.
+- [ ] « Cote intéressante » apparaît comme badge sans masquer les autres issues.
+- [ ] Les états sans signal et sans cotes sont explicites.

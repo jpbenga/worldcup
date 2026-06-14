@@ -73,7 +73,8 @@
             [comparison]="comparisonFor(vm.modelComparisons, matchId)"
             [state]="matchStateFor(vm.matchStates, matchId)"
             [dualMatrix]="dualMatrixFor(vm.dualMatrixComparisons, matchId)"
-            [oddsValue]="oddsValueFor(vm.oddsValueSignals, matchId)"
+            [referenceOdds]="referenceOddsFor(vm.referenceOdds, matchId)"
+            [referenceBookmaker]="vm.referenceOdds.bookmaker"
             (closed)="selectedMatchId.set(null)"
           />
         }

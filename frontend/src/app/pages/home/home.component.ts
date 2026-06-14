@@ -37,7 +37,7 @@ export class HomeComponent {
     matchStates: this.worldCupService.getMatchStates(),
     liveStandings: this.worldCupService.getLiveGroupStandings(),
     dualMatrixComparisons: this.worldCupService.getDualMatrixComparisons(),
-    oddsValueSignals: this.worldCupService.getMatchOddsValueSignalsV223(),
+    referenceOdds: this.worldCupService.getMatchReferenceOddsV2231(),
   });
 
   predictionFor(predictions: MatchPrediction[], matchId: string): MatchPrediction | undefined {
@@ -56,7 +56,7 @@ export class HomeComponent {
     return comparisons.find((comparison) => comparison.matchId === matchId);
   }
 
-  oddsValueFor(payload: any, matchId: string): any {
+  referenceOddsFor(payload: any, matchId: string): any {
     return payload?.fixtures?.find((fixture: any) => fixture.match_id === matchId);
   }
 

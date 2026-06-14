@@ -1,0 +1,42 @@
+{
+  "version": "v2.23.1",
+  "generated_at": "2026-06-14T21:53:22Z",
+  "passed": true,
+  "svg": {
+    "arrows_removed": true,
+    "unexplained_gold_removed": true,
+    "semantic_colors_documented": true,
+    "clickable_paths": true,
+    "team_path_selection": true,
+    "zoom_pan_preserved": true
+  },
+  "odds": {
+    "single_bookmaker_mode": true,
+    "reference_bookmaker_selected": true,
+    "market_odds_visible": true,
+    "value_signal_is_badge_not_filter": true,
+    "responsible_language": true,
+    "secrets_exposed": false
+  },
+  "active_predictions_unchanged": true,
+  "public_engine_changed": false,
+  "checks": {
+    "arrows_removed": true,
+    "unexplained_gold_removed": true,
+    "semantic_colors_documented": true,
+    "clickable_paths": true,
+    "team_path_selection": true,
+    "ghost_only_comparison": true,
+    "zoom_pan_preserved": true,
+    "single_bookmaker_mode": true,
+    "market_odds_visible": true,
+    "value_signal_is_badge_not_filter": true,
+    "responsible_language": true,
+    "no_secrets_exposed": true,
+    "active_predictions_unchanged": true,
+    "public_engine_unchanged": true,
+    "no_optuna": true
+  },
+  "blocking_issues": [],
+  "warnings": []
+}

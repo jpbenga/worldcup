@@ -7,14 +7,14 @@
 .atlas-world { position: absolute; transform-origin: 0 0; }
 .atlas-stage-label { position: absolute; top: 22px; width: 340px; color: rgb(100 116 139); font-size: 18px; font-weight: 900; letter-spacing: .18em; }
 .atlas-connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
-.atlas-connections .atlas-path { fill: none; stroke: rgb(71 85 105 / .48); stroke-width: 3; transition: stroke .25s, opacity .25s, stroke-width .25s; }
+.atlas-connections .atlas-path { fill: none; stroke: rgb(71 85 105 / .42); stroke-width: 3; stroke-linecap: round; transition: stroke .2s, opacity .2s, stroke-width .2s; }
 .atlas-connections .atlas-path--stable { stroke-dasharray: 0; }
-.atlas-connections .atlas-path--selected { stroke: url(#atlas-active-gradient); stroke-width: 9; filter: drop-shadow(0 0 8px rgb(34 211 238 / .6)); }
-.atlas-connections .atlas-path--changed { stroke: url(#atlas-changed-gradient); stroke-width: 7; filter: drop-shadow(0 0 7px rgb(251 191 36 / .45)); }
-.atlas-connections .atlas-path--old,.atlas-connections .atlas-path--ghost { stroke: rgb(148 163 184 / .55); stroke-width: 6; stroke-dasharray: 18 14; opacity: .55; }
+.atlas-connections .atlas-path--selected { stroke: rgb(34 211 238); stroke-width: 9; filter: drop-shadow(0 0 8px rgb(34 211 238 / .6)); }
+.atlas-connections .atlas-path--changed { stroke: rgb(167 139 250); stroke-width: 6; }
+.atlas-connections .atlas-path--old,.atlas-connections .atlas-path--ghost { stroke: rgb(148 163 184 / .5); stroke-width: 5; stroke-dasharray: 14 14; opacity: .5; }
 .atlas-node { position: absolute; z-index: 2; border: 2px solid rgb(51 65 85); background: rgb(15 23 42 / .96); box-shadow: 0 14px 35px rgb(0 0 0 / .35); transition: opacity .2s, border-color .2s, box-shadow .2s; }
 .atlas-node.node-focus { border-color: rgb(34 211 238); box-shadow: 0 0 0 5px rgb(34 211 238 / .13), 0 18px 45px rgb(0 0 0 / .5); z-index: 4; }
-.atlas-node.node-changed { border-color: rgb(251 191 36); box-shadow: 0 0 0 4px rgb(251 191 36 / .14), 0 0 28px rgb(251 191 36 / .25); }
+.atlas-node.node-changed { border-color: rgb(167 139 250); box-shadow: 0 0 0 4px rgb(139 92 246 / .12), 0 0 24px rgb(139 92 246 / .2); }
 .atlas-node.node-muted { opacity: .08; }
 .group-node { width: 400px; height: 470px; border-radius: 20px; overflow: hidden; }
 .node-heading { width: 100%; display: flex; justify-content: space-between; padding: 14px 16px; background: rgb(8 47 73); color: white; font-weight: 900; text-align: left; }
@@ -28,7 +28,7 @@
 .group-node td img { width: 18px; height: 18px; object-fit: contain; }
 .group-node tr { cursor: pointer; }
 .group-node tr:hover, .team-focus { background: rgb(8 145 178 / .22) !important; color: rgb(165 243 252); }
-.group-node tr.team-impacted { background: rgb(120 53 15 / .32); color: rgb(253 230 138); }
+.group-node tr.team-impacted { background: rgb(76 29 149 / .25); color: rgb(221 214 254); }
 .central-status { color: rgb(110 231 183); font-weight: 800; }
 .group-probabilities { border-top: 1px solid rgb(51 65 85); padding: 2px 7px 5px; }
 .group-probabilities button { width: 50%; padding: 2px; color: rgb(203 213 225); text-align: left; font-size: 8px; }
@@ -45,8 +45,8 @@
 .knockout-node span { display: flex; justify-content: space-between; border-radius: 8px; background: rgb(2 6 23); padding: 6px 8px; font-size: 12px; font-weight: 700; }
 .knockout-node span + span { margin-top: 4px; }
 .knockout-node span.projected-advance { color: rgb(110 231 183); }
-.trophy-node { left: 4010px; top: 1435px; width: 240px; border-color: rgb(250 204 21); border-radius: 28px; background: rgb(66 32 6); padding: 24px; text-align: center; }
-.trophy-node small, .trophy-node span { display: block; color: rgb(253 224 71); }
+.trophy-node { left: 4010px; top: 1435px; width: 240px; border-color: rgb(139 92 246); border-radius: 28px; background: rgb(30 27 75); padding: 24px; text-align: center; }
+.trophy-node small, .trophy-node span { display: block; color: rgb(196 181 253); }
 .trophy-node strong { display: block; margin: 8px 0; font-size: 28px; }
 .atlas-hint { position: absolute; right: 14px; bottom: 12px; z-index: 10; border: 1px solid rgb(71 85 105); border-radius: 999px; background: rgb(2 6 23 / .88); padding: 7px 12px; color: rgb(148 163 184); font-size: 11px; pointer-events: none; }
 .inspector { min-height: 620px; border: 1px solid rgb(51 65 85); border-radius: 1.5rem; background: rgb(15 23 42 / .88); padding: 20px; }
@@ -62,7 +62,7 @@
 .score-block strong { display: block; margin: 5px 0; font-size: 28px; }
 .score-block.projected { border-color: rgb(139 92 246 / .5); background: rgb(76 29 149 / .15); }
 .score-block.warning { border-color: rgb(245 158 11 / .55); background: rgb(120 53 15 / .18); }
-.odds-value-card { margin-top: 18px; border: 1px solid rgb(251 191 36 / .4); border-radius: 16px; background: linear-gradient(135deg,rgb(120 53 15 / .2),rgb(8 145 178 / .1)); padding: 14px; }.odds-value-card strong { display: block; margin-top: 7px; color: rgb(253 230 138); }.odds-value-card div { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; color: rgb(165 243 252); font-size: 10px; }.odds-value-card small,.odds-empty { color: rgb(148 163 184); font-size: 10px; line-height: 1.5; }.odds-empty { margin-top: 16px; border: 1px solid rgb(51 65 85); border-radius: 12px; padding: 10px; }
+.odds-value-card { margin-top: 18px; border: 1px solid rgb(34 211 238 / .3); border-radius: 16px; background: rgb(8 145 178 / .08); padding: 14px; }.odds-value-card strong { display: block; margin-top: 7px; color: rgb(165 243 252); }.odds-value-card div { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; color: rgb(203 213 225); font-size: 10px; }.odds-value-card small,.odds-empty { color: rgb(148 163 184); font-size: 10px; line-height: 1.5; }.odds-empty { margin-top: 16px; border: 1px solid rgb(51 65 85); border-radius: 12px; padding: 10px; }
 .journey-step { width: 100%; display: flex; justify-content: space-between; gap: 8px; margin-top: 6px; border: 1px solid rgb(51 65 85); border-radius: 10px; background: rgb(2 6 23); padding: 9px; color: rgb(203 213 225); text-align: left; font-size: 11px; }
 .journey-step:hover { border-color: rgb(34 211 238); }
 .journey-step small { color: rgb(100 116 139); text-transform: uppercase; }
@@ -71,5 +71,5 @@
 .legend i { width: 8px; height: 8px; border-radius: 999px; }
 .legend .real { background: rgb(52 211 153); }.legend .projected { background: rgb(167 139 250); }.legend .confirm { background: rgb(100 116 139); }
 @media (max-width: 1279px) { .inspector { min-height: auto; } }
-@media (max-width: 640px) { .atlas-viewport { min-height: 520px; height: 68vh; }.atlas-hint { left: 10px; right: auto; max-width: calc(100% - 20px); }.control { padding: .48rem .65rem; } }
+@media (max-width: 640px) { .atlas-viewport { min-height: 520px; height: 68vh; }.atlas-hint { display: none; }.control { padding: .48rem .65rem; } }
 @media (prefers-reduced-motion: reduce) { .atlas-connections .atlas-path,.atlas-node { transition: none; }.atlas-connections .atlas-path--ghost { stroke-dasharray: 8 8; } }
