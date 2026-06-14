@@ -23,8 +23,7 @@
 .group-node td img { width: 18px; height: 18px; object-fit: contain; }
 .group-node tr { cursor: pointer; }
 .group-node tr:hover, .team-focus { background: rgb(8 145 178 / .22) !important; color: rgb(165 243 252); }
-.central-status { color: rgb(110 231 183); font-size: 7px; font-weight: 800; }
-.central-status.out { color: rgb(148 163 184); }
+.central-status { color: rgb(110 231 183); font-weight: 800; }
 .group-probabilities { border-top: 1px solid rgb(51 65 85); padding: 2px 7px 5px; }
 .group-probabilities button { width: 50%; padding: 2px; color: rgb(203 213 225); text-align: left; font-size: 8px; }
 .group-probabilities button small { display: block; color: rgb(100 116 139); font-size: 7px; }
@@ -39,6 +38,7 @@
 .knockout-node small { display: block; margin-bottom: 6px; color: rgb(196 181 253); font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
 .knockout-node span { display: flex; justify-content: space-between; border-radius: 8px; background: rgb(2 6 23); padding: 6px 8px; font-size: 12px; font-weight: 700; }
 .knockout-node span + span { margin-top: 4px; }
+.knockout-node span.projected-advance { color: rgb(110 231 183); }
 .trophy-node { left: 4010px; top: 1435px; width: 240px; border-color: rgb(250 204 21); border-radius: 28px; background: rgb(66 32 6); padding: 24px; text-align: center; }
 .trophy-node small, .trophy-node span { display: block; color: rgb(253 224 71); }
 .trophy-node strong { display: block; margin: 8px 0; font-size: 28px; }

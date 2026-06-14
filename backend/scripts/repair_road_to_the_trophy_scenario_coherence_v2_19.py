@@ -96,8 +96,25 @@ def representativeness_score(path: dict[str, Any], simulation: dict[str, Any], m
             penalties.extend((-math.log(max(rank_probability, 0.01)), -math.log(max(observed_probability, 0.01))))
     for round_name, matches in path["knockout"].items():
         for match in matches:
-            probability = simulation["team_path_distributions"][match["winner"]].get(round_name, 0)
+            probability = match["team_a_advance_probability"] if match["winner"] == match["team_a"] else 1 - match["team_a_advance_probability"]
             penalties.append(-math.log(max(probability, 0.01)))
+    penalties.append(-math.log(max(simulation["champion_probabilities"].get(path["champion"], 0), 0.01)))
+    return 1 / (1 + sum(penalties) / len(penalties))
+
+
+def previous_representativeness_score(path: dict[str, Any], simulation: dict[str, Any], marginals: dict[str, Any]) -> float:
+    detail = marginals["details"][path["simulation_id"]]
+    penalties = []
+    qualifiers = set(detail["qualifiers"])
+    for code, group in detail["groups"].items():
+        for row in group["table"]:
+            rank_probability = marginals["rank"][code][row["team"]].get(str(row["rank"]), 0)
+            qualification_probability = simulation["round_of_32_probabilities"].get(row["team"], 0)
+            observed_probability = qualification_probability if row["team"] in qualifiers else 1 - qualification_probability
+            penalties.extend((-math.log(max(rank_probability, 0.01)), -math.log(max(observed_probability, 0.01))))
+    for round_name, matches in path["knockout"].items():
+        for match in matches:
+            penalties.append(-math.log(max(simulation["team_path_distributions"][match["winner"]].get(round_name, 0), 0.01)))
     penalties.append(-math.log(max(simulation["champion_probabilities"].get(path["champion"], 0), 0.01)))
     return 1 / (1 + sum(penalties) / len(penalties))
 
@@ -148,6 +165,9 @@ def scenario_payload(path: dict[str, Any], simulation: dict[str, Any], marginals
     team_paths: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for round_name, matches in knockout.items():
         for match in matches:
+            winner_probability = match["team_a_advance_probability"] if match["winner"] == match["team_a"] else 1 - match["team_a_advance_probability"]
+            match["winner_probability"] = winner_probability
+            match["outcome_type"] = "upset" if winner_probability < 0.5 else "favorite_win"
             for team in (match["team_a"], match["team_b"]):
                 team_paths[team].append({"round": round_name, **match})
     return {
@@ -188,6 +208,62 @@ def audit_scenario(path: dict[str, Any], simulation: dict[str, Any], marginals: 
     return {"groups_checked": 12, "groups_with_score_table_mismatch": mismatches, "groups_with_probability_scenario_contradiction": contradictions}
 
 
+def knockout_outcome_audit(path: dict[str, Any]) -> dict[str, Any]:
+    upsets = []
+    by_winner: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    knockout = path.get("knockout") or {
+        round_name: ([path[round_name]] if round_name == "final" else path[round_name])
+        for round_name in ROUNDS
+    }
+    for round_name, matches in knockout.items():
+        for match in matches:
+            probability = match["team_a_advance_probability"] if match["winner"] == match["team_a"] else 1 - match["team_a_advance_probability"]
+            if probability < 0.5:
+                row = {
+                    "round": round_name,
+                    "winner": match["winner"],
+                    "opponent": match["team_b"] if match["winner"] == match["team_a"] else match["team_a"],
+                    "winner_probability": probability,
+                }
+                upsets.append(row)
+                by_winner[match["winner"]].append(row)
+    repeated = {
+        team: {
+            "upset_count": len(rows),
+            "joint_probability": math.prod(row["winner_probability"] for row in rows),
+            "matches": rows,
+        }
+        for team, rows in by_winner.items()
+        if len(rows) > 1
+    }
+    return {"upsets": upsets, "repeated_upset_runs": repeated}
+
+
+def team_knockout_audit(path: dict[str, Any], team: str) -> dict[str, Any]:
+    rows = []
+    for round_name, matches in path["knockout"].items():
+        for match in matches:
+            if team not in (match["team_a"], match["team_b"]):
+                continue
+            team_probability = match["team_a_advance_probability"] if team == match["team_a"] else 1 - match["team_a_advance_probability"]
+            rows.append({
+                "round": round_name,
+                "opponent": match["team_b"] if team == match["team_a"] else match["team_a"],
+                "team_probability": team_probability,
+                "winner": match["winner"],
+                "team_advanced": match["winner"] == team,
+                "team_was_favorite": team_probability >= 0.5,
+                "upset_win": match["winner"] == team and team_probability < 0.5,
+            })
+    return {
+        "matches": rows,
+        "upset_wins": sum(row["upset_win"] for row in rows),
+        "joint_probability_of_upset_wins": math.prod(row["team_probability"] for row in rows if row["upset_win"])
+        if any(row["upset_win"] for row in rows)
+        else None,
+    }
+
+
 def main() -> None:
     simulation = load_json(DATA_DIR / "generated/tournament_simulation_engine_v3_results_v2_14.json")
     old = load_json(DATA_DIR / "generated/representative_tournament_scenario_v3_v2_14.json")
@@ -195,9 +271,15 @@ def main() -> None:
     marginals = sample_marginals(paths)
     scored = [(representativeness_score(path, simulation, marginals), path) for path in paths]
     score, selected = max(scored, key=lambda item: item[0])
+    previous_selected = max(paths, key=lambda path: previous_representativeness_score(path, simulation, marginals))
     central = scenario_payload(selected, simulation, marginals, score)
     old_audit = audit_scenario(old, simulation, marginals)
     after_audit = audit_scenario(selected, simulation, marginals)
+    old_knockout_audit = knockout_outcome_audit(old)
+    after_knockout_audit = knockout_outcome_audit(selected)
+    swiss_previous = team_knockout_audit(previous_selected, "Switzerland")
+    swiss_after = team_knockout_audit(selected, "Switzerland")
+    swiss_repeated_upset_frequency = sum(team_knockout_audit(path, "Switzerland")["upset_wins"] >= 2 for path in paths) / len(paths)
 
     def belgium(path: dict[str, Any]) -> dict[str, Any]:
         detail = path_details(path)
@@ -229,13 +311,27 @@ def main() -> None:
             "limitations": simulation["limitations"],
         },
         "current_scenario_audit": {**old_audit, "belgium_case": belgium_case},
+        "knockout_outcome_audit": {
+            "before": old_knockout_audit,
+            "after": after_knockout_audit,
+            "selection_rule": "Every realized knockout winner is scored by its direct head-to-head advancement probability.",
+        },
+        "switzerland_case": {
+            "previous_selection_simulation_id": previous_selected["simulation_id"],
+            "previous_selection": swiss_previous,
+            "central_selection_simulation_id": selected["simulation_id"],
+            "central_selection": swiss_after,
+            "repeated_upset_run_frequency_in_persisted_paths": swiss_repeated_upset_frequency,
+            "diagnosis": "Switzerland was not forced. The previous central-path score rewarded stage-reaching marginals but did not score each realized head-to-head outcome, allowing two consecutive mild upset wins to remain central.",
+            "repair": "The central score now uses each realized head-to-head advancement probability. The same rule applies to every team.",
+        },
         "belgium_case": belgium_case,
         "repair_method": {
             "method": "central persisted full-path selection by global marginal surprise score",
             "uses_full_simulation_path": True,
             "uses_reconstruction_under_constraints": False,
             "arbitrary_choices": False,
-            "description": "Scores every persisted complete path across all group ranks, qualification outcomes, knockout winners and champion probability; no team or champion is forced.",
+            "description": "Scores every persisted complete path across all group ranks, qualification outcomes, realized head-to-head knockout outcomes and champion probability; no team or champion is forced.",
         },
         "coherence_checks_after": {
             "scores_to_points": not after_audit["groups_with_score_table_mismatch"],
@@ -266,6 +362,7 @@ def main() -> None:
                 "central_status": "Qualifié" if team["name"] in contract["qualified"] else "Éliminé",
                 "simulation_probabilities": probabilities[team["name"]],
             })
+        group["teams"].sort(key=lambda team: team["current_rank"])
         group["central_table"] = contract["table"]
         group["central_matches"] = contract["matches"]
         group["central_qualified"] = contract["qualified"]

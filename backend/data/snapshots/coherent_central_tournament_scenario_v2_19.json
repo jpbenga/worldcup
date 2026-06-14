@@ -2,8 +2,8 @@
   "version": "v2.19",
   "scenario_type": "central",
   "source": "full_simulation_path",
-  "simulation_id": 6,
-  "representativeness_score": 0.6161707912832991,
+  "simulation_id": 12,
+  "representativeness_score": 0.6097205858007568,
   "group_stage": {
     "groups": [
       {
@@ -24,25 +24,25 @@
           {
             "team_a": "Czech Republic",
             "team_b": "South Africa",
-            "score": "0-0",
+            "score": "0-4",
             "locked": false
           },
           {
             "team_a": "Mexico",
             "team_b": "South Korea",
-            "score": "1-2",
+            "score": "1-0",
             "locked": false
           },
           {
             "team_a": "Czech Republic",
             "team_b": "Mexico",
-            "score": "0-1",
+            "score": "2-1",
             "locked": false
           },
           {
             "team_a": "South Africa",
             "team_b": "South Korea",
-            "score": "2-1",
+            "score": "0-1",
             "locked": false
           }
         ],
@@ -65,8 +65,8 @@
             "wins": 2,
             "draws": 0,
             "losses": 1,
-            "goals_for": 5,
-            "goals_against": 4,
+            "goals_for": 3,
+            "goals_against": 2,
             "points": 6,
             "rank": 2,
             "goal_difference": 1
@@ -75,25 +75,25 @@
             "team": "South Africa",
             "played": 3,
             "wins": 1,
-            "draws": 1,
-            "losses": 1,
-            "goals_for": 2,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 4,
             "goals_against": 3,
-            "points": 4,
+            "points": 3,
             "rank": 3,
-            "goal_difference": -1
+            "goal_difference": 1
           },
           {
             "team": "Czech Republic",
             "played": 3,
-            "wins": 0,
-            "draws": 1,
+            "wins": 1,
+            "draws": 0,
             "losses": 2,
-            "goals_for": 1,
-            "goals_against": 3,
-            "points": 1,
+            "goals_for": 3,
+            "goals_against": 7,
+            "points": 3,
             "rank": 4,
-            "goal_difference": -2
+            "goal_difference": -4
           }
         ],
         "qualified": [
@@ -151,90 +151,84 @@
           {
             "team_a": "Switzerland",
             "team_b": "Bosnia & Herzegovina",
-            "score": "2-1",
+            "score": "1-0",
             "locked": false
           },
           {
             "team_a": "Canada",
             "team_b": "Qatar",
-            "score": "3-2",
+            "score": "2-0",
             "locked": false
           },
           {
             "team_a": "Switzerland",
             "team_b": "Canada",
-            "score": "4-0",
+            "score": "2-2",
             "locked": false
           },
           {
             "team_a": "Bosnia & Herzegovina",
             "team_b": "Qatar",
-            "score": "0-0",
+            "score": "2-0",
             "locked": false
           }
         ],
         "table": [
           {
-            "team": "Switzerland",
+            "team": "Canada",
             "played": 3,
-            "wins": 2,
-            "draws": 1,
+            "wins": 1,
+            "draws": 2,
             "losses": 0,
-            "goals_for": 7,
-            "goals_against": 2,
-            "points": 7,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 5,
             "rank": 1,
-            "goal_difference": 5
+            "goal_difference": 2
           },
           {
-            "team": "Canada",
+            "team": "Switzerland",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 5,
+            "rank": 2,
+            "goal_difference": 1
+          },
+          {
+            "team": "Bosnia & Herzegovina",
             "played": 3,
             "wins": 1,
             "draws": 1,
             "losses": 1,
-            "goals_for": 4,
-            "goals_against": 7,
+            "goals_for": 3,
+            "goals_against": 2,
             "points": 4,
-            "rank": 2,
-            "goal_difference": -3
+            "rank": 3,
+            "goal_difference": 1
           },
           {
             "team": "Qatar",
             "played": 3,
             "wins": 0,
-            "draws": 2,
-            "losses": 1,
-            "goals_for": 3,
-            "goals_against": 4,
-            "points": 2,
-            "rank": 3,
-            "goal_difference": -1
-          },
-          {
-            "team": "Bosnia & Herzegovina",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
-            "goals_for": 2,
-            "goals_against": 3,
-            "points": 2,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 5,
+            "points": 1,
             "rank": 4,
-            "goal_difference": -1
+            "goal_difference": -4
           }
         ],
         "qualified": [
+          "Canada",
           "Switzerland",
-          "Canada"
+          "Bosnia & Herzegovina"
         ],
         "marginal_qualification_probabilities": {
-          "Switzerland": {
-            "qualification": 0.8653,
-            "first": 0.54,
-            "second": 0.21,
-            "best_third": 0.17,
-            "elimination": 0.13470000000000004
-          },
           "Canada": {
             "qualification": 0.75666,
             "first": 0.21,
@@ -242,12 +236,12 @@
             "best_third": 0.2,
             "elimination": 0.24334
           },
-          "Qatar": {
-            "qualification": 0.50064,
-            "first": 0.12,
-            "second": 0.26,
-            "best_third": 0.12,
-            "elimination": 0.49936
+          "Switzerland": {
+            "qualification": 0.8653,
+            "first": 0.54,
+            "second": 0.21,
+            "best_third": 0.17,
+            "elimination": 0.13470000000000004
           },
           "Bosnia & Herzegovina": {
             "qualification": 0.55076,
@@ -255,6 +249,13 @@
             "second": 0.2,
             "best_third": 0.19,
             "elimination": 0.44924
+          },
+          "Qatar": {
+            "qualification": 0.50064,
+            "first": 0.12,
+            "second": 0.26,
+            "best_third": 0.12,
+            "elimination": 0.49936
           }
         },
         "scenario_vs_marginal_notes": []
@@ -265,7 +266,7 @@
           {
             "team_a": "Brazil",
             "team_b": "Morocco",
-            "score": "2-1",
+            "score": "3-0",
             "locked": false
           },
           {
@@ -277,25 +278,25 @@
           {
             "team_a": "Scotland",
             "team_b": "Morocco",
-            "score": "1-0",
+            "score": "1-1",
             "locked": false
           },
           {
             "team_a": "Brazil",
             "team_b": "Haiti",
-            "score": "3-2",
+            "score": "2-2",
             "locked": false
           },
           {
             "team_a": "Morocco",
             "team_b": "Haiti",
-            "score": "3-2",
+            "score": "2-0",
             "locked": false
           },
           {
             "team_a": "Scotland",
             "team_b": "Brazil",
-            "score": "1-1",
+            "score": "1-6",
             "locked": false
           }
         ],
@@ -306,53 +307,53 @@
             "wins": 2,
             "draws": 1,
             "losses": 0,
-            "goals_for": 6,
-            "goals_against": 4,
-            "points": 7,
-            "rank": 1,
-            "goal_difference": 2
-          },
-          {
-            "team": "Scotland",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
-            "goals_for": 5,
+            "goals_for": 11,
             "goals_against": 3,
             "points": 7,
-            "rank": 2,
-            "goal_difference": 2
+            "rank": 1,
+            "goal_difference": 8
           },
           {
             "team": "Morocco",
             "played": 3,
             "wins": 1,
-            "draws": 0,
-            "losses": 2,
-            "goals_for": 4,
-            "goals_against": 5,
-            "points": 3,
-            "rank": 3,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 4,
+            "points": 4,
+            "rank": 2,
             "goal_difference": -1
+          },
+          {
+            "team": "Scotland",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 9,
+            "points": 4,
+            "rank": 3,
+            "goal_difference": -4
           },
           {
             "team": "Haiti",
             "played": 3,
             "wins": 0,
-            "draws": 0,
-            "losses": 3,
-            "goals_for": 6,
-            "goals_against": 9,
-            "points": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 7,
+            "points": 1,
             "rank": 4,
             "goal_difference": -3
           }
         ],
         "qualified": [
           "Brazil",
-          "Scotland",
-          "Morocco"
+          "Morocco",
+          "Scotland"
         ],
         "marginal_qualification_probabilities": {
           "Brazil": {
@@ -362,19 +363,19 @@
             "best_third": 0.17000000000000004,
             "elimination": 0.04818
           },
-          "Scotland": {
-            "qualification": 0.58698,
-            "first": 0.15,
-            "second": 0.28,
-            "best_third": 0.15999999999999992,
-            "elimination": 0.41302000000000005
-          },
           "Morocco": {
             "qualification": 0.80722,
             "first": 0.26,
             "second": 0.35,
             "best_third": 0.19000000000000006,
             "elimination": 0.19277999999999995
+          },
+          "Scotland": {
+            "qualification": 0.58698,
+            "first": 0.15,
+            "second": 0.28,
+            "best_third": 0.15999999999999992,
+            "elimination": 0.41302000000000005
           },
           "Haiti": {
             "qualification": 0.3198,
@@ -398,96 +399,90 @@
           {
             "team_a": "Australia",
             "team_b": "Türkiye",
-            "score": "4-1",
+            "score": "1-2",
             "locked": false
           },
           {
             "team_a": "USA",
             "team_b": "Australia",
-            "score": "2-2",
+            "score": "0-6",
             "locked": false
           },
           {
             "team_a": "Türkiye",
             "team_b": "Paraguay",
-            "score": "3-2",
+            "score": "0-3",
             "locked": false
           },
           {
             "team_a": "Türkiye",
             "team_b": "USA",
-            "score": "0-3",
+            "score": "3-3",
             "locked": false
           },
           {
             "team_a": "Paraguay",
             "team_b": "Australia",
-            "score": "0-1",
+            "score": "0-2",
             "locked": false
           }
         ],
         "table": [
           {
-            "team": "USA",
-            "played": 3,
-            "wins": 2,
-            "draws": 1,
-            "losses": 0,
-            "goals_for": 9,
-            "goals_against": 3,
-            "points": 7,
-            "rank": 1,
-            "goal_difference": 6
-          },
-          {
             "team": "Australia",
             "played": 3,
             "wins": 2,
-            "draws": 1,
-            "losses": 0,
-            "goals_for": 7,
-            "goals_against": 3,
-            "points": 7,
-            "rank": 2,
-            "goal_difference": 4
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 9,
+            "goals_against": 2,
+            "points": 6,
+            "rank": 1,
+            "goal_difference": 7
           },
           {
             "team": "Türkiye",
             "played": 3,
             "wins": 1,
-            "draws": 0,
-            "losses": 2,
-            "goals_for": 4,
-            "goals_against": 9,
-            "points": 3,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 7,
+            "points": 4,
+            "rank": 2,
+            "goal_difference": -2
+          },
+          {
+            "team": "USA",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 10,
+            "points": 4,
             "rank": 3,
-            "goal_difference": -5
+            "goal_difference": -3
           },
           {
             "team": "Paraguay",
             "played": 3,
-            "wins": 0,
+            "wins": 1,
             "draws": 0,
-            "losses": 3,
-            "goals_for": 3,
-            "goals_against": 8,
-            "points": 0,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 6,
+            "points": 3,
             "rank": 4,
-            "goal_difference": -5
+            "goal_difference": -2
           }
         ],
         "qualified": [
-          "USA",
-          "Australia"
+          "Australia",
+          "Türkiye",
+          "USA"
         ],
         "marginal_qualification_probabilities": {
-          "USA": {
-            "qualification": 0.9488,
-            "first": 0.45,
-            "second": 0.37,
-            "best_third": 0.14,
-            "elimination": 0.05120000000000002
-          },
           "Australia": {
             "qualification": 0.86352,
             "first": 0.41,
@@ -501,6 +496,13 @@
             "second": 0.14,
             "best_third": 0.17000000000000004,
             "elimination": 0.5706
+          },
+          "USA": {
+            "qualification": 0.9488,
+            "first": 0.45,
+            "second": 0.37,
+            "best_third": 0.14,
+            "elimination": 0.05120000000000002
           },
           "Paraguay": {
             "qualification": 0.51408,
@@ -518,37 +520,37 @@
           {
             "team_a": "Germany",
             "team_b": "Curaçao",
-            "score": "7-0",
+            "score": "2-0",
             "locked": false
           },
           {
             "team_a": "Ivory Coast",
             "team_b": "Ecuador",
-            "score": "1-2",
+            "score": "0-2",
             "locked": false
           },
           {
             "team_a": "Germany",
             "team_b": "Ivory Coast",
-            "score": "2-1",
+            "score": "2-0",
             "locked": false
           },
           {
             "team_a": "Ecuador",
             "team_b": "Curaçao",
-            "score": "5-1",
+            "score": "3-0",
             "locked": false
           },
           {
             "team_a": "Ecuador",
             "team_b": "Germany",
-            "score": "3-0",
+            "score": "3-3",
             "locked": false
           },
           {
             "team_a": "Curaçao",
             "team_b": "Ivory Coast",
-            "score": "1-2",
+            "score": "0-2",
             "locked": false
           }
         ],
@@ -556,26 +558,26 @@
           {
             "team": "Ecuador",
             "played": 3,
-            "wins": 3,
-            "draws": 0,
+            "wins": 2,
+            "draws": 1,
             "losses": 0,
-            "goals_for": 10,
-            "goals_against": 2,
-            "points": 9,
+            "goals_for": 8,
+            "goals_against": 3,
+            "points": 7,
             "rank": 1,
-            "goal_difference": 8
+            "goal_difference": 5
           },
           {
             "team": "Germany",
             "played": 3,
             "wins": 2,
-            "draws": 0,
-            "losses": 1,
-            "goals_for": 9,
-            "goals_against": 4,
-            "points": 6,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 3,
+            "points": 7,
             "rank": 2,
-            "goal_difference": 5
+            "goal_difference": 4
           },
           {
             "team": "Ivory Coast",
@@ -583,11 +585,11 @@
             "wins": 1,
             "draws": 0,
             "losses": 2,
-            "goals_for": 4,
-            "goals_against": 5,
+            "goals_for": 2,
+            "goals_against": 4,
             "points": 3,
             "rank": 3,
-            "goal_difference": -1
+            "goal_difference": -2
           },
           {
             "team": "Curaçao",
@@ -595,17 +597,16 @@
             "wins": 0,
             "draws": 0,
             "losses": 3,
-            "goals_for": 2,
-            "goals_against": 14,
+            "goals_for": 0,
+            "goals_against": 7,
             "points": 0,
             "rank": 4,
-            "goal_difference": -12
+            "goal_difference": -7
           }
         ],
         "qualified": [
           "Ecuador",
-          "Germany",
-          "Ivory Coast"
+          "Germany"
         ],
         "marginal_qualification_probabilities": {
           "Ecuador": {
@@ -645,37 +646,37 @@
           {
             "team_a": "Netherlands",
             "team_b": "Japan",
-            "score": "6-2",
+            "score": "3-3",
             "locked": false
           },
           {
             "team_a": "Sweden",
             "team_b": "Tunisia",
-            "score": "1-1",
+            "score": "0-0",
             "locked": false
           },
           {
             "team_a": "Netherlands",
             "team_b": "Sweden",
-            "score": "2-0",
+            "score": "3-0",
             "locked": false
           },
           {
             "team_a": "Tunisia",
             "team_b": "Japan",
-            "score": "2-4",
+            "score": "0-4",
             "locked": false
           },
           {
             "team_a": "Japan",
             "team_b": "Sweden",
-            "score": "2-3",
+            "score": "1-0",
             "locked": false
           },
           {
             "team_a": "Tunisia",
             "team_b": "Netherlands",
-            "score": "0-2",
+            "score": "0-4",
             "locked": false
           }
         ],
@@ -683,38 +684,38 @@
           {
             "team": "Netherlands",
             "played": 3,
-            "wins": 3,
-            "draws": 0,
+            "wins": 2,
+            "draws": 1,
             "losses": 0,
             "goals_for": 10,
-            "goals_against": 2,
-            "points": 9,
+            "goals_against": 3,
+            "points": 7,
             "rank": 1,
-            "goal_difference": 8
-          },
-          {
-            "team": "Sweden",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
-            "goals_for": 4,
-            "goals_against": 5,
-            "points": 4,
-            "rank": 2,
-            "goal_difference": -1
+            "goal_difference": 7
           },
           {
             "team": "Japan",
             "played": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 2,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
             "goals_for": 8,
-            "goals_against": 11,
-            "points": 3,
+            "goals_against": 3,
+            "points": 7,
+            "rank": 2,
+            "goal_difference": 5
+          },
+          {
+            "team": "Sweden",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 0,
+            "goals_against": 4,
+            "points": 1,
             "rank": 3,
-            "goal_difference": -3
+            "goal_difference": -4
           },
           {
             "team": "Tunisia",
@@ -722,16 +723,15 @@
             "wins": 0,
             "draws": 1,
             "losses": 2,
-            "goals_for": 3,
-            "goals_against": 7,
+            "goals_for": 0,
+            "goals_against": 8,
             "points": 1,
             "rank": 4,
-            "goal_difference": -4
+            "goal_difference": -8
           }
         ],
         "qualified": [
           "Netherlands",
-          "Sweden",
           "Japan"
         ],
         "marginal_qualification_probabilities": {
@@ -742,19 +742,19 @@
             "best_third": 0.12000000000000005,
             "elimination": 0.12146000000000001
           },
-          "Sweden": {
-            "qualification": 0.61008,
-            "first": 0.18,
-            "second": 0.16,
-            "best_third": 0.23999999999999996,
-            "elimination": 0.38992000000000004
-          },
           "Japan": {
             "qualification": 0.82774,
             "first": 0.34,
             "second": 0.31,
             "best_third": 0.18999999999999995,
             "elimination": 0.17225999999999997
+          },
+          "Sweden": {
+            "qualification": 0.61008,
+            "first": 0.18,
+            "second": 0.16,
+            "best_third": 0.23999999999999996,
+            "elimination": 0.38992000000000004
           },
           "Tunisia": {
             "qualification": 0.37096,
@@ -772,103 +772,96 @@
           {
             "team_a": "Belgium",
             "team_b": "Egypt",
-            "score": "2-0",
+            "score": "2-1",
             "locked": false
           },
           {
             "team_a": "Iran",
             "team_b": "New Zealand",
-            "score": "2-2",
+            "score": "2-1",
             "locked": false
           },
           {
             "team_a": "Belgium",
             "team_b": "Iran",
-            "score": "0-4",
+            "score": "0-1",
             "locked": false
           },
           {
             "team_a": "New Zealand",
             "team_b": "Egypt",
-            "score": "2-0",
+            "score": "0-3",
             "locked": false
           },
           {
             "team_a": "Egypt",
             "team_b": "Iran",
-            "score": "0-0",
+            "score": "1-1",
             "locked": false
           },
           {
             "team_a": "New Zealand",
             "team_b": "Belgium",
-            "score": "0-1",
+            "score": "0-2",
             "locked": false
           }
         ],
         "table": [
+          {
+            "team": "Iran",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 7,
+            "rank": 1,
+            "goal_difference": 2
+          },
           {
             "team": "Belgium",
             "played": 3,
             "wins": 2,
             "draws": 0,
             "losses": 1,
-            "goals_for": 3,
-            "goals_against": 4,
-            "points": 6,
-            "rank": 1,
-            "goal_difference": -1
-          },
-          {
-            "team": "Iran",
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
-            "goals_for": 6,
-            "goals_against": 2,
-            "points": 5,
-            "rank": 2,
-            "goal_difference": 4
-          },
-          {
-            "team": "New Zealand",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
             "goals_for": 4,
-            "goals_against": 3,
-            "points": 4,
-            "rank": 3,
-            "goal_difference": 1
+            "goals_against": 2,
+            "points": 6,
+            "rank": 2,
+            "goal_difference": 2
           },
           {
             "team": "Egypt",
             "played": 3,
-            "wins": 0,
+            "wins": 1,
             "draws": 1,
-            "losses": 2,
-            "goals_for": 0,
-            "goals_against": 4,
-            "points": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 4,
+            "rank": 3,
+            "goal_difference": 2
+          },
+          {
+            "team": "New Zealand",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 1,
+            "goals_against": 7,
+            "points": 0,
             "rank": 4,
-            "goal_difference": -4
+            "goal_difference": -6
           }
         ],
         "qualified": [
-          "Belgium",
           "Iran",
-          "New Zealand"
+          "Belgium",
+          "Egypt"
         ],
         "marginal_qualification_probabilities": {
-          "Belgium": {
-            "qualification": 0.88774,
-            "first": 0.47,
-            "second": 0.3,
-            "best_third": 0.14000000000000007,
-            "elimination": 0.11226000000000003
-          },
           "Iran": {
             "qualification": 0.77122,
             "first": 0.25,
@@ -876,12 +869,12 @@
             "best_third": 0.18,
             "elimination": 0.22877999999999998
           },
-          "New Zealand": {
-            "qualification": 0.4042,
-            "first": 0.08,
-            "second": 0.14,
-            "best_third": 0.25999999999999995,
-            "elimination": 0.5958
+          "Belgium": {
+            "qualification": 0.88774,
+            "first": 0.47,
+            "second": 0.3,
+            "best_third": 0.14000000000000007,
+            "elimination": 0.11226000000000003
           },
           "Egypt": {
             "qualification": 0.64226,
@@ -889,6 +882,13 @@
             "second": 0.26,
             "best_third": 0.18,
             "elimination": 0.35773999999999995
+          },
+          "New Zealand": {
+            "qualification": 0.4042,
+            "first": 0.08,
+            "second": 0.14,
+            "best_third": 0.25999999999999995,
+            "elimination": 0.5958
           }
         },
         "scenario_vs_marginal_notes": []
@@ -899,37 +899,37 @@
           {
             "team_a": "Spain",
             "team_b": "Cape Verde Islands",
-            "score": "1-0",
+            "score": "3-0",
             "locked": false
           },
           {
             "team_a": "Saudi Arabia",
             "team_b": "Uruguay",
-            "score": "1-1",
+            "score": "0-1",
             "locked": false
           },
           {
             "team_a": "Spain",
             "team_b": "Saudi Arabia",
-            "score": "2-0",
+            "score": "4-0",
             "locked": false
           },
           {
             "team_a": "Uruguay",
             "team_b": "Cape Verde Islands",
-            "score": "2-1",
+            "score": "2-2",
             "locked": false
           },
           {
             "team_a": "Uruguay",
             "team_b": "Spain",
-            "score": "1-3",
+            "score": "1-2",
             "locked": false
           },
           {
             "team_a": "Cape Verde Islands",
             "team_b": "Saudi Arabia",
-            "score": "2-2",
+            "score": "0-0",
             "locked": false
           }
         ],
@@ -940,11 +940,11 @@
             "wins": 3,
             "draws": 0,
             "losses": 0,
-            "goals_for": 6,
+            "goals_for": 9,
             "goals_against": 1,
             "points": 9,
             "rank": 1,
-            "goal_difference": 5
+            "goal_difference": 8
           },
           {
             "team": "Uruguay",
@@ -953,34 +953,34 @@
             "draws": 1,
             "losses": 1,
             "goals_for": 4,
-            "goals_against": 5,
+            "goals_against": 4,
             "points": 4,
             "rank": 2,
-            "goal_difference": -1
-          },
-          {
-            "team": "Saudi Arabia",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
-            "goals_for": 3,
-            "goals_against": 5,
-            "points": 2,
-            "rank": 3,
-            "goal_difference": -2
+            "goal_difference": 0
           },
           {
             "team": "Cape Verde Islands",
             "played": 3,
             "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 2,
+            "rank": 3,
+            "goal_difference": -3
+          },
+          {
+            "team": "Saudi Arabia",
+            "played": 3,
+            "wins": 0,
             "draws": 1,
             "losses": 2,
-            "goals_for": 3,
+            "goals_for": 0,
             "goals_against": 5,
             "points": 1,
             "rank": 4,
-            "goal_difference": -2
+            "goal_difference": -5
           }
         ],
         "qualified": [
@@ -1002,19 +1002,19 @@
             "best_third": 0.14,
             "elimination": 0.13670000000000004
           },
-          "Saudi Arabia": {
-            "qualification": 0.37118,
-            "first": 0.02,
-            "second": 0.11,
-            "best_third": 0.15999999999999998,
-            "elimination": 0.6288199999999999
-          },
           "Cape Verde Islands": {
             "qualification": 0.31404,
             "first": 0.01,
             "second": 0.15,
             "best_third": 0.18000000000000002,
             "elimination": 0.68596
+          },
+          "Saudi Arabia": {
+            "qualification": 0.37118,
+            "first": 0.02,
+            "second": 0.11,
+            "best_third": 0.15999999999999998,
+            "elimination": 0.6288199999999999
           }
         },
         "scenario_vs_marginal_notes": []
@@ -1025,37 +1025,37 @@
           {
             "team_a": "France",
             "team_b": "Senegal",
-            "score": "0-0",
+            "score": "3-1",
             "locked": false
           },
           {
             "team_a": "Iraq",
             "team_b": "Norway",
-            "score": "0-0",
+            "score": "3-2",
             "locked": false
           },
           {
             "team_a": "France",
+            "team_b": "Iraq",
+            "score": "5-0",
+            "locked": false
+          },
+          {
+            "team_a": "Norway",
+            "team_b": "Senegal",
+            "score": "0-3",
+            "locked": false
+          },
+          {
+            "team_a": "Senegal",
             "team_b": "Iraq",
             "score": "3-0",
             "locked": false
           },
           {
             "team_a": "Norway",
-            "team_b": "Senegal",
-            "score": "1-0",
-            "locked": false
-          },
-          {
-            "team_a": "Senegal",
-            "team_b": "Iraq",
-            "score": "0-4",
-            "locked": false
-          },
-          {
-            "team_a": "Norway",
             "team_b": "France",
-            "score": "0-0",
+            "score": "0-1",
             "locked": false
           }
         ],
@@ -1063,56 +1063,55 @@
           {
             "team": "France",
             "played": 3,
-            "wins": 1,
-            "draws": 2,
+            "wins": 3,
+            "draws": 0,
             "losses": 0,
-            "goals_for": 3,
-            "goals_against": 0,
-            "points": 5,
+            "goals_for": 9,
+            "goals_against": 1,
+            "points": 9,
             "rank": 1,
-            "goal_difference": 3
+            "goal_difference": 8
           },
           {
-            "team": "Norway",
+            "team": "Senegal",
             "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
-            "goals_for": 1,
-            "goals_against": 0,
-            "points": 5,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 3,
+            "points": 6,
             "rank": 2,
-            "goal_difference": 1
+            "goal_difference": 4
           },
           {
             "team": "Iraq",
             "played": 3,
             "wins": 1,
-            "draws": 1,
-            "losses": 1,
-            "goals_for": 4,
-            "goals_against": 3,
-            "points": 4,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 10,
+            "points": 3,
             "rank": 3,
-            "goal_difference": 1
+            "goal_difference": -7
           },
           {
-            "team": "Senegal",
+            "team": "Norway",
             "played": 3,
             "wins": 0,
-            "draws": 1,
-            "losses": 2,
-            "goals_for": 0,
-            "goals_against": 5,
-            "points": 1,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 7,
+            "points": 0,
             "rank": 4,
             "goal_difference": -5
           }
         ],
         "qualified": [
           "France",
-          "Norway",
-          "Iraq"
+          "Senegal"
         ],
         "marginal_qualification_probabilities": {
           "France": {
@@ -1122,12 +1121,12 @@
             "best_third": 0.11999999999999994,
             "elimination": 0.10162000000000004
           },
-          "Norway": {
-            "qualification": 0.76774,
-            "first": 0.25,
-            "second": 0.21,
-            "best_third": 0.26,
-            "elimination": 0.23226000000000002
+          "Senegal": {
+            "qualification": 0.74324,
+            "first": 0.2,
+            "second": 0.38,
+            "best_third": 0.16000000000000003,
+            "elimination": 0.25676
           },
           "Iraq": {
             "qualification": 0.30482,
@@ -1136,12 +1135,12 @@
             "best_third": 0.14,
             "elimination": 0.69518
           },
-          "Senegal": {
-            "qualification": 0.74324,
-            "first": 0.2,
-            "second": 0.38,
-            "best_third": 0.16000000000000003,
-            "elimination": 0.25676
+          "Norway": {
+            "qualification": 0.76774,
+            "first": 0.25,
+            "second": 0.21,
+            "best_third": 0.26,
+            "elimination": 0.23226000000000002
           }
         },
         "scenario_vs_marginal_notes": []
@@ -1152,37 +1151,37 @@
           {
             "team_a": "Argentina",
             "team_b": "Algeria",
-            "score": "4-0",
+            "score": "3-2",
             "locked": false
           },
           {
             "team_a": "Austria",
             "team_b": "Jordan",
-            "score": "1-1",
+            "score": "3-1",
             "locked": false
           },
           {
             "team_a": "Argentina",
             "team_b": "Austria",
-            "score": "1-1",
+            "score": "3-1",
             "locked": false
           },
           {
             "team_a": "Jordan",
             "team_b": "Algeria",
-            "score": "1-1",
+            "score": "2-5",
             "locked": false
           },
           {
             "team_a": "Algeria",
             "team_b": "Austria",
-            "score": "0-0",
+            "score": "0-1",
             "locked": false
           },
           {
             "team_a": "Jordan",
             "team_b": "Argentina",
-            "score": "0-1",
+            "score": "0-0",
             "locked": false
           }
         ],
@@ -1194,51 +1193,52 @@
             "draws": 1,
             "losses": 0,
             "goals_for": 6,
-            "goals_against": 1,
+            "goals_against": 3,
             "points": 7,
             "rank": 1,
-            "goal_difference": 5
+            "goal_difference": 3
           },
           {
             "team": "Austria",
             "played": 3,
-            "wins": 0,
-            "draws": 3,
-            "losses": 0,
-            "goals_for": 2,
-            "goals_against": 2,
-            "points": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 4,
+            "points": 6,
             "rank": 2,
-            "goal_difference": 0
+            "goal_difference": 1
+          },
+          {
+            "team": "Algeria",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 7,
+            "goals_against": 6,
+            "points": 3,
+            "rank": 3,
+            "goal_difference": 1
           },
           {
             "team": "Jordan",
             "played": 3,
             "wins": 0,
-            "draws": 2,
-            "losses": 1,
-            "goals_for": 2,
-            "goals_against": 3,
-            "points": 2,
-            "rank": 3,
-            "goal_difference": -1
-          },
-          {
-            "team": "Algeria",
-            "played": 3,
-            "wins": 0,
-            "draws": 2,
-            "losses": 1,
-            "goals_for": 1,
-            "goals_against": 5,
-            "points": 2,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 8,
+            "points": 1,
             "rank": 4,
-            "goal_difference": -4
+            "goal_difference": -5
           }
         ],
         "qualified": [
           "Argentina",
-          "Austria"
+          "Austria",
+          "Algeria"
         ],
         "marginal_qualification_probabilities": {
           "Argentina": {
@@ -1255,19 +1255,19 @@
             "best_third": 0.19999999999999996,
             "elimination": 0.31845999999999997
           },
-          "Jordan": {
-            "qualification": 0.48798,
-            "first": 0.09,
-            "second": 0.25,
-            "best_third": 0.16000000000000003,
-            "elimination": 0.5120199999999999
-          },
           "Algeria": {
             "qualification": 0.50714,
             "first": 0.06,
             "second": 0.19,
             "best_third": 0.24,
             "elimination": 0.49285999999999996
+          },
+          "Jordan": {
+            "qualification": 0.48798,
+            "first": 0.09,
+            "second": 0.25,
+            "best_third": 0.16000000000000003,
+            "elimination": 0.5120199999999999
           }
         },
         "scenario_vs_marginal_notes": []
@@ -1278,37 +1278,37 @@
           {
             "team_a": "Portugal",
             "team_b": "Congo DR",
-            "score": "1-0",
+            "score": "2-2",
             "locked": false
           },
           {
             "team_a": "Uzbekistan",
             "team_b": "Colombia",
-            "score": "2-5",
+            "score": "0-0",
             "locked": false
           },
           {
             "team_a": "Portugal",
             "team_b": "Uzbekistan",
-            "score": "4-0",
+            "score": "2-0",
             "locked": false
           },
           {
             "team_a": "Colombia",
             "team_b": "Congo DR",
-            "score": "5-1",
+            "score": "3-0",
             "locked": false
           },
           {
             "team_a": "Colombia",
             "team_b": "Portugal",
-            "score": "3-0",
+            "score": "3-2",
             "locked": false
           },
           {
             "team_a": "Congo DR",
             "team_b": "Uzbekistan",
-            "score": "0-3",
+            "score": "0-2",
             "locked": false
           }
         ],
@@ -1316,50 +1316,50 @@
           {
             "team": "Colombia",
             "played": 3,
-            "wins": 3,
-            "draws": 0,
+            "wins": 2,
+            "draws": 1,
             "losses": 0,
-            "goals_for": 13,
-            "goals_against": 3,
-            "points": 9,
+            "goals_for": 6,
+            "goals_against": 2,
+            "points": 7,
             "rank": 1,
-            "goal_difference": 10
+            "goal_difference": 4
           },
           {
             "team": "Portugal",
             "played": 3,
-            "wins": 2,
-            "draws": 0,
+            "wins": 1,
+            "draws": 1,
             "losses": 1,
-            "goals_for": 5,
-            "goals_against": 3,
-            "points": 6,
+            "goals_for": 6,
+            "goals_against": 5,
+            "points": 4,
             "rank": 2,
-            "goal_difference": 2
+            "goal_difference": 1
           },
           {
             "team": "Uzbekistan",
             "played": 3,
             "wins": 1,
-            "draws": 0,
-            "losses": 2,
-            "goals_for": 5,
-            "goals_against": 9,
-            "points": 3,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 4,
             "rank": 3,
-            "goal_difference": -4
+            "goal_difference": 0
           },
           {
             "team": "Congo DR",
             "played": 3,
             "wins": 0,
-            "draws": 0,
-            "losses": 3,
-            "goals_for": 1,
-            "goals_against": 9,
-            "points": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 7,
+            "points": 1,
             "rank": 4,
-            "goal_difference": -8
+            "goal_difference": -5
           }
         ],
         "qualified": [
@@ -1405,103 +1405,96 @@
           {
             "team_a": "England",
             "team_b": "Croatia",
-            "score": "0-1",
+            "score": "6-0",
             "locked": false
           },
           {
             "team_a": "Ghana",
             "team_b": "Panama",
-            "score": "0-1",
+            "score": "1-3",
             "locked": false
           },
           {
             "team_a": "England",
             "team_b": "Ghana",
-            "score": "1-1",
+            "score": "2-1",
             "locked": false
           },
           {
             "team_a": "Panama",
             "team_b": "Croatia",
-            "score": "2-4",
+            "score": "1-1",
             "locked": false
           },
           {
             "team_a": "Croatia",
             "team_b": "Ghana",
-            "score": "2-0",
+            "score": "2-1",
             "locked": false
           },
           {
             "team_a": "Panama",
             "team_b": "England",
-            "score": "0-1",
+            "score": "0-2",
             "locked": false
           }
         ],
         "table": [
           {
-            "team": "Croatia",
+            "team": "England",
             "played": 3,
             "wins": 3,
             "draws": 0,
             "losses": 0,
-            "goals_for": 7,
-            "goals_against": 2,
+            "goals_for": 10,
+            "goals_against": 1,
             "points": 9,
             "rank": 1,
-            "goal_difference": 5
-          },
-          {
-            "team": "England",
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
-            "goals_for": 2,
-            "goals_against": 2,
-            "points": 4,
-            "rank": 2,
-            "goal_difference": 0
+            "goal_difference": 9
           },
           {
             "team": "Panama",
             "played": 3,
             "wins": 1,
-            "draws": 0,
-            "losses": 2,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 4,
+            "points": 4,
+            "rank": 2,
+            "goal_difference": 0
+          },
+          {
+            "team": "Croatia",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
             "goals_for": 3,
-            "goals_against": 5,
-            "points": 3,
+            "goals_against": 8,
+            "points": 4,
             "rank": 3,
-            "goal_difference": -2
+            "goal_difference": -5
           },
           {
             "team": "Ghana",
             "played": 3,
             "wins": 0,
-            "draws": 1,
-            "losses": 2,
-            "goals_for": 1,
-            "goals_against": 4,
-            "points": 1,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 3,
+            "goals_against": 7,
+            "points": 0,
             "rank": 4,
-            "goal_difference": -3
+            "goal_difference": -4
           }
         ],
         "qualified": [
-          "Croatia",
           "England",
-          "Panama"
+          "Panama",
+          "Croatia"
         ],
         "marginal_qualification_probabilities": {
-          "Croatia": {
-            "qualification": 0.83378,
-            "first": 0.24,
-            "second": 0.42,
-            "best_third": 0.15999999999999998,
-            "elimination": 0.16622000000000003
-          },
           "England": {
             "qualification": 0.95368,
             "first": 0.62,
@@ -1515,6 +1508,13 @@
             "second": 0.23,
             "best_third": 0.3400000000000001,
             "elimination": 0.37046
+          },
+          "Croatia": {
+            "qualification": 0.83378,
+            "first": 0.24,
+            "second": 0.42,
+            "best_third": 0.15999999999999998,
+            "elimination": 0.16622000000000003
           },
           "Ghana": {
             "qualification": 0.24716,
@@ -1534,97 +1534,129 @@
         "team_a": "Spain",
         "team_b": "USA",
         "winner": "Spain",
-        "team_a_advance_probability": 0.9432864977275796
+        "team_a_advance_probability": 0.9432864977275796,
+        "winner_probability": 0.9432864977275796,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Argentina",
-        "team_b": "South Africa",
+        "team_b": "Bosnia & Herzegovina",
         "winner": "Argentina",
-        "team_a_advance_probability": 0.9203811148082843
+        "team_a_advance_probability": 0.9437032756513097,
+        "winner_probability": 0.9437032756513097,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "France",
-        "team_b": "New Zealand",
+        "team_b": "Türkiye",
         "winner": "France",
-        "team_a_advance_probability": 0.8992299224039687
+        "team_a_advance_probability": 0.9210672005021575,
+        "winner_probability": 0.9210672005021575,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "England",
-        "team_b": "Iraq",
+        "team_b": "South Africa",
         "winner": "England",
-        "team_a_advance_probability": 0.8535788785040295
+        "team_a_advance_probability": 0.881779305014635,
+        "winner_probability": 0.881779305014635,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Brazil",
-        "team_b": "Ivory Coast",
+        "team_b": "Egypt",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.8090565796256948
+        "team_a_advance_probability": 0.8084539547912586,
+        "winner_probability": 0.8084539547912586,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Portugal",
-        "team_b": "Sweden",
+        "team_b": "South Korea",
         "winner": "Portugal",
-        "team_a_advance_probability": 0.7520080778598813
+        "team_a_advance_probability": 0.7521018780521456,
+        "winner_probability": 0.7521018780521456,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Colombia",
         "team_b": "Panama",
         "winner": "Colombia",
-        "team_a_advance_probability": 0.7969701240554049
+        "team_a_advance_probability": 0.7969701240554049,
+        "winner_probability": 0.7969701240554049,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Netherlands",
         "team_b": "Uzbekistan",
-        "winner": "Uzbekistan",
-        "team_a_advance_probability": 0.717229645478065
+        "winner": "Netherlands",
+        "team_a_advance_probability": 0.717229645478065,
+        "winner_probability": 0.717229645478065,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Ecuador",
-        "team_b": "South Korea",
-        "winner": "South Korea",
-        "team_a_advance_probability": 0.6766906299322738
+        "team_b": "Algeria",
+        "winner": "Algeria",
+        "team_a_advance_probability": 0.6864800166048769,
+        "winner_probability": 0.3135199833951231,
+        "outcome_type": "upset"
       },
       {
         "team_a": "Germany",
         "team_b": "Iran",
-        "winner": "Germany",
-        "team_a_advance_probability": 0.6928137769614029
-      },
-      {
-        "team_a": "Norway",
-        "team_b": "Australia",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.6369547612972382
+        "winner": "Iran",
+        "team_a_advance_probability": 0.6928137769614029,
+        "winner_probability": 0.3071862230385971,
+        "outcome_type": "upset"
       },
       {
         "team_a": "Croatia",
-        "team_b": "Scotland",
-        "winner": "Croatia",
-        "team_a_advance_probability": 0.6884174155547627
+        "team_b": "Australia",
+        "winner": "Australia",
+        "team_a_advance_probability": 0.595311228515982,
+        "winner_probability": 0.40468877148401805,
+        "outcome_type": "upset"
       },
       {
         "team_a": "Japan",
-        "team_b": "Canada",
-        "winner": "Canada",
-        "team_a_advance_probability": 0.6615831859618544
+        "team_b": "Scotland",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.7200991108780318,
+        "winner_probability": 0.7200991108780318,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Belgium",
-        "team_b": "Morocco",
+        "team_b": "Canada",
         "winner": "Belgium",
-        "team_a_advance_probability": 0.5876362378670515
+        "team_a_advance_probability": 0.6554383285957207,
+        "winner_probability": 0.6554383285957207,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Uruguay",
-        "team_b": "Austria",
+        "team_b": "Morocco",
         "winner": "Uruguay",
-        "team_a_advance_probability": 0.6008761992517495
+        "team_a_advance_probability": 0.5986576950521595,
+        "winner_probability": 0.5986576950521595,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Switzerland",
-        "team_b": "Mexico",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.4758900672639371
+        "team_b": "Austria",
+        "winner": "Austria",
+        "team_a_advance_probability": 0.5654229108965407,
+        "winner_probability": 0.43457708910345927,
+        "outcome_type": "upset"
+      },
+      {
+        "team_a": "Mexico",
+        "team_b": "Senegal",
+        "winner": "Mexico",
+        "team_a_advance_probability": 0.5203075362076088,
+        "winner_probability": 0.5203075362076088,
+        "outcome_type": "favorite_win"
       }
     ],
     "round_of_16": [
@@ -1632,75 +1664,99 @@
         "team_a": "Spain",
         "team_b": "Argentina",
         "winner": "Spain",
-        "team_a_advance_probability": 0.5547208302051772
+        "team_a_advance_probability": 0.5547208302051772,
+        "winner_probability": 0.5547208302051772,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "France",
         "team_b": "England",
-        "winner": "England",
-        "team_a_advance_probability": 0.5277140175595263
+        "winner": "France",
+        "team_a_advance_probability": 0.5277140175595263,
+        "winner_probability": 0.5277140175595263,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Brazil",
         "team_b": "Portugal",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.5333888154969509
+        "team_a_advance_probability": 0.5333888154969509,
+        "winner_probability": 0.5333888154969509,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Colombia",
-        "team_b": "Uzbekistan",
-        "winner": "Colombia",
-        "team_a_advance_probability": 0.7639832626580786
+        "team_b": "Netherlands",
+        "winner": "Netherlands",
+        "team_a_advance_probability": 0.5643053148282987,
+        "winner_probability": 0.4356946851717013,
+        "outcome_type": "upset"
       },
       {
-        "team_a": "South Korea",
-        "team_b": "Germany",
-        "winner": "Germany",
-        "team_a_advance_probability": 0.27370542602175973
+        "team_a": "Algeria",
+        "team_b": "Iran",
+        "winner": "Iran",
+        "team_a_advance_probability": 0.44872599876260144,
+        "winner_probability": 0.5512740012373986,
+        "outcome_type": "favorite_win"
       },
       {
-        "team_a": "Norway",
-        "team_b": "Croatia",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5438978048073086
+        "team_a": "Australia",
+        "team_b": "Japan",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.37250826405777626,
+        "winner_probability": 0.6274917359422237,
+        "outcome_type": "favorite_win"
       },
       {
-        "team_a": "Canada",
-        "team_b": "Belgium",
-        "winner": "Canada",
-        "team_a_advance_probability": 0.3445616714042793
+        "team_a": "Belgium",
+        "team_b": "Uruguay",
+        "winner": "Uruguay",
+        "team_a_advance_probability": 0.4899381806462643,
+        "winner_probability": 0.5100618193537356,
+        "outcome_type": "favorite_win"
       },
       {
-        "team_a": "Uruguay",
-        "team_b": "Switzerland",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.5365002276846944
+        "team_a": "Austria",
+        "team_b": "Mexico",
+        "winner": "Mexico",
+        "team_a_advance_probability": 0.411537657644646,
+        "winner_probability": 0.588462342355354,
+        "outcome_type": "favorite_win"
       }
     ],
     "quarter_finals": [
       {
         "team_a": "Spain",
-        "team_b": "England",
+        "team_b": "France",
         "winner": "Spain",
-        "team_a_advance_probability": 0.668759281828043
+        "team_a_advance_probability": 0.6432164280011143,
+        "winner_probability": 0.6432164280011143,
+        "outcome_type": "favorite_win"
       },
       {
         "team_a": "Brazil",
-        "team_b": "Colombia",
+        "team_b": "Netherlands",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.5050558057099598
+        "team_a_advance_probability": 0.5684193663722541,
+        "winner_probability": 0.5684193663722541,
+        "outcome_type": "favorite_win"
       },
       {
-        "team_a": "Germany",
-        "team_b": "Norway",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5445656553541209
+        "team_a": "Iran",
+        "team_b": "Japan",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.3571843012385249,
+        "winner_probability": 0.642815698761475,
+        "outcome_type": "favorite_win"
       },
       {
-        "team_a": "Canada",
-        "team_b": "Switzerland",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.3639202291210457
+        "team_a": "Uruguay",
+        "team_b": "Mexico",
+        "winner": "Uruguay",
+        "team_a_advance_probability": 0.511585055992146,
+        "winner_probability": 0.511585055992146,
+        "outcome_type": "favorite_win"
       }
     ],
     "semi_finals": [
@@ -1708,21 +1764,27 @@
         "team_a": "Spain",
         "team_b": "Brazil",
         "winner": "Spain",
-        "team_a_advance_probability": 0.6805624876115384
+        "team_a_advance_probability": 0.6805624876115384,
+        "winner_probability": 0.6805624876115384,
+        "outcome_type": "favorite_win"
       },
       {
-        "team_a": "Norway",
-        "team_b": "Switzerland",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5370295744424807
+        "team_a": "Japan",
+        "team_b": "Uruguay",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.4883133885766506,
+        "winner_probability": 0.4883133885766506,
+        "outcome_type": "upset"
       }
     ],
     "final": [
       {
         "team_a": "Spain",
-        "team_b": "Norway",
+        "team_b": "Japan",
         "winner": "Spain",
-        "team_a_advance_probability": 0.7781387337084136
+        "team_a_advance_probability": 0.78767222070611,
+        "winner_probability": 0.78767222070611,
+        "outcome_type": "favorite_win"
       }
     ]
   },
@@ -1732,9 +1794,9 @@
   },
   "final": {
     "team_a": "Spain",
-    "team_b": "Norway",
+    "team_b": "Japan",
     "winner": "Spain",
-    "team_a_advance_probability": 0.7781387337084136
+    "team_a_advance_probability": 0.78767222070611
   },
   "team_paths": {
     "Spain": [
@@ -1743,35 +1805,45 @@
         "team_a": "Spain",
         "team_b": "USA",
         "winner": "Spain",
-        "team_a_advance_probability": 0.9432864977275796
+        "team_a_advance_probability": 0.9432864977275796,
+        "winner_probability": 0.9432864977275796,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
         "team_a": "Spain",
         "team_b": "Argentina",
         "winner": "Spain",
-        "team_a_advance_probability": 0.5547208302051772
+        "team_a_advance_probability": 0.5547208302051772,
+        "winner_probability": 0.5547208302051772,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "quarter_finals",
         "team_a": "Spain",
-        "team_b": "England",
+        "team_b": "France",
         "winner": "Spain",
-        "team_a_advance_probability": 0.668759281828043
+        "team_a_advance_probability": 0.6432164280011143,
+        "winner_probability": 0.6432164280011143,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "semi_finals",
         "team_a": "Spain",
         "team_b": "Brazil",
         "winner": "Spain",
-        "team_a_advance_probability": 0.6805624876115384
+        "team_a_advance_probability": 0.6805624876115384,
+        "winner_probability": 0.6805624876115384,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "final",
         "team_a": "Spain",
-        "team_b": "Norway",
+        "team_b": "Japan",
         "winner": "Spain",
-        "team_a_advance_probability": 0.7781387337084136
+        "team_a_advance_probability": 0.78767222070611,
+        "winner_probability": 0.78767222070611,
+        "outcome_type": "favorite_win"
       }
     ],
     "USA": [
@@ -1780,153 +1852,191 @@
         "team_a": "Spain",
         "team_b": "USA",
         "winner": "Spain",
-        "team_a_advance_probability": 0.9432864977275796
+        "team_a_advance_probability": 0.9432864977275796,
+        "winner_probability": 0.9432864977275796,
+        "outcome_type": "favorite_win"
       }
     ],
     "Argentina": [
       {
         "round": "round_of_32",
         "team_a": "Argentina",
-        "team_b": "South Africa",
+        "team_b": "Bosnia & Herzegovina",
         "winner": "Argentina",
-        "team_a_advance_probability": 0.9203811148082843
+        "team_a_advance_probability": 0.9437032756513097,
+        "winner_probability": 0.9437032756513097,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
         "team_a": "Spain",
         "team_b": "Argentina",
         "winner": "Spain",
-        "team_a_advance_probability": 0.5547208302051772
+        "team_a_advance_probability": 0.5547208302051772,
+        "winner_probability": 0.5547208302051772,
+        "outcome_type": "favorite_win"
       }
     ],
-    "South Africa": [
+    "Bosnia & Herzegovina": [
       {
         "round": "round_of_32",
         "team_a": "Argentina",
-        "team_b": "South Africa",
+        "team_b": "Bosnia & Herzegovina",
         "winner": "Argentina",
-        "team_a_advance_probability": 0.9203811148082843
+        "team_a_advance_probability": 0.9437032756513097,
+        "winner_probability": 0.9437032756513097,
+        "outcome_type": "favorite_win"
       }
     ],
     "France": [
       {
         "round": "round_of_32",
         "team_a": "France",
-        "team_b": "New Zealand",
+        "team_b": "Türkiye",
         "winner": "France",
-        "team_a_advance_probability": 0.8992299224039687
+        "team_a_advance_probability": 0.9210672005021575,
+        "winner_probability": 0.9210672005021575,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
         "team_a": "France",
         "team_b": "England",
-        "winner": "England",
-        "team_a_advance_probability": 0.5277140175595263
+        "winner": "France",
+        "team_a_advance_probability": 0.5277140175595263,
+        "winner_probability": 0.5277140175595263,
+        "outcome_type": "favorite_win"
+      },
+      {
+        "round": "quarter_finals",
+        "team_a": "Spain",
+        "team_b": "France",
+        "winner": "Spain",
+        "team_a_advance_probability": 0.6432164280011143,
+        "winner_probability": 0.6432164280011143,
+        "outcome_type": "favorite_win"
       }
     ],
-    "New Zealand": [
+    "Türkiye": [
       {
         "round": "round_of_32",
         "team_a": "France",
-        "team_b": "New Zealand",
+        "team_b": "Türkiye",
         "winner": "France",
-        "team_a_advance_probability": 0.8992299224039687
+        "team_a_advance_probability": 0.9210672005021575,
+        "winner_probability": 0.9210672005021575,
+        "outcome_type": "favorite_win"
       }
     ],
     "England": [
       {
         "round": "round_of_32",
         "team_a": "England",
-        "team_b": "Iraq",
+        "team_b": "South Africa",
         "winner": "England",
-        "team_a_advance_probability": 0.8535788785040295
+        "team_a_advance_probability": 0.881779305014635,
+        "winner_probability": 0.881779305014635,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
         "team_a": "France",
         "team_b": "England",
-        "winner": "England",
-        "team_a_advance_probability": 0.5277140175595263
-      },
-      {
-        "round": "quarter_finals",
-        "team_a": "Spain",
-        "team_b": "England",
-        "winner": "Spain",
-        "team_a_advance_probability": 0.668759281828043
+        "winner": "France",
+        "team_a_advance_probability": 0.5277140175595263,
+        "winner_probability": 0.5277140175595263,
+        "outcome_type": "favorite_win"
       }
     ],
-    "Iraq": [
+    "South Africa": [
       {
         "round": "round_of_32",
         "team_a": "England",
-        "team_b": "Iraq",
+        "team_b": "South Africa",
         "winner": "England",
-        "team_a_advance_probability": 0.8535788785040295
+        "team_a_advance_probability": 0.881779305014635,
+        "winner_probability": 0.881779305014635,
+        "outcome_type": "favorite_win"
       }
     ],
     "Brazil": [
       {
         "round": "round_of_32",
         "team_a": "Brazil",
-        "team_b": "Ivory Coast",
+        "team_b": "Egypt",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.8090565796256948
+        "team_a_advance_probability": 0.8084539547912586,
+        "winner_probability": 0.8084539547912586,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
         "team_a": "Brazil",
         "team_b": "Portugal",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.5333888154969509
+        "team_a_advance_probability": 0.5333888154969509,
+        "winner_probability": 0.5333888154969509,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "quarter_finals",
         "team_a": "Brazil",
-        "team_b": "Colombia",
+        "team_b": "Netherlands",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.5050558057099598
+        "team_a_advance_probability": 0.5684193663722541,
+        "winner_probability": 0.5684193663722541,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "semi_finals",
         "team_a": "Spain",
         "team_b": "Brazil",
         "winner": "Spain",
-        "team_a_advance_probability": 0.6805624876115384
+        "team_a_advance_probability": 0.6805624876115384,
+        "winner_probability": 0.6805624876115384,
+        "outcome_type": "favorite_win"
       }
     ],
-    "Ivory Coast": [
+    "Egypt": [
       {
         "round": "round_of_32",
         "team_a": "Brazil",
-        "team_b": "Ivory Coast",
+        "team_b": "Egypt",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.8090565796256948
+        "team_a_advance_probability": 0.8084539547912586,
+        "winner_probability": 0.8084539547912586,
+        "outcome_type": "favorite_win"
       }
     ],
     "Portugal": [
       {
         "round": "round_of_32",
         "team_a": "Portugal",
-        "team_b": "Sweden",
+        "team_b": "South Korea",
         "winner": "Portugal",
-        "team_a_advance_probability": 0.7520080778598813
+        "team_a_advance_probability": 0.7521018780521456,
+        "winner_probability": 0.7521018780521456,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
         "team_a": "Brazil",
         "team_b": "Portugal",
         "winner": "Brazil",
-        "team_a_advance_probability": 0.5333888154969509
+        "team_a_advance_probability": 0.5333888154969509,
+        "winner_probability": 0.5333888154969509,
+        "outcome_type": "favorite_win"
       }
     ],
-    "Sweden": [
+    "South Korea": [
       {
         "round": "round_of_32",
         "team_a": "Portugal",
-        "team_b": "Sweden",
+        "team_b": "South Korea",
         "winner": "Portugal",
-        "team_a_advance_probability": 0.7520080778598813
+        "team_a_advance_probability": 0.7521018780521456,
+        "winner_probability": 0.7521018780521456,
+        "outcome_type": "favorite_win"
       }
     ],
     "Colombia": [
@@ -1935,21 +2045,18 @@
         "team_a": "Colombia",
         "team_b": "Panama",
         "winner": "Colombia",
-        "team_a_advance_probability": 0.7969701240554049
+        "team_a_advance_probability": 0.7969701240554049,
+        "winner_probability": 0.7969701240554049,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
         "team_a": "Colombia",
-        "team_b": "Uzbekistan",
-        "winner": "Colombia",
-        "team_a_advance_probability": 0.7639832626580786
-      },
-      {
-        "round": "quarter_finals",
-        "team_a": "Brazil",
-        "team_b": "Colombia",
-        "winner": "Brazil",
-        "team_a_advance_probability": 0.5050558057099598
+        "team_b": "Netherlands",
+        "winner": "Netherlands",
+        "team_a_advance_probability": 0.5643053148282987,
+        "winner_probability": 0.4356946851717013,
+        "outcome_type": "upset"
       }
     ],
     "Panama": [
@@ -1958,7 +2065,9 @@
         "team_a": "Colombia",
         "team_b": "Panama",
         "winner": "Colombia",
-        "team_a_advance_probability": 0.7969701240554049
+        "team_a_advance_probability": 0.7969701240554049,
+        "winner_probability": 0.7969701240554049,
+        "outcome_type": "favorite_win"
       }
     ],
     "Netherlands": [
@@ -1966,8 +2075,28 @@
         "round": "round_of_32",
         "team_a": "Netherlands",
         "team_b": "Uzbekistan",
-        "winner": "Uzbekistan",
-        "team_a_advance_probability": 0.717229645478065
+        "winner": "Netherlands",
+        "team_a_advance_probability": 0.717229645478065,
+        "winner_probability": 0.717229645478065,
+        "outcome_type": "favorite_win"
+      },
+      {
+        "round": "round_of_16",
+        "team_a": "Colombia",
+        "team_b": "Netherlands",
+        "winner": "Netherlands",
+        "team_a_advance_probability": 0.5643053148282987,
+        "winner_probability": 0.4356946851717013,
+        "outcome_type": "upset"
+      },
+      {
+        "round": "quarter_finals",
+        "team_a": "Brazil",
+        "team_b": "Netherlands",
+        "winner": "Brazil",
+        "team_a_advance_probability": 0.5684193663722541,
+        "winner_probability": 0.5684193663722541,
+        "outcome_type": "favorite_win"
       }
     ],
     "Uzbekistan": [
@@ -1975,40 +2104,41 @@
         "round": "round_of_32",
         "team_a": "Netherlands",
         "team_b": "Uzbekistan",
-        "winner": "Uzbekistan",
-        "team_a_advance_probability": 0.717229645478065
-      },
-      {
-        "round": "round_of_16",
-        "team_a": "Colombia",
-        "team_b": "Uzbekistan",
-        "winner": "Colombia",
-        "team_a_advance_probability": 0.7639832626580786
+        "winner": "Netherlands",
+        "team_a_advance_probability": 0.717229645478065,
+        "winner_probability": 0.717229645478065,
+        "outcome_type": "favorite_win"
       }
     ],
     "Ecuador": [
       {
         "round": "round_of_32",
         "team_a": "Ecuador",
-        "team_b": "South Korea",
-        "winner": "South Korea",
-        "team_a_advance_probability": 0.6766906299322738
+        "team_b": "Algeria",
+        "winner": "Algeria",
+        "team_a_advance_probability": 0.6864800166048769,
+        "winner_probability": 0.3135199833951231,
+        "outcome_type": "upset"
       }
     ],
-    "South Korea": [
+    "Algeria": [
       {
         "round": "round_of_32",
         "team_a": "Ecuador",
-        "team_b": "South Korea",
-        "winner": "South Korea",
-        "team_a_advance_probability": 0.6766906299322738
+        "team_b": "Algeria",
+        "winner": "Algeria",
+        "team_a_advance_probability": 0.6864800166048769,
+        "winner_probability": 0.3135199833951231,
+        "outcome_type": "upset"
       },
       {
         "round": "round_of_16",
-        "team_a": "South Korea",
-        "team_b": "Germany",
-        "winner": "Germany",
-        "team_a_advance_probability": 0.27370542602175973
+        "team_a": "Algeria",
+        "team_b": "Iran",
+        "winner": "Iran",
+        "team_a_advance_probability": 0.44872599876260144,
+        "winner_probability": 0.5512740012373986,
+        "outcome_type": "favorite_win"
       }
     ],
     "Germany": [
@@ -2016,22 +2146,10 @@
         "round": "round_of_32",
         "team_a": "Germany",
         "team_b": "Iran",
-        "winner": "Germany",
-        "team_a_advance_probability": 0.6928137769614029
-      },
-      {
-        "round": "round_of_16",
-        "team_a": "South Korea",
-        "team_b": "Germany",
-        "winner": "Germany",
-        "team_a_advance_probability": 0.27370542602175973
-      },
-      {
-        "round": "quarter_finals",
-        "team_a": "Germany",
-        "team_b": "Norway",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5445656553541209
+        "winner": "Iran",
+        "team_a_advance_probability": 0.6928137769614029,
+        "winner_probability": 0.3071862230385971,
+        "outcome_type": "upset"
       }
     ],
     "Iran": [
@@ -2039,200 +2157,268 @@
         "round": "round_of_32",
         "team_a": "Germany",
         "team_b": "Iran",
-        "winner": "Germany",
-        "team_a_advance_probability": 0.6928137769614029
-      }
-    ],
-    "Norway": [
-      {
-        "round": "round_of_32",
-        "team_a": "Norway",
-        "team_b": "Australia",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.6369547612972382
+        "winner": "Iran",
+        "team_a_advance_probability": 0.6928137769614029,
+        "winner_probability": 0.3071862230385971,
+        "outcome_type": "upset"
       },
       {
         "round": "round_of_16",
-        "team_a": "Norway",
-        "team_b": "Croatia",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5438978048073086
+        "team_a": "Algeria",
+        "team_b": "Iran",
+        "winner": "Iran",
+        "team_a_advance_probability": 0.44872599876260144,
+        "winner_probability": 0.5512740012373986,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "quarter_finals",
-        "team_a": "Germany",
-        "team_b": "Norway",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5445656553541209
-      },
-      {
-        "round": "semi_finals",
-        "team_a": "Norway",
-        "team_b": "Switzerland",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5370295744424807
-      },
-      {
-        "round": "final",
-        "team_a": "Spain",
-        "team_b": "Norway",
-        "winner": "Spain",
-        "team_a_advance_probability": 0.7781387337084136
-      }
-    ],
-    "Australia": [
-      {
-        "round": "round_of_32",
-        "team_a": "Norway",
-        "team_b": "Australia",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.6369547612972382
+        "team_a": "Iran",
+        "team_b": "Japan",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.3571843012385249,
+        "winner_probability": 0.642815698761475,
+        "outcome_type": "favorite_win"
       }
     ],
     "Croatia": [
       {
         "round": "round_of_32",
         "team_a": "Croatia",
-        "team_b": "Scotland",
-        "winner": "Croatia",
-        "team_a_advance_probability": 0.6884174155547627
-      },
-      {
-        "round": "round_of_16",
-        "team_a": "Norway",
-        "team_b": "Croatia",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5438978048073086
+        "team_b": "Australia",
+        "winner": "Australia",
+        "team_a_advance_probability": 0.595311228515982,
+        "winner_probability": 0.40468877148401805,
+        "outcome_type": "upset"
       }
     ],
-    "Scotland": [
+    "Australia": [
       {
         "round": "round_of_32",
         "team_a": "Croatia",
-        "team_b": "Scotland",
-        "winner": "Croatia",
-        "team_a_advance_probability": 0.6884174155547627
+        "team_b": "Australia",
+        "winner": "Australia",
+        "team_a_advance_probability": 0.595311228515982,
+        "winner_probability": 0.40468877148401805,
+        "outcome_type": "upset"
+      },
+      {
+        "round": "round_of_16",
+        "team_a": "Australia",
+        "team_b": "Japan",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.37250826405777626,
+        "winner_probability": 0.6274917359422237,
+        "outcome_type": "favorite_win"
       }
     ],
     "Japan": [
       {
         "round": "round_of_32",
         "team_a": "Japan",
-        "team_b": "Canada",
-        "winner": "Canada",
-        "team_a_advance_probability": 0.6615831859618544
-      }
-    ],
-    "Canada": [
-      {
-        "round": "round_of_32",
-        "team_a": "Japan",
-        "team_b": "Canada",
-        "winner": "Canada",
-        "team_a_advance_probability": 0.6615831859618544
+        "team_b": "Scotland",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.7200991108780318,
+        "winner_probability": 0.7200991108780318,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
-        "team_a": "Canada",
-        "team_b": "Belgium",
-        "winner": "Canada",
-        "team_a_advance_probability": 0.3445616714042793
+        "team_a": "Australia",
+        "team_b": "Japan",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.37250826405777626,
+        "winner_probability": 0.6274917359422237,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "quarter_finals",
-        "team_a": "Canada",
-        "team_b": "Switzerland",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.3639202291210457
+        "team_a": "Iran",
+        "team_b": "Japan",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.3571843012385249,
+        "winner_probability": 0.642815698761475,
+        "outcome_type": "favorite_win"
+      },
+      {
+        "round": "semi_finals",
+        "team_a": "Japan",
+        "team_b": "Uruguay",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.4883133885766506,
+        "winner_probability": 0.4883133885766506,
+        "outcome_type": "upset"
+      },
+      {
+        "round": "final",
+        "team_a": "Spain",
+        "team_b": "Japan",
+        "winner": "Spain",
+        "team_a_advance_probability": 0.78767222070611,
+        "winner_probability": 0.78767222070611,
+        "outcome_type": "favorite_win"
+      }
+    ],
+    "Scotland": [
+      {
+        "round": "round_of_32",
+        "team_a": "Japan",
+        "team_b": "Scotland",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.7200991108780318,
+        "winner_probability": 0.7200991108780318,
+        "outcome_type": "favorite_win"
       }
     ],
     "Belgium": [
       {
         "round": "round_of_32",
         "team_a": "Belgium",
-        "team_b": "Morocco",
+        "team_b": "Canada",
         "winner": "Belgium",
-        "team_a_advance_probability": 0.5876362378670515
+        "team_a_advance_probability": 0.6554383285957207,
+        "winner_probability": 0.6554383285957207,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
-        "team_a": "Canada",
-        "team_b": "Belgium",
-        "winner": "Canada",
-        "team_a_advance_probability": 0.3445616714042793
+        "team_a": "Belgium",
+        "team_b": "Uruguay",
+        "winner": "Uruguay",
+        "team_a_advance_probability": 0.4899381806462643,
+        "winner_probability": 0.5100618193537356,
+        "outcome_type": "favorite_win"
       }
     ],
-    "Morocco": [
+    "Canada": [
       {
         "round": "round_of_32",
         "team_a": "Belgium",
-        "team_b": "Morocco",
+        "team_b": "Canada",
         "winner": "Belgium",
-        "team_a_advance_probability": 0.5876362378670515
+        "team_a_advance_probability": 0.6554383285957207,
+        "winner_probability": 0.6554383285957207,
+        "outcome_type": "favorite_win"
       }
     ],
     "Uruguay": [
       {
         "round": "round_of_32",
         "team_a": "Uruguay",
-        "team_b": "Austria",
+        "team_b": "Morocco",
         "winner": "Uruguay",
-        "team_a_advance_probability": 0.6008761992517495
+        "team_a_advance_probability": 0.5986576950521595,
+        "winner_probability": 0.5986576950521595,
+        "outcome_type": "favorite_win"
       },
       {
         "round": "round_of_16",
+        "team_a": "Belgium",
+        "team_b": "Uruguay",
+        "winner": "Uruguay",
+        "team_a_advance_probability": 0.4899381806462643,
+        "winner_probability": 0.5100618193537356,
+        "outcome_type": "favorite_win"
+      },
+      {
+        "round": "quarter_finals",
         "team_a": "Uruguay",
-        "team_b": "Switzerland",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.5365002276846944
+        "team_b": "Mexico",
+        "winner": "Uruguay",
+        "team_a_advance_probability": 0.511585055992146,
+        "winner_probability": 0.511585055992146,
+        "outcome_type": "favorite_win"
+      },
+      {
+        "round": "semi_finals",
+        "team_a": "Japan",
+        "team_b": "Uruguay",
+        "winner": "Japan",
+        "team_a_advance_probability": 0.4883133885766506,
+        "winner_probability": 0.4883133885766506,
+        "outcome_type": "upset"
       }
     ],
-    "Austria": [
+    "Morocco": [
       {
         "round": "round_of_32",
         "team_a": "Uruguay",
-        "team_b": "Austria",
+        "team_b": "Morocco",
         "winner": "Uruguay",
-        "team_a_advance_probability": 0.6008761992517495
+        "team_a_advance_probability": 0.5986576950521595,
+        "winner_probability": 0.5986576950521595,
+        "outcome_type": "favorite_win"
       }
     ],
     "Switzerland": [
       {
         "round": "round_of_32",
         "team_a": "Switzerland",
-        "team_b": "Mexico",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.4758900672639371
+        "team_b": "Austria",
+        "winner": "Austria",
+        "team_a_advance_probability": 0.5654229108965407,
+        "winner_probability": 0.43457708910345927,
+        "outcome_type": "upset"
+      }
+    ],
+    "Austria": [
+      {
+        "round": "round_of_32",
+        "team_a": "Switzerland",
+        "team_b": "Austria",
+        "winner": "Austria",
+        "team_a_advance_probability": 0.5654229108965407,
+        "winner_probability": 0.43457708910345927,
+        "outcome_type": "upset"
       },
       {
         "round": "round_of_16",
-        "team_a": "Uruguay",
-        "team_b": "Switzerland",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.5365002276846944
-      },
-      {
-        "round": "quarter_finals",
-        "team_a": "Canada",
-        "team_b": "Switzerland",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.3639202291210457
-      },
-      {
-        "round": "semi_finals",
-        "team_a": "Norway",
-        "team_b": "Switzerland",
-        "winner": "Norway",
-        "team_a_advance_probability": 0.5370295744424807
+        "team_a": "Austria",
+        "team_b": "Mexico",
+        "winner": "Mexico",
+        "team_a_advance_probability": 0.411537657644646,
+        "winner_probability": 0.588462342355354,
+        "outcome_type": "favorite_win"
       }
     ],
     "Mexico": [
       {
         "round": "round_of_32",
-        "team_a": "Switzerland",
+        "team_a": "Mexico",
+        "team_b": "Senegal",
+        "winner": "Mexico",
+        "team_a_advance_probability": 0.5203075362076088,
+        "winner_probability": 0.5203075362076088,
+        "outcome_type": "favorite_win"
+      },
+      {
+        "round": "round_of_16",
+        "team_a": "Austria",
         "team_b": "Mexico",
-        "winner": "Switzerland",
-        "team_a_advance_probability": 0.4758900672639371
+        "winner": "Mexico",
+        "team_a_advance_probability": 0.411537657644646,
+        "winner_probability": 0.588462342355354,
+        "outcome_type": "favorite_win"
+      },
+      {
+        "round": "quarter_finals",
+        "team_a": "Uruguay",
+        "team_b": "Mexico",
+        "winner": "Uruguay",
+        "team_a_advance_probability": 0.511585055992146,
+        "winner_probability": 0.511585055992146,
+        "outcome_type": "favorite_win"
+      }
+    ],
+    "Senegal": [
+      {
+        "round": "round_of_32",
+        "team_a": "Mexico",
+        "team_b": "Senegal",
+        "winner": "Mexico",
+        "team_a_advance_probability": 0.5203075362076088,
+        "winner_probability": 0.5203075362076088,
+        "outcome_type": "favorite_win"
       }
     ]
   },

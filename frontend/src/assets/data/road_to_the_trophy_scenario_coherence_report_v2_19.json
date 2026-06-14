@@ -41,18 +41,180 @@
       "displayed_points_before": 2,
       "displayed_rank_before": 3,
       "central_points_after": 6,
-      "central_rank_after": 1,
+      "central_rank_after": 2,
       "failure_frequency_if_available": 0.08,
       "diagnosis": "The previous complete path was selected with a champion-first knockout score that ignored group-stage representativeness.",
       "verdict": "pass"
     }
+  },
+  "knockout_outcome_audit": {
+    "before": {
+      "upsets": [
+        {
+          "round": "round_of_32",
+          "winner": "South Korea",
+          "opponent": "Croatia",
+          "winner_probability": 0.35470757082719173
+        },
+        {
+          "round": "round_of_32",
+          "winner": "Morocco",
+          "opponent": "Switzerland",
+          "winner_probability": 0.43490657027150514
+        },
+        {
+          "round": "quarter_finals",
+          "winner": "Belgium",
+          "opponent": "Germany",
+          "winner_probability": 0.44714027091673647
+        },
+        {
+          "round": "quarter_finals",
+          "winner": "Mexico",
+          "opponent": "Uruguay",
+          "winner_probability": 0.488414944007854
+        },
+        {
+          "round": "semi_finals",
+          "winner": "Mexico",
+          "opponent": "Belgium",
+          "winner_probability": 0.49806777782048783
+        }
+      ],
+      "repeated_upset_runs": {
+        "Mexico": {
+          "upset_count": 2,
+          "joint_probability": 0.24326374581630983,
+          "matches": [
+            {
+              "round": "quarter_finals",
+              "winner": "Mexico",
+              "opponent": "Uruguay",
+              "winner_probability": 0.488414944007854
+            },
+            {
+              "round": "semi_finals",
+              "winner": "Mexico",
+              "opponent": "Belgium",
+              "winner_probability": 0.49806777782048783
+            }
+          ]
+        }
+      }
+    },
+    "after": {
+      "upsets": [
+        {
+          "round": "round_of_32",
+          "winner": "Algeria",
+          "opponent": "Ecuador",
+          "winner_probability": 0.3135199833951231
+        },
+        {
+          "round": "round_of_32",
+          "winner": "Iran",
+          "opponent": "Germany",
+          "winner_probability": 0.3071862230385971
+        },
+        {
+          "round": "round_of_32",
+          "winner": "Australia",
+          "opponent": "Croatia",
+          "winner_probability": 0.40468877148401805
+        },
+        {
+          "round": "round_of_32",
+          "winner": "Austria",
+          "opponent": "Switzerland",
+          "winner_probability": 0.43457708910345927
+        },
+        {
+          "round": "round_of_16",
+          "winner": "Netherlands",
+          "opponent": "Colombia",
+          "winner_probability": 0.4356946851717013
+        },
+        {
+          "round": "semi_finals",
+          "winner": "Japan",
+          "opponent": "Uruguay",
+          "winner_probability": 0.4883133885766506
+        }
+      ],
+      "repeated_upset_runs": {}
+    },
+    "selection_rule": "Every realized knockout winner is scored by its direct head-to-head advancement probability."
+  },
+  "switzerland_case": {
+    "previous_selection_simulation_id": 6,
+    "previous_selection": {
+      "matches": [
+        {
+          "round": "round_of_32",
+          "opponent": "Mexico",
+          "team_probability": 0.4758900672639371,
+          "winner": "Switzerland",
+          "team_advanced": true,
+          "team_was_favorite": false,
+          "upset_win": true
+        },
+        {
+          "round": "round_of_16",
+          "opponent": "Uruguay",
+          "team_probability": 0.4634997723153056,
+          "winner": "Switzerland",
+          "team_advanced": true,
+          "team_was_favorite": false,
+          "upset_win": true
+        },
+        {
+          "round": "quarter_finals",
+          "opponent": "Canada",
+          "team_probability": 0.6360797708789543,
+          "winner": "Switzerland",
+          "team_advanced": true,
+          "team_was_favorite": true,
+          "upset_win": false
+        },
+        {
+          "round": "semi_finals",
+          "opponent": "Norway",
+          "team_probability": 0.4629704255575193,
+          "winner": "Norway",
+          "team_advanced": false,
+          "team_was_favorite": false,
+          "upset_win": false
+        }
+      ],
+      "upset_wins": 2,
+      "joint_probability_of_upset_wins": 0.22057493782395032
+    },
+    "central_selection_simulation_id": 12,
+    "central_selection": {
+      "matches": [
+        {
+          "round": "round_of_32",
+          "opponent": "Austria",
+          "team_probability": 0.5654229108965407,
+          "winner": "Austria",
+          "team_advanced": false,
+          "team_was_favorite": true,
+          "upset_win": false
+        }
+      ],
+      "upset_wins": 0,
+      "joint_probability_of_upset_wins": null
+    },
+    "repeated_upset_run_frequency_in_persisted_paths": 0.11,
+    "diagnosis": "Switzerland was not forced. The previous central-path score rewarded stage-reaching marginals but did not score each realized head-to-head outcome, allowing two consecutive mild upset wins to remain central.",
+    "repair": "The central score now uses each realized head-to-head advancement probability. The same rule applies to every team."
   },
   "belgium_case": {
     "qualification_probability": 0.88774,
     "displayed_points_before": 2,
     "displayed_rank_before": 3,
     "central_points_after": 6,
-    "central_rank_after": 1,
+    "central_rank_after": 2,
     "failure_frequency_if_available": 0.08,
     "diagnosis": "The previous complete path was selected with a champion-first knockout score that ignored group-stage representativeness.",
     "verdict": "pass"
@@ -62,7 +224,7 @@
     "uses_full_simulation_path": true,
     "uses_reconstruction_under_constraints": false,
     "arbitrary_choices": false,
-    "description": "Scores every persisted complete path across all group ranks, qualification outcomes, knockout winners and champion probability; no team or champion is forced."
+    "description": "Scores every persisted complete path across all group ranks, qualification outcomes, realized head-to-head knockout outcomes and champion probability; no team or champion is forced."
   },
   "coherence_checks_after": {
     "scores_to_points": true,

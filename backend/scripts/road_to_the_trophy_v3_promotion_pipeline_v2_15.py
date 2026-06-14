@@ -107,6 +107,19 @@ def build_official_view_model(representative_override: dict[str, Any] | None = N
             prediction = match_prediction(team_a, team_b, elos, team_profiles, "knockout")
             match_id = f"v3_{key}_{index}"
             explanation = public_explanation(prediction)
+            winner_probability = prediction["advance_probabilities"]["team_a"] if source["winner"] == team_a else prediction["advance_probabilities"]["team_b"]
+            favorite = prediction["favorite"]
+            explanation["scenario_outcome"] = {
+                "winner": source["winner"],
+                "winner_probability": winner_probability,
+                "is_upset": source["winner"] != favorite,
+                "note": (
+                    f"Surprise dans ce parcours complet : {source['winner']} se qualifie malgré une probabilité de {winner_probability:.1%}. "
+                    "Ce résultat a été tiré par la simulation; il reste possible mais n'est pas présenté comme le favori."
+                    if source["winner"] != favorite
+                    else f"{source['winner']} se qualifie dans ce parcours avec une probabilité tête-à-tête de {winner_probability:.1%}."
+                ),
+            }
             explanations[match_id] = explanation
             match = {
                 "match_id": match_id,
@@ -121,6 +134,8 @@ def build_official_view_model(representative_override: dict[str, Any] | None = N
                 "team_a_win_probability": prediction["advance_probabilities"]["team_a"],
                 "team_b_win_probability": prediction["advance_probabilities"]["team_b"],
                 "projected_winner": source["winner"],
+                "projected_winner_probability": winner_probability,
+                "is_upset": source["winner"] != favorite,
                 "round": key,
                 "round_label": label,
                 "next_match_id": f"v3_{list(ROUND_LABELS)[round_index + 1]}_{(index + 1) // 2}" if key != "final" else None,

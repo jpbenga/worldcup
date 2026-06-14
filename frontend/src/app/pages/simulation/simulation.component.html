@@ -66,9 +66,9 @@
             @for (round of data.rounds; track round.key; let roundIndex = $index) {
               @for (match of round.matches; track match.match_id; let matchIndex = $index) {
                 <button class="knockout-node atlas-node" [class.node-muted]="!isMatchVisible(match, round.key)" [class.node-focus]="selectedMatchId() === match.match_id || isMatchHighlighted(match)" [style.left.px]="matchPosition(roundIndex, matchIndex, round.matches.length).x" [style.top.px]="matchPosition(roundIndex, matchIndex, round.matches.length).y - 52" (click)="selectMatch(match)">
-                  <small>Projeté · à confirmer</small>
-                  <span [class.team-focus]="isTeamHighlighted(match.team_a)">{{ match.team_a }} <strong>{{ match.team_a_win_probability | percent: '1.0-0' }}</strong></span>
-                  <span [class.team-focus]="isTeamHighlighted(match.team_b)">{{ match.team_b }} <strong>{{ match.team_b_win_probability | percent: '1.0-0' }}</strong></span>
+                  <small>{{ match.is_upset ? 'Surprise du scénario · à expliquer' : 'Projeté · à confirmer' }}</small>
+                  <span [class.team-focus]="isTeamHighlighted(match.team_a)" [class.projected-advance]="match.projected_winner === match.team_a">{{ match.team_a }} <strong>{{ match.team_a_win_probability | percent: '1.0-0' }} {{ match.projected_winner === match.team_a ? '✓' : '' }}</strong></span>
+                  <span [class.team-focus]="isTeamHighlighted(match.team_b)" [class.projected-advance]="match.projected_winner === match.team_b">{{ match.team_b }} <strong>{{ match.team_b_win_probability | percent: '1.0-0' }} {{ match.projected_winner === match.team_b ? '✓' : '' }}</strong></span>
                 </button>
               }
             }
@@ -87,6 +87,7 @@
             @if (match.explanation; as explanation) {
               <h3>Pourquoi ?</h3>
               <p class="meta">{{ explanation.headline }} {{ explanation.upset_context }}</p>
+              <div class="score-block" [class.warning]="explanation.scenario_outcome.is_upset"><small>Résultat retenu dans le scénario central</small><strong>{{ explanation.scenario_outcome.winner }}</strong><span>{{ explanation.scenario_outcome.note }}</span></div>
               <p class="meta">Données non disponibles : {{ explanation.missing_context.join(', ') }}.</p>
             }
             <div class="mt-4 flex flex-wrap gap-2"><button class="control" (click)="selectTeam(match.home_team || match.team_a)">Suivre {{ match.home_team || match.team_a }}</button><button class="control" (click)="selectTeam(match.away_team || match.team_b)">Suivre {{ match.away_team || match.team_b }}</button></div>

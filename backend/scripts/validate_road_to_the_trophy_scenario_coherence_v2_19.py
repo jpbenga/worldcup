@@ -48,6 +48,17 @@ def main() -> None:
         and all(row["played"] == 3 for row in group["table"])
         for group in groups
     )
+    group_display_sorted = all(
+        [team["current_rank"] for team in group["teams"]] == [1, 2, 3, 4]
+        for group in view_model.get("groups", [])
+    )
+    outcomes_explained = all(
+        match.get("projected_winner") in (match.get("team_a"), match.get("team_b"))
+        and isinstance(match.get("is_upset"), bool)
+        and bool(match.get("explanation", {}).get("scenario_outcome", {}).get("note"))
+        for round_row in view_model.get("rounds", [])
+        for match in round_row.get("matches", [])
+    )
     progression = True
     rounds = scenario.get("knockout", {})
     names = ["round_of_32", "round_of_16", "quarter_finals", "semi_finals", "final"]
@@ -62,12 +73,14 @@ def main() -> None:
         "groups_and_matches_complete": group_shapes,
         "scores_to_points": report.get("coherence_checks_after", {}).get("scores_to_points") is True,
         "points_to_table": report.get("coherence_checks_after", {}).get("points_to_table") is True and group_tables,
+        "group_display_sorted_by_rank": group_display_sorted,
         "table_to_qualifiers": report.get("coherence_checks_after", {}).get("table_to_qualifiers") is True,
         "qualifiers_to_bracket": qualifiers == first_round_teams and len(first_round_teams) == 32,
         "bracket_to_paths": progression and report.get("coherence_checks_after", {}).get("bracket_to_paths") is True,
         "belgium_case_audited": report.get("belgium_case", {}).get("verdict") == "pass",
         "no_arbitrary_choice": report.get("repair_method", {}).get("arbitrary_choices") is False,
         "marginal_probabilities_separated": bool(view_model.get("central_scenario")) and bool(view_model.get("simulation_probabilities")),
+        "knockout_outcomes_explicitly_explained": outcomes_explained,
         "active_predictions_unchanged": same("backend/data/generated/predictions.json", "backend/data/snapshots/predictions.json", "frontend/src/assets/data/predictions.json"),
         "quant_hybrid_v2_2_unchanged": same("backend/data/generated/quant_engine_v2_2_results.json", "backend/data/snapshots/quant_engine_v2_2_results.json"),
         "optuna_unchanged": same("backend/data/generated/optuna_study_summary_v2_2.json", "backend/data/snapshots/optuna_study_summary_v2_2.json"),
