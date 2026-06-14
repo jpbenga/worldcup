@@ -1,0 +1,1344 @@
+{
+  "version": "v2.23",
+  "generated_at": "2026-06-14T21:17:22Z",
+  "atlas": {
+    "viewBox": {
+      "x": 0,
+      "y": 0,
+      "width": 4300,
+      "height": 3040
+    },
+    "nodes": [
+      {
+        "id": "group-A",
+        "type": "group",
+        "label": "Groupe A",
+        "x": 50,
+        "y": 80,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-B",
+        "type": "group",
+        "label": "Groupe B",
+        "x": 480,
+        "y": 80,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-C",
+        "type": "group",
+        "label": "Groupe C",
+        "x": 50,
+        "y": 570,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-D",
+        "type": "group",
+        "label": "Groupe D",
+        "x": 480,
+        "y": 570,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-E",
+        "type": "group",
+        "label": "Groupe E",
+        "x": 50,
+        "y": 1060,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-F",
+        "type": "group",
+        "label": "Groupe F",
+        "x": 480,
+        "y": 1060,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-G",
+        "type": "group",
+        "label": "Groupe G",
+        "x": 50,
+        "y": 1550,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-H",
+        "type": "group",
+        "label": "Groupe H",
+        "x": 480,
+        "y": 1550,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-I",
+        "type": "group",
+        "label": "Groupe I",
+        "x": 50,
+        "y": 2040,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-J",
+        "type": "group",
+        "label": "Groupe J",
+        "x": 480,
+        "y": 2040,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-K",
+        "type": "group",
+        "label": "Groupe K",
+        "x": 50,
+        "y": 2530,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "group-L",
+        "type": "group",
+        "label": "Groupe L",
+        "x": 480,
+        "y": 2530,
+        "width": 400,
+        "height": 470
+      },
+      {
+        "id": "match-v3_round_of_32_1",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 38.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_2",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 218.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_3",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 398.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_4",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 578.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_5",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 758.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_6",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 938.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_7",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 1118.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_8",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 1298.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_9",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 1478.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_10",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 1658.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_11",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 1838.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_12",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 2018.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_13",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 2198.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_14",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 2378.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_15",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 2558.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_32_16",
+        "type": "match",
+        "label": "16es de finale",
+        "x": 1050,
+        "y": 2738.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_1",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 128.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_2",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 488.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_3",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 848.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_4",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 1208.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_5",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 1568.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_6",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 1928.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_7",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 2288.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_round_of_16_8",
+        "type": "match",
+        "label": "8es de finale",
+        "x": 1710,
+        "y": 2648.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_quarter_finals_1",
+        "type": "match",
+        "label": "Quarts de finale",
+        "x": 2370,
+        "y": 308.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_quarter_finals_2",
+        "type": "match",
+        "label": "Quarts de finale",
+        "x": 2370,
+        "y": 1028.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_quarter_finals_3",
+        "type": "match",
+        "label": "Quarts de finale",
+        "x": 2370,
+        "y": 1748.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_quarter_finals_4",
+        "type": "match",
+        "label": "Quarts de finale",
+        "x": 2370,
+        "y": 2468.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_semi_finals_1",
+        "type": "match",
+        "label": "Demi-finales",
+        "x": 3030,
+        "y": 668.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_semi_finals_2",
+        "type": "match",
+        "label": "Demi-finales",
+        "x": 3030,
+        "y": 2108.0,
+        "width": 330,
+        "height": 104
+      },
+      {
+        "id": "match-v3_final_1",
+        "type": "match",
+        "label": "Finale",
+        "x": 3690,
+        "y": 1388.0,
+        "width": 330,
+        "height": 104
+      }
+    ],
+    "connections": [
+      {
+        "id": "group-A-to-v3_round_of_32_9",
+        "from": "group-A",
+        "to": "match-v3_round_of_32_9",
+        "path": "M 450.00 315.00 C 750.00 315.00, 750.00 1530.00, 1050.00 1530.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-A-to-v3_round_of_32_16",
+        "from": "group-A",
+        "to": "match-v3_round_of_32_16",
+        "path": "M 450.00 315.00 C 750.00 315.00, 750.00 2790.00, 1050.00 2790.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-B-to-v3_round_of_32_1",
+        "from": "group-B",
+        "to": "match-v3_round_of_32_1",
+        "path": "M 880.00 315.00 C 965.00 315.00, 965.00 90.00, 1050.00 90.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-B-to-v3_round_of_32_15",
+        "from": "group-B",
+        "to": "match-v3_round_of_32_15",
+        "path": "M 880.00 315.00 C 965.00 315.00, 965.00 2610.00, 1050.00 2610.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-C-to-v3_round_of_32_5",
+        "from": "group-C",
+        "to": "match-v3_round_of_32_5",
+        "path": "M 450.00 805.00 C 750.00 805.00, 750.00 810.00, 1050.00 810.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-C-to-v3_round_of_32_12",
+        "from": "group-C",
+        "to": "match-v3_round_of_32_12",
+        "path": "M 450.00 805.00 C 750.00 805.00, 750.00 2070.00, 1050.00 2070.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-C-to-v3_round_of_32_13",
+        "from": "group-C",
+        "to": "match-v3_round_of_32_13",
+        "path": "M 450.00 805.00 C 750.00 805.00, 750.00 2250.00, 1050.00 2250.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-D-to-v3_round_of_32_2",
+        "from": "group-D",
+        "to": "match-v3_round_of_32_2",
+        "path": "M 880.00 805.00 C 965.00 805.00, 965.00 270.00, 1050.00 270.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-D-to-v3_round_of_32_11",
+        "from": "group-D",
+        "to": "match-v3_round_of_32_11",
+        "path": "M 880.00 805.00 C 965.00 805.00, 965.00 1890.00, 1050.00 1890.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-D-to-v3_round_of_32_15",
+        "from": "group-D",
+        "to": "match-v3_round_of_32_15",
+        "path": "M 880.00 805.00 C 965.00 805.00, 965.00 2610.00, 1050.00 2610.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-E-to-v3_round_of_32_4",
+        "from": "group-E",
+        "to": "match-v3_round_of_32_4",
+        "path": "M 450.00 1295.00 C 750.00 1295.00, 750.00 630.00, 1050.00 630.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-E-to-v3_round_of_32_9",
+        "from": "group-E",
+        "to": "match-v3_round_of_32_9",
+        "path": "M 450.00 1295.00 C 750.00 1295.00, 750.00 1530.00, 1050.00 1530.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-E-to-v3_round_of_32_10",
+        "from": "group-E",
+        "to": "match-v3_round_of_32_10",
+        "path": "M 450.00 1295.00 C 750.00 1295.00, 750.00 1710.00, 1050.00 1710.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-F-to-v3_round_of_32_6",
+        "from": "group-F",
+        "to": "match-v3_round_of_32_6",
+        "path": "M 880.00 1295.00 C 965.00 1295.00, 965.00 990.00, 1050.00 990.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-F-to-v3_round_of_32_8",
+        "from": "group-F",
+        "to": "match-v3_round_of_32_8",
+        "path": "M 880.00 1295.00 C 965.00 1295.00, 965.00 1350.00, 1050.00 1350.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-F-to-v3_round_of_32_13",
+        "from": "group-F",
+        "to": "match-v3_round_of_32_13",
+        "path": "M 880.00 1295.00 C 965.00 1295.00, 965.00 2250.00, 1050.00 2250.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-G-to-v3_round_of_32_5",
+        "from": "group-G",
+        "to": "match-v3_round_of_32_5",
+        "path": "M 450.00 1785.00 C 750.00 1785.00, 750.00 810.00, 1050.00 810.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-G-to-v3_round_of_32_10",
+        "from": "group-G",
+        "to": "match-v3_round_of_32_10",
+        "path": "M 450.00 1785.00 C 750.00 1785.00, 750.00 1710.00, 1050.00 1710.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-G-to-v3_round_of_32_14",
+        "from": "group-G",
+        "to": "match-v3_round_of_32_14",
+        "path": "M 450.00 1785.00 C 750.00 1785.00, 750.00 2430.00, 1050.00 2430.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-H-to-v3_round_of_32_1",
+        "from": "group-H",
+        "to": "match-v3_round_of_32_1",
+        "path": "M 880.00 1785.00 C 965.00 1785.00, 965.00 90.00, 1050.00 90.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-H-to-v3_round_of_32_3",
+        "from": "group-H",
+        "to": "match-v3_round_of_32_3",
+        "path": "M 880.00 1785.00 C 965.00 1785.00, 965.00 450.00, 1050.00 450.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-I-to-v3_round_of_32_3",
+        "from": "group-I",
+        "to": "match-v3_round_of_32_3",
+        "path": "M 450.00 2275.00 C 750.00 2275.00, 750.00 450.00, 1050.00 450.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-I-to-v3_round_of_32_11",
+        "from": "group-I",
+        "to": "match-v3_round_of_32_11",
+        "path": "M 450.00 2275.00 C 750.00 2275.00, 750.00 1890.00, 1050.00 1890.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-I-to-v3_round_of_32_16",
+        "from": "group-I",
+        "to": "match-v3_round_of_32_16",
+        "path": "M 450.00 2275.00 C 750.00 2275.00, 750.00 2790.00, 1050.00 2790.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-J-to-v3_round_of_32_2",
+        "from": "group-J",
+        "to": "match-v3_round_of_32_2",
+        "path": "M 880.00 2275.00 C 965.00 2275.00, 965.00 270.00, 1050.00 270.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-J-to-v3_round_of_32_14",
+        "from": "group-J",
+        "to": "match-v3_round_of_32_14",
+        "path": "M 880.00 2275.00 C 965.00 2275.00, 965.00 2430.00, 1050.00 2430.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-K-to-v3_round_of_32_6",
+        "from": "group-K",
+        "to": "match-v3_round_of_32_6",
+        "path": "M 450.00 2765.00 C 750.00 2765.00, 750.00 990.00, 1050.00 990.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-K-to-v3_round_of_32_7",
+        "from": "group-K",
+        "to": "match-v3_round_of_32_7",
+        "path": "M 450.00 2765.00 C 750.00 2765.00, 750.00 1170.00, 1050.00 1170.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-K-to-v3_round_of_32_8",
+        "from": "group-K",
+        "to": "match-v3_round_of_32_8",
+        "path": "M 450.00 2765.00 C 750.00 2765.00, 750.00 1350.00, 1050.00 1350.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-L-to-v3_round_of_32_4",
+        "from": "group-L",
+        "to": "match-v3_round_of_32_4",
+        "path": "M 880.00 2765.00 C 965.00 2765.00, 965.00 630.00, 1050.00 630.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-L-to-v3_round_of_32_7",
+        "from": "group-L",
+        "to": "match-v3_round_of_32_7",
+        "path": "M 880.00 2765.00 C 965.00 2765.00, 965.00 1170.00, 1050.00 1170.00",
+        "type": "qualification"
+      },
+      {
+        "id": "group-L-to-v3_round_of_32_12",
+        "from": "group-L",
+        "to": "match-v3_round_of_32_12",
+        "path": "M 880.00 2765.00 C 965.00 2765.00, 965.00 2070.00, 1050.00 2070.00",
+        "type": "qualification"
+      },
+      {
+        "id": "match-v3_round_of_32_1-to-v3_round_of_16_1",
+        "from": "match-v3_round_of_32_1",
+        "to": "match-v3_round_of_16_1",
+        "path": "M 1380.00 90.00 C 1545.00 90.00, 1545.00 180.00, 1710.00 180.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_2-to-v3_round_of_16_1",
+        "from": "match-v3_round_of_32_2",
+        "to": "match-v3_round_of_16_1",
+        "path": "M 1380.00 270.00 C 1545.00 270.00, 1545.00 180.00, 1710.00 180.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_3-to-v3_round_of_16_2",
+        "from": "match-v3_round_of_32_3",
+        "to": "match-v3_round_of_16_2",
+        "path": "M 1380.00 450.00 C 1545.00 450.00, 1545.00 540.00, 1710.00 540.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_4-to-v3_round_of_16_2",
+        "from": "match-v3_round_of_32_4",
+        "to": "match-v3_round_of_16_2",
+        "path": "M 1380.00 630.00 C 1545.00 630.00, 1545.00 540.00, 1710.00 540.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_5-to-v3_round_of_16_3",
+        "from": "match-v3_round_of_32_5",
+        "to": "match-v3_round_of_16_3",
+        "path": "M 1380.00 810.00 C 1545.00 810.00, 1545.00 900.00, 1710.00 900.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_6-to-v3_round_of_16_3",
+        "from": "match-v3_round_of_32_6",
+        "to": "match-v3_round_of_16_3",
+        "path": "M 1380.00 990.00 C 1545.00 990.00, 1545.00 900.00, 1710.00 900.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_7-to-v3_round_of_16_4",
+        "from": "match-v3_round_of_32_7",
+        "to": "match-v3_round_of_16_4",
+        "path": "M 1380.00 1170.00 C 1545.00 1170.00, 1545.00 1260.00, 1710.00 1260.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_8-to-v3_round_of_16_4",
+        "from": "match-v3_round_of_32_8",
+        "to": "match-v3_round_of_16_4",
+        "path": "M 1380.00 1350.00 C 1545.00 1350.00, 1545.00 1260.00, 1710.00 1260.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_9-to-v3_round_of_16_5",
+        "from": "match-v3_round_of_32_9",
+        "to": "match-v3_round_of_16_5",
+        "path": "M 1380.00 1530.00 C 1545.00 1530.00, 1545.00 1620.00, 1710.00 1620.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_10-to-v3_round_of_16_5",
+        "from": "match-v3_round_of_32_10",
+        "to": "match-v3_round_of_16_5",
+        "path": "M 1380.00 1710.00 C 1545.00 1710.00, 1545.00 1620.00, 1710.00 1620.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_11-to-v3_round_of_16_6",
+        "from": "match-v3_round_of_32_11",
+        "to": "match-v3_round_of_16_6",
+        "path": "M 1380.00 1890.00 C 1545.00 1890.00, 1545.00 1980.00, 1710.00 1980.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_12-to-v3_round_of_16_6",
+        "from": "match-v3_round_of_32_12",
+        "to": "match-v3_round_of_16_6",
+        "path": "M 1380.00 2070.00 C 1545.00 2070.00, 1545.00 1980.00, 1710.00 1980.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_13-to-v3_round_of_16_7",
+        "from": "match-v3_round_of_32_13",
+        "to": "match-v3_round_of_16_7",
+        "path": "M 1380.00 2250.00 C 1545.00 2250.00, 1545.00 2340.00, 1710.00 2340.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_14-to-v3_round_of_16_7",
+        "from": "match-v3_round_of_32_14",
+        "to": "match-v3_round_of_16_7",
+        "path": "M 1380.00 2430.00 C 1545.00 2430.00, 1545.00 2340.00, 1710.00 2340.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_15-to-v3_round_of_16_8",
+        "from": "match-v3_round_of_32_15",
+        "to": "match-v3_round_of_16_8",
+        "path": "M 1380.00 2610.00 C 1545.00 2610.00, 1545.00 2700.00, 1710.00 2700.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_32_16-to-v3_round_of_16_8",
+        "from": "match-v3_round_of_32_16",
+        "to": "match-v3_round_of_16_8",
+        "path": "M 1380.00 2790.00 C 1545.00 2790.00, 1545.00 2700.00, 1710.00 2700.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_1-to-v3_quarter_finals_1",
+        "from": "match-v3_round_of_16_1",
+        "to": "match-v3_quarter_finals_1",
+        "path": "M 2040.00 180.00 C 2205.00 180.00, 2205.00 360.00, 2370.00 360.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_2-to-v3_quarter_finals_1",
+        "from": "match-v3_round_of_16_2",
+        "to": "match-v3_quarter_finals_1",
+        "path": "M 2040.00 540.00 C 2205.00 540.00, 2205.00 360.00, 2370.00 360.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_3-to-v3_quarter_finals_2",
+        "from": "match-v3_round_of_16_3",
+        "to": "match-v3_quarter_finals_2",
+        "path": "M 2040.00 900.00 C 2205.00 900.00, 2205.00 1080.00, 2370.00 1080.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_4-to-v3_quarter_finals_2",
+        "from": "match-v3_round_of_16_4",
+        "to": "match-v3_quarter_finals_2",
+        "path": "M 2040.00 1260.00 C 2205.00 1260.00, 2205.00 1080.00, 2370.00 1080.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_5-to-v3_quarter_finals_3",
+        "from": "match-v3_round_of_16_5",
+        "to": "match-v3_quarter_finals_3",
+        "path": "M 2040.00 1620.00 C 2205.00 1620.00, 2205.00 1800.00, 2370.00 1800.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_6-to-v3_quarter_finals_3",
+        "from": "match-v3_round_of_16_6",
+        "to": "match-v3_quarter_finals_3",
+        "path": "M 2040.00 1980.00 C 2205.00 1980.00, 2205.00 1800.00, 2370.00 1800.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_7-to-v3_quarter_finals_4",
+        "from": "match-v3_round_of_16_7",
+        "to": "match-v3_quarter_finals_4",
+        "path": "M 2040.00 2340.00 C 2205.00 2340.00, 2205.00 2520.00, 2370.00 2520.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_round_of_16_8-to-v3_quarter_finals_4",
+        "from": "match-v3_round_of_16_8",
+        "to": "match-v3_quarter_finals_4",
+        "path": "M 2040.00 2700.00 C 2205.00 2700.00, 2205.00 2520.00, 2370.00 2520.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_quarter_finals_1-to-v3_semi_finals_1",
+        "from": "match-v3_quarter_finals_1",
+        "to": "match-v3_semi_finals_1",
+        "path": "M 2700.00 360.00 C 2865.00 360.00, 2865.00 720.00, 3030.00 720.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_quarter_finals_2-to-v3_semi_finals_1",
+        "from": "match-v3_quarter_finals_2",
+        "to": "match-v3_semi_finals_1",
+        "path": "M 2700.00 1080.00 C 2865.00 1080.00, 2865.00 720.00, 3030.00 720.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_quarter_finals_3-to-v3_semi_finals_2",
+        "from": "match-v3_quarter_finals_3",
+        "to": "match-v3_semi_finals_2",
+        "path": "M 2700.00 1800.00 C 2865.00 1800.00, 2865.00 2160.00, 3030.00 2160.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_quarter_finals_4-to-v3_semi_finals_2",
+        "from": "match-v3_quarter_finals_4",
+        "to": "match-v3_semi_finals_2",
+        "path": "M 2700.00 2520.00 C 2865.00 2520.00, 2865.00 2160.00, 3030.00 2160.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_semi_finals_1-to-v3_final_1",
+        "from": "match-v3_semi_finals_1",
+        "to": "match-v3_final_1",
+        "path": "M 3360.00 720.00 C 3525.00 720.00, 3525.00 1440.00, 3690.00 1440.00",
+        "type": "advance"
+      },
+      {
+        "id": "match-v3_semi_finals_2-to-v3_final_1",
+        "from": "match-v3_semi_finals_2",
+        "to": "match-v3_final_1",
+        "path": "M 3360.00 2160.00 C 3525.00 2160.00, 3525.00 1440.00, 3690.00 1440.00",
+        "type": "advance"
+      }
+    ],
+    "team_paths": [
+      {
+        "team": "Mexico",
+        "team_id": "MEXICO",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_16",
+          "v3_round_of_16_8"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "South Africa",
+        "team_id": "SOUTHAFRICA",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "South Korea",
+        "team_id": "SOUTHKOREA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_9"
+        ],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Czech Republic",
+        "team_id": "CZECHREPUBLI",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Canada",
+        "team_id": "CANADA",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Bosnia & Herzegovina",
+        "team_id": "BOSNIAHERZEG",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Qatar",
+        "team_id": "QATAR",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_1"
+        ],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Switzerland",
+        "team_id": "SWITZERLAND",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_15",
+          "v3_round_of_16_8",
+          "v3_quarter_finals_4"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Brazil",
+        "team_id": "BRAZIL",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_5",
+          "v3_round_of_16_3",
+          "v3_quarter_finals_2",
+          "v3_semi_finals_1",
+          "v3_third_place"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Morocco",
+        "team_id": "MOROCCO",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_13"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Haiti",
+        "team_id": "HAITI",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Scotland",
+        "team_id": "SCOTLAND",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_12",
+          "v3_round_of_16_6",
+          "v3_quarter_finals_3"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "USA",
+        "team_id": "USA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_2"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Paraguay",
+        "team_id": "PARAGUAY",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_15"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Australia",
+        "team_id": "AUSTRALIA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_11",
+          "v3_round_of_16_6"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Türkiye",
+        "team_id": "TÜRKIYE",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Germany",
+        "team_id": "GERMANY",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_10",
+          "v3_round_of_16_5",
+          "v3_quarter_finals_3",
+          "v3_semi_finals_2",
+          "v3_final_1"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Curaçao",
+        "team_id": "CURAÇAO",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Ivory Coast",
+        "team_id": "IVORYCOAST",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_4"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Ecuador",
+        "team_id": "ECUADOR",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_9",
+          "v3_round_of_16_5"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Netherlands",
+        "team_id": "NETHERLANDS",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_8",
+          "v3_round_of_16_4",
+          "v3_quarter_finals_2"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Japan",
+        "team_id": "JAPAN",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_13",
+          "v3_round_of_16_7",
+          "v3_quarter_finals_4",
+          "v3_semi_finals_2",
+          "v3_third_place"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Sweden",
+        "team_id": "SWEDEN",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_6",
+          "v3_round_of_16_3"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Tunisia",
+        "team_id": "TUNISIA",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Belgium",
+        "team_id": "BELGIUM",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_14",
+          "v3_round_of_16_7"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Egypt",
+        "team_id": "EGYPT",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_5"
+        ],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Iran",
+        "team_id": "IRAN",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_10"
+        ],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "New Zealand",
+        "team_id": "NEWZEALAND",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Spain",
+        "team_id": "SPAIN",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_1",
+          "v3_round_of_16_1",
+          "v3_quarter_finals_1",
+          "v3_semi_finals_1",
+          "v3_final_1"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Cape Verde Islands",
+        "team_id": "CAPEVERDEISL",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Saudi Arabia",
+        "team_id": "SAUDIARABIA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_3"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Uruguay",
+        "team_id": "URUGUAY",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "France",
+        "team_id": "FRANCE",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_3",
+          "v3_round_of_16_2"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Senegal",
+        "team_id": "SENEGAL",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_16"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Iraq",
+        "team_id": "IRAQ",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Norway",
+        "team_id": "NORWAY",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_11"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Argentina",
+        "team_id": "ARGENTINA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_2",
+          "v3_round_of_16_1"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Algeria",
+        "team_id": "ALGERIA",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Austria",
+        "team_id": "AUSTRIA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_14"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Jordan",
+        "team_id": "JORDAN",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Portugal",
+        "team_id": "PORTUGAL",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_6"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Congo DR",
+        "team_id": "CONGODR",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Uzbekistan",
+        "team_id": "UZBEKISTAN",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_8"
+        ],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Colombia",
+        "team_id": "COLOMBIA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_7",
+          "v3_round_of_16_4"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "England",
+        "team_id": "ENGLAND",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_4",
+          "v3_round_of_16_2",
+          "v3_quarter_finals_1"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Croatia",
+        "team_id": "CROATIA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_12"
+        ],
+        "changed": true,
+        "highlight_level": "changed"
+      },
+      {
+        "team": "Ghana",
+        "team_id": "GHANA",
+        "state": "current",
+        "segments": [],
+        "changed": false,
+        "highlight_level": "normal"
+      },
+      {
+        "team": "Panama",
+        "team_id": "PANAMA",
+        "state": "current",
+        "segments": [
+          "v3_round_of_32_7"
+        ],
+        "changed": false,
+        "highlight_level": "normal"
+      }
+    ],
+    "diff_paths": [
+      "v3_final_1",
+      "v3_quarter_finals_1",
+      "v3_quarter_finals_2",
+      "v3_quarter_finals_3",
+      "v3_quarter_finals_4",
+      "v3_round_of_16_2",
+      "v3_round_of_16_3",
+      "v3_round_of_16_4",
+      "v3_round_of_16_5",
+      "v3_round_of_16_6",
+      "v3_round_of_16_7",
+      "v3_round_of_16_8",
+      "v3_round_of_32_11",
+      "v3_round_of_32_12",
+      "v3_round_of_32_13",
+      "v3_round_of_32_14",
+      "v3_round_of_32_15",
+      "v3_round_of_32_16",
+      "v3_round_of_32_2",
+      "v3_round_of_32_3",
+      "v3_round_of_32_4",
+      "v3_round_of_32_6",
+      "v3_semi_finals_2"
+    ]
+  }
+}

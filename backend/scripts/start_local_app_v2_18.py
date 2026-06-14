@@ -28,6 +28,7 @@ def main() -> None:
     fetch.add_argument("--fetch", action="store_true")
     fetch.add_argument("--no-fetch", action="store_true")
     parser.add_argument("--simulations", type=int, default=50000)
+    parser.add_argument("--fetch-odds", action="store_true", help="Fetch API-Football odds explicitly; may consume quota.")
     parser.add_argument("--no-start", action="store_true")
     args = parser.parse_args()
     call("operator_doctor_v2_17.py")
@@ -39,6 +40,7 @@ def main() -> None:
     if should_refresh:
         unified_args = ["--simulations", str(args.simulations), "--fetch" if args.fetch else "--no-fetch"]
         if args.force_refresh: unified_args.append("--force")
+        if args.fetch_odds: unified_args.append("--fetch-odds")
         call("run_unified_local_refresh_v2_18.py", *unified_args)
     else:
         print("[SKIP] Unified refresh not required or disabled.")

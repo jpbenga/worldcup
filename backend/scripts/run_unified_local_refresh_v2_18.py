@@ -22,6 +22,11 @@ STEPS = [
     ("data_freshness", "build_data_freshness_status_v2_17.py", []),
     ("road_to_the_trophy_validation", "validate_tournament_simulation_engine_v4_v2_21.py", []),
     ("road_to_the_trophy_timeline_validation", "validate_road_to_the_trophy_scenario_timeline_v2_22.py", []),
+    ("svg_atlas_audit", "audit_road_to_the_trophy_svg_atlas_v2_23.py", []),
+    ("svg_atlas_view_model", "build_road_to_the_trophy_svg_atlas_view_model_v2_23.py", []),
+    ("odds_snapshot", "fetch_api_football_odds_v2_23.py", []),
+    ("odds_value_signals", "build_match_odds_value_signals_v2_23.py", []),
+    ("svg_atlas_and_odds_validation", "validate_svg_atlas_and_odds_experience_v2_23.py", []),
 ]
 
 
@@ -34,6 +39,7 @@ def main() -> None:
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--simulations", type=int, default=50000)
     parser.add_argument("--skip-frontend-copy", action="store_true")
+    parser.add_argument("--fetch-odds", action="store_true")
     args = parser.parse_args()
     decision = refresh_decision(args.simulations, args.force)
     mode_name = "dry-run" if args.dry_run else "fetch" if args.fetch else "no-fetch"
@@ -43,6 +49,8 @@ def main() -> None:
         heavy = name == "matchday_results_and_views"
         should_run = exists and (args.force or decision["refresh_needed"] or name in ("operator_doctor", "data_freshness"))
         arguments = list(extra)
+        if name == "odds_snapshot" and args.fetch_odds:
+            arguments = ["--fetch"]
         if name == "matchday_results_and_views":
             arguments = ["--simulations", str(args.simulations), "--fetch" if args.fetch else "--no-fetch"]
             if args.skip_frontend_copy: arguments.append("--skip-frontend-copy")

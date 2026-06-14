@@ -75,3 +75,14 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Le panneau latéral explique les changements et les équipes impactées.
 - [ ] Focus groupe, focus équipe, zoom, pan et Reset restent fonctionnels.
 - [ ] Sur mobile, la timeline défile horizontalement sans masquer l'Atlas.
+
+## SVG Atlas & Odds Value Experience V2.23
+
+- [ ] Les chemins sélectionnés et modifiés sont immédiatement distinguables.
+- [ ] La comparaison avant/après affiche un ancien chemin en ghost path.
+- [ ] Zoom, pan, focus groupe, équipe et match restent fonctionnels.
+- [ ] Le mode reduced motion désactive les transitions fortes.
+- [ ] Une cote intéressante apparaît uniquement sur un match disposant d'un signal robuste.
+- [ ] Le détail affiche SimuAI, marché, edge, source et disclaimer.
+- [ ] Un match sans signal affiche un état sobre sans badge promotionnel.
+- [ ] L'application reste utilisable si les cotes sont indisponibles.

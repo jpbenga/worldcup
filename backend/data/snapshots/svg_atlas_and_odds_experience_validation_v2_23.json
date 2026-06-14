@@ -1,0 +1,45 @@
+{
+  "version": "v2.23",
+  "generated_at": "2026-06-14T21:22:25Z",
+  "passed": true,
+  "svg_atlas": {
+    "audit_completed": true,
+    "stable_ids": true,
+    "paths_valid": true,
+    "premium_interactions_present": true,
+    "layout_not_broken": true
+  },
+  "odds": {
+    "snapshot_available_or_graceful_unavailable": true,
+    "secrets_exposed": false,
+    "decimal_odds_normalized": true,
+    "value_signals_computed": true,
+    "responsible_language": true,
+    "stale_odds_not_promoted": true,
+    "highlighted_signals": 3
+  },
+  "active_predictions_unchanged": true,
+  "public_engine_changed": false,
+  "checks": {
+    "audit_completed": true,
+    "stable_ids": true,
+    "paths_valid": true,
+    "premium_interactions_present": true,
+    "reduced_motion": true,
+    "zoom_pan_present": true,
+    "snapshot_available_or_graceful_unavailable": true,
+    "decimal_odds_normalized": true,
+    "value_signals_computed": true,
+    "thresholds_respected": true,
+    "stale_odds_not_promoted": true,
+    "responsible_language": true,
+    "no_secrets_exposed": true,
+    "active_predictions_unchanged": true,
+    "public_engine_unchanged": true,
+    "no_optuna": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Odds availability and freshness depend on API-Football coverage and subscription."
+  ]
+}

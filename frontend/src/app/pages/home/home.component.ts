@@ -37,6 +37,7 @@ export class HomeComponent {
     matchStates: this.worldCupService.getMatchStates(),
     liveStandings: this.worldCupService.getLiveGroupStandings(),
     dualMatrixComparisons: this.worldCupService.getDualMatrixComparisons(),
+    oddsValueSignals: this.worldCupService.getMatchOddsValueSignalsV223(),
   });
 
   predictionFor(predictions: MatchPrediction[], matchId: string): MatchPrediction | undefined {
@@ -53,6 +54,10 @@ export class HomeComponent {
 
   dualMatrixFor(comparisons: DualMatrixComparison[], matchId: string): DualMatrixComparison | undefined {
     return comparisons.find((comparison) => comparison.matchId === matchId);
+  }
+
+  oddsValueFor(payload: any, matchId: string): any {
+    return payload?.fixtures?.find((fixture: any) => fixture.match_id === matchId);
   }
 
 }

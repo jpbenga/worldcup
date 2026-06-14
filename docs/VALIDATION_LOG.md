@@ -2006,3 +2006,34 @@ Commit: TBD
 - [x] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+
+## V2.23 — Road to the Trophy SVG Atlas & Odds Value Experience
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Existing Road to the Trophy SVG/visual layer audited
+- [x] SVG enhancement strategy documented
+- [x] Atlas SVG improvements implemented
+- [x] API-Football odds ingestion audited
+- [x] Odds snapshot generated with graceful unavailable state
+- [x] Value odds signal computed
+- [x] Match UI displays “Cote intéressante” only when justified
+- [x] UI/UX remains premium and uncluttered
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Road to the Trophy engine unchanged
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [x] Validated with reservations
+- [ ] Not validated

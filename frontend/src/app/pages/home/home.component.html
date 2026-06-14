@@ -73,6 +73,7 @@
             [comparison]="comparisonFor(vm.modelComparisons, matchId)"
             [state]="matchStateFor(vm.matchStates, matchId)"
             [dualMatrix]="dualMatrixFor(vm.dualMatrixComparisons, matchId)"
+            [oddsValue]="oddsValueFor(vm.oddsValueSignals, matchId)"
             (closed)="selectedMatchId.set(null)"
           />
         }

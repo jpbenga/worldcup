@@ -1,0 +1,39 @@
+{
+  "version": "v2.23",
+  "generated_at": "2026-06-14T21:17:17Z",
+  "svg_usage": {
+    "svg_files": [],
+    "inline_svg_components": [
+      "frontend/src/app/pages/simulation/simulation.component.html"
+    ],
+    "paths_detected": 4,
+    "groups_detected": 3,
+    "defs_detected": true,
+    "markers_detected": true,
+    "gradients_detected": true
+  },
+  "interaction_layer": {
+    "d3_used": true,
+    "d3_zoom_used": true,
+    "custom_zoom_used": true,
+    "angular_signals_used": true,
+    "timeline_state_used": true
+  },
+  "atlas_capabilities": {
+    "team_paths_visible": false,
+    "group_to_knockout_connections": true,
+    "before_after_ghost_paths": true,
+    "changed_paths_highlighted": true,
+    "hover_focus": true,
+    "selected_team_path": true,
+    "reduced_motion_support": true
+  },
+  "weaknesses": [],
+  "opportunities": [
+    "Introduce semantic SVG layers, stable ids, markers and subtle gradients.",
+    "Draw previous changed connections as ghost paths during before/after comparison.",
+    "Give selected and changed paths distinct visual semantics.",
+    "Respect reduced-motion preferences without removing zoom and pan."
+  ],
+  "verdict": "PASS"
+}

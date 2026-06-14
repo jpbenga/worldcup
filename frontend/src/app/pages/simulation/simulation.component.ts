@@ -40,6 +40,7 @@ export class SimulationComponent {
 
   readonly vm = toSignal(this.worldCupService.getRoadToTheTrophyEngine());
   readonly timeline = toSignal(this.worldCupService.getRoadToTheTrophyTimeline());
+  readonly oddsValueSignals = toSignal(this.worldCupService.getMatchOddsValueSignalsV223());
   readonly selectedStateId = signal('current');
   readonly comparisonSide = signal<'before' | 'after'>('after');
   readonly comparisonEnabled = signal(false);
@@ -69,6 +70,10 @@ export class SimulationComponent {
     return timeline.states[activeIndex];
   });
   readonly activeData = computed(() => this.activeState()?.scenario ?? this.vm());
+  readonly previousData = computed(() => {
+    const states = this.timeline()?.states ?? [];
+    return states[Math.max(0, this.selectedStateIndex() - 1)]?.scenario ?? null;
+  });
   readonly activeGroup = computed(() => this.activeData()?.groups.find((group: any) => group.group === this.selectedGroup()));
   readonly selectedTeamPath = computed(() => this.activeData()?.team_paths[this.selectedTeam() ?? ''] ?? null);
   readonly selectedMatch = computed(() => {
@@ -80,6 +85,7 @@ export class SimulationComponent {
       data.third_place,
     ].find((match: any) => match.match_id === this.selectedMatchId());
   });
+  readonly selectedOddsValue = computed(() => this.oddsValueSignals()?.fixtures?.find((row: any) => row.match_id === this.selectedMatchId()) ?? null);
 
   private initializeAtlas(): void {
     const viewport = this.atlasViewport?.nativeElement;
@@ -190,6 +196,14 @@ export class SimulationComponent {
 
   isKnockoutChanged(matchId: string): boolean {
     return this.selectedTimelineDiff()?.bracket_changes?.some((row: any) => row.match_id === matchId) ?? false;
+  }
+
+  isSelectedTeamMatch(matchId: string): boolean {
+    return this.selectedTeamPath()?.knockout_path?.some((step: any) => step.match_id === matchId) ?? false;
+  }
+
+  stableId(value: string): string {
+    return value.replace(/[^a-zA-Z0-9_-]/g, '-');
   }
 
   isTeamImpacted(team: string): boolean {
