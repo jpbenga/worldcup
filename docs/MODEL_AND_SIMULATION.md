@@ -9,3 +9,5 @@ Le backtest chronologique V2.14 porte sur 394 matchs de test. V3 obtient une log
 Les garde-fous interdisent les inversions fortes non expliquées, les ajustements manuels par équipe et les signaux inventés. Blessures, lineups futures, qualité subjective d’effectif, odds et ranking FIFA absent ne sont pas utilisés.
 
 V2.19 ne remplace pas V3 et ne modifie pas ses probabilités. Il sélectionne parmi les parcours complets persistés celui qui minimise la surprise globale des rangs, qualifications et tours. Les probabilités marginales sur 50 000 simulations restent séparées du scénario central affiché.
+
+L'audit V2.20 conclut que les 50 000 tirages sont réels et suffisamment stables, mais que la priorité doit porter sur le modèle et les règles qu'ils répètent. Le moteur cible doit encoder le bracket officiel, nettoyer les scores 90 minutes/prolongation/tirs au but, réutiliser le meilleur modèle historiquement validé du projet pour les confrontations arbitraires et passer un replay historique complet au niveau tournoi.

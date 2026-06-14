@@ -1905,3 +1905,27 @@ Commit: TBD
 - [ ] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+
+## V2.20 — Deep Tournament Simulation Algorithm Audit
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Current 50,000-run algorithm mapped end to end
+- [x] Group, knockout, tie-break, best-third, bracket and central-scenario logic audited
+- [x] Current data coverage and AET/PEN semantics measured
+- [x] V3 compared with quant_hybrid_v2.2 and serious domain methods
+- [x] Applicable and non-applicable methods separated
+- [x] Realistic target architecture and phased delivery plan documented
+- [x] No active prediction, model retraining, Optuna run or engine promotion
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated

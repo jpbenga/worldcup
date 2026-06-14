@@ -6,12 +6,12 @@ Deux moteurs ont des responsabilités distinctes. `quant_hybrid_v2.2` reste le m
 
 ## Priorités
 
-1. Améliorer la qualité, la fraîcheur et la couverture des données API-Football.
-2. Intégrer le mapping officiel du tableau éliminatoire dès qu’il est disponible.
-3. Évaluer des données joueurs, blessures et compositions uniquement lorsqu’elles deviennent fiables et pré-match.
-4. Étendre les backtests chronologiques et la calibration segmentée.
-5. Enrichir les explications sans inventer de facteurs absents.
-6. Renforcer le déploiement, le monitoring, la reproductibilité et la reprise opérationnelle.
+1. Encoder le mapping officiel 2026, les départages complets et les meilleurs troisièmes.
+2. Nettoyer les sémantiques score à 90 minutes, prolongation et tirs au but.
+3. Rendre `quant_hybrid_v2.2` inférable pour toute confrontation du tournoi et réconcilier 1X2/matrice.
+4. Simuler séparément 90 minutes, prolongation et tirs au but.
+5. Ajouter replay historique tournoi, calibration segmentée, multi-seed et incertitude modèle.
+6. Évaluer joueurs, blessures, compositions, odds et xG uniquement lorsque leur couverture pré-match devient fiable.
 
 ## Règles de promotion
 
