@@ -1,0 +1,40 @@
+{
+  "version": "v2.21",
+  "passed": true,
+  "simulation_count": 50000,
+  "counterfactual_simulation_count": 50000,
+  "reservoir_size": 2000,
+  "known_results_change_scenario": true,
+  "explicit_knockout_resolutions": {
+    "90m": 1185625,
+    "extra_time": 184256,
+    "penalties": 180119
+  },
+  "scenario_selection": {
+    "method": "minimum_global_surprise_complete_path_with_continuity_tie_break",
+    "candidate_pool": 2000,
+    "candidate_sampling": "uniform reservoir across all 50000 complete paths",
+    "near_optimal_candidate_count": 26,
+    "near_optimal_threshold": "within 5% of minimum average surprise",
+    "continuity_reference_used": true,
+    "distance_from_previous_scenario": 3,
+    "pure_best_simulation_id": 43772,
+    "pure_best_average_surprise": 0.7936597016757239,
+    "selected_vs_pure_best_surprise_delta": 0.016351036484626547,
+    "selected_simulation_id": 34319,
+    "selected_champion": "Spain",
+    "selected_average_surprise": 0.8100107381603504,
+    "most_likely_champion": "Spain",
+    "most_likely_champion_probability": 0.18558,
+    "champion_first_candidate_simulation_id": 43772,
+    "champion_first_average_surprise": 0.7936597016757239,
+    "champion_forced": false,
+    "interpretation": "The selected path is within 5% of minimum average surprise; when a previous scenario exists, continuity breaks statistically close ties. The champion is never forced."
+  },
+  "remaining_blockers": [
+    "Official 2026 knockout slot mapping is absent from repository data; the isolated fallback remains non-official.",
+    "Fair-play points and drawing-lots data are unavailable; Elo is only the final deterministic tie-break proxy.",
+    "Penalty shootouts use a strongly shrunk Elo signal because usable shootout history is sparse.",
+    "The active quant_hybrid_v2.2 inference bundle is not persisted for arbitrary future pairings."
+  ]
+}

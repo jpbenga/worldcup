@@ -1,0 +1,867 @@
+{
+  "version": "v2.21",
+  "method": "minimum_global_surprise_complete_path_with_continuity_tie_break",
+  "coherence_score": 0.5524829101380774,
+  "simulation_id": 34319,
+  "champion": "Spain",
+  "final": {
+    "team_a": "Spain",
+    "team_b": "Ecuador",
+    "winner": "Spain",
+    "team_a_advance_probability": 0.7824595579638629,
+    "resolution": "90m",
+    "score_90": "4-2",
+    "score_et": null
+  },
+  "semi_finals": [
+    {
+      "team_a": "Spain",
+      "team_b": "Colombia",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.6855743894047075,
+      "resolution": "penalties",
+      "score_90": "0-0",
+      "score_et": "0-0"
+    },
+    {
+      "team_a": "Ecuador",
+      "team_b": "Uruguay",
+      "winner": "Ecuador",
+      "team_a_advance_probability": 0.49387738994617303,
+      "resolution": "90m",
+      "score_90": "1-0",
+      "score_et": null
+    }
+  ],
+  "quarter_finals": [
+    {
+      "team_a": "Spain",
+      "team_b": "England",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.668759281828043,
+      "resolution": "90m",
+      "score_90": "2-0",
+      "score_et": null
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Colombia",
+      "winner": "Colombia",
+      "team_a_advance_probability": 0.5050103462218101,
+      "resolution": "90m",
+      "score_90": "0-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Ecuador",
+      "team_b": "Australia",
+      "winner": "Ecuador",
+      "team_a_advance_probability": 0.6284618884880709,
+      "resolution": "90m",
+      "score_90": "2-0",
+      "score_et": null
+    },
+    {
+      "team_a": "Japan",
+      "team_b": "Uruguay",
+      "winner": "Uruguay",
+      "team_a_advance_probability": 0.48832307515034445,
+      "resolution": "90m",
+      "score_90": "2-4",
+      "score_et": null
+    }
+  ],
+  "round_of_16": [
+    {
+      "team_a": "Spain",
+      "team_b": "Argentina",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.5547357369237569,
+      "resolution": "90m",
+      "score_90": "1-0",
+      "score_et": null
+    },
+    {
+      "team_a": "France",
+      "team_b": "England",
+      "winner": "England",
+      "team_a_advance_probability": 0.5277139070403801,
+      "resolution": "extra_time",
+      "score_90": "2-2",
+      "score_et": "2-3"
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Sweden",
+      "winner": "Brazil",
+      "team_a_advance_probability": 0.7759945121656459,
+      "resolution": "90m",
+      "score_90": "2-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Colombia",
+      "team_b": "Netherlands",
+      "winner": "Colombia",
+      "team_a_advance_probability": 0.5643555521586303,
+      "resolution": "90m",
+      "score_90": "3-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Ecuador",
+      "team_b": "Germany",
+      "winner": "Ecuador",
+      "team_a_advance_probability": 0.4488068141615304,
+      "resolution": "penalties",
+      "score_90": "1-1",
+      "score_et": "1-1"
+    },
+    {
+      "team_a": "Australia",
+      "team_b": "Canada",
+      "winner": "Australia",
+      "team_a_advance_probability": 0.5336952983764522,
+      "resolution": "90m",
+      "score_90": "2-0",
+      "score_et": null
+    },
+    {
+      "team_a": "Japan",
+      "team_b": "Paraguay",
+      "winner": "Japan",
+      "team_a_advance_probability": 0.6506205696838981,
+      "resolution": "90m",
+      "score_90": "3-2",
+      "score_et": null
+    },
+    {
+      "team_a": "Uruguay",
+      "team_b": "Switzerland",
+      "winner": "Uruguay",
+      "team_a_advance_probability": 0.5364934765982968,
+      "resolution": "penalties",
+      "score_90": "1-1",
+      "score_et": "1-1"
+    }
+  ],
+  "round_of_32": [
+    {
+      "team_a": "Spain",
+      "team_b": "USA",
+      "winner": "Spain",
+      "team_a_advance_probability": 0.9432933965035528,
+      "resolution": "90m",
+      "score_90": "2-0",
+      "score_et": null
+    },
+    {
+      "team_a": "Argentina",
+      "team_b": "Cape Verde Islands",
+      "winner": "Argentina",
+      "team_a_advance_probability": 0.9305443795201542,
+      "resolution": "90m",
+      "score_90": "4-0",
+      "score_et": null
+    },
+    {
+      "team_a": "France",
+      "team_b": "Bosnia & Herzegovina",
+      "winner": "France",
+      "team_a_advance_probability": 0.9158267486838143,
+      "resolution": "90m",
+      "score_90": "3-0",
+      "score_et": null
+    },
+    {
+      "team_a": "England",
+      "team_b": "Jordan",
+      "winner": "England",
+      "team_a_advance_probability": 0.8138652386771623,
+      "resolution": "90m",
+      "score_90": "3-2",
+      "score_et": null
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Ivory Coast",
+      "winner": "Brazil",
+      "team_a_advance_probability": 0.8090593603171405,
+      "resolution": "90m",
+      "score_90": "3-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Portugal",
+      "team_b": "Sweden",
+      "winner": "Sweden",
+      "team_a_advance_probability": 0.7520080778598813,
+      "resolution": "90m",
+      "score_90": "0-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Colombia",
+      "team_b": "Panama",
+      "winner": "Colombia",
+      "team_a_advance_probability": 0.7970272772016536,
+      "resolution": "90m",
+      "score_90": "2-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Netherlands",
+      "team_b": "Uzbekistan",
+      "winner": "Netherlands",
+      "team_a_advance_probability": 0.7172137472134251,
+      "resolution": "90m",
+      "score_90": "4-2",
+      "score_et": null
+    },
+    {
+      "team_a": "Ecuador",
+      "team_b": "South Korea",
+      "winner": "Ecuador",
+      "team_a_advance_probability": 0.6767256360864752,
+      "resolution": "90m",
+      "score_90": "2-0",
+      "score_et": null
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Iran",
+      "winner": "Germany",
+      "team_a_advance_probability": 0.6928248070811609,
+      "resolution": "90m",
+      "score_90": "2-0",
+      "score_et": null
+    },
+    {
+      "team_a": "Norway",
+      "team_b": "Australia",
+      "winner": "Australia",
+      "team_a_advance_probability": 0.6370055304580142,
+      "resolution": "90m",
+      "score_90": "1-2",
+      "score_et": null
+    },
+    {
+      "team_a": "Croatia",
+      "team_b": "Canada",
+      "winner": "Canada",
+      "team_a_advance_probability": 0.628969150860352,
+      "resolution": "90m",
+      "score_90": "0-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Japan",
+      "team_b": "Morocco",
+      "winner": "Japan",
+      "team_a_advance_probability": 0.5904796305396363,
+      "resolution": "extra_time",
+      "score_90": "2-2",
+      "score_et": "3-2"
+    },
+    {
+      "team_a": "Belgium",
+      "team_b": "Paraguay",
+      "winner": "Paraguay",
+      "team_a_advance_probability": 0.6423739268290372,
+      "resolution": "extra_time",
+      "score_90": "0-0",
+      "score_et": "0-2"
+    },
+    {
+      "team_a": "Uruguay",
+      "team_b": "Senegal",
+      "winner": "Uruguay",
+      "team_a_advance_probability": 0.531950753281638,
+      "resolution": "90m",
+      "score_90": "2-1",
+      "score_et": null
+    },
+    {
+      "team_a": "Switzerland",
+      "team_b": "Mexico",
+      "winner": "Switzerland",
+      "team_a_advance_probability": 0.47591076079603567,
+      "resolution": "90m",
+      "score_90": "2-1",
+      "score_et": null
+    }
+  ],
+  "group_stage": {
+    "A": {
+      "order": [
+        "Mexico",
+        "South Korea",
+        "Czech Republic",
+        "South Africa"
+      ],
+      "matches": [
+        {
+          "team_a": "Mexico",
+          "team_b": "South Africa",
+          "score": "2-0",
+          "locked": true
+        },
+        {
+          "team_a": "South Korea",
+          "team_b": "Czech Republic",
+          "score": "2-1",
+          "locked": true
+        },
+        {
+          "team_a": "Czech Republic",
+          "team_b": "South Africa",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Mexico",
+          "team_b": "South Korea",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Czech Republic",
+          "team_b": "Mexico",
+          "score": "1-3",
+          "locked": false
+        },
+        {
+          "team_a": "South Africa",
+          "team_b": "South Korea",
+          "score": "1-2",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "B": {
+      "order": [
+        "Switzerland",
+        "Canada",
+        "Bosnia & Herzegovina",
+        "Qatar"
+      ],
+      "matches": [
+        {
+          "team_a": "Canada",
+          "team_b": "Bosnia & Herzegovina",
+          "score": "1-1",
+          "locked": true
+        },
+        {
+          "team_a": "Qatar",
+          "team_b": "Switzerland",
+          "score": "1-1",
+          "locked": true
+        },
+        {
+          "team_a": "Switzerland",
+          "team_b": "Bosnia & Herzegovina",
+          "score": "4-1",
+          "locked": false
+        },
+        {
+          "team_a": "Canada",
+          "team_b": "Qatar",
+          "score": "4-0",
+          "locked": false
+        },
+        {
+          "team_a": "Switzerland",
+          "team_b": "Canada",
+          "score": "3-2",
+          "locked": false
+        },
+        {
+          "team_a": "Bosnia & Herzegovina",
+          "team_b": "Qatar",
+          "score": "2-1",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "C": {
+      "order": [
+        "Morocco",
+        "Brazil",
+        "Scotland",
+        "Haiti"
+      ],
+      "matches": [
+        {
+          "team_a": "Brazil",
+          "team_b": "Morocco",
+          "score": "0-1",
+          "locked": false
+        },
+        {
+          "team_a": "Haiti",
+          "team_b": "Scotland",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Scotland",
+          "team_b": "Morocco",
+          "score": "3-4",
+          "locked": false
+        },
+        {
+          "team_a": "Brazil",
+          "team_b": "Haiti",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Morocco",
+          "team_b": "Haiti",
+          "score": "4-1",
+          "locked": false
+        },
+        {
+          "team_a": "Scotland",
+          "team_b": "Brazil",
+          "score": "1-1",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "D": {
+      "order": [
+        "Australia",
+        "Paraguay",
+        "USA",
+        "Türkiye"
+      ],
+      "matches": [
+        {
+          "team_a": "USA",
+          "team_b": "Paraguay",
+          "score": "4-1",
+          "locked": true
+        },
+        {
+          "team_a": "Australia",
+          "team_b": "Türkiye",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "USA",
+          "team_b": "Australia",
+          "score": "0-4",
+          "locked": false
+        },
+        {
+          "team_a": "Türkiye",
+          "team_b": "Paraguay",
+          "score": "1-3",
+          "locked": false
+        },
+        {
+          "team_a": "Türkiye",
+          "team_b": "USA",
+          "score": "3-2",
+          "locked": false
+        },
+        {
+          "team_a": "Paraguay",
+          "team_b": "Australia",
+          "score": "1-0",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "E": {
+      "order": [
+        "Ecuador",
+        "Germany",
+        "Ivory Coast",
+        "Curaçao"
+      ],
+      "matches": [
+        {
+          "team_a": "Germany",
+          "team_b": "Curaçao",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Ivory Coast",
+          "team_b": "Ecuador",
+          "score": "0-3",
+          "locked": false
+        },
+        {
+          "team_a": "Germany",
+          "team_b": "Ivory Coast",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Ecuador",
+          "team_b": "Curaçao",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Ecuador",
+          "team_b": "Germany",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Curaçao",
+          "team_b": "Ivory Coast",
+          "score": "0-2",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "F": {
+      "order": [
+        "Netherlands",
+        "Japan",
+        "Sweden",
+        "Tunisia"
+      ],
+      "matches": [
+        {
+          "team_a": "Netherlands",
+          "team_b": "Japan",
+          "score": "4-3",
+          "locked": false
+        },
+        {
+          "team_a": "Sweden",
+          "team_b": "Tunisia",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Netherlands",
+          "team_b": "Sweden",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Tunisia",
+          "team_b": "Japan",
+          "score": "1-4",
+          "locked": false
+        },
+        {
+          "team_a": "Japan",
+          "team_b": "Sweden",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Tunisia",
+          "team_b": "Netherlands",
+          "score": "0-1",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "G": {
+      "order": [
+        "Iran",
+        "Belgium",
+        "Egypt",
+        "New Zealand"
+      ],
+      "matches": [
+        {
+          "team_a": "Belgium",
+          "team_b": "Egypt",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Iran",
+          "team_b": "New Zealand",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Belgium",
+          "team_b": "Iran",
+          "score": "0-2",
+          "locked": false
+        },
+        {
+          "team_a": "New Zealand",
+          "team_b": "Egypt",
+          "score": "0-2",
+          "locked": false
+        },
+        {
+          "team_a": "Egypt",
+          "team_b": "Iran",
+          "score": "1-4",
+          "locked": false
+        },
+        {
+          "team_a": "New Zealand",
+          "team_b": "Belgium",
+          "score": "1-0",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "H": {
+      "order": [
+        "Uruguay",
+        "Spain",
+        "Cape Verde Islands",
+        "Saudi Arabia"
+      ],
+      "matches": [
+        {
+          "team_a": "Spain",
+          "team_b": "Cape Verde Islands",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Saudi Arabia",
+          "team_b": "Uruguay",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Spain",
+          "team_b": "Saudi Arabia",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Uruguay",
+          "team_b": "Cape Verde Islands",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Uruguay",
+          "team_b": "Spain",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Cape Verde Islands",
+          "team_b": "Saudi Arabia",
+          "score": "2-0",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "I": {
+      "order": [
+        "France",
+        "Senegal",
+        "Norway",
+        "Iraq"
+      ],
+      "matches": [
+        {
+          "team_a": "France",
+          "team_b": "Senegal",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Iraq",
+          "team_b": "Norway",
+          "score": "1-2",
+          "locked": false
+        },
+        {
+          "team_a": "France",
+          "team_b": "Iraq",
+          "score": "4-1",
+          "locked": false
+        },
+        {
+          "team_a": "Norway",
+          "team_b": "Senegal",
+          "score": "0-1",
+          "locked": false
+        },
+        {
+          "team_a": "Senegal",
+          "team_b": "Iraq",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Norway",
+          "team_b": "France",
+          "score": "0-1",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "J": {
+      "order": [
+        "Argentina",
+        "Jordan",
+        "Austria",
+        "Algeria"
+      ],
+      "matches": [
+        {
+          "team_a": "Argentina",
+          "team_b": "Algeria",
+          "score": "3-0",
+          "locked": false
+        },
+        {
+          "team_a": "Austria",
+          "team_b": "Jordan",
+          "score": "1-5",
+          "locked": false
+        },
+        {
+          "team_a": "Argentina",
+          "team_b": "Austria",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Jordan",
+          "team_b": "Algeria",
+          "score": "0-0",
+          "locked": false
+        },
+        {
+          "team_a": "Algeria",
+          "team_b": "Austria",
+          "score": "2-4",
+          "locked": false
+        },
+        {
+          "team_a": "Jordan",
+          "team_b": "Argentina",
+          "score": "0-6",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "K": {
+      "order": [
+        "Portugal",
+        "Colombia",
+        "Uzbekistan",
+        "Congo DR"
+      ],
+      "matches": [
+        {
+          "team_a": "Portugal",
+          "team_b": "Congo DR",
+          "score": "2-1",
+          "locked": false
+        },
+        {
+          "team_a": "Uzbekistan",
+          "team_b": "Colombia",
+          "score": "0-0",
+          "locked": false
+        },
+        {
+          "team_a": "Portugal",
+          "team_b": "Uzbekistan",
+          "score": "4-1",
+          "locked": false
+        },
+        {
+          "team_a": "Colombia",
+          "team_b": "Congo DR",
+          "score": "2-2",
+          "locked": false
+        },
+        {
+          "team_a": "Colombia",
+          "team_b": "Portugal",
+          "score": "1-0",
+          "locked": false
+        },
+        {
+          "team_a": "Congo DR",
+          "team_b": "Uzbekistan",
+          "score": "0-2",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    },
+    "L": {
+      "order": [
+        "England",
+        "Croatia",
+        "Panama",
+        "Ghana"
+      ],
+      "matches": [
+        {
+          "team_a": "England",
+          "team_b": "Croatia",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Ghana",
+          "team_b": "Panama",
+          "score": "0-2",
+          "locked": false
+        },
+        {
+          "team_a": "England",
+          "team_b": "Ghana",
+          "score": "2-0",
+          "locked": false
+        },
+        {
+          "team_a": "Panama",
+          "team_b": "Croatia",
+          "score": "1-3",
+          "locked": false
+        },
+        {
+          "team_a": "Croatia",
+          "team_b": "Ghana",
+          "score": "1-1",
+          "locked": false
+        },
+        {
+          "team_a": "Panama",
+          "team_b": "England",
+          "score": "0-3",
+          "locked": false
+        }
+      ],
+      "tie_break_decisions": []
+    }
+  },
+  "why_this_scenario": "The selected path is within 5% of minimum average surprise; when a previous scenario exists, continuity breaks statistically close ties. The champion is never forced.",
+  "limitations": [
+    "Official 2026 knockout slot mapping is absent from repository data; the isolated fallback remains non-official.",
+    "Fair-play points and drawing-lots data are unavailable; Elo is only the final deterministic tie-break proxy.",
+    "Penalty shootouts use a strongly shrunk Elo signal because usable shootout history is sparse.",
+    "The active quant_hybrid_v2.2 inference bundle is not persisted for arbitrary future pairings."
+  ]
+}

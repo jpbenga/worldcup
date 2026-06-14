@@ -10,7 +10,7 @@
         <div>
           <p class="text-xs font-bold uppercase tracking-[0.22em] text-violet-300">Road to the Trophy · Scénario SimuAI</p>
           <h1 class="mt-2 text-4xl font-black tracking-tight sm:text-6xl">Arpentez les 104 matchs</h1>
-          <p class="mt-3 max-w-3xl text-slate-400">SimuAI Tournament Engine V3 · 50 000 tournois simulés. Le parcours affiché est un scénario central complet; les chances restent des fréquences marginales sur toutes les simulations.</p>
+          <p class="mt-3 max-w-3xl text-slate-400">SimuAI Tournament Engine V4 · 50 000 tournois simulés. Le parcours affiché minimise la surprise globale sans imposer le champion; les résultats réels connus sont verrouillés.</p>
         </div>
         <div class="grid grid-cols-3 gap-2 text-center text-xs">
           <div class="rounded-2xl border border-emerald-500/20 bg-emerald-500/10 p-3"><strong class="block text-2xl text-emerald-300">{{ data.result_summary.finished_matches }}</strong>réels verrouillés</div>
@@ -22,7 +22,21 @@
       <section class="mb-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 px-4 py-3 text-sm text-cyan-50">
         <strong>Projection du tournoi.</strong>
         <strong>Classement du scénario central.</strong> Les chances indiquent la fréquence observée sur 50 000 tournois simulés.
+        <button class="evolution-trigger" (click)="showEvolution.set(!showEvolution())">{{ showEvolution() ? 'Masquer' : 'Voir' }} l’impact des résultats réels</button>
       </section>
+
+      @if (showEvolution() && data.scenario_evolution; as evolution) {
+        <section class="evolution-panel">
+          <div>
+            <p class="eyebrow">Scénario vivant · {{ evolution.known_results_count }} résultats verrouillés</p>
+            <h2>{{ evolution.before.champion }} <span>avant</span> → {{ evolution.after.champion }} <span>maintenant</span></h2>
+            <p>{{ evolution.method_note }}</p>
+            <p class="evolution-summary">{{ evolution.structural_changes.changed_group_order_count }} classements de groupe et {{ evolution.structural_changes.changed_knockout_match_count }} matchs du tableau changent dans le parcours central. {{ evolution.structural_changes.champion_changed ? 'Le champion projeté change.' : 'Le champion projeté reste stable, mais son chemin évolue.' }}</p>
+          </div>
+          <div class="evolution-results">@for (result of evolution.known_results; track result.match) { <span>{{ result.match }}</span> }</div>
+          <div class="evolution-movements">@for (move of evolution.largest_probability_movements.slice(0, 6); track move.team) { <article><strong>{{ move.team }}</strong><span [class.up]="move.qualification_delta > 0" [class.down]="move.qualification_delta < 0">{{ move.qualification_delta | percent: '1.1-1' }} qualification</span><small>{{ move.champion_delta | percent: '1.1-1' }} titre</small></article> }</div>
+        </section>
+      }
 
       <section class="rounded-3xl border border-slate-700 bg-slate-900/80 p-3">
         <div class="flex flex-wrap items-center gap-2">
@@ -84,6 +98,7 @@
             @if (match.matchday) { <p class="meta">{{ match.matchday }} · {{ match.kickoff_at | date: 'd MMM, HH:mm' }}</p> }
             @if (match.score) { <div class="score-block"><small>{{ match.score_label }}</small><strong>{{ match.score }}</strong><span>{{ match.detail_label }}</span></div> }
             @if (match.projected_winner) { <div class="score-block projected"><small>Projection issue des simulations</small><strong>{{ match.projected_winner }}</strong><span>qualifié dans ce scénario représentatif</span></div> }
+            @if (match.resolution) { <p class="meta">Résolution du scénario : {{ match.resolution === '90m' ? 'temps réglementaire' : match.resolution === 'extra_time' ? 'prolongations' : 'tirs au but' }} · {{ match.score_et || match.score_90 }}</p> }
             @if (match.explanation; as explanation) {
               <h3>Pourquoi ?</h3>
               <p class="meta">{{ explanation.headline }} {{ explanation.upset_context }}</p>
@@ -104,7 +119,7 @@
           <div class="legend"><span><i class="real"></i>Réel</span><span><i class="projected"></i>Projeté</span><span><i class="confirm"></i>À confirmer</span></div>
         </aside>
       </section>
-      <p class="mt-4 text-xs leading-5 text-slate-500">Le chemin affiché est un tournoi complet cohérent sélectionné parmi 50 000 simulations. Le mapping éliminatoire reste projeté tant que le tableau officiel FIFA n’est pas disponible.</p>
+      <p class="mt-4 text-xs leading-5 text-slate-500">Le chemin affiché est un tournoi complet cohérent sélectionné dans un réservoir uniforme couvrant les 50 000 simulations. Le mapping éliminatoire reste projeté tant que sa structure officielle n’est pas intégrée aux données du projet.</p>
     }
   </div>
 </main>

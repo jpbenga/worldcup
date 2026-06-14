@@ -46,11 +46,11 @@ def run(script: str, *args: str) -> subprocess.CompletedProcess[str]:
 def refresh_decision(simulations: int = 50000, force: bool = False) -> dict[str, Any]:
     results_path = DATA_DIR / "generated/worldcup_2026_results_v2_6.json"
     matchday_path = DATA_DIR / "generated/matchday_refresh_manifest_v2_10.json"
-    sim_path = DATA_DIR / "generated/tournament_simulation_engine_v3_results_v2_14.json"
+    sim_path = DATA_DIR / "generated/tournament_simulation_engine_v4_results_v2_21.json"
     engine_path = DATA_DIR / "generated/road_to_the_trophy_engine.json"
     freshness_path = DATA_DIR / "generated/data_freshness_status_v2_17.json"
     validation_path = DATA_DIR / "generated/unified_local_refresh_validation_v2_18.json"
-    coherence_path = DATA_DIR / "generated/road_to_the_trophy_coherent_view_model_v2_19.json"
+    coherence_path = DATA_DIR / "generated/road_to_the_trophy_coherent_view_model_v2_21.json"
     results = load_json(results_path) if results_path.exists() else {}
     matchday = load_json(matchday_path) if matchday_path.exists() else {}
     simulation = load_json(sim_path) if sim_path.exists() else {}
@@ -64,14 +64,14 @@ def refresh_decision(simulations: int = 50000, force: bool = False) -> dict[str,
     if freshness.get("data_status") in ("stale", "unknown"): reasons.append(f"data_{freshness.get('data_status')}")
     if matchday.get("simulation_count") != simulations: reasons.append("simulation_count_changed")
     if finished != locked: reasons.append(f"official_results_locked_mismatch:{locked}->{finished}")
-    if engine.get("source_engine") != "tournament_simulation_engine_v3": reasons.append("road_to_the_trophy_engine_version_mismatch")
+    if engine.get("source_engine") != "tournament_simulation_engine_v4": reasons.append("road_to_the_trophy_engine_version_mismatch")
     if not coherence_path.exists(): reasons.append("coherent_road_to_the_trophy_view_model_missing")
     if not validation_path.exists(): reasons.append("unified_validation_missing")
     frontend_missing = [name for name in ("worldcup_2026_results_v2_6.json", "road_to_the_trophy_engine.json", "data_freshness_status_v2_17.json") if not (FRONTEND_DATA_DIR / name).exists()]
     return {
         "version": VERSION, "generated_at": utc_now(), "refresh_needed": bool(reasons), "reasons": reasons,
         "transparency_rebuild_needed": force or finished != locked or not matchday_path.exists(),
-        "road_to_the_trophy_rebuild_needed": force or finished != locked or engine.get("source_engine") != "tournament_simulation_engine_v3" or not coherence_path.exists(),
+        "road_to_the_trophy_rebuild_needed": force or finished != locked or engine.get("source_engine") != "tournament_simulation_engine_v4" or not coherence_path.exists(),
         "frontend_copy_needed": force or bool(frontend_missing),
         "safe_to_skip_heavy_simulation": not (force or finished != locked or matchday.get("simulation_count") != simulations),
         "finished_results": finished, "v3_locked_results": locked, "requested_simulations": simulations,
@@ -79,15 +79,7 @@ def refresh_decision(simulations: int = 50000, force: bool = False) -> dict[str,
     }
 
 
-def rebuild_v3() -> None:
-    from backend.scripts.tournament_simulation_engine_v3_pipeline_v2_14 import representative, tournament
-    from backend.simulation.tournament_engine_v3 import current_elos, historical_matches, profiles, publish as publish_v3
-    from backend.scripts.road_to_the_trophy_v3_promotion_pipeline_v2_15 import promote
-    from backend.scripts.repair_road_to_the_trophy_scenario_coherence_v2_19 import main as repair_coherence
+def rebuild_v4() -> None:
+    from backend.scripts.run_tournament_simulation_engine_v4_v2_21 import main
 
-    elos = current_elos()
-    sim = tournament(elos, profiles(historical_matches()))
-    publish_v3("tournament_simulation_engine_v3_results_v2_14.json", sim)
-    publish_v3("representative_tournament_scenario_v3_v2_14.json", representative(sim))
-    promote()
-    repair_coherence()
+    main()

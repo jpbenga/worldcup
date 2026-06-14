@@ -44,6 +44,7 @@ export class SimulationComponent {
   readonly selectedStatus = signal('all');
   readonly selectedTeam = signal<string | null>(null);
   readonly selectedMatchId = signal<string | null>(null);
+  readonly showEvolution = signal(false);
   readonly mode = signal<'overview' | 'team_focus' | 'group_focus' | 'round_focus'>('overview');
   readonly zoomLevel = signal(0.42);
 

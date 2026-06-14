@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
 from backend.scripts.pipeline_utils import utc_now
-from backend.scripts.unified_local_refresh_utils_v2_18 import protected_hashes, publish, rebuild_v3, refresh_decision, run
+from backend.scripts.unified_local_refresh_utils_v2_18 import protected_hashes, publish, rebuild_v4, refresh_decision, run
 
 STEPS = [
     ("operator_doctor", "operator_doctor_v2_17.py", []),
@@ -20,8 +20,7 @@ STEPS = [
     ("model_scoreboard", "build_model_scoreboard_v2_12.py", []),
     ("performance_timeline", "build_prediction_timeline_v2_12.py", []),
     ("data_freshness", "build_data_freshness_status_v2_17.py", []),
-    ("road_to_the_trophy_validation", "validate_road_to_the_trophy_v3_promotion_v2_15.py", []),
-    ("road_to_the_trophy_coherence_validation", "validate_road_to_the_trophy_scenario_coherence_v2_19.py", []),
+    ("road_to_the_trophy_validation", "validate_tournament_simulation_engine_v4_v2_21.py", []),
 ]
 
 
@@ -47,7 +46,7 @@ def main() -> None:
             arguments = ["--simulations", str(args.simulations), "--fetch" if args.fetch else "--no-fetch"]
             if args.skip_frontend_copy: arguments.append("--skip-frontend-copy")
         planned.append({"name": name, "script": script, "arguments": arguments, "status": "planned" if should_run else "skipped", "reason": "refresh_required" if should_run else "safe_to_skip", "outputs": []})
-    planned.insert(6, {"name": "tournament_engine_v3_and_road_to_the_trophy", "script": "internal_v3_rebuild", "arguments": [], "status": "planned" if decision["road_to_the_trophy_rebuild_needed"] else "skipped", "reason": "official_results_changed" if decision["road_to_the_trophy_rebuild_needed"] else "safe_to_skip", "outputs": ["tournament_simulation_engine_v3_results_v2_14.json", "road_to_the_trophy_engine.json"]})
+    planned.insert(6, {"name": "tournament_engine_v4_and_road_to_the_trophy", "script": "internal_v4_rebuild", "arguments": [], "status": "planned" if decision["road_to_the_trophy_rebuild_needed"] else "skipped", "reason": "official_results_changed" if decision["road_to_the_trophy_rebuild_needed"] else "safe_to_skip", "outputs": ["tournament_simulation_engine_v4_results_v2_21.json", "road_to_the_trophy_engine.json"]})
     manifest = {
         "version": "v2.18", "generated_at": utc_now(), "mode": mode_name, "simulations": args.simulations, "force": args.force,
         "data_changed": decision["refresh_needed"], "new_results_detected": max(0, decision["finished_results"] - decision["v3_locked_results"]),
@@ -60,9 +59,9 @@ def main() -> None:
     before = protected_hashes()
     for step in planned:
         if step["status"] == "skipped": continue
-        if step["script"] == "internal_v3_rebuild":
+        if step["script"] == "internal_v4_rebuild":
             try:
-                rebuild_v3()
+                rebuild_v4()
                 step["status"] = "pass"
                 manifest["road_to_the_trophy_regenerated"] = True
             except Exception as exc:

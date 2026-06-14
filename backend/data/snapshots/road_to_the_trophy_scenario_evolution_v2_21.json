@@ -1,0 +1,173 @@
+{
+  "version": "v2.21",
+  "comparison": "same_engine_common_random_numbers_with_known_results_vs_without_known_results",
+  "known_results_count": 5,
+  "known_results": [
+    {
+      "match": "Mexico 2-0 South Africa"
+    },
+    {
+      "match": "South Korea 2-1 Czechia"
+    },
+    {
+      "match": "Canada 1-1 Bosnia & Herzegovina"
+    },
+    {
+      "match": "USA 4-1 Paraguay"
+    },
+    {
+      "match": "Qatar 1-1 Switzerland"
+    }
+  ],
+  "scenario_changed": true,
+  "structural_changes": {
+    "champion_changed": false,
+    "final_changed": false,
+    "before_final": [
+      "Ecuador",
+      "Spain"
+    ],
+    "after_final": [
+      "Ecuador",
+      "Spain"
+    ],
+    "changed_group_orders": [
+      "A",
+      "D"
+    ],
+    "changed_group_order_count": 2,
+    "changed_knockout_matches_by_round": {
+      "round_of_32": 1,
+      "round_of_16": 0,
+      "quarter_finals": 0,
+      "semi_finals": 0,
+      "final": 0
+    },
+    "changed_knockout_match_count": 1
+  },
+  "before": {
+    "simulation_id": 34319,
+    "champion": "Spain",
+    "diagnostics": {
+      "method": "minimum_global_surprise_complete_path_with_continuity_tie_break",
+      "candidate_pool": 2000,
+      "candidate_sampling": "uniform reservoir across all 50000 complete paths",
+      "near_optimal_candidate_count": 21,
+      "near_optimal_threshold": "within 5% of minimum average surprise",
+      "continuity_reference_used": false,
+      "distance_from_previous_scenario": null,
+      "pure_best_simulation_id": 34319,
+      "pure_best_average_surprise": 0.8027277496317075,
+      "selected_vs_pure_best_surprise_delta": 0.0,
+      "selected_simulation_id": 34319,
+      "selected_champion": "Spain",
+      "selected_average_surprise": 0.8027277496317075,
+      "most_likely_champion": "Spain",
+      "most_likely_champion_probability": 0.18614,
+      "champion_first_candidate_simulation_id": 34319,
+      "champion_first_average_surprise": 0.8027277496317075,
+      "champion_forced": false,
+      "interpretation": "The selected path is within 5% of minimum average surprise; when a previous scenario exists, continuity breaks statistically close ties. The champion is never forced."
+    }
+  },
+  "after": {
+    "simulation_id": 34319,
+    "champion": "Spain",
+    "diagnostics": {
+      "method": "minimum_global_surprise_complete_path_with_continuity_tie_break",
+      "candidate_pool": 2000,
+      "candidate_sampling": "uniform reservoir across all 50000 complete paths",
+      "near_optimal_candidate_count": 26,
+      "near_optimal_threshold": "within 5% of minimum average surprise",
+      "continuity_reference_used": true,
+      "distance_from_previous_scenario": 3,
+      "pure_best_simulation_id": 43772,
+      "pure_best_average_surprise": 0.7936597016757239,
+      "selected_vs_pure_best_surprise_delta": 0.016351036484626547,
+      "selected_simulation_id": 34319,
+      "selected_champion": "Spain",
+      "selected_average_surprise": 0.8100107381603504,
+      "most_likely_champion": "Spain",
+      "most_likely_champion_probability": 0.18558,
+      "champion_first_candidate_simulation_id": 43772,
+      "champion_first_average_surprise": 0.7936597016757239,
+      "champion_forced": false,
+      "interpretation": "The selected path is within 5% of minimum average surprise; when a previous scenario exists, continuity breaks statistically close ties. The champion is never forced."
+    }
+  },
+  "largest_probability_movements": [
+    {
+      "team": "USA",
+      "qualification_delta": 0.37054,
+      "champion_delta": 7.999999999999999e-05,
+      "impact": 0.37062
+    },
+    {
+      "team": "Paraguay",
+      "qualification_delta": -0.30589999999999995,
+      "champion_delta": -0.0018799999999999997,
+      "impact": 0.30777999999999994
+    },
+    {
+      "team": "South Africa",
+      "qualification_delta": -0.14160000000000006,
+      "champion_delta": -1.9999999999999998e-05,
+      "impact": 0.14162000000000005
+    },
+    {
+      "team": "South Korea",
+      "qualification_delta": 0.13702000000000003,
+      "champion_delta": 0.00112,
+      "impact": 0.13814000000000004
+    },
+    {
+      "team": "Czech Republic",
+      "qualification_delta": -0.11059999999999998,
+      "champion_delta": -2e-05,
+      "impact": 0.11061999999999998
+    },
+    {
+      "team": "Canada",
+      "qualification_delta": -0.08043999999999996,
+      "champion_delta": -0.0010400000000000001,
+      "impact": 0.08147999999999996
+    },
+    {
+      "team": "Switzerland",
+      "qualification_delta": -0.06676000000000004,
+      "champion_delta": -0.0012400000000000015,
+      "impact": 0.06800000000000005
+    },
+    {
+      "team": "Mexico",
+      "qualification_delta": 0.060699999999999976,
+      "champion_delta": 0.0009399999999999964,
+      "impact": 0.06163999999999997
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "qualification_delta": 0.05074000000000001,
+      "champion_delta": 0.0,
+      "impact": 0.05074000000000001
+    },
+    {
+      "team": "Australia",
+      "qualification_delta": -0.003920000000000035,
+      "champion_delta": 0.0006600000000000009,
+      "impact": 0.004580000000000035
+    },
+    {
+      "team": "Netherlands",
+      "qualification_delta": -0.00031999999999998696,
+      "champion_delta": -0.0025000000000000022,
+      "impact": 0.002819999999999989
+    },
+    {
+      "team": "Colombia",
+      "qualification_delta": -0.0007800000000000029,
+      "champion_delta": 0.0010000000000000009,
+      "impact": 0.0017800000000000038
+    }
+  ],
+  "method_note": "Both universes use the same engine and common random-number stream per tournament. The only intentional difference is that finished official results are locked in the current universe."
+}

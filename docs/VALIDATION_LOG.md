@@ -1929,3 +1929,14 @@ Commit: TBD
 - [ ] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+# V2.21 - Road to the Trophy Engine V4
+
+- 50 000 tournois complets avec résultats connus verrouillés.
+- 50 000 tournois contrefactuels avec la même graine sans résultats verrouillés.
+- Résolution explicite des matchs knockout à 90 minutes, en prolongations ou aux tirs au but.
+- Classements déterministes avec tête-à-tête et proxy final documenté.
+- Réservoir uniforme de 2 000 parcours couvrant les 50 000 simulations.
+- Scénario central choisi par surprise globale minimale sans champion imposé.
+- Le parcours central évolue lorsque les cinq résultats connus sont verrouillés ; le champion Espagne reste stable dans la comparaison contrôlée.
+- Panneau UI d'évolution du scénario ajouté sans modifier l'Atlas principal.
+- Validation Python et build Angular : PASS.

@@ -35,7 +35,7 @@ export class WorldCupService {
   }
 
   getRoadToTheTrophyEngine(): Observable<any> {
-    return this.http.get<any>('assets/data/road_to_the_trophy_coherent_view_model_v2_19.json');
+    return this.http.get<any>('assets/data/road_to_the_trophy_coherent_view_model_v2_21.json');
   }
 
   getPredictionHistoryV212(): Observable<any> {

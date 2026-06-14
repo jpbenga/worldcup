@@ -68,10 +68,13 @@ def table_from_matches(teams: list[str], matches: list[dict[str, Any]]) -> list[
     return order
 
 
-def build_official_view_model(representative_override: dict[str, Any] | None = None) -> dict[str, Any]:
+def build_official_view_model(
+    representative_override: dict[str, Any] | None = None,
+    simulation_override: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     visual = load_json(DATA_DIR / "generated" / "road_to_the_trophy_view_model_v2_13_1B.json")
     representative = representative_override or load_json(DATA_DIR / "generated" / "representative_tournament_scenario_v3_v2_14.json")
-    simulation = load_json(DATA_DIR / "generated" / "tournament_simulation_engine_v3_results_v2_14.json")
+    simulation = simulation_override or load_json(DATA_DIR / "generated" / "tournament_simulation_engine_v3_results_v2_14.json")
     elos, team_profiles = current_elos(), profiles(historical_matches())
     assets = {team["name"]: team for group in load_json(FRONTEND_DATA_DIR / "worldcup_groups.json") for team in group["teams"]}
 
@@ -135,6 +138,9 @@ def build_official_view_model(representative_override: dict[str, Any] | None = N
                 "team_b_win_probability": prediction["advance_probabilities"]["team_b"],
                 "projected_winner": source["winner"],
                 "projected_winner_probability": winner_probability,
+                "resolution": source.get("resolution"),
+                "score_90": source.get("score_90"),
+                "score_et": source.get("score_et"),
                 "is_upset": source["winner"] != favorite,
                 "round": key,
                 "round_label": label,
