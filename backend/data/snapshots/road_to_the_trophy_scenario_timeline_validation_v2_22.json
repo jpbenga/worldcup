@@ -1,0 +1,36 @@
+{
+  "version": "v2.22",
+  "generated_at": "2026-06-14T20:48:26Z",
+  "passed": true,
+  "timeline_states": 6,
+  "diffs": 5,
+  "baseline_available": true,
+  "current_available": true,
+  "per_result_iteration_available": true,
+  "ui_timeline_available": true,
+  "public_engine_changed": false,
+  "active_predictions_unchanged": true,
+  "checks": {
+    "timeline_json_exists": true,
+    "baseline_available": true,
+    "current_available": true,
+    "per_result_iteration_available": true,
+    "diffs_between_states": true,
+    "each_diff_has_trigger": true,
+    "champion_and_final_per_state": true,
+    "groups_per_state": true,
+    "bracket_per_state": true,
+    "impact_visible": true,
+    "ui_timeline_available": true,
+    "before_after_available": true,
+    "atlas_diff_highlight": true,
+    "single_public_scenario": true,
+    "public_engine_unchanged": true,
+    "active_predictions_unchanged": true,
+    "no_optuna": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Timeline generation progressively replays V4 and is intentionally expensive during a forced refresh."
+  ]
+}

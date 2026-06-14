@@ -65,3 +65,13 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Les filtres groupe, tour et statut fonctionnent.
 - [ ] Le panneau « impact des résultats réels » s'ouvre sans casser l'Atlas.
 - [ ] Un contrat invalide affiche un état compact et ne rend pas de grande carte vide.
+
+## Scenario Timeline V2.22
+
+- [ ] La timeline affiche Avant, chaque résultat réel et Maintenant.
+- [ ] Précédent, Suivant et Maintenant changent bien l'état affiché.
+- [ ] Avant ce résultat / Après ce résultat fait évoluer visuellement l'Atlas.
+- [ ] Groupes, équipes et matchs modifiés sont surlignés.
+- [ ] Le panneau latéral explique les changements et les équipes impactées.
+- [ ] Focus groupe, focus équipe, zoom, pan et Reset restent fonctionnels.
+- [ ] Sur mobile, la timeline défile horizontalement sans masquer l'Atlas.

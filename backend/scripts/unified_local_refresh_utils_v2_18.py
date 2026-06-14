@@ -81,5 +81,7 @@ def refresh_decision(simulations: int = 50000, force: bool = False) -> dict[str,
 
 def rebuild_v4() -> None:
     from backend.scripts.run_tournament_simulation_engine_v4_v2_21 import main
+    from backend.scripts.build_road_to_the_trophy_scenario_timeline_v2_22 import main as build_timeline
 
     main()
+    build_timeline()

@@ -21,6 +21,7 @@ STEPS = [
     ("performance_timeline", "build_prediction_timeline_v2_12.py", []),
     ("data_freshness", "build_data_freshness_status_v2_17.py", []),
     ("road_to_the_trophy_validation", "validate_tournament_simulation_engine_v4_v2_21.py", []),
+    ("road_to_the_trophy_timeline_validation", "validate_road_to_the_trophy_scenario_timeline_v2_22.py", []),
 ]
 
 

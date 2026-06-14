@@ -386,6 +386,38 @@ Commit: TBD
 - [ ] Validated with reservations
 - [ ] Not validated
 
+## V2.22 — Road to the Trophy Scenario Timeline & Before/After Experience
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Scenario timeline data model created
+- [x] Baseline/current states available
+- [x] Per-result states available
+- [x] Scenario diffs generated
+- [x] Timeline UI added
+- [x] Before/after comparison added
+- [x] Atlas diff highlight added
+- [x] Team/group focus preserved
+- [x] Unified refresh integration updated
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Public engine unchanged
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [x] Validated with reservations
+- [ ] Not validated
+
 ### Notes
 
 The controlled exploration executed `5` API requests and found `872` finished
@@ -1961,6 +1993,13 @@ Commit: TBD
 ### Human validation
 
 - [ ] Reviewed by Jeanpaul Benga
+
+### Human feedback
+
+- [x] User wants to see scenario evolution, not just a textual impact panel
+- [x] User expects a premium and intuitive before/after experience
+- [x] User wants Codex to investigate the best interaction and technology options
+- [x] Next iteration accepted: Road to the Trophy Scenario Timeline & Before/After Experience
 
 ### Result
 

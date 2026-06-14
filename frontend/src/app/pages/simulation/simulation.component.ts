@@ -1,4 +1,4 @@
-import { DatePipe, PercentPipe } from '@angular/common';
+import { DatePipe, PercentPipe, UpperCasePipe } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -17,7 +17,7 @@ import { WorldCupService } from '../../services/worldcup.service';
 
 @Component({
   selector: 'app-simulation',
-  imports: [DatePipe, PercentPipe, RouterLink],
+  imports: [DatePipe, PercentPipe, UpperCasePipe, RouterLink],
   templateUrl: './simulation.component.html',
   styleUrl: './simulation.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -39,12 +39,15 @@ export class SimulationComponent {
   }
 
   readonly vm = toSignal(this.worldCupService.getRoadToTheTrophyEngine());
+  readonly timeline = toSignal(this.worldCupService.getRoadToTheTrophyTimeline());
+  readonly selectedStateId = signal('current');
+  readonly comparisonSide = signal<'before' | 'after'>('after');
+  readonly comparisonEnabled = signal(false);
   readonly selectedGroup = signal<string | null>(null);
   readonly selectedRound = signal('all');
   readonly selectedStatus = signal('all');
   readonly selectedTeam = signal<string | null>(null);
   readonly selectedMatchId = signal<string | null>(null);
-  readonly showEvolution = signal(false);
   readonly mode = signal<'overview' | 'team_focus' | 'group_focus' | 'round_focus'>('overview');
   readonly zoomLevel = signal(0.42);
 
@@ -52,10 +55,24 @@ export class SimulationComponent {
   readonly worldHeight = 3040;
   readonly roundX = [1050, 1710, 2370, 3030, 3690];
 
-  readonly activeGroup = computed(() => this.vm()?.groups.find((group: any) => group.group === this.selectedGroup()));
-  readonly selectedTeamPath = computed(() => this.vm()?.team_paths[this.selectedTeam() ?? ''] ?? null);
+  readonly selectedStateIndex = computed(() => {
+    const states = this.timeline()?.states ?? [];
+    const index = states.findIndex((state: any) => state.state_id === this.selectedStateId());
+    return index < 0 ? Math.max(0, states.length - 1) : index;
+  });
+  readonly selectedTimelineDiff = computed(() => this.timeline()?.diffs?.find((diff: any) => diff.to_state_id === this.selectedStateId()) ?? null);
+  readonly activeState = computed(() => {
+    const timeline = this.timeline();
+    if (!timeline?.states?.length) return null;
+    const index = this.selectedStateIndex();
+    const activeIndex = this.comparisonEnabled() && this.comparisonSide() === 'before' ? Math.max(0, index - 1) : index;
+    return timeline.states[activeIndex];
+  });
+  readonly activeData = computed(() => this.activeState()?.scenario ?? this.vm());
+  readonly activeGroup = computed(() => this.activeData()?.groups.find((group: any) => group.group === this.selectedGroup()));
+  readonly selectedTeamPath = computed(() => this.activeData()?.team_paths[this.selectedTeam() ?? ''] ?? null);
   readonly selectedMatch = computed(() => {
-    const data = this.vm();
+    const data = this.activeData();
     if (!data) return null;
     return [
       ...data.groups.flatMap((group: any) => group.matches),
@@ -123,7 +140,7 @@ export class SimulationComponent {
     this.selectedGroup.set(code);
     this.selectedTeam.set(null);
     this.mode.set('group_focus');
-    const index = this.vm()?.groups.findIndex((group: any) => group.group === code) ?? 0;
+    const index = this.activeData()?.groups.findIndex((group: any) => group.group === code) ?? 0;
     const position = this.groupPosition(index);
     this.moveTo(position.x + 180, position.y + 215, 0.9);
   }
@@ -131,7 +148,7 @@ export class SimulationComponent {
   focusRound(key: string): void {
     this.selectedRound.set(key);
     this.mode.set('round_focus');
-    const index = this.vm()?.rounds.findIndex((round: any) => round.key === key) ?? 0;
+    const index = this.activeData()?.rounds.findIndex((round: any) => round.key === key) ?? 0;
     this.moveTo(this.roundX[index] + 160, this.worldHeight / 2, 0.45);
   }
 
@@ -154,6 +171,29 @@ export class SimulationComponent {
     const round = this.selectedRound();
     const matchesStatus = status === 'all' || match.display_status === status || match.status === status;
     return matchesStatus && (round === 'all' || !roundKey || round === roundKey);
+  }
+
+  selectTimelineState(stateId: string): void {
+    this.selectedStateId.set(stateId);
+    this.comparisonSide.set('after');
+  }
+
+  moveTimeline(delta: number): void {
+    const states = this.timeline()?.states ?? [];
+    const index = Math.max(0, Math.min(states.length - 1, this.selectedStateIndex() + delta));
+    if (states[index]) this.selectTimelineState(states[index].state_id);
+  }
+
+  isGroupChanged(code: string): boolean {
+    return this.selectedTimelineDiff()?.group_changes?.includes(code) ?? false;
+  }
+
+  isKnockoutChanged(matchId: string): boolean {
+    return this.selectedTimelineDiff()?.bracket_changes?.some((row: any) => row.match_id === matchId) ?? false;
+  }
+
+  isTeamImpacted(team: string): boolean {
+    return this.selectedTimelineDiff()?.qualification_changes?.some((row: any) => row.team === team) ?? false;
   }
 
   fitOverview(): void {

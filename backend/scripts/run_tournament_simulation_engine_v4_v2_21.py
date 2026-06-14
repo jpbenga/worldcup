@@ -35,15 +35,15 @@ def publish(name: str, payload: dict[str, Any], frontend: bool = False) -> None:
         shutil.copy2(generated, FRONTEND_DATA_DIR / name)
 
 
-def run_simulation(lock_results: bool, seed: int) -> dict[str, Any]:
+def run_simulation(lock_results: bool, seed: int, lock_count: int | None = None) -> dict[str, Any]:
     groups = load_json(FRONTEND_DATA_DIR / "worldcup_groups.json")
     elos = current_elos()
     prediction = prediction_cache(elos, profiles(historical_matches()))
     official = load_json(DATA_DIR / "generated" / "worldcup_2026_results_v2_6.json")
-    results = {
-        row["match_id"]: row for row in official["fixtures"]
-        if lock_results and row["status"] == "finished"
-    }
+    finished = [row for row in official["fixtures"] if row["status"] == "finished"]
+    if lock_count is not None:
+        finished = finished[:lock_count]
+    results = {row["match_id"]: row for row in finished} if lock_results else {}
     reservoir_rng = random.Random(seed + 99_991)
     stage_counts = {round_name: Counter() for round_name in ROUNDS}
     champions, finals, resolution_counts = Counter(), Counter(), Counter()

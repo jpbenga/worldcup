@@ -1,0 +1,15 @@
+{
+  "version": "v2.22",
+  "generated_at": "2026-06-14T20:45:29Z",
+  "real_results_locked": 5,
+  "current_scenario_available": true,
+  "counterfactual_scenario_available": true,
+  "per_result_snapshots_available": true,
+  "common_random_streams_available": true,
+  "atlas_nodes_have_stable_ids": true,
+  "bracket_nodes_can_be_diffed": true,
+  "frontend_can_compare_states": true,
+  "can_build_timeline": true,
+  "missing_requirements": [],
+  "warnings": []
+}

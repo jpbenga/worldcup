@@ -5,7 +5,7 @@
       <div class="flex gap-4 text-sm text-slate-400"><a routerLink="/">Matchs</a><a routerLink="/transparence">Transparence</a></div>
     </nav>
 
-    @if (vm(); as data) {
+    @if (activeData(); as data) {
       <header class="grid gap-5 py-8 lg:grid-cols-[1fr_auto] lg:items-end">
         <div>
           <p class="text-xs font-bold uppercase tracking-[0.22em] text-violet-300">Road to the Trophy · Scénario SimuAI</p>
@@ -22,7 +22,6 @@
       <section class="mb-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 px-4 py-3 text-sm text-cyan-50">
         <strong>Projection du tournoi.</strong>
         <span class="mx-1">Classement du scénario central.</span> Les chances indiquent la fréquence observée sur 50 000 tournois simulés.
-        <button class="evolution-trigger" (click)="showEvolution.set(!showEvolution())">{{ showEvolution() ? 'Masquer' : 'Voir' }} l’impact des résultats réels</button>
       </section>
 
       @if (data.ui_contract_valid === false) {
@@ -33,16 +32,12 @@
         </section>
       }
 
-      @if (showEvolution() && data.scenario_evolution; as evolution) {
-        <section class="evolution-panel">
-          <div>
-            <p class="eyebrow">Scénario vivant · {{ evolution.known_results_count }} résultats verrouillés</p>
-            <h2>{{ evolution.before.champion }} <span>avant</span> → {{ evolution.after.champion }} <span>maintenant</span></h2>
-            <p>{{ evolution.method_note }}</p>
-            <p class="evolution-summary">{{ evolution.structural_changes.changed_group_order_count }} classements de groupe et {{ evolution.structural_changes.changed_knockout_match_count }} matchs du tableau changent dans le parcours central. {{ evolution.structural_changes.champion_changed ? 'Le champion projeté change.' : 'Le champion projeté reste stable, mais son chemin évolue.' }}</p>
-          </div>
-          <div class="evolution-results">@for (result of evolution.known_results; track result.match) { <span>{{ result.match }}</span> }</div>
-          <div class="evolution-movements">@for (move of evolution.largest_probability_movements.slice(0, 6); track move.team) { <article><strong>{{ move.team }}</strong><span [class.up]="move.qualification_delta > 0" [class.down]="move.qualification_delta < 0">{{ move.qualification_delta | percent: '1.1-1' }} qualification</span><small>{{ move.champion_delta | percent: '1.1-1' }} titre</small></article> }</div>
+      @if (timeline(); as history) {
+        <section class="scenario-timeline">
+          <div class="timeline-heading"><div><p class="eyebrow">Évolution du scénario</p><h2>{{ activeState()?.label }}</h2></div><div class="timeline-actions"><button class="control" (click)="moveTimeline(-1)">← Précédent</button><button class="control" (click)="comparisonEnabled.set(!comparisonEnabled())">{{ comparisonEnabled() ? 'Fermer avant/après' : 'Comparer avant/après' }}</button><button class="control" (click)="selectTimelineState(history.current_state_id)">Maintenant</button><button class="control" (click)="moveTimeline(1)">Suivant →</button></div></div>
+          <div class="timeline-track">@for (state of history.states; track state.state_id; let index = $index) { <button [class.active]="selectedStateId() === state.state_id" [class.past]="index <= selectedStateIndex()" (click)="selectTimelineState(state.state_id)"><i></i><strong>{{ index === 0 ? 'Avant' : state.state_id === 'current' ? 'Maintenant' : 'Résultat ' + index }}</strong><small>{{ state.trigger_result ? state.trigger_result.home_team + ' ' + state.trigger_result.actual_score.home + '-' + state.trigger_result.actual_score.away + ' ' + state.trigger_result.away_team : 'Aucun résultat verrouillé' }}</small></button> }</div>
+          @if (comparisonEnabled() && selectedStateIndex() > 0) { <div class="compare-toggle"><button [class.active]="comparisonSide() === 'before'" (click)="comparisonSide.set('before')">Avant ce résultat</button><button [class.active]="comparisonSide() === 'after'" (click)="comparisonSide.set('after')">Après ce résultat</button></div> }
+          @if (selectedTimelineDiff(); as diff) { <div class="timeline-summary"><strong>{{ diff.summary.headline }}</strong><span>{{ diff.summary.groups_changed }} groupe(s), {{ diff.summary.knockout_matches_changed }} match(s) du tableau et {{ diff.summary.team_paths_changed }} parcours modifié(s).</span><em>Impact {{ diff.impact_label }}</em></div> }
         </section>
       }
 
@@ -77,10 +72,10 @@
 
             @for (group of data.groups; track group.group; let groupIndex = $index) {
               @if (group.teams.length && group.matches.length) {
-              <article class="group-node atlas-node" [class.node-focus]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [style.left.px]="groupPosition(groupIndex).x" [style.top.px]="groupPosition(groupIndex).y">
+              <article class="group-node atlas-node" [class.node-focus]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [class.node-changed]="isGroupChanged(group.group)" [style.left.px]="groupPosition(groupIndex).x" [style.top.px]="groupPosition(groupIndex).y">
                 <button class="node-heading" (click)="focusGroup(group.group)"><span>Groupe {{ group.group }}</span><small>{{ group.state === 'volatile' ? 'Très ouvert' : group.state === 'open' ? 'Ouvert' : 'Avantage établi' }}</small></button>
                 <p class="group-section-label">Classement du scénario central</p>
-                <table><thead><tr><th>#</th><th>Équipe</th><th>J</th><th>Pts</th><th>Diff</th><th>BP</th><th>Statut</th></tr></thead><tbody>@for (team of group.teams; track team.name) { <tr [class.team-focus]="isTeamHighlighted(team.name)" (click)="selectTeam(team.name)"><td>{{ team.current_rank }}</td><td><img [src]="team.logo_url" [alt]="team.name" />{{ team.name }}</td><td>{{ team.played }}</td><td>{{ team.points }}</td><td>{{ team.goal_difference }}</td><td>{{ team.goals_for }}</td><td><span class="central-status" [class.out]="team.central_status === 'Éliminé'">{{ team.central_status || 'À confirmer' }}</span></td></tr> }</tbody></table>
+                <table><thead><tr><th>#</th><th>Équipe</th><th>J</th><th>Pts</th><th>Diff</th><th>BP</th><th>Statut</th></tr></thead><tbody>@for (team of group.teams; track team.name) { <tr [class.team-focus]="isTeamHighlighted(team.name)" [class.team-impacted]="isTeamImpacted(team.name)" (click)="selectTeam(team.name)"><td>{{ team.current_rank }}</td><td><img [src]="team.logo_url" [alt]="team.name" />{{ team.name }}</td><td>{{ team.played }}</td><td>{{ team.points }}</td><td>{{ team.goal_difference }}</td><td>{{ team.goals_for }}</td><td><span class="central-status" [class.out]="team.central_status === 'Éliminé'">{{ team.central_status || 'À confirmer' }}</span></td></tr> }</tbody></table>
                 <div class="group-probabilities"><p class="group-section-label">Chances sur 50 000 simulations</p>@for (team of group.teams; track team.name) { <button (click)="selectTeam(team.name)"><span>{{ team.name }}</span><strong>{{ (team.simulation_probabilities?.qualification ?? team.qualification_probability ?? 0) | percent: '1.0-0' }} qualif.</strong><small>{{ (team.simulation_probabilities?.elimination ?? (1 - (team.qualification_probability ?? 0))) | percent: '1.0-0' }} élimination</small></button> }</div>
                 <div class="group-matches">@for (match of group.matches; track match.match_id) { <button [class.match-focus]="isMatchHighlighted(match)" [class.match-real]="match.status === 'real'" [class.match-muted]="!isMatchVisible(match)" (click)="selectMatch(match)"><span>{{ match.home_team }} <strong>{{ match.score }}</strong> {{ match.away_team }}</span><small>{{ match.status === 'real' ? 'Réel' : 'Prono' }}</small></button> }</div>
               </article>
@@ -89,7 +84,7 @@
 
             @for (round of data.rounds; track round.key; let roundIndex = $index) {
               @for (match of round.matches; track match.match_id; let matchIndex = $index) {
-                <button class="knockout-node atlas-node" [class.node-muted]="!isMatchVisible(match, round.key)" [class.node-focus]="selectedMatchId() === match.match_id || isMatchHighlighted(match)" [style.left.px]="matchPosition(roundIndex, matchIndex, round.matches.length).x" [style.top.px]="matchPosition(roundIndex, matchIndex, round.matches.length).y - 52" (click)="selectMatch(match)">
+                <button class="knockout-node atlas-node" [class.node-muted]="!isMatchVisible(match, round.key)" [class.node-focus]="selectedMatchId() === match.match_id || isMatchHighlighted(match)" [class.node-changed]="isKnockoutChanged(match.match_id)" [style.left.px]="matchPosition(roundIndex, matchIndex, round.matches.length).x" [style.top.px]="matchPosition(roundIndex, matchIndex, round.matches.length).y - 52" (click)="selectMatch(match)">
                   <small>{{ match.is_upset ? 'Surprise du scénario · à expliquer' : 'Projeté · à confirmer' }}</small>
                   <span [class.team-focus]="isTeamHighlighted(match.team_a)" [class.projected-advance]="match.projected_winner === match.team_a">{{ match.team_a }} <strong>{{ match.team_a_win_probability | percent: '1.0-0' }} {{ match.projected_winner === match.team_a ? '✓' : '' }}</strong></span>
                   <span [class.team-focus]="isTeamHighlighted(match.team_b)" [class.projected-advance]="match.projected_winner === match.team_b">{{ match.team_b }} <strong>{{ match.team_b_win_probability | percent: '1.0-0' }} {{ match.projected_winner === match.team_b ? '✓' : '' }}</strong></span>
@@ -102,6 +97,11 @@
         </div>
 
         <aside class="inspector">
+          @if (selectedTimelineDiff(); as diff) {
+            <p class="eyebrow">Ce qui a changé</p><h2>{{ diff.impact_label | uppercase }} impact</h2><p class="meta">{{ diff.summary.headline }}</p>
+            <div class="mt-4 grid grid-cols-2 gap-2 text-sm"><div class="metric"><small>Groupes modifiés</small><strong>{{ diff.summary.groups_changed }}</strong></div><div class="metric"><small>Parcours modifiés</small><strong>{{ diff.summary.team_paths_changed }}</strong></div></div>
+            <h3>Équipes les plus impactées</h3>@for (move of diff.qualification_changes.slice(0, 4); track move.team) { <button class="journey-step" (click)="selectTeam(move.team)"><span>{{ move.team }}</span><strong>{{ move.qualification_delta | percent: '1.1-1' }}</strong></button> }
+          }
           @if (selectedMatch(); as match) {
             <p class="eyebrow">Match inspecté</p>
             <h2>{{ match.home_team || match.team_a }} <span>vs</span> {{ match.away_team || match.team_b }}</h2>

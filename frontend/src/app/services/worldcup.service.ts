@@ -41,6 +41,15 @@ export class WorldCupService {
       .pipe(map(adaptRoadToTheTrophy));
   }
 
+  getRoadToTheTrophyTimeline(): Observable<any> {
+    return this.http.get<any>('assets/data/road_to_the_trophy_scenario_timeline_v2_22.json').pipe(
+      map((timeline) => ({
+        ...timeline,
+        states: timeline.states.map((state: any) => ({ ...state, scenario: adaptRoadToTheTrophy(state.scenario) })),
+      })),
+    );
+  }
+
   getPredictionHistoryV212(): Observable<any> {
     return this.http.get<any>('assets/data/prediction_history_v2_12.json');
   }

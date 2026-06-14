@@ -1,15 +1,7 @@
 .control { border: 1px solid rgb(51 65 85); border-radius: .65rem; background: rgb(2 6 23); padding: .55rem .8rem; font-size: .78rem; color: rgb(203 213 225); }
 .control:hover { border-color: rgb(103 232 249); color: white; }
 .control-primary { background: rgb(34 211 238); border-color: rgb(34 211 238); color: rgb(2 6 23); font-weight: 800; }
-.evolution-trigger { float: right; margin-left: 12px; border: 1px solid rgb(103 232 249 / .45); border-radius: 999px; padding: 4px 10px; color: rgb(165 243 252); font-size: 11px; font-weight: 800; }
 .contract-error { display: grid; gap: 4px; margin-bottom: 16px; border: 1px solid rgb(251 113 133 / .55); border-radius: 16px; background: rgb(127 29 29 / .2); padding: 14px; color: rgb(254 226 226); font-size: 12px; }.contract-error span,.contract-error small { color: rgb(254 202 202); }
-.evolution-panel { display: grid; gap: 14px; margin-bottom: 16px; border: 1px solid rgb(139 92 246 / .45); border-radius: 24px; background: linear-gradient(135deg, rgb(76 29 149 / .28), rgb(8 145 178 / .14)); padding: 18px; }
-.evolution-panel .eyebrow { color: rgb(196 181 253); font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .18em; }
-.evolution-panel h2 { margin-top: 4px; font-size: 22px; font-weight: 900; }.evolution-panel h2 span { color: rgb(148 163 184); font-size: 12px; }
-.evolution-panel p { color: rgb(148 163 184); font-size: 11px; }
-.evolution-panel .evolution-summary { margin-top: 6px; color: rgb(224 231 255); font-weight: 700; }
-.evolution-results { display: flex; flex-wrap: wrap; gap: 6px; }.evolution-results span { border: 1px solid rgb(16 185 129 / .35); border-radius: 999px; background: rgb(6 78 59 / .25); padding: 4px 8px; color: rgb(167 243 208); font-size: 9px; }
-.evolution-movements { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 7px; }.evolution-movements article { border: 1px solid rgb(51 65 85); border-radius: 12px; background: rgb(2 6 23 / .7); padding: 9px; }.evolution-movements strong,.evolution-movements span,.evolution-movements small { display: block; }.evolution-movements strong { font-size: 11px; }.evolution-movements span,.evolution-movements small { margin-top: 3px; color: rgb(148 163 184); font-size: 9px; }.evolution-movements .up { color: rgb(110 231 183); }.evolution-movements .down { color: rgb(251 113 133); }
 .atlas-viewport { position: relative; height: min(76vh, 900px); min-height: 620px; overflow: hidden; border: 1px solid rgb(51 65 85); border-radius: 1.5rem; background-color: rgb(2 6 23); background-image: radial-gradient(circle at center, rgb(51 65 85 / .48) 1px, transparent 1px); background-size: 22px 22px; cursor: grab; touch-action: none; }
 .atlas-viewport:active { cursor: grabbing; }
 .atlas-world { position: absolute; transform-origin: 0 0; }
@@ -19,6 +11,7 @@
 .atlas-connections path.path-active { stroke: rgb(34 211 238); stroke-width: 8; filter: drop-shadow(0 0 8px rgb(34 211 238 / .6)); }
 .atlas-node { position: absolute; z-index: 2; border: 2px solid rgb(51 65 85); background: rgb(15 23 42 / .96); box-shadow: 0 14px 35px rgb(0 0 0 / .35); transition: opacity .2s, border-color .2s, box-shadow .2s; }
 .atlas-node.node-focus { border-color: rgb(34 211 238); box-shadow: 0 0 0 5px rgb(34 211 238 / .13), 0 18px 45px rgb(0 0 0 / .5); z-index: 4; }
+.atlas-node.node-changed { border-color: rgb(251 191 36); box-shadow: 0 0 0 4px rgb(251 191 36 / .14), 0 0 28px rgb(251 191 36 / .25); }
 .atlas-node.node-muted { opacity: .08; }
 .group-node { width: 400px; height: 470px; border-radius: 20px; overflow: hidden; }
 .node-heading { width: 100%; display: flex; justify-content: space-between; padding: 14px 16px; background: rgb(8 47 73); color: white; font-weight: 900; text-align: left; }
@@ -32,6 +25,7 @@
 .group-node td img { width: 18px; height: 18px; object-fit: contain; }
 .group-node tr { cursor: pointer; }
 .group-node tr:hover, .team-focus { background: rgb(8 145 178 / .22) !important; color: rgb(165 243 252); }
+.group-node tr.team-impacted { background: rgb(120 53 15 / .32); color: rgb(253 230 138); }
 .central-status { color: rgb(110 231 183); font-weight: 800; }
 .group-probabilities { border-top: 1px solid rgb(51 65 85); padding: 2px 7px 5px; }
 .group-probabilities button { width: 50%; padding: 2px; color: rgb(203 213 225); text-align: left; font-size: 8px; }
@@ -73,5 +67,4 @@
 .legend i { width: 8px; height: 8px; border-radius: 999px; }
 .legend .real { background: rgb(52 211 153); }.legend .projected { background: rgb(167 139 250); }.legend .confirm { background: rgb(100 116 139); }
 @media (max-width: 1279px) { .inspector { min-height: auto; } }
-@media (max-width: 1279px) { .evolution-movements { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 640px) { .atlas-viewport { min-height: 520px; height: 68vh; }.atlas-hint { left: 10px; right: auto; max-width: calc(100% - 20px); }.control { padding: .48rem .65rem; }.evolution-trigger { float: none; display: block; margin: 9px 0 0; }.evolution-movements { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .atlas-viewport { min-height: 520px; height: 68vh; }.atlas-hint { left: 10px; right: auto; max-width: calc(100% - 20px); }.control { padding: .48rem .65rem; } }
