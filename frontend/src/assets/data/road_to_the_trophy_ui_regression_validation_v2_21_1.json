@@ -1,0 +1,39 @@
+{
+  "version": "v2.21.1",
+  "generated_at": "2026-06-14T12:43:37Z",
+  "passed": true,
+  "groups_available": 12,
+  "empty_group_cards": 0,
+  "tables_have_rows": true,
+  "matches_available": true,
+  "layout_guardrails": true,
+  "ui_contract_valid": true,
+  "active_predictions_unchanged": true,
+  "quant_hybrid_unchanged": true,
+  "optuna_rerun": false,
+  "retrain_run": false,
+  "checks": {
+    "consumed_file_exists": true,
+    "groups_available": true,
+    "four_teams_per_group": true,
+    "tables_have_rows": true,
+    "matches_available": true,
+    "no_empty_group_cards": true,
+    "champion_available": true,
+    "final_available": true,
+    "bracket_rounds_available": true,
+    "team_paths_available": true,
+    "real_result_impact_available": true,
+    "adapter_used": true,
+    "adapter_supports_variants": true,
+    "compact_empty_state_present": true,
+    "empty_group_layout_guard_present": true,
+    "broken_banner_spacing_absent": true,
+    "active_predictions_unchanged": true,
+    "contract_audit_passed": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Angular CSS budget warning remains non-blocking."
+  ]
+}

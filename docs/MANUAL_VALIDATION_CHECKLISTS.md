@@ -55,3 +55,13 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Les changements hors scope restent non indexés.
 - [ ] `git diff --cached --check` passe.
 - [ ] La décision humaine est consignée dans `docs/VALIDATION_LOG.md`.
+# Road to the Trophy V2.21.1
+
+- [ ] Les 12 cartes groupe affichent quatre équipes, un classement et leurs matchs.
+- [ ] Aucune carte vide ne masque l'Atlas.
+- [ ] La finale, le champion projeté et le panneau latéral sont renseignés.
+- [ ] Le focus groupe, équipe et match fonctionne.
+- [ ] Zoom `+`, zoom `-`, déplacement et Reset fonctionnent.
+- [ ] Les filtres groupe, tour et statut fonctionnent.
+- [ ] Le panneau « impact des résultats réels » s'ouvre sans casser l'Atlas.
+- [ ] Un contrat invalide affiche un état compact et ne rend pas de grande carte vide.

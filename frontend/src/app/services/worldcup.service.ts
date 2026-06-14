@@ -21,6 +21,7 @@ import {
   WorldCupGroup,
   WorldCupTeam,
 } from '../models/worldcup.models';
+import { adaptRoadToTheTrophy } from './road-to-the-trophy.adapter';
 
 @Injectable({ providedIn: 'root' })
 export class WorldCupService {
@@ -35,7 +36,9 @@ export class WorldCupService {
   }
 
   getRoadToTheTrophyEngine(): Observable<any> {
-    return this.http.get<any>('assets/data/road_to_the_trophy_coherent_view_model_v2_21.json');
+    return this.http
+      .get<any>('assets/data/road_to_the_trophy_coherent_view_model_v2_21.json')
+      .pipe(map(adaptRoadToTheTrophy));
   }
 
   getPredictionHistoryV212(): Observable<any> {

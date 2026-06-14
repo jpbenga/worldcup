@@ -21,9 +21,17 @@
 
       <section class="mb-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 px-4 py-3 text-sm text-cyan-50">
         <strong>Projection du tournoi.</strong>
-        <strong>Classement du scénario central.</strong> Les chances indiquent la fréquence observée sur 50 000 tournois simulés.
+        <span class="mx-1">Classement du scénario central.</span> Les chances indiquent la fréquence observée sur 50 000 tournois simulés.
         <button class="evolution-trigger" (click)="showEvolution.set(!showEvolution())">{{ showEvolution() ? 'Masquer' : 'Voir' }} l’impact des résultats réels</button>
       </section>
+
+      @if (data.ui_contract_valid === false) {
+        <section class="contract-error" role="alert">
+          <strong>Road to the Trophy indisponible</strong>
+          <span>Le contrat de données est incomplet. L’Atlas vide est volontairement masqué.</span>
+          @for (error of data.ui_contract_errors; track error) { <small>{{ error }}</small> }
+        </section>
+      }
 
       @if (showEvolution() && data.scenario_evolution; as evolution) {
         <section class="evolution-panel">
@@ -68,6 +76,7 @@
             </svg>
 
             @for (group of data.groups; track group.group; let groupIndex = $index) {
+              @if (group.teams.length && group.matches.length) {
               <article class="group-node atlas-node" [class.node-focus]="selectedGroup() === group.group || selectedTeamPath()?.group === group.group" [style.left.px]="groupPosition(groupIndex).x" [style.top.px]="groupPosition(groupIndex).y">
                 <button class="node-heading" (click)="focusGroup(group.group)"><span>Groupe {{ group.group }}</span><small>{{ group.state === 'volatile' ? 'Très ouvert' : group.state === 'open' ? 'Ouvert' : 'Avantage établi' }}</small></button>
                 <p class="group-section-label">Classement du scénario central</p>
@@ -75,6 +84,7 @@
                 <div class="group-probabilities"><p class="group-section-label">Chances sur 50 000 simulations</p>@for (team of group.teams; track team.name) { <button (click)="selectTeam(team.name)"><span>{{ team.name }}</span><strong>{{ (team.simulation_probabilities?.qualification ?? team.qualification_probability ?? 0) | percent: '1.0-0' }} qualif.</strong><small>{{ (team.simulation_probabilities?.elimination ?? (1 - (team.qualification_probability ?? 0))) | percent: '1.0-0' }} élimination</small></button> }</div>
                 <div class="group-matches">@for (match of group.matches; track match.match_id) { <button [class.match-focus]="isMatchHighlighted(match)" [class.match-real]="match.status === 'real'" [class.match-muted]="!isMatchVisible(match)" (click)="selectMatch(match)"><span>{{ match.home_team }} <strong>{{ match.score }}</strong> {{ match.away_team }}</span><small>{{ match.status === 'real' ? 'Réel' : 'Prono' }}</small></button> }</div>
               </article>
+              }
             }
 
             @for (round of data.rounds; track round.key; let roundIndex = $index) {

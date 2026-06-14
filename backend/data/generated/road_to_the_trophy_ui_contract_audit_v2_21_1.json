@@ -1,0 +1,35 @@
+{
+  "version": "v2.21.1",
+  "generated_at": "2026-06-14T12:43:37Z",
+  "frontend_consumed_files": [
+    "road_to_the_trophy_coherent_view_model_v2_21.json"
+  ],
+  "available_road_to_trophy_files": [
+    "road_to_the_trophy_coherent_view_model_v2_19.json",
+    "road_to_the_trophy_coherent_view_model_v2_21.json",
+    "road_to_the_trophy_engine.json",
+    "road_to_the_trophy_official_view_model_v2_15.json",
+    "road_to_the_trophy_scenario_coherence_report_v2_19.json",
+    "road_to_the_trophy_scenario_coherence_validation_v2_19.json",
+    "road_to_the_trophy_scenario_engine_v2_13_1B.json",
+    "road_to_the_trophy_scenario_evolution_v2_21.json",
+    "road_to_the_trophy_simulation_credibility_audit_v2_13_1B.json",
+    "road_to_the_trophy_ui_contract_audit_v2_21_1.json",
+    "road_to_the_trophy_ui_regression_validation_v2_21_1.json",
+    "road_to_the_trophy_v3_candidate_view_model_v2_14.json",
+    "road_to_the_trophy_v3_promotion_validation_v2_15.json",
+    "road_to_the_trophy_validation_v2_13_1B.json",
+    "road_to_the_trophy_view_model_v2_13_1B.json"
+  ],
+  "missing_files": [],
+  "schema_mismatches": [],
+  "empty_groups_detected": false,
+  "empty_tables_detected": false,
+  "layout_risk_detected": false,
+  "adapter_present": true,
+  "probable_root_causes": [
+    "V4 initially omitted fields consumed directly by the Angular group-card template.",
+    "The frontend previously had no normalization layer or compact invalid-contract fallback."
+  ],
+  "verdict": "PASS"
+}

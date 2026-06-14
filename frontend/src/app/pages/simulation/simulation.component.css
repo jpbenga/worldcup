@@ -2,6 +2,7 @@
 .control:hover { border-color: rgb(103 232 249); color: white; }
 .control-primary { background: rgb(34 211 238); border-color: rgb(34 211 238); color: rgb(2 6 23); font-weight: 800; }
 .evolution-trigger { float: right; margin-left: 12px; border: 1px solid rgb(103 232 249 / .45); border-radius: 999px; padding: 4px 10px; color: rgb(165 243 252); font-size: 11px; font-weight: 800; }
+.contract-error { display: grid; gap: 4px; margin-bottom: 16px; border: 1px solid rgb(251 113 133 / .55); border-radius: 16px; background: rgb(127 29 29 / .2); padding: 14px; color: rgb(254 226 226); font-size: 12px; }.contract-error span,.contract-error small { color: rgb(254 202 202); }
 .evolution-panel { display: grid; gap: 14px; margin-bottom: 16px; border: 1px solid rgb(139 92 246 / .45); border-radius: 24px; background: linear-gradient(135deg, rgb(76 29 149 / .28), rgb(8 145 178 / .14)); padding: 18px; }
 .evolution-panel .eyebrow { color: rgb(196 181 253); font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .18em; }
 .evolution-panel h2 { margin-top: 4px; font-size: 22px; font-weight: 900; }.evolution-panel h2 span { color: rgb(148 163 184); font-size: 12px; }

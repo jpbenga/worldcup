@@ -1940,3 +1940,30 @@ Commit: TBD
 - Le parcours central évolue lorsque les cinq résultats connus sont verrouillés ; le champion Espagne reste stable dans la comparaison contrôlée.
 - Panneau UI d'évolution du scénario ajouté sans modifier l'Atlas principal.
 - Validation Python et build Angular : PASS.
+# V2.21.1 — Road to the Trophy UI Regression Hotfix
+
+Commit: TBD
+
+### Technical validation
+
+- [x] UI contract audited
+- [x] Empty group cards fixed
+- [x] Group tables render rows
+- [x] Layout overlap fixed
+- [x] Road to Trophy adapter and compact fallback added
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] No retrain
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
