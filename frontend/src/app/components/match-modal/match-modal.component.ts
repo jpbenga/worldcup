@@ -1,22 +1,18 @@
 import { DatePipe, KeyValuePipe, PercentPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { DualMatrixComparison, MatchPrediction, MatchState, ModelComparison } from '../../models/worldcup.models';
-import { ScoreMatrixComponent } from '../score-matrix/score-matrix.component';
+import { MatchPrediction, MatchState } from '../../models/worldcup.models';
 import { PredictionOutcomeBadgeComponent, PredictionOutcomeState } from '../prediction-outcome-badge/prediction-outcome-badge.component';
 
 @Component({
   selector: 'app-match-modal',
-  imports: [DatePipe, KeyValuePipe, PercentPipe, PredictionOutcomeBadgeComponent, RouterLink, ScoreMatrixComponent],
+  imports: [DatePipe, KeyValuePipe, PercentPipe, PredictionOutcomeBadgeComponent],
   templateUrl: './match-modal.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MatchModalComponent {
   @Input() baseline?: MatchPrediction;
   @Input() elo?: MatchPrediction;
-  @Input() comparison?: ModelComparison;
   @Input() state?: MatchState;
-  @Input() dualMatrix?: DualMatrixComparison;
   @Input() referenceOdds?: any;
   @Input() referenceBookmaker?: any;
   @Output() closed = new EventEmitter<void>();
@@ -41,6 +37,10 @@ export class MatchModalComponent {
 
   dnbLabel(value?: string): string {
     return { win: 'Réussi', loss: 'Raté', push: 'Remboursé', not_applicable: 'Non applicable' }[value ?? ''] ?? 'En attente';
+  }
+
+  confidenceLabel(value?: string): string {
+    return { low: 'faible', medium: 'modérée', high: 'élevée' }[value ?? ''] ?? value ?? 'indisponible';
   }
 
   summaryState(state: MatchState): PredictionOutcomeState {

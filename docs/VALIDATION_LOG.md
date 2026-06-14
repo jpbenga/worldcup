@@ -2062,6 +2062,37 @@ Commit: TBD
 
 ### Human validation
 
+- [x] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.24 — V1 French Localization & Product Polish
+
+Commit: TBD
+
+### Technical validation
+
+- [x] French localization audit passed
+- [x] All 48 tournament teams covered
+- [x] Odds markets and outcomes localized
+- [x] Public Transparence route and page removed
+- [x] Public lab mode removed
+- [x] Honest score wording restored
+- [x] Road to the Trophy promoted in navigation
+- [x] Long team names protected
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] Active predictions unchanged
+- [x] Road to the Trophy engine unchanged
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
 - [ ] Reviewed by Jeanpaul Benga
 
 ### Result

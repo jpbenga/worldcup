@@ -1,0 +1,23 @@
+{
+  "version": "v2.24",
+  "generated_at": "2026-06-14T22:41:01Z",
+  "scope": "public_frontend",
+  "country_localization": {
+    "source_team_count": 48,
+    "dictionary_entries": 48,
+    "missing_source_teams": [],
+    "long_name_strategy": true
+  },
+  "market_localization": {
+    "market_dictionary_present": true,
+    "french_decimal_odds": true
+  },
+  "product_polish": {
+    "public_transparency_route_removed": true,
+    "road_to_trophy_prominent": true,
+    "lab_mode_removed": true,
+    "complete_matrix_claim_removed": true
+  },
+  "remaining_forbidden_public_strings": [],
+  "verdict": "PASS"
+}

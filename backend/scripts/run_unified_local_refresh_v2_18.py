@@ -31,6 +31,8 @@ STEPS = [
     ("reference_odds_view_model", "build_match_reference_odds_view_model_v2_23_1.py", []),
     ("svg_and_odds_ux_audit", "audit_svg_and_odds_ux_v2_23_1.py", []),
     ("svg_and_odds_ux_validation", "validate_svg_and_odds_ux_v2_23_1.py", []),
+    ("frontend_french_localization_audit", "audit_frontend_french_localization_v2_24.py", []),
+    ("v1_french_product_polish_validation", "validate_v1_french_product_polish_v2_24.py", []),
 ]
 
 

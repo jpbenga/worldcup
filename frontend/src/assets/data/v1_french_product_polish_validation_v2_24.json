@@ -1,0 +1,25 @@
+{
+  "version": "v2.24",
+  "generated_at": "2026-06-14T22:43:29Z",
+  "passed": true,
+  "checks": {
+    "audit_passed": true,
+    "fr_locale_registered": true,
+    "forty_eight_teams_covered": true,
+    "odds_localized_at_service_boundary": true,
+    "public_transparency_removed": true,
+    "lab_mode_removed": true,
+    "historical_comparison_removed": true,
+    "honest_score_wording": true,
+    "road_to_trophy_prominent": true,
+    "long_names_protected": true,
+    "active_predictions_unchanged": true,
+    "no_optuna_run": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Human visual validation remains required."
+  ],
+  "active_predictions_changed": false,
+  "public_engine_changed": false
+}

@@ -19,6 +19,32 @@ body {
 button {
   font: inherit;
 }
+
+.road-cta {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid rgb(139 92 246 / .55);
+  border-radius: .75rem;
+  background: linear-gradient(135deg, rgb(76 29 149 / .35), rgb(8 145 178 / .18));
+  padding: .45rem .7rem;
+  color: rgb(237 233 254);
+  line-height: 1.1;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+
+.road-cta:hover, .road-cta--active {
+  border-color: rgb(34 211 238 / .8);
+  box-shadow: 0 0 20px rgb(34 211 238 / .12);
+}
+
+.road-cta:hover { transform: translateY(-1px); }
+.road-cta small { margin-top: .2rem; color: rgb(165 243 252); font-size: .58rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+
+.team-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
 app-simulation .scenario-timeline { margin-bottom: 16px; border: 1px solid rgb(139 92 246 / .4); border-radius: 24px; background: linear-gradient(135deg, rgb(30 27 75 / .75), rgb(8 47 73 / .55)); padding: 16px; }
 app-simulation .timeline-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 app-simulation .timeline-heading .eyebrow { color: rgb(196 181 253); font-size: 9px; font-weight: 900; text-transform: uppercase; letter-spacing: .18em; }

@@ -24,7 +24,7 @@
 .group-node th { padding: 3px 5px; color: rgb(100 116 139); text-align: left; }
 .group-node td { padding: 4px 5px; border-top: 1px solid rgb(30 41 59); }
 .group-node td:nth-child(n+3) { text-align: right; }
-.group-node td:nth-child(2) { display: flex; align-items: center; gap: 6px; font-weight: 700; }
+.group-node td:nth-child(2) { display: flex; min-width: 0; align-items: center; gap: 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 700; }
 .group-node td img { width: 18px; height: 18px; object-fit: contain; }
 .group-node tr { cursor: pointer; }
 .group-node tr:hover, .team-focus { background: rgb(8 145 178 / .22) !important; color: rgb(165 243 252); }
@@ -42,7 +42,7 @@
 .group-matches button.match-muted { opacity: .1; }
 .knockout-node { width: 330px; min-height: 104px; border-radius: 16px; padding: 10px; color: rgb(226 232 240); text-align: left; }
 .knockout-node small { display: block; margin-bottom: 6px; color: rgb(196 181 253); font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
-.knockout-node span { display: flex; justify-content: space-between; border-radius: 8px; background: rgb(2 6 23); padding: 6px 8px; font-size: 12px; font-weight: 700; }
+.knockout-node span { display: flex; min-width: 0; justify-content: space-between; gap: 6px; overflow: hidden; border-radius: 8px; background: rgb(2 6 23); padding: 6px 8px; font-size: 12px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
 .knockout-node span + span { margin-top: 4px; }
 .knockout-node span.projected-advance { color: rgb(110 231 183); }
 .trophy-node { left: 4010px; top: 1435px; width: 240px; border-color: rgb(139 92 246); border-radius: 28px; background: rgb(30 27 75); padding: 24px; text-align: center; }

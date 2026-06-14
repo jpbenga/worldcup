@@ -18,8 +18,8 @@
           aria-label="Fermer" (click)="close()">Fermer</button>
       </div>
       @if (state) {
-        <div class="mt-7 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
-          <div class="text-center">@if (state.homeTeamLogoUrl) { <img class="mx-auto h-16 w-16 object-contain sm:h-20 sm:w-20" [src]="state.homeTeamLogoUrl" [alt]="state.homeTeam" /> }<h2 class="mt-3 text-lg font-black sm:text-2xl">{{ state.homeTeam }}</h2></div>
+          <div class="mt-7 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+          <div class="min-w-0 text-center">@if (state.homeTeamLogoUrl) { <img class="mx-auto h-16 w-16 object-contain sm:h-20 sm:w-20" [src]="state.homeTeamLogoUrl" [alt]="state.homeTeam" /> }<h2 class="team-name mt-3 text-lg font-black sm:text-2xl">{{ state.homeTeam }}</h2></div>
           <div class="min-w-28 text-center">
             @if (state.status === 'finished') {
               <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">Résultat officiel</p>
@@ -35,7 +35,7 @@
               <p class="mt-2 text-xs font-semibold text-cyan-200">Score recommandé</p>
             }
           </div>
-          <div class="text-center">@if (state.awayTeamLogoUrl) { <img class="mx-auto h-16 w-16 object-contain sm:h-20 sm:w-20" [src]="state.awayTeamLogoUrl" [alt]="state.awayTeam" /> }<h2 class="mt-3 text-lg font-black sm:text-2xl">{{ state.awayTeam }}</h2></div>
+          <div class="min-w-0 text-center">@if (state.awayTeamLogoUrl) { <img class="mx-auto h-16 w-16 object-contain sm:h-20 sm:w-20" [src]="state.awayTeamLogoUrl" [alt]="state.awayTeam" /> }<h2 class="team-name mt-3 text-lg font-black sm:text-2xl">{{ state.awayTeam }}</h2></div>
         </div>
         @if (state.status !== 'not_started') {
           <p class="mt-5 text-center text-sm text-slate-400">Prono SimuAI initial : <strong class="text-slate-200">{{ state.prediction.scoreModal }}</strong></p>
@@ -46,10 +46,10 @@
     <div class="space-y-5 p-5 sm:p-7">
       @if (referenceOdds; as odds) {
         <section class="rounded-2xl border border-cyan-500/20 bg-slate-900/50 p-5">
-          <div class="flex flex-wrap items-start justify-between gap-3"><div><p class="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">Cotes du marché</p><h3 class="mt-2 text-xl font-black">{{ referenceBookmaker?.name }}</h3></div><span class="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-400">{{ odds.odds_freshness === 'fresh' ? 'Cotes fraîches' : odds.odds_freshness }}</span></div>
+          <div class="flex flex-wrap items-start justify-between gap-3"><div><p class="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">Cotes du marché</p><h3 class="mt-2 text-xl font-black">{{ referenceBookmaker?.name }}</h3></div><span class="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-400">{{ odds.odds_freshness === 'fresh' ? 'Cotes fraîches' : 'Cotes archivées' }}</span></div>
           <div class="mt-4 grid gap-3 md:grid-cols-2">
             @for (market of odds.markets; track market.market_key) {
-              <article class="rounded-xl border border-slate-800 bg-slate-950/60 p-4"><h4 class="font-bold">{{ market.market_label }}</h4><div class="mt-3 space-y-2">@for (outcome of market.outcomes; track outcome.label) { <div class="rounded-lg border border-slate-800 p-3" [class.border-cyan-400]="outcome.is_interesting" [class.bg-cyan-500/10]="outcome.is_interesting"><div class="flex items-center justify-between gap-3"><span>{{ outcome.label }}</span><strong class="text-lg">{{ outcome.odds }}</strong></div>@if (outcome.is_interesting) { <span class="mt-2 inline-flex rounded-full bg-cyan-400/15 px-2 py-1 text-[10px] font-black uppercase tracking-wide text-cyan-200">Cote intéressante</span><div class="mt-2 grid grid-cols-4 gap-1 text-[10px] text-slate-400"><span>SimuAI {{ outcome.simuai_probability | percent:'1.0-0' }}</span><span>Marché {{ outcome.market_probability | percent:'1.0-0' }}</span><span>Edge +{{ outcome.edge | percent:'1.1-1' }}</span><span>EV +{{ outcome.expected_value | percent:'1.1-1' }}</span></div>}</div> }</div></article>
+              <article class="rounded-xl border border-slate-800 bg-slate-950/60 p-4"><h4 class="font-bold">{{ market.market_label }}</h4><div class="mt-3 space-y-2">@for (outcome of market.outcomes; track outcome.label) { <div class="rounded-lg border border-slate-800 p-3" [class.border-cyan-400]="outcome.is_interesting" [class.bg-cyan-500/10]="outcome.is_interesting"><div class="flex items-center justify-between gap-3"><span class="team-name">{{ outcome.label }}</span><strong class="text-lg">{{ outcome.odds_label }}</strong></div>@if (outcome.is_interesting) { <span class="mt-2 inline-flex rounded-full bg-cyan-400/15 px-2 py-1 text-[10px] font-black uppercase tracking-wide text-cyan-200">Cote intéressante</span><div class="mt-2 grid grid-cols-4 gap-1 text-[10px] text-slate-400"><span>SimuAI {{ outcome.simuai_probability | percent:'1.0-0' }}</span><span>Marché {{ outcome.market_probability | percent:'1.0-0' }}</span><span>Écart +{{ outcome.edge | percent:'1.1-1' }}</span><span>Valeur +{{ outcome.expected_value | percent:'1.1-1' }}</span></div>}</div> }</div></article>
             }
           </div>
           @if (!odds.best_value_signal) { <p class="mt-4 text-sm text-slate-400">Aucune cote intéressante détectée. Le marché est aligné avec SimuAI.</p> }
@@ -79,7 +79,7 @@
             <app-prediction-outcome-badge label="Top 3 scores" [state]="booleanState(item.evaluation.top3Hit)" [detail]="item.evaluation.top3Hit ? 'Présent' : 'Absent'" />
             <app-prediction-outcome-badge label="Top 5 scores" [state]="booleanState(item.evaluation.top5Hit, true)" [detail]="item.evaluation.top5Hit ? 'Présent' : 'Absent'" />
             <app-prediction-outcome-badge label="Résultat du match" [state]="booleanState(item.evaluation.oneXTwoHit)" [detail]="item.evaluation.oneXTwoHit ? 'Réussi' : 'Raté'" />
-            <app-prediction-outcome-badge label="Draw No Bet" [state]="dnbState(item.evaluation.dnbOutcome)" [detail]="dnbLabel(item.evaluation.dnbOutcome)" />
+            <app-prediction-outcome-badge label="Remboursé si nul" [state]="dnbState(item.evaluation.dnbOutcome)" [detail]="dnbLabel(item.evaluation.dnbOutcome)" />
             <app-prediction-outcome-badge label="Les deux marquent" [state]="booleanState(item.evaluation.marketHits.btts)" [detail]="item.evaluation.marketHits.btts ? 'Réussi' : 'Raté'" />
           </div>
           <details class="mt-4 text-sm text-slate-400">
@@ -90,7 +90,6 @@
               }
             </div>
           </details>
-          <a routerLink="/transparence" class="mt-4 inline-flex text-sm font-semibold text-emerald-300 transition hover:text-emerald-200" (click)="close()">Voir dans l’historique du modèle →</a>
         </section>
       } @else if (state?.status === 'live') {
         <aside class="rounded-xl border border-rose-500/25 bg-rose-500/5 p-4 text-sm text-slate-300">
@@ -105,7 +104,7 @@
             <p class="mt-3 text-5xl font-black">{{ prediction.scoreModal }}</p>
             <p class="mt-2 text-sm text-slate-400">Score recommandé · {{ prediction.topScores[0].probability | percent: '1.1-1' }}</p>
             <div class="mt-4 flex flex-wrap gap-2 text-xs">
-              <span class="rounded-full bg-slate-900 px-3 py-1">Confiance {{ prediction.confidence.level }}</span>
+              <span class="rounded-full bg-slate-900 px-3 py-1">Confiance {{ confidenceLabel(prediction.confidence.level) }}</span>
               <span class="rounded-full bg-slate-900 px-3 py-1">Tendance {{ prediction.favoriteLabel }} {{ prediction.favoriteProbability | percent: '1.0-0' }}</span>
             </div>
           </article>
@@ -132,49 +131,16 @@
           </aside>
         }
 
-        @if (dualMatrix; as alternative) {
-          <details class="rounded-2xl border border-violet-500/25 bg-violet-500/5 p-5">
-            <summary class="cursor-pointer font-semibold text-violet-300">Mode labo · Variante expérimentale</summary>
-            <p class="mt-3 text-sm leading-6 text-slate-400">Comparaison avancée moins conservatrice. Le Prono SimuAI reste la référence de l’application.</p>
-            <div class="mt-4 grid gap-3 sm:grid-cols-2">
-              <article class="rounded-xl border border-cyan-500/20 bg-slate-950/60 p-4">
-                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">Prono SimuAI</p>
-                <p class="mt-2 text-3xl font-black">{{ alternative.active.scoreModal }}</p>
-                <div class="mt-3 flex gap-2 text-xs">@for (score of alternative.active.topScores.slice(0, 3); track score.score) { <span class="rounded-full bg-slate-900 px-2 py-1">{{ score.score }}</span> }</div>
-              </article>
-              <article class="rounded-xl border border-violet-500/20 bg-slate-950/60 p-4">
-                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-violet-300">Variante expérimentale</p>
-                <p class="mt-2 text-3xl font-black">{{ alternative.candidate.scoreModal }}</p>
-                <div class="mt-3 flex gap-2 text-xs">@for (score of alternative.candidate.topScores.slice(0, 3); track score.score) { <span class="rounded-full bg-slate-900 px-2 py-1">{{ score.score }}</span> }</div>
-              </article>
-            </div>
-            <p class="mt-4 text-sm text-slate-300">Changement principal : {{ alternative.comparison.modalChange }} · marge du favori {{ alternative.comparison.favoriteMarginDelta | percent: '1.1-1' }} · over 2,5 {{ alternative.comparison.over25Delta | percent: '1.1-1' }}.</p>
-          </details>
-        }
-
         <details class="rounded-2xl border border-slate-800 bg-slate-900/50 p-5" open>
           <summary class="cursor-pointer font-semibold text-cyan-300">Marchés dérivés utiles</summary>
           <div class="mt-5 grid gap-4 md:grid-cols-2">
             <article class="rounded-xl bg-slate-950/60 p-4"><h3 class="font-semibold">Double chance</h3><div class="mt-3 grid grid-cols-3 gap-2 text-sm"><p>1X <strong class="block">{{ prediction.markets.doubleChance.homeOrDraw | percent: '1.0-0' }}</strong></p><p>X2 <strong class="block">{{ prediction.markets.doubleChance.awayOrDraw | percent: '1.0-0' }}</strong></p><p>12 <strong class="block">{{ prediction.markets.doubleChance.noDraw | percent: '1.0-0' }}</strong></p></div></article>
-            <article class="rounded-xl bg-slate-950/60 p-4"><h3 class="font-semibold">Draw No Bet</h3><div class="mt-3 grid grid-cols-2 gap-2 text-sm"><p>{{ matchState.homeTeam }} <strong class="block">{{ prediction.markets.drawNoBet.home | percent: '1.0-0' }}</strong></p><p>{{ matchState.awayTeam }} <strong class="block">{{ prediction.markets.drawNoBet.away | percent: '1.0-0' }}</strong></p></div><p class="mt-3 text-xs leading-5 text-slate-500">En cas de nul, le pronostic est remboursé : ni victoire ni défaite.</p></article>
+            <article class="rounded-xl bg-slate-950/60 p-4"><h3 class="font-semibold">Remboursé si nul</h3><div class="mt-3 grid grid-cols-2 gap-2 text-sm"><p>{{ matchState.homeTeam }} <strong class="block">{{ prediction.markets.drawNoBet.home | percent: '1.0-0' }}</strong></p><p>{{ matchState.awayTeam }} <strong class="block">{{ prediction.markets.drawNoBet.away | percent: '1.0-0' }}</strong></p></div><p class="mt-3 text-xs leading-5 text-slate-500">En cas de nul, le pronostic est remboursé : ni victoire ni défaite.</p></article>
             <article class="rounded-xl bg-slate-950/60 p-4"><h3 class="font-semibold">Total de buts</h3><div class="mt-3 grid grid-cols-3 gap-2 text-sm"><p>+0,5 <strong class="block">{{ prediction.markets.overUnder.over05 | percent: '1.0-0' }}</strong></p><p>+1,5 <strong class="block">{{ prediction.markets.overUnder.over15 | percent: '1.0-0' }}</strong></p><p>+2,5 <strong class="block">{{ prediction.markets.overUnder.over25 | percent: '1.0-0' }}</strong></p><p>-1,5 <strong class="block">{{ prediction.markets.overUnder.under15 | percent: '1.0-0' }}</strong></p><p>-2,5 <strong class="block">{{ prediction.markets.overUnder.under25 | percent: '1.0-0' }}</strong></p><p>-3,5 <strong class="block">{{ prediction.markets.overUnder.under35 | percent: '1.0-0' }}</strong></p></div></article>
-            <article class="rounded-xl bg-slate-950/60 p-4"><h3 class="font-semibold">BTTS et buts par équipe</h3><div class="mt-3 grid grid-cols-2 gap-2 text-sm"><p>BTTS oui <strong class="block">{{ prediction.markets.bothTeamsToScore.yes | percent: '1.0-0' }}</strong></p><p>BTTS non <strong class="block">{{ prediction.markets.bothTeamsToScore.no | percent: '1.0-0' }}</strong></p><p>{{ matchState.homeTeam }} +0,5 <strong class="block">{{ prediction.markets.teamGoals.homeOver05 | percent: '1.0-0' }}</strong></p><p>{{ matchState.awayTeam }} +0,5 <strong class="block">{{ prediction.markets.teamGoals.awayOver05 | percent: '1.0-0' }}</strong></p><p>{{ matchState.homeTeam }} +1,5 <strong class="block">{{ prediction.markets.teamGoals.homeOver15 | percent: '1.0-0' }}</strong></p><p>{{ matchState.awayTeam }} +1,5 <strong class="block">{{ prediction.markets.teamGoals.awayOver15 | percent: '1.0-0' }}</strong></p></div></article>
+            <article class="rounded-xl bg-slate-950/60 p-4"><h3 class="font-semibold">Les deux équipes marquent et buts par équipe</h3><div class="mt-3 grid grid-cols-2 gap-2 text-sm"><p>Oui <strong class="block">{{ prediction.markets.bothTeamsToScore.yes | percent: '1.0-0' }}</strong></p><p>Non <strong class="block">{{ prediction.markets.bothTeamsToScore.no | percent: '1.0-0' }}</strong></p><p>{{ matchState.homeTeam }} +0,5 <strong class="block">{{ prediction.markets.teamGoals.homeOver05 | percent: '1.0-0' }}</strong></p><p>{{ matchState.awayTeam }} +0,5 <strong class="block">{{ prediction.markets.teamGoals.awayOver05 | percent: '1.0-0' }}</strong></p><p>{{ matchState.homeTeam }} +1,5 <strong class="block">{{ prediction.markets.teamGoals.homeOver15 | percent: '1.0-0' }}</strong></p><p>{{ matchState.awayTeam }} +1,5 <strong class="block">{{ prediction.markets.teamGoals.awayOver15 | percent: '1.0-0' }}</strong></p></div></article>
           </div>
         </details>
 
-        <details class="rounded-2xl border border-slate-800 bg-slate-900/50 p-5">
-          <summary class="cursor-pointer font-semibold">Matrice complète des scores</summary>
-          <div class="mt-5"><app-score-matrix [matrix]="prediction.scoreMatrix" /></div>
-        </details>
-
-        <details class="rounded-2xl border border-slate-800 bg-slate-900/50 p-5">
-          <summary class="cursor-pointer font-semibold">Transparence et comparaison historique</summary>
-          <div class="mt-4 space-y-3 text-sm leading-6 text-slate-400">
-            <p>Moteur {{ prediction.engineVersion }} · prédiction pré-match figée</p>
-            <p>Ces probabilités sont issues du snapshot de release V2.4 et ne constituent pas un flux de score en direct.</p>
-            @if (comparison; as item) { <p>Ancienne variation Elo : impact {{ item.impactLevel }}. Conservée uniquement comme trace de comparaison.</p> }
-          </div>
-        </details>
       } @else {
         <p class="rounded-xl border border-amber-500/20 bg-amber-500/5 p-4 text-sm text-slate-300">Le Prono SimuAI est indisponible pour ce match.</p>
       }

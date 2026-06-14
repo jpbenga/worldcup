@@ -1,6 +1,6 @@
 <section id="groups" class="rounded-3xl border border-cyan-500/20 bg-slate-900/70 p-5 shadow sm:p-6">
   <div class="flex flex-wrap items-end justify-between gap-3">
-    <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Coupe du Monde 2026</p><h2 class="mt-2 text-3xl font-bold">Groupes et fixtures réelles</h2></div>
+    <div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Coupe du Monde 2026</p><h2 class="mt-2 text-3xl font-bold">Groupes et rencontres réelles</h2></div>
     <p class="text-sm text-slate-400">{{ groups.length }} groupes · {{ matchCount }} matchs</p>
   </div>
   @if (groups.length) {
@@ -54,9 +54,9 @@
               }
               @if (stateFor(match.id); as state) {
                 <div class="mt-3 flex items-center justify-between gap-3">
-                  <span class="flex items-center gap-2 font-semibold">@if (state.homeTeamLogoUrl) { <img class="h-7 w-7 object-contain" [src]="state.homeTeamLogoUrl" [alt]="state.homeTeam" /> } {{ state.homeTeam }}</span>
+                  <span class="team-name flex min-w-0 items-center gap-2 font-semibold">@if (state.homeTeamLogoUrl) { <img class="h-7 w-7 shrink-0 object-contain" [src]="state.homeTeamLogoUrl" [alt]="state.homeTeam" /> } {{ state.homeTeam }}</span>
                   <strong class="text-xl text-slate-100">{{ state.status === 'not_started' ? 'vs' : state.display.cardPrimaryScore }}</strong>
-                  <span class="flex items-center gap-2 text-right font-semibold">{{ state.awayTeam }} @if (state.awayTeamLogoUrl) { <img class="h-7 w-7 object-contain" [src]="state.awayTeamLogoUrl" [alt]="state.awayTeam" /> }</span>
+                  <span class="team-name flex min-w-0 items-center gap-2 text-right font-semibold">{{ state.awayTeam }} @if (state.awayTeamLogoUrl) { <img class="h-7 w-7 shrink-0 object-contain" [src]="state.awayTeamLogoUrl" [alt]="state.awayTeam" /> }</span>
                 </div>
                 <div class="mt-4 rounded-xl bg-slate-950/60 px-3 py-2 text-xs">
                   @if (state.status === 'finished') {
@@ -67,7 +67,7 @@
                     <p class="mt-1 text-slate-400">Prono SimuAI initial : {{ state.prediction.scoreModal }}</p>
                   } @else {
                     <p><span class="text-cyan-300">Prono SimuAI</span> <strong class="ml-1 text-slate-100">{{ state.prediction.scoreModal }}</strong></p>
-                    <p class="mt-1 text-slate-400">Favori {{ state.prediction.favoriteLabel }} · confiance {{ state.prediction.confidence.level }}</p>
+                    <p class="mt-1 text-slate-400">Favori {{ state.prediction.favoriteLabel }} · confiance {{ confidenceLabel(state.prediction.confidence.level) }}</p>
                   }
                 </div>
               }

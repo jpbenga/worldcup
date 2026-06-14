@@ -1,7 +1,31 @@
+import { COUNTRY_ALIASES_FR, COUNTRY_NAMES_FR, countryNameFr } from '../i18n/country-names.fr';
+
 export type RoadToTrophyPayload = any;
 
 const array = (value: any): any[] => (Array.isArray(value) ? value : []);
 const object = (value: any): any => (value && typeof value === 'object' ? value : {});
+const TEAM_FIELDS = new Set([
+  'team', 'name', 'home_team', 'away_team', 'team_a', 'team_b', 'winner', 'projected_winner',
+  'opponent', 'active_leader', 'previous_leader',
+]);
+
+export function translateRoadPayload(value: any, parentKey = ''): any {
+  if (Array.isArray(value)) return value.map((item) => translateRoadPayload(item, parentKey));
+  if (typeof value === 'string') {
+    return [...Object.keys(COUNTRY_NAMES_FR), ...Object.keys(COUNTRY_ALIASES_FR)]
+      .map((source) => [source, countryNameFr(source)] as const)
+      .sort(([first], [second]) => second.length - first.length)
+      .reduce((text, [source, target]) => text.replaceAll(source, target), value);
+  }
+  if (!value || typeof value !== 'object') return value;
+  return Object.fromEntries(
+    Object.entries(value).map(([key, item]) => {
+      const translatedKey = parentKey === 'team_paths' ? countryNameFr(key) : key;
+      if (TEAM_FIELDS.has(key) && typeof item === 'string') return [translatedKey, countryNameFr(item)];
+      return [translatedKey, translateRoadPayload(item, key)];
+    }),
+  );
+}
 
 function qualificationProbability(group: any, team: any): number {
   const probabilities = object(
@@ -56,11 +80,11 @@ export function adaptRoadToTheTrophy(raw: RoadToTrophyPayload): RoadToTrophyPayl
   const rounds = array(raw.rounds);
   if (groups.length !== 12) errors.push(`${groups.length} groupes disponibles au lieu de 12.`);
   if (rounds.length !== 5) errors.push(`${rounds.length} tours knockout disponibles au lieu de 5.`);
-  return {
+  return translateRoadPayload({
     ...raw,
     groups,
     rounds,
     ui_contract_valid: errors.length === 0,
     ui_contract_errors: errors,
-  };
+  });
 }

@@ -97,3 +97,13 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] La modal affiche le bookmaker unique et toutes les cotes utiles disponibles.
 - [ ] « Cote intéressante » apparaît comme badge sans masquer les autres issues.
 - [ ] Les états sans signal et sans cotes sont explicites.
+
+## V1 French Localization & Product Polish V2.24
+
+- [ ] L’accueil, la fiche match et Road to the Trophy sont entièrement compréhensibles en français.
+- [ ] Les 48 noms de sélections sont traduits sans confusion ni débordement.
+- [ ] Les marchés, issues et cotes utilisent des libellés et décimales français.
+- [ ] Aucun accès public à Transparence, au mode labo ou aux comparaisons historiques ne subsiste.
+- [ ] Les cinq scores les plus probables sont présentés sans promesse de matrice complète.
+- [ ] Road to the Trophy est immédiatement identifiable comme l’expérience tournoi principale.
+- [ ] Les noms longs restent lisibles sur ordinateur et mobile.

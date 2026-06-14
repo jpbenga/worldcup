@@ -83,6 +83,10 @@ export class GroupTabsComponent {
     return state.status === 'finished' ? 'Terminé' : state.status === 'live' ? 'En direct' : 'À venir';
   }
 
+  confidenceLabel(value: string): string {
+    return { low: 'faible', medium: 'modérée', high: 'élevée' }[value] ?? value;
+  }
+
   evaluationLabel(state: MatchState): string {
     if (state.evaluation.exactScoreHit) return 'Score exact';
     if (state.evaluation.oneXTwoHit) return 'Bon résultat, score différent';

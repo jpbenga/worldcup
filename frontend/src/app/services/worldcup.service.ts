@@ -21,11 +21,13 @@ import {
   WorldCupGroup,
   WorldCupTeam,
 } from '../models/worldcup.models';
-import { adaptRoadToTheTrophy } from './road-to-the-trophy.adapter';
+import { adaptRoadToTheTrophy, translateRoadPayload } from './road-to-the-trophy.adapter';
+import { I18nService } from '../i18n/i18n.service';
 
 @Injectable({ providedIn: 'root' })
 export class WorldCupService {
   private readonly http = inject(HttpClient);
+  private readonly i18n = inject(I18nService);
 
   getLivingWorldCupScenarioV213(): Observable<any> {
     return this.http.get<any>('assets/data/living_worldcup_scenario_v2_13.json');
@@ -43,7 +45,7 @@ export class WorldCupService {
 
   getRoadToTheTrophyTimeline(): Observable<any> {
     return this.http.get<any>('assets/data/road_to_the_trophy_scenario_timeline_v2_22.json').pipe(
-      map((timeline) => ({
+      map((timeline) => translateRoadPayload({
         ...timeline,
         states: timeline.states.map((state: any) => ({ ...state, scenario: adaptRoadToTheTrophy(state.scenario) })),
       })),
@@ -55,7 +57,9 @@ export class WorldCupService {
   }
 
   getMatchReferenceOddsV2231(): Observable<any> {
-    return this.http.get<any>('assets/data/match_reference_odds_view_model_v2_23_1.json');
+    return this.http
+      .get<any>('assets/data/match_reference_odds_view_model_v2_23_1.json')
+      .pipe(map((payload) => this.i18n.referenceOdds(payload)));
   }
 
   getPredictionHistoryV212(): Observable<any> {
@@ -101,8 +105,8 @@ export class WorldCupService {
           averageElo: item.average_elo,
           maxElo: item.max_elo,
           minElo: item.min_elo,
-          strongestTeam: item.strongest_team,
-          weakestTeam: item.weakest_team,
+          strongestTeam: this.i18n.team(item.strongest_team),
+          weakestTeam: this.i18n.team(item.weakest_team),
         })),
       ),
     );
@@ -182,7 +186,7 @@ export class WorldCupService {
           item.standings.map((row: any) => ({
             rank: row.rank,
             teamId: 0,
-            teamName: row.team,
+            teamName: this.i18n.team(row.team),
             points: row.points,
             played: row.played,
             won: row.wins,
@@ -416,8 +420,8 @@ export class WorldCupService {
     return {
       teamId: team.team_id,
       apiFootballTeamId: team.api_football_team_id,
-      name: team.name,
-      country: team.country,
+      name: this.i18n.team(team.name),
+      country: this.i18n.team(team.country),
       countryCode: team.country_code,
       logoUrl: team.logo_url,
       flagUrl: team.flag_url,
@@ -429,8 +433,8 @@ export class WorldCupService {
   private match(match: any): Match {
     return {
       id: match.match_id,
-      homeTeam: match.home_team,
-      awayTeam: match.away_team,
+      homeTeam: this.i18n.team(match.home_team),
+      awayTeam: this.i18n.team(match.away_team),
       kickoffAt: match.kickoff_at,
       competition: match.competition,
       stage: match.stage,
@@ -454,7 +458,7 @@ export class WorldCupService {
     return {
       rank: row.rank,
       teamId: row.team_id,
-      teamName: row.team_name,
+      teamName: this.i18n.team(row.team_name),
       logoUrl: row.logo_url,
       points: row.points,
       played: row.played,
@@ -558,8 +562,8 @@ export class WorldCupService {
       matchId: item.match_id,
       group: item.group,
       matchdayLabel: item.matchday_label,
-      homeTeam: item.home_team,
-      awayTeam: item.away_team,
+      homeTeam: this.i18n.team(item.home_team),
+      awayTeam: this.i18n.team(item.away_team),
       kickoffAt: item.kickoff_at,
       venue: item.venue,
       city: item.city,
@@ -570,7 +574,7 @@ export class WorldCupService {
         available: item.result.available,
         homeGoals: item.result.home_goals,
         awayGoals: item.result.away_goals,
-        winner: item.result.winner,
+        winner: this.i18n.team(item.result.winner),
         source: item.result.source,
       },
       prediction: {
@@ -590,7 +594,7 @@ export class WorldCupService {
         },
         probabilities1x2: { homeWin: probabilities.home_win, draw: probabilities.draw, awayWin: probabilities.away_win },
         favorite1x2: item.prediction.favorite_1x2,
-        favoriteLabel: item.prediction.favorite_label,
+        favoriteLabel: this.i18n.team(item.prediction.favorite_label),
         favoriteProbability: item.prediction.favorite_probability,
         scoreConsistentWithFavorite: item.prediction.score_consistent_with_favorite,
         scoreConsistentWithFavoriteProbability: item.prediction.score_consistent_with_favorite_probability,

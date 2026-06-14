@@ -4,10 +4,9 @@
   <div class="relative mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
     <nav class="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-3 shadow">
       <a class="font-black tracking-tight" href="#">SimuMondial <span class="text-cyan-300">2026</span></a>
-      <div class="flex gap-4 text-sm text-slate-400">
+      <div class="flex items-center gap-4 text-sm text-slate-400">
         <a class="transition hover:text-slate-100" href="#groups">Groupes</a>
-        <a class="transition hover:text-slate-100" routerLink="/simulation">Road to the Trophy</a>
-        <a class="transition hover:text-slate-100" routerLink="/transparence">Transparence</a>
+        <a class="road-cta" routerLink="/simulation"><span>Road to the Trophy</span><small>L’expérience tournoi</small></a>
       </div>
     </nav>
 
@@ -27,15 +26,9 @@
       </a>
       <a
         routerLink="/simulation"
-        class="ml-3 mt-8 inline-flex rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-300"
+        class="ml-3 mt-8 inline-flex rounded-xl border border-violet-400/60 bg-violet-500/10 px-5 py-3 font-semibold text-violet-100 transition hover:border-cyan-300 hover:text-cyan-100"
       >
-        Road to the Trophy
-      </a>
-      <a
-        routerLink="/transparence"
-        class="ml-3 mt-8 inline-flex rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-200 transition hover:border-emerald-300"
-      >
-        Voir le scoreboard public
+        Explorer Road to the Trophy
       </a>
     </header>
 
@@ -70,9 +63,7 @@
           <app-match-modal
             [baseline]="predictionFor(vm.predictions, matchId)"
             [elo]="predictionFor(vm.eloPredictions, matchId)"
-            [comparison]="comparisonFor(vm.modelComparisons, matchId)"
             [state]="matchStateFor(vm.matchStates, matchId)"
-            [dualMatrix]="dualMatrixFor(vm.dualMatrixComparisons, matchId)"
             [referenceOdds]="referenceOddsFor(vm.referenceOdds, matchId)"
             [referenceBookmaker]="vm.referenceOdds.bookmaker"
             (closed)="selectedMatchId.set(null)"
