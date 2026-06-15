@@ -1,0 +1,129 @@
+{
+  "version": "v2.26",
+  "generated_at": "2026-06-15T20:01:40Z",
+  "case": "Spain 0-0 Cape Verde",
+  "fixture": {
+    "fixture_id": 1489380,
+    "match_id": "api_football_1489380",
+    "home_team": "Spain",
+    "away_team": "Cape Verde Islands",
+    "kickoff_at": "2026-06-15T16:00:00+00:00",
+    "status": "finished",
+    "elapsed": 90,
+    "actual_score": {
+      "home": 0,
+      "away": 0
+    },
+    "winner": "draw",
+    "source_updated_at": "2026-06-15T16:00:00+00:00",
+    "confidence": "official",
+    "source_status": "FT"
+  },
+  "result_locked": true,
+  "dominance_data_available": false,
+  "dominance_data_sources": [],
+  "before": {
+    "spain_title_probability": 0.18688,
+    "spain_final_probability": null,
+    "spain_semi_final_probability": null,
+    "spain_group_winner_probability": 0.74078,
+    "spain_qualification_probability": 0.9852,
+    "spain_projected_group_points": 7,
+    "spain_projected_group_rank": 1,
+    "spain_knockout_opponents": [
+      "Bosnia & Herzegovina",
+      "Argentina",
+      "France",
+      "Portugal",
+      "Mexico"
+    ],
+    "central_scenario": {
+      "champion": "Spain",
+      "finalists": [
+        "Spain",
+        "Mexico"
+      ],
+      "team_path": [
+        "Bosnia & Herzegovina",
+        "Argentina",
+        "France",
+        "Portugal",
+        "Mexico"
+      ]
+    }
+  },
+  "after": {
+    "spain_title_probability": 0.18028,
+    "spain_final_probability": null,
+    "spain_semi_final_probability": null,
+    "spain_group_winner_probability": 0.57018,
+    "spain_qualification_probability": 0.9476,
+    "spain_projected_group_points": 7,
+    "spain_projected_group_rank": 1,
+    "spain_knockout_opponents": [
+      "USA",
+      "Argentina",
+      "England",
+      "Netherlands",
+      "Switzerland"
+    ],
+    "central_scenario": {
+      "champion": "Spain",
+      "finalists": [
+        "Spain",
+        "Switzerland"
+      ],
+      "team_path": [
+        "USA",
+        "Argentina",
+        "England",
+        "Netherlands",
+        "Switzerland"
+      ]
+    }
+  },
+  "deltas": {
+    "title_probability_delta": -0.006599999999999995,
+    "final_probability_delta": null,
+    "semi_final_probability_delta": null,
+    "group_winner_probability_delta": -0.17059999999999997,
+    "qualification_probability_delta": -0.03759999999999997
+  },
+  "group_impacts": [
+    {
+      "team": "Spain",
+      "qualification_before": 0.9852,
+      "qualification_after": 0.9476,
+      "qualification_delta": -0.03759999999999997
+    },
+    {
+      "team": "Cape Verde Islands",
+      "qualification_before": 0.3031,
+      "qualification_after": 0.4767,
+      "qualification_delta": 0.17360000000000003
+    },
+    {
+      "team": "Uruguay",
+      "qualification_before": 0.85436,
+      "qualification_after": 0.84336,
+      "qualification_delta": -0.01100000000000001
+    },
+    {
+      "team": "Saudi Arabia",
+      "qualification_before": 0.36354,
+      "qualification_after": 0.35402,
+      "qualification_delta": -0.009519999999999973
+    }
+  ],
+  "diagnosis": {
+    "result_only_locked": true,
+    "team_strength_updated": false,
+    "dominance_accounted_for": false,
+    "explanation": "The V4 counterfactual changes only by locking the official 0-0 in the group table. Future Spain match strengths still use the same current Elo and time-decayed historical profiles. The repository has no shots, possession or xG payload for this fixture."
+  },
+  "limitations": [
+    "The V2.22 compact timeline does not persist stage-reach marginals for intermediate states, so before/after final and semi-final probabilities are unavailable.",
+    "Dominance cannot be audited because no fixture-statistics or xG source is present locally."
+  ],
+  "answer_for_user": "Le 0-0 est verrouillé et réduit les chances de qualification de l'Espagne de 3,76 points et ses chances de titre de 0,66 point. L'Espagne reste favorite et championne du scénario central. Le moteur ne tient pas compte de sa domination : aucune donnée de tirs, possession ou xG n'est disponible, et sa force future n'est pas mise à jour par ce résultat."
+}

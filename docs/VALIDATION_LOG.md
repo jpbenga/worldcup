@@ -2100,3 +2100,32 @@ Commit: TBD
 - [ ] Validated
 - [x] Validated with reservations
 - [ ] Not validated
+
+## V2.26 — Match Matrix & Tournament Simulation Coherence Audit
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Spain 0-0 Cape Verde impact audited
+- [x] Germany 7-1 score-matrix behavior audited
+- [x] Large-score probability mass audited
+- [x] Score matrix truncation audited
+- [x] Tournament simulation input model audited
+- [x] Match prediction vs tournament simulation coherence audited
+- [x] Three explicit answers produced
+- [x] No public engine changed
+- [x] Active predictions unchanged
+- [x] No retrain
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated

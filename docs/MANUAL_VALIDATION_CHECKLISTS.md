@@ -107,3 +107,12 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Les cinq scores les plus probables sont présentés sans promesse de matrice complète.
 - [ ] Road to the Trophy est immédiatement identifiable comme l’expérience tournoi principale.
 - [ ] Les noms longs restent lisibles sur ordinateur et mobile.
+
+## Match Matrix & Tournament Simulation Coherence Audit V2.26
+
+- [ ] Les trois réponses distinguent clairement faits mesurés, limites et recommandations.
+- [ ] Le 0-0 Espagne–Cap-Vert est présenté comme un score verrouillé sans prétendre mesurer la domination.
+- [ ] Le 7-1 Allemagne–Curaçao est visible comme scénario de queue, sans être présenté comme score probable.
+- [ ] Le risque de large victoire est expliqué par une masse agrégée, pas par un score exact isolé.
+- [ ] La séparation entre `quant_hybrid_v2.2` et Road to the Trophy V4 est compréhensible.
+- [ ] Aucun moteur, pronostic actif ou choix manuel par équipe n'a été modifié.

@@ -1,0 +1,31 @@
+{
+  "version": "v2.26",
+  "generated_at": "2026-06-15T20:01:47Z",
+  "answers": {
+    "spain_0_0_cape_verde": {
+      "short_answer": "Le 0-0 est verrouillé et réduit les chances de qualification de l'Espagne de 3,76 points et ses chances de titre de 0,66 point. L'Espagne reste favorite et championne du scénario central. Le moteur ne tient pas compte de sa domination : aucune donnée de tirs, possession ou xG n'est disponible, et sa force future n'est pas mise à jour par ce résultat.",
+      "technical_answer": "The V4 counterfactual changes only by locking the official 0-0 in the group table. Future Spain match strengths still use the same current Elo and time-decayed historical profiles. The repository has no shots, possession or xG payload for this fixture.",
+      "product_conclusion": "Séparer explicitement impact du score réel et impact de la performance; le second est actuellement indisponible."
+    },
+    "germany_7_1_large_score": {
+      "short_answer": "Le 7-1 n'était pas impossible : la matrice lui donnait environ 0,058 %. Le problème visible est surtout le résumé par scores les plus probables, qui cachait 14,73 % de victoire allemande par au moins trois buts et 9,65 % de probabilité que l'Allemagne marque au moins quatre buts. La matrice reste tronquée à 7-7 et paraît trop compressée pour certains écarts de niveau ; il faut afficher un signal de risque de large victoire plutôt que promettre un score exact extrême.",
+      "technical_answer": "The normalized 0-7 grid contains 7-1, but it is outside the ten most likely cells. The UI therefore hides a measurable 14.73% probability of a Germany win by at least three goals. The grid is truncated at seven goals per team and normalization prevents recovery of omitted 8+ mass. One match cannot prove global miscalibration, but the modest rating/xG gap and the existing V2.8 realism audit support a mismatch-compression warning.",
+      "product_conclusion": "Afficher la masse de victoire large et de buts 4+ en complément du score recommandé et des top scores."
+    },
+    "score_matrix_not_used_by_simulation": {
+      "short_answer": "Road to the Trophy n'utilise pas la matrice visible parce que quant_hybrid_v2.2 n'est pas persisté comme moteur réutilisable pour toutes les confrontations futures possibles. Le tournoi utilise donc une autre distribution Poisson Elo/historique. Cette séparation est une limite historique et d'architecture, pas une nécessité de performance. Elle est acceptable si elle est clairement annoncée en V1, mais la plateforme doit converger vers une distribution de match unifiée.",
+      "technical_answer": "The separation is transparent and technically understandable, but two different probability distributions can tell different stories for the same matchup. It is acceptable as an explicit V1 limitation, not as the target architecture.",
+      "product_conclusion": "Planifier une distribution de match unifiée comme priorité haute, sans modifier le moteur dans cet audit."
+    }
+  },
+  "recommended_next_steps": [
+    "Créer une distribution de match unifiée réutilisable pour les confrontations arbitraires.",
+    "Ajouter un signal Risque de large victoire et les masses victoire par 3+/4+ et équipe à 4+ buts.",
+    "Conserver score recommandé et top scores, mais rendre visible la queue de distribution.",
+    "Ajouter ultérieurement un module de performance post-match si tirs, possession ou xG deviennent disponibles."
+  ],
+  "requires_engine_change": true,
+  "requires_ui_change": true,
+  "requires_data_change": true,
+  "changes_applied_in_v2_26": "Audit and documentation only; no public engine, active prediction or functional frontend change."
+}

@@ -1,0 +1,125 @@
+{
+  "version": "v2.26",
+  "generated_at": "2026-06-15T20:01:39Z",
+  "case": "Germany 7-1",
+  "fixture": {
+    "fixture_id": 1489374,
+    "match_id": "api_football_1489374",
+    "home_team": "Germany",
+    "away_team": "Curaçao",
+    "kickoff_at": "2026-06-14T17:00:00+00:00",
+    "status": "finished",
+    "elapsed": 90,
+    "actual_score": {
+      "home": 7,
+      "away": 1
+    },
+    "winner": "home",
+    "source_updated_at": "2026-06-14T17:00:00+00:00",
+    "confidence": "official",
+    "source_status": "FT"
+  },
+  "recommended_score": "1-0",
+  "actual_score": "7-1",
+  "displayed_top_scores": [
+    {
+      "score": "1-0",
+      "home_goals": 1,
+      "away_goals": 0,
+      "probability": 0.13249857419986266
+    },
+    {
+      "score": "2-0",
+      "home_goals": 2,
+      "away_goals": 0,
+      "probability": 0.11423408618271542
+    },
+    {
+      "score": "1-1",
+      "home_goals": 1,
+      "away_goals": 1,
+      "probability": 0.11158104068447815
+    },
+    {
+      "score": "2-1",
+      "home_goals": 2,
+      "away_goals": 1,
+      "probability": 0.09619996513080187
+    },
+    {
+      "score": "0-0",
+      "home_goals": 0,
+      "away_goals": 0,
+      "probability": 0.07684165362392885
+    },
+    {
+      "score": "3-0",
+      "home_goals": 3,
+      "away_goals": 0,
+      "probability": 0.06565819808403432
+    },
+    {
+      "score": "0-1",
+      "home_goals": 0,
+      "away_goals": 1,
+      "probability": 0.06471067127364659
+    },
+    {
+      "score": "3-1",
+      "home_goals": 3,
+      "away_goals": 1,
+      "probability": 0.05529274647614852
+    },
+    {
+      "score": "1-2",
+      "home_goals": 1,
+      "away_goals": 2,
+      "probability": 0.04698287779856002
+    },
+    {
+      "score": "2-2",
+      "home_goals": 2,
+      "away_goals": 2,
+      "probability": 0.04050644426903015
+    }
+  ],
+  "full_score_distribution_available": true,
+  "score_grid_max_goals": 7,
+  "probabilities": {
+    "1-0": 0.13249857419986266,
+    "2-0": 0.11423408618271542,
+    "3-0": 0.06565819808403432,
+    "4-0": 0.02830371686573647,
+    "5-0": 0.009760857431883423,
+    "6-0": 0.002805118560267307,
+    "7-0": 0.0006909835117663851,
+    "7-1": 0.0005818980302566042
+  },
+  "tail_mass": {
+    "favorite_win_by_3_plus": 0.14728165122516382,
+    "favorite_win_by_4_plus": 0.054033228361321295,
+    "favorite_scores_4_plus_goals": 0.09647477602467659,
+    "other_scores": null
+  },
+  "markets": {
+    "over_2_5": 0.47288657123232714,
+    "over_3_5": 0.2563969106543496,
+    "home_win": 0.6413717141268567
+  },
+  "strength_gap": {
+    "internal_rating_home": 1590.3293271793452,
+    "internal_rating_away": 1439.2742108370437,
+    "internal_rating_gap": 151.05511634230152,
+    "predicted_home_xg": 1.7243066481666913,
+    "predicted_away_xg": 0.8421301237262205
+  },
+  "diagnosis": {
+    "large_score_present_but_hidden": true,
+    "matrix_truncated": true,
+    "tail_underestimated": true,
+    "ui_top10_hides_tail_risk": true,
+    "model_underestimates_mismatches": true,
+    "explanation": "The normalized 0-7 grid contains 7-1, but it is outside the ten most likely cells. The UI therefore hides a measurable 14.73% probability of a Germany win by at least three goals. The grid is truncated at seven goals per team and normalization prevents recovery of omitted 8+ mass. One match cannot prove global miscalibration, but the modest rating/xG gap and the existing V2.8 realism audit support a mismatch-compression warning."
+  },
+  "answer_for_user": "Le 7-1 n'était pas impossible : la matrice lui donnait environ 0,058 %. Le problème visible est surtout le résumé par scores les plus probables, qui cachait 14,73 % de victoire allemande par au moins trois buts et 9,65 % de probabilité que l'Allemagne marque au moins quatre buts. La matrice reste tronquée à 7-7 et paraît trop compressée pour certains écarts de niveau ; il faut afficher un signal de risque de large victoire plutôt que promettre un score exact extrême."
+}

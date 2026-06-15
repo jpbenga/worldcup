@@ -1,0 +1,32 @@
+{
+  "version": "v2.26",
+  "generated_at": "2026-06-15T20:03:56Z",
+  "passed": true,
+  "spain_case_answered": true,
+  "germany_case_answered": true,
+  "matrix_vs_simulation_answered": true,
+  "large_score_tail_audited": true,
+  "real_result_impact_audited": true,
+  "unified_distribution_recommendation_evaluated": true,
+  "public_engine_changed": false,
+  "active_predictions_unchanged": true,
+  "checks": {
+    "spain_case_answered": true,
+    "germany_case_answered": true,
+    "matrix_vs_simulation_answered": true,
+    "three_explicit_answers": true,
+    "large_score_tail_audited": true,
+    "real_result_impact_audited": true,
+    "unified_distribution_recommendation_evaluated": true,
+    "public_engine_unchanged": true,
+    "active_predictions_unchanged": true,
+    "no_optuna": true,
+    "no_secret": true,
+    "single_v2_26_report": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Final and semi-final before/after marginals are absent from the compact V2.22 intermediate states.",
+    "Existing refresh artifacts and large timeline files remain outside the V2.26 audit scope."
+  ]
+}

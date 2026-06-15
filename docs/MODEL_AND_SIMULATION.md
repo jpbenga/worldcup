@@ -11,3 +11,9 @@ Les garde-fous interdisent les inversions fortes non expliquées, les ajustement
 V2.19 ne remplace pas V3 et ne modifie pas ses probabilités. Il sélectionne parmi les parcours complets persistés celui qui minimise la surprise globale des rangs, qualifications et tours. Les probabilités marginales sur 50 000 simulations restent séparées du scénario central affiché.
 
 L'audit V2.20 conclut que les 50 000 tirages sont réels et suffisamment stables, mais que la priorité doit porter sur le modèle et les règles qu'ils répètent. Le moteur cible doit encoder le bracket officiel, nettoyer les scores 90 minutes/prolongation/tirs au but, réutiliser le meilleur modèle historiquement validé du projet pour les confrontations arbitraires et passer un replay historique complet au niveau tournoi.
+
+## Audit de cohérence V2.26
+
+La prédiction match visible et Road to the Trophy ne consomment pas encore la même distribution. `quant_hybrid_v2.2` produit les probabilités pré-match actives et une matrice Poisson `0-7`. Road to the Trophy V4 utilise une distribution tête-à-tête séparée fondée sur l'Elo externe et des profils de buts historiques pondérés, car le bundle actif n'est pas persisté pour les confrontations arbitraires futures.
+
+Les résultats officiels terminés sont verrouillés dans la simulation tournoi, mais ils ne mettent pas à jour la force future d'une équipe. Sans tirs, possession ou xG, le moteur ne distingue pas un nul dominé d'un nul chanceux. La cible recommandée est une distribution de match unifiée, historiquement validée, réutilisable par la fiche match, la matrice et chaque phase du tournoi.
