@@ -1,0 +1,736 @@
+{
+  "version": "v2.27",
+  "source": "api-football",
+  "fetched_at": "2026-06-15T20:30:38Z",
+  "api_key_present": true,
+  "quota_safe_mode": true,
+  "quota": {
+    "max_live_calls": 14,
+    "live_calls_used": 0,
+    "cache_hits": 14
+  },
+  "fixtures_checked": [
+    {
+      "case": "germany_curacao",
+      "fixture_id": 1489374,
+      "stats_available": true,
+      "xg_available": true,
+      "events_available": true,
+      "lineups_available": true,
+      "player_statistics_available": true,
+      "fields": {
+        "statistics": [
+          "Ball Possession",
+          "Blocked Shots",
+          "Corner Kicks",
+          "Fouls",
+          "Goalkeeper Saves",
+          "Offsides",
+          "Passes %",
+          "Passes accurate",
+          "Red Cards",
+          "Shots insidebox",
+          "Shots off Goal",
+          "Shots on Goal",
+          "Shots outsidebox",
+          "Total Shots",
+          "Total passes",
+          "Yellow Cards",
+          "expected_goals",
+          "goals_prevented"
+        ],
+        "statistics_by_team": {
+          "Germany": {
+            "Shots on Goal": 12,
+            "Shots off Goal": 7,
+            "Total Shots": 27,
+            "Blocked Shots": 8,
+            "Shots insidebox": 22,
+            "Shots outsidebox": 5,
+            "Fouls": 18,
+            "Corner Kicks": 8,
+            "Offsides": 0,
+            "Ball Possession": "65%",
+            "Yellow Cards": null,
+            "Red Cards": null,
+            "Goalkeeper Saves": 1,
+            "Total passes": 633,
+            "Passes accurate": 550,
+            "Passes %": "87%",
+            "expected_goals": "3.91",
+            "goals_prevented": "-2.47"
+          },
+          "Curaçao": {
+            "Shots on Goal": 2,
+            "Shots off Goal": 6,
+            "Total Shots": 8,
+            "Blocked Shots": 0,
+            "Shots insidebox": 4,
+            "Shots outsidebox": 4,
+            "Fouls": 11,
+            "Corner Kicks": 1,
+            "Offsides": 1,
+            "Ball Possession": "35%",
+            "Yellow Cards": null,
+            "Red Cards": null,
+            "Goalkeeper Saves": 4,
+            "Total passes": 336,
+            "Passes accurate": 276,
+            "Passes %": "82%",
+            "expected_goals": "0.40",
+            "goals_prevented": "-2.47"
+          }
+        },
+        "events": [
+          "assist",
+          "comments",
+          "detail",
+          "player",
+          "team",
+          "time",
+          "type"
+        ],
+        "event_types": [
+          "Goal",
+          "subst"
+        ],
+        "event_details": [
+          "Normal Goal",
+          "Penalty",
+          "Substitution 1",
+          "Substitution 2",
+          "Substitution 3",
+          "Substitution 4",
+          "Substitution 5"
+        ],
+        "event_count": 16,
+        "lineups": [
+          "coach",
+          "formation",
+          "startXI",
+          "substitutes",
+          "team"
+        ],
+        "formations": {
+          "Germany": "4-2-3-1",
+          "Curaçao": "4-3-1-2"
+        },
+        "player_statistics": [
+          "players",
+          "team"
+        ],
+        "players_with_statistics": 52
+      }
+    },
+    {
+      "case": "spain_cape_verde",
+      "fixture_id": 1489380,
+      "stats_available": true,
+      "xg_available": true,
+      "events_available": true,
+      "lineups_available": true,
+      "player_statistics_available": true,
+      "fields": {
+        "statistics": [
+          "Ball Possession",
+          "Blocked Shots",
+          "Corner Kicks",
+          "Fouls",
+          "Goalkeeper Saves",
+          "Offsides",
+          "Passes %",
+          "Passes accurate",
+          "Red Cards",
+          "Shots insidebox",
+          "Shots off Goal",
+          "Shots on Goal",
+          "Shots outsidebox",
+          "Total Shots",
+          "Total passes",
+          "Yellow Cards",
+          "expected_goals",
+          "goals_prevented"
+        ],
+        "statistics_by_team": {
+          "Spain": {
+            "Shots on Goal": 7,
+            "Shots off Goal": 12,
+            "Total Shots": 27,
+            "Blocked Shots": 8,
+            "Shots insidebox": 16,
+            "Shots outsidebox": 11,
+            "Fouls": 10,
+            "Corner Kicks": 11,
+            "Offsides": 2,
+            "Ball Possession": "74%",
+            "Yellow Cards": 1,
+            "Red Cards": null,
+            "Goalkeeper Saves": 1,
+            "Total passes": 801,
+            "Passes accurate": 734,
+            "Passes %": "92%",
+            "expected_goals": "2.29",
+            "goals_prevented": "1.46"
+          },
+          "Cape Verde Islands": {
+            "Shots on Goal": 1,
+            "Shots off Goal": 3,
+            "Total Shots": 6,
+            "Blocked Shots": 2,
+            "Shots insidebox": 2,
+            "Shots outsidebox": 4,
+            "Fouls": 1,
+            "Corner Kicks": 1,
+            "Offsides": 3,
+            "Ball Possession": "26%",
+            "Yellow Cards": 1,
+            "Red Cards": null,
+            "Goalkeeper Saves": 7,
+            "Total passes": 279,
+            "Passes accurate": 205,
+            "Passes %": "73%",
+            "expected_goals": "0.30",
+            "goals_prevented": "1.46"
+          }
+        },
+        "events": [
+          "assist",
+          "comments",
+          "detail",
+          "player",
+          "team",
+          "time",
+          "type"
+        ],
+        "event_types": [
+          "Card",
+          "subst"
+        ],
+        "event_details": [
+          "Substitution 1",
+          "Substitution 2",
+          "Substitution 3",
+          "Substitution 4",
+          "Substitution 5",
+          "Yellow Card"
+        ],
+        "event_count": 11,
+        "lineups": [
+          "coach",
+          "formation",
+          "startXI",
+          "substitutes",
+          "team"
+        ],
+        "formations": {
+          "Spain": "4-3-3",
+          "Cape Verde Islands": "4-1-4-1"
+        },
+        "player_statistics": [
+          "players",
+          "team"
+        ],
+        "players_with_statistics": 52
+      }
+    },
+    {
+      "case": "sweden_tunisia",
+      "fixture_id": 1539002,
+      "stats_available": true,
+      "xg_available": true,
+      "events_available": true,
+      "lineups_available": true,
+      "player_statistics_available": true,
+      "fields": {
+        "statistics": [
+          "Ball Possession",
+          "Blocked Shots",
+          "Corner Kicks",
+          "Fouls",
+          "Goalkeeper Saves",
+          "Offsides",
+          "Passes %",
+          "Passes accurate",
+          "Red Cards",
+          "Shots insidebox",
+          "Shots off Goal",
+          "Shots on Goal",
+          "Shots outsidebox",
+          "Total Shots",
+          "Total passes",
+          "Yellow Cards",
+          "expected_goals",
+          "goals_prevented"
+        ],
+        "statistics_by_team": {
+          "Sweden": {
+            "Shots on Goal": 7,
+            "Shots off Goal": 3,
+            "Total Shots": 13,
+            "Blocked Shots": 3,
+            "Shots insidebox": 9,
+            "Shots outsidebox": 4,
+            "Fouls": 10,
+            "Corner Kicks": 4,
+            "Offsides": 3,
+            "Ball Possession": "49%",
+            "Yellow Cards": 0,
+            "Red Cards": null,
+            "Goalkeeper Saves": 1,
+            "Total passes": 353,
+            "Passes accurate": 280,
+            "Passes %": "79%",
+            "expected_goals": "1.36",
+            "goals_prevented": "-2.99"
+          },
+          "Tunisia": {
+            "Shots on Goal": 2,
+            "Shots off Goal": 3,
+            "Total Shots": 6,
+            "Blocked Shots": 1,
+            "Shots insidebox": 2,
+            "Shots outsidebox": 4,
+            "Fouls": 8,
+            "Corner Kicks": 2,
+            "Offsides": 6,
+            "Ball Possession": "51%",
+            "Yellow Cards": 1,
+            "Red Cards": null,
+            "Goalkeeper Saves": 1,
+            "Total passes": 364,
+            "Passes accurate": 288,
+            "Passes %": "79%",
+            "expected_goals": "0.28",
+            "goals_prevented": "-2.99"
+          }
+        },
+        "events": [
+          "assist",
+          "comments",
+          "detail",
+          "player",
+          "team",
+          "time",
+          "type"
+        ],
+        "event_types": [
+          "Card",
+          "Goal",
+          "subst"
+        ],
+        "event_details": [
+          "Normal Goal",
+          "Substitution 1",
+          "Substitution 2",
+          "Substitution 3",
+          "Substitution 4",
+          "Substitution 5",
+          "Yellow Card"
+        ],
+        "event_count": 17,
+        "lineups": [
+          "coach",
+          "formation",
+          "startXI",
+          "substitutes",
+          "team"
+        ],
+        "formations": {
+          "Sweden": "3-1-4-2",
+          "Tunisia": "5-3-2"
+        },
+        "player_statistics": [
+          "players",
+          "team"
+        ],
+        "players_with_statistics": 52
+      }
+    }
+  ],
+  "endpoint_availability": {
+    "fixture_statistics": {
+      "available": true,
+      "fields_detected": [
+        "Ball Possession",
+        "Blocked Shots",
+        "Corner Kicks",
+        "Fouls",
+        "Goalkeeper Saves",
+        "Offsides",
+        "Passes %",
+        "Passes accurate",
+        "Red Cards",
+        "Shots insidebox",
+        "Shots off Goal",
+        "Shots on Goal",
+        "Shots outsidebox",
+        "Total Shots",
+        "Total passes",
+        "Yellow Cards",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "coverage": {
+        "fixtures_with_data": 3,
+        "fixtures_checked": 3,
+        "rate": 1.0
+      },
+      "limitations": []
+    },
+    "events": {
+      "available": true,
+      "fields_detected": [
+        "assist",
+        "comments",
+        "detail",
+        "player",
+        "team",
+        "time",
+        "type"
+      ],
+      "coverage": {
+        "fixtures_with_data": 3,
+        "fixtures_checked": 3,
+        "rate": 1.0
+      },
+      "limitations": []
+    },
+    "lineups": {
+      "available": true,
+      "fields_detected": [
+        "coach",
+        "formation",
+        "startXI",
+        "substitutes",
+        "team"
+      ],
+      "coverage": {
+        "fixtures_with_data": 3,
+        "fixtures_checked": 3,
+        "rate": 1.0
+      },
+      "limitations": []
+    },
+    "player_statistics": {
+      "available": true,
+      "fields_detected": [
+        "players",
+        "team"
+      ],
+      "coverage": {
+        "fixtures_with_data": 3,
+        "fixtures_checked": 3,
+        "rate": 1.0
+      },
+      "limitations": []
+    },
+    "xg": {
+      "available": true,
+      "field_names_detected": [
+        "expected_goals"
+      ],
+      "coverage": {
+        "fixtures_with_data": 3,
+        "fixtures_checked": 3,
+        "rate": 1.0
+      },
+      "limitations": []
+    },
+    "fixture_details": {
+      "available": true,
+      "source": "existing cached World Cup fixtures/results"
+    },
+    "team_statistics": {
+      "available": null,
+      "limitations": [
+        "Not probed: league/team/season endpoint is not a fixture-level post-match source."
+      ]
+    },
+    "odds": {
+      "available": true,
+      "errors": []
+    },
+    "predictions": {
+      "available": true,
+      "errors": []
+    }
+  },
+  "germany_curacao": {
+    "case": "germany_curacao",
+    "fixture_id": 1489374,
+    "stats_available": true,
+    "xg_available": true,
+    "events_available": true,
+    "lineups_available": true,
+    "player_statistics_available": true,
+    "fields": {
+      "statistics": [
+        "Ball Possession",
+        "Blocked Shots",
+        "Corner Kicks",
+        "Fouls",
+        "Goalkeeper Saves",
+        "Offsides",
+        "Passes %",
+        "Passes accurate",
+        "Red Cards",
+        "Shots insidebox",
+        "Shots off Goal",
+        "Shots on Goal",
+        "Shots outsidebox",
+        "Total Shots",
+        "Total passes",
+        "Yellow Cards",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "statistics_by_team": {
+        "Germany": {
+          "Shots on Goal": 12,
+          "Shots off Goal": 7,
+          "Total Shots": 27,
+          "Blocked Shots": 8,
+          "Shots insidebox": 22,
+          "Shots outsidebox": 5,
+          "Fouls": 18,
+          "Corner Kicks": 8,
+          "Offsides": 0,
+          "Ball Possession": "65%",
+          "Yellow Cards": null,
+          "Red Cards": null,
+          "Goalkeeper Saves": 1,
+          "Total passes": 633,
+          "Passes accurate": 550,
+          "Passes %": "87%",
+          "expected_goals": "3.91",
+          "goals_prevented": "-2.47"
+        },
+        "Curaçao": {
+          "Shots on Goal": 2,
+          "Shots off Goal": 6,
+          "Total Shots": 8,
+          "Blocked Shots": 0,
+          "Shots insidebox": 4,
+          "Shots outsidebox": 4,
+          "Fouls": 11,
+          "Corner Kicks": 1,
+          "Offsides": 1,
+          "Ball Possession": "35%",
+          "Yellow Cards": null,
+          "Red Cards": null,
+          "Goalkeeper Saves": 4,
+          "Total passes": 336,
+          "Passes accurate": 276,
+          "Passes %": "82%",
+          "expected_goals": "0.40",
+          "goals_prevented": "-2.47"
+        }
+      },
+      "events": [
+        "assist",
+        "comments",
+        "detail",
+        "player",
+        "team",
+        "time",
+        "type"
+      ],
+      "event_types": [
+        "Goal",
+        "subst"
+      ],
+      "event_details": [
+        "Normal Goal",
+        "Penalty",
+        "Substitution 1",
+        "Substitution 2",
+        "Substitution 3",
+        "Substitution 4",
+        "Substitution 5"
+      ],
+      "event_count": 16,
+      "lineups": [
+        "coach",
+        "formation",
+        "startXI",
+        "substitutes",
+        "team"
+      ],
+      "formations": {
+        "Germany": "4-2-3-1",
+        "Curaçao": "4-3-1-2"
+      },
+      "player_statistics": [
+        "players",
+        "team"
+      ],
+      "players_with_statistics": 52
+    }
+  },
+  "spain_cape_verde": {
+    "case": "spain_cape_verde",
+    "fixture_id": 1489380,
+    "stats_available": true,
+    "xg_available": true,
+    "events_available": true,
+    "lineups_available": true,
+    "player_statistics_available": true,
+    "fields": {
+      "statistics": [
+        "Ball Possession",
+        "Blocked Shots",
+        "Corner Kicks",
+        "Fouls",
+        "Goalkeeper Saves",
+        "Offsides",
+        "Passes %",
+        "Passes accurate",
+        "Red Cards",
+        "Shots insidebox",
+        "Shots off Goal",
+        "Shots on Goal",
+        "Shots outsidebox",
+        "Total Shots",
+        "Total passes",
+        "Yellow Cards",
+        "expected_goals",
+        "goals_prevented"
+      ],
+      "statistics_by_team": {
+        "Spain": {
+          "Shots on Goal": 7,
+          "Shots off Goal": 12,
+          "Total Shots": 27,
+          "Blocked Shots": 8,
+          "Shots insidebox": 16,
+          "Shots outsidebox": 11,
+          "Fouls": 10,
+          "Corner Kicks": 11,
+          "Offsides": 2,
+          "Ball Possession": "74%",
+          "Yellow Cards": 1,
+          "Red Cards": null,
+          "Goalkeeper Saves": 1,
+          "Total passes": 801,
+          "Passes accurate": 734,
+          "Passes %": "92%",
+          "expected_goals": "2.29",
+          "goals_prevented": "1.46"
+        },
+        "Cape Verde Islands": {
+          "Shots on Goal": 1,
+          "Shots off Goal": 3,
+          "Total Shots": 6,
+          "Blocked Shots": 2,
+          "Shots insidebox": 2,
+          "Shots outsidebox": 4,
+          "Fouls": 1,
+          "Corner Kicks": 1,
+          "Offsides": 3,
+          "Ball Possession": "26%",
+          "Yellow Cards": 1,
+          "Red Cards": null,
+          "Goalkeeper Saves": 7,
+          "Total passes": 279,
+          "Passes accurate": 205,
+          "Passes %": "73%",
+          "expected_goals": "0.30",
+          "goals_prevented": "1.46"
+        }
+      },
+      "events": [
+        "assist",
+        "comments",
+        "detail",
+        "player",
+        "team",
+        "time",
+        "type"
+      ],
+      "event_types": [
+        "Card",
+        "subst"
+      ],
+      "event_details": [
+        "Substitution 1",
+        "Substitution 2",
+        "Substitution 3",
+        "Substitution 4",
+        "Substitution 5",
+        "Yellow Card"
+      ],
+      "event_count": 11,
+      "lineups": [
+        "coach",
+        "formation",
+        "startXI",
+        "substitutes",
+        "team"
+      ],
+      "formations": {
+        "Spain": "4-3-3",
+        "Cape Verde Islands": "4-1-4-1"
+      },
+      "player_statistics": [
+        "players",
+        "team"
+      ],
+      "players_with_statistics": 52
+    }
+  },
+  "data_classification": {
+    "pre_match": [
+      "fixture identity and schedule",
+      "teams",
+      "odds when available",
+      "lineups only if published before kickoff"
+    ],
+    "live": [
+      "events",
+      "score",
+      "cards",
+      "substitutions",
+      "statistics snapshots when refreshed during play"
+    ],
+    "post_match": [
+      "shots",
+      "shots on target",
+      "possession",
+      "corners",
+      "fouls",
+      "cards",
+      "passes",
+      "goalkeeper saves",
+      "events",
+      "player statistics",
+      "expected_goals when covered"
+    ]
+  },
+  "model_enrichment_opportunities": [
+    "Build a post-match performance explanation layer from shots, possession, xG and events.",
+    "Measure historical coverage before using any statistic as a future model feature.",
+    "Create lagged team-performance features only from statistics known before the future target match.",
+    "Keep live probability updates separate from frozen pre-match predictions."
+  ],
+  "not_usable_now": [
+    "Post-match statistics as retroactive pre-match features.",
+    "Attacks or dangerous attacks when absent from detected fixture-statistics fields.",
+    "Any field with incomplete historical coverage before a chronological backtest.",
+    "Attacks and dangerous attacks: absent from the checked fixture-statistics payloads."
+  ],
+  "field_presence": {
+    "Shots on Goal": true,
+    "Total Shots": true,
+    "Ball Possession": true,
+    "Corner Kicks": true,
+    "Fouls": true,
+    "Yellow Cards": true,
+    "Red Cards": true,
+    "Total passes": true,
+    "Goalkeeper Saves": true,
+    "expected_goals": true
+  },
+  "warnings": [],
+  "coverage_warning": "Three finished fixtures showed complete endpoint coverage, but this is not proof of complete historical coverage.",
+  "verdict": "PASS"
+}

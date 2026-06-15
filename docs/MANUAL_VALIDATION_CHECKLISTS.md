@@ -116,3 +116,12 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Le risque de large victoire est expliqué par une masse agrégée, pas par un score exact isolé.
 - [ ] La séparation entre `quant_hybrid_v2.2` et Road to the Trophy V4 est compréhensible.
 - [ ] Aucun moteur, pronostic actif ou choix manuel par équipe n'a été modifié.
+
+## API-Football Statistical Exploration & Match Scenario Catalog V2.27
+
+- [ ] Les données pré-match, live et post-match sont clairement séparées.
+- [ ] Les statistiques Espagne–Cap-Vert expliquent la domination sans réécrire le résultat officiel.
+- [ ] Le catalogue Allemagne–Curaçao affiche résultat, marges, buts, over/under et BTTS.
+- [ ] La victoire large est présentée comme une famille agrégée, pas comme une promesse de score exact.
+- [ ] Les limites de couverture historique sont visibles.
+- [ ] Aucun moteur, pronostic actif ou secret API n'a été modifié ou exposé.

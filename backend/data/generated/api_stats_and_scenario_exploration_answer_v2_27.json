@@ -1,0 +1,114 @@
+{
+  "version": "v2.27",
+  "generated_at": "2026-06-15T20:30:43Z",
+  "answers": {
+    "api_football_stats": {
+      "short_answer": "API-Football fournit des statistiques post-match, événements, compositions et statistiques joueurs selon la couverture du match. Ces données peuvent enrichir l'explication et, après audit historique, créer des features retardées; elles ne doivent jamais être injectées rétroactivement dans une prédiction pré-match.",
+      "usable_data": {
+        "pre_match": [
+          "fixture identity and schedule",
+          "teams",
+          "odds when available",
+          "lineups only if published before kickoff"
+        ],
+        "live": [
+          "events",
+          "score",
+          "cards",
+          "substitutions",
+          "statistics snapshots when refreshed during play"
+        ],
+        "post_match": [
+          "shots",
+          "shots on target",
+          "possession",
+          "corners",
+          "fouls",
+          "cards",
+          "passes",
+          "goalkeeper saves",
+          "events",
+          "player statistics",
+          "expected_goals when covered"
+        ]
+      },
+      "not_usable_or_missing_data": [
+        "Post-match statistics as retroactive pre-match features.",
+        "Attacks or dangerous attacks when absent from detected fixture-statistics fields.",
+        "Any field with incomplete historical coverage before a chronological backtest.",
+        "Attacks and dangerous attacks: absent from the checked fixture-statistics payloads."
+      ],
+      "algorithm_opportunities": [
+        "Build a post-match performance explanation layer from shots, possession, xG and events.",
+        "Measure historical coverage before using any statistic as a future model feature.",
+        "Create lagged team-performance features only from statistics known before the future target match.",
+        "Keep live probability updates separate from frozen pre-match predictions."
+      ],
+      "product_opportunities": [
+        "Afficher une lecture de performance réelle après match.",
+        "Préparer plus tard un mode live séparé."
+      ]
+    },
+    "germany_curacao_scenarios": {
+      "short_answer": "Avant le match, SimuAI identifiait déjà plusieurs familles : Allemagne gagne, victoire courte, victoire contrôlée, victoire large, carton, match fermé ou ouvert, BTTS et clean sheet. Le 7-1 exact ne pesait que 0,058 %, mais une victoire allemande par 3+ buts pesait 14,73 %. Le produit affichait les scores exacts les plus probables au lieu de rendre ces familles lisibles.",
+      "scenario_summary": [
+        {
+          "label": "Victoire courte Allemagne",
+          "probability": 0.25501245206203554,
+          "definition": "Allemagne gagne par 1 but"
+        },
+        {
+          "label": "Victoire contrôlée Allemagne",
+          "probability": 0.18059588516866276,
+          "definition": "Allemagne gagne par exactement 2 buts"
+        },
+        {
+          "label": "Victoire large Allemagne",
+          "probability": 0.14728165122516382,
+          "definition": "Allemagne gagne par au moins 3 buts"
+        },
+        {
+          "label": "Carton Allemagne",
+          "probability": 0.01644614930450636,
+          "definition": "Allemagne gagne par au moins 5 buts"
+        },
+        {
+          "label": "Match fermé",
+          "probability": 0.5271134287676731,
+          "definition": "Total de buts <= 2"
+        },
+        {
+          "label": "Match ouvert",
+          "probability": 0.2563969106543496,
+          "definition": "Total de buts >= 4"
+        },
+        {
+          "label": "Allemagne domine mais encaisse",
+          "probability": 0.22893845361959606,
+          "definition": "Allemagne gagne et Curaçao marque"
+        },
+        {
+          "label": "Surprise : nul",
+          "probability": 0.2360935965909557,
+          "definition": "Match nul"
+        },
+        {
+          "label": "Surprise : victoire Curaçao",
+          "probability": 0.18101641495318224,
+          "definition": "Curaçao gagne"
+        }
+      ],
+      "why_ui_was_insufficient": "Les top scores classent des cellules exactes individuellement et masquent la masse cumulée de familles footballistiques importantes.",
+      "product_opportunity": "Ajouter une section Scénarios SimuAI combinant résultat probable, score recommandé, victoire large, buts, over/under, BTTS et clean sheet."
+    }
+  },
+  "recommended_next_steps": [
+    "V2.28 — Unified Match Outcome Distribution & Scenario Families.",
+    "Créer d'abord une couche d'explication post-match à partir des statistiques API disponibles.",
+    "Mesurer ensuite la couverture historique et backtester des features retardées avant toute promotion modèle.",
+    "Afficher les familles de scénarios sans modifier les prédictions actives."
+  ],
+  "requires_engine_change": false,
+  "requires_ui_change": true,
+  "requires_data_pipeline_change": true
+}

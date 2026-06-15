@@ -17,3 +17,9 @@ L'audit V2.20 conclut que les 50 000 tirages sont réels et suffisamment stables
 La prédiction match visible et Road to the Trophy ne consomment pas encore la même distribution. `quant_hybrid_v2.2` produit les probabilités pré-match actives et une matrice Poisson `0-7`. Road to the Trophy V4 utilise une distribution tête-à-tête séparée fondée sur l'Elo externe et des profils de buts historiques pondérés, car le bundle actif n'est pas persisté pour les confrontations arbitraires futures.
 
 Les résultats officiels terminés sont verrouillés dans la simulation tournoi, mais ils ne mettent pas à jour la force future d'une équipe. Sans tirs, possession ou xG, le moteur ne distingue pas un nul dominé d'un nul chanceux. La cible recommandée est une distribution de match unifiée, historiquement validée, réutilisable par la fiche match, la matrice et chaque phase du tournoi.
+
+## Exploration statistique V2.27
+
+API-Football rend disponibles, pour les trois matchs terminés testés, les statistiques de match, événements, compositions, statistiques joueurs et `expected_goals`. Ces données ne sont pas encore collectées par le refresh principal ni consommées par les moteurs. Elles permettent immédiatement une couche d'explication post-match, mais ne deviennent des features prédictives qu'après audit de couverture historique, gestion des valeurs manquantes et backtest chronologique.
+
+La matrice de score contient déjà des familles de scénarios utiles obtenues par agrégation de cellules : marges de victoire, buts équipe, over/under, BTTS, clean sheet, victoire large et carton. Une future distribution unifiée doit exposer ces familles à la fiche match et à Road to the Trophy sans remplacer les prédictions actives avant validation.

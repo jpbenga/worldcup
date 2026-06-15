@@ -1,0 +1,32 @@
+{
+  "version": "v2.27",
+  "generated_at": "2026-06-15T20:30:45Z",
+  "passed": true,
+  "api_statistics_explored": true,
+  "xg_availability_checked": true,
+  "match_statistics_checked": true,
+  "events_checked": true,
+  "germany_curacao_catalog_generated": true,
+  "scenario_families_generated": true,
+  "answer_generated": true,
+  "public_engine_changed": false,
+  "active_predictions_unchanged": true,
+  "checks": {
+    "api_statistics_explored": true,
+    "xg_availability_checked": true,
+    "match_statistics_checked": true,
+    "events_checked": true,
+    "germany_curacao_catalog_generated": true,
+    "scenario_families_generated": true,
+    "answer_generated": true,
+    "public_engine_unchanged": true,
+    "active_predictions_unchanged": true,
+    "no_optuna": true,
+    "no_secret": true,
+    "single_v2_27_report": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Raw API exploration responses remain local and outside the commit."
+  ]
+}

@@ -2129,3 +2129,38 @@ Commit: TBD
 - [ ] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+
+## V2.27 — API-Football Statistical Exploration & Match Scenario Catalog
+
+Commit: TBD
+
+### Technical validation
+
+- [x] API-Football statistical endpoints explored
+- [x] Germany-Curaçao fixture identified
+- [x] Spain-Cape Verde fixture checked as secondary case
+- [x] Available statistics mapped
+- [x] xG availability checked
+- [x] Match events availability checked
+- [x] Lineups/player stats availability checked
+- [x] Scenario catalog generated from Germany-Curaçao score matrix
+- [x] Large victory scenarios identified
+- [x] Goal-total scenarios identified
+- [x] Margin scenarios identified
+- [x] BTTS / clean-sheet scenarios identified
+- [x] Scenario catalog answer generated in French
+- [x] No public engine changed
+- [x] Active predictions unchanged
+- [x] No retrain
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
