@@ -2164,3 +2164,38 @@ Commit: TBD
 - [ ] Validated
 - [ ] Validated with reservations
 - [ ] Not validated
+
+## V2.27.1 — API-Football Historical Statistics Coverage Audit
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Historical competitions discovered from local dataset
+- [x] Covered years/seasons discovered
+- [x] API-Football league/season mapping audited
+- [x] Sample fixtures selected safely
+- [x] Up to 5 matches per competition/season or documented sampling fallback
+- [x] Fixture statistics coverage audited
+- [x] Events coverage audited
+- [x] Lineups coverage audited
+- [x] Player statistics coverage audited
+- [x] xG historical coverage audited
+- [x] Null/missing values audited
+- [x] Coverage matrix generated
+- [x] Algorithm usability conclusion generated
+- [x] No public engine changed
+- [x] Active predictions unchanged
+- [x] No retrain
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [x] Validated with reservations
+- [ ] Not validated

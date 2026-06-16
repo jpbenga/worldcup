@@ -125,3 +125,12 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] La victoire large est présentée comme une famille agrégée, pas comme une promesse de score exact.
 - [ ] Les limites de couverture historique sont visibles.
 - [ ] Aucun moteur, pronostic actif ou secret API n'a été modifié ou exposé.
+
+## API-Football Historical Statistics Coverage Audit V2.27.1
+
+- [ ] Le périmètre historique local affiche 3 062 matchs, 14 compétitions et 32 couples compétition-saison.
+- [ ] Le fallback d'échantillonnage est compréhensible: 640 appels idéaux ramenés à 280 appels quota-sûrs.
+- [ ] La couverture est présentée sans extrapoler depuis les trois matchs récents de V2.27.
+- [ ] Les absences de statistiques, xG ou joueurs restent visibles et ne sont pas inventées.
+- [ ] La conclusion distingue post-match explanation, backtest historique, futures features et live.
+- [ ] Les réponses API brutes, la clé API, les prédictions actives et les moteurs restent hors changement public.

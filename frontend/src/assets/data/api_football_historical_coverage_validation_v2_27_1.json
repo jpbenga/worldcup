@@ -1,0 +1,21 @@
+{
+  "version": "v2.27.1",
+  "generated_at": "2026-06-16T06:20:15Z",
+  "passed": true,
+  "historical_competitions_discovered": true,
+  "sample_fixtures_selected": true,
+  "historical_api_coverage_audited": true,
+  "coverage_matrix_generated": true,
+  "algorithm_readiness_answer_generated": true,
+  "xg_checked": true,
+  "statistics_checked": true,
+  "events_checked": true,
+  "lineups_checked": true,
+  "players_checked": true,
+  "quota_safe": true,
+  "public_engine_changed": false,
+  "active_predictions_unchanged": true,
+  "no_secret_exposed": true,
+  "blocking_issues": [],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "version": "v2.27.1",
+  "answer": {
+    "short_answer": "API-Football enrichit de façon crédible l'explication post-match historique, mais cet échantillon stratifié ne suffit pas à autoriser des features globales ou un backtest historique sans biais.",
+    "can_use_for_historical_backtest": false,
+    "can_use_for_post_match_explanation": true,
+    "can_use_for_future_model_features": false,
+    "can_use_for_live_model": false,
+    "main_blockers": [
+      "Seulement cinq fixtures stratifiées par compétition ont été testées pour respecter le quota.",
+      "La couverture n'est pas prouvée pour chacun des 32 couples compétition-saison.",
+      "Les valeurs nulles et l'évolution méthodologique du fournisseur doivent être auditées.",
+      "Les statistiques et joueurs sont post-match; les compositions exigent une provenance temporelle stricte."
+    ],
+    "safe_next_steps": [
+      "Utiliser d'abord les données comme couche explicative post-match.",
+      "Étendre l'audit par lots cache-first à chaque compétition-saison.",
+      "Créer des agrégats retardés seulement sur les périodes couvertes et les tester chronologiquement.",
+      "Conserver le moteur live séparé de la prédiction pré-match gelée."
+    ]
+  },
+  "by_data_family": {
+    "xg": {
+      "status": "fragile",
+      "explanation": "Les xG sont post-match et leur couverture historique varie; ils ne sont pas prêts pour un backtest global."
+    },
+    "shots": {
+      "status": "fragile",
+      "explanation": "Les tirs sont utiles pour expliquer la performance et créer plus tard des agrégats retardés."
+    },
+    "possession": {
+      "status": "fragile",
+      "explanation": "La possession est exploitable en explication, sous réserve de valeurs manquantes."
+    },
+    "events": {
+      "status": "promising",
+      "explanation": "Les événements permettent l'explication et un futur moteur live séparé."
+    },
+    "lineups": {
+      "status": "promising",
+      "explanation": "Les compositions nécessitent une preuve d'horodatage pré-match avant tout usage prédictif."
+    },
+    "players": {
+      "status": "fragile",
+      "explanation": "Les statistiques joueurs sont riches mais souvent nulles et post-match."
+    }
+  },
+  "recommended_strategy": [
+    "V2.28A: explication post-match historique avec indicateur de disponibilité.",
+    "V2.28B: audit exhaustif de couverture et stabilité par compétition-saison.",
+    "V2.28C: challenger de features retardées sans fuite, limité aux segments validés."
+  ]
+}

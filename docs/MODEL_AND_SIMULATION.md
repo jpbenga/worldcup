@@ -23,3 +23,9 @@ Les résultats officiels terminés sont verrouillés dans la simulation tournoi,
 API-Football rend disponibles, pour les trois matchs terminés testés, les statistiques de match, événements, compositions, statistiques joueurs et `expected_goals`. Ces données ne sont pas encore collectées par le refresh principal ni consommées par les moteurs. Elles permettent immédiatement une couche d'explication post-match, mais ne deviennent des features prédictives qu'après audit de couverture historique, gestion des valeurs manquantes et backtest chronologique.
 
 La matrice de score contient déjà des familles de scénarios utiles obtenues par agrégation de cellules : marges de victoire, buts équipe, over/under, BTTS, clean sheet, victoire large et carton. Une future distribution unifiée doit exposer ces familles à la fiche match et à Road to the Trophy sans remplacer les prédictions actives avant validation.
+
+## Couverture historique API-Football V2.27.1
+
+Le dataset historique actif contient 3 062 matchs, 14 compétitions API-Football et 32 couples compétition-saison. L'audit V2.27.1 a appliqué un échantillon quota-sûr de 70 fixtures, cinq par compétition, après fallback depuis un plan idéal de 640 appels.
+
+La couverture observée est forte pour les événements et compositions, plus fragile pour les statistiques match, les xG et les statistiques joueurs. Ces données sont donc validées comme matière d'explication post-match avec indicateur de disponibilité, mais pas encore comme features globales de `quant_hybrid_v2.2`, ni comme base suffisante pour un backtest historique sans audit exhaustif par compétition-saison.
