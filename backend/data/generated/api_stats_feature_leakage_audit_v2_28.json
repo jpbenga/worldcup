@@ -1,0 +1,11 @@
+{
+  "version": "v2.28",
+  "passed": true,
+  "matches_checked": 3134,
+  "features_checked": 1894,
+  "leakage_violations": [],
+  "lineup_timestamp_risks": [],
+  "warnings": [
+    "Lineups are excluded from V2.28 model features until a pre-match publication timestamp is proven."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v2.28",
+  "generated_at": "2026-06-16T15:15:50Z",
+  "passed": true,
+  "stats_features_created": true,
+  "leakage_audit_passed": true,
+  "partial_coverage_handled": true,
+  "candidate_evaluated": true,
+  "compared_to_quant_hybrid_v2_2": true,
+  "promotion_decision_documented": true,
+  "scenario_aware_matrix_created": true,
+  "large_score_scenarios_visible": true,
+  "exact_score_percentages_decentered": true,
+  "unified_contract_designed": true,
+  "public_engine_changed": false,
+  "active_predictions_changed": false,
+  "no_secret": true,
+  "blocking_issues": [],
+  "warnings": [
+    "No Optuna was run; this is a bounded candidate benchmark, not a production promotion.",
+    "Optuna was not run; candidate selection used a bounded validation grid."
+  ]
+}

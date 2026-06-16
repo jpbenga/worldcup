@@ -1,0 +1,30 @@
+{
+  "version": "v2.28",
+  "fixture": "Allemagne - Curaçao",
+  "old_ui_problem": {
+    "top_exact_scores_hid_large_win": true,
+    "exact_score_percentages_overweighted": true
+  },
+  "new_scenario_view": {
+    "large_win_visible": true,
+    "favorite_4_plus_goals_visible": true,
+    "over_3_5_visible": true,
+    "blowout_context_visible": true,
+    "exact_7_1_not_overpromoted": true
+  },
+  "measured_signals": {
+    "mode_score": "1-0",
+    "large_favorite_win": 0.147282,
+    "favorite_4_plus_goals": 0.096475,
+    "over_3_5": 0.256397,
+    "blowout": 0.016446,
+    "representative_scores": [
+      "1-0",
+      "3-0",
+      "4-0",
+      "3-1",
+      "5-0"
+    ]
+  },
+  "answer_for_user": "La nouvelle lecture garde 1-0 comme score repère, mais affiche d'abord les familles: victoire large, Allemagne à 4+ buts, match ouvert et carton possible. Le 7-1 reste un score extrême compatible, pas une promesse de score exact."
+}

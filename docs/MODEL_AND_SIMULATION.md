@@ -29,3 +29,9 @@ La matrice de score contient déjà des familles de scénarios utiles obtenues p
 Le dataset historique actif contient 3 062 matchs, 14 compétitions API-Football et 32 couples compétition-saison. L'audit V2.27.1 a appliqué un échantillon quota-sûr de 70 fixtures, cinq par compétition, après fallback depuis un plan idéal de 640 appels.
 
 La couverture observée est forte pour les événements et compositions, plus fragile pour les statistiques match, les xG et les statistiques joueurs. Ces données sont donc validées comme matière d'explication post-match avec indicateur de disponibilité, mais pas encore comme features globales de `quant_hybrid_v2.2`, ni comme base suffisante pour un backtest historique sans audit exhaustif par compétition-saison.
+
+## Candidat stats-enriched et scénarios V2.28
+
+V2.28 recadre l'usage des statistiques: elles doivent être explorées comme features retardées pour les matchs futurs. Le builder produit des rolling features last 3/5/10, des indicateurs de couverture et des indicateurs de missingness; les xG absents ne sont pas inventés. L'audit anti-fuite confirme que les sources utilisées précèdent toujours le match cible.
+
+Le candidat enrichi est évalué contre `quant_hybrid_v2.2`, mais non promu: le meilleur réglage de promotion reste l'absence d'overlay statistique, faute de couverture suffisante pour améliorer log loss et Brier. La matrice de score évolue en revanche côté contrat produit: le score exact modal devient un score repère, tandis que les familles de scénarios et scores représentatifs doivent être affichés avant les pourcentages exacts.

@@ -1,0 +1,63 @@
+"""Define the target unified match outcome distribution contract."""
+
+from __future__ import annotations
+
+import shutil
+import sys
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+
+from backend.scripts.pipeline_utils import DATA_DIR, FRONTEND_DATA_DIR, write_json
+
+OUTPUT = "unified_match_outcome_distribution_contract_v2_28.json"
+
+
+def publish(payload: dict[str, Any]) -> None:
+    target = DATA_DIR / "generated" / OUTPUT
+    write_json(payload, target)
+    shutil.copy2(target, DATA_DIR / "snapshots" / OUTPUT)
+    shutil.copy2(target, FRONTEND_DATA_DIR / OUTPUT)
+
+
+def main() -> None:
+    payload = {
+        "version": "v2.28",
+        "status": "target_contract_designed_not_promoted",
+        "purpose": "One reusable distribution per match should feed prediction, score matrix, scenario families and tournament simulation.",
+        "inputs": {
+            "required": ["home_team", "away_team", "kickoff_at", "competition", "venue_context_if_validated"],
+            "optional_lagged_stats": ["xg", "shots", "shots_on_goal", "possession", "corners", "passes", "events", "player aggregates"],
+            "missingness_contract": "Every optional family carries availability counts, null indicators and source-date bounds.",
+        },
+        "outputs": {
+            "one_x_two": ["home_win", "draw", "away_win"],
+            "score_matrix": {"max_goals": 7, "tail_policy": "explicit high-score/tail mass in future contract"},
+            "score_repere": "Exact modal score without first-level percentage emphasis.",
+            "representative_scores": "Scores selected to represent important scenario families.",
+            "scenario_families": ["short_win", "controlled_win", "large_win", "blowout", "open_match", "closed_match", "btts", "clean_sheet"],
+            "markets": ["over_under", "BTTS", "team_totals", "clean_sheet", "large_win"],
+            "odds_value": "Consumes the same market probabilities when bookmaker data is available.",
+        },
+        "consumers": {
+            "match_card": "Use score repere plus scenario families.",
+            "score_matrix_ui": "Show scenario probabilities before exact-score percentages.",
+            "road_to_the_trophy": "May consume only after arbitrary future matchup inference and tournament replay validation.",
+            "group_simulation": "Sample from the same distribution once promoted.",
+            "knockout_simulation": "Use the same 90-minute distribution plus explicit extra-time/penalty contract.",
+        },
+        "promotion_gates": [
+            "Beat quant_hybrid_v2.2 on chronological validation and test log loss/Brier.",
+            "Improve or preserve draw, favorite, upset and large-score calibration.",
+            "Pass leakage audit for lagged statistics.",
+            "Validate arbitrary future matchups and Road to the Trophy replay before tournament integration.",
+        ],
+    }
+    publish(payload)
+    print("V2.28 unified match outcome distribution contract: designed")
+
+
+if __name__ == "__main__":
+    main()

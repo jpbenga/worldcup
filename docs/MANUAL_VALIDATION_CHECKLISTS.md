@@ -134,3 +134,14 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Les absences de statistiques, xG ou joueurs restent visibles et ne sont pas inventées.
 - [ ] La conclusion distingue post-match explanation, backtest historique, futures features et live.
 - [ ] Les réponses API brutes, la clé API, les prédictions actives et les moteurs restent hors changement public.
+
+## Stats-Enriched Engine & Scenario-Aware Matrix V2.28
+
+- [ ] Les statistiques API-Football sont présentées comme features retardées, pas comme explication post-match.
+- [ ] Les xG manquants restent absents et sont accompagnés d'indicateurs de missingness.
+- [ ] L'audit anti-fuite confirme que chaque source statistique précède le match cible.
+- [ ] Le candidat enrichi est comparé à `quant_hybrid_v2.2` avant toute promotion.
+- [ ] La non-promotion est compréhensible si le candidat ne bat pas le moteur actif.
+- [ ] La matrice affiche d'abord les scénarios: victoire courte, contrôlée, large, carton, match ouvert, BTTS et clean sheet.
+- [ ] Les pourcentages de scores exacts ne dominent plus la lecture principale.
+- [ ] Allemagne–Curaçao montre clairement victoire large, Allemagne 4+ buts, Over 3,5 et carton possible.

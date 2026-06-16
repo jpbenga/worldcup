@@ -2199,3 +2199,35 @@ Commit: TBD
 - [ ] Validated
 - [x] Validated with reservations
 - [ ] Not validated
+
+## V2.28 — Stats-Enriched Engine Candidate & Scenario-Aware Score Matrix
+
+Commit: TBD
+
+### Technical validation
+
+- [x] User objective reframed from post-match explanation to model enrichment
+- [x] API-Football stats converted into lagged pre-match features
+- [x] Partial xG/stat coverage handled explicitly
+- [x] Missingness indicators implemented
+- [x] Chronological leakage checks implemented
+- [x] Stats-enriched candidate trained/evaluated
+- [x] Candidate compared against quant_hybrid_v2.2
+- [x] Scenario-aware score matrix generated
+- [x] Large-score scenario display audited
+- [x] Exact-score UI semantics revised
+- [x] Promotion decision documented
+- [x] Active predictions unchanged unless promotion gate passes
+- [x] Road to Trophy unchanged unless unified contract passes
+- [x] No team-specific patch
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [x] Validated with reservations
+- [ ] Not validated
