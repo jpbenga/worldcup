@@ -2231,3 +2231,43 @@ Commit: TBD
 - [ ] Validated
 - [x] Validated with reservations
 - [ ] Not validated
+
+## V2.29 — Respectful Full Historical API-Football Stats Collector
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Full historical collector created
+- [x] Dry-run planning executed without live calls
+- [x] Cache-first behavior implemented
+- [x] Resume behavior implemented and tested
+- [x] Work queue uses fixture_id + endpoint units
+- [x] Progress manifest generated
+- [x] Manifest saved after each endpoint
+- [x] Raw cache stored outside committed artifacts
+- [x] Max live calls enforced
+- [x] Single-worker default implemented
+- [x] Sleep between live calls implemented
+- [x] Retry-After support implemented
+- [x] Exponential backoff with jitter implemented
+- [x] Circuit breaker implemented
+- [x] Mini live run capped at 20 calls
+- [x] Immediate resume run capped at 20 calls
+- [x] Full collection summary generated
+- [x] Validation generated
+- [x] No engine training
+- [x] Active predictions unchanged
+- [x] Road to Trophy unchanged
+- [x] No Optuna
+- [x] No secret committed
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [ ] Validated
+- [x] Validated with reservations
+- [ ] Not validated

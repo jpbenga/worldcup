@@ -1,0 +1,25 @@
+{
+  "version": "v2.29",
+  "generated_at": "2026-06-16T18:25:19Z",
+  "passed": true,
+  "collector_exists": true,
+  "dry_run_ok": true,
+  "resume_supported": true,
+  "cache_first": true,
+  "max_live_calls_enforced": true,
+  "single_worker_default": true,
+  "sleep_between_calls": true,
+  "retry_after_supported": true,
+  "exponential_backoff_with_jitter": true,
+  "circuit_breaker": true,
+  "raw_cache_not_committed": true,
+  "summary_generated": true,
+  "secrets_exposed": false,
+  "public_engine_changed": false,
+  "active_predictions_changed": false,
+  "blocking_issues": [],
+  "warnings": [
+    "Mini live run is intentionally capped; full 12,248-unit collection must be repeated over multiple sessions.",
+    "Raw cache is local and intentionally ignored by git."
+  ]
+}

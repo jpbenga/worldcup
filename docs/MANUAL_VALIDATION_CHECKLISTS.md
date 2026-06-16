@@ -145,3 +145,14 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] La matrice affiche d'abord les scénarios: victoire courte, contrôlée, large, carton, match ouvert, BTTS et clean sheet.
 - [ ] Les pourcentages de scores exacts ne dominent plus la lecture principale.
 - [ ] Allemagne–Curaçao montre clairement victoire large, Allemagne 4+ buts, Over 3,5 et carton possible.
+
+## Full Historical API-Football Collection V2.29
+
+- [ ] Le collecteur affiche le plan complet sans appel live en dry-run.
+- [ ] La reprise ne refait pas les unités déjà traitées.
+- [ ] Le plafond `--max-live-calls` arrête proprement le run.
+- [ ] Les réponses vides sont persistées et ne déclenchent pas de doublon.
+- [ ] Le manifest permet de connaître cached, fetched, empty, failed et remaining.
+- [ ] Le cache brut `backend/data/cache/api_football/historical_stats/` reste hors commit.
+- [ ] La commande progressive recommandée n'est lancée qu'après confirmation humaine.
+- [ ] Aucun moteur, pronostic actif, Road to the Trophy ou Optuna n'est modifié.

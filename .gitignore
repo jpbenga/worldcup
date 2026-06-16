@@ -22,6 +22,9 @@ __pycache__/
 *.sqlite
 *.db
 
+# Local API caches
+backend/data/cache/api_football/historical_stats/
+
 # Frontend
 node_modules/
 dist/

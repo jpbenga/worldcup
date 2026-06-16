@@ -35,3 +35,9 @@ La couverture observée est forte pour les événements et compositions, plus fr
 V2.28 recadre l'usage des statistiques: elles doivent être explorées comme features retardées pour les matchs futurs. Le builder produit des rolling features last 3/5/10, des indicateurs de couverture et des indicateurs de missingness; les xG absents ne sont pas inventés. L'audit anti-fuite confirme que les sources utilisées précèdent toujours le match cible.
 
 Le candidat enrichi est évalué contre `quant_hybrid_v2.2`, mais non promu: le meilleur réglage de promotion reste l'absence d'overlay statistique, faute de couverture suffisante pour améliorer log loss et Brier. La matrice de score évolue en revanche côté contrat produit: le score exact modal devient un score repère, tandis que les familles de scénarios et scores représentatifs doivent être affichés avant les pourcentages exacts.
+
+## Collecte statistique complète V2.29
+
+V2.28 ne conclut pas sur le potentiel final des statistiques API-Football: son volume source était trop faible. V2.29 ajoute donc un collecteur complet, progressif et relançable pour les `3 062` matchs historiques mappés. La collecte vise `12 248` unités `fixture_id:endpoint`, avec cache-first, reprise exacte, plafond d'appels live, backoff et circuit breaker.
+
+Le modèle ne doit pas être retesté avant une collecte suffisante. Les données brutes restent dans un cache local ignoré par Git; seuls le manifest, le résumé et la validation sont versionnés.
