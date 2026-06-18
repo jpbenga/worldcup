@@ -1,0 +1,23 @@
+{
+  "version": "v2.30.1",
+  "generated_at": "2026-06-18T19:27:24Z",
+  "passed": true,
+  "promotion_decision_verified": true,
+  "active_predictions_archived": true,
+  "active_predictions_promoted": true,
+  "frontend_predictions_promoted": true,
+  "promotion_manifest_created": true,
+  "rollback_available": true,
+  "schema_compatible": true,
+  "road_to_trophy_changed": false,
+  "optuna_rerun": false,
+  "raw_cache_committed": false,
+  "secrets_exposed": false,
+  "active_engine_metadata_updated": true,
+  "blocking_issues": [],
+  "warnings": [
+    "Secret-name references exist in code/env loading; no literal key detected in V2.30.1 scripts.",
+    "Road to Trophy files have pre-existing worktree diffs; V2.30.1 promotion manifest did not touch them."
+  ],
+  "raw_cache_status": ""
+}

@@ -1,0 +1,244 @@
+{
+  "version": "v2.30.1",
+  "generated_at": "2026-06-18T19:27:08Z",
+  "fixtures_match": true,
+  "match_count_previous": 72,
+  "match_count_promoted": 72,
+  "average_probability_shift": 0.029409,
+  "max_probability_shift": 0.088274,
+  "score_repere_changes": 7,
+  "average_large_win_probability_shift": 0.010762,
+  "top_changed_matches": [
+    {
+      "match_id": "api_football_1489415",
+      "match_label": "New Zealand - Belgium",
+      "probability_shift": 0.088274,
+      "previous_mode_score": "1-1",
+      "promoted_mode_score": "0-1",
+      "mode_score_changed": true,
+      "large_win_probability_delta": 0.039188,
+      "previous_markets": {
+        "home_win": 0.19128869571280077,
+        "draw": 0.2522450628536933,
+        "away_win": 0.5564662123762415
+      },
+      "promoted_markets": {
+        "home_win": 0.13382007748089414,
+        "draw": 0.2214399024803811,
+        "away_win": 0.6447400200387249
+      }
+    },
+    {
+      "match_id": "api_football_1489417",
+      "match_label": "Uruguay - Spain",
+      "probability_shift": 0.084332,
+      "previous_mode_score": "0-1",
+      "promoted_mode_score": "0-1",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.033337,
+      "previous_markets": {
+        "home_win": 0.26309448663879204,
+        "draw": 0.2185172777213984,
+        "away_win": 0.5183882646970739
+      },
+      "promoted_markets": {
+        "home_win": 0.1975317695754619,
+        "draw": 0.1997477915475907,
+        "away_win": 0.6027204388769474
+      }
+    },
+    {
+      "match_id": "api_football_1489377",
+      "match_label": "Belgium - Egypt",
+      "probability_shift": 0.083012,
+      "previous_mode_score": "1-0",
+      "promoted_mode_score": "1-0",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.028737,
+      "previous_markets": {
+        "home_win": 0.45587529557327106,
+        "draw": 0.29393740917993394,
+        "away_win": 0.25018729524679495
+      },
+      "promoted_markets": {
+        "home_win": 0.5388869793239544,
+        "draw": 0.2718356772346562,
+        "away_win": 0.1892773434413895
+      }
+    },
+    {
+      "match_id": "api_football_1539016",
+      "match_label": "Iraq - Norway",
+      "probability_shift": 0.071824,
+      "previous_mode_score": "1-1",
+      "promoted_mode_score": "0-1",
+      "mode_score_changed": true,
+      "large_win_probability_delta": 0.022246,
+      "previous_markets": {
+        "home_win": 0.26400880275676514,
+        "draw": 0.26106786393904663,
+        "away_win": 0.47492333330418834
+      },
+      "promoted_markets": {
+        "home_win": 0.2087852026702309,
+        "draw": 0.2444676948037627,
+        "away_win": 0.5467471025260066
+      }
+    },
+    {
+      "match_id": "api_football_1539007",
+      "match_label": "Netherlands - Sweden",
+      "probability_shift": 0.066801,
+      "previous_mode_score": "2-0",
+      "promoted_mode_score": "2-0",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.068986,
+      "previous_markets": {
+        "home_win": 0.6843197563615195,
+        "draw": 0.1919311089061364,
+        "away_win": 0.12374912504658939
+      },
+      "promoted_markets": {
+        "home_win": 0.7511206285535237,
+        "draw": 0.163348942955183,
+        "away_win": 0.08553042849129325
+      }
+    },
+    {
+      "match_id": "api_football_1489397",
+      "match_label": "Spain - Saudi Arabia",
+      "probability_shift": 0.058305,
+      "previous_mode_score": "1-0",
+      "promoted_mode_score": "2-0",
+      "mode_score_changed": true,
+      "large_win_probability_delta": 0.054191,
+      "previous_markets": {
+        "home_win": 0.6610377805063593,
+        "draw": 0.2215259222507492,
+        "away_win": 0.11743626334274967
+      },
+      "promoted_markets": {
+        "home_win": 0.7193425653127099,
+        "draw": 0.19430892728340887,
+        "away_win": 0.08634850740388123
+      }
+    },
+    {
+      "match_id": "api_football_1489402",
+      "match_label": "England - Ghana",
+      "probability_shift": 0.058037,
+      "previous_mode_score": "1-0",
+      "promoted_mode_score": "2-0",
+      "mode_score_changed": true,
+      "large_win_probability_delta": 0.054341,
+      "previous_markets": {
+        "home_win": 0.6822618861658247,
+        "draw": 0.19992320228124433,
+        "away_win": 0.11781493092444043
+      },
+      "promoted_markets": {
+        "home_win": 0.7402986394060106,
+        "draw": 0.1740477220721352,
+        "away_win": 0.08565363852185408
+      }
+    },
+    {
+      "match_id": "api_football_1489412",
+      "match_label": "Tunisia - Netherlands",
+      "probability_shift": 0.05755,
+      "previous_mode_score": "0-1",
+      "promoted_mode_score": "0-1",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.018953,
+      "previous_markets": {
+        "home_win": 0.2537173467896337,
+        "draw": 0.2564956913629417,
+        "away_win": 0.48978691341865066
+      },
+      "promoted_markets": {
+        "home_win": 0.20978948671836442,
+        "draw": 0.24287342485151797,
+        "away_win": 0.5473370884301175
+      }
+    },
+    {
+      "match_id": "api_football_1489420",
+      "match_label": "Croatia - Ghana",
+      "probability_shift": 0.056183,
+      "previous_mode_score": "1-0",
+      "promoted_mode_score": "1-0",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.025627,
+      "previous_markets": {
+        "home_win": 0.585932210430879,
+        "draw": 0.24589973874539126,
+        "away_win": 0.16816805082372963
+      },
+      "promoted_markets": {
+        "home_win": 0.6421151205368167,
+        "draw": 0.22505973322364975,
+        "away_win": 0.13282514623953343
+      }
+    },
+    {
+      "match_id": "api_football_1489421",
+      "match_label": "Jordan - Argentina",
+      "probability_shift": 0.054536,
+      "previous_mode_score": "0-1",
+      "promoted_mode_score": "0-1",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.016126,
+      "previous_markets": {
+        "home_win": 0.26470499040889534,
+        "draw": 0.27131997738328784,
+        "away_win": 0.46397501283630715
+      },
+      "promoted_markets": {
+        "home_win": 0.22234334866006258,
+        "draw": 0.2591458831110798,
+        "away_win": 0.5185107682288576
+      }
+    },
+    {
+      "match_id": "api_football_1489395",
+      "match_label": "Belgium - Iran",
+      "probability_shift": 0.052832,
+      "previous_mode_score": "1-0",
+      "promoted_mode_score": "1-0",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.018416,
+      "previous_markets": {
+        "home_win": 0.500350987139547,
+        "draw": 0.2643195926089595,
+        "away_win": 0.23532942993724829
+      },
+      "promoted_markets": {
+        "home_win": 0.553182779664069,
+        "draw": 0.2503793620689712,
+        "away_win": 0.19643785826695975
+      }
+    },
+    {
+      "match_id": "api_football_1539017",
+      "match_label": "France - Iraq",
+      "probability_shift": 0.052798,
+      "previous_mode_score": "1-0",
+      "promoted_mode_score": "1-0",
+      "mode_score_changed": false,
+      "large_win_probability_delta": 0.031482,
+      "previous_markets": {
+        "home_win": 0.634875641007691,
+        "draw": 0.2258308115633838,
+        "away_win": 0.13929352321453836
+      },
+      "promoted_markets": {
+        "home_win": 0.6876739484111661,
+        "draw": 0.2039322457249694,
+        "away_win": 0.10839380586386457
+      }
+    }
+  ],
+  "schema_compatible": true,
+  "odds_presence_unchanged": true,
+  "blocking_issues": []
+}

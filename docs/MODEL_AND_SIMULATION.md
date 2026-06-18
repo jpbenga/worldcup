@@ -34,7 +34,9 @@ La couverture observée est forte pour les événements et compositions, plus fr
 
 Après collecte complète V2.29, V2.30 reconstruit les features statistiques retardées depuis le cache historique complet. Le candidat `stats_enriched_full_v2_30` consomme tirs, xG quand disponible, possession, corners, passes, événements, agrégats joueurs, formes rolling et indicateurs de missingness. Les sources sont strictement antérieures au match cible et les lineups restent exclues faute de timestamp pré-match prouvé.
 
-Sur test, le candidat améliore `quant_hybrid_v2.2` en log loss (`0,864783` contre `0,881184`), Brier (`0,506084` contre `0,515803`) et accuracy (`60,652 %` contre `60,217 %`). La décision V2.30 recommande la promotion du candidat full stats, mais les prédictions actives ne sont pas écrasées sans confirmation explicite. Road to the Trophy reste inchangé tant qu'une distribution unifiée réutilisable pour toute confrontation future n'est pas validée.
+Sur test, le candidat améliore `quant_hybrid_v2.2` en log loss (`0,864783` contre `0,881184`), Brier (`0,506084` contre `0,515803`) et accuracy (`60,652 %` contre `60,217 %`). La décision V2.30 recommande la promotion du candidat full stats.
+
+Depuis V2.30.1, le moteur actif des prédictions pré-match individuelles est `stats_enriched_full_v2_30`. `quant_hybrid_v2.2` reste archivé comme moteur précédent et rollback possible. Road to the Trophy reste inchangé tant qu'une distribution unifiée réutilisable pour toute confrontation future n'est pas validée.
 
 ## Candidat stats-enriched et scénarios V2.28
 

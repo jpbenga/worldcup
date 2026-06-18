@@ -167,3 +167,13 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Les prédictions actives ne changent pas avant promotion explicite.
 - [ ] La matrice affiche scénarios avant scores exacts.
 - [ ] Road to the Trophy reste inchangé tant que le contrat arbitraire n'existe pas.
+
+## Full Stats Engine Promotion V2.30.1
+
+- [ ] `predictions.json` backend, snapshot et frontend utilisent `stats_enriched_full_v2_30`.
+- [ ] Les anciens `predictions.json` sont disponibles dans l'archive V2.30.1.
+- [ ] Le manifest `active_prediction_engine_manifest.json` affiche `SimuAI` publiquement.
+- [ ] Le script de rollback restaure uniquement les prédictions match.
+- [ ] La fiche match et la modal chargent les probabilités full stats.
+- [ ] Road to the Trophy reste accessible et séparé du moteur match.
+- [ ] Les cotes restent présentes quand elles l'étaient avant promotion.

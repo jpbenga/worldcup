@@ -1,0 +1,53 @@
+{
+  "version": "v2.30.1",
+  "promoted_engine": "stats_enriched_full_v2_30",
+  "previous_engine": "quant_hybrid_v2.2",
+  "promotion_reason": "Full stats candidate improves test log loss, Brier and accuracy and follows user production rule favoring richer-data engine.",
+  "promotion_decision_source": "backend/data/generated/full_stats_engine_promotion_decision_v2_30.json",
+  "promoted_at": "2026-06-18T19:25:50Z",
+  "active_predictions_changed": true,
+  "road_to_trophy_changed": false,
+  "optuna_rerun": false,
+  "rollback_available": true,
+  "rollback_script": "backend/scripts/rollback_full_stats_engine_v2_30_1.py",
+  "archive_paths": [
+    {
+      "role": "generated",
+      "active_path": "backend/data/generated/predictions.json",
+      "archive_path": "backend/data/archives/v2_30_1_pre_full_stats_promotion/predictions.generated.json"
+    },
+    {
+      "role": "snapshot",
+      "active_path": "backend/data/snapshots/predictions.json",
+      "archive_path": "backend/data/archives/v2_30_1_pre_full_stats_promotion/predictions.snapshot.json"
+    },
+    {
+      "role": "frontend",
+      "active_path": "frontend/src/assets/data/predictions.json",
+      "archive_path": "backend/data/archives/v2_30_1_pre_full_stats_promotion/predictions.frontend.json"
+    }
+  ],
+  "metrics": {
+    "previous": {
+      "test_accuracy": 0.602174,
+      "test_log_loss": 0.881184,
+      "test_brier": 0.515803
+    },
+    "promoted": {
+      "test_accuracy": 0.606522,
+      "test_log_loss": 0.864783,
+      "test_brier": 0.506084
+    },
+    "delta": {
+      "log_loss_1x2": -0.016401,
+      "brier_score_1x2": -0.009719,
+      "accuracy_1x2": 0.004348,
+      "large_win_calibration_gap": -0.016801
+    }
+  },
+  "blocking_issues": [],
+  "source_validation": {
+    "v2_30_validation_passed": true,
+    "promotion_decision": "recommend_promotion"
+  }
+}

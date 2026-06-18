@@ -2295,6 +2295,39 @@ Commit: TBD
 
 ### Human validation
 
+- [x] Reviewed by Jeanpaul Benga
+- [x] Full stats candidate accepted for promotion
+- [x] User confirmed production target: richer-data engine
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
+
+## V2.30.1 — Promote Full Stats Engine for Match Predictions
+
+Commit: TBD
+
+### Technical validation
+
+- [x] V2.30 promotion decision verified
+- [x] Active predictions archived
+- [x] Full stats candidate promoted to active predictions
+- [x] Frontend predictions asset updated
+- [x] Promotion manifest created
+- [x] Rollback manifest/script available
+- [x] Active engine metadata updated
+- [x] Road to Trophy unchanged
+- [x] Angular build passed
+- [x] Angular tests passed
+- [x] No Optuna
+- [x] No team-specific patch
+- [x] No secret committed
+- [x] Raw API cache not committed
+
+### Human validation
+
 - [ ] Reviewed by Jeanpaul Benga
 
 ### Result

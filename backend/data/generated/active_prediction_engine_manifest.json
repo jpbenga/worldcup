@@ -1,0 +1,13 @@
+{
+  "version": "v2.30.1",
+  "active_prediction_engine": "stats_enriched_full_v2_30",
+  "previous_prediction_engine": "quant_hybrid_v2.2",
+  "activated_in": "v2.30.1",
+  "public_label": "SimuAI",
+  "technical_label": "Full Stats Engine",
+  "uses_api_football_lagged_stats": true,
+  "uses_xg_when_available": true,
+  "uses_missingness_indicators": true,
+  "road_to_trophy_engine_changed": false,
+  "promotion_manifest": "backend/data/generated/full_stats_engine_promotion_manifest_v2_30_1.json"
+}
