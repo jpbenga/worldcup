@@ -1,0 +1,60 @@
+{
+  "version": "v2.30",
+  "generated_at": "2026-06-18T19:14:43Z",
+  "passed": true,
+  "full_collection_consumed": true,
+  "features_generated": true,
+  "leakage_audit_passed": true,
+  "candidate_trained": true,
+  "compared_to_quant_hybrid_v2_2": true,
+  "promotion_decision_documented": true,
+  "user_rule_applied": true,
+  "production_candidate_generated": true,
+  "scenario_aware_matrix_generated": true,
+  "road_to_trophy_impact_audited": true,
+  "public_engine_changed": false,
+  "active_predictions_changed": false,
+  "checks": {
+    "collection_complete": true,
+    "features_created": true,
+    "features_use_full_collection": true,
+    "leakage_audit_passed": true,
+    "xg_missing_not_invented": true,
+    "lineups_excluded_from_predictive_features": true,
+    "candidate_evaluated": true,
+    "models_compared": true,
+    "promotion_decision_documented": true,
+    "active_predictions_not_overwritten": true,
+    "candidate_predictions_generated": true,
+    "scenario_matrix_generated": true,
+    "road_to_trophy_unchanged": true,
+    "protected_files_unchanged": true,
+    "raw_cache_not_staged": true,
+    "no_literal_secret_in_v2_30_scripts": true,
+    "required_generated_files_exist": true,
+    "required_snapshot_files_exist": true,
+    "required_frontend_files_exist": true
+  },
+  "blocking_issues": [],
+  "warnings": [
+    "Secret-name references exist in code checks or env loading; no literal key was detected in V2.30 scripts.",
+    "Repository contains files larger than 10MB; inspect before committing."
+  ],
+  "promotion_decision": "recommend_promotion",
+  "protected_files_checked": [
+    "backend/data/generated/predictions.json",
+    "backend/data/snapshots/predictions.json",
+    "frontend/src/assets/data/predictions.json",
+    "backend/data/generated/quant_engine_v2_2_results.json",
+    "backend/data/generated/optuna_study_summary_v2_2.json"
+  ],
+  "raw_cache_status": "",
+  "large_files": [
+    "./frontend/src/assets/data/road_to_the_trophy_scenario_timeline_v2_22.json",
+    "./frontend/src/assets/data/full_stats_lagged_features_v2_30.json",
+    "./backend/data/generated/road_to_the_trophy_scenario_timeline_v2_22.json",
+    "./backend/data/generated/full_stats_lagged_features_v2_30.json",
+    "./backend/data/snapshots/road_to_the_trophy_scenario_timeline_v2_22.json",
+    "./backend/data/snapshots/full_stats_lagged_features_v2_30.json"
+  ]
+}

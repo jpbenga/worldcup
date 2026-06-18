@@ -8,140 +8,140 @@
     "players"
   ],
   "units_total": 12248,
-  "units_completed": 320,
-  "units_remaining": 11928,
-  "fixtures_with_any_stats": 79,
-  "statistics_available_rate": 0.016982,
-  "xg_available_rate": 0.012737,
-  "events_available_rate": 0.0258,
-  "lineups_available_rate": 0.0258,
-  "players_available_rate": 0.015349,
+  "units_completed": 12248,
+  "units_remaining": 0,
+  "fixtures_with_any_stats": 2924,
+  "statistics_available_rate": 0.696604,
+  "xg_available_rate": 0.449706,
+  "events_available_rate": 0.949379,
+  "lineups_available_rate": 0.924559,
+  "players_available_rate": 0.632266,
   "coverage_by_competition": [
     {
       "key": "Africa Cup of Nations",
       "fixtures": 386,
-      "statistics_available_rate": 0.007772,
-      "xg_available_rate": 0.005181,
-      "events_available_rate": 0.010363,
-      "lineups_available_rate": 0.010363,
-      "players_available_rate": 0.007772
+      "statistics_available_rate": 0.53886,
+      "xg_available_rate": 0.26943,
+      "events_available_rate": 0.733161,
+      "lineups_available_rate": 0.621762,
+      "players_available_rate": 0.53886
     },
     {
       "key": "Asian Cup",
       "fixtures": 134,
-      "statistics_available_rate": 0.022388,
-      "xg_available_rate": 0.014925,
-      "events_available_rate": 0.037313,
-      "lineups_available_rate": 0.037313,
-      "players_available_rate": 0.014925
+      "statistics_available_rate": 0.701493,
+      "xg_available_rate": 0.380597,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.380597
     },
     {
       "key": "CONCACAF Gold Cup",
       "fixtures": 149,
-      "statistics_available_rate": 0.020134,
-      "xg_available_rate": 0.013423,
-      "events_available_rate": 0.033557,
-      "lineups_available_rate": 0.033557,
-      "players_available_rate": 0.020134
+      "statistics_available_rate": 0.624161,
+      "xg_available_rate": 0.416107,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.624161
     },
     {
       "key": "Copa America",
       "fixtures": 118,
-      "statistics_available_rate": 0.042373,
-      "xg_available_rate": 0.016949,
-      "events_available_rate": 0.042373,
-      "lineups_available_rate": 0.042373,
-      "players_available_rate": 0.042373
+      "statistics_available_rate": 1.0,
+      "xg_available_rate": 0.271186,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "Euro Championship",
       "fixtures": 415,
-      "statistics_available_rate": 0.012048,
-      "xg_available_rate": 0.00241,
-      "events_available_rate": 0.012048,
-      "lineups_available_rate": 0.012048,
-      "players_available_rate": 0.012048
+      "statistics_available_rate": 1.0,
+      "xg_available_rate": 0.122892,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "Friendlies",
       "fixtures": 587,
-      "statistics_available_rate": 0.006814,
-      "xg_available_rate": 0.006814,
-      "events_available_rate": 0.008518,
-      "lineups_available_rate": 0.008518,
-      "players_available_rate": 0.005111
+      "statistics_available_rate": 0.425894,
+      "xg_available_rate": 0.425894,
+      "events_available_rate": 0.913118,
+      "lineups_available_rate": 0.855196,
+      "players_available_rate": 0.332198
     },
     {
       "key": "UEFA Nations League",
       "fixtures": 188,
-      "statistics_available_rate": 0.026596,
-      "xg_available_rate": 0.026596,
-      "events_available_rate": 0.026596,
-      "lineups_available_rate": 0.026596,
-      "players_available_rate": 0.026596
+      "statistics_available_rate": 1.0,
+      "xg_available_rate": 1.0,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "World Cup",
       "fixtures": 192,
-      "statistics_available_rate": 0.015625,
+      "statistics_available_rate": 0.666667,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.078125,
-      "lineups_available_rate": 0.078125,
-      "players_available_rate": 0.015625
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.666667
     },
     {
       "key": "World Cup - Qualification Africa",
       "fixtures": 256,
-      "statistics_available_rate": 0.007812,
-      "xg_available_rate": 0.007812,
-      "events_available_rate": 0.019531,
-      "lineups_available_rate": 0.019531,
-      "players_available_rate": 0.0
+      "statistics_available_rate": 0.351562,
+      "xg_available_rate": 0.351562,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.054688
     },
     {
       "key": "World Cup - Qualification Asia",
       "fixtures": 225,
-      "statistics_available_rate": 0.017778,
-      "xg_available_rate": 0.017778,
-      "events_available_rate": 0.022222,
-      "lineups_available_rate": 0.022222,
-      "players_available_rate": 0.013333
+      "statistics_available_rate": 0.706667,
+      "xg_available_rate": 0.706667,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.604444
     },
     {
       "key": "World Cup - Qualification CONCACAF",
       "fixtures": 100,
-      "statistics_available_rate": 0.05,
-      "xg_available_rate": 0.05,
-      "events_available_rate": 0.05,
-      "lineups_available_rate": 0.05,
-      "players_available_rate": 0.05
+      "statistics_available_rate": 0.96,
+      "xg_available_rate": 0.96,
+      "events_available_rate": 0.99,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.96
     },
     {
       "key": "World Cup - Qualification Europe",
       "fixtures": 204,
-      "statistics_available_rate": 0.02451,
-      "xg_available_rate": 0.02451,
-      "events_available_rate": 0.02451,
-      "lineups_available_rate": 0.02451,
-      "players_available_rate": 0.02451
+      "statistics_available_rate": 1.0,
+      "xg_available_rate": 1.0,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "World Cup - Qualification Oceania",
       "fixtures": 18,
       "statistics_available_rate": 0.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.277778,
-      "lineups_available_rate": 0.277778,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
       "players_available_rate": 0.0
     },
     {
       "key": "World Cup - Qualification South America",
       "fixtures": 90,
-      "statistics_available_rate": 0.055556,
-      "xg_available_rate": 0.055556,
-      "events_available_rate": 0.055556,
-      "lineups_available_rate": 0.055556,
-      "players_available_rate": 0.055556
+      "statistics_available_rate": 1.0,
+      "xg_available_rate": 1.0,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     }
   ],
   "coverage_by_season": [
@@ -150,8 +150,8 @@
       "fixtures": 64,
       "statistics_available_rate": 0.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.1875,
-      "lineups_available_rate": 0.1875,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
       "players_available_rate": 0.0
     },
     {
@@ -159,112 +159,112 @@
       "fixtures": 32,
       "statistics_available_rate": 0.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.03125,
-      "lineups_available_rate": 0.03125,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
       "players_available_rate": 0.0
     },
     {
       "key": "2016",
       "fixtures": 83,
-      "statistics_available_rate": 0.036145,
+      "statistics_available_rate": 1.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.036145,
-      "lineups_available_rate": 0.036145,
-      "players_available_rate": 0.036145
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "2017",
       "fixtures": 57,
       "statistics_available_rate": 0.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.035088,
-      "lineups_available_rate": 0.035088,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
       "players_available_rate": 0.0
     },
     {
       "key": "2018",
       "fixtures": 64,
-      "statistics_available_rate": 0.015625,
+      "statistics_available_rate": 1.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.015625,
-      "lineups_available_rate": 0.015625,
-      "players_available_rate": 0.015625
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "2019",
       "fixtures": 306,
-      "statistics_available_rate": 0.006536,
+      "statistics_available_rate": 0.395425,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.013072,
-      "lineups_available_rate": 0.013072,
-      "players_available_rate": 0.003268
+      "events_available_rate": 0.663399,
+      "lineups_available_rate": 0.522876,
+      "players_available_rate": 0.254902
     },
     {
       "key": "2020",
       "fixtures": 313,
-      "statistics_available_rate": 0.009585,
+      "statistics_available_rate": 1.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.009585,
-      "lineups_available_rate": 0.009585,
-      "players_available_rate": 0.009585
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "2021",
       "fixtures": 111,
-      "statistics_available_rate": 0.018018,
+      "statistics_available_rate": 1.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.018018,
-      "lineups_available_rate": 0.018018,
-      "players_available_rate": 0.018018
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "2022",
       "fixtures": 64,
-      "statistics_available_rate": 0.03125,
+      "statistics_available_rate": 1.0,
       "xg_available_rate": 0.0,
-      "events_available_rate": 0.03125,
-      "lineups_available_rate": 0.03125,
-      "players_available_rate": 0.03125
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 1.0
     },
     {
       "key": "2023",
       "fixtures": 390,
-      "statistics_available_rate": 0.015385,
-      "xg_available_rate": 0.015385,
-      "events_available_rate": 0.023077,
-      "lineups_available_rate": 0.023077,
-      "players_available_rate": 0.010256
+      "statistics_available_rate": 0.574359,
+      "xg_available_rate": 0.574359,
+      "events_available_rate": 1.0,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.379487
     },
     {
       "key": "2024",
       "fixtures": 779,
-      "statistics_available_rate": 0.019255,
-      "xg_available_rate": 0.019255,
-      "events_available_rate": 0.020539,
-      "lineups_available_rate": 0.020539,
-      "players_available_rate": 0.017972
+      "statistics_available_rate": 0.786906,
+      "xg_available_rate": 0.786906,
+      "events_available_rate": 0.953787,
+      "lineups_available_rate": 0.898588,
+      "players_available_rate": 0.736842
     },
     {
       "key": "2025",
       "fixtures": 366,
-      "statistics_available_rate": 0.010929,
-      "xg_available_rate": 0.010929,
-      "events_available_rate": 0.010929,
-      "lineups_available_rate": 0.010929,
-      "players_available_rate": 0.010929
+      "statistics_available_rate": 0.532787,
+      "xg_available_rate": 0.532787,
+      "events_available_rate": 0.959016,
+      "lineups_available_rate": 0.983607,
+      "players_available_rate": 0.489071
     },
     {
       "key": "2026",
       "fixtures": 433,
-      "statistics_available_rate": 0.032333,
-      "xg_available_rate": 0.032333,
-      "events_available_rate": 0.046189,
-      "lineups_available_rate": 0.046189,
-      "players_available_rate": 0.030023
+      "statistics_available_rate": 0.796767,
+      "xg_available_rate": 0.796767,
+      "events_available_rate": 0.997691,
+      "lineups_available_rate": 1.0,
+      "players_available_rate": 0.743649
     }
   ],
-  "ready_for_model_retest": false,
-  "reason": "Ready only after broad cache coverage is collected.",
+  "ready_for_model_retest": true,
+  "reason": "Sufficient collection coverage for a model retest gate.",
   "manifest_stop_reason": "max_live_calls reached",
-  "live_calls_last_run": 20
+  "live_calls_last_run": 533
 }

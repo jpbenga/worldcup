@@ -1,0 +1,27 @@
+{
+  "version": "v2.30",
+  "generated_at": "2026-06-18T19:12:31Z",
+  "candidate": {
+    "name": "stats_enriched_full_v2.30",
+    "decision": "recommend_promotion",
+    "promote_candidate_for_match_predictions": true,
+    "active_predictions_overwritten": false
+  },
+  "road_to_the_trophy_changed": false,
+  "road_to_the_trophy_can_consume_now": false,
+  "reason": "V2.30 generates a candidate predictions file for the known fixture set, but it does not yet persist an arbitrary-pair inference contract for every possible future knockout or group matchup.",
+  "required_before_road_to_trophy_integration": [
+    "Persist a reusable Unified Match Outcome Distribution for arbitrary team pairs.",
+    "Benchmark that contract chronologically against the current tournament engine.",
+    "Run a full tournament replay and compare bracket, group and knockout calibration.",
+    "Keep official-result locking behavior unchanged."
+  ],
+  "impact_scope": {
+    "candidate_prediction_matches": 72,
+    "active_match_predictions_changed": false,
+    "simulation_group_engine_changed": false,
+    "simulation_knockout_engine_changed": false,
+    "scenario_matrix_candidate_available": true
+  },
+  "safe_next_step": "Use V2.30 for match-level candidate validation first; Road to the Trophy remains on its current engine."
+}

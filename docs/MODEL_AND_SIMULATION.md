@@ -30,6 +30,12 @@ Le dataset historique actif contient 3 062 matchs, 14 compétitions API-Football
 
 La couverture observée est forte pour les événements et compositions, plus fragile pour les statistiques match, les xG et les statistiques joueurs. Ces données sont donc validées comme matière d'explication post-match avec indicateur de disponibilité, mais pas encore comme features globales de `quant_hybrid_v2.2`, ni comme base suffisante pour un backtest historique sans audit exhaustif par compétition-saison.
 
+## Candidat full stats V2.30
+
+Après collecte complète V2.29, V2.30 reconstruit les features statistiques retardées depuis le cache historique complet. Le candidat `stats_enriched_full_v2_30` consomme tirs, xG quand disponible, possession, corners, passes, événements, agrégats joueurs, formes rolling et indicateurs de missingness. Les sources sont strictement antérieures au match cible et les lineups restent exclues faute de timestamp pré-match prouvé.
+
+Sur test, le candidat améliore `quant_hybrid_v2.2` en log loss (`0,864783` contre `0,881184`), Brier (`0,506084` contre `0,515803`) et accuracy (`60,652 %` contre `60,217 %`). La décision V2.30 recommande la promotion du candidat full stats, mais les prédictions actives ne sont pas écrasées sans confirmation explicite. Road to the Trophy reste inchangé tant qu'une distribution unifiée réutilisable pour toute confrontation future n'est pas validée.
+
 ## Candidat stats-enriched et scénarios V2.28
 
 V2.28 recadre l'usage des statistiques: elles doivent être explorées comme features retardées pour les matchs futurs. Le builder produit des rolling features last 3/5/10, des indicateurs de couverture et des indicateurs de missingness; les xG absents ne sont pas inventés. L'audit anti-fuite confirme que les sources utilisées précèdent toujours le match cible.

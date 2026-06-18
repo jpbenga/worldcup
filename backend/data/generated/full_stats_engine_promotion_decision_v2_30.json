@@ -1,0 +1,89 @@
+{
+  "version": "v2.30",
+  "generated_at": "2026-06-18T19:12:04Z",
+  "decision": "recommend_promotion",
+  "promote_candidate": true,
+  "execute_promotion_now": false,
+  "active_predictions_overwritten": false,
+  "requires_explicit_user_confirmation_before_active_overwrite": true,
+  "user_rule": "Promote the richer-data engine unless a serious technical blocker is present.",
+  "selected_model": {
+    "name": "stats_enriched_full_v2.30",
+    "model_key": "stats_enriched_full_v2_30",
+    "params": {
+      "alpha": 0.35,
+      "coverage_aware": false
+    }
+  },
+  "metrics_vs_quant_hybrid_v2_2": {
+    "selected_model_key": "stats_enriched_full_v2_30",
+    "selected_params": {
+      "alpha": 0.35,
+      "coverage_aware": false
+    },
+    "delta_validation": {
+      "log_loss_1x2": -0.001782,
+      "brier_score_1x2": -0.000942,
+      "accuracy_1x2": 0.015251,
+      "large_win_calibration_gap": -0.006015
+    },
+    "delta_test": {
+      "log_loss_1x2": -0.016401,
+      "brier_score_1x2": -0.009719,
+      "accuracy_1x2": 0.004348,
+      "large_win_calibration_gap": -0.016801
+    },
+    "test_log_loss_degradation_pct": -1.861246,
+    "test_brier_degradation_pct": -1.884247,
+    "test_accuracy_delta_points": 0.4348
+  },
+  "serious_blocker_checks": [
+    {
+      "key": "temporal_leakage",
+      "blocking": false,
+      "detail": "Feature source dates must be strictly before target matches."
+    },
+    {
+      "key": "xg_invented",
+      "blocking": false,
+      "detail": "Missing xG must stay missing and be represented by coverage flags."
+    },
+    {
+      "key": "collection_incomplete",
+      "blocking": false,
+      "detail": "Full historical stats collection must be complete before promotion decision."
+    },
+    {
+      "key": "log_loss_collapse",
+      "blocking": false,
+      "detail": "Test log loss degradation: -1.861246%"
+    },
+    {
+      "key": "brier_collapse",
+      "blocking": false,
+      "detail": "Test Brier degradation: -1.884247%"
+    },
+    {
+      "key": "accuracy_collapse",
+      "blocking": false,
+      "detail": "Test accuracy delta: 0.4348 points."
+    },
+    {
+      "key": "dangerous_calibration_favorites",
+      "blocking": false,
+      "detail": "Favorite calibration must not deteriorate sharply."
+    },
+    {
+      "key": "dangerous_calibration_large_wins",
+      "blocking": false,
+      "detail": "Large-win calibration must not deteriorate sharply."
+    }
+  ],
+  "serious_blockers": [],
+  "rollback_plan": [
+    "Do not overwrite active predictions until the promotion script is explicitly run.",
+    "Keep backend/data/generated/predictions.json, snapshots and frontend copies as the rollback source.",
+    "If promoted later, archive active predictions before replacement and restore those archives on rollback."
+  ],
+  "promotion_script_prepared": "backend/scripts/promote_full_stats_engine_v2_30.py"
+}

@@ -156,3 +156,14 @@ Ces checklists couvrent les contrôles encore utiles au produit. Les anciennes c
 - [ ] Le cache brut `backend/data/cache/api_football/historical_stats/` reste hors commit.
 - [ ] La commande progressive recommandée n'est lancée qu'après confirmation humaine.
 - [ ] Aucun moteur, pronostic actif, Road to the Trophy ou Optuna n'est modifié.
+
+## Full Stats-Enriched Production Candidate V2.30
+
+- [ ] La collecte complète V2.29 est bien consommée, pas seulement l'échantillon d'audit.
+- [ ] Les features retardées utilisent uniquement des matchs strictement antérieurs.
+- [ ] Les xG manquants restent absents avec indicateurs de couverture.
+- [ ] Le candidat full stats est comparé à `quant_hybrid_v2.2`.
+- [ ] La décision applique la règle produit: moteur enrichi sauf blocage sérieux.
+- [ ] Les prédictions actives ne changent pas avant promotion explicite.
+- [ ] La matrice affiche scénarios avant scores exacts.
+- [ ] Road to the Trophy reste inchangé tant que le contrat arbitraire n'existe pas.

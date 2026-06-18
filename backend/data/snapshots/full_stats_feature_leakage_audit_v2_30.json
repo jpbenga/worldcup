@@ -1,0 +1,16 @@
+{
+  "version": "v2.30",
+  "passed": true,
+  "matches_checked": 3134,
+  "source_dates_checked": 51155,
+  "all_source_dates_strictly_before_target": true,
+  "lineups_excluded": true,
+  "xg_missing_not_invented": true,
+  "current_match_stats_used": false,
+  "future_stats_used": false,
+  "leakage_violations": [],
+  "warnings": [
+    "Post-match statistics are used only as lagged sources for later matches.",
+    "Lineups remain excluded as model features until pre-match publication timestamps are proven."
+  ]
+}

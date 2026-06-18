@@ -2271,3 +2271,34 @@ Commit: TBD
 - [ ] Validated
 - [x] Validated with reservations
 - [ ] Not validated
+
+## V2.30 — Full Stats-Enriched Engine Production Candidate
+
+Commit: TBD
+
+### Technical validation
+
+- [x] Full API-Football historical stats collection consumed
+- [x] Lagged stats features rebuilt from complete cache
+- [x] Leakage audit passed
+- [x] Stats-enriched engine trained/evaluated
+- [x] quant_hybrid_v2.2 comparison completed
+- [x] Production decision follows user rule: prefer richer-data engine unless blocking issue
+- [x] Promotion blockers audited
+- [x] Production candidate generated
+- [x] Predictions generated with production candidate if promoted
+- [x] Scenario-aware score matrix generated from production candidate if possible
+- [x] Road to Trophy impact assessed
+- [x] No team-specific patch
+- [x] No secret committed
+- [x] No uncontrolled Optuna run
+
+### Human validation
+
+- [ ] Reviewed by Jeanpaul Benga
+
+### Result
+
+- [x] Validated
+- [ ] Validated with reservations
+- [ ] Not validated
