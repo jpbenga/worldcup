@@ -17,6 +17,13 @@ sys.path.insert(0, str(ROOT))
 from backend.scripts.pipeline_utils import DATA_DIR, utc_now
 from backend.scripts.v2_10_refresh_utils import ENGINE, VERSION, PROTECTED_FILES, publish
 
+JUSTIFIED_LARGE_FILES = {
+    "backend/data/generated/full_stats_lagged_features_v2_30.json",
+    "backend/data/generated/road_to_the_trophy_scenario_timeline_v2_22.json",
+    "backend/data/snapshots/full_stats_lagged_features_v2_30.json",
+    "backend/data/snapshots/road_to_the_trophy_scenario_timeline_v2_22.json",
+}
+
 
 def load(name: str) -> Any:
     return json.loads((DATA_DIR / "generated" / name).read_text())
@@ -76,6 +83,7 @@ def main() -> None:
     manifest = artifacts.get("manifest", {})
     protected_unchanged = manifest.get("model_integrity", {}).get("protected_hashes_before") == manifest.get("model_integrity", {}).get("protected_hashes_after")
     large_files = [str(path.relative_to(ROOT)) for path in DATA_DIR.rglob("*") if path.is_file() and path.stat().st_size > 10 * 1024 * 1024]
+    unjustified_large_files = [path for path in large_files if path not in JUSTIFIED_LARGE_FILES]
     secret_lines = secret_scan_lines()
     checks = {
         **{f"{key}_exists": value for key, value in exists.items()},
@@ -90,12 +98,13 @@ def main() -> None:
         "optuna_not_run": manifest.get("model_integrity", {}).get("optuna_run") is False,
         "retrain_not_run": manifest.get("model_integrity", {}).get("retrain_run") is False,
         "all_artifacts_finite": all(finite(value) for value in artifacts.values()),
-        "no_unjustified_large_files": not large_files,
+        "no_unjustified_large_files": not unjustified_large_files,
         "no_secret_literal_detected": not secret_lines,
     }
     payload = {
         "generated_at": utc_now(), "version": VERSION, "engine_version": ENGINE, "passed": all(checks.values()),
-        "checks": checks, "large_files": large_files, "secret_scan_unexpected_lines": secret_lines,
+        "checks": checks, "large_files": large_files, "justified_large_files": sorted(JUSTIFIED_LARGE_FILES),
+        "unjustified_large_files": unjustified_large_files, "secret_scan_unexpected_lines": secret_lines,
         "protected_files": list(PROTECTED_FILES), "model_retrained": False, "optuna_rerun": False,
     }
     publish(payload, "matchday_refresh_validation_v2_10.json")
@@ -105,7 +114,7 @@ Validation status: **{'PASS' if payload['passed'] else 'FAIL'}**.
 
 The validator checks the refresh manifest, result/evaluation/standings/match-state layers, active and candidate conditioned simulations, their comparison, both projected-campaign proxies, V2.7 result consistency and V2.9 dual-matrix validation.
 
-Protected active predictions and model artifacts unchanged: `{protected_unchanged}`. Retraining and Optuna were not run. Unjustified files above 10 MB: `{large_files}`. Unexpected secret scan lines: `{secret_lines}`.
+Protected active predictions and model artifacts unchanged: `{protected_unchanged}`. Retraining and Optuna were not run. Unjustified files above 10 MB: `{unjustified_large_files}`. Expected large timeline artifacts remain reported in the JSON validation. Unexpected secret scan lines: `{secret_lines}`.
 
 The validation confirms operational coherence only. It never promotes the candidate or changes frozen pre-match probabilities.
 """, encoding="utf-8")

@@ -35,7 +35,7 @@ def publish(name: str, payload: dict[str, Any], frontend: bool = False) -> None:
         shutil.copy2(generated, FRONTEND_DATA_DIR / name)
 
 
-def run_simulation(lock_results: bool, seed: int, lock_count: int | None = None) -> dict[str, Any]:
+def run_simulation(lock_results: bool, seed: int, lock_count: int | None = None, simulations: int = SIMULATIONS, reservoir_size: int = RESERVOIR_SIZE) -> dict[str, Any]:
     groups = load_json(FRONTEND_DATA_DIR / "worldcup_groups.json")
     elos = current_elos()
     prediction = prediction_cache(elos, profiles(historical_matches()))
@@ -52,7 +52,7 @@ def run_simulation(lock_results: bool, seed: int, lock_count: int | None = None)
     reservoir: list[dict[str, Any]] = []
     tie_decision_count = 0
 
-    for simulation_id in range(1, SIMULATIONS + 1):
+    for simulation_id in range(1, simulations + 1):
         # A dedicated stream per tournament gives the current and counterfactual
         # universes common random numbers instead of letting one locked score
         # shift every subsequent draw.
@@ -123,21 +123,21 @@ def run_simulation(lock_results: bool, seed: int, lock_count: int | None = None)
             pairings = list(zip(winners[0::2], winners[1::2]))
         champions[winners[0]] += 1
         path = {"simulation_id": simulation_id, "champion": winners[0], "group_stage": group_path, "knockout": path_rounds}
-        if len(reservoir) < RESERVOIR_SIZE:
+        if len(reservoir) < reservoir_size:
             reservoir.append(path)
         else:
             replacement = reservoir_rng.randrange(simulation_id)
-            if replacement < RESERVOIR_SIZE:
+            if replacement < reservoir_size:
                 reservoir[replacement] = path
 
     probabilities = {
-        round_name: {team: count / SIMULATIONS for team, count in stage_counts[round_name].items()}
+        round_name: {team: count / simulations for team, count in stage_counts[round_name].items()}
         for round_name in ROUNDS
     }
     all_teams = [team["name"] for group in groups for team in group["teams"]]
     return {
         "version": VERSION,
-        "simulation_count": SIMULATIONS,
+        "simulation_count": simulations,
         "seed": seed,
         "real_results_locked": len(results),
         "match_engine": "elo_time_decay_independent_poisson_v4",
@@ -145,19 +145,19 @@ def run_simulation(lock_results: bool, seed: int, lock_count: int | None = None)
         "group_tie_break": "points_goal_difference_goals_for_head_to_head_then_elo_proxy",
         "bracket_method": "isolated_dynamic_fallback_pending_official_mapping",
         "official_bracket_available": False,
-        "reservoir_sampling": {"method": "uniform_reservoir", "size": len(reservoir), "coverage": "all_50000_paths"},
-        "champion_probabilities": {team: count / SIMULATIONS for team, count in champions.most_common()},
+        "reservoir_sampling": {"method": "uniform_reservoir", "size": len(reservoir), "coverage": f"all_{simulations}_paths"},
+        "champion_probabilities": {team: count / simulations for team, count in champions.most_common()},
         "round_of_32_probabilities": probabilities["round_of_32"],
         "team_path_distributions": {
             team: {round_name: probabilities[round_name].get(team, 0) for round_name in ROUNDS}
-            | {"champion": champions[team] / SIMULATIONS}
+            | {"champion": champions[team] / simulations}
             for team in all_teams
         },
         "group_rank_probabilities": {
-            group: {team: {str(rank): count / SIMULATIONS for rank, count in ranks.items()} for team, ranks in teams.items()}
+            group: {team: {str(rank): count / simulations for rank, count in ranks.items()} for team, ranks in teams.items()}
             for group, teams in rank_counts.items()
         },
-        "most_common_finals": [{"teams": list(teams), "probability": count / SIMULATIONS} for teams, count in finals.most_common(10)],
+        "most_common_finals": [{"teams": list(teams), "probability": count / simulations} for teams, count in finals.most_common(10)],
         "knockout_resolution_counts": dict(resolution_counts),
         "tie_break_decisions": tie_decision_count,
         "representative_paths_reservoir": reservoir,
@@ -219,7 +219,7 @@ def choose_scenario(
     diagnostics = {
         "method": "minimum_global_surprise_complete_path_with_continuity_tie_break",
         "candidate_pool": len(paths),
-        "candidate_sampling": "uniform reservoir across all 50000 complete paths",
+        "candidate_sampling": f"uniform reservoir across all {simulation.get('simulation_count', SIMULATIONS)} complete paths",
         "near_optimal_candidate_count": len(near_optimal),
         "near_optimal_threshold": "within 5% of minimum average surprise",
         "continuity_reference_used": reference_path is not None,

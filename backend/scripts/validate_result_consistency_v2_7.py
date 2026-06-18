@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import math
 import sys
+from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,21 @@ from backend.scripts.pipeline_utils import DATA_DIR, load_json, utc_now
 from backend.scripts.v2_7_consistency_utils import VERSION, publish
 
 
+def blank(team: str) -> dict[str, Any]:
+    return {
+        "team": team,
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goals_for": 0,
+        "goals_against": 0,
+        "goal_difference": 0,
+        "points": 0,
+        "rank": 0,
+    }
+
+
 def non_finite(value: Any) -> bool:
     if isinstance(value, float):
         return not math.isfinite(value)
@@ -22,6 +38,49 @@ def non_finite(value: Any) -> bool:
     if isinstance(value, list):
         return any(non_finite(item) for item in value)
     return False
+
+
+def expected_standings(matches: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    tables: dict[str, dict[str, dict[str, Any]]] = defaultdict(dict)
+    for item in matches:
+        group = item["standings_impact"]["group"]
+        for team in (item["home_team"], item["away_team"]):
+            tables[group].setdefault(team, blank(team))
+    for item in matches:
+        result = item.get("result", {})
+        if item.get("status") != "finished" or not result.get("available"):
+            continue
+        group = item["standings_impact"]["group"]
+        home, away = tables[group][item["home_team"]], tables[group][item["away_team"]]
+        hg, ag = int(result["home_goals"]), int(result["away_goals"])
+        home["played"] += 1
+        away["played"] += 1
+        home["goals_for"] += hg
+        home["goals_against"] += ag
+        away["goals_for"] += ag
+        away["goals_against"] += hg
+        if hg > ag:
+            home["wins"] += 1
+            home["points"] += 3
+            away["losses"] += 1
+        elif ag > hg:
+            away["wins"] += 1
+            away["points"] += 3
+            home["losses"] += 1
+        else:
+            home["draws"] += 1
+            away["draws"] += 1
+            home["points"] += 1
+            away["points"] += 1
+    expected = {}
+    for group, rows in tables.items():
+        for row in rows.values():
+            row["goal_difference"] = row["goals_for"] - row["goals_against"]
+        ordered = sorted(rows.values(), key=lambda row: (-row["points"], -row["goal_difference"], -row["goals_for"], row["team"]))
+        for rank, row in enumerate(ordered, 1):
+            row["rank"] = rank
+        expected[group] = ordered
+    return expected
 
 
 def main() -> None:
@@ -50,21 +109,31 @@ def main() -> None:
             issues.append(f"{item.get('match_id')} missing coherence explanation")
         if non_finite(item):
             issues.append(f"{item.get('match_id')} contains non-finite value")
-    group_a = {row["team"]: row for row in standings["groups"]["A"]["standings"]}
-    mexico, south_africa = group_a.get("Mexico"), group_a.get("South Africa")
-    mexico_ok = mexico and (mexico["played"], mexico["wins"], mexico["goals_for"], mexico["goals_against"], mexico["goal_difference"], mexico["points"]) == (1, 1, 2, 0, 2, 3)
-    south_africa_ok = south_africa and (south_africa["played"], south_africa["losses"], south_africa["goals_for"], south_africa["goals_against"], south_africa["goal_difference"], south_africa["points"]) == (1, 1, 0, 2, -2, 0)
-    if not mexico_ok:
-        issues.append("Mexico 2-0 standing impact is incorrect")
-    if not south_africa_ok:
-        issues.append("South Africa 0-2 standing impact is incorrect")
+    expected_groups = expected_standings(matches)
+    standing_mismatches = []
+    for group, expected_rows in sorted(expected_groups.items()):
+        actual_rows = standings["groups"].get(group, {}).get("standings", [])
+        actual_by_team = {row["team"]: row for row in actual_rows}
+        for expected in expected_rows:
+            actual = actual_by_team.get(expected["team"])
+            comparable = {key: actual.get(key) for key in expected} if actual else None
+            if comparable != expected:
+                standing_mismatches.append({
+                    "group": group,
+                    "team": expected["team"],
+                    "expected": expected,
+                    "actual": comparable,
+                })
+    if standing_mismatches:
+        issues.append(f"Live standings mismatch for {len(standing_mismatches)} team(s)")
     report = {
         "version": VERSION, "generated_at": utc_now(), "passed": not issues, "issues": issues,
         "checks": {
             "match_count": len(matches), "finished_with_results": sum(item["status"] == "finished" and item["result"]["available"] for item in matches),
             "finished_with_evaluations": sum(item["status"] == "finished" and item["evaluation"]["available"] for item in matches),
             "modal_favorite_divergences_explained": sum(item["prediction"]["coherence_status"] == "modal_differs_from_1x2_favorite" and bool(item["prediction"]["coherence_explanation"]) for item in matches),
-            "mexico_standing_correct": bool(mexico_ok), "south_africa_standing_correct": bool(south_africa_ok),
+            "live_standings_match_recomputed_results": not standing_mismatches,
+            "standing_mismatches": standing_mismatches[:20],
             "groups": len(standings["groups"]),
         },
     }
@@ -74,9 +143,9 @@ def main() -> None:
 
 Status: `{"PASS" if report["passed"] else "FAIL"}`.
 
-The validator checked `{len(matches)}` unified match records, all finished-result and evaluation invariants, card/modal display fields, normalized matchdays, favorite-consistent scores, divergence explanations and non-finite values. It also rebuilt and verified the official Group A impact of Mexico 2-0 South Africa.
+The validator checked `{len(matches)}` unified match records, all finished-result and evaluation invariants, card/modal display fields, normalized matchdays, favorite-consistent scores, divergence explanations and non-finite values. It also rebuilt all live group standings from finished official results and compared them against the published standings artifact.
 
-Mexico standing correct: `{bool(mexico_ok)}`. South Africa standing correct: `{bool(south_africa_ok)}`. Explained modal/favorite divergences: `{report["checks"]["modal_favorite_divergences_explained"]}`.
+Live standings match recomputed results: `{not standing_mismatches}`. Standing mismatches: `{standing_mismatches[:5]}`. Explained modal/favorite divergences: `{report["checks"]["modal_favorite_divergences_explained"]}`.
 
 No pre-match prediction, matrix or probability is modified by this validation.
 """, encoding="utf-8")

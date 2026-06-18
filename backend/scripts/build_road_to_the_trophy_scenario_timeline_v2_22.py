@@ -21,6 +21,9 @@ from backend.scripts.run_tournament_simulation_engine_v4_v2_21 import (
     run_simulation,
 )
 
+TIMELINE_REPLAY_SIMULATIONS = 2_000
+TIMELINE_RESERVOIR_SIZE = 400
+
 
 def publish(name: str, payload: dict[str, Any]) -> None:
     target = DATA_DIR / "generated" / name
@@ -114,7 +117,13 @@ def main() -> None:
     current_view = load_json(DATA_DIR / "generated/road_to_the_trophy_coherent_view_model_v2_21.json")
     states, previous_path = [], None
     for locked_count in range(len(finished)):
-        simulation = run_simulation(lock_results=True, seed=SEED, lock_count=locked_count)
+        simulation = run_simulation(
+            lock_results=True,
+            seed=SEED,
+            lock_count=locked_count,
+            simulations=TIMELINE_REPLAY_SIMULATIONS,
+            reservoir_size=TIMELINE_RESERVOIR_SIZE,
+        )
         path, diagnostics = choose_scenario(simulation, reference_path=previous_path)
         representative = representative_payload(path, diagnostics, simulation)
         view = build_official_view_model(representative_override=representative, simulation_override=simulation)
@@ -148,6 +157,8 @@ def main() -> None:
         "feature_name": "Road to the Trophy",
         "timeline_type": "scenario_evolution",
         "simulation_count": 50_000,
+        "intermediate_state_simulation_count": TIMELINE_REPLAY_SIMULATIONS,
+        "intermediate_state_reservoir_size": TIMELINE_RESERVOIR_SIZE,
         "states": states,
         "diffs": diffs,
         "current_state_id": "current",
